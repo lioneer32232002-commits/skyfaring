@@ -80,40 +80,62 @@ def article_exists(game_date: str, opponent: str) -> bool:
 
 def build_game_context(game: dict, data: dict) -> str:
     """把比賽數據整理成給 Claude 的資訊"""
-    date = game.get("date", "")
-    opponent = game.get("opponent", "對手")
-    lions_score = game.get("lions_score", 0)
+    # 欄位名稱依 processed_data.json 實際格式
+    date = normalize_date(game.get("date", ""))
+    opponent = game.get("opp", "對手")
+    lions_score = game.get("lion_score", 0)
     opp_score = game.get("opp_score", 0)
-    result = "W" if game.get("result") == "W" else "L"
-    is_home = game.get("home", True)
+    won = game.get("won", False)
+    result = "勝" if won else "負"
+    is_home = game.get("is_home", True)
     home_away = "主場" if is_home else "客場"
 
-    fg_pct = game.get("fg_pct", "?")
-    three_pct = game.get("three_pct", "?")
-    assists = game.get("assists", "?")
-    turnovers = game.get("turnovers", "?")
-    paint_pts = game.get("paint_pts", "?")
+    # 本場可用數據
+    paint_pts = game.get("paint", "?")
+    fast_break = game.get("fast_break", "?")
+    second_chance = game.get("second_chance", "?")
+    ft_made = game.get("ft_made", "?")
+
+    # 各節比數
+    rounds = game.get("rounds", {})
+    opp_rounds = game.get("opp_rounds", {})
+    quarter_str = " / ".join(
+        f"Q{q}: {rounds.get(str(q),'?')}-{opp_rounds.get(str(q),'?')}"
+        for q in range(1, 5)
+    )
 
     # 球隊整體狀況
     team = data.get("team_stats", {})
-    record = team.get("record", "?")
-    season_ppg = team.get("avg_pts", "?")
-    season_apg = team.get("avg_pts_allowed", "?")
+    wins = team.get("wins", "?")
+    losses = team.get("losses", "?")
+    season_ppg = team.get("avg_score", team.get("avg_pts", "?"))
+    season_apg = team.get("avg_opp_score", team.get("avg_pts_allowed", "?"))
 
-    # 球員本季均值（用來對比這場表現）
-    players = data.get("player_avg", [])
-    top_players = sorted(players, key=lambda p: p.get("pts", 0), reverse=True)[:5]
-    player_lines = "\n".join(
-        f"  - {p.get('name','')}: {p.get('pts','?')} 分 / {p.get('reb','?')} 籃板 / {p.get('ast','?')} 助攻（本季均值）"
-        for p in top_players
-    )
+    # 球員本季均值（player_avg 是 dict，key 為球員名）
+    player_avg = data.get("player_avg", {})
+    if isinstance(player_avg, dict):
+        players_list = [
+            {"name": name, **stats}
+            for name, stats in player_avg.items()
+            if not stats.get("departed", False)
+        ]
+        top_players = sorted(players_list, key=lambda p: p.get("score", 0), reverse=True)[:5]
+        player_lines = "\n".join(
+            f"  - {p['name']}: {p.get('score','?')} 分 / {p.get('rebounds','?')} 籃板 / {p.get('assists','?')} 助攻（本季均值）"
+            for p in top_players
+        )
+    else:
+        player_lines = "（無球員數據）"
 
     # 對這支對手的歷史交手
     vs_summary = data.get("vs_summary", [])
-    vs_opp = next((v for v in vs_summary if v.get("opponent") == opponent), None)
-    vs_record = f"{vs_opp.get('wins','?')}勝{vs_opp.get('losses','?')}敗" if vs_opp else "無資料"
-    vs_avg_scored = vs_opp.get("avg_scored", "?") if vs_opp else "?"
-    vs_avg_allowed = vs_opp.get("avg_allowed", "?") if vs_opp else "?"
+    vs_opp = next((v for v in vs_summary if v.get("team_name") == opponent), None)
+    if vs_opp:
+        vs_record = f"{vs_opp.get('w','?')}勝{vs_opp.get('l','?')}敗"
+        vs_avg_scored = vs_opp.get("avg_lion", "?")
+        vs_avg_allowed = vs_opp.get("avg_opp", "?")
+    else:
+        vs_record, vs_avg_scored, vs_avg_allowed = "無資料", "?", "?"
 
     short_opp = OPPONENT_NAME_MAP.get(opponent, opponent)
 
@@ -122,25 +144,25 @@ def build_game_context(game: dict, data: dict) -> str:
 日期：{date}（{home_away}）
 對手：{opponent}（簡稱：{short_opp}）
 比數：攻城獅 {lions_score} - {opp_score} {opponent}
-結果：{"勝" if result == "W" else "負"}
+結果：{result}
+各節：{quarter_str}
 
 === 本場團隊數據 ===
-投籃命中率：{fg_pct}%
-三分球命中率：{three_pct}%
-助攻：{assists}
-失誤：{turnovers}
 禁區得分：{paint_pts}
+快攻得分：{fast_break}
+二次進攻得分：{second_chance}
+罰球命中：{ft_made}
 
 === 本季狀況 ===
-戰績：{record}
+戰績：{wins}勝{losses}敗
 本季場均得分：{season_ppg}
 本季場均失分：{season_apg}
 
 === 主要球員本季均值 ===
 {player_lines}
 
-=== 對{short_opp}歷史交手 ===
-本季紀錄：{vs_record}
+=== 對{short_opp}歷史交手（本季） ===
+紀錄：{vs_record}
 對戰場均得分：{vs_avg_scored}
 對戰場均失分：{vs_avg_allowed}
 """
@@ -153,10 +175,10 @@ def build_slug(game_date: str, opponent: str) -> str:
 
 
 def generate_article(context: str, game: dict, client: anthropic.Anthropic) -> str:
-    opponent = game.get("opponent", "對手")
+    opponent = game.get("opp", "對手")
     short_opp = OPPONENT_NAME_MAP.get(opponent, opponent)
-    result = "勝" if game.get("result") == "W" else "負"
-    lions_score = game.get("lions_score", 0)
+    result = "勝" if game.get("won", False) else "負"
+    lions_score = game.get("lion_score", 0)
     opp_score = game.get("opp_score", 0)
 
     user_prompt = f"""以下是攻城獅今天比賽的數據，請用你（潘釔天）的口吻和風格寫一篇賽後分析文章。
@@ -182,12 +204,12 @@ def generate_article(context: str, game: dict, client: anthropic.Anthropic) -> s
 
 def save_article(game: dict, content: str):
     date = normalize_date(game.get("date", datetime.now().strftime("%Y%m%d")))
-    opponent = game.get("opponent", "對手")
+    opponent = game.get("opp", "對手")
     short_opp = OPPONENT_NAME_MAP.get(opponent, opponent)
-    lions_score = game.get("lions_score", 0)
+    lions_score = game.get("lion_score", 0)
     opp_score = game.get("opp_score", 0)
-    result = "勝" if game.get("result") == "W" else "負"
-    home_away = "主場" if game.get("home", True) else "客場"
+    result = "勝" if game.get("won", False) else "負"
+    home_away = "主場" if game.get("is_home", True) else "客場"
 
     slug = build_slug(date, opponent)
     title = f"攻城獅 vs {short_opp}：{lions_score}-{opp_score} {result}（{home_away}）"
