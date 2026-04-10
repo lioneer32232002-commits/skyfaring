@@ -1,6 +1,8 @@
 import type { MetadataRoute } from "next";
 import { getAllPostMetas } from "@/lib/posts";
 
+export const dynamic = "force-static";
+
 const SITE_URL = "https://lioneer32232002-commits.github.io/skyfaring";
 
 export default function sitemap(): MetadataRoute.Sitemap {
