@@ -37,6 +37,7 @@ export interface PostMeta {
   heroCreditUrl?: string;
   source?: string;
   source_url?: string;
+  references?: { title: string; url?: string }[];
 }
 
 export interface Post extends PostMeta {
@@ -66,6 +67,7 @@ export function getAllPostMetas(): PostMeta[] {
         heroCreditUrl: data.heroCreditUrl,
         source: data.source,
         source_url: data.source_url,
+        references: data.references ?? [],
       } as PostMeta;
     });
 
@@ -96,6 +98,7 @@ export async function getPost(slug: string): Promise<Post> {
     heroCreditUrl: data.heroCreditUrl,
     source: data.source,
     source_url: data.source_url,
+    references: data.references ?? [],
     contentHtml,
   };
 }

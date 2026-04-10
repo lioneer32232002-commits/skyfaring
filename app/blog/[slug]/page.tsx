@@ -159,17 +159,34 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
         dangerouslySetInnerHTML={{ __html: post.contentHtml }}
       />
 
-      {/* Source */}
-      {post.source && (
+      {/* Sources */}
+      {(post.source || (post.references && post.references.length > 0)) && (
         <div className="mt-10 p-4 bg-slate-50 dark:bg-slate-800 rounded-xl text-sm text-slate-500 dark:text-slate-400 border border-slate-200 dark:border-slate-700">
-          <span className="font-semibold text-slate-600 dark:text-slate-300">資料來源：</span>
-          {post.source_url ? (
-            <a href={post.source_url} target="_blank" rel="noopener noreferrer" className="underline hover:text-sky-500 ml-1">
-              {post.source}
-            </a>
-          ) : (
-            <span className="ml-1">{post.source}</span>
-          )}
+          <p className="font-semibold text-slate-600 dark:text-slate-300 mb-2">參考資料</p>
+          <ul className="space-y-1">
+            {post.source && (
+              <li>
+                {post.source_url ? (
+                  <a href={post.source_url} target="_blank" rel="noopener noreferrer" className="underline hover:text-sky-500">
+                    {post.source}
+                  </a>
+                ) : (
+                  <span>{post.source}</span>
+                )}
+              </li>
+            )}
+            {post.references?.map((ref, i) => (
+              <li key={i}>
+                {ref.url ? (
+                  <a href={ref.url} target="_blank" rel="noopener noreferrer" className="underline hover:text-sky-500">
+                    {ref.title}
+                  </a>
+                ) : (
+                  <span>{ref.title}</span>
+                )}
+              </li>
+            ))}
+          </ul>
         </div>
       )}
 
