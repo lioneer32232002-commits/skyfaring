@@ -41,6 +41,7 @@ export default function RootLayout({
   return (
     <html lang="zh-TW" className="h-full">
       <head>
+        <meta name="author" content="Skyfaring" />
         {/* Google Analytics */}
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZLQY8WT257"></script>
         <script dangerouslySetInnerHTML={{ __html: `

@@ -28,11 +28,24 @@ const PROJECTS = [
   },
 ];
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "Skyfaring",
+  url: "https://lioneer32232002-commits.github.io/skyfaring/",
+  description: "運動數據分析、飛航安全數據分析、詠春拳、歷史與軍事閱讀心得分享。",
+  inLanguage: "zh-TW",
+};
+
 export default function HomePage() {
   const posts = getAllPostMetas();
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       {/* Hero */}
       <section className="bg-gradient-to-br from-slate-900 via-slate-800 to-sky-900 text-white">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 py-20 sm:py-28">

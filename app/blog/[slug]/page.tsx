@@ -100,6 +100,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
             alt={post.heroAlt ?? post.title}
             className="w-full max-w-full object-cover"
             style={{ maxHeight: "400px" }}
+            loading="lazy"
           />
           {post.heroCredit && (
             <figcaption className="text-xs text-slate-400 text-right mt-1 px-2">

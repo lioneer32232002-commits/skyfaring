@@ -1,5 +1,12 @@
+import type { Metadata } from "next";
 import { getAllPostMetas } from "@/lib/posts";
 import ArticleCard from "@/components/ArticleCard";
+
+export const metadata: Metadata = {
+  title: "文章",
+  description: "航空安全數據分析、運動數據、詠春拳、歷史與軍事閱讀心得——Skyfaring 所有文章列表。",
+  alternates: { canonical: "/blog/" },
+};
 
 export default function BlogPage() {
   const posts = getAllPostMetas();
