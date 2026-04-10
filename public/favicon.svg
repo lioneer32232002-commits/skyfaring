@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+  <!-- Background circle -->
+  <circle cx="16" cy="16" r="16" fill="#0f172a"/>
+  <!-- Airplane body -->
+  <path d="M26 16L6 9l3 7-3 7 20-7z" fill="#38bdf8"/>
+  <!-- Wing -->
+  <path d="M17 16L10 11v10l7-5z" fill="#0ea5e9"/>
+  <!-- Tail -->
+  <path d="M9 16L6 9l5 4-2 3z" fill="#7dd3fc"/>
+</svg>

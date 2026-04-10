@@ -34,6 +34,18 @@ OPPONENT_NAME_MAP = {
     "臺北富邦勇士": "勇士",
     "福爾摩沙台新夢想家": "夢想家",
     "新竹街口攻城獅": "街口",
+    "高雄全家海神": "海神",
+}
+
+# 用於文章 slug（純 ASCII，避免 URL 編碼問題）
+OPPONENT_SLUG_MAP = {
+    "新北中信特攻": "tga",
+    "桃園台啤永豐雲豹": "leopards",
+    "高雄鋼鐵人": "steelman",
+    "臺北富邦勇士": "braves",
+    "福爾摩沙台新夢想家": "dreamers",
+    "新竹街口攻城獅": "jko",
+    "高雄全家海神": "poseidon",
 }
 
 
@@ -170,7 +182,7 @@ def build_game_context(game: dict, data: dict) -> str:
 
 
 def build_slug(game_date: str, opponent: str) -> str:
-    opp_slug = re.sub(r"[^\w]", "", opponent)[:8]
+    opp_slug = OPPONENT_SLUG_MAP.get(opponent, re.sub(r"[^\x00-\x7F]", "", opponent)[:8] or "opp")
     return f"lioneers-{game_date}-vs-{opp_slug}"
 
 

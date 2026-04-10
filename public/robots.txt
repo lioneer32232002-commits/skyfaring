@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://lioneer32232002-commits.github.io/skyfaring/sitemap.xml

@@ -7,12 +7,40 @@ export async function generateStaticParams() {
   return getAllSlugs().map((slug) => ({ slug }));
 }
 
+const SITE_URL = "https://lioneer32232002-commits.github.io/skyfaring";
+const DEFAULT_OG = `${SITE_URL}/images/og-default.png`;
+
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const post = await getPost(slug);
+
+  const ogImage = post.heroImage
+    ? `${SITE_URL}${post.heroImage}`
+    : DEFAULT_OG;
+
   return {
-    title: `${post.title} — Skyfaring`,
+    title: post.title,
     description: post.excerpt,
+    alternates: { canonical: `/blog/${slug}/` },
+    openGraph: {
+      type: "article",
+      locale: "zh_TW",
+      url: `${SITE_URL}/blog/${slug}/`,
+      siteName: "Skyfaring",
+      title: post.title,
+      description: post.excerpt,
+      images: [{ url: ogImage, width: 1200, height: 630, alt: post.heroAlt ?? post.title }],
+      publishedTime: post.date,
+      modifiedTime: post.updated || post.date,
+      authors: [post.author],
+      tags: post.tags,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: post.title,
+      description: post.excerpt,
+      images: [ogImage],
+    },
   };
 }
 
@@ -38,8 +66,31 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
         })
       : null;
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: post.title,
+    description: post.excerpt,
+    datePublished: post.date,
+    dateModified: post.updated || post.date,
+    author: { "@type": "Person", name: post.author },
+    publisher: {
+      "@type": "Organization",
+      name: "Skyfaring",
+      url: SITE_URL,
+    },
+    url: `${SITE_URL}/blog/${slug}/`,
+    ...(post.heroImage && {
+      image: { "@type": "ImageObject", url: `${SITE_URL}${post.heroImage}` },
+    }),
+  };
+
   return (
     <article className="max-w-3xl mx-auto px-4 sm:px-6 py-10">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
 
       {/* HERO image */}
       {post.heroImage && (
