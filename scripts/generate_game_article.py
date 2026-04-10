@@ -17,15 +17,20 @@ import requests
 DATA_URL = "https://raw.githubusercontent.com/lioneer32232002-commits/lioneers-web/main/processed_data.json"
 POSTS_DIR = Path(__file__).parent.parent / "content" / "posts"
 
-STYLE_PROMPT = """你是潘釔天（Adam Pan），一個愛打籃球、練詠春、對數字很敏感的台灣人。
-你在 yi-tienpan.blogspot.com 寫了快20年的文章，風格是「散文式分析」：
-- 一定用第一人稱，從一個具體的觀察或感受開場
-- 不寫流水帳，而是找出這場比賽裡最值得討論的一兩個數字或現象，然後深挖
-- 用類比解釋數據（比如把三分球命中率比喻成什麼日常事物）
-- 語氣是跟朋友聊天，不是新聞稿，但有自己的見解
-- 偶爾有自我調侃，或坦誠說「我也不確定」
-- 文章長度約 800-1000 字，繁體中文
-- 不要用「首先」「其次」「最後」這種條列式結構，要像一篇連貫的散文"""
+STYLE_PROMPT = """你是一個愛打籃球、練詠春、對數字很敏感的台灣人，在個人部落格寫了快20年的文章。
+
+寫作風格範例（開頭）：
+「在自從在疫情期間看了 Coach Fui 的籃球教學影片，實際練習並應用在打街球至今，唯一的心得就是，套句我的詠春拳師傅黃英哲常講的：這真是好東西。但如果把 Coach Fui 的好東西練偏了，會讓人有幻覺。近日打球被一個蒙古來的交換生打爆，他應該是才 20歲，在他的防守下，我有機會切入都但放槍，還被抄了幾球，真幹，回來的路上我一直在想如果是 Coach Fui 會怎麽做。」
+
+從上面範例可以看出，寫作規則如下：
+- 一定用第一人稱，從一個非常具體的個人觀察或感受開場，不能是「今天攻城獅打了一場...」
+- 找這場比賽裡最有趣的一個數字或現象，以它為核心，然後往裡挖，不要平均分配每個數據
+- 語氣直白口語，偶爾有「真幹」「說白了」「老實說」這種語感，但不要刻意
+- 偶爾用生活類比解釋籃球數據，比喻要自然不要勉強
+- 偶爾自我調侃或坦誠說「我也不確定」「我猜」
+- 文章是連貫的散文，800-1000字，繁體中文
+- 絕對禁止：破折號（——）、中文冒號（：）、「首先」「其次」「最後」、「值得注意的是」「不得不說」
+- 聯盟名稱一律用 TPBL，不要用 PLG"""
 
 OPPONENT_NAME_MAP = {
     "新北中信特攻": "特攻",
@@ -193,17 +198,19 @@ def generate_article(context: str, game: dict, client: anthropic.Anthropic) -> s
     lions_score = game.get("lion_score", 0)
     opp_score = game.get("opp_score", 0)
 
-    user_prompt = f"""以下是攻城獅今天比賽的數據，請用你（潘釔天）的口吻和風格寫一篇賽後分析文章。
+    user_prompt = f"""以下是攻城獅今天比賽的數據，請寫一篇賽後分析文章。
 
 {context}
 
 寫作要求：
 - 不要寫標題（我會另外加）
-- 開頭不要是「今天攻城獅...」這種新聞稿起手式
-- 找出這場比賽最有趣或最關鍵的一個數字或現象，以它為核心展開
+- 開頭必須從一個具體的個人感受或觀察出發，不能是「今天攻城獅...」這種新聞稿起手式
+- 找出這場比賽最有趣或最關鍵的一個數字或現象，以它為核心展開，不要平均分配每個數據
 - 對{short_opp}的評價要客觀，不要過度貶低對手
 - 如果這場{result}，要能解釋「為什麼」而不只是重述比分
-- 全文800-1000字，繁體中文"""
+- 聯盟名稱一律用 TPBL，不是 PLG
+- 全文800-1000字，繁體中文
+- 禁止使用破折號（——）和中文冒號（：）"""
 
     message = client.messages.create(
         model="claude-sonnet-4-6",
@@ -224,14 +231,15 @@ def save_article(game: dict, content: str):
     home_away = "主場" if game.get("is_home", True) else "客場"
 
     slug = build_slug(date, opponent)
-    title = f"攻城獅 vs {short_opp}：{lions_score}-{opp_score} {result}（{home_away}）"
+    result_verb = "勝" if game.get("won", False) else "負"
+    title = f"攻城獅 {lions_score}-{opp_score} {home_away}{result_verb}{short_opp}"
 
     tags = ["攻城獅", "TPBL", "籃球", short_opp, "賽事分析"]
     tags_str = json.dumps(tags, ensure_ascii=False)
 
     frontmatter = f"""---
 title: "{title}"
-author: "潘釔天"
+author: "Skyfaring"
 date: "{date}"
 updated: "{date}"
 slug: "{slug}"
