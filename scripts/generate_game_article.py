@@ -43,6 +43,19 @@ def fetch_data() -> dict:
     return resp.json()
 
 
+def parse_game_date(raw: str) -> datetime:
+    """支援 YYYYMMDD 和 YYYY-MM-DD 兩種格式"""
+    raw = str(raw).strip()
+    if len(raw) == 8 and raw.isdigit():
+        return datetime.strptime(raw, "%Y%m%d")
+    return datetime.strptime(raw, "%Y-%m-%d")
+
+
+def normalize_date(raw: str) -> str:
+    """統一轉成 YYYY-MM-DD 格式（用於文章 slug 和 frontmatter）"""
+    return parse_game_date(raw).strftime("%Y-%m-%d")
+
+
 def get_recent_games(data: dict, days: int = 3) -> list:
     """回傳最近 N 天內的比賽（通常是 1-2 場）"""
     games = data.get("games", [])
@@ -50,7 +63,7 @@ def get_recent_games(data: dict, days: int = 3) -> list:
     recent = []
     for g in games:
         try:
-            gdate = datetime.strptime(g["date"], "%Y-%m-%d")
+            gdate = parse_game_date(g["date"])
             if gdate >= cutoff:
                 recent.append(g)
         except (KeyError, ValueError):
@@ -59,8 +72,7 @@ def get_recent_games(data: dict, days: int = 3) -> list:
 
 
 def article_exists(game_date: str, opponent: str) -> bool:
-    """檢查這場比賽的文章是否已存在"""
-    opponent_slug = re.sub(r"[^\w]", "", opponent)
+    """檢查這場比賽的文章是否已存在（game_date 為 YYYY-MM-DD）"""
     pattern = f"lioneers-{game_date}-*.md"
     existing = list(POSTS_DIR.glob(pattern))
     return len(existing) > 0
@@ -169,7 +181,7 @@ def generate_article(context: str, game: dict, client: anthropic.Anthropic) -> s
 
 
 def save_article(game: dict, content: str):
-    date = game.get("date", datetime.now().strftime("%Y-%m-%d"))
+    date = normalize_date(game.get("date", datetime.now().strftime("%Y%m%d")))
     opponent = game.get("opponent", "對手")
     short_opp = OPPONENT_NAME_MAP.get(opponent, opponent)
     lions_score = game.get("lions_score", 0)
@@ -216,9 +228,14 @@ def main():
     data = fetch_data()
 
     if force_date:
-        games = [g for g in data.get("games", []) if g.get("date") == force_date]
+        # force_date 可能是 YYYY-MM-DD 或 YYYYMMDD，統一轉 YYYYMMDD 來比對
+        try:
+            fd_normalized = parse_game_date(force_date).strftime("%Y%m%d")
+        except ValueError:
+            fd_normalized = force_date
+        games = [g for g in data.get("games", []) if str(g.get("date", "")).strip() == fd_normalized]
         if not games:
-            print(f"找不到 {force_date} 的比賽紀錄")
+            print(f"找不到 {force_date}（搜尋格式：{fd_normalized}）的比賽紀錄")
             sys.exit(0)
     else:
         games = get_recent_games(data, days=2)
@@ -228,14 +245,14 @@ def main():
         sys.exit(0)
 
     game = games[0]
-    date = game.get("date", "")
+    date_normalized = normalize_date(game.get("date", ""))
     opponent = game.get("opponent", "")
 
-    if article_exists(date, opponent):
-        print(f"文章已存在（{date} vs {opponent}），略過")
+    if article_exists(date_normalized, opponent):
+        print(f"文章已存在（{date_normalized} vs {opponent}），略過")
         sys.exit(0)
 
-    print(f"發現新比賽：{date} vs {opponent}")
+    print(f"發現新比賽：{date_normalized} vs {opponent}")
     context = build_game_context(game, data)
     print("正在呼叫 Claude API 生成文章...")
 
