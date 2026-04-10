@@ -24,7 +24,7 @@ export default function ArticleCard({ post }: { post: PostMeta }) {
     : "";
 
   return (
-    <Link href={`${BASE_PATH}/blog/${post.slug}/`} className="group block">
+    <Link href={`/blog/${post.slug}/`} className="group block">
       <article className="bg-white dark:bg-slate-800 rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden border border-slate-100 dark:border-slate-700">
         {post.heroImage && (
           <div className="h-48 overflow-hidden">
