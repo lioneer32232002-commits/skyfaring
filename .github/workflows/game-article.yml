@@ -1,0 +1,51 @@
+name: Auto Game Analysis Article
+
+on:
+  schedule:
+    # 台灣時間晚上 11 點（UTC 15:00）和凌晨 1 點（UTC 17:00）觸發
+    # 適合比賽通常在晚上 7-9 點結束，爬蟲跑完後這裡再生成文章
+    - cron: '0 15,17 * * *'
+  workflow_dispatch:
+    inputs:
+      game_date:
+        description: '指定比賽日期（YYYY-MM-DD），空白則自動偵測最近比賽'
+        required: false
+        default: ''
+
+permissions:
+  contents: write
+
+jobs:
+  generate-article:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout skyfaring
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install anthropic requests
+
+      - name: Generate game article
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          FORCE_DATE: ${{ inputs.game_date }}
+        run: python scripts/generate_game_article.py
+
+      - name: Commit and push new article
+        run: |
+          git config user.email "github-actions@github.com"
+          git config user.name "GitHub Actions"
+          git add content/posts/
+          if git diff --staged --quiet; then
+            echo "沒有新文章，略過 commit"
+          else
+            git commit -m "Auto: 攻城獅賽後分析 $(date +'%Y-%m-%d')"
+            git push
+          fi

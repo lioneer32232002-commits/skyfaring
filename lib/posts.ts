@@ -5,6 +5,22 @@ import { remark } from "remark";
 import html from "remark-html";
 import remarkGfm from "remark-gfm";
 
+/**
+ * 在中文與英數字之間自動補半形空格（盤古之白）
+ * 不影響 HTML 標籤內容與標點符號
+ */
+export function addPangu(html: string): string {
+  // 只處理標籤之間的文字節點，不動 HTML 屬性
+  return html.replace(/>([^<]+)</g, (match, text) => {
+    const spaced = text
+      // 中文後接英數
+      .replace(/([\u4e00-\u9fff\u3400-\u4dbf])([A-Za-z0-9])/g, "$1 $2")
+      // 英數後接中文
+      .replace(/([A-Za-z0-9])([\u4e00-\u9fff\u3400-\u4dbf])/g, "$1 $2");
+    return `>${spaced}<`;
+  });
+}
+
 const postsDirectory = path.join(process.cwd(), "content/posts");
 
 export interface PostMeta {
@@ -64,7 +80,7 @@ export async function getPost(slug: string): Promise<Post> {
   const { data, content } = matter(fileContents);
 
   const processedContent = await remark().use(remarkGfm).use(html).process(content);
-  const contentHtml = processedContent.toString();
+  const contentHtml = addPangu(processedContent.toString());
 
   return {
     slug,

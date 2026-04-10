@@ -6,11 +6,25 @@ const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
 const PROJECTS = [
   {
-    title: "Skyfaring Blog",
-    description: "航空安全報告整理、飛行知識與產業分析",
+    title: "Skyfaring 文章",
+    description: "航空安全、球賽數據、歷史軍事的分析文章",
     url: `${BASE_PATH}/blog/`,
-    icon: "✈",
-    internal: true,
+    icon: "📊",
+    external: false,
+  },
+  {
+    title: "攻城獅數據站",
+    description: "新北國王 TPBL 數據儀表板，含勝負預測、球員效率分析",
+    url: "https://lioneer32232002-commits.github.io/lioneers-web/",
+    icon: "🦁",
+    external: true,
+  },
+  {
+    title: "舊站文章庫",
+    description: "Skyfaring 2007年起的個人部落格，武術、旅遊、語言、時事",
+    url: "https://yi-tienpan.blogspot.com/",
+    icon: "📚",
+    external: true,
   },
 ];
 
@@ -20,18 +34,19 @@ export default function HomePage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-gradient-to-br from-slate-900 via-sky-900 to-slate-800 text-white">
+      <section className="bg-gradient-to-br from-slate-900 via-slate-800 to-sky-900 text-white">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 py-20 sm:py-28">
           <div className="flex items-center gap-3 mb-4">
-            <span className="text-4xl">✈</span>
-            <span className="text-sky-400 font-semibold tracking-widest text-sm uppercase">Skyfaring</span>
+            <span className="text-sky-400 font-semibold tracking-widest text-sm uppercase">Skyfaring · 潘釔天</span>
           </div>
           <h1 className="text-4xl sm:text-5xl font-bold leading-tight mb-4">
-            航空、安全、探索
+            用數據觀察世界
           </h1>
-          <p className="text-slate-300 text-lg max-w-xl leading-relaxed mb-8">
-            整理 ICAO 等機構的飛安資料，用圖表和白話說明複雜的航空安全報告。
-            也在這裡記錄其他研究與實作。
+          <p className="text-slate-300 text-lg max-w-2xl leading-relaxed mb-3">
+            從球場到天空，從歷史到當代——用數字和資料說出那些不容易被看見的故事。
+          </p>
+          <p className="text-slate-400 text-sm max-w-xl leading-relaxed mb-8">
+            涵蓋：TPBL 攻城獅賽事分析 · ICAO 全球飛安報告整理 · 武術與運動科學 · 歷史與軍事數據
           </p>
           <div className="text-sm text-slate-400 flex items-center gap-2">
             <span>本站瀏覽次數：</span>
@@ -43,30 +58,31 @@ export default function HomePage() {
       <div className="max-w-5xl mx-auto px-4 sm:px-6 py-12">
 
         {/* Projects / Portal */}
-        {PROJECTS.length > 0 && (
-          <section className="mb-14">
-            <h2 className="text-xl font-bold text-slate-700 dark:text-slate-200 mb-5 flex items-center gap-2">
-              <span>🗂</span> 我的專案
-            </h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-              {PROJECTS.map((proj) => (
-                <a
-                  key={proj.title}
-                  href={proj.url}
-                  className="block p-5 bg-white dark:bg-slate-800 rounded-2xl border border-slate-100 dark:border-slate-700 shadow-sm hover:shadow-md transition-shadow group"
-                >
-                  <div className="text-3xl mb-3">{proj.icon}</div>
-                  <h3 className="font-semibold text-slate-800 dark:text-slate-100 group-hover:text-sky-600 dark:group-hover:text-sky-400 transition-colors">
-                    {proj.title}
-                  </h3>
-                  <p className="text-sm text-slate-500 dark:text-slate-400 mt-1">
-                    {proj.description}
-                  </p>
-                </a>
-              ))}
-            </div>
-          </section>
-        )}
+        <section className="mb-14">
+          <h2 className="text-xl font-bold text-slate-700 dark:text-slate-200 mb-5 flex items-center gap-2">
+            <span>🗂</span> 我的專案
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            {PROJECTS.map((proj) => (
+              <a
+                key={proj.title}
+                href={proj.url}
+                target={proj.external ? "_blank" : undefined}
+                rel={proj.external ? "noopener noreferrer" : undefined}
+                className="block p-5 bg-white dark:bg-slate-800 rounded-2xl border border-slate-100 dark:border-slate-700 shadow-sm hover:shadow-md transition-shadow group"
+              >
+                <div className="text-3xl mb-3">{proj.icon}</div>
+                <h3 className="font-semibold text-slate-800 dark:text-slate-100 group-hover:text-sky-600 dark:group-hover:text-sky-400 transition-colors">
+                  {proj.title}
+                  {proj.external && <span className="ml-1 text-slate-400 text-xs">↗</span>}
+                </h3>
+                <p className="text-sm text-slate-500 dark:text-slate-400 mt-1">
+                  {proj.description}
+                </p>
+              </a>
+            ))}
+          </div>
+        </section>
 
         {/* Latest Articles */}
         <section>
