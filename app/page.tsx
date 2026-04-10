@@ -37,7 +37,7 @@ export default function HomePage() {
       <section className="bg-gradient-to-br from-slate-900 via-slate-800 to-sky-900 text-white">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 py-20 sm:py-28">
           <div className="flex items-center gap-3 mb-4">
-            <span className="text-sky-400 font-semibold tracking-widest text-sm uppercase">Skyfaring · 潘釔天</span>
+            <span className="text-sky-400 font-semibold tracking-widest text-sm uppercase">Skyfaring</span>
           </div>
           <h1 className="text-4xl sm:text-5xl font-bold leading-tight mb-4">
             用數據觀察世界
@@ -46,7 +46,7 @@ export default function HomePage() {
             從球場到天空，從歷史到當代——用數字和資料說出那些不容易被看見的故事。
           </p>
           <p className="text-slate-400 text-sm max-w-xl leading-relaxed mb-8">
-            涵蓋：TPBL 攻城獅賽事分析 · ICAO 全球飛安報告整理 · 武術與運動科學 · 歷史與軍事數據
+            運動數據分析 · 飛航安全數據分析 · 詠春拳 · 歷史與軍事閱讀心得分享
           </p>
           <div className="text-sm text-slate-400 flex items-center gap-2">
             <span>本站瀏覽次數：</span>
