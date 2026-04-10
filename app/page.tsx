@@ -13,8 +13,8 @@ const PROJECTS = [
     external: false,
   },
   {
-    title: "攻城獅數據站",
-    description: "新北國王 TPBL 數據儀表板，含勝負預測、球員效率分析",
+    title: "新竹攻城獅數據站",
+    description: "新竹攻城獅數據儀表板，含勝負預測、球員效率分析",
     url: "https://lioneer32232002-commits.github.io/lioneers-web/",
     icon: "🦁",
     external: true,
