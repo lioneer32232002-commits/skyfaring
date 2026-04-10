@@ -6,8 +6,9 @@ updated: "2026-04-08"
 slug: "lioneers-2026-04-08-vs-tga"
 tags: ["攻城獅", "TPBL", "籃球", "特攻", "賽事分析"]
 heroImage: "/images/lioneers-hero.jpg"
-heroAlt: "攻城獅主場比賽"
-heroCredit: "New Taipei Kings / TPBL"
+heroAlt: "籃球場內景"
+heroCredit: "Markus Spiske / Unsplash"
+heroCreditUrl: "https://unsplash.com/photos/people-inside-a-basketball-gym-J_tbkGWxCH0"
 excerpt: "攻城獅 2026-04-08 主場對上特攻，117-100 勝。數據背後的故事。"
 ---
 
