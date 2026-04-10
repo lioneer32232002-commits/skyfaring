@@ -127,9 +127,9 @@ def build_game_context(game: dict, data: dict) -> str:
     else:
         player_lines = "（無球員數據）"
 
-    # 對這支對手的歷史交手
-    vs_summary = data.get("vs_summary", [])
-    vs_opp = next((v for v in vs_summary if v.get("team_name") == opponent), None)
+    # 對這支對手的歷史交手（vs_summary 是 dict，key 為隊名）
+    vs_summary = data.get("vs_summary", {})
+    vs_opp = vs_summary.get(opponent) if isinstance(vs_summary, dict) else None
     if vs_opp:
         vs_record = f"{vs_opp.get('w','?')}勝{vs_opp.get('l','?')}敗"
         vs_avg_scored = vs_opp.get("avg_lion", "?")
@@ -268,7 +268,7 @@ def main():
 
     game = games[0]
     date_normalized = normalize_date(game.get("date", ""))
-    opponent = game.get("opponent", "")
+    opponent = game.get("opp", "")
 
     if article_exists(date_normalized, opponent):
         print(f"文章已存在（{date_normalized} vs {opponent}），略過")
