@@ -14,6 +14,7 @@ on:
 
 permissions:
   contents: write
+  actions: write
 
 jobs:
   generate-article:
@@ -39,13 +40,25 @@ jobs:
         run: python scripts/generate_game_article.py
 
       - name: Commit and push new article
+        id: commit
         run: |
           git config user.email "github-actions@github.com"
           git config user.name "GitHub Actions"
           git add content/posts/
           if git diff --staged --quiet; then
             echo "沒有新文章，略過 commit"
+            echo "new_article=false" >> $GITHUB_OUTPUT
           else
             git commit -m "Auto: 攻城獅賽後分析 $(date +'%Y-%m-%d')"
             git push
+            echo "new_article=true" >> $GITHUB_OUTPUT
           fi
+
+      - name: Trigger deploy
+        if: steps.commit.outputs.new_article == 'true'
+        run: |
+          curl -X POST \
+            -H "Accept: application/vnd.github+json" \
+            -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
+            https://api.github.com/repos/${{ github.repository }}/actions/workflows/deploy.yml/dispatches \
+            -d '{"ref":"main"}'
