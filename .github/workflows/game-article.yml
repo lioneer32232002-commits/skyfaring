@@ -2,9 +2,9 @@ name: Auto Game Analysis Article
 
 on:
   schedule:
-    # 台灣時間晚上 11 點（UTC 15:00）和凌晨 1 點（UTC 17:00）觸發
+    # 台灣時間晚上 10 點（UTC 14:00）和凌晨 1 點（UTC 17:00）觸發
     # 適合比賽通常在晚上 7-9 點結束，爬蟲跑完後這裡再生成文章
-    - cron: '0 15,17 * * *'
+    - cron: '0 14,17 * * *'
   workflow_dispatch:
     inputs:
       game_date:

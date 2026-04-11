@@ -286,10 +286,10 @@ def main():
             print(f"找不到 {force_date}（搜尋格式：{fd_normalized}）的比賽紀錄")
             sys.exit(0)
     else:
-        games = get_recent_games(data, days=2)
+        games = get_recent_games(data, days=3)
 
     if not games:
-        print("最近2天沒有新比賽")
+        print("最近3天沒有新比賽")
         sys.exit(0)
 
     game = games[0]
