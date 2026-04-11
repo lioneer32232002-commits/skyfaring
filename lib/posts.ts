@@ -71,9 +71,14 @@ export function getAllPostMetas(): PostMeta[] {
       } as PostMeta;
     });
 
-  return allPosts.sort(
-    (a, b) => new Date(b.updated).getTime() - new Date(a.updated).getTime()
-  );
+  return allPosts.sort((a, b) => {
+    const dateDiff = new Date(b.updated).getTime() - new Date(a.updated).getTime();
+    if (dateDiff !== 0) return dateDiff;
+    // same date: use file mtime as tiebreaker (newer file first)
+    const mtimeA = fs.statSync(path.join(postsDirectory, `${a.slug}.md`)).mtimeMs;
+    const mtimeB = fs.statSync(path.join(postsDirectory, `${b.slug}.md`)).mtimeMs;
+    return mtimeB - mtimeA;
+  });
 }
 
 export async function getPost(slug: string): Promise<Post> {
