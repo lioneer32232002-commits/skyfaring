@@ -20,6 +20,13 @@ const PROJECTS = [
     external: true,
   },
   {
+    title: "解放軍擾台動態追蹤",
+    description: "中線越線、艦機活動每日數據，含趨勢圖與 SITREP 紀錄",
+    url: "https://lioneer32232002-commits.github.io/pla-tracker/",
+    icon: "🛩",
+    external: true,
+  },
+  {
     title: "舊站文章庫",
     description: "Skyfaring 2007年起的個人部落格，武術、旅遊、語言、時事",
     url: "https://yi-tienpan.blogspot.com/",
