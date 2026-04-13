@@ -15,7 +15,8 @@ import anthropic
 import requests
 
 DATA_URL = "https://raw.githubusercontent.com/lioneer32232002-commits/lioneers-web/main/processed_data.json"
-GAME_DATA_BASE_URL = "https://raw.githubusercontent.com/lioneer32232002-commits/lioneers-web/main/data/"
+ALLGAME_URL = "https://raw.githubusercontent.com/lioneer32232002-commits/lioneers-web/main/data/20260402_allgame.txt"
+TPBL_API_BASE = "https://api.tpbl.basketball/api"
 POSTS_DIR = Path(__file__).parent.parent / "content" / "posts"
 LION_TEAM_ID = 4
 
@@ -105,20 +106,47 @@ def article_exists(game_date: str, opponent: str) -> bool:
     return len(existing) > 0
 
 
+def find_game_id(game_date_raw: str) -> int | None:
+    """
+    從 allgame.txt 找出該日期攻城獅比賽的 game_id。
+    """
+    target_date = normalize_date(game_date_raw)  # YYYY-MM-DD
+    try:
+        resp = requests.get(ALLGAME_URL, timeout=15)
+        resp.raise_for_status()
+        schedule = resp.json()
+    except Exception as e:
+        print(f"無法取得賽程資料: {e}")
+        return None
+
+    for g in schedule:
+        if g.get("game_date") != target_date:
+            continue
+        ht_id = g.get("home_team", {}).get("id")
+        at_id = g.get("away_team", {}).get("id")
+        if ht_id == LION_TEAM_ID or at_id == LION_TEAM_ID:
+            return g.get("id")
+    return None
+
+
 def fetch_game_players(game_date_raw: str) -> dict | None:
     """
-    從 lioneers-web 的 data/YYYYMMDD.txt 取得攻城獅當場出賽狀況。
+    找出 game_id → 直接呼叫 TPBL API 取得攻城獅當場出賽狀況。
     回傳 {'played': [...], 'dnp': [...]}，失敗則回傳 None。
     有 time_on_court 欄位 = 有出場；只有基本欄位 = DNP。
     """
-    date_key = to_yyyymmdd(game_date_raw)
-    url = f"{GAME_DATA_BASE_URL}{date_key}.txt"
+    game_id = find_game_id(game_date_raw)
+    if not game_id:
+        print(f"找不到 {game_date_raw} 的比賽 game_id")
+        return None
+
+    print(f"  取得 game_id={game_id}，呼叫 TPBL API...")
     try:
-        resp = requests.get(url, timeout=15)
+        resp = requests.get(f"{TPBL_API_BASE}/games/{game_id}/stats", timeout=20)
         resp.raise_for_status()
         data = resp.json()
     except Exception as e:
-        print(f"無法取得比賽球員數據（{url}）: {e}")
+        print(f"TPBL API 呼叫失敗（game_id={game_id}）: {e}")
         return None
 
     lion_side = None
