@@ -54,8 +54,13 @@ export default function HomePage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       {/* Hero */}
-      <section className="bg-gradient-to-br from-slate-900 via-slate-800 to-sky-900 text-white">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 py-20 sm:py-28">
+      <section className="relative text-white overflow-hidden">
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: `url(${BASE_PATH}/images/homepage-hero.jpg)` }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-br from-slate-900/92 via-slate-900/75 to-sky-900/80" />
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 py-20 sm:py-28 relative">
           <div className="flex items-center gap-3 mb-4">
             <span className="text-sky-400 font-semibold tracking-widest text-sm uppercase">Skyfaring</span>
           </div>
