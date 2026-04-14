@@ -1,14 +1,14 @@
 ---
 title: "最弱的那個人，決定了這支五人組能不能贏"
 author: "Skyfaring"
-date: "2026-04-13"
-updated: "2026-04-13"
+date: "2026-04-14"
+updated: "2026-04-14"
 slug: "nba-lineup-anc-prediction"
 tags: ["NBA", "數據分析", "籃球", "機器學習", "陣容分析"]
 heroImage: "/images/nba-lineup-hero.jpg"
-heroAlt: "數據分析儀表板"
-heroCredit: "Luke Chesser / Unsplash"
-heroCreditUrl: "https://unsplash.com/photos/charts-on-black-wooden-table-JKUTrJ4vK00"
+heroAlt: "鳥瞰籃球場"
+heroCredit: "Thomas Briard / Unsplash"
+heroCreditUrl: "https://unsplash.com/photos/blue-and-white-basketball-court-jRUIoUkAdTw"
 excerpt: "一篇 NBA 陣容預測論文的核心發現：衡量一個五人組能不能打贏，最重要的指標不是最強的人，而是最弱的那個。"
 ---
 
