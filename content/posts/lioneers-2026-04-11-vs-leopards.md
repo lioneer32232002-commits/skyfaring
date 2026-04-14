@@ -5,10 +5,10 @@ date: "2026-04-11"
 updated: "2026-04-11"
 slug: "lioneers-2026-04-11-vs-leopards"
 tags: ["攻城獅", "TPBL", "籃球", "雲豹", "賽事分析"]
-heroImage: "/images/lioneers-hero.jpg"
-heroAlt: "籃球場內景"
+heroImage: "/images/lioneers-win.jpg"
+heroAlt: "球員扣籃"
 heroCredit: "Markus Spiske / Unsplash"
-heroCreditUrl: "https://unsplash.com/photos/people-inside-a-basketball-gym-J_tbkGWxCH0"
+heroCreditUrl: "https://unsplash.com/photos/1577471488278-16eec37ffcc2"
 excerpt: "攻城獅 2026-04-11 主場對上雲豹，79-76 勝。數據背後的故事。"
 ---
 
