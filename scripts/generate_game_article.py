@@ -344,6 +344,18 @@ def save_article(game: dict, content: str):
     tags = ["攻城獅", "TPBL", "籃球", short_opp, "賽事分析"]
     tags_str = json.dumps(tags, ensure_ascii=False)
 
+    # 依勝負選擇 hero 圖：勝場用扣籃圖，敗場用暗色籃框圖
+    if game.get("won", False):
+        hero_image = "/images/lioneers-win.jpg"
+        hero_alt = "球員扣籃"
+        hero_credit = "Markus Spiske / Unsplash"
+        hero_credit_url = "https://unsplash.com/photos/1577471488278-16eec37ffcc2"
+    else:
+        hero_image = "/images/lioneers-hero.jpg"
+        hero_alt = "籃球場內景"
+        hero_credit = "Markus Spiske / Unsplash"
+        hero_credit_url = "https://unsplash.com/photos/people-inside-a-basketball-gym-J_tbkGWxCH0"
+
     frontmatter = f"""---
 title: "{title}"
 author: "Skyfaring"
@@ -351,10 +363,10 @@ date: "{date}"
 updated: "{date}"
 slug: "{slug}"
 tags: {tags_str}
-heroImage: "/images/lioneers-hero.jpg"
-heroAlt: "籃球場內景"
-heroCredit: "Markus Spiske / Unsplash"
-heroCreditUrl: "https://unsplash.com/photos/people-inside-a-basketball-gym-J_tbkGWxCH0"
+heroImage: "{hero_image}"
+heroAlt: "{hero_alt}"
+heroCredit: "{hero_credit}"
+heroCreditUrl: "{hero_credit_url}"
 excerpt: "攻城獅 {date} {home_away}對上{short_opp}，{lions_score}-{opp_score} {result}。數據背後的故事。"
 ---
 
