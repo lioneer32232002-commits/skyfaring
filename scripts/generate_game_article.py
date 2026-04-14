@@ -344,17 +344,22 @@ def save_article(game: dict, content: str):
     tags = ["攻城獅", "TPBL", "籃球", short_opp, "賽事分析"]
     tags_str = json.dumps(tags, ensure_ascii=False)
 
-    # 依勝負選擇 hero 圖：勝場用扣籃圖，敗場用暗色籃框圖
-    if game.get("won", False):
-        hero_image = "/images/lioneers-win.jpg"
-        hero_alt = "球員扣籃"
-        hero_credit = "Markus Spiske / Unsplash"
-        hero_credit_url = "https://unsplash.com/photos/1577471488278-16eec37ffcc2"
-    else:
-        hero_image = "/images/lioneers-hero.jpg"
-        hero_alt = "籃球場內景"
-        hero_credit = "Markus Spiske / Unsplash"
-        hero_credit_url = "https://unsplash.com/photos/people-inside-a-basketball-gym-J_tbkGWxCH0"
+    # 依勝負選擇 hero 圖，同勝/敗各有多張輪替，用日期 hash 決定，確保每篇不同
+    WIN_HEROES = [
+        {"image": "/images/lioneers-win.jpg",  "alt": "球員扣籃",     "creditUrl": "https://unsplash.com/photos/1577471488278-16eec37ffcc2"},
+        {"image": "/images/lioneers-win2.jpg", "alt": "球員扣籃特寫", "creditUrl": "https://unsplash.com/photos/1608245449230-4ac19066d2d0"},
+    ]
+    LOSS_HEROES = [
+        {"image": "/images/lioneers-hero.jpg", "alt": "籃球場內景", "creditUrl": "https://unsplash.com/photos/people-inside-a-basketball-gym-J_tbkGWxCH0"},
+    ]
+    pool = WIN_HEROES if game.get("won", False) else LOSS_HEROES
+    # 用比賽日期字串的 hash 值選圖，同一場永遠選同一張
+    idx = hash(date) % len(pool)
+    chosen = pool[idx]
+    hero_image = chosen["image"]
+    hero_alt = chosen["alt"]
+    hero_credit = "Unsplash"
+    hero_credit_url = chosen["creditUrl"]
 
     frontmatter = f"""---
 title: "{title}"
