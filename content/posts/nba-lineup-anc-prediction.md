@@ -66,7 +66,3 @@ source_url: "https://arxiv.org/abs/2303.04963"
 七個評審都說好，才算真的好。一個漏洞，就足以讓整組垮掉。
 
 這件事不只在籃球裡成立。
-
----
-
-*本文資料來源：[Kolb, A., & Cortez, P. (2023). Predicting elite NBA lineups using order statistics. arXiv:2303.04963](https://arxiv.org/abs/2303.04963)。球隊歷史數據參考 [Basketball-Reference.com](https://www.basketball-reference.com)。*
