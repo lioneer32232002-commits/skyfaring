@@ -39,7 +39,7 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "WebSite",
   name: "Skyfaring",
-  url: "https://lioneer32232002-commits.github.io/skyfaring/",
+  url: process.env.NEXT_PUBLIC_SITE_URL ? `${process.env.NEXT_PUBLIC_SITE_URL}/` : "https://skyfaring.pages.dev/",
   description: "運動數據分析、飛航安全數據分析、詠春拳、歷史與軍事閱讀心得分享。",
   inLanguage: "zh-TW",
 };

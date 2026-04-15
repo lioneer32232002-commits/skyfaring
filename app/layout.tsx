@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
-const SITE_URL = "https://lioneer32232002-commits.github.io/skyfaring";
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://skyfaring.pages.dev";
 const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 const SITE_NAME = "Skyfaring";
 const SITE_DESC = "運動數據分析、飛航安全數據分析、詠春拳、歷史與軍事閱讀心得分享。";
