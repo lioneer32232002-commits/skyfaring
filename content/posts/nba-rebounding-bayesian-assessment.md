@@ -75,7 +75,3 @@ source_url: "https://doi.org/10.1515/jqas-2023-0097"
 當一支球隊想要補強籃板時，真正該問的問題不只是「這個球員個人搶了幾個籃板」，而是「這個球員讓球隊整體贏得籃板大戰的機率提升了多少」。這兩件事，有時候方向一致，但很多時候並不一樣。
 
 有時候，最好的籃板者，是那個讓別人搶到籃板的人。
-
----
-
-*本文資料來源：[Kiriazis, N., Genest, C., & Leblanc, A. (2025). A Bayesian two-stage framework for lineup-independent assessment of individual rebounding ability in the NBA. Journal of Quantitative Analysis in Sports, 21(4), 303–326.](https://doi.org/10.1515/jqas-2023-0097)*
