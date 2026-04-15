@@ -7,7 +7,7 @@ export async function generateStaticParams() {
   return getAllSlugs().map((slug) => ({ slug }));
 }
 
-const SITE_URL = "https://lioneer32232002-commits.github.io/skyfaring";
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://skyfaring.pages.dev";
 const DEFAULT_OG = `${SITE_URL}/images/og-default.png`;
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {

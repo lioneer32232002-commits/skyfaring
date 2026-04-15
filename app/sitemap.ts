@@ -3,7 +3,7 @@ import { getAllPostMetas } from "@/lib/posts";
 
 export const dynamic = "force-static";
 
-const SITE_URL = "https://lioneer32232002-commits.github.io/skyfaring";
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://skyfaring.pages.dev";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const posts = getAllPostMetas();
