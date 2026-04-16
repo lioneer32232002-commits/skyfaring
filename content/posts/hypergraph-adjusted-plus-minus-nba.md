@@ -5,7 +5,12 @@ date: "2026-04-16"
 slug: "hypergraph-adjusted-plus-minus-nba"
 tags: ["NBA", "數據分析", "籃球", "統計", "進階數據"]
 excerpt: "傳統的 Adjusted Plus-Minus 只能告訴你一個球員獨自的價值，但它沒辦法告訴你 Harden 和 Embiid 搭在一起是不是特別厲害。這篇論文用超圖理論補上這個缺口，讓雙人組、三人組、整套陣容都能同時被評分。"
-source: "Josephs, N. & Upton, E. (2025). Hypergraph adjusted plus-minus. arXiv:2403.20214v3. https://arxiv.org/abs/2403.20214"
+heroImage: "/images/nba-hypergraph-lineup.jpg"
+heroAlt: "籃球賽場上兩隊多名球員在籃框附近的攻防走位"
+heroCredit: "Logan Weaver | Unsplash"
+heroCreditUrl: "https://unsplash.com/photos/photography-of-men-playing-basketball-4iYu1Un2TD0"
+source: "Josephs, N. & Upton, E. (2025). Hypergraph adjusted plus-minus. arXiv:2403.20214v3."
+source_url: "https://arxiv.org/abs/2403.20214"
 ---
 
 你有沒有想過這個問題：Embiid 是 MVP 等級的球員，Harden 也是進攻機器，但他們兩個加在一起，是 1 + 1 = 2，還是 1 + 1 > 2？
