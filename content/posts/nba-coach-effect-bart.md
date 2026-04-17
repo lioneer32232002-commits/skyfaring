@@ -5,8 +5,8 @@ date: "2026-04-17"
 slug: "nba-coach-effect-bart"
 tags: ["NBA", "數據分析", "籃球", "統計", "進階數據", "教練"]
 excerpt: "格雷格‧波波維奇年薪高達 1600 萬美元，但他的勝率有多少是球員的功勞、多少是他自己的本事？這篇論文用單調貝葉斯迴歸樹，在控制球員實力之後，第一次讓「戰術貢獻」可以被獨立測量。"
-heroImage: "/images/nba-coach-sideline.jpg"
-heroAlt: "NBA 教練站在場邊指揮球員，觀眾席燈光璀璨"
+heroImage: "/images/basketball-court-hero.jpg"
+heroAlt: "NBA 籃球場俯視角度，場中線與三分線清晰可見"
 source: "Cannon, A. J., Fisher, J. D., Fellingham, G. W., & Page, G. L. (2025). Analyzing the effects of NBA head coaches. Journal of Quantitative Analysis in Sports."
 source_url: "https://doi.org/10.1515/jqas-2025-0025"
 ---
