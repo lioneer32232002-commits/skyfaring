@@ -1,6 +1,18 @@
+import type { Metadata } from "next";
 import { getAllPostMetas } from "@/lib/posts";
 import ArticleCard from "@/components/ArticleCard";
 import ViewCounter from "@/components/ViewCounter";
+
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://skyfaring.pages.dev";
+
+export const metadata: Metadata = {
+  openGraph: {
+    images: [{ url: `${SITE_URL}/images/homepage-hero.jpg`, width: 1200, height: 800, alt: "Skyfaring" }],
+  },
+  twitter: {
+    images: [`${SITE_URL}/images/homepage-hero.jpg`],
+  },
+};
 
 const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
