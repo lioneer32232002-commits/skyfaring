@@ -95,7 +95,7 @@ export default function RootLayout({
                 <p className="text-xs font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-3">專案</p>
                 <ul className="space-y-2 text-xs text-slate-400 dark:text-slate-500">
                   <li><a href="/blog/" className="hover:text-sky-500">Skyfaring 文章</a></li>
-                  <li><a href="https://lioneer32232002-commits.github.io/lioneers-web/" target="_blank" rel="noopener noreferrer" className="hover:text-sky-500">攻城獅數據站 ↗</a></li>
+                  <li><a href="https://lioneers-web.pages.dev/" target="_blank" rel="noopener noreferrer" className="hover:text-sky-500">攻城獅數據站 ↗</a></li>
                   <li><a href="https://pla-tracker.pages.dev/" target="_blank" rel="noopener noreferrer" className="hover:text-sky-500">解放軍擾台動態追蹤 ↗</a></li>
                   <li><a href="https://yi-tienpan.blogspot.com/" target="_blank" rel="noopener noreferrer" className="hover:text-sky-500">舊站文章庫 ↗</a></li>
                 </ul>

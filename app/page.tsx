@@ -27,7 +27,7 @@ const PROJECTS = [
   {
     title: "新竹攻城獅數據站",
     description: "新竹攻城獅數據儀表板，含勝負預測、球員效率分析",
-    url: "https://lioneer32232002-commits.github.io/lioneers-web/",
+    url: "https://lioneers-web.pages.dev/",
     icon: "🦁",
     external: true,
   },
