@@ -34,7 +34,7 @@ const PROJECTS = [
   {
     title: "解放軍擾台動態追蹤",
     description: "中線越線、艦機活動每日數據，含趨勢圖與 SITREP 紀錄",
-    url: "https://lioneer32232002-commits.github.io/pla-tracker/",
+    url: "https://pla-tracker.pages.dev/",
     icon: "🛩",
     external: true,
   },
