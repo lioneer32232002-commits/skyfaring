@@ -108,6 +108,7 @@ export async function getPost(slug: string): Promise<Post> {
     heroAlt: data.heroAlt,
     heroCredit: data.heroCredit,
     heroCreditUrl: data.heroCreditUrl,
+    highlight: data.highlight,
     source: data.source,
     source_url: data.source_url,
     references: data.references ?? [],
