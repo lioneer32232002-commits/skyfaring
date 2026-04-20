@@ -35,6 +35,7 @@ export interface PostMeta {
   heroAlt?: string;
   heroCredit?: string;
   heroCreditUrl?: string;
+  highlight?: string;
   source?: string;
   source_url?: string;
   references?: { title: string; url?: string }[];

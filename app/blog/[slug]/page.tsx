@@ -136,6 +136,13 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
         {post.title}
       </h1>
 
+      {/* Highlight */}
+      {post.highlight && (
+        <blockquote className="mb-6 pl-4 border-l-4 border-sky-400 bg-sky-50 dark:bg-sky-950 dark:border-sky-500 py-3 pr-4 rounded-r-lg text-slate-700 dark:text-slate-300 text-base leading-relaxed italic">
+          {post.highlight}
+        </blockquote>
+      )}
+
       {/* Author + meta */}
       <div className="flex flex-wrap items-center gap-4 text-sm text-slate-500 dark:text-slate-400 pb-6 mb-8 border-b border-slate-200 dark:border-slate-700">
         <span className="flex items-center gap-1.5">
