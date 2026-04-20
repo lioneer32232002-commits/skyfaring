@@ -21,6 +21,12 @@ export function addPangu(html: string): string {
   });
 }
 
+export function addPanguText(text: string): string {
+  return text
+    .replace(/([\u4e00-\u9fff\u3400-\u4dbf])([A-Za-z0-9])/g, "$1 $2")
+    .replace(/([A-Za-z0-9])([\u4e00-\u9fff\u3400-\u4dbf])/g, "$1 $2");
+}
+
 const postsDirectory = path.join(process.cwd(), "content/posts");
 
 export interface PostMeta {

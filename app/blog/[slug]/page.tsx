@@ -1,4 +1,4 @@
-import { getAllSlugs, getPost } from "@/lib/posts";
+import { getAllSlugs, getPost, addPanguText } from "@/lib/posts";
 import ViewCounter from "@/components/ViewCounter";
 
 const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
@@ -139,7 +139,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
       {/* Highlight */}
       {post.highlight && (
         <blockquote className="mb-6 pl-4 border-l-4 border-sky-400 bg-sky-50 dark:bg-sky-950 dark:border-sky-500 py-3 pr-4 rounded-r-lg text-slate-700 dark:text-slate-300 text-base leading-relaxed italic">
-          {post.highlight}
+          {addPanguText(post.highlight)}
         </blockquote>
       )}
 
