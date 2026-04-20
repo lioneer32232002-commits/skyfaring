@@ -10,6 +10,7 @@ heroAlt: "鳥瞰籃球場"
 heroCredit: "Thomas Briard / Unsplash"
 heroCreditUrl: "https://unsplash.com/photos/blue-and-white-basketball-court-jRUIoUkAdTw"
 excerpt: "一篇 NBA 陣容預測論文的核心發現：衡量一個五人組能不能打贏，最重要的指標不是最強的人，而是最弱的那個。"
+highlight: "預測力最強的單一變數是 PMM(1)——五人組裡 Plus/Minus 最低的那個球員的數值，不是核心球星有多強，而是最薄弱的環節有多弱。"
 source: "Kolb & Cortez (2023), Predicting elite NBA lineups using order statistics, arXiv:2303.04963"
 source_url: "https://arxiv.org/abs/2303.04963"
 ---

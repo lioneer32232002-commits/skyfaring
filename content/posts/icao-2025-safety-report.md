@@ -10,6 +10,7 @@ heroAlt: "夜晚停機坪上的客機"
 heroCredit: "Ashim D'Silva on Unsplash"
 heroCreditUrl: "https://unsplash.com/photos/wKlHsooRVbg"
 excerpt: "2024年全球民航共發生95起事故、296人罹難，是近六年來最嚴重的一年。三起重大事故佔了94%的死亡人數，亂流成為最常見的事故類型。本文整理ICAO《2025年全球航空安全報告》的重點數據與分析。"
+highlight: "2024 年 296 名罹難者中有 279 人（94.3%）集中在三起重大事故；濟州航空事故（179 人罹難）是 2024 年單一最嚴重空難，也是南韓史上死亡人數最多的航空事故。"
 source: "ICAO, State of Global Aviation Safety — 2025 Edition"
 source_url: "https://www.icao.int/safety/Pages/Safety-Report.aspx"
 ---

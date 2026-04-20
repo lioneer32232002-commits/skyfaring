@@ -5,6 +5,7 @@ date: "2026-04-16"
 slug: "hypergraph-adjusted-plus-minus-nba"
 tags: ["NBA", "數據分析", "籃球", "統計", "進階數據"]
 excerpt: "傳統的 Adjusted Plus-Minus 只能告訴你一個球員獨自的價值，但它沒辦法告訴你 Harden 和 Embiid 搭在一起是不是特別厲害。這篇論文用超圖理論補上這個缺口，讓雙人組、三人組、整套陣容都能同時被評分。"
+highlight: "HAPM 和 LAPM 把個人評估和組合評估放在同一個迴歸框架裡，讓你可以同時問『Embiid 個人值多少分？』和『Embiid + Harden 這個組合值多少分？』，而兩個問題的答案是一致的、不矛盾的。"
 heroImage: "/images/nba-hypergraph-lineup.jpg"
 heroAlt: "籃球賽場上兩隊多名球員在籃框附近的攻防走位"
 heroCredit: "Logan Weaver | Unsplash"

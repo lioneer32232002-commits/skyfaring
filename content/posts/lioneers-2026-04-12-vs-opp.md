@@ -10,6 +10,7 @@ heroAlt: "籃球場內景"
 heroCredit: "Markus Spiske / Unsplash"
 heroCreditUrl: "https://unsplash.com/photos/people-inside-a-basketball-gym-J_tbkGWxCH0"
 excerpt: "攻城獅 2026-04-12 主場對上福爾摩沙夢想家，85-94 負。數據背後的故事。"
+highlight: "下半場加起來才 21 分，Q3 攻城獅只得了 11 分，對手得了 30 分；Q4 更慘，10 分，投籃命中率 20%，三分球 0/12。"
 ---
 
 我一直覺得看節數據比看最終比分更誠實。最終比分是 85:94，看起來差距還好，輸九分嘛，但你如果把四節拆開來看，Q3和Q4的數字會讓你背脊發涼。Q3攻城獅只得了11分，對手得了30分；Q4更慘，10分，投籃命中率20%，三分球0/12，下半場加起來才21分。那不是輸在比分，是輸在整個下半場。

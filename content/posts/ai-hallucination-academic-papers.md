@@ -10,6 +10,7 @@ heroAlt: "有人指著筆電螢幕上的內容"
 heroCredit: "John Schnobrich / Unsplash"
 heroCreditUrl: "https://unsplash.com/photos/person-using-laptop-computer-FlPc9_VocJ4"
 excerpt: "我請 Gemini 導讀一篇 SCI 論文，它給了我作者、期刊、核心數據、對我網站的客製化建議。那篇論文根本不存在。更可怕的是，整個過程完整到我完全沒有起疑。"
+highlight: "GPT-3.5 在生成學術引用時有約 55% 是編造的，即使是更新的 GPT-4 也有 18%；2025 年 NeurIPS 和 2026 年 ICLR 都有論文夾帶了 AI 幻覺出來的假引用，且通過了同儕審查。"
 source: "Nature Scientific Reports, ChatGPT Citation Fabrication Study (2023)"
 source_url: "https://www.nature.com/articles/s41598-023-41032-5"
 ---

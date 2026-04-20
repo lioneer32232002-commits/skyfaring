@@ -10,6 +10,7 @@ heroAlt: "籃球場上的激烈對抗"
 heroCredit: "Unsplash"
 heroCreditUrl: "https://unsplash.com/photos/nba-9Z6WrE7zqtI"
 excerpt: "Andre Drummond 年年霸佔籃板榜，Steven Adams 卻默默無聞。但行家都說 Adams 才是真正讓球隊贏得籃板大戰的人。這篇論文用統計方法，把這個直覺說清楚了。"
+highlight: "Andre Drummond 年年蟬聯籃板榜前幾名，但研究顯示他的 β 能力其實相當普通，真正貢獻的主要是 γ 能力；Steven Adams 個人籃板數字並不亮眼，但他的 β 能力非常突出——他讓球隊整體贏得籃板的機率大幅提升。"
 source: "Kiriazis, N., Genest, C., & Leblanc, A. (2025). A Bayesian two-stage framework for lineup-independent assessment of individual rebounding ability in the NBA. Journal of Quantitative Analysis in Sports, 21(4), 303–326."
 source_url: "https://doi.org/10.1515/jqas-2023-0097"
 ---

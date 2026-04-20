@@ -10,6 +10,7 @@ heroAlt: "球員扣籃"
 heroCredit: "Markus Spiske / Unsplash"
 heroCreditUrl: "https://unsplash.com/photos/1577471488278-16eec37ffcc2"
 excerpt: "攻城獅 2026-04-08 主場對上特攻，117-100 勝。這21分多出來的，從哪裡冒出來的？"
+highlight: "第一節的 39 分等於四節 156 分的步調，那是 NBA 等級的進攻效率；禁區得分 38 分搭配二次進攻得分 15 分，加在一起 53 分，幾乎佔了總得分的 45%。"
 ---
 
 117分。
