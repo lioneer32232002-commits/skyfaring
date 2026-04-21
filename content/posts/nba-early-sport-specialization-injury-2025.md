@@ -8,6 +8,10 @@ excerpt: "2025 年發表的研究追蹤 318 名 NBA 選秀前 30 順位球員，
 highlight: "工作量與受傷次數在單項專精球員身上有顯著正相關（r = 0.37），但在多項運動球員身上這個關聯完全消失（r = 0.14）。這代表多項運動球員在高負荷下具有更好的抗壓韌性。"
 source: "Sang, L., Bach, K., Feeley, B. T., & Pandya, N. K. (2025). Effects of Early Sport Specialization on Injury Load Management and Athletic Success of National Basketball Association Players. The Orthopaedic Journal of Sports Medicine, 13(1)."
 source_url: "https://doi.org/10.1177/23259671241304732"
+heroImage: "/images/nba-early-sport-specialization-football.jpg"
+heroAlt: "美式足球球員在草地上奔跑"
+heroCredit: "Quino Al | Unsplash"
+heroCreditUrl: "https://unsplash.com/photos/football-players-in-red-jersey-shirt-and-red-pants-running-on-green-grass-field-during-daytime-F_cJdcb5bSU"
 ---
 
 你的孩子從小就只打籃球，每天練習、參加聯賽、放棄其他運動——這樣做真的能讓他進 NBA 嗎？還是說，這條路反而讓他更早受傷、更快燃燒殆盡？
