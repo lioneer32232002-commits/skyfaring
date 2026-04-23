@@ -1,6 +1,6 @@
 ---
 title: "解放軍在對岸排練的距離，恰好是台北到高雄"
-author: "潘釔天"
+author: "AdamP"
 date: "2026-04-23"
 slug: "pla-amphibious-taiwan-west-coast-2025"
 tags: ["台灣", "中國", "軍事", "兩棲作戰"]
@@ -11,6 +11,7 @@ heroCredit: "ingeniSPACE / Umbra / Planet Labs"
 heroCreditUrl: "https://digital-commons.usnwc.edu/cmsi-maritime-reports/52"
 source: "Jason Wang, Marvin Hamor Bernardo, Pei-Jhen Wu, and Andrew S. Erickson, \"China Maritime Report #52: Everything Everywhere All At Once: The Growing Complexity of PLA Amphibious Exercises,\" China Maritime Studies Institute, U.S. Naval War College, April 2026."
 source_url: "https://digital-commons.usnwc.edu/cmsi-maritime-reports/52"
+highlight: "報告的作者群將演習的地理配置疊加到台灣西岸地圖上。北端的後蔡灣和淺湖灣距離約 15 公里，對應嘉義一帶；厚港灣在北側再往南 60 公里；最長的那段距離，從厚港灣到紅海灣，約 245 公里；加上南端的小漠港，合計約 360 公里。將這條線翻轉後貼合台灣的海岸走向，位置對應大致落在台南至高雄的南段，延伸至桃園、新竹一帶的北段。"
 ---
 
 2025 年 8 月 23 日早上 8 點半，衛星影像捕捉到一個尋常的景象。
@@ -35,7 +36,7 @@ source_url: "https://digital-commons.usnwc.edu/cmsi-maritime-reports/52"
 
 台北到高雄，約為 360 公里。
 
-報告的作者群將演習的地理配置疊加到台灣西岸地圖上（見下圖）。北端的後蔡灣和淺湖灣距離約 15 公里，對應嘉義一帶；厚港灣在北側再往南 60 公里；最長的那段距離，從厚港灣到紅海灣，約 245 公里；加上南端的小漠港，合計約 360 公里。將這條線翻轉後貼合台灣的海岸走向，位置對應大致落在台南至高雄的南段，延伸至桃園、新竹一帶的北段。
+報告的作者群將演習的地理配置疊加到台灣西岸地圖上。北端的後蔡灣和淺湖灣距離約 15 公里，對應嘉義一帶；厚港灣在北側再往南 60 公里；最長的那段距離，從厚港灣到紅海灣，約 245 公里；加上南端的小漠港，合計約 360 公里。將這條線翻轉後貼合台灣的海岸走向，位置對應大致落在台南至高雄的南段，延伸至桃園、新竹一帶的北段。
 
 ![Figure 16：2025 年演習地點疊加台灣西岸示意圖，ingeniSPACE 分析。來源：Wang et al.（2026），China Maritime Report #52。](/images/cmr52/cmr52_page22_img2.jpeg)
 
