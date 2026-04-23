@@ -109,11 +109,6 @@ export default function RootLayout({
                       <span>✉</span> wizard32232002@gmail.com
                     </a>
                   </li>
-                  <li>
-                    <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-sky-500 flex items-center gap-1">
-                      <span>f</span> Facebook
-                    </a>
-                  </li>
                 </ul>
               </div>
             </div>
