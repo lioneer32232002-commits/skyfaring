@@ -108,16 +108,16 @@ body {
 }
 
 .prose p:has(> img) {
-  margin-bottom: 0.25rem;
+  margin-bottom: 2.5rem;
 }
 
-.prose p:has(> img) + p > em:only-child {
+.prose p > img ~ em {
   display: block;
-  font-size: 0.8rem;
+  font-size: 0.78rem;
   font-style: normal;
   color: #94a3b8;
-  margin-top: 0;
-  margin-bottom: 2rem;
+  margin-top: 0.4rem;
+  line-height: 1.5;
 }
 
 .line-clamp-3 {
@@ -138,5 +138,5 @@ body {
   .prose strong { color: #f1f5f9; }
   .prose hr { border-color: #334155; }
   .prose a { color: #38bdf8; }
-  .prose p:has(> img) + p > em:only-child { color: #64748b; }
+  .prose p > img ~ em { color: #64748b; }
 }
