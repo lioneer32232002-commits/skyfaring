@@ -1,5 +1,5 @@
 ---
-title: "高中只打籃球，進 NBA 反而更容易受傷？論文解析早期單項專精的代價"
+title: "高中只打籃球，進 NBA 反而更容易受傷？論文解析早期單項專精的代價。"
 author: "Skyfaring"
 date: "2026-04-21"
 slug: "nba-early-sport-specialization-injury-2025"
@@ -79,7 +79,7 @@ heroCreditUrl: "https://unsplash.com/photos/football-players-in-red-jersey-shirt
 
 受傷部位方面，兩組最常見的傷害都是**踝關節**（整體 311 次），其次是**膝關節**（197 次），與 NBA 其他大型流行病學研究的結果一致。
 
-## 結果三：工作量越重，單項專精球員越容易受傷
+## 結果三：工作量越重，單項專精球員越容易受傷。
 
 這是這篇研究最關鍵的發現：
 
