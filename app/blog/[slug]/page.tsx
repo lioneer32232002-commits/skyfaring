@@ -1,4 +1,4 @@
-import { getAllSlugs, getPost } from "@/lib/posts";
+import { getAllSlugs, getPost, addPanguText } from "@/lib/posts";
 import ViewCounter from "@/components/ViewCounter";
 
 const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
@@ -7,7 +7,7 @@ export async function generateStaticParams() {
   return getAllSlugs().map((slug) => ({ slug }));
 }
 
-const SITE_URL = "https://lioneer32232002-commits.github.io/skyfaring";
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://skyfaring.pages.dev";
 const DEFAULT_OG = `${SITE_URL}/images/og-default.png`;
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
@@ -135,6 +135,13 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
       <h1 className="text-3xl sm:text-4xl font-bold text-slate-800 dark:text-slate-100 leading-tight mb-6">
         {post.title}
       </h1>
+
+      {/* Highlight */}
+      {post.highlight && (
+        <blockquote className="mb-6 pl-4 border-l-4 border-sky-400 bg-sky-50 dark:bg-sky-950 dark:border-sky-500 py-3 pr-4 rounded-r-lg text-slate-700 dark:text-slate-300 text-base leading-relaxed italic">
+          {addPanguText(post.highlight)}
+        </blockquote>
+      )}
 
       {/* Author + meta */}
       <div className="flex flex-wrap items-center gap-4 text-sm text-slate-500 dark:text-slate-400 pb-6 mb-8 border-b border-slate-200 dark:border-slate-700">

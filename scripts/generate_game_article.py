@@ -15,12 +15,15 @@ import anthropic
 import requests
 
 DATA_URL = "https://raw.githubusercontent.com/lioneer32232002-commits/lioneers-web/main/processed_data.json"
+ALLGAME_URL = "https://raw.githubusercontent.com/lioneer32232002-commits/lioneers-web/main/data/20260402_allgame.txt"
+TPBL_API_BASE = "https://api.tpbl.basketball/api"
 POSTS_DIR = Path(__file__).parent.parent / "content" / "posts"
+LION_TEAM_ID = 4
 
 STYLE_PROMPT = """你是一個愛打籃球、練詠春、對數字很敏感的台灣人，在個人部落格寫了快20年的文章。
 
 寫作風格範例（開頭）：
-「在自從在疫情期間看了 Coach Fui 的籃球教學影片，實際練習並應用在打街球至今，唯一的心得就是，套句我的詠春拳師傅黃英哲常講的：這真是好東西。但如果把 Coach Fui 的好東西練偏了，會讓人有幻覺。近日打球被一個蒙古來的交換生打爆，他應該是才 20歲，在他的防守下，我有機會切入都但放槍，還被抄了幾球，真幹，回來的路上我一直在想如果是 Coach Fui 會怎麽做。」
+「在自從在疫情期間看了 Coach Fui 的籃球教學影片，實際練習並應用在打球至今，唯一的心得就是，套句我的詠春拳師傅黃英哲常講的：這真是好東西。但如果把 Coach Fui 的好東西練偏了，會讓人有幻覺。近日打球被一個蒙古來的交換生打爆，他應該是才 20歲，在他的防守下，我有機會切入都但放槍，還被抄了幾球，真幹，回來的路上我一直在想如果是 Coach Fui 會怎麼做。」
 
 從上面範例可以看出，寫作規則如下：
 - 一定用第一人稱，從一個非常具體的個人觀察或感受開場，不能是「今天攻城獅打了一場...」
@@ -32,7 +35,8 @@ STYLE_PROMPT = """你是一個愛打籃球、練詠春、對數字很敏感的�
 - 絕對禁止：破折號（——）、「首先」「其次」「最後」、「值得注意的是」「不得不說」
 - 冒號只能用在比分（如 117:100）或標題格式，不能用在中文句子中間做停頓（例如「重點是：...」「結果是：...」這種是AI味）
 - 聯盟名稱一律用 TPBL，不要用 PLG
-- 用台灣慣用語：「本季」（不是「本賽季」）、「教練」（不是「主教練」）、「比賽」（不是「賽事」）、「得分」（不是「積分」）"""
+- 用台灣慣用語：「本季」（不是「本賽季」）、「教練」（不是「主教練」）、「比賽」（不是「賽事」）、「得分」（不是「積分」）
+- 絕對禁止使用「街球」「半場街球」或任何非職業籃球相關的比喻來描述職業比賽"""
 
 OPPONENT_NAME_MAP = {
     "新北中信特攻": "特攻",
@@ -75,6 +79,11 @@ def normalize_date(raw: str) -> str:
     return parse_game_date(raw).strftime("%Y-%m-%d")
 
 
+def to_yyyymmdd(raw: str) -> str:
+    """統一轉成 YYYYMMDD 格式（用於 data/ 檔名）"""
+    return parse_game_date(raw).strftime("%Y%m%d")
+
+
 def get_recent_games(data: dict, days: int = 3) -> list:
     """回傳最近 N 天內的比賽（通常是 1-2 場）"""
     games = data.get("games", [])
@@ -97,9 +106,92 @@ def article_exists(game_date: str, opponent: str) -> bool:
     return len(existing) > 0
 
 
-def build_game_context(game: dict, data: dict) -> str:
+def find_game_id(game_date_raw: str) -> int | None:
+    """
+    從 allgame.txt 找出該日期攻城獅比賽的 game_id。
+    """
+    target_date = normalize_date(game_date_raw)  # YYYY-MM-DD
+    try:
+        resp = requests.get(ALLGAME_URL, timeout=15)
+        resp.raise_for_status()
+        schedule = resp.json()
+    except Exception as e:
+        print(f"無法取得賽程資料: {e}")
+        return None
+
+    for g in schedule:
+        if g.get("game_date") != target_date:
+            continue
+        ht_id = g.get("home_team", {}).get("id")
+        at_id = g.get("away_team", {}).get("id")
+        if ht_id == LION_TEAM_ID or at_id == LION_TEAM_ID:
+            return g.get("id")
+    return None
+
+
+def fetch_game_players(game_date_raw: str) -> dict | None:
+    """
+    找出 game_id → 直接呼叫 TPBL API 取得攻城獅當場出賽狀況。
+    回傳 {'played': [...], 'dnp': [...]}，失敗則回傳 None。
+    有 time_on_court 欄位 = 有出場；只有基本欄位 = DNP。
+    """
+    game_id = find_game_id(game_date_raw)
+    if not game_id:
+        print(f"找不到 {game_date_raw} 的比賽 game_id")
+        return None
+
+    print(f"  取得 game_id={game_id}，呼叫 TPBL API...")
+    try:
+        resp = requests.get(f"{TPBL_API_BASE}/games/{game_id}/stats", timeout=20)
+        resp.raise_for_status()
+        data = resp.json()
+    except Exception as e:
+        print(f"TPBL API 呼叫失敗（game_id={game_id}）: {e}")
+        return None
+
+    lion_side = None
+    for side in ["home_team", "away_team"]:
+        if data.get(side, {}).get("id") == LION_TEAM_ID:
+            lion_side = data[side]
+            break
+
+    if not lion_side:
+        print(f"找不到攻城獅（id={LION_TEAM_ID}）的比賽資料")
+        return None
+
+    players_total = lion_side.get("players", {}).get("total", {})
+    played = []
+    dnp = []
+
+    for _, p in players_total.items():
+        if not isinstance(p, dict):
+            continue
+        name = p.get("name", "")
+        if not name:
+            continue
+        if "time_on_court" in p:
+            played.append({
+                "name": name,
+                "number": p.get("number", ""),
+                "score": p.get("score", 0),
+                "rebounds": p.get("rebounds", 0),
+                "assists": p.get("assists", 0),
+                "time_on_court": p.get("time_on_court", ""),
+                "is_starting": p.get("is_starting", False),
+                "plus_minus": p.get("plus_minus", 0),
+                "three_pointers_made": p.get("three_pointers_made", 0),
+                "three_pointers_attempted": p.get("three_pointers_attempted", 0),
+                "turnovers": p.get("turnovers", 0),
+            })
+        else:
+            dnp.append({"name": name, "number": p.get("number", "")})
+
+    played.sort(key=lambda x: x["score"], reverse=True)
+    return {"played": played, "dnp": dnp}
+
+
+def build_game_context(game: dict, data: dict, roster: dict | None) -> str:
     """把比賽數據整理成給 Claude 的資訊"""
-    # 欄位名稱依 processed_data.json 實際格式
     date = normalize_date(game.get("date", ""))
     opponent = game.get("opp", "對手")
     lions_score = game.get("lion_score", 0)
@@ -109,13 +201,11 @@ def build_game_context(game: dict, data: dict) -> str:
     is_home = game.get("is_home", True)
     home_away = "主場" if is_home else "客場"
 
-    # 本場可用數據
     paint_pts = game.get("paint", "?")
     fast_break = game.get("fast_break", "?")
     second_chance = game.get("second_chance", "?")
     ft_made = game.get("ft_made", "?")
 
-    # 各節比數
     rounds = game.get("rounds", {})
     opp_rounds = game.get("opp_rounds", {})
     quarter_str = " / ".join(
@@ -123,14 +213,12 @@ def build_game_context(game: dict, data: dict) -> str:
         for q in range(1, 5)
     )
 
-    # 球隊整體狀況
     team = data.get("team_stats", {})
     wins = team.get("wins", "?")
     losses = team.get("losses", "?")
     season_ppg = team.get("avg_score", team.get("avg_pts", "?"))
     season_apg = team.get("avg_opp_score", team.get("avg_pts_allowed", "?"))
 
-    # 球員本季均值（player_avg 是 dict，key 為球員名）
     player_avg = data.get("player_avg", {})
     if isinstance(player_avg, dict):
         players_list = [
@@ -146,7 +234,6 @@ def build_game_context(game: dict, data: dict) -> str:
     else:
         player_lines = "（無球員數據）"
 
-    # 對這支對手的歷史交手（vs_summary 是 dict，key 為隊名）
     vs_summary = data.get("vs_summary", {})
     vs_opp = vs_summary.get(opponent) if isinstance(vs_summary, dict) else None
     if vs_opp:
@@ -157,6 +244,25 @@ def build_game_context(game: dict, data: dict) -> str:
         vs_record, vs_avg_scored, vs_avg_allowed = "無資料", "?", "?"
 
     short_opp = OPPONENT_NAME_MAP.get(opponent, opponent)
+
+    # 出賽名單區塊
+    if roster:
+        played_lines = "\n".join(
+            f"  - {p['name']} #{p['number']} {'先發' if p['is_starting'] else '替補'} "
+            f"{p['score']}分/{p['rebounds']}籃/{p['assists']}助 "
+            f"3P {p['three_pointers_made']}/{p['three_pointers_attempted']} "
+            f"TO {p['turnovers']} +/- {p['plus_minus']} 上場 {p['time_on_court']}"
+            for p in roster["played"]
+        )
+        dnp_names = "、".join(p["name"] for p in roster["dnp"]) or "無"
+        roster_section = f"""
+=== 本場攻城獅出賽球員（依得分排序）===
+{played_lines}
+
+本場未出賽（DNP）：{dnp_names}
+"""
+    else:
+        roster_section = "\n（本場出賽名單無法取得，請僅根據球隊整體數據分析）\n"
 
     context = f"""
 === 比賽資訊 ===
@@ -171,16 +277,16 @@ def build_game_context(game: dict, data: dict) -> str:
 快攻得分：{fast_break}
 二次進攻得分：{second_chance}
 罰球命中：{ft_made}
-
+{roster_section}
 === 本季狀況 ===
 戰績：{wins}勝{losses}敗
 本季場均得分：{season_ppg}
 本季場均失分：{season_apg}
 
-=== 主要球員本季均值 ===
+=== 主要球員本季均值（前5）===
 {player_lines}
 
-=== 對{short_opp}歷史交手（本季） ===
+=== 對{short_opp}歷史交手（本季）===
 紀錄：{vs_record}
 對戰場均得分：{vs_avg_scored}
 對戰場均失分：{vs_avg_allowed}
@@ -208,8 +314,6 @@ def generate_article(context: str, game: dict, client: anthropic.Anthropic) -> s
     opponent = game.get("opp", "對手")
     short_opp = OPPONENT_NAME_MAP.get(opponent, opponent)
     result = "勝" if game.get("won", False) else "負"
-    lions_score = game.get("lion_score", 0)
-    opp_score = game.get("opp_score", 0)
 
     user_prompt = f"""以下是攻城獅今天比賽的數據，請寫一篇賽後分析文章。
 
@@ -222,10 +326,12 @@ def generate_article(context: str, game: dict, client: anthropic.Anthropic) -> s
 - 文章中有2到3個重要轉折句或段落主題句，這些句子獨立成行，前面加上 ## （Markdown次標）
 - 對{short_opp}的評價要客觀，不要過度貶低對手
 - 如果這場{result}，要能解釋「為什麼」而不只是重述比分
+- 只描述有出賽的球員，未出賽（DNP）的球員完全不要出現在文章中
 - 聯盟名稱一律用 TPBL，不是 PLG
-- 用語要用台灣慣用語，例如「本季」不是「本賽季」，「教練」不是「主教練」，「球員」不是「球員球員」
+- 用語要用台灣慣用語：「本季」不是「本賽季」、「教練」不是「主教練」
 - 全文800-1000字，繁體中文
 - 禁止使用破折號（——）
+- 絕對禁止「街球」「半場街球」或任何非職業籃球的比喻
 - 冒號只能用在比分（如 117:100）或標題，不能用在中文句子中間做停頓
 - 禁止 AI 慣用語，例如「最讓我想多想的」「值得停留的」「值得注意的是」「不容忽視的是」「顯而易見地」「總結來說」「不得不說」
 - ## 子標題如果含有逗號，句尾必須加句號，例如「## 某某現象，說明了什麼。」"""
@@ -249,11 +355,26 @@ def save_article(game: dict, content: str):
     home_away = "主場" if game.get("is_home", True) else "客場"
 
     slug = build_slug(date, opponent)
-    result_verb = "勝" if game.get("won", False) else "負"
-    title = f"攻城獅 {lions_score}-{opp_score} {home_away}{result_verb}{short_opp}"
-
+    title = f"攻城獅 {lions_score}-{opp_score} {home_away}{result}{short_opp}"
     tags = ["攻城獅", "TPBL", "籃球", short_opp, "賽事分析"]
     tags_str = json.dumps(tags, ensure_ascii=False)
+
+    # 依勝負選擇 hero 圖，同勝/敗各有多張輪替，用日期 hash 決定，確保每篇不同
+    WIN_HEROES = [
+        {"image": "/images/lioneers-win.jpg",  "alt": "球員扣籃",     "creditUrl": "https://unsplash.com/photos/1577471488278-16eec37ffcc2"},
+        {"image": "/images/lioneers-win2.jpg", "alt": "球員扣籃特寫", "creditUrl": "https://unsplash.com/photos/1608245449230-4ac19066d2d0"},
+    ]
+    LOSS_HEROES = [
+        {"image": "/images/lioneers-hero.jpg", "alt": "籃球場內景", "creditUrl": "https://unsplash.com/photos/people-inside-a-basketball-gym-J_tbkGWxCH0"},
+    ]
+    pool = WIN_HEROES if game.get("won", False) else LOSS_HEROES
+    # 用比賽日期字串的 hash 值選圖，同一場永遠選同一張
+    idx = hash(date) % len(pool)
+    chosen = pool[idx]
+    hero_image = chosen["image"]
+    hero_alt = chosen["alt"]
+    hero_credit = "Unsplash"
+    hero_credit_url = chosen["creditUrl"]
 
     frontmatter = f"""---
 title: "{title}"
@@ -262,10 +383,10 @@ date: "{date}"
 updated: "{date}"
 slug: "{slug}"
 tags: {tags_str}
-heroImage: "/images/lioneers-hero.jpg"
-heroAlt: "籃球場內景"
-heroCredit: "Markus Spiske / Unsplash"
-heroCreditUrl: "https://unsplash.com/photos/people-inside-a-basketball-gym-J_tbkGWxCH0"
+heroImage: "{hero_image}"
+heroAlt: "{hero_alt}"
+heroCredit: "{hero_credit}"
+heroCreditUrl: "{hero_credit_url}"
 excerpt: "攻城獅 {date} {home_away}對上{short_opp}，{lions_score}-{opp_score} {result}。數據背後的故事。"
 ---
 
@@ -289,7 +410,6 @@ def main():
     data = fetch_data()
 
     if force_date:
-        # force_date 可能是 YYYY-MM-DD 或 YYYYMMDD，統一轉 YYYYMMDD 來比對
         try:
             fd_normalized = parse_game_date(force_date).strftime("%Y%m%d")
         except ValueError:
@@ -314,7 +434,18 @@ def main():
         sys.exit(0)
 
     print(f"發現新比賽：{date_normalized} vs {opponent}")
-    context = build_game_context(game, data)
+
+    print("正在取得本場出賽名單...")
+    roster = fetch_game_players(game.get("date", ""))
+    if roster:
+        print(f"  出賽：{len(roster['played'])} 人 / DNP：{len(roster['dnp'])} 人")
+        dnp_names = [p["name"] for p in roster["dnp"]]
+        if dnp_names:
+            print(f"  DNP：{', '.join(dnp_names)}")
+    else:
+        print("  出賽名單無法取得，將僅使用球隊整體數據")
+
+    context = build_game_context(game, data, roster)
     print("正在呼叫 Claude API 生成文章...")
 
     client = anthropic.Anthropic(api_key=api_key)

@@ -21,6 +21,12 @@ export function addPangu(html: string): string {
   });
 }
 
+export function addPanguText(text: string): string {
+  return text
+    .replace(/([\u4e00-\u9fff\u3400-\u4dbf])([A-Za-z0-9])/g, "$1 $2")
+    .replace(/([A-Za-z0-9])([\u4e00-\u9fff\u3400-\u4dbf])/g, "$1 $2");
+}
+
 const postsDirectory = path.join(process.cwd(), "content/posts");
 
 export interface PostMeta {
@@ -35,6 +41,7 @@ export interface PostMeta {
   heroAlt?: string;
   heroCredit?: string;
   heroCreditUrl?: string;
+  highlight?: string;
   source?: string;
   source_url?: string;
   references?: { title: string; url?: string }[];
@@ -101,6 +108,7 @@ export async function getPost(slug: string): Promise<Post> {
     heroAlt: data.heroAlt,
     heroCredit: data.heroCredit,
     heroCreditUrl: data.heroCreditUrl,
+    highlight: data.highlight,
     source: data.source,
     source_url: data.source_url,
     references: data.references ?? [],

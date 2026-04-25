@@ -1,6 +1,18 @@
+import type { Metadata } from "next";
 import { getAllPostMetas } from "@/lib/posts";
 import ArticleCard from "@/components/ArticleCard";
 import ViewCounter from "@/components/ViewCounter";
+
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://skyfaring.pages.dev";
+
+export const metadata: Metadata = {
+  openGraph: {
+    images: [{ url: `${SITE_URL}/images/homepage-hero.jpg`, width: 1200, height: 800, alt: "Skyfaring" }],
+  },
+  twitter: {
+    images: [`${SITE_URL}/images/homepage-hero.jpg`],
+  },
+};
 
 const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
@@ -15,14 +27,14 @@ const PROJECTS = [
   {
     title: "新竹攻城獅數據站",
     description: "新竹攻城獅數據儀表板，含勝負預測、球員效率分析",
-    url: "https://lioneer32232002-commits.github.io/lioneers-web/",
+    url: "https://lioneers-web.pages.dev/",
     icon: "🦁",
     external: true,
   },
   {
     title: "解放軍擾台動態追蹤",
     description: "中線越線、艦機活動每日數據，含趨勢圖與 SITREP 紀錄",
-    url: "https://lioneer32232002-commits.github.io/pla-tracker/",
+    url: "https://pla-tracker.pages.dev/",
     icon: "🛩",
     external: true,
   },
@@ -39,7 +51,7 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "WebSite",
   name: "Skyfaring",
-  url: "https://lioneer32232002-commits.github.io/skyfaring/",
+  url: process.env.NEXT_PUBLIC_SITE_URL ? `${process.env.NEXT_PUBLIC_SITE_URL}/` : "https://skyfaring.pages.dev/",
   description: "運動數據分析、飛航安全數據分析、詠春拳、歷史與軍事閱讀心得分享。",
   inLanguage: "zh-TW",
 };
@@ -54,8 +66,13 @@ export default function HomePage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       {/* Hero */}
-      <section className="bg-gradient-to-br from-slate-900 via-slate-800 to-sky-900 text-white">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 py-20 sm:py-28">
+      <section className="relative text-white overflow-hidden">
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: `url(${BASE_PATH}/images/homepage-hero.jpg)` }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-br from-slate-900/92 via-slate-900/75 to-sky-900/80" />
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 py-20 sm:py-28 relative">
           <div className="flex items-center gap-3 mb-4">
             <span className="text-sky-400 font-semibold tracking-widest text-sm uppercase">Skyfaring</span>
           </div>

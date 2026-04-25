@@ -107,6 +107,19 @@ body {
   margin: 1.5rem 0;
 }
 
+.prose p:has(> img) {
+  margin-bottom: 2.5rem;
+}
+
+.prose p > img ~ em {
+  display: block;
+  font-size: 0.78rem;
+  font-style: normal;
+  color: #94a3b8;
+  margin-top: 0.4rem;
+  line-height: 1.5;
+}
+
 .line-clamp-3 {
   display: -webkit-box;
   -webkit-line-clamp: 3;
@@ -125,4 +138,5 @@ body {
   .prose strong { color: #f1f5f9; }
   .prose hr { border-color: #334155; }
   .prose a { color: #38bdf8; }
+  .prose p > img ~ em { color: #64748b; }
 }
