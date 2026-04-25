@@ -193,6 +193,17 @@ def build_slug(game_date: str, opponent: str) -> str:
     return f"lioneers-{game_date}-vs-{opp_slug}"
 
 
+def fix_shooting_stats(text: str) -> str:
+    """修正「X投Y中」中命中數大於出手數的邏輯錯誤，自動對調。"""
+    def swap_if_invalid(m):
+        attempted, made = int(m.group(1)), int(m.group(2))
+        if made > attempted:
+            print(f"⚠️  修正投籃數字：{attempted}投{made}中 → {made}投{attempted}中")
+            return f"{made}投{attempted}中"
+        return m.group(0)
+    return re.sub(r"(\d+)\s*投\s*(\d+)\s*中", swap_if_invalid, text)
+
+
 def generate_article(context: str, game: dict, client: anthropic.Anthropic) -> str:
     opponent = game.get("opp", "對手")
     short_opp = OPPONENT_NAME_MAP.get(opponent, opponent)
@@ -215,7 +226,9 @@ def generate_article(context: str, game: dict, client: anthropic.Anthropic) -> s
 - 用語要用台灣慣用語，例如「本季」不是「本賽季」，「教練」不是「主教練」，「球員」不是「球員球員」
 - 全文800-1000字，繁體中文
 - 禁止使用破折號（——）
-- 冒號只能用在比分（如 117:100）或標題，不能用在中文句子中間做停頓"""
+- 冒號只能用在比分（如 117:100）或標題，不能用在中文句子中間做停頓
+- 禁止 AI 慣用語，例如「最讓我想多想的」「值得停留的」「值得注意的是」「不容忽視的是」「顯而易見地」「總結來說」「不得不說」
+- ## 子標題如果含有逗號，句尾必須加句號，例如「## 某某現象，說明了什麼。」"""
 
     message = client.messages.create(
         model="claude-sonnet-4-6",
@@ -307,6 +320,7 @@ def main():
     client = anthropic.Anthropic(api_key=api_key)
     article_text = generate_article(context, game, client)
 
+    article_text = fix_shooting_stats(article_text)
     save_article(game, article_text)
     print("完成！")
 
