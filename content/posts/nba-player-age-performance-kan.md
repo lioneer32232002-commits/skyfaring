@@ -9,7 +9,7 @@ tags:
   - machine-learning
   - sports-science
 excerpt: "新生代靠多變數協同爆發，黃金期靠核心技術穩定輸出，老將靠少數指標撐起天花板。研究者用 KAN 模型，把這三段曲線的形狀說清楚了。"
-highlight: "一篇用機器學習模型解剖 NBA 球員職涯軌跡的研究，發現不同年齡段驅動表現的機制根本不同。新生代球員靠多個技術指標協同作用，黃金期收斂到少數核心變數，老將則面臨明顯的天花板效應。"
+highlight: "新秀你至少知道他還在成長，所有指標都往上走，你看的是趨勢。老將不一樣，有人三十二歲還是巔峰，有人二十九歲就開始走下坡，你不知道那條曲線在哪裡轉折。"
 heroImage: /images/nba-player-age-performance-kan-basketball.jpg
 heroAlt: 籃球員在球場上灌籃的動作照
 heroCredit: LOGAN WEAVER | @LGNWVR
