@@ -92,7 +92,7 @@ Ball Dominant Scorer 的係數遠高於其他角色。論文分析的最佳陣�
 
 Mid-Range Big 在所有高效陣容中幾乎缺席。中距離出手在三分球時代帶來的回報，不足以彌補空間壓縮的代價。
 
-Warriors 的「死亡陣容」（Kevin Durant、Stephen Curry、Draymond Green、Andre Iguodala、Klay Thompson）代入模型，預測 Net Rating 為 +12.4。驗證結果和現實吻合。
+Warriors 的「死亡陣容」代入模型，預測 Net Rating 為 +12.4。驗證結果和現實吻合。論文同時標注了每位球員對應的群集：Kevin Durant（Ball Dominant Scorer）、Stephen Curry（Ball Dominant Scorer）、Klay Thompson（Three Point Shooting Guard）、Draymond Green（Versatile Role Player）、Andre Iguodala（Versatile Role Player）。一個陣容裡有兩個持球得分核心、一個定點三分射手、兩個萬用角色球員，這是讓模型給出高預測值的組成邏輯。
 
 ## 一套更精確的語言
 
