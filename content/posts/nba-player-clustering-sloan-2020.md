@@ -30,7 +30,7 @@ Samuel Kalman 和 Jonathan Bosch 在 2020 年的 MIT Sloan Sports Analytics Conf
 
 ## 讓數據自己分群
 
-研究資料來自 2009 至 2018 年的十個 NBA 賽季，涵蓋 3,608 筆球員賽季紀錄，每筆資料包含 23 個變數，包含進攻效率、投籃分佈、使用率（usage rate）、助攻率、篩板率等。所有數據以每 100 次進攻回合正規化，確保出場時間的差異不影響比較結果。
+研究資料來自 2009 至 2018 年的十個 NBA 賽季，涵蓋 3,608 筆球員賽季紀錄，每筆資料包含 23 個變數，包含進攻效率、投籃分佈、使用率（usage rate）、助攻率、籃板率等。所有數據以每 100 次進攻回合正規化，確保出場時間的差異不影響比較結果。
 
 研究者刻意不告訴演算法哪個球員打哪個位置。讓數據自己說話。
 
@@ -48,11 +48,11 @@ Samuel Kalman 和 Jonathan Bosch 在 2020 年的 MIT Sloan Sports Analytics Conf
 
 High Usage Guard（持球主導後衛）：手握球權、兼顧傳導，但效率低於 Ball Dominant Scorer。代表球員：Lou Williams、Brandon Jennings。
 
-Stretch Forward（拉開空間前鋒）：以三分球拉開空間，比 Three Point Shooting Guard 更高大、篩板更好。代表球員：Shane Battier、Steve Novak。
+Stretch Forward（拉開空間前鋒）：以三分球拉開空間，比 Three Point Shooting Guard 更高大、籃板更好。代表球員：Shane Battier、Steve Novak。
 
 Three Point Shooting Guard（定點三分後衛）：接球即射，不持球、不創造機會、幾乎不衝進禁區。代表球員：Klay Thompson、JJ Redick。
 
-Traditional Center（傳統中鋒）：靠近籃框，靠灌籃和篩板貢獻，幾乎不投三分。代表球員：DeAndre Jordan、Tyson Chandler。
+Traditional Center（傳統中鋒）：靠近籃框，靠灌籃和籃板貢獻，幾乎不投三分。代表球員：DeAndre Jordan、Tyson Chandler。
 
 Versatile Role Player（萬用角色球員）：各項指標接近平均，無明顯強項或弱項，是後衛和前鋒的混合體。代表球員：Shaun Livingston、Bam Adebayo。
 
