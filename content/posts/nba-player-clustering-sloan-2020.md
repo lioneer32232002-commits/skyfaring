@@ -1,5 +1,5 @@
 ---
-title: 「控球後衛」已經是個謊言了
+title: 「控球後衛」這個標籤，已經是個落後的分類了。
 author: AdamP
 date: 2026-05-05
 slug: nba-player-clustering-sloan-2020
