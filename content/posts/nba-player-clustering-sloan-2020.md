@@ -13,7 +13,7 @@ heroImage: /images/nba-player-clustering-sloan-2020-hero.jpg
 heroAlt: Basketball court under arena lights
 heroCredit: Markus Spiske
 heroCreditUrl: https://unsplash.com/photos/BfphcCvhl6E
-highlight: 最佳陣容不是五個最強球員的組合。Ball Dominant Scorer 搭配能拉開空間的外線射手，是讓陣容淨效率最大化的核心邏輯。
+highlight: 一支球隊如果知道現有四個球員是什麼類型，可以直接查模型，找出第五個缺口最適合哪種角色，再去自由市場或選秀上尋找對應的球員。球探報告上的位置欄位，是一個滯後指標，記錄的是球員最初被訓練成什麼，不是他在場上實際做了什麼。
 source: "Kalman, S. & Bosch, J. (2020). NBA Lineup Analysis on Clustered Player Tendencies: A new approach to the positions of basketball & modeling lineup efficiency of soft lineup aggregates. MIT Sloan Sports Analytics Conference."
 source_url: https://www.sloansportsconference.com/research-papers/nba-lineup-analysis-on-clustered-player-tendencies-a-new-approach-to-the-positions-of-basketball-modeling-lineup-efficiency
 ---
