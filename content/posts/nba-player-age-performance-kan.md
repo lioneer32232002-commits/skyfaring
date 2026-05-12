@@ -1,4 +1,4 @@
----
+﻿---
 title: "NBA 球員的職涯曲線，不只一種形狀。"
 author: AdamP
 date: 2026-04-30

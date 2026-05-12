@@ -1,4 +1,4 @@
----
+﻿---
 title: "Gemini 導讀了一篇不存在的論文"
 author: "AdamP"
 date: "2026-04-11"
