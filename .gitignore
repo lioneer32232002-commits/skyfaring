@@ -43,3 +43,9 @@ next-env.d.ts
 
 # local reference materials (books, PDFs) — not deployed
 /references/
+
+# local research pipeline data — auto-generated, not deployed
+/data/
+
+# Claude Code internal tooling
+/.claude/
