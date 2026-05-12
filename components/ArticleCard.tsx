@@ -36,16 +36,13 @@ export default function ArticleCard({ post }: { post: PostMeta }) {
           </div>
         )}
         <div className="p-5">
-          <div className="flex flex-wrap gap-2 mb-3">
-            {post.tags.slice(0, 3).map((tag) => (
-              <span
-                key={tag}
-                className="text-xs bg-sky-100 dark:bg-sky-900 text-sky-700 dark:text-sky-300 px-2 py-0.5 rounded-full"
-              >
-                {tag}
+          {post.category && (
+            <div className="mb-3">
+              <span className="text-xs px-2 py-0.5 rounded-full bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300">
+                {post.category}
               </span>
-            ))}
-          </div>
+            </div>
+          )}
           <h2 className="text-lg font-bold text-slate-800 dark:text-slate-100 group-hover:text-sky-600 dark:group-hover:text-sky-400 transition-colors leading-snug mb-2">
             {post.title}
           </h2>

@@ -37,6 +37,7 @@ export interface PostMeta {
   updated: string;
   excerpt: string;
   tags: string[];
+  category?: string;
   heroImage?: string;
   heroAlt?: string;
   heroCredit?: string;
@@ -68,6 +69,7 @@ export function getAllPostMetas(): PostMeta[] {
         updated: data.updated ?? data.date ?? "",
         excerpt: data.excerpt ?? "",
         tags: data.tags ?? [],
+        category: data.category,
         heroImage: data.heroImage,
         heroAlt: data.heroAlt,
         heroCredit: data.heroCredit,
@@ -104,6 +106,7 @@ export async function getPost(slug: string): Promise<Post> {
     updated: data.updated ?? data.date ?? "",
     excerpt: data.excerpt ?? "",
     tags: data.tags ?? [],
+    category: data.category,
     heroImage: data.heroImage,
     heroAlt: data.heroAlt,
     heroCredit: data.heroCredit,

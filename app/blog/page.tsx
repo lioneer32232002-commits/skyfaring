@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { getAllPostMetas } from "@/lib/posts";
-import ArticleCard from "@/components/ArticleCard";
+import BlogFilter from "@/components/BlogFilter";
 
 export const metadata: Metadata = {
   title: "文章",
@@ -20,15 +20,7 @@ export default function BlogPage() {
         </p>
       </div>
 
-      {posts.length === 0 ? (
-        <p className="text-slate-400">目前還沒有文章。</p>
-      ) : (
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {posts.map((post) => (
-            <ArticleCard key={post.slug} post={post} />
-          ))}
-        </div>
-      )}
+      <BlogFilter posts={posts} />
     </div>
   );
 }
