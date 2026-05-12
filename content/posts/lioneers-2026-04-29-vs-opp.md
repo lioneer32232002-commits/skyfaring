@@ -1,15 +1,19 @@
-﻿---
+---
 title: "攻城獅 98-78 主場勝新北國王"
 author: "Skyfaring"
 date: "2026-04-29"
 updated: "2026-04-29"
 slug: "lioneers-2026-04-29-vs-opp"
-tags: ["攻城獅", "TPBL", "籃球", "新北國王", "賽事分析"]
+tags:
+  - 攻城獅
+  - 超級籃球聯賽
+  - 賽事分析
 heroImage: "/images/lioneers-win.jpg"
 heroAlt: "球員扣籃"
 heroCredit: "Unsplash"
 heroCreditUrl: "https://unsplash.com/photos/1577471488278-16eec37ffcc2"
 excerpt: "攻城獅 2026-04-29 主場對上新北國王，98-78 勝。數據背後的故事。"
+category: 攻城獅
 ---
 
 第二節那13分，我看了好幾遍。

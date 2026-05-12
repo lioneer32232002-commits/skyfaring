@@ -1,10 +1,13 @@
-﻿---
+---
 title: "2024年全球航空安全回顧"
 author: "AdamP"
 date: "2025-04-10"
 updated: "2025-04-10"
 slug: "icao-2025-safety-report"
-tags: ["航空安全", "ICAO", "飛安報告", "2024"]
+tags:
+  - 航空安全
+  - 飛安報告
+  - ICAO
 heroImage: "/images/icao-hero.jpg"
 heroAlt: "夜晚停機坪上的客機"
 heroCredit: "Ashim D'Silva on Unsplash"
@@ -13,6 +16,7 @@ excerpt: "2024年全球民航共發生95起事故、296人罹難，是近六年�
 highlight: "2024 年 296 名罹難者中有 279 人（94.3%）集中在三起重大事故；濟州航空事故（179 人罹難）是 2024 年單一最嚴重空難，也是南韓史上死亡人數最多的航空事故。"
 source: "ICAO, State of Global Aviation Safety — 2025 Edition"
 source_url: "https://www.icao.int/safety/Pages/Safety-Report.aspx"
+category: 航空
 ---
 
 ## 整體概況

@@ -1,9 +1,12 @@
-﻿---
+---
 title: "愈頂尖的籃球員，在場上的動作強度愈低。"
 author: "AdamP"
 date: "2026-04-28"
 slug: "basketball-peak-demand-elite-vs-nonelite"
-tags: ["籃球", "運動科學", "訓練", "菁英運動", "論文導讀"]
+tags:
+  - 籃球
+  - 運動科學
+  - 體能負荷
 excerpt: "西班牙研究團隊用穿戴式感測器，同時量化歐冠聯賽球員與四級業餘球員的尖峰體能負荷，發現菁英球員在所有時間窗口的峰值都顯著低於業餘球員。差距隨量測窗口拉長而擴大，3 分鐘窗口的效應量達 2.11，分類為「極大」。"
 highlight: "菁英球員的 3 分鐘滾動平均 PlayerLoad 為 43.54，業餘球員高達 62.80，效應量 2.11 屬於「極大」等級。差距隨量測窗口拉長而放大，說明菁英球員不是在每個短暫爆發上都更保守，而是在更長的時間跨度裡，更精準地選擇了何時需要高強度、何時可以省力。"
 source: "Antoranz, Y.; Alonso-Pérez-Chao, E.; Tejero-González, C.M.; Salazar, H.; del Campo-Vecino, J.; Jiménez-Sáiz, S.L. (2025). Understanding External Peak Demands in Elite vs. Non-Elite Male Basketball Players. Sports, 13, 179."
@@ -12,6 +15,7 @@ heroImage: "/images/basketball-peak-demand-elite-shooting.jpg"
 heroAlt: "籃球員在比賽中出手投籃"
 heroCredit: "Luke Miller | Unsplash"
 heroCreditUrl: "https://unsplash.com/photos/basketball-player-shoots-a-basket-during-a-game-yjtw67WzDcA"
+category: 籃球研究
 ---
 
 研究人員給兩支球隊的每名球員穿上一件緊身背心，背心夾層裡藏著一個大拇指大小的感測器。一支球隊打歐冠聯賽（EuroLeague），另一支打西班牙第四級業餘聯賽。感測器記錄了整場比賽三個方向的加速度，每秒一百次。

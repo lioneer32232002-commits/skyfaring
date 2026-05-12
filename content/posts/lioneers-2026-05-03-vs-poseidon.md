@@ -1,15 +1,19 @@
-﻿---
+---
 title: "攻城獅 102-99 主場勝海神"
 author: "Skyfaring"
 date: "2026-05-03"
 updated: "2026-05-03"
 slug: "lioneers-2026-05-03-vs-poseidon"
-tags: ["攻城獅", "TPBL", "籃球", "海神", "賽事分析"]
+tags:
+  - 攻城獅
+  - 超級籃球聯賽
+  - 賽事分析
 heroImage: "/images/lioneers-win.jpg"
 heroAlt: "球員扣籃"
 heroCredit: "Unsplash"
 heroCreditUrl: "https://unsplash.com/photos/1577471488278-16eec37ffcc2"
 excerpt: "攻城獅 2026-05-03 主場對上海神，102-99 勝。數據背後的故事。"
+category: 攻城獅
 ---
 
 第四節結束的瞬間，我腦子裡浮出的不是102:99這個比分，而是那個22:31。

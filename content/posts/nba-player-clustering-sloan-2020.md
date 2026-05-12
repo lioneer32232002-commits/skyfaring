@@ -1,4 +1,4 @@
-﻿---
+---
 title: 「控球後衛」這個標籤，已經是個落後的分類了。
 author: AdamP
 date: 2026-05-05
@@ -7,7 +7,6 @@ tags:
   - 籃球
   - 數據分析
   - NBA
-  - 機器學習
 excerpt: Chris Paul 和 Derrick Rose 都叫控球後衛，但打法根本是兩種球員。MIT Sloan 2020 年的研究，用機器學習把 NBA 的位置系統打掉重練，找出九個更精確的功能性角色。
 heroImage: /images/nba-player-clustering-sloan-2020-hero.jpg
 heroAlt: Basketball court under arena lights
@@ -16,6 +15,7 @@ heroCreditUrl: https://unsplash.com/photos/BfphcCvhl6E
 highlight: 一支球隊如果知道現有四個球員是什麼類型，可以直接查模型，找出第五個缺口最適合哪種角色，再去自由市場或選秀上尋找對應的球員。球探報告上的位置欄位，是一個滯後指標，記錄的是球員最初被訓練成什麼，不是他在場上實際做了什麼。
 source: "Kalman, S. & Bosch, J. (2020). NBA Lineup Analysis on Clustered Player Tendencies: A new approach to the positions of basketball & modeling lineup efficiency of soft lineup aggregates. MIT Sloan Sports Analytics Conference."
 source_url: https://www.sloansportsconference.com/research-papers/nba-lineup-analysis-on-clustered-player-tendencies-a-new-approach-to-the-positions-of-basketball-modeling-lineup-efficiency
+category: 籃球研究
 ---
 
 2011 年的某場比賽，Chris Paul 持球推進，停下腳步，把球傳給切入的隊友，讓對手的防守體系整個錯位。Derrick Rose 同樣的位置，直接殺進禁區，完成上籃。

@@ -1,9 +1,12 @@
-﻿---
+---
 title: "高中只打籃球，進 NBA 反而更容易受傷？論文解析早期單項專精的代價。"
 author: "Skyfaring"
 date: "2026-04-21"
 slug: "nba-early-sport-specialization-injury-2025"
-tags: ["NBA", "籃球", "運動醫學", "傷病", "論文導讀"]
+tags:
+  - 籃球
+  - 運動科學
+  - NBA
 excerpt: "2025 年發表的研究追蹤 318 名 NBA 選秀前 30 順位球員，發現高中時期參與多項運動的球員，職業生涯前三季不只打了更多場比賽、跑了更長距離，因傷缺賽率也顯著更低——而且在工作量增加時比單項專精球員更不容易受傷。"
 highlight: "單項專精球員跑得越多、上場越多，受傷的機率就越高；但多項運動球員即使工作量增加，受傷率並不會跟著升高。研究團隊認為，這代表多項運動訓練帶來的身體韌性，讓球員在高強度負荷下仍能維持對身體的掌控。"
 source: "Sang, L., Bach, K., Feeley, B. T., & Pandya, N. K. (2025). Effects of Early Sport Specialization on Injury Load Management and Athletic Success of National Basketball Association Players. The Orthopaedic Journal of Sports Medicine, 13(1)."
@@ -12,6 +15,7 @@ heroImage: "/images/nba-early-sport-specialization-football.jpg"
 heroAlt: "美式足球球員在草地上奔跑"
 heroCredit: "Quino Al | Unsplash"
 heroCreditUrl: "https://unsplash.com/photos/football-players-in-red-jersey-shirt-and-red-pants-running-on-green-grass-field-during-daytime-F_cJdcb5bSU"
+category: 籃球研究
 ---
 
 你的孩子從小就只打籃球，每天練習、參加聯賽、放棄其他運動——這樣做真的能讓他進 NBA 嗎？還是說，這條路反而讓他更早受傷、更快燃燒殆盡？

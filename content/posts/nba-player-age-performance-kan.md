@@ -1,13 +1,12 @@
-﻿---
+---
 title: "NBA 球員的職涯曲線，不只一種形狀。"
 author: AdamP
 date: 2026-04-30
 slug: nba-player-age-performance-kan
 tags:
+  - 籃球
+  - 數據分析
   - NBA
-  - basketball
-  - machine-learning
-  - sports-science
 excerpt: "新生代靠多變數協同爆發，黃金期靠核心技術穩定輸出，老將靠少數指標撐起天花板。研究者用 KAN 模型，把這三段曲線的形狀說清楚了。"
 highlight: "新秀你至少知道他還在成長，所有指標都往上走，你看的是趨勢。老將不一樣，有人三十二歲還是巔峰，有人二十九歲就開始走下坡，你不知道那條曲線在哪裡轉折。"
 heroImage: /images/nba-player-age-performance-kan-basketball.jpg
@@ -16,6 +15,7 @@ heroCredit: LOGAN WEAVER | @LGNWVR
 heroCreditUrl: https://unsplash.com/@lgnwvr
 source: "Xiao Y, Wang J, Li W, Chen J, Chang N, Song Y and Xu Z (2025) Nonlinear age effects on basketball player performance: insights from Kolmogorov–Arnold Networks in NBA data. Front. Sports Act. Living 7:1693433."
 source_url: https://doi.org/10.3389/fspor.2025.1693433
+category: 籃球研究
 ---
 
 有人問過一個 NBA 球探：一個二十歲的新秀跟一個三十五歲的老將，哪個更難評估？

@@ -1,15 +1,19 @@
-﻿---
+---
 title: "攻城獅 104-86 客場勝臺北台新戰神"
 author: "Skyfaring"
 date: "2026-04-25"
 updated: "2026-04-25"
 slug: "lioneers-2026-04-25-vs-opp"
-tags: ["攻城獅", "TPBL", "籃球", "臺北台新戰神", "賽事分析"]
+tags:
+  - 攻城獅
+  - 超級籃球聯賽
+  - 賽事分析
 heroImage: "/images/lioneers-win2.jpg"
 heroAlt: "球員扣籃特寫"
 heroCredit: "Unsplash"
 heroCreditUrl: "https://unsplash.com/photos/1608245449230-4ac19066d2d0"
 excerpt: "攻城獅 2026-04-25 客場對上臺北台新戰神，104-86 勝。數據背後的故事。"
+category: 攻城獅
 ---
 
 本季打了快一整年的攻城獅對戰神，兩隊戰績剛好是2勝3敗，場均得失分都是96，這種鏡像關係實在有點詭異。所以今天客場看到終盤報出 104:86，我的第一個反應不是「贏了」，而是「這次到底哪裡不一樣了？」

@@ -1,12 +1,12 @@
-﻿---
+---
 title: "從一支攝影機，看見球在空間裡的位置。"
 author: AdamP
 date: 2026-05-07
 slug: where-is-the-ball-3d-trajectory
 tags:
-  - research
-  - computer-vision
-  - sports-analytics
+  - 電腦視覺
+  - 深度學習
+  - 運動追蹤
 excerpt: 一篇來自泰國 VISTEC 的研究，只用一支攝影機的 2D 追蹤序列，讓神經網路還原球的 3D 軌跡。關鍵不是模型大小，而是表示方式的選擇。
 heroImage: /images/where-is-the-ball-tennis-trajectory.jpg
 heroAlt: 網球飛行於空中
@@ -15,6 +15,7 @@ heroCreditUrl: https://unsplash.com/photos/a-tennis-ball-is-flying-through-the-a
 highlight: 換了一個輸入表示方式，同樣的網路架構在真實網球比賽的落地誤差從 3.58 公尺降到 0.63 公尺。
 source: "Where Is The Ball: 3D Ball Trajectory Estimation From 2D Monocular Tracking, Ponglertnapakorn & Suwajanakorn, VISTEC, arXiv 2025"
 source_url: https://arxiv.org/abs/2506.05763
+category: 電腦視覺
 ---
 
 轉播鏡頭通常只有一個主機位。球飛出去、反彈、再被打回來，這整段軌跡全壓縮進一個二維畫面裡。

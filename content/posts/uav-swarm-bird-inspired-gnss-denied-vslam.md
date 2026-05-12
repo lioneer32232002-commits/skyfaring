@@ -1,13 +1,12 @@
-﻿---
+---
 title: "像鳥群一樣飛：不靠 GPS，無人機怎麼知道自己在哪裡？"
 author: AdamP
 date: 2026-05-12
 slug: uav-swarm-bird-inspired-gnss-denied-vslam
 tags:
-  - research
-  - computer-vision
-  - drone
-  - robotics
+  - 電腦視覺
+  - 無人機
+  - 機器人
 excerpt: 一篇來自維吉尼亞聯邦大學的研究，讓無人機群像椋鳥群一樣，只用眼睛維持隊形；另一組無人機則互相交換地圖，在沒有 GPS 的隧道裡定位自己。兩件事合在一起，才是完整的自主飛行。
 heroImage: /images/uav-swarm-murmuration-birds.jpg
 heroAlt: 一群鳥類以 V 字編隊在空中飛行
@@ -16,6 +15,7 @@ heroCreditUrl: https://unsplash.com/photos/a-flock-of-birds-flying-in-a-v-format
 highlight: 無人機只靠單眼鏡頭判斷鄰機距離、調整飛行，不需要 GPS、雷射測距或無線通訊；地圖對齊後，軌跡誤差縮小了四倍。
 source: "Garcia, G. & Eskandarian, A. Vision-Based UAV Swarm Cooperation and Online Point-Cloud Registration for Global Localization in GNSS-Intermittent Environments. Drones 2026, 10, 65."
 source_url: https://doi.org/10.3390/drones10010065
+category: 電腦視覺
 ---
 
 地下停車場、老舊廠房、山洞、災後倒塌的建築。這些地方有一個共同點：GPS 訊號進不來。

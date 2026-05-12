@@ -1,10 +1,13 @@
-﻿---
+---
 title: "Gemini 導讀了一篇不存在的論文"
 author: "AdamP"
 date: "2026-04-11"
 updated: "2026-04-11"
 slug: "ai-hallucination-academic-papers"
-tags: ["AI", "Gemini", "幻覺", "學術研究", "籃球數據"]
+tags:
+  - AI
+  - 生成式AI
+  - 幻覺
 heroImage: "/images/ai-hallucination-hero.jpg"
 heroAlt: "有人指著筆電螢幕上的內容"
 heroCredit: "John Schnobrich / Unsplash"
@@ -13,6 +16,7 @@ excerpt: "我請 Gemini 導讀一篇 SCI 論文，它給了我作者、期刊、
 highlight: "GPT-3.5 在生成學術引用時有約 55% 是編造的，即使是更新的 GPT-4 也有 18%；2025 年 NeurIPS 和 2026 年 ICLR 都有論文夾帶了 AI 幻覺出來的假引用，且通過了同儕審查。"
 source: "Nature Scientific Reports, ChatGPT Citation Fabrication Study (2023)"
 source_url: "https://www.nature.com/articles/s41598-023-41032-5"
+category: AI
 ---
 
 那篇論文的標題看起來很正常。

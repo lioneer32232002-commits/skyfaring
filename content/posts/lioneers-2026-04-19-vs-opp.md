@@ -1,16 +1,20 @@
-﻿---
+---
 title: "攻城獅 86-92 客場負福爾摩沙夢想家"
 author: "Skyfaring"
 date: "2026-04-19"
 updated: "2026-04-19"
 slug: "lioneers-2026-04-19-vs-opp"
-tags: ["攻城獅", "TPBL", "籃球", "福爾摩沙夢想家", "賽事分析"]
+tags:
+  - 攻城獅
+  - 超級籃球聯賽
+  - 賽事分析
 heroImage: "/images/lioneers-hero.jpg"
 heroAlt: "籃球場內景"
 heroCredit: "Unsplash"
 heroCreditUrl: "https://unsplash.com/photos/people-inside-a-basketball-gym-J_tbkGWxCH0"
 excerpt: "攻城獅 2026-04-19 客場對上福爾摩沙夢想家，86-92 負。數據背後的故事。"
 highlight: "第三節攻城獅只打出 14 分，夢想家打了 22 分，單節被逆轉 8 分；德魯這場 1 投 10 中，命中率這麼低，代表他在場上拿球之後要嘛找不到空間，要嘛被夢想家有針對性地守住了。"
+category: 攻城獅
 ---
 
 第一節打完，我看到30比21這個分差，心裡覺得今天應該穩了。客場打福爾摩沙夢想家，開局領先9分，這種感覺就像你手牌還不錯，開始有點飄。結果後來被追回來，還輸了6分。輸完之後一直在想，那個9分到底是怎麼消失的。

@@ -1,10 +1,13 @@
-﻿---
+---
 title: "最弱的那個人，決定了這支五人組能不能贏。"
 author: "Skyfaring"
 date: "2026-04-14"
 updated: "2026-04-14"
 slug: "nba-lineup-anc-prediction"
-tags: ["NBA", "數據分析", "籃球", "機器學習", "陣容分析"]
+tags:
+  - 籃球
+  - 數據分析
+  - NBA
 heroImage: "/images/nba-lineup-hero.jpg"
 heroAlt: "鳥瞰籃球場"
 heroCredit: "Thomas Briard / Unsplash"
@@ -13,6 +16,7 @@ excerpt: "一篇 NBA 陣容預測論文的核心發現：衡量一個五人組�
 highlight: "預測力最強的單一變數是 PMM(1)——五人組裡 Plus/Minus 最低的那個球員的數值，不是核心球星有多強，而是最薄弱的環節有多弱。"
 source: "Kolb & Cortez (2023), Predicting elite NBA lineups using order statistics, arXiv:2303.04963"
 source_url: "https://arxiv.org/abs/2303.04963"
+category: 籃球研究
 ---
 
 如果你要預測一支五人組能不能打出頂級表現，你會先看什麼？最高薪的球員？上場最多分鐘的人？還是整組人的平均 Plus/Minus？

@@ -1,16 +1,20 @@
-﻿---
+---
 title: "攻城獅 79-76 主場勝雲豹"
 author: "Skyfaring"
 date: "2026-04-11"
 updated: "2026-04-11"
 slug: "lioneers-2026-04-11-vs-leopards"
-tags: ["攻城獅", "TPBL", "籃球", "雲豹", "賽事分析"]
+tags:
+  - 攻城獅
+  - 超級籃球聯賽
+  - 賽事分析
 heroImage: "/images/lioneers-win2.jpg"
 heroAlt: "球員扣籃特寫"
 heroCredit: "Markus Spiske / Unsplash"
 heroCreditUrl: "https://unsplash.com/photos/1608245449230-4ac19066d2d0"
 excerpt: "攻城獅 2026-04-11 主場對上雲豹，79-76 勝。數據背後的故事。"
 highlight: "罰球命中 19 球，在一場攻城獅只得了 79 分的比賽裡，這代表全隊有將近四分之一的得分靠罰球線撐起來；本季場均 95 分，今天只有 79 分，但贏了。"
+category: 攻城獅
 ---
 
 看完這場比賽的數據，我第一個注意到的不是最後的 79:76，而是那個「19」。

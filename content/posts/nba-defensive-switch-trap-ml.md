@@ -1,10 +1,13 @@
-﻿---
+---
 title: "夾擊與換防：機器讀懂 NBA 防守的語言"
 author: "AdamP"
 date: "2026-04-23"
 updated: "2026-04-23"
 slug: "nba-defensive-switch-trap-ml"
-tags: ["NBA", "機器學習", "防守戰術", "籃球分析", "SportVU"]
+tags:
+  - 籃球
+  - 機器學習
+  - NBA
 excerpt: "夾擊不是隨機施壓，換防也不是隨機保護。一個結合 LSTM 和 CNN 的混合模型，從三萬多段 NBA 追蹤數據裡，讀出了防守戰術背後的時機與空間邏輯。"
 highlight: "進攻時間剩 20 至 24 秒的時段，夾擊出現的頻率達到 70.3%。這個時間點對應的是控球方剛拿到球、開始組織進攻的初期，防守方選擇在進攻布陣還未完成前主動施壓。相比之下，進攻時間剩最後 0 至 10 秒，夾擊頻率跌到 8.3%，換防也只剩 15.2%。時間快到了，防守反而趨於保守，不再主動換人或夾擊，避免製造空位讓對手在絕望中找到出口。"
 heroImage: "/images/nba-defensive-switch-trap-ml-defense.jpg"
@@ -13,6 +16,7 @@ heroCredit: "Bradikan"
 heroCreditUrl: "https://unsplash.com/photos/basketball-players-dribbling-and-running-on-court-4mKJCCJ03XU"
 source: "Li, J. Machine learning-based analysis of defensive strategies in basketball using player movement data. Sci Rep 15, 13887 (2025)."
 source_url: "https://doi.org/10.1038/s41598-025-98877-1"
+category: 籃球研究
 ---
 
 比賽剩最後兩分鐘，比數差三分。控球後衛帶球推進到弧頂，兩名防守球員同時朝他靠攏，距離縮短到一公尺半以內。旁觀者知道這是夾擊，教練也知道。問題是，在一個賽季三萬多次的攻守輪換裡，這種動作發生了幾次、在哪裡發生、對哪些對位有效，人工逐一標記，根本追不上。

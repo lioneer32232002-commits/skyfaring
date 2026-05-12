@@ -1,9 +1,12 @@
-﻿---
+---
 title: "NBA 球員半月板手術後能重返賽場嗎？最新研究給出更樂觀的答案"
 author: "AdamP"
 date: "2026-04-20"
 slug: "nba-meniscus-surgery-rtp"
-tags: ["NBA", "籃球", "運動醫學", "半月板", "膝蓋傷勢", "術後復出"]
+tags:
+  - 籃球
+  - 運動科學
+  - NBA
 heroImage: "/images/nba-knee-surgery.jpg"
 heroAlt: "籃球員在場上護住膝蓋"
 heroCredit: "Eagle Media Pro on Unsplash"
@@ -12,6 +15,7 @@ excerpt: "2025 年發表於《運動科學與醫學期刊》的研究分析了 4
 highlight: "47 名球員中，43 人（90.7%）成功重返 NBA。未能復出的 4 人中，3 人轉赴海外聯賽，1 人轉至 G-League。值得注意的是，這 4 人在受傷時年齡較輕（平均 22.4 歲），且在 NBA 只打了約兩個賽季，研究者認為他們未能回到 NBA 的原因，可能不只是傷勢本身。"
 source: "Nosrat et al., Journal of Sports Science and Medicine (2025) 24, 363-369"
 source_url: "https://doi.org/10.52082/jssm.2025.363"
+category: 籃球研究
 ---
 
 ## 半月板：籃球員膝蓋裡的關鍵零件

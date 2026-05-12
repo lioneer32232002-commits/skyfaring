@@ -1,15 +1,19 @@
-﻿---
+---
 title: "攻城獅 97-94 客場勝福爾摩沙夢想家"
 author: "Skyfaring"
 date: "2026-05-09"
 updated: "2026-05-09"
 slug: "lioneers-2026-05-09-vs-opp"
-tags: ["攻城獅", "TPBL", "籃球", "福爾摩沙夢想家", "賽事分析"]
+tags:
+  - 攻城獅
+  - 超級籃球聯賽
+  - 賽事分析
 heroImage: "/images/lioneers-win.jpg"
 heroAlt: "球員扣籃"
 heroCredit: "Unsplash"
 heroCreditUrl: "https://unsplash.com/photos/1577471488278-16eec37ffcc2"
 excerpt: "攻城獅 2026-05-09 客場對上福爾摩沙夢想家，97-94 勝。數據背後的故事。"
+category: 攻城獅
 ---
 
 第一節看完比分，我以為今天要輸了。

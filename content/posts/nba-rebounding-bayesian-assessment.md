@@ -1,10 +1,13 @@
-﻿---
+---
 title: "搶籃板，真的需要「搶」嗎？"
 author: "Skyfaring"
 date: "2026-04-15"
 updated: "2026-04-15"
 slug: "nba-rebounding-bayesian-assessment"
-tags: ["NBA", "數據分析", "籃球", "統計", "籃板"]
+tags:
+  - 籃球
+  - 數據分析
+  - NBA
 heroImage: "/images/nba-rebound-hero.jpg"
 heroAlt: "籃球場上的激烈對抗"
 heroCredit: "Unsplash"
@@ -13,6 +16,7 @@ excerpt: "Andre Drummond 年年霸佔籃板榜，Steven Adams 卻默默無聞。
 highlight: "Andre Drummond 年年蟬聯籃板榜前幾名，但研究顯示他的 β 能力其實相當普通，真正貢獻的主要是 γ 能力；Steven Adams 個人籃板數字並不亮眼，但他的 β 能力非常突出——他讓球隊整體贏得籃板的機率大幅提升。"
 source: "Kiriazis, N., Genest, C., & Leblanc, A. (2025). A Bayesian two-stage framework for lineup-independent assessment of individual rebounding ability in the NBA. Journal of Quantitative Analysis in Sports, 21(4), 303–326."
 source_url: "https://doi.org/10.1515/jqas-2023-0097"
+category: 籃球研究
 ---
 
 你有沒有想過，為什麼有些球員籃板數字好看，但球隊的籃板勝率卻沒有跟著提升？

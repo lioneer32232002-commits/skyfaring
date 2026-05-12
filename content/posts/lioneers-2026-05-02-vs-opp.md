@@ -1,15 +1,19 @@
-﻿---
+---
 title: "攻城獅 96-73 主場勝臺北台新戰神"
 author: "Skyfaring"
 date: "2026-05-02"
 updated: "2026-05-02"
 slug: "lioneers-2026-05-02-vs-opp"
-tags: ["攻城獅", "TPBL", "籃球", "臺北台新戰神", "賽事分析"]
+tags:
+  - 攻城獅
+  - 超級籃球聯賽
+  - 賽事分析
 heroImage: "/images/lioneers-win2.jpg"
 heroAlt: "球員扣籃特寫"
 heroCredit: "Unsplash"
 heroCreditUrl: "https://unsplash.com/photos/1608245449230-4ac19066d2d0"
 excerpt: "攻城獅 2026-05-02 主場對上臺北台新戰神，96-73 勝。數據背後的故事。"
+category: 攻城獅
 ---
 
 我其實很久沒有在比賽結束後，心裡有一個數字一直轉的感覺。今天是 48。

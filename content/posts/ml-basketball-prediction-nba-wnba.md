@@ -1,10 +1,13 @@
-﻿---
+---
 title: "機器能預測NBA比賽結果嗎"
 author: "AdamP"
 date: "2026-04-11"
 updated: "2026-04-11"
 slug: "ml-basketball-prediction-nba-wnba"
-tags: ["機器學習", "NBA", "WNBA", "體育數據", "AI"]
+tags:
+  - 籃球
+  - 機器學習
+  - NBA
 excerpt: "葡萄牙理工學院的研究者拿十個球季的NBA數據訓練了超過十種演算法，最好的準確率是 65%。這個數字看起來不高，但在籃球預測的世界裡，其實已經是認真的成果。"
 highlight: "NBA 2023-24 球季的最佳預測準確率，集成模型和神經網路都達到了 65.43%；WNBA 的數字更高，2023 球季最好的幾個模型準確率達到 69%。"
 heroImage: "/images/basketball-court-hero.jpg"
@@ -13,6 +16,7 @@ heroCredit: "Unsplash"
 heroCreditUrl: "https://unsplash.com/photos/1519861531473-9200262188bf"
 source: "Alves, J.M.; Barbosa, R.S. Machine Learning for Basketball Game Outcomes: NBA and WNBA Leagues. Computation 2025, 13(10), 230."
 source_url: "https://doi.org/10.3390/computation13100230"
+category: 籃球研究
 ---
 
 體育分析師每年都在問同一個問題。這篇來自葡萄牙理工學院的論文，給出了一個還算誠實的答案。

@@ -1,9 +1,12 @@
-﻿---
+---
 title: "追蹤那顆消失的球：TrackNetV4 如何讓 AI 學會感受動作"
 author: "AdamP"
 date: "2026-05-07"
 slug: "tracknetv4-sports-ball-tracking-motion-attention"
-tags: ["電腦視覺", "運動分析", "深度學習", "AI"]
+tags:
+  - 電腦視覺
+  - 深度學習
+  - 運動追蹤
 excerpt: "追蹤網球和羽球的 AI 模型家族 TrackNet，每一代都在進步，卻始終有個根本缺陷：它們只會「看」，不會「感受移動」。TrackNetV4 加入了可學習的動態注意力地圖，用兩個參數就讓模型知道球在哪裡。"
 highlight: "TrackNetV4 的動態注意力機制用幀差分圖搭配一個只有兩個可學習參數的動態提示層，生成動態注意力地圖，再與視覺特徵融合，整個模組是即插即用的設計，可以直接套在 TrackNetV2 或 V3 上。"
 heroImage: "/images/tracknetv4-tennis-ball-air.jpg"
@@ -12,6 +15,7 @@ heroCredit: "Marcin Skalij | Unsplash"
 heroCreditUrl: "https://unsplash.com/photos/X_e1pVtB1JU"
 source: "Raj, A., Wang, L., & Gedeon, T. (2024). TrackNetV4: Enhancing Fast Sports Object Tracking with Motion Attention Maps. arXiv:2409.14543."
 source_url: "https://arxiv.org/abs/2409.14543"
+category: 電腦視覺
 ---
 
 轉播鏡頭切到球場。一記殺球，球速超過每小時三百公里，在畫面上幾乎只是一道殘影。
