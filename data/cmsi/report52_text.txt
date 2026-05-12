@@ -1,0 +1,333 @@
+UU..SS.. NNaavvaall WWaarr CCoolllleeggee
+UU..SS.. NNaavvaall WWaarr CCoolllleeggee DDiiggiittaall CCoommmmoonnss
+CMSI China Maritime Reports China Maritime Studies Institute
+4-22-2026
+CChhiinnaa MMaarriittiimmee RReeppoorrtt ##5522:: EEvveerryytthhiinngg EEvveerryywwhheerree AAllll AAtt OOnnccee::
+TThhee GGrroowwiinngg CCoommpplleexxiittyy ooff PPLLAA AAmmpphhiibbiioouuss EExxeerrcciisseess
+Jason Wang
+Marvin Hamor Bernardo
+Pei-Jhen Wu
+Andrew S. Erickson
+Follow this and additional works at: https://digital-commons.usnwc.edu/cmsi-maritime-reports
+RReeccoommmmeennddeedd CCiittaattiioonn
+Wang, Jason; Bernardo, Marvin Hamor; Wu, Pei-Jhen; and Erickson, Andrew S., "China Maritime Report
+#52: Everything Everywhere All At Once: The Growing Complexity of PLA Amphibious Exercises" (2026).
+CMSI China Maritime Reports. 52.
+https://digital-commons.usnwc.edu/cmsi-maritime-reports/52
+This China Maritime Report is brought to you for free and open access by the China Maritime Studies Institute at
+U.S. Naval War College Digital Commons. It has been accepted for inclusion in CMSI China Maritime Reports by an
+authorized administrator of U.S. Naval War College Digital Commons. For more information, please contact
+repository.inquiries@usnwc.edu.
+ift 00 ffij$i)f �ffl
+China Maritime Studies Institute
+Main Findings
+● In August 2025, the People’s Republic of China (PRC) conducted a large-scale exercise
+to simulate an invasion of Taiwan. This “capstone” amphibious exercise suggests that
+People’s Liberation Army (PLA) training and preparations for a future Taiwan campaign
+are becoming more focused, realistic, and sophisticated.
+● The exercise consolidated elements from previous years into a single simulated operation.
+It integrated a floating causeway system, anti-landing barriers and obstacles, and
+amphibious Landing Craft Tank (LCT) vessels that landed forces directly onto
+beachheads.
+● For the first time observed, the PLA conducted a phased exercise with simultaneous
+amphibious landings in three distinct locations. Exercise areas incorporated civilian
+aquaculture obstacles like those expected to be found along Taiwan’s coastline,
+increasing environmental and tactical realism.
+● The exercise occurred at simulated “landing locations” opposite Taiwan, particularly
+within the Zhangzhou-Xiamen-Quanzhou littoral zone. The locations were distributed at
+distance intervals comparable to likely wartime beachheads along Taiwan’s western
+coastline. The total distance between discrete exercise locations was approximately 360
+kilometers, roughly the distance between Taipei and Kaohsiung.
+● Not merely hypothetical in nature, the exercise reflected a specific geographical and
+operational focus. It appears to be part of a larger trend whereby the PLA is mapping its
+exercises onto analogous geography that reflects envisioned targets.
+● Future research should explore the potential applications and implications of PLA efforts
+to train with similar distances and geometries as would be found in prospective conflict
+zones.
+● Starting this summer, observers should scrutinize future capstone amphibious exercises to
+better understand the PLA’s strengths, weaknesses, and underlying operational
+assumptions.
+Introduction
+There has been much public discussion in recent years surrounding the PLA’s amphibious
+transport “gap” and China’s supposed inability to sustain a large-scale amphibious invasion of
+Taiwan. This discourse seems to have ignored the Chinese Communist Party’s decades-long
+strategy to obscure, obfuscate, and otherwise minimize its military intent and operational
+capabilities, hiding them from both the Chinese public and the international community. Satellite
+imagery reveals that in August 2025, the PLA executed a large-scale “capstone” amphibious
+exercise along China’s southeastern coastline, rehearsing an invasion of Taiwan. This exercise
+suggests that PLA training and preparations for a future Taiwan campaign are becoming more
+focused and sophisticated.
+The exercise was structured into two phases, marking a notable increase in scale, realism, and
+geographic scope compared to past iterations. The effort consolidated elements from previous
+years into a single simulated operation. The drills included synchronized amphibious landings in
+multiple locations, the employment of a floating causeway, the inclusion of defensive aquatic
+barriers and beach obstacles, and the use of amphibious LCT vessels for landing forces directly
+onto beachheads. The exercise simulated assaults on three distinct locations and employed a
+variety of ostensibly civilian vessels alongside dedicated amphibious ships. Notably, the PLA
+expanded its training against defensive obstacles both ashore and in the water around the landing
+areas, increasing realism.
+This report outlines the exercise and describes the PLA’s continued efforts to conduct
+increasingly realistic training operations, while also learning how to overcome the problems
+associated with follow-on logistics support.
+The report is organized into three sections. Part one will provide an overview of the exercise and
+illustrate what occurred. Part two will describe the first and second phases of the exercise in
+detail. Part three will discuss key takeaways and conclude with potential points of consideration
+for future research.
+Part 1: Overview of the Exercise
+Figure 1: PLA Capstone Amphibious Exercice Locations, August 2025.1
+The PLA’s annual summer amphibious exercises, which culminate in August or September each
+year, are testbeds for developing innovative concepts and conducting operational experiments.
+These exercises increasingly simulate not only amphibious assaults, but also second echelon
+logistics operations needed for the long-term sustainment of a PLA invading force. Over the last
+several years, the PLA has incorporated dual-use civilian lift vessels into these exercises,
+increasing its lift capacity and ability to carry out large-scale amphibious operations.2
+Why use nominally civilian vessels? By leveraging China’s massive civilian shipbuilding sector,
+the PLA can increase its sealift capacity on a much shorter timeline and avoid building an
+expensive dedicated gray-hull amphibious fleet that may be used only once, if at all. The PLA is
+addressing its amphibious lift capacity shortfall by using civilian vessels to fill the gap and has
+probably taken this approach to maximize plausible deniability and to minimize “signatures” that
+could telegraph military intent.3
+The 23-24 August 2025 capstone amphibious exercise, like its predecessors, was designed to test
+joint operations, not only across the military but with mobilized civilian logistics assets. It used
+1 Source: ingeniSPACE analysis.
+2 U.S. Department of Defense, “Annual Report to Congress: Military and Security Developments involving the People’s
+Republic of China 2025,” p. 40.
+3 For background, see Ian Easton, “People’s Republic of China Stratagems and Surprise Attacks — Implications for the
+Defense of Taiwan,” Naval War College Review, Vol. 79, No. 1 (Winter 2026), pp. 1-23, https://digital-
+commons.usnwc.edu/cgi/viewcontent.cgi?article=8493&context=nwc-review.
+2
+dual-use civilian vessels as auxiliary transports, including tugboats, roll-on roll-off (RORO)
+ships, and LCTs. New and notable aspects observed in the 2025 exercise are as follows:
+(1) The exercise included a two-phase logistics component. First, a variety of vehicles were
+offloaded from sea-to-shore at several locations around Honghai Bay, Shanwei. Second,
+amphibious deployment and recovery operations were conducted at locations several hundred
+nautical miles apart (see Figure 1 above) using the same ROROs and amphibious fighting
+vehicles.
+(2) Individual exercise sites incorporated realistic obstacles in the littorals and on the beaches for
+amphibious assault units to overcome.
+(3) LCTs were employed to offload forces and cargo directly onto beachheads.
+Overall, this exercise involved the consolidation of many discrete elements witnessed in previous
+years into a single operation, demonstrating the increasing realism and complexity of the PLA’s
+training and the growing sophistication of its Taiwan invasion rehearsals, likely in reflection of its
+doctrine for a multi-phased amphibious campaign. Below we highlight salient changes seen in
+PLA capstone amphibious exercises over the past five years. Interested readers can find a
+timeline of developments and detailed imagery in Appendix A. PRC merchant ships observed
+participating in the civil-military training are listed in Appendix B.
+Comparative Findings: Evolving Civil-Military Logistics
+In recent years, the PLA has steadily expanded its amphibious capabilities through the utilization
+of dual-purpose, civil-military RORO vessels, specifically, ferries and vehicle carriers.4 As early
+as 2014, the PLA used civilian ROROs as part of civil-military maritime activities.5 By the early
+2020s, ROROs were regular participants in cross-theater amphibious exercises.6 In 2023 and
+2024, ROROs, along with other types of shallow-draft ships, participated in “surge-lift events”
+(i.e., the large-scale coordinated operation of mobilized civilian vessels for short periods). This
+development coincided with an uptick in inter-theater coordination and increase in the use of
+civilian transport assets for military activities.7 Today, “civilian” transport vessels are an integral
+part of the PLA’s amphibious exercises. They have been observed at multiple exercises held in
+multiple locations.
+The routine participation of ostensibly civilian transport vessels in PLA exercises underscores
+that these vessels are not merely an auxiliary logistics element but rather a formal operational
+capability enabling significant PLA lift capacity. By employing a variety of vessels, the PLA can
+broaden landing and transportation options, increase the scale and flexibility of amphibious
+4 孙琪 [Sun Qi] and 刘宝新 [Liu Baoxin], 民用客滚船军事应用研究 [Research on Military Application of Civil Ro-Ro
+Passenger Ships]. 军事交通学报 (2022) (Journal of Military Transportation), 1 (2), 25–28; 刘宝新 [Liu Baoxin], 孙
+琪 [Sun Qi] and 董楠, 汽车滚装船国防动员问题研究 [Research on national defense mobilization issues for car roll-
+on/roll-off (Ro-Ro) ships]. Forum (2021), (04), 1–4.
+5 J. Michael Dahm and Conor M. Kennedy, “China’s Navy is Exploring Ways to Use Ferries for Military Landings,”
+The Maritime Executive, 10 September 2021, https://maritime-executive.com/editorials/china-s-navy-is-exploring-
+ways-to-use-ferries-for-military-landings.
+6 J. Michael Dahm, “More Chinese Ferry Tales: China’s Use of Civilian Shipping in Military Activities, 2021-2022,”
+China Maritime Report No. 25, China Maritime Studies Institute, January 2023, https://digital-
+commons.usnwc.edu/cmsi-maritime-reports/25.
+7 J. Michael Dahm, Beyond Chinese Ferry Tales: The Rise of Deck Cargo Ships in China’s Military Activities, 2023,
+China Maritime Report 35 (Newport, RI: Naval War College China Maritime Studies Institute, February 2024), p. 1,
+https://digital-commons.usnwc.edu/cmsi-maritime-reports/35; 林超倫, 中國滾裝貨輪的潛在威脅與應對--以「渤海
+恆達」為例 [“Potential Threats and Countermeasures for RORO cargo ships from China: A case study of “BO HAI
+HENG DA”], 國防安全研究元 [Institute for National Defense and Security Research], 22 August 2025,
+https://indsr.org.tw/focus?uid=11&pid=2891&typeid=34.
+3
+operations, and minimize the “fatal funnel” and chaos expected during an invasion of Taiwan.
+These diverse assets could be employed for sustained, large-scale, broad area operations across
+the length of western Taiwan.
+The 2025 capstone amphibious exercise saw the PLA integrate components from previous
+exercises. New additions included the introduction of more complex command and control
+scenarios where amphibious operations occur simultaneously across multiple locations. We also
+observed the incorporation of activities observed in past exercises. Table 1 (below) outlines how
+the 2025 exercise integrated components seen at previous years, indicating unprecedented
+comprehensiveness.
+Table 1. Capstone Amphibious Activities List8
+Overall, the 2025 capstone exercise demonstrated meaningful progress toward the PLA’s ability
+to coordinate large-scale, dispersed amphibious operations using civil-military assets. The PLA
+probably leverages commercial, dual-use vessels to minimize its military logistics “signature”
+and can be expected to muster invasion forces in multifarious civilian ports. By intentionally
+blurring the line between civilian and military activity, the PLA raises uncertainty and increases
+the cost and effort of U.S. and Taiwanese monitoring, requiring additional sensors and analysts to
+interpret activity. The deployment of dual-use vessels obfuscates the PLA’s intentions, reduces
+indications and warning, and minimizes the amount of “executive decision time” available to
+non-PRC military and civilian officials prior to conflict, thus maximizing the probability of
+surprise.9
+8 Sources: ingeniSPACE analysis; J. Michael Dahm, “Chinese Ferry Tales: The PLA’s Use of Civilian Shipping in
+Support of Over-the-Shore Logistics,” China Maritime Report No. 16, China Maritime Studies Institute, November
+2021, https://digital-commons.usnwc.edu/cmsi-maritime-reports/16/; Dahm, “More Chinese Ferry Tales”; Dahm,
+“Beyond Chinese Ferry Tales”.
+9 Easton, “People’s Republic of China Stratagems and Surprise Attacks — Implications for the Defense of Taiwan.”
+4
+Figure 2: Start of the Phase 1 exercise at Honghai Bay, 23 August 2025 at 0841 CST.10
+10 BlackSky, Image ID: BSG-131-20250823-004152-389695791, 23 August 2025, Honghai Bay, China, 22.688N,
+115.393E, www.blacksky.com; AIS position data: HONG CHENG YUN 298 (MMSI 413266790), MAO YUAN
+XIANG (MMSI 413233070), LONG TENG YUN 2 (MMSI 413316830), HUAYIZHIXING (MMSI 413280040),
+XIA GANG TUO SI HAO (MMSI 412701220), XIAGANGTUOWUHAO (MMSI 412701230) and PU TUO DAO
+(MMSI 413127000), 23 August 2025, www.starboardintelligence.com.
+5
+Part 2: Overview of Phase One and Phase Two
+The first phase of the exercise began on 23 August 2025 at Honghai Bay, Shanwei, and employed
+multiple landing methods.11 As seen in Figure 3 (below), the PLA Navy-Marine Corps
+amphibious exercise area is divided between the west and east and separated by the PLA’s
+Jiesheng Base in the center, with additional training areas in the east.12 At first glance, the 2025
+amphibious landing exercise seemed similar to the 2022 and 2023 capstone exercises – focused
+on vehicle and cargo logistics. Commercial satellite imagery indicates that hundreds of vehicles
+landed ashore. Four landing methods were used. Vessels with deeper drafts unloaded at a pier and
+via a floating causeway system, respectively. LCTs landed directly on the beaches, and armored
+fighting vehicles (AFVs) motored ashore from ROROs stationed over the horizon.13 Three of
+these possible landing methods are captured in Figure 2 (above). The available data indicates that,
+among other things, the PLA was testing its ability to coordinate and integrate multiple types of
+landing methods into a single operation.
+Figure 3: Annotated map of Honghai Bay exercise areas.14
+Phase 1 was the larger of the two amphibious events, which involved the movement of AFVs,
+LCTs, ROROs, and other support vessels. The phasing aspect of the exercise was notable. The
+amphibious group congregated, set off as a unitary force to conduct its exercise, and then
+dispersed into three separate units (see Phase 2). The PLA appears to have moved units from one
+area of operation to another after completing the first operation. The dispersal pattern of the
+group suggests units completed the larger objective first and then proceeded to smaller areas of
+operation.
+11 The Honghai Bay (COORD: 22.6883, 115.3939) amphibious landing area is also known as the Jiesheng Bay (捷胜湾)
+amphibious landing area. This training area has been the site of previous large-scale exercises. It was the location for
+the South Group amphibious landing exercise for the 2022 capstone. This was again repeated for the 2023 capstone
+exercise.
+12 Planet, SkySat, Image ID: 20250823_065940_ssc6_u0001, 23 August 2025, Honghai Bay, China, 22.688N, 115.393E,
+www.planet.com.
+13 This was made possible by using a sequence of satellite imagery during the 23 August exercise: 1) BlackSky at 0841
+CST 2) Umbra at 1040 CST, 3) Planet at 1459 CST, combined with AIS data.
+14 Planet, SkySat, Image ID: 20250823_065940_ssc6_u0001, 23 August 2025, Honghai Bay, China, 22.688N, 115.393E,
+www.planet.com.
+6
+If transposed over Taiwan’s west coast, the simulated PLA operation would have begun on
+beaches and ports in the Tainan-Kaohsiung area and, after completion, proceeded to other
+amphibious targets along the coast.
+Figure 4: Composite image of Honghai Bay on 23 August 2025.15
+LCT Direct-to-Shore Landing
+Six LCT vessels participated in Phase 1 of the exercise. They conducted two separate direct-to-
+shore landing activities.16 The first observed deployment began at approximately 0830 CST (local
+time) with four LCT vessels.17 A registered cargo vessel named MAO YUAN XIANG and a
+“pleasure craft” named HUAYIZHIXING are shown in Figure 2 landing directly on the beach
+and unloading military vehicles.
+15 The SAR image was taken at 1004 CST, and the Optical image was taken at 1459 CST. Umbra, Image ID: 2025-08-
+23-02-04-46_UMBRA-05_MM, 23 August 2025, Honghai Bay, China, 22.688N, 115.393E,
+www.canopy.umbra.space; Planet, SkySat, Image ID: 20250823_065940_ssc6_u0001, 23 August 2025, Honghai Bay,
+China, 22.688N, 115.393E, www.planet.com.
+16 Only four have been visually confirmed by satellite imagery or other open-source data.
+17 AIS position data: HONG CHENG YUN 298 (MMSI 413266790), MAO YUAN XIANG (MMSI 413233070),
+LONG TENG YUN 2 (MMSI 413316830), and HUAYIZHIXING (MMSI 413280040), 23 August 2025,
+www.starboardintelligence.com; BlackSky, Image ID: BSG-131-20250823-004152-389695791, 23 August 2025,
+Honghai Bay, China, 22.688N, 115.393E, www.blacksky.com.
+7
+Figure 5 shows HUAYIZHIXING at the time of the beach landing. Available imagery and
+Automatic Identification System (AIS) tracking data strongly suggest that the other two LCTs,
+the cargo vessels LONG TENG YUN 2 and HONG CHENG YUN 298, likely conducted similar
+direct-to-beach landings.18
+The second deployment began at approximately 1020 CST with two vessels participating. The
+registered “pleasure craft” HUA YI 668 #1 unloaded military units directly onto the beach, and
+the cargo vessel HUA YI 007 unloaded vehicles via a floating causeway system (see Figure 4).19
+Each LCT can carry at least 20 vehicles, meaning a possible minimum of 120 vehicles were
+offloaded by LCTs.20 However, we counted approximately 215 vehicles on shore.21 This is the
+first time LCTs have been observed offloading units directly on the beach at a PLA capstone
+amphibious event.22 Insights provided by Thomas Shugart and Michael Dahm on the
+participation of LCTs in the August exercise demonstrate that these vessels were used to conduct
+direct beach landings.23
+Assessment of LCT Participation
+Figure 5: HUAYIZHIXING offloading possible armored fighting vehicles adjacent to Jiesheng Base,
+23 August 2025 at 0841 CST.24
+LCTs are a newer addition to the PLA’s dual-use fleet.25 LCT sizes range from 75 to 135 meters
+in length, 16 to 28 meters in width, and 2.7 to 4.5 meters maximum draft.26 Michael Dahm
+reported the first observed participation of large deck cargo vessels in the 2023 capstone
+amphibious exercise.27 These vessels are capable of transporting not only oversized commercial
+goods and machinery but also military vehicles and personnel. Shallow draft vessels like these
+18 AIS position data: HONG CHENG YUN 298 (MMSI 413266790) and LONG TENG YUN 2 (MMSI 413316830), 23
+August 2025, www.starboardintelligence.com. AIS is a navigation safety system broadcasting a vessel’s position,
+identity, speed, and course to other vessels at sea.
+19 Figure 4 is a composite SAR and electro-optical image overlay showing the floating causeway and landing craft
+transports where HUA YI 007 possibly docked with the causeway. We observed the ship wakes possibly created by
+HUA YI 668 #1 and HUAYIZHIXING after they offloaded directly onto the beach. AIS position data: HUA YI 007
+(MMSI 413278260) and HUA YI 668 #1 (413217490), 23 August 2025, www.starboardintelligence.com.
+20 BlackSky, Image ID: BSG-131-20250823-004152-389695791, 23 August 2025, Honghai Bay, China, 22.688N,
+115.393E, www.blacksky.com; Planet, SkySat, Image ID: 20250823_065940_ssc6_u0001, 23 August 2025, Honghai
+Bay, China, 22.688N, 115.393E, www.planet.com.
+21 This analysis is based on Figure 4, which outlines the locations of the vehicles.
+22 However, direct beach landings were observed in July 2025 at the same location involving three of the same LCTs.
+AIS position data: HONG CHENG YUN 298 (MMSI 413266790), MAO YUAN XIANG (MMSI 413233070), and
+LONG TENG YUN 2 (MMSI 413316830), 13-16 July 2025, www.starboardintelligence.com.
+23 Thomas Shugart and J. Michael Dahm, “Flooding the Zone: The Use of Civilian Landing Crafts (LCTs) in PLA
+Amphibious Operations,” China Maritime Studies Institute Note #18, 7 January 2026, pp. 4-6.
+24 BlackSky, Image ID: BSG-131-20250823-004152-389695791, 23 August 2025, Honghai Bay, China, 22.688N,
+115.393E, www.blacksky.com; AIS position data: HUAYIZHIXING (MMSI 413280040), 23 August 2025.
+www.starboardintelligence.com.
+25 For more details see Shugart and Dahm, “Flooding the Zone.”
+26 Shugart and Dahm, “Flooding the Zone,” p. 3.
+27 Dahm, “Beyond Ferry Tales,” p. 7.
+8
+LCTs number at least in the hundreds (and possibly thousands) in China, providing a
+considerable means for the PLA to land troops, vehicles, and supplies directly to shore.28 The
+inclusion of these vessels in training events appears to show the PLA’s interest in using LCTs to
+flexibly transport military forces directly to shore. LCTs could provide an essential over-the-
+shore lift capability, bridging the logistical gap between when the initial amphibious assaults hit
+the beach and the point at which the PLA might successfully capture and utilize a port or
+establish a floating causeway.29
+Figure 6: Composite image of Honghai Bay on 23 August 2025 at 1004 CST.30
+28 Shugart and Dahm, “Flooding the Zone.” While the LCTs participating in the 2025 capstone amphibious exercise are
+not the same specific vessels that appeared during the 2023 and 2024 exercises, we note the three additional
+participating cargo vessels in 2025 for a total of six deck cargo vessels. For the 2023 exercise, the owners and
+operators of the deck cargo ships were all privately owned companies. For the August 2025 exercise, only two of the
+six ships that participated were identifiable on AIS, see Appendix B.
+29 Shugart and Dahm, “Flooding the Zone,” p. 1.
+30 Umbra, Image ID: 2025-08-23-02-04-46_UMBRA-05_MM, 23 August 2025, Honghai Bay, China, 22.688N,
+115.393E, www.canopy.umbra.space; UMBRA, Image ID: 2025-08-23-02-04-31_UMBRA-05_MM, 23 August
+2025, Honghai Bay, China, 22.688N, 115.393E, www.canopy.umbra.space; AIS position data: BO HAI BAO ZHU
+(MMSI 412330020), PU TUO DAO (413127000), BO HAI FEI ZHU (MMSI 413324830), BO HAI ZUAN ZHU
+(MMSI 414210000), CHANG SHAN DAO (MMSI 412331000), HONG CHENG YUN 298 (MMSI 413266790),
+HUA YI 001 (MMSI 413278260), HUA YI 668 #1 (MMSI 413217490), HUAYIZHIXING (MMSI 413280040),
+LONG TENG YUN 2 (MMSI 413316830), MAO YUAN XIANG (MMSI 413233070), YONG XING DAO
+(412091000), JING BAO BAO (MMSI 412065980), XIA GANG TUO SI HAO (MMSI 412701220) and
+XIAGANGTUOWUHAO (MMSI 412701230), 23 August 2025, www.starboardintelligence.com.
+9
+Floating Causeway System Deployment
+The PLA employed a floating causeway system between 1010 and 1040 CST. Figure 6 (above)
+shows its use, with HUA YI 007 likely unloading vehicles through this method.31 After leaving
+the beach, the LONG TENG YUN 2 likely docked at the small pier located on the eastern
+exercise area of the Honghai Bay (see Figure 21 for a detailed image).32
+Figure 7: Floating causeway and semi-submersible barge, Honghai Bay, 23 August 2025 at 1040 CST.33
+As seen in the image above, the floating causeway consisted of four self-propelled segments and
+one semi-submersible barge. Once complete, it had a total length of approximately 365 meters.
+Each of the causeway segments was roughly 70 meters in length and 9 meters across, and the
+barge measured 70 x 25 meters. The floating causeway system used during this exercise was
+similar to the ones previously observed at Dacheng Bay on 10 September 2021.34 The floating
+pier system appears to use a semi-submersible barge at the head of the causeway for the docking
+of vessels like large ROROs ferries that have deep drafts.35 We were unable to determine from
+which port the causeway modules and barge originated. It is possible that the segments were
+transported via heavy cargo ships the day before the exercise.
+Support vessels accompanied the floating causeway system. Prior to the exercise, tugboats from
+Xiaomo Port repeatedly visited Honghai Bay.36 The ships that supported the floating causeway
+system, as well as the semi-submersible barge, traveled to and from Honghai Bay with their AIS
+deliberately disabled. The escorts included six small vessels and one larger vessel that measured
+27 x 12 meters. Operating “dark” without AIS transmission is unusual given the number of
+31 Throughout the exercise, only HUA YI 007 is presumed to have docked with the floating causeway based on AIS
+tracking data. AIS position data: HUA YI 007 (MMSI 413278260), 23 August 2025, www.starboardintelligence.com.
+32 AIS position data: LONG TENG YUN 2 (MMSI 413316830), 23 August 2025, www.starboardintelligence.com.
+33 Umbra, Image ID: 2025-08-23-02-04-46_UMBRA-05_MM, 23 August 2025, Honghai Bay, China, 22.688N,
+115.393E, www.canopy.umbra.space.
+34 Dahm, “Chinese Ferry Tales.”
+35 Ibid. pp. 47.
+36 AIS position data: XIA GANG TUO SI HAO (412701220) and XIAGANGTUOWUHAO (MMSI 412701230), 10-23
+August 2025, www.starboardintelligence.com. The presence of the floating causeways coincided with visits from
+tugboats from Xiaomo Port, on 10, 12, and 23 August. A similar causeway was imaged in Xiaomo on 27 October
+2023. Google Earth Pro 7.3.6.10441, 27 October 2023, Xiaomo, China, 22.747N, 115.044E, Maxar Technologies
+2025 and Airbus 2025.
+10

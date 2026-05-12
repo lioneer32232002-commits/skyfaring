@@ -1,0 +1,917 @@
+one-third of these graduates actually obtains their third officer/fourth engineer certificates.59 This
+suggests that graduates do not consider the merchant marine to be a relatively desirable or
+competitive career path. Other surveys reinforce this trend. Surveys tracking the rate of Dalian
+Maritime University graduates with maritime majors choosing to work aboard ships found a strong
+decline since 2000, with only 50 percent choosing to work at sea within five years after graduating.
+Many graduates entering the workforce also leave soon after. One COSCO Shipping sampling
+analysis indicated that the attrition rate of fresh graduates within one year was as high as 30%, and
+65% after five years.60 Poor job retention after graduation could result in serious shortages of future
+officers as older mariners leave the workforce.
+The merchant marine is also losing numbers as some personnel choose not to return to work. This
+trend has gradually worsened with younger generations that join the merchant marine and find less
+fulfillment in the career and less attraction to the pay.61 Analysis and discussion of this in China
+covers a broad range of reasons for personnel weighing whether to leave the merchant marine. These
+include the hardships of shipboard work and life, such as isolation, diet, and the prison-like
+environment of the ship. The vessel living conditions of major shipping companies are generally
+tolerable, but conditions aboard many coastal route vessels are often considered deplorable. The
+labor marketplace also contains many intermediary agencies with bad practices, sometimes resulting
+in delays in salary payout and other issues. Atop all these conditions, work at sea is inherently
+dangerous, naturally causing many seafarers to carefully consider whether work conditions are worth
+the personal risk. This risk is worsened by safety concerns over reduced crewing and overworked
+crews. 62
+Some issues are socially driven. Seafarers no longer enjoy the prestige they once did. Senior officers
+are sometimes not treated with appropriate authority by junior personnel and society has a negative
+impression of the profession.63 To address this, China has sought to revamp promotion of the
+profession nationally. This was one of the goals of the Seafarer Development Plan, which involved
+propaganda campaigns and the introduction of policies favorable to the profession and its
+competitiveness. Every year, China uses major dates such as the IMO’s Day of the Seafarer (世界海
+员日) and the National Seafarer Skills Competition (全国海员技能大比武 ) on June 25th, China
+59 Yao, “Analysis on the Current Situation of China’s Seafarer Development”; 钱华忠 [Qian Huazhong], 后疫情时代海员
+队伍建设探讨 [“Discussion on Building the Merchant Marine in the Post-Pandemic Era”], 信德海事网 [Xinde Marine
+News], 13 November 2021, https://www.xindemarinenews.com/topic/chuanrenxinsheng/2021/1113/34031.html.
+60 全球性海员短缺，如何吸引并留住海员? [“There is a Global Shortage of Seafarers, How Do We Attract and Retain
+Them?”], 中国海事网 [China Maritime Safety Online], 13 August 2019, https://www.zgsyb.com/news.html?aid=512093.
+61 Numerous personal experiences are shared online. Some can be seen in social media or in professional publications. 关
+于中国海员存在问题的讨论 [“Discussion on Problems With Chinese Seafarers”], 海运圈专栏作者 : 航海衣羊(胡月祥
+船长) [HYQFocus Columnist: Hang Hai Yi Yang (Captain Hu Yuexiang)], 17 October 2016,
+https://www.hyqfocus.com/hyqfocus/jsp/model.jsp?id=133&modelType=2; 游懿 [You Yi], 高素质船员队伍建设路径探
+讨 [“Path Exploration of Building a High-Quality Seafarer Team”], 中国海事 [China Maritime Safety], No. 7, 2024, p. 11.
+62 蔡文佳 [Cai Wenjia], 深度：我国船员流失 , 根源在这儿.. [“In Depth: The Root Cause of the Loss of China’s
+Seafarers Lies Here …”], 珠江海运 [Zhujiang Shipping], 5 August 2019,
+https://www.hyqfocus.com/jsp/model.jsp?id=14637&modelType=1; Qian Huazhong, “Discussion on Building the
+Merchant Marine in the Post-Pandemic Era.”
+63 Ibid; 蔡文佳 [Cai Wenjia], 深度: 我国船员流失, 根源在这儿 . [“In Depth: The Root Cause of the Loss of China’s
+Seafarers Lies Here …”], 珠江海运 [Zhujiang Shipping], 5 August 2019,
+https://www.hyqfocus.com/jsp/model.jsp?id=14637&modelType=1.
+14
+National Maritime Day (中国航海日) on July 11th, along with provincial initiatives, to promote
+seafarer career development.64
+Merchant marine pay is not as competitive compared to shore-based jobs as it once was. China does
+not maintain official data on seafarer pay, but it can be found in industry survey data. One assessment
+found that pay significantly declined for operations-grade personnel from 2010-2017, likely due to
+seafarer oversupply.65 The following few years saw stagnating or declining pay for most ship
+positions, except on oceanic oil and chemical tankers. Compared to bulk or container markets, oil
+and chemical industries are somewhat more stable and require more specialized certifications for
+seafarers, resulting in steady pay increases over time. Bulk cargo lines saw the lowest increases in
+crew pay, followed by containership positions.66 These worsening trends of reduced prestige, under-
+competitiveness in pay, and a declining rate of workforce entry were highlighted in the 2017 Chinese
+Seafarer Development Report, which concluded that it will be difficult for the workforce to meet the
+needs of the PRC’s shipping development.67
+The COVID-19 Pandemic wrought massive disruption to the global seafarer market. During the
+pandemic’s height, hundreds of thousands of seafarers were stranded and unable to get relief and
+repatriation due to travel restrictions. Many stranded seafarers experienced fatigue, fear, and mental
+health problems during this period, stuck at sea and unable to go ashore. Those who were able to get
+relieved still had problems returning home and faced several weeks of quarantine, with newly
+mutating strains of COVID-19 causing even further complications.68 Restrictions were particularly
+strict in China, which implemented a zero-COVID policy that entailed mass testing, mandatory
+quarantine, and limits on movement.69
+64 “Chinese Seafarer Development Plan (2016-2020)”; 2025年中国航海日公告 [“Notification on the 2025 China
+Maritime Day”], 新华社海口 [Xinhua Haikou], 11 July 2025,
+https://www.gov.cn/yaowen/liebiao/202507/content_7031669.htm.
+65 中国海员队伍发展现状、问题与对策 [“The Current Status, Issues, and Countermeasures of Chinese Seafarers”], 船
+管网 [Ship Management], 11 November 2017, http://www.shipmg.com/html/281.html#.
+66 船员工资十年变化大盘点：三副三管十年薪资翻 3倍? [“A Look Back at Changes in Seafarer Wages Over the Past
+Decade: Have the Salaries of Third Officers and Third Engineers Tripled in the Past Decade?”], 航运 e家 [hyej.net], 15
+August 2025, https://www.hyej.net/cms/detail_543.html.
+67 “2017 Annual Report on Chinese Seafarer Development,” p. 57.
+68 The IMO created a Seafarer Crisis Action Team to address individual cases and provide assistance to seafarers in
+distress. See: “Seafarer Crisis Action Team: Case Studies,” International Maritime Organization, Undated,
+https://www.imo.org/en/mediacentre/hottopics/pages/scat.aspx, accessed 5 September 2025; Jackie Northam, “Many
+Seafarers Are Stranded Aboard Ships Because of the Corona Virus,” National Public Radio – Morning Edition, 28 January
+2021, https://www.npr.org/2021/01/28/961470026/many-seafarers-are-stranded-aboard-ships-because-of-the-coronavirus.
+69 It covered many specific measures of COVID-19 prevention, including the issuance of personal protective equipment,
+testing regimens, crew changes and quarantine procedures, seafarer mental health treatment, daily health reporting, and
+much more. At least twelve versions of this guidance were published. See: 船舶船员新冠肺炎疫情防控操作指南(第十
+二版) [“The Operational Guidelines on the Prevention and Control of COVID-19 for Seafarers (V. 12)”], 中华人民共和
+国海事局 [Maritime Safety Administration of the People’s Republic of China], 12 December 2022,
+https://xindemarinenews.com/data/haishifagui/2022/1214/44205.html; 关于新冠肺炎疫情防控期间国际航行船舶中国
+籍船员换班操作要求 [“The Operational Requirements on Prevention and Control for International Route Ships
+Conducting Chinese Crew Change During COVID-19 ”], 国务院应对新型冠状病毒肺炎疫情联防联控机制综合组
+[Joint Prevention and Control Mechanism of the State Council in Response to the Novel Coronavirus Pneumonia], 10
+December 2021, https://cdc.fuzhou.gov.cn/zz/jkdt/jkyw/202112/t20211228_4279467.htm; In many cases, local authorities
+15
+The significant difficulty experienced during this time sparked temporary increases in seafarer pay as
+companies needed their workers to endure these hardships to keep ships in operation. Third officers
+working on major international container lines earning average monthly pay of 1,900 USD in 2019
+saw their monthly wages grow to 4,700 USD in 2021. All positions in various vessel classes received
+increases. Captains enjoyed an increase of around 1,400 to 2,000 USD per month.70 On 1 January
+2022, China Implemented new pay standards for seafarers during the pandemic. Established through
+industry consultation, a consensus was reached that Chinese oceangoing seafarers should receive a 7
+percent increase in minimum base salary for the 2022-2023 year based on 2021 levels.71 Some in
+China viewed its strict pandemic control measures as a boon to the competitive advantage of Chinese
+seafaring labor, claiming it helped keep ships operational through the tumultuous period.72
+After China ended its zero-COVID-19 rules in January 2023, PRC seafarer wages gradually receded
+from pandemic peaks as market forces recalibrated.73 Nonetheless, still-elevated PRC seafarer wages
+have led shipowners to reduce pay or seek out cheaper foreign labor for “mixed ship manning” (混
+派). According to one PRC ship captain writing from a Chilean port in July 2023, this trend began in
+earnest after the impact of COVID discouraged Chinese seafarers from the profession and the large
+increases in seafarer pay. He further noted that most private shipowners in China are using foreign
+crewing from the Philippines, India, Myanmar, Bangladesh, Pakistan, Vietnam, and other Asian
+countries.74
+prohibited PRC vessels from conducting crew changes in domestic ports. Zhiwei Zhao, Li Juntang, and Yueyan Wu,
+“Fatigue During the COVID-19 Pandemic: The Experiences of Chinese Seafarers,” Marine Policy, 153 (2023), p. 2.
+70 “A Look Back at Changes in Seafarer Wages Over the Past Decade: Have the Salaries of Third Officer and Third
+Engineers Tripled in the Past Decade?”
+71 疫情期间船员劳动待遇标准出台 [“Labor Pay Standards For Crew Members During the Pandemic are Released”], 新
+华网 [Xinhua], November 22, 2021, http://www.news.cn/politics/2021-11/22/c_1128089179.htm.
+72 “A Look Back at Changes in Seafarer Wages Over the Past Decade: Have the Salaries of Third Officers and Third
+Engineers Tripled in the Past Decade?”; 疫情下中国船员正撑起全球贸易, 被各船公司争抢 [“Chinese Seafares Are
+Supporting Global Trade During the Pandemic and Are Being Sought After By Shipping Companies”], 财新网 [Caixin],
+18 June 2021, https://www.zgsyb.com/news.html?aid=594299.
+73 Ibid; 中国海员薪资水平逐渐恢复到疫情前水平 [“Chinese Seafarers’ Wages Are Gradually Returning to Pre-
+Pandemic Levels”], 信德海事网 [Xinde Marine News], 4 September 2023,
+https://www.xindemarinenews.com/job/haiyuanxinzi/2023/0904/49888.html;
+74 李晓旭 [Li Xiaoxu], 浅谈船员混派感想 [“A Brief Discussion on Mixed Crewing”], 信德海事网 [Xinde Marine News],
+24 July 2023, https://www.xindemarinenews.com/topic/chuanrenxinsheng/2023/0724/49137.html. The trend toward
+foreign crewing was echoed in other commentaries, suggesting that Chinese seafarers will continue to be competitive in
+higher ranking positions, while most of the ratings in time might be given to foreign labor. 中国海员工资飙升? 中国海员
+现状及未来的几点看法 [“Are Chinese Seafarers’ Wages Soaring? Some Perspectives on the Current Situation and Future
+of Chinese Seafarers”], 信德海事网 [Xinde Marine News], 23 July 2024,
+https://www.xindemarinenews.com/topic/chuanrenxinsheng/2024/0723/55501.html.
+16
+Figure 5: China (Shanghai) International Seafarers’ salary table drawn from 18 Shanghai-based
+seafarer service and ship management companies.75
+China (Shanghai) International Seafarers’ Monthly Salary Table
+(26 August 2025) (US Dollars)
+Position Container Bulk Cargo Tanker Chemical
+Captain 9,587 9,421 12,111 11,184
+Chief Officer 7,612 7,137 9,255 8,818
+2nd Officer 4,597 4,412 5,284 5,219
+3rd Officer 4,299 4,158 4,951 4,939
+Chief Engineer 9,237 9,014 11,354 10,430
+2nd Engineer 7,629 7,116 9,273 8,739
+3rd Engineer 4,592 4,404 5,309 5,227
+4th Engineer 4,291 4,150 4,965 4,946
+Electrical Engineer 4,816 4,417 5,452 5,214
+Boatswain 2,186 2,054 2,745 2,646
+Chief Motorman 2,181 2,051 2,745 2,646
+Able-bodied Seaman 1,735 1,541 1,911 1,880
+Motorman 1,735 1,541 1,911 1,880
+Cook 2,122 2,024 2,459 2,294
+Waiter 1,023 767 1,173 1,088
+Managing the Seafarer Workforce—the Maritime Safety Administration (MSA)
+The MSA, under the Ministry of Transport, is the core government organ for administering China’s
+merchant marine. It is responsible for managing waterway safety, vessel registrations and
+inspections, prevention of ship pollution, and administering the examination, credentialing, and
+supervision of the merchant marine.76 The MSA is primarily an administrative and law enforcement
+government organ, separate from the China Coast Guard (中国海警), which is a law enforcement
+organization chiefly responsible for maritime rights protection and law enforcement under the
+Central Military Commission’s military chain of command.77 This separation of responsibilities
+relieves the Coast Guard of the heavy burden of administering China’s massive merchant fleet and
+workforce.
+75 中国(上海)国际海员薪酬指数 [“China Crew’s Remuneration Index”], 上海航运交易所 [Shanghai Shipping
+Exchange], Updated 26 August 2025, https://www.sse.net.cn/index/singleIndex?indexType=ccri; 指数简介 [“Index
+Introduction”], 上海航运交易所 [Shanghai Shipping Exchange], Undated,
+https://www.sse.net.cn/indexIntro?indexName=ccri, accessed 11 September 2025.
+76 “The Main Responsibilities of the Maritime Safety Administration (Ministry of Transport) of the People’s Republic of
+China” [中华人民共和国海事局（交通运输部海事局）主要职责 ], 中华人民共和国海事局 [Maritime Safety
+Administration of the People’s Republic of China], 25 May 2021,
+https://www.msa.gov.cn/page/article.do?articleId=86183E24-A5E6-4476-9DB6-B954A3E287DE.
+77 搞不清海事、海关、海警、海监有什么区别的看过来 ! [“If You Are Confused About the Differences Between the
+MSA, Customs, Coast Guard, and Maritime Surveillance, Please Take a Look!”], 中国海洋发展研究中心 [Academy of
+Ocean of China], 5 May 2023, https://aoc.ouc.edu.cn/2023/0505/c15171a431605/pagem.htm.
+17
+The MSA Headquarters (海事局机构) in Beijing, located within the Ministry of Transport complex,
+contains 21 subordinate offices responsible for various functions, policymaking, coordination, and
+supervision of the 15 directly subordinate regional MSA branches across China’s maritime provinces
+and regions.78
+MSA offices play critical roles in building the national maritime administrative system within which
+the merchant marine operates. This includes offices that plan waterway and vessel routes, manage
+marine radio frequencies and usage, vessel registration, ship safety compliance, coastal navigational
+aids, national maritime emergency response coordination, overseas international coordination, and
+many other functions to keep waterborne commerce flowing efficiently.79 These structures are
+mirrored in the 15 directly subordinate MSA branches.80
+The Mariner Management Office (船员管理处 ) is the most critical MSA office for administering the
+nation’s merchant marine. It drafts laws, regulations, and rules related to crew management and
+supervises their implementation. It develops and supervises the qualification standards for mariners,
+administers their training, examination, and certification, and manages the qualifications of training
+institutions engaged in mariner training. It also develops minimum safe manning standards for ships
+78内设机构 [“Internal Structure”], 中华人民共和国海事局 [Maritime Safety Administration of the People’s Republic of
+China], 7 April 2024, https://www.msa.gov.cn/page/article.do?articleId=45AF5734-8B5D-429C-BAB3-
+F8EFD079E1AC&channelId=7B1BBBD5-BBF4-438F-8CDA-B026A8B5003F.
+79 Ibid.
+80 For examples, see the Jiangsu MSA (江苏海事局), the Guangdong MSA (广东海事局), and the Lianyungang MSA (连
+云港海事局). 江苏海事局组织机构图 [“Organizational Structure Chart of the Jiangsu Maritime Safety Administration”],
+中华人民共和国江苏海事局 [People’s Republic of China Jiangsu Maritime Safety Administration], Undated,
+https://www.js.msa.gov.cn/col/col59/index.html, accessed 17 August 2025; 广东海事局 [“Guangdong Maritime Safety
+Administration”], 中华人民共和国海事局 [People’s Republic of China Maritime Safety Administration], 20 February
+2020, https://www.msa.gov.cn/page/article.do?articleId=C87C4C6C-B116-4479-A7FA-
+FC37F2895626&channelId=531631DD-852A-4B19-86E1-C6029A27ECA3; 连云港海事局 [“Lianyungang Maritime
+Safety Administration”], 中华人民共和国海事局 [People’s Republic of China Maritime Safety Administration], 20
+February 2020, https://www.msa.gov.cn/page/article.do?articleId=828F3D30-01ED-4446-8BA5-
+E3D1440E3FB6&channelId=531631DD-852A-4B19-86E1-C6029A27ECA3; There are also three regional navigational
+support centers directly subordinate to the Ministry of Transport but included under MSA management, which build and
+maintain maritime navigational aids, survey and map port channels, and maintain maritime safety communications. The
+three centers are the Northern, Eastern, and Southern Navigation Support Centers (南海航海保障中心). 北海航海保障中
+心 [“Northern Navigation Support Center”], 交通运输部海事局 [Maritime Safety Administration of the Ministry of
+Transport], 20 February 2020, https://www.msa.gov.cn/page/article.do?articleId=F14A3BCB-0D33-4FA8-B096-
+F0AC2DF3D906&channelId=531631DD-852A-4B19-86E1-C6029A27ECA3; 东海航海保障中心 [“Eastern Navigation
+Support Center”], 交通运输部海事局 [Maritime Safety Administration of the Ministry of Transport], 20 February 2020,
+https://www.msa.gov.cn/page/article.do?articleId=27B47C50-30F7-4A5F-B14E-
+19762BE0AA0A&channelId=531631DD-852A-4B19-86E1-C6029A27ECA3; 南海航海保障中心 [“Southern Navigation
+Support Center”], 交通运输部海事局 [Maritime Safety Administration of the Ministry of Transport], 20 February 2020,
+https://www.msa.gov.cn/page/article.do?articleId=D56F5F3D-8684-4DC3-BC19-
+AD1266C5D7FE&channelId=531631DD-852A-4B19-86E1-C6029A27ECA3.
+80 “Internal Structure.”
+80 For an example, see the Hainan MSA organization structure. 机构设置 [“Structure”], 中华人民共和国海南海事局
+[Hainan Maritime Safety Administration of P.R.C.], Undated, https://hn.msa.gov.cn/hszc_2_2_2/index.jhtml.
+80 船员考试中心 [“Mariner Testing Center”], 中华人民共和国海南海事局 [Hainan Maritime Safety Administration of
+P.R.C.], 28 April 2024, https://hn.msa.gov.cn/hszc_2_2_3/18640.jhtml.
+80 中华人民共和国海事局 – 海事一网通办 [“The People’s Republic of China Maritime Safety Administration – MSA
+One-Stop Service”], Undated, https://zwfw.msa.gov.cn/. Accessed 20 August 2025.
+18
+and manages manning certificates (配员证书).81 This headquarters-level office oversees the Mariner
+Management Offices in all the directly-subordinate MSAs, which in turn oversees the Mariner
+Management Offices in the local MSAs and their subordinate branches.82
+Mariner Testing Offices (船员考试中心) implement the examination system, including issuing
+training certificates, maintaining testing facilities and computer systems, ensuring the integrity of the
+exams, grading those exams, and assisting the Mariner Management Offices in the daily supervision
+and management of mariner education and training institutions within their jurisdiction.83
+Merchant mariners, or their employers, can access numerous services on the official MSA website. In
+the MSA’s online integrated information service, called “MSA One-Stop Service” (海事一网通办),
+mariners can look up test scores, exam schedules, find medical examination locations, check crew
+service agencies, view vessel information and inspection results, and access various other services
+and information. They can submit forms and apply for their merchant mariner documents using this
+online system or go to a service window at a nearby MSA branch.84
+Merchant Marine Training, Examination, and Credentialing
+The Ministry of Transport promulgates the “Rules for the Examination and Licensing of Seafarers of
+the People’s Republic of China” (中华人民共和国海船船员适任考试和发证规则) (referred to in
+shorthand as “The 20 Rules” / “20规则”), which stipulates the rules governing merchant marine
+licensing and qualifications. It is periodically updated to reflect industry and regulatory imperatives,
+with the most recent version updated in July 2020 and amended in April 2022.85 This section will
+explore this credentialing system in greater detail as all PRC seafarers live, work, and progress in
+their careers according to these rules. Much like the rest of the world’s merchant marine, Chinese
+seafarers navigate a complex system of certification based on their qualifications, training, sea time,
+and the classes of vessels they serve aboard.
+PRC merchant mariners are licensed according to the navigational areas in which they work and the
+vessels on which they serve. Navigational zones, as mentioned previously, are divided into unlimited
+navigation, coastal navigation, and inland waterways. This section will focus exclusively on seafarer
+licensing for unlimited and coastal navigation zones.86 Rules for “inland waterways” are covered
+under separate regulations.87
+81 “Internal Structure.”
+82 For an example, see the Hainan MSA organization structure. “Structure,” Hainan Maritime Safety Administration of
+P.R.C..
+83 船员考试中心 [“Mariner Testing Center”], 中华人民共和国海南海事局 [Hainan Maritime Safety Administration of
+P.R.C.], 28 April 2024, https://hn.msa.gov.cn/hszc_2_2_3/18640.jhtml. If/when the PRC state wanted to exercise control
+of PRC-flagged vessel(s) for military use, this office would play a supporting role, but ultimately defense mobilization
+occurs through the civil-military national defense mobilization committee structure.
+84 “The People’s Republic of China Maritime Safety Administration – MSA One-Stop Service.”.
+85 “Rules for the Examination and Licensing of Seafarers of the People’s Republic of China.”
+86 Article 63, Ibid.
+87 See 《中华人民共和国内河船舶船员适任考试和发证规则》 [“Rules of the People’s Republic of China for
+Competency Examination and Certification of Inland Vessel Crew”], 交通运输部令 2015年第 21号 [Ministry of
+Transport Order 2015 No. 21], Amended on 6 July 2020,
+https://xxgk.mot.gov.cn/2020/gz/202112/t20211222_3632485.html.
+19
+Figure 6 (below) breaks down the levels of unlimited navigation and coastal navigation certification
+for officers and ratings, providing a sense of what size ships and power plants they qualify for.
+Figure 6: Certificates of Competency for Seagoing Vessels88
+Officer Unlimited Navigation Certificate of Competency (无限航区适任证书 )
+There are two levels of unlimited navigation certificates for captains, chief officers, chief engineers, and second
+engineers:
+First-class certificate (一等适任证书 ): ships of or greater than 3,000 gross tons or 3,000 kw plants;
+Second-class certificate (二等适任证书): ships of 500-3,000 gross tons or 750-3,000 kw plants.
+Second officers, third officers, third engineers, and fourth engineers with unlimited navigation certificates are
+qualified for ships of or greater than 500 gross tons or 750 kw plants.
+Officer Coastal Navigation Certificate of Competency (沿海航区适任证书 )
+There are three levels of coastal navigation certification for captains, chief officers, chief engineers, and second
+engineers:
+First-class certificate: ships of or greater than 3,000 gross tons or 3,000 kw plants;
+Second-class certificate: ships of 500-3,000 gross tons or 750-3,000 kw plants;
+Third-class certificate: ships less than 500 gross tons or 750 kw plants.
+There are three levels of coastal navigation certification for second officers, third officers, third engineers, and
+fourth engineers:
+First-class certificate: ships of or greater than 500 gross tons or 750 kw plants;
+Second-class certificate: ships less than 500 gross tons or 750 kw plants.
+Certificate of Competency for Ratings (船员适任证书 )
+Certification for AS-D and AS–E allows for ships of or greater than 500 gross tons or 750 kw plants.
+Certificate levels for RFPNW / RFPEW.
+Unlimited navigation certificate: ships of or greater than 500 gross tons or 750 kw plants;
+Coastal navigation certificates are divided into two levels:
+First-class certificate: ships of or greater than 500 gross tons or 750 kw plants;
+Second-class certificate: ships less than 500 gross tons or 750 kw plants.
+Ratings that do not participate in a navigation or engine watch are not issued different levels of certification.
+To work aboard various classes of vessels and navigational areas, mariners must complete the
+corresponding training and assessment requirements to receive their qualifications. This includes
+basic safety training (基本安全培训 ) and competency training (船员适任培训) . Additional training,
+per separate regulations, is required for special types of vessels, including oil tankers, chemical
+tankers, liquified natural gas tankers, passenger ships, high-speed ships, ships using gas or other low-
+flashpoint fuels, or ships transiting polar regions.89 Typically, a mariner will complete training
+requirements at training agencies or institutions that offer their specific training programs and, upon
+completion, receive a “mariner training certificate” (船员培训证明). This document is proof they
+have completed the training and prerequisite for participation in the corresponding qualification
+examination.90
+88 Article 8, “Regulations on Examination and Certification of Competence for Seafarers of the People's Republic of
+China.”
+89 Article 24, Ibid.; Article 31 of “Regulation of the People’s Republic of China on Seamen (2023 Revision).”
+90 船员职业常识百问百答 [“100 Questions and Answers on Seafarer Occupational Knowledge”], 中国海事局 [China
+MSA], June 2022, pp. 6-7, www.msa.gov.cn/public/documents/document/mtex/ndi1/~edisp/20220624111425187.pdf.
+20
+As in other countries’ merchant marine, to rise through the ranks, a mariner will have to satisfy the
+requirements for a raise in grade (职务晋升) . There are separate career tracks for the deck and engine
+departments, each requiring similar basic safety and professional skills proficiency training and
+different job-specific proficiency training (岗位适任培训 ). An extensive detailing of specific
+requirements in training, course hours, examination, and expectations is contained in the “Seagoing
+Vessel Mariner Training Outline” (海船船员培训大纲) , published by the Ministry of Transport. This
+643-page document covers training requirements for every ship position and vessel type-specific
+certificate of competency.91
+There are also several modifications that can be made to a mariner’s license, termed in the United
+States “an increase in scope.” This entails the removal of limitations to an existing license, such as
+expanding the navigational area (航区扩大) and increasing tonnage (吨位提高) or horsepower (功率
+提高) limits of a license.92 Mariners will need to satisfy time in position, basic and job-specific
+training, and English exam requirements; take the relevant license modification exam; and satisfy
+additional training requirements across different subjects depending on the modification for which
+they are applying (tonnage or navigational area).93 Seafarers applying to work on international routes
+must pass the “Professional English Test for Seafarers on International Voyages” and achieve a 60
+percent score on the listening and oral portions.94 See the Appendix for a description of application
+requirements for training, qualifications, and examinations for seafarer certificates of competency.
+The PRC’s seafarer training programs are largely in alignment with the latest standards set forth in
+the International Convention on Standards of Training, Certification, and Watchkeeping for Seafarers
+(STCW), for which the PRC became a member state upon the convention’s entry into force on 28
+April 1984.95 STCW seeks to set standards in competency and certification for seafarers
+91 海船船员培训大纲（2021 版）[“Seagoing Vessel Mariner Training Outline (2021 Version)”], 中华人民共和国交通运
+输部 [People’s Republic of China Ministry of Transport], 19 August 2021, https://www.gov.cn/zhengce/zhengceku/2021-
+10/12/content_5642026.htm
+92 值班水手 航区扩大 [“Expansion of Navigational Area for RFPNW”], 中华人民共和国海事局 [Maritime Safety
+Administration of the People’s Republic of China], Undated,
+https://www.msa.gov.cn/page/outter/zxcx/cyzygh/cyjs/hc_jiashi/lt500/shuishou_navigating.html, accessed 29 August
+2025.
+93 For one example, see the official requirements for an increase in tonnage or navigational area for third and second
+officers here: 三副、二副 航区扩大/ 吨位提高 [“Navigational Expansion / Tonnage Increase for Third and Second
+Officers”], 中华人民共和国海事局 [Maritime Safety Administration of the People’s Republic of China], Undated,
+https://www.msa.gov.cn/page/outter/zxcx/cyzygh/cyjs/hc_jiashi/gteq3000/3fu_navigating.html, accessed 29 August 2025.
+94 Seafarers working on coastal routes are exempt from the Maritime English examination requirement. Article 5,
+Regulation of the People’s Republic of China on Seamen (2023 Revision); Articles 3, 6, and 7 of《国际航行船舶船员专
+业英语考试和发证办法》 [“Professional English Examination and Certification Measures for Mariners on International
+Voyages”], 交通部海事局 [Ministry of Transport Maritime Safety Administration], 4 November 2008. For English exam
+exemptions, review the raise in grade requirements contained on the MSA Career Plan page for seafarers. 船员晋升 – 海
+船船员驾驶 [“Elevation in Mariner Grades – Navigational Seafarers”], 中华人民共和国海事局 [Maritime Safety
+Administration of the People’s Republic of China], Undated,
+https://www.msa.gov.cn/page/outter/zxcx/cyzygh/cyjs/hc_jiashi.html, accessed 29 August 2025.
+95 The 1978 STCW convention was the first to establish basic requirements on training, certification and watchkeeping for
+seafarers internationally, which were previously established by individual governments without reference to other nations’
+practices. The convention was amended in 1995 and 2010, and the PRC has revised its national maritime laws many times
+over the years to remain in compliance with the latest standards of the convention. 中国加入有效的国际海事公约一览
+[“A List of International Maritime Conventions in Effect That China Has Acceded”], 国际航运法律研究 [Research on
+International Shipping Law], 23 September 2019, https://xindemarinenews.com/data/haishifagui/2019/0923/15179.html;
+21
+internationally. As a major supplier of seafarers, STCW standards have a significant impact on
+China’s maritime labor market, its maritime education and training system, and the relevant work of
+the MSA. The MSA’s International Cooperation Office is tasked with managing compliance
+mechanisms and tracking trends in international maritime conventions to ensure the PRC’s overall
+compliance.96 The PRC’s efforts to create, revise, and improve national maritime regulations and
+laws and oversee their implementation to maintain compliance with IMO instruments is a natural
+result of China’s export-oriented economy, expansive sea trade, and its goal of becoming a shipping
+power. China’s effort to build a world-class merchant marine would necessarily require it to be an
+internationally compliant one.
+Joining the Merchant Marine
+Aspiring seafarers can begin their careers from the bottom as one of the ratings or attend one of the
+many maritime schools to become a licensed officer. Some rise through the ranks without attending a
+school, referred to in the United States as a “hawsepiper” or in China simply as those that did not
+attend the academy.97
+To join as a rating on coastal and international routes, one must be between the ages of 18 and 60,
+pass the physical health exam, complete basic safety training and pass the corresponding exam, and
+complete any required professional skills training.98 Basic safety training is often referred to as the
+“Four Certificates“ (四小证), a safety training course that all seafarers must pass, including four
+training sub-courses: personal survival, fire prevention and fighting, elementary first aid, and
+personal safety and social responsibility.99 After completing these requirements, seafarers receive a
+“seafarer certificate of competency” (海船船员适任证书) and a “Seaman’s Identity Document” (船
+员服务簿), within which their sea time will be recorded in this book and used for license upgrades.
+They may then serve in unlimited and coastal navigational areas. Additional training, service time,
+and good performance and safety record are required to qualify for a RFPNW.100
+Ratings applying to become third officer or fourth engineer must complete no less than 18 months of
+sea time, complete the required job-specific training, and then pass the examination. Additionally,
+they should have performed bridge or engine room watch duties for no less than six months on a
+vessel of corresponding class under the guidance of the captain or a qualified officer as part of their
+on-board training (船上见习 ). Job-specific training courses, as determined by the MSA, include
+subjects on navigation, ship maneuvering and collision avoidance, ship management, ship structure
+and cargo transport, and maritime English. They will also need to complete practical assessments in
+“International Convention on Standards of Training, Certification and Watchkeeping for Seafarers (STCW),” International
+Maritime Organization, Undated, https://www.imo.org/en/ourwork/humanelement/pages/stcw-conv-link.aspx.
+96 “Internal Structure.”
+97 A “hawspipe” is the reinforced pipe running through the hull on the bow of a ship, through which the anchor chain will
+pass. A “hawsepiper” is an informal term in the U.S. Merchant Marine denoting a licensed officer who did not attend a
+traditional maritime college to receive their license and instead began their career as an unlicensed seaman.
+98 Physical examinations are conducted according to the 国家标准 30035-2021 - 船员健康检查要求 [“National Standard
+30035-2021 - Criteria of Physical Examination for Seafarers”], 国家市场监督管理总局 , 中国国家标准化管理委员会
+[State Administration of Market Regulation / Standardization Administration of China], 2021,
+https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=4AAF38BD344260F1CBBC9D0BF21645BB.
+99 船员“四小证”的那些事 [“Things About the ’Four Certificates’ for Seafarers”], 海员之家 [www.54seaman.com], 15
+November 2022, https://www.54seaman.com/news/detail_139275.html.
+100 船员从业及维权指南 [“Guide to Mariner Employment and Rights Protection”], 中国海事局 [China Maritime Safety
+Administration], June 2022, p. 4.
+22
+electronic navigational chart display and information systems (ECDIS), route planning, radar, cargo
+stowage, use of navigational instruments, maritime English, and ship maneuvering, collision
+avoidance, and bridge resource management. If they are applying for a third officer’s license with
+unlimited navigational area, they must have at least six months of sea time aboard a vessel operating
+in unlimited navigational areas.101
+Ascending the ranks from a rating to captain can theoretically be done in eight to ten years given no
+wasted time and smooth promotions. In reality, it usually takes much longer than ten years.102
+Seafarers must meet sea time requirements within proper vessel class, tonnage, and navigation areas,
+and then complete the administrative processes of training, examinations, and other steps to ensure
+they achieve their promotions. In many cases, individuals will experience delays, mistakes, or lack of
+opportunity depending on market conditions, requiring well over a decade to achieve the rank of
+captain.103
+The more common route to becoming a seafarer officer is through the PRC’s various maritime
+academies and institutions. Generally, high school graduates will enroll in these institutions as
+maritime majors (航海类专业 ). Eligibility to participate in the seafarer competency examination
+requires at least two years of full-time maritime secondary vocational education or above; or, for
+those who completed full-time non-maritime education at a junior college or above, completion of at
+least 12 months of training for the positions of third officer or fourth engineer. Upon completion of
+their courses, candidates may apply to take the unlimited navigation third officer / fourth engineer
+exams. A select few universities offering excellent undergraduate degrees in maritime majors are
+approved by the MSA to allow their graduates to apply for second officer / second engineer
+qualification examinations.104
+Academies and Professional Mariner Training Institutions
+The Ministry of Transport and the MSA coordinate the planning of training and education
+nationally.105 They administer maritime colleges (航海院校 ) and training institutions (培训机构)
+101 值班水手/高级值班水手 晋升 三副 [“RFPNW / AB-D Raise in grade to Third Officer”], 中华人民共和国海事局
+[Maritime Safety Administration of the People’s Republic of China], Undated,
+https://www.msa.gov.cn/page/outter/zxcx/cyzygh/cyjs/hc_jiashi/gteq500/shuishou_3fu.html, accessed 30 August 2025.
+102 For a career path illustration with excellent detail, see the graphic titled “‘20’ Rules Seafarer Promotion Chart” (“20” 规
+则海船船员晋升图) in: 水手晋升三副最新规则,超详细船员晋升攻略 [“The Latest Rules for Seafarers to Be Promoted
+to Third Officers, Super Detailed Seafarer Promotion Strategy”], 航运 e家 [hyej.net], 14 March 2022,
+https://www.hyej.net/cms/detail_91.html. There are numerous personal career experiences shared on the Chinese short-
+form video sharing platform Douyin. For example, a search for 海员最快要多久能考上船长 (“How long does it take for
+a seafarer to pass the examination to become a captain?”) will result in numerous seafarers sharing the theoretical eight to
+ten year process as well as their own experience that took 14 years or longer. www.douyin.com, accessed 10 October 2025.
+103 For one example, one third officer had to first work as an able seafarer due to a lack of ship positions and then pay his
+way into a third officer position aboard a ship. To transition from third officer to second officer, he had to convince a
+shipowner by offering to perform work as a second officer while only receiving the salary of a third officer. There could be
+many impediments that may slow down a seafarer’s promotion process. 船员从实习生升职到船长需要多长时间呢？远
+洋船员告诉你答案 [“How Long Does It Take for a Seafarer to Be Promoted from Trainee to Captain? Oceangoing
+Seafarers Tell You the Answer”], 知乎 - 布谷鸟的记忆 [Zhihu - Cuckoo’s Memories], 16 November 2021,
+https://zhuanlan.zhihu.com/p/434020828; 从水手到船长花了 16年，做海员几多收获几多憾事？[ “It Took 16 Years to
+Go From Seaman to Captain, What Does One Gain and Regret in Being a Seafarer?”], 搜狐 - 海员 Talk [Sohu - Seafarer
+Talk], 7 September 2024, https://news.sohu.com/a/807041373_121123888.
+104 “100 Questions and Answers on Seafarer Occupational Knowledge,” p. 20.
+105 “Chinese Seafarer Development Plan (2016-2020).”
+23
+through the issuing of training licenses. An institution must comply with MSA requirements to be
+granted a license by having the requisite facilities.106
+According to the official MSA listing by province and municipality, there are at least 242 maritime
+schools and training institutions that the merchant marine can access nationally. This figure appears
+to be a reduction from 310 entities in 2015, which was described in the 2016 Seafarer Development
+Plan as a system that was undergoing gradual improvement and had basically satisfied demand for
+maritime education.107 There are numerous institutions available nationwide, with some offering
+more advanced educational programs.
+All maritime colleges and training institutions are regulated according to the “Rules of the People’s
+Republic of China for the Administration of Seamen Training” and the specific requirements outlined
+extensively in “Implementation Measures for the Administration of Seamen Training” and its
+appendices. These documents detail the MSA-required standards of facilities, equipment, programs,
+staffing, and practices a training institute must comply with to obtain a license and engage in the
+business of mariner training, examination, and certification.108
+Maritime colleges refer to ordinary undergraduate colleges (普通本科院校) , higher vocational
+schools (高等职业学校 ), and secondary vocational schools (中等职业学校 ) that have been
+approved by the Ministry of Education and issued training licenses to offer full-time maritime majors
+for obtaining licenses for third officers, fourth engineers, and electrical engineers. These majors,
+including navigational technology, marine engineering, and electronic and electrical engineering, aim
+to train officers that meet the standards of operational-level seafarers.109 Most officers will begin
+their education at one of 59 maritime colleges nationwide (as of the end of 2020). These include 17
+106 These requirements include having qualified instructors and management staff, a complete system of management and
+safety protection, a quality control system to meet Ministry of Transport standards, and meet all other associated standards
+in training outlines, pollution prevention, and vessel safety. Articles 32-34, “Regulation of the People’s Republic of China
+on Seamen (2023 Revision).”
+107 Chinese Seafarer Development Plan (2016-2020).
+108 For example, appendix four of the implementation measures, “Standards for Training Venues, Facilities and Equipment,
+and Teaching Staff of Crew Training Institutions” (船员培训机构培训场地、设施设备以及师资配备标准) breaks down
+the specific program requirements for providing the basic safety training program, competency training programs for all
+ship positions, professional skills competency training programs, special training programs for specific classes of ships,
+and teaching staff standards for both seagoing and internal waterway training pipelines. See 附录 4 – 船员培训机构培训
+场地、设施设备以及师资配备标准 [“Appendix 4: Standards for Training Venues, Facilities and Equipment, and
+Teaching Staff of Crew Training Institutions”] in the 《〈中华人民共和国船员培训管理规则〉实施办法》
+[“Implementation Measures for the ‘Rules of the People’s Republic of China for the Administration of Seamen
+Training’”]; 《中华人民共和国船员培训管理规则》 (2019修正) [“Rules of the People’s Republic of China for the
+Administration of Seamen Training (2019 Amendment)”], 交通运输部令 2019年第 5号 [Ministry of Transport Order
+2019, No. 5], 5 February 2019,
+https://www.msa.gov.cn/page/article.do?type=hsfg&articleId=750624778560491297C2EE78D16D0D62. The latest
+measures can be found and downloaded from the MSA: 中华人民共和国海事局关于印发《〈中华人民共和国船员培训
+管理规则〉实施办法》的通知 [“Notice of the Maritime Safety Administration of the People’s Republic of China on
+Issuing the Implementation Measures for the ‘Rules of the People’s Republic of China for the Administration of Seamen
+Training’”], 中华人民共和国海事局 [Maritime Safety Administration of the People’s Republic of China], 8 January 2025,
+https://www.msa.gov.cn/page/article.do?articleId=9F7B8968-3750-4195-98F5-A282C6C80B05&channelId=0308A180-
+57AB-4E0E-9236-20FBED32B5EF.
+109 姚文兵 [Yao Wenbing], 赵友涛 [Zhao Youtao], 吴桂涛 [Wu Guitao], 邢永恒 [Xing Yongheng], and 段尊雷 [Duan
+Zunlei], 中国航海教育的现状与挑战 [“The Current Situation and Challenges of China’s Maritime Education”], 大连海
+事大学高等教育研究院 [Dalian Maritime University Higher Education Research Institute], October 2021,
+https://xindemarinenews.com/china/36264.html.
+24
+ordinary undergraduate colleges, 34 higher vocational schools, and 8 secondary vocational schools.
+Nearly two-thirds of these were founded or established new maritime majors after the turn of the
+century when enrollments in maritime colleges began to surge until their peak in 2010.110 The exact
+number of colleges may change as some institutions gain or lose their accreditations.
+Of the 17 undergraduate colleges, four are the most prominent maritime colleges in China. These
+include Dalian Maritime University, Shanghai Maritime University, Wuhan University of
+Technology, and Jimei University in Xiamen.111 These schools have had longstanding seafarer
+education programs and are major contributors of talent to maritime industries. They received an
+outstanding grade in the MSA’s 2021 Maritime Education and Training Quality Assessment, which
+evaluates the quality of merchant marine educational and training programs. Having received a
+certificate of excellence by the MSA, graduates from these schools are able to apply directly for the
+second officer, second engineer, and other advanced qualification examinations, giving more students
+the chance to rapidly advance to higher positions aboard merchant shipping.112
+While there are plenty of maritime schools to examine, Dalian Maritime University is worth
+highlighting since it is generally considered the best maritime school for navigation majors. Its
+graduates are highly sought after by top shipping companies.113 Dalian’s unique position in China’s
+maritime industries and education resulted in the creation of China’s first “Modern Shipping Industry
+and Education Integrated Community” (现代航运行业产教融合共同体) in 2025. This initiative is a
+combined effort by COSCO Shipping Dalian Investment Company, Dalian Maritime University, and
+the Dalian Vocational and Technical College, meant to broadly enhance Dalian’s maritime innovation
+110 Ibid. More recent sources state there are 20 schools offering maritime majors nationwide. 2024年航海技术专业大学
+排名及评级结果 [“2024 Maritime Technology University Rankings and Ratings”], 中国大学排行榜 [China University
+Ranking], 12 April 2024, https://www.cnur.com/major/1572.html.
+111 Dalian Maritime University, Shanghai Maritime University, and Wuhan University of Technology, were formerly
+directly under the Ministry of Transport. Some schools are still jointly built and supported by the Ministry of Transport. 有
+哪些学校是原交通部直属的高校? [“Which Schools Were Previously Directly Under the Ministry of Transport?”], 中华
+人民共和国交通运输部 - 人事教育司 [Ministry of Transport of the People’s Republic of China - Personnel and
+Education Department], 24 February 2025, https://www.mot.gov.cn/liuyanzixun/202501/t20250122_4162934.html; 四大
+知名航海院校, 选择哪一个比较好? 这个问题也太简单了吧 ! [“Which of the Four Renowned Maritime Schools is the
+Best? That’s a Simple Question, Isn’t It?”], 网易 - 鄂东轮机长 [Netease Account - Eastern Hubei Chief Engineer], 17
+May 2025, https://www.163.com/dy/article/JVP9TFE50552TCA5.html.
+112 4大海事院校航海类本科毕业生 , 可直接申请二副二管适任考试 [“Graduates of the Four Major Maritime
+Academies Can Directly Apply for the Second Officer and Third Engineer Qualification Examinations”], 信德海事网
+[Xinde Marine News], 16 April 2021, https://www.xindemarinenews.com/china/28775.html.
+113 The school’s prestige consistently attracts such major seafarer employers as COSCO Shipping and its nationwide
+subsidiaries and has landed it the title “the cradle of navigators.” 中国唯一“211”海事大学，航海类专业全国最强!
+[“China’s Only ’211’ Maritime University, The Strongest Navigation Majors in the Nation!”], 搜狐 - 阿右聊教育 [Sohu
+Account - A You Chats About Education], 30 July 2018, https://www.sohu.com/a/244095667_100206354; “Which of the
+Four Renowned Maritime Schools is the Best? That’s a Simple Question, Isn’t It?”; 学校简介 [“School Introduction”], 大
+连海事大学 [Dalian Maritime University], Undated, https://www.dlmu.edu.cn/wzsy/xxgk/xxjj.htm, accessed 24
+September 2025; COSCO Shipping Group has long sourced many of its seafarers from Dalian Maritime University and its
+leadership attaches great importance to the talent developed in the school. 高宁 [Gao Ning], 中远海运集团 2026届航海
+类专业毕业生招聘宣讲会在我校举办 [“COSCO Shipping Group Holds a Recruitment Seminar for 2026 Graduates of
+Maritime Majors at Our School”], 大连海事大学 - 校友事务与学生就业处 [Dalian Maritime University - Alumni Affairs
+and Student Employment Office], 5 September 2025, https://www.dlmu.edu.cn/info/2075/191848.htm.
+25
+and development through deeper cooperation across the government, industry, and education.114 Such
+municipal government-sponsored initiatives will likely further boost the prominence of Dalian
+Maritime University in fostering seafarer talent.115
+Noteworthy vocational and junior colleges include the Wuhan Institute of Shipbuilding Technology
+(武汉船舶职业技术学院 ), the Qingdao Ocean Shipping Mariners College (青岛远洋船员职业学
+院), and the Jiangsu Maritime Institute (江苏海事职业技术学院 ).116 The Qingdao Ocean Shipping
+Mariners College in particular is a highly targeted institution belonging to China’s largest state-
+owned shipping conglomerate, COSCO Shipping. Located on a brand-new campus established in
+September 2021, it features advanced facilities and simulators. The school combines a number of in-
+house educational institutions, including the COSCO Shipping Group Party School, COSCO
+Shipping University, COSCO Shipping Research Institute, and the Qingdao Ocean Shipping
+Vocational College, yielding a scale of educational resources commensurate with the size of
+COSCO‘s shipping businesses.117 Serving these concurrent roles, the institution provides the
+infrastructure for long-term talent development, ultimately funneling that talent into COSCO’s many
+businesses. COSCO subsidiaries, like COSCO Shipping Seafarer Management Co. Ltd, submit
+training course requirements to be developed at the school, providing talent tailored directly for
+company’s needs.118 Additionally, the school uniquely provides training and education for COSCO’s
+ship political commissars.119
+114 全国首个现代航运行业产教融合共同体在大连成立 ! [“The Nation’s First Modern Shipping Industry-Education
+Integrated Community is Established in Dalian”], 大连海事 [Dalian MSA], 1 July 2025,
+https://www.xindemarinenews.com/m/view.php?aid=60365.
+115 In June 2025, the Dalian Municipal Government released a programmatic document entitled “Dalian City’s Work Plan
+for Promoting the Construction of an Internationally Renowned Seafarer Education and Training Center and Seafarer
+Human Resources Allocation Center” (《大连市推进国际知名的海员教育培训中心和海员人力资源配置中心建设工
+作方案》), also widely referred to as the “dual seafarer center” (海员双中心) plan. This plan seeks to elevate the role of
+Dalian as a place for domestic and international merchant marine development. Among its goals, the plan prioritizes the
+development of high-end talent for new vessel types, technologies, navigational regions, and other emerging areas. It also
+seeks to expand the scale of Chinese international seafarers by supporting seafarer dispatch companies working in Dalian
+and attract more advanced mariner talent, provide improved seafarer and business services, give Dalian a greater role in
+international maritime governance, and other efforts to promote Dalian as a base for merchant marine talent. 关爱海员, 大
+连准备这么做! [“Caring for Seafarers, Dalian is Ready to Do So!”], 搜狐 - 辽宁省 [Sohu.com - Liaoning Province], 25
+June 2025, https://www.sohu.com/a/907863626_175033.
+116 比较好一点的航海类大专院校，推荐这三所，你认同吗 ? [“Recommendation off These Three Schools as Better
+Maritime Colleges, Do You Agree?”], 百度-百家号 [Baidu - Baijiahao], 27 June 2025,
+https://baijiahao.baidu.com/s?id=1836048857333004951&wfr=spider&for=pc.
+117 学院简介 [“College Introduction”], 青岛远洋船员职业学院 [Qingdao Ocean Shipping Mariners College], undated,
+https://www.qmc.edu.cn/cyzl/xyjj/index.html, accessed 20 September 2025; 组织机构 [“Organizational Structure”], 青岛
+远洋船员职业学院 [Qingdao Ocean Shipping Mariners College], undated, https://www.qmc.edu.cn/cyzl/xyjj/index.html,
+accessed 20 September 2025.
+118 中远海运船员管理有限公司参与高等职业教育人才培养年度报告 [“Annual Report on COSCO Shipping Seafarer
+Management Co. Ltd.’s Participation in Higher Vocational Education and Talent Training”], COSCO Shipping, 2022, pp.
+5-8.
+119 石庆贺 [Shi Qinghe] and 马云芹 [Ma Yunqin], 国有航运企业船舶政委队伍建设刍议 - 基于中远集团的调研与思
+考 [“A Preliminary Discussion on the Construction of Ship Political Commissars in State-Owned Shipping Enterprises”],
+青岛远洋船员职业学院学报 [Journal of Qingdao Ocean Shipping Mariners College], No. 3, 2015, pp. 32-35; “Annual
+Report on COSCO Shipping Seafarer Management Co. Ltd.’s Participation in Higher Vocational Education and Talent
+Training,” p. 9.
+26
+The attraction of maritime careers for prospective students has vacillated over the past two decades.
+National student enrollment was quite low in the early 2000s, peaked at over 40,000 in 2010, and
+was steady through the rest of the 2010s at above 15,000.120 National initiatives to improve seafarer
+quality and career prospects have likely had some impact as enrollment has increased to above
+20,000 in 2020 and reached over 23,000 in 2023.
+Maritime education is an essential component to the development and success of all of China’s
+maritime industries. These schools and training institutions help develop the seafarer workforce
+across its entire lifespan, from entry-level to senior positions. They deliver new graduates to the
+industry as operational-level officers, provide training to existing seafarers seeking to upgrade
+their license, and keep the workforce compliant with the standards established in the IMO’s
+STCW Convention.
+Licensing for Military Veterans
+Sea time gained in other maritime fields can be used to advance in China’s merchant marine or aid in
+upgrading to different navigational zones or more advanced licenses. According to article 23 of the
+“Rules of the People’s Republic of China of Seafarer Examination and Certification,” personnel who
+have served on inland waterway vessels, ocean-going fishing vessels, or military vessels may apply
+for corresponding certificates of competency for seafarers. The highest position for which they may
+apply is chief officer or second engineer, their experience must be of compatible relevant sea service
+with good performance records, and they must participate in the required training and pass the exams
+required for the position for which they are applying.121 Some may be granted exemption from job-
+specific training and may directly apply for competency certificate exams and, upon completion of a
+traineeship, apply to be issued such certificates. These include demobilized personnel on military
+vessels who have received a post-secondary degree in a navigation major or above from a full-time
+maritime academy, or a post-secondary degree in a related field such as navigation or marine
+engineering from a military academy. It also includes personnel with service aboard military vessels
+as sailors or engineers that are applying for RFPNW or RFPEW certificates.122
+The merchant marine is historically an attractive career transition for veterans. Shipping companies
+once had to accept discharged military officers when ordered to do so by the government as part of
+veteran employment programs, but companies have become far more selective since enterprise
+reform in the 1990s.123 Nonetheless, the “military-like” work environment, the important but difficult
+nature of the work, and the high pay relative to work in cities ashore, make the job suited to many
+transitioning veterans.124 Previous and current merchant marine development priorities have
+120 “2017 Annual Report on Chinese Seafarer Development,” p. 37; “The Current Situation and Challenges in China’s
+Maritime Education.”
+121 Article 23, “Rules for the Examination and Licensing of Seafarers of the People’s Republic of China.”
+122 “100 Questions and Answers on Seafarer Occupational Knowledge,” pp. 12-13.
+123 Zhao, Shi, and Feng, The Ship Political Commissar and His Shipmates – Transformation of the Commissar’s Role on
+Chinese Ships, pp. 25-26.
+124 According to one account, the downsides of joining the merchant marine such as being away from home for months on
+end pale in comparison to the existence of becoming a Didi driver or delivering takeout and packages for a living, a
+common profession for today’s urban youth which earns very little. The merchant marine offers a solid salary in a life-long
+profession that is currently in high demand, one in which they have a unique foundation of skill and discipline to excel in.
+了解过海员的生活，才懂退役军人为啥这么爱它 [“Only After Understanding the Lives of Seafarers Can you
+27
+emphasized increased recruitment of veterans to strengthen the workforce, seeing this group as a core
+source of talent.125
+National programs continue to promote this recruiting pipeline, focusing on professional maritime
+training programs. In 2020, the Ministry of Transport and the Ministry of Veteran’s Affairs jointly
+implemented “Project Wave Break” (浪花计划) to promote mariner training institutions and shipping
+companies to recruit retired military personnel through “school-enterprise cooperation and targeted
+training” (校企合用、定向培养 ), and provide a platform for retired military personnel to obtain
+professional mariner qualifications and job placement. In 2020, the MSA planned two batches of
+personnel placement. The first was for 1,900 personnel placed into professional skills training
+programs across the country and the second was the placement of 1,200 personnel into degree-
+granting educational programs in conjunction with an overall expansion of enrollment in maritime
+majors at higher vocational colleges.126
+Project Wave Break catalyzed numerous initiatives over the next few years across the provinces to
+promote veterans transitioning into the merchant marine. For example, Guangxi held a graduation
+ceremony at Beibu Gulf University for its first group of 100 veteran merchant mariners in April
+2021, delivering 40 veterans to jobs in international shipping and 60 veterans to jobs in coastal
+shipping with the Guangxi Hongxiang Shipping Co. Ltd. (广西鸿翔船务有限公司 ). This rate of job
+placement was enabled by a strategic cooperation framework agreement on veteran crew training
+between the company, Beibu Gulf University, Guangxi and local veterans’ affairs organs, and the
+Qinzhou MSA.127 By October 2024, this arrangement produced 480 veterans from Beibu Gulf
+University passing their exams and gaining employment with the company.128 Similar agreements
+have been struck between local governments, institutions, enterprises, and MSAs across China,
+ranging from Sanya to Dalian. These programs offer discounted tuition rates for veterans and are
+cooperating with numerous shipping enterprises.129
+In return, veterans from these programs are attractive recruits into China’s maritime militia forces.
+From the Guangxi example, an unknown number of veteran participants were also recruited into the
+Understand Why Veterans Love It So Much”], 退役人才网 [Tuiyirencai], 23 August 2024,
+https://www.163.com/dy/article/JA9VL5DJ0538L3WV.html.
+125 中华全国总工会关于加强高素质船员队伍建设的指导意见 [“Guiding Opinions of the Chinese Federation of Trade
+Unions on Strengthening the Construction of a High-Quality Seafarer Workforce”], 交通运输部行政规范性文件
+[Ministry of Transport Administrative Normative Documents], Document No. 41, 2021, p. 1.
+126 交通运输部、退役军人事务部联手打造退役军人上船就业 “直通车” [“The Ministry of Transport and the Ministry
+of Veteran’s Affairs Jointly Created a ‘Direct Track’ for Veteran Employment on Ships”], 央视网 [CCTV], 5 August 2020,
+https://www.mva.gov.cn/xinwen/mtbd/202008/t20200805_41490.html.
+127 刘德安 [Liu De’an] and 蓝陆遥 [Lan Luyao], 浪花计划”拓宽退役军人就业渠道 - 广西首期退役军人船员培训班学
+员结业走上工作岗位 [“‘Project Wave Break’ Expands Employment Channels For Veterans – Guangxi’s First Batch of
+Veteran’s Crew Training Courses Graduates and Enter Employment”], 中国军网 [China Military Online], 29 April 2021,
+http://www.81.cn/gfbmap/content/2021-04/29/content_288372.htm.
+128 《广西“浪花计划”退役军人船员培训开班，助力海洋强国建设》 [“Guangxi’s ‘Project Wave Break’ Veterans’ Crew
+Training Begins to Help Build a Maritime Power”], 船员帮 [chuanyuanbang.com], 26 October 2024,
+https://chuanyuanbang.com/News/news/id/2783.
+129 第一批面向退役军人船员培训招生报名信息 [“Enrollment Information for the First Batch of Veteran Mariner
+Training”], 中国海事交通运输部海事局官方澎湃号 [Official The Paper Account of the Maritime Safety Administration
+of the Transport Ministry of China], 5 August 2020, https://m.thepaper.cn/newsDetail_forward_8586925.
+28
+Guangxi Hongxiang Shipping Co.’s maritime militia force.130 In Fujian Province, the Quanzhou
+Ocean Institute (泉州海洋职业学院) began implementing Project Wave Break in October 2020 and
+is a prominent military-civilian mariner training institute.131 Working with the city’s People’s Armed
+Forces Department (PAFD), this institution established a maritime militia training base in 2016 to
+provide education and training to local maritime militia forces. By October 2023, the base had
+trained over 5,000 militia personnel, in addition to providing skills training, political education, and
+job placement assistance to thousands of veterans.132 It is unclear if similar arrangements are being
+implemented elsewhere and what the specific obligations militia recruitment entails.
+Fraud and Abuse
+In practice, the qualification and certification process for mariners involves many cases of fraud and
+abuse. Some mariners seeking to ascend the ranks for better positions on vessels or within companies
+may undertake illegal practices in falsifying time served at sea in their Seaman’s Identity Document.
+Other issues involve cheating on exams, sharing certificates for personal profit, scams from fake
+seafarer services, company’s attempting to skirt minimum manning requirements, and many other
+issues that not just break the law, but also create hidden maritime safety dangers in shipping. These
+are longstanding issues and the MSA has perpetually sought to crack down on bad actors and
+promote the industry and seafarer profession.133
+Provincial MSA branches publicly discuss their efforts at combating fraud in merchant marine
+reported sea time, qualifications, and other issues. According to Guangxi-based MSA experts, some
+of the common falsification methods include fake endorsements in Seafarer Identity Documents and
+falsifying crew member information in the ship’s port entry and departure reporting system. Captains
+might record false sea service for crew members, often due to company requests, “favors” (人情), or
+for personal profit, regardless of whether they were present aboard the vessel. While also falsifying
+130 刘德安 [Liu De’an] and 蓝陆遥 [Lan Luyao], “浪花计划”拓宽退役军人就业渠道广西首期退役军人船员培训班学
+员结业走上工作岗位 [“‘Project Wave Break’ Expands Employment Channels for Veterans. Students from Guangxi’s
+First Veterans’ Crew Training Program Graduate and Begin Working”], 中国国防报 [China Defense News], 29 April
+2021, p. 1.
+131 In addition to educating merchant mariners, the Quanzhou Ocean Institute has been recognized by authorities as an
+advanced institution for recruiting PLA NCOs, training veterans for jobs in the maritime field, national defense education,
+militia training, and other national defense talent development. As an important recruiter that accounts for half of
+Quanzhou Municipality’s total directly-recruited NCOs, the institution has signed a strategic framework agreement with
+the PLA’s Eastern Theater Command Army. For more on the roles this institution plays in supporting national defense
+talent development, see: 福建省职业教育教学成果奖成果名称：贯穿 “军”元素高素质技术技能人才培养创新与实践
+[“Fujian Provincial Vocational Education Teaching Achievement Award – Project Title: Innovation and Practice in
+Cultivating High-Quality Technical and Skilled Talents with Integrated ‘Military’ Elements”], 泉州海洋职业学院
+[Quanzhou Ocean Institute], May 2024, p. 7; “浪花计划”退役军人培训班开班 [“The ‘Project Wavebreak’ Training
+Program for Retired Military Personnel has Commenced”], 泉州晚报 [Quanzhou Evening News], 16 October 2020,
+https://www.qzoi.edu.cn/info/1351/31751.htm.
+132 我校获批第一批福建省退役军人思想政治教育基地 [“Our School Has Been Approved as One of the First Batch of
+Ideological and Political Education Bases for Retired Military Personnel in Fujian Province”], 泉州海洋职业学院
+[Quanzhou Ocean Institute], 24 December 2023, https://www.qzoi.edu.cn/info/1331/18501.htm; 石狮百位民兵 参加海上
+集训 [“A Hundred Militia from Shishi Participated in Maritime Training Exercises”], 泉州晚报 [Quanzhou Evening Post],
+8 August 2016, source no longer available online.
+133 For one example out of many, see these MSA experts discussing exam cheating and other bad practices from 2010. 郭
+金禄 [Guo Jinlu] and 黎志业 [Li Zhiye], 船员考试作弊预防 [“Prevention of Cheating in Seafarer Examination”], 中国海
+事 [China Maritime Safety], no. 4 (April 2010), pp. 52-60.
+29
+service records, crew members sometimes attempt to misuse the vessel’s accounts to falsely report
+their presence on board a vessel during port entry and departure.134 The consequences for these
+violations typically involve fines, suspension of certificates of competency for up to two years, as
+well as other penalties on individual applications for license upgrades and raises in grades. MSA
+inter-port office coordination has encountered difficulties in the verification of records, constraining
+efficiency in processing cases.135
+On occasion, MSA branches will publicize law enforcement crackdown efforts on fraudulent
+practices. For example, in January 2024, an investigative team from the Dalian MSA discovered a
+case where one individual forged and altered another’s certificate of competency to work aboard a
+ship as chief engineer when they were only qualified as a motorman. Due to the limits of the MSA’s
+resources and authority in criminal prosecution, the Dalian MSA provided its evidence to the Dalian
+Public Security Bureau to establish a case against the perpetrators. The arrest unveiled an
+intermediary involving six individuals selling forged certificates.136 Other regions have similarly
+reported a number of fraud cases. Recent intensified efforts by the Lianyungang MSA in the Spring
+of 2024 yielded discovery of up to 50 mariners who received certificates of competency using
+falsified sea service records.137
+The MSA implements a demerit system to punish mariners who violate the rules, codified in the 2015
+law “Measures of the People’s Republic of China for the Administration of Scoring Illegal Acts of
+Seafarers” (《中华人民共和国船员违法记分办法》) .138 Every violation has a standard of value in
+points that is added to a merchant mariner’s file during each scoring period (one year). If an
+individual accumulates 15 points during a period, the MSA shall withhold their certificates of
+competency, order them to participate in a five-day training on law and administrative regulation, and
+pass an examination. If they do not pass the examination, they may no longer serve aboard vessels. In
+more severe situations, wherein an individual surpasses the threshold twice within a scoring period or
+accumulates 40 points in two consecutive scoring periods, the MSA will also require them to take an
+134 李国寅 [Li Guoyin] and 徐丹丹 [Xu Dandan], 国内船员服务资历的认定和管理 [“Recognition and Management of
+Service Qualifications for Seafarers Engaged in Domestic Voyages”], 中国海事 [China Maritime Safety], No. 7, 2024, pp.
+14-16; 徐红儿 [Xu Hong’er], 赵海丽 [Zhao Haili], and 姜登运 [Jiang Dengyun], 海船船员任职资历审查问题及建议
+[“Issues and Suggestions on Qualification Review of Seafarers”], 中国海事 [China Maritime Safety], No. 2, 2024, p. 31.
+135 Li and Xu, “Recognition and Management of Service Qualifications for Seafarers Engaged in Domestic Voyages,” pp.
+14-16.
+136 海事公安携手，成功破获船员证书造假案 [“Maritime Safety Administration and Public Security Bureau Work
+Together to Successfully Crack Down on a Crew Certificate Forgery Case”], 中国海事 [China Maritime Safety], 17
+December 2024, https://www.xindemarinenews.com/china/57659.html.
+137 连云港海事局查处 6名船员服务资历造假违法行为 [“Lianyungang Maritime Safety Administration Investigates and
+Punishes 6 Crew Members for Falsifying Their Service Qualifications”], 连云港海事局 [Lianyungang Maritime Safety
+Administration], 23 April 2024, http://js.news.cn/20240423/ca7ac7d709eb4acc8b14f1485baba830/c.html.
+138 The initial trial measures were first introduced in 2002 but were replaced by the 2015 version. This demerit system
+scores different violations according to standards established based on relevant laws, such as the Maritime Traffic Safety
+Law (《海上交通安全法》 ), the Regulation of the People’s Republic of China on Seamen, the Regulations on the Safety
+Administration of Dangerous Chemicals (《危险化学品安全管理条例》) , the Marine Environmental Protection Law
+(《海洋环境保护法》 ), and others. 中华人民共和国海事局关于印发《中华人民共和国船员违法记分办法》的通知
+[“Notice of the Maritime Safety Administration of the People’s Republic of China on the Issuance of the ‘Measures of the
+People’s Republic of China for the Administration of Scoring Illegal Acts of Seafarers’”], 中华人民共和国海事局
+[Maritime Safety Administration of the People's Republic of China], 20 October 2015,
+https://sea.dlou.edu.cn/2017/1102/c1583a68354/page.htm.
+30
+assessment of their competency.139 Violations do not necessarily signify the end of a seafarer’s career
+but impose disciplinary actions to promote adherence to safety requirements. According to one
+assessment, the most common situations that cause seafarers to incur heavy point accrual fall under
+the following codes: 11001 (alcohol consumption), 11004 (leaving an accident), 11016 (overloading),
+11017 (minimum safe manning), 21012 (operating outside of a vessel’s navigational area – inland
+only), 11014 (not carrying certificates), and 11021 (failure to follow watchkeeping rules). These 8 or
+15 point violations are the most common reasons for the loss of certificates.140
+Crew Service Agencies
+Numerous crew service agencies (船员服务机构 ) operating across China provide services to
+Chinese seafarers. According to regulations on the administration of seafarer services, these are
+commercial entities “that act as an agent for mariners to handle relevant procedures such as applying
+for training, examinations, and obtaining certificates (including foreign crew certificates)” as well as
+businesses that “act as an agent for crew employers to manage crew affairs and provide manning for
+ships.” These agencies are administered and licensed by the MSA.141 There are also numerous
+seafarer dispatch agencies (海员外派机构) licensed to provide manning and crew services to
+seafarers working on foreign-flagged vessels, subject to separate regulations.142 Crew service
+agencies provide important services for seafarers navigating the complex experience, training, and
+qualification requirements for their professions, as well as providing ship management services for
+shipping enterprises, maintaining crew member files, and monitoring their status.143
+Regulations state crew service agencies must meet certain standards to provide these services and not
+engage in illegal activities such as bribery, forgery, acting on behalf of non-qualified crew service
+agencies, and many other illegal activities.144 The MSA may impose a fine of no less than 30,000 and
+no more than 150,000 RMB for agencies committing fraud, and in serious cases can suspend the
+agency’s services for up to two years.145 Despite the threat of fines and suspension, the industry is
+rife with illegal and fraudulent actors that cheat seafarers out of millions in earnings. They are further
+enabled by high levels of youth unemployment and desperate economic conditions, especially for
+people from poorer regions. Market conditions with periods of oversupply in seafarer labor worsen
+139 Ibid.
+140 “The Eight Common Situations Where Crew Members Receive High Demerit Points.”
+141 These agencies are categorized according to inland waterway vessel crew service agencies, Class A (甲级) - seagoing
+vessel crew service agencies (both international and domestic), and Class B (乙级) – seagoing vessel crew service
+agencies (domestic voyages only). See: Articles 2, 3, and 5, 中华人民共和国船员服务管理规定 [“Regulations of the
+People's Republic of China on the Administration of Seafarer Services”], 中国政府法制信息网 [China Government Legal
+Information Network], 9 February 2009,
+https://www.moj.gov.cn/pub/sfbgw/flfggz/flfggzbmgz/200902/t20090209_144641.html.
+142 中华人民共和国海员外派管理规定 [“Regulations on the People’s Republic of China on the Administration of
+Dispatched Seafarers”], 交通运输部发布 [Ministry of Transport Release], 20 September 2023.
+143 中华人民共和国海事局关于进一步提升船员服务业务质量有关措施的通知 [“Notice of the Maritime Safety
+Administration of the People’s Republic of China on Measures to Further Improve the Quality of Crew Services”], 中华人
+民共和国海事局 [Maritime Safety Administration of the People’s Republic of China], 13 March 2023,
+https://www.xindemarinenews.com/topic/chuanrenxinsheng/2023/0317/46456.html.
+144 Ibid., Article 21.
+145 Article 59, “Regulation of the People’s Republic of China on Seamen.” There are similar provisions in these regulations
+regarding illegal practices by shipping companies and seafarers, typically imposing a range of fines and license
+suspension.
+31
+the situation as seafarers, including captains, must rely on crewing agencies to find them positions
+aboard vessels, for steep fees. Agencies often make false promises regarding availability of work,
+vessel conditions, and pay. Many seafarers end up having to wait long periods to receive their pay
+from shipping companies and may have much of their pay withheld. In some cases, agencies
+fraudulently promise seafarers they can guarantee certificates within days, employment through
+inside connections with shipping companies, or guaranteed passing of examinations.146 Some victims
+are promised quick entry into positions on merchant vessels, only to find themselves tricked into
+hard, ill compensated labor aboard fishing vessels.147 It is unclear what the total impact these
+pernicious crew service agencies have on China’s seafarer labor market, but this problem appears
+widespread and has caused victims of fraud to abandon merchant marine careers.148
+Fighting fraud and abuse in the merchant marine and shipping companies is a perennial MSA task.
+The MSA promotes proper channels and procedures and attempts to improve seafarers’ experiences
+by directing personnel toward verified service providers and other services listed on the MSA’s
+online service platform.149 It also publicly warns seafarers of the dangers lurking in crew service
+agencies, attempts to enforce the rules for advancement in licensing and training, and tries to protect
+the rights of seafarers.150 In March 2023, the MSA introduced new measures that clarify the scope of
+permissible agency services to prevent fraudulent practices and false promises. The measures
+strengthen oversight of agency business filings and records, enhance transparency of crew service
+information, tighten regulations, and enforce stricter service quality standards.151 Local MSA
+branches also combat fraud and misinformation online as many bad actors operate through virtual
+employment forums.152
+146 薪水讨不回, 被黑中介骗 船长的下一步该怎么走? [“Unable to Recover Salary and Cheated by Black Agencies,
+What Should the Captain Do Next?”], 浙江新闻 [Zhejiang News], 21 April 2017, https://news.csi.com.cn/0d27d1e6-c0ca-
+4796-901f-911c52d2a1f1.html; 海事提醒! 船员遇到 “黑中介,” 线索大胆报上来 [“MSA Reminder! Crew Members
+Should Report Any Evidence They Encounter as ‘Black Agencies’”], 信德海事网 [Xinde Marine News], 11 July 2025,
+https://www.xindemarinenews.com/china/60472.html.
+147 For one example, see this case from 2016 of over 60 applicants being bussed from Shanghai to Rongcheng City,
+Shandong Province and made to work aboard small fishing vessels. They were promised positions aboard a large cargo
+ship with great pay. 应聘”高薪船员”竟被骗到山东荣成小渔船上做苦力 [“Applied for a ’High-Paying Crew Position’
+But was Tricked into Working as a Laborer on a Small Fishing Boat in Rongcheng, Shandong”], 龙 de船人
+[www.imarine.cn], 24 March 2016, https://www.imarine.cn/6527.html.
+148 There are many articles online with guides on where to avoid pitfalls, identify red flags, and how to find credible crew
+service agencies. 近期诈骗高发, 船员朋友请小心! [“There Has Been a Surge in Fraud Cases Recently, So Please Be
+Careful Fellow Crew Members!”], 中国海事 [China Maritime Safety], 26 November 2019,
+https://www.xindemarinenews.com/topic/chuanrenxinsheng/2019/1126/16474.html.
+149 MSA-verified crew service agencies are listed on the MSA’s “One-Stop Maritime Service” (海事一网通办) under
+“Services / Dispatch Agency Search” (服务/外派机构查询 ), https://zwfw.msa.gov.cn/dzzw/#/myQuery, accessed 28
+September 2025.
+150 Here is one guidance published by the Zhangzhou MSA in March 2023, outlining various fraudulent practices and ways
+seafarers can protect their rights and interests. 又是一年 315，船员朋友们这些诈骗 “套路”你们都知道吗 ? [“It’s March
+15th Again This Year. My Fellow Crew Members, Do You Know These Fraudulent ‘Tricks’?”], 漳州海事 [Zhangzhou
+MSA], 16 March 2023, https://www.xindemarinenews.com/topic/chuanrenxinsheng/2023/0316/46429.html.
+151 “Notice of the Maritime Safety Administration of the People’s Republic of China on Measures to Further Improve the
+Quality of Crew Services.”
+152 Here is one May 2022 example of the Guangdong MSA countering fraudulent advertising by a crew service agency
+regarding merchant marine physical examinations. 船员港湾 - 找 “黑中介” 办证要不得 [“Crew Harbor - Don’t Use
+32
+Shipping Enterprises
+Shipping enterprises play a major role in maintaining safety and supporting the development of their
+workforces. They bear the responsibility of ensuring minimal manning of vessels is met and that
+crews are properly qualified.153 China’s top state-owned shipping conglomerate COSCO Shipping
+and its subsidiary COSCO Shipping Seafarer Management Co. Ltd. (中远海运船员管理有限公司)
+is the largest crew manning provider in China, providing management services for 42,000 seafarers
+working aboard the company’s over 1,300 vessels.154
+COSCO Shipping Seafarer Management is headquartered in Shanghai and has branches in Beijing,
+Guangzhou, Dalian, Tianjin, Qingdao, and Shenzhen. These branches provide essential workforce
+services to keep COSCO’s ships manned by quality seafarers.155 Just as COSCO Shipping forms the
+backbone of PRC merchant shipping across many sectors, COSCO Shipping Seafarer Management
+provides the workforce to keep those ships operating.156 Not every shipping company has the
+resources and scale of COSCO Shipping, with its robust in-house crew service agency.
+Outside of COSCO Shipping, there is a broader market-driven trend of shipping companies
+outsourcing personnel management services to crew service agencies to alleviate some administrative
+burdens. This has created problems in seafarer labor stability with high crew turnover rates. A major
+side effect has been problematic implementation of the ship Party branch system and the assignment
+of ship political commissars in companies that attempt to implement the commissar system.157 In
+recent years, the government has tried to promote greater responsibility by shipping companies as
+well as in other industries concerning the safety and development of their workforces. Multiple
+official documents by the Ministry of Transport and MSA emphasized the core role of shipping
+companies in promoting workplace safety. These efforts sought to reduce the risk of accidents and
+mishaps at sea stemming from human factors, stressing that companies must have stronger safety
+management programs and strictly enforce standards in manning, qualifications, training, and watch
+standing.158 In 2024, the MSA released a notice titled “Notice on Further Promoting Shipping
+‘Black Agencies’ to Obtain Certificates”], 广东海事局官方澎拜号 [Official The Paper Account of the Guangdong MSA],
+15 May 2022, https://m.thepaper.cn/newsDetail_forward_18107024.
+153 According to section 6 of the “Rules for the Examination and Licensing of Seafarers of the People’s Republic of
+China,” shipping companies must ensure their seafarers hold valid licenses and certificates, are familiar with their job
+duties, are familiar with the vessel’s layout, characteristics, procedures, and limitations, and have the language and
+communication skills to perform their duties in emergencies and other situations. Article 44, “Regulation of the People's
+Republic of China on Seamen.”
+154 The company’s website claims it to be the world’s largest crew management company. 公司简介 [“Company
+Introduction”], 中远海运船员管理有限公司 [COSCO Shipping Seafarer Management Co., Ltd.], Undated,
+https://seafarer.coscoshipping.com/col10844/art/2017/art_10844_70268.html, accessed 30 September 2025; 中远海运船
+员管理有限公司 [“COSCO Shipping Seafarer Management Co., Ltd.”], 大连海事大学 - 就业信息网 [Dalian Maritime
+University - Employment Information Network], Undated, https://myjob.dlmu.edu.cn/company/view/id/955371, accessed
+30 September 2025.
+155 Ibid.
+156 Company homepage, 中远海运船员管理有限公司 [COSCO Shipping Seafarer Management Co., Ltd], undated,
+https://seafarer.coscoshipping.com/, accessed 30 September 2025.
+157 For one example of a state-owned shipping company that struggled with political commissar coverage over its fleet due
+to very low levels of in-house contracted seafarers, see the case of Guoneng Yuanhai Shipping Co. Ltd. (国能远海航运有
+限公司) in Kennedy, “Onboard Political Control,” p. 8.
+158 The 2017 MSA notice instructed nationwide MSA branches to oversee shipping companies in vigorously promoting the
+implementation of the workplace safety individual responsibility system (航运公司全员安全生产责任制 ). Under this
+system, personnel at all levels are responsible and accountable for safe production. See 交通运输部海事局: 全面加强航
+33

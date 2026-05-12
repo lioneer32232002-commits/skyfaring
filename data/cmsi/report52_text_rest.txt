@@ -1,0 +1,776 @@
+LCTs number at least in the hundreds (and possibly thousands) in China, providing a
+considerable means for the PLA to land troops, vehicles, and supplies directly to shore.28 The
+inclusion of these vessels in training events appears to show the PLA’s interest in using LCTs to
+flexibly transport military forces directly to shore. LCTs could provide an essential over-the-
+shore lift capability, bridging the logistical gap between when the initial amphibious assaults hit
+the beach and the point at which the PLA might successfully capture and utilize a port or
+establish a floating causeway.29
+Figure 6: Composite image of Honghai Bay on 23 August 2025 at 1004 CST.30
+28 Shugart and Dahm, “Flooding the Zone.” While the LCTs participating in the 2025 capstone amphibious exercise are
+not the same specific vessels that appeared during the 2023 and 2024 exercises, we note the three additional
+participating cargo vessels in 2025 for a total of six deck cargo vessels. For the 2023 exercise, the owners and
+operators of the deck cargo ships were all privately owned companies. For the August 2025 exercise, only two of the
+six ships that participated were identifiable on AIS, see Appendix B.
+29 Shugart and Dahm, “Flooding the Zone,” p. 1.
+30 Umbra, Image ID: 2025-08-23-02-04-46_UMBRA-05_MM, 23 August 2025, Honghai Bay, China, 22.688N,
+115.393E, www.canopy.umbra.space; UMBRA, Image ID: 2025-08-23-02-04-31_UMBRA-05_MM, 23 August
+2025, Honghai Bay, China, 22.688N, 115.393E, www.canopy.umbra.space; AIS position data: BO HAI BAO ZHU
+(MMSI 412330020), PU TUO DAO (413127000), BO HAI FEI ZHU (MMSI 413324830), BO HAI ZUAN ZHU
+(MMSI 414210000), CHANG SHAN DAO (MMSI 412331000), HONG CHENG YUN 298 (MMSI 413266790),
+HUA YI 001 (MMSI 413278260), HUA YI 668 #1 (MMSI 413217490), HUAYIZHIXING (MMSI 413280040),
+LONG TENG YUN 2 (MMSI 413316830), MAO YUAN XIANG (MMSI 413233070), YONG XING DAO
+(412091000), JING BAO BAO (MMSI 412065980), XIA GANG TUO SI HAO (MMSI 412701220) and
+XIAGANGTUOWUHAO (MMSI 412701230), 23 August 2025, www.starboardintelligence.com.
+9
+Floating Causeway System Deployment
+The PLA employed a floating causeway system between 1010 and 1040 CST. Figure 6 (above)
+shows its use, with HUA YI 007 likely unloading vehicles through this method.31 After leaving
+the beach, the LONG TENG YUN 2 likely docked at the small pier located on the eastern
+exercise area of the Honghai Bay (see Figure 21 for a detailed image).32
+Figure 7: Floating causeway and semi-submersible barge, Honghai Bay, 23 August 2025 at 1040 CST.33
+As seen in the image above, the floating causeway consisted of four self-propelled segments and
+one semi-submersible barge. Once complete, it had a total length of approximately 365 meters.
+Each of the causeway segments was roughly 70 meters in length and 9 meters across, and the
+barge measured 70 x 25 meters. The floating causeway system used during this exercise was
+similar to the ones previously observed at Dacheng Bay on 10 September 2021.34 The floating
+pier system appears to use a semi-submersible barge at the head of the causeway for the docking
+of vessels like large ROROs ferries that have deep drafts.35 We were unable to determine from
+which port the causeway modules and barge originated. It is possible that the segments were
+transported via heavy cargo ships the day before the exercise.
+Support vessels accompanied the floating causeway system. Prior to the exercise, tugboats from
+Xiaomo Port repeatedly visited Honghai Bay.36 The ships that supported the floating causeway
+system, as well as the semi-submersible barge, traveled to and from Honghai Bay with their AIS
+deliberately disabled. The escorts included six small vessels and one larger vessel that measured
+27 x 12 meters. Operating “dark” without AIS transmission is unusual given the number of
+31 Throughout the exercise, only HUA YI 007 is presumed to have docked with the floating causeway based on AIS
+tracking data. AIS position data: HUA YI 007 (MMSI 413278260), 23 August 2025, www.starboardintelligence.com.
+32 AIS position data: LONG TENG YUN 2 (MMSI 413316830), 23 August 2025, www.starboardintelligence.com.
+33 Umbra, Image ID: 2025-08-23-02-04-46_UMBRA-05_MM, 23 August 2025, Honghai Bay, China, 22.688N,
+115.393E, www.canopy.umbra.space.
+34 Dahm, “Chinese Ferry Tales.”
+35 Ibid. pp. 47.
+36 AIS position data: XIA GANG TUO SI HAO (412701220) and XIAGANGTUOWUHAO (MMSI 412701230), 10-23
+August 2025, www.starboardintelligence.com. The presence of the floating causeways coincided with visits from
+tugboats from Xiaomo Port, on 10, 12, and 23 August. A similar causeway was imaged in Xiaomo on 27 October
+2023. Google Earth Pro 7.3.6.10441, 27 October 2023, Xiaomo, China, 22.747N, 115.044E, Maxar Technologies
+2025 and Airbus 2025.
+10
+vessels in the flotilla and the heavy vessel traffic normally found in these waters. In the PLA’s
+2022 and 2023 capstone amphibious exercises, by contrast, vessels left AIS on, likely for safety
+reasons.37
+A new type of hovercraft appears to have been integrated into the exercise.38 The image below
+shows an image of this possible new hovercraft. It has a two-engine configuration, which is
+similar to the Type 726/A, but is smaller than its predecessors, the Type 728 (57.3 x 25.6 m) and
+726/A (33 x 16.8 m).39 To the authors’ best knowledge, this is the first documented observation
+of this new hovercraft taking part in an amphibious exercise. None of the subsequent
+commercially available images of the 2025 August exercise captured the hovercraft’s further
+participation. The new hovercraft was likely used to haul light equipment or to ferry personnel for
+the floating causeway.40
+Figure 8: Possible new hovercraft type, Honghai Bay exercise 23 August 2025 (left) and Jiangnan Shipyard, Shanghai, China, 5
+December 2025 (right).41
+37 Dahm, “More Chinese Ferry Tales” and “Beyond Chinese Ferry Tales.”
+38 The hovercraft measured 27 x 12 meters. It was developed at Jiangnan Shipyard. See Google Earth Pro 7.3.6.10441, 5
+December 2025, Jiangnan, China, 31.347N, 121.744E, Airbus 2025.
+39 Manfred Meyer (edited by Larry Bond and Chris Carlson), Modern Chinese Maritime Forces, Second Edition
+(Admiralty Trilogy Group, 1 April 2026), p. 31. Note that two similar vessels of the same size, but slightly different
+configuration, were imaged docked at the Jiangnan shipyard on 5 December 2025.
+40 The partial match is to the 1 YFL vessel, see Meyer, Modern Chinese Maritime Forces, pp. 56-57. This assertion is
+supported by a partial match of the six small vessels that also escorted the floating causeway to known PLA auxiliary
+vessels used as personnel ferries.
+41 BlackSky, Image ID: BSG-131-20250823-004152-389695791, 23 August 2025, Honghai Bay, China, 22.688N,
+115.393E, www.blacksky.com; Google Earth Pro 7.3.6.10441, 5 December 2025, Jiangnan, China, 31.347N,
+121.744E, Airbus 2025.
+11
+Floating Causeway System Landing Area
+Figure 9: Floating causeway landing site during Phase 1 exercise in Honghai Bay, 23 August 2025 at 0841 CST.42
+The point at which the floating causeway made landfall had a probable semi-circular excavation
+(approximately 27 meters across and 12 meters in length), as seen in the image above. The
+excavation appeared on the morning of the exercise. Spoils (material removed during excavation)
+can be seen in front of the excavation, and two possible backhoes are positioned on each side.43
+Excavations of this type were not seen during the 2022 or 2023 exercises. The excavation could
+have been used in conjunction with pillars to provide inshore stability and anchorage.44
+Assessment of Floating Causeway
+The self-propelled causeway system that took part in the exercise was first observed in 2021.45 It
+appears similar to the U.S. Navy’s improved lighterage system. A PLA causeway system was
+again observed in 2022 and 2023. The floating causeway systems used in 2022 and 2023 were the
+longest thus far on record at 650 meters.46 The system employed in 2021 was 450 meters long. In
+2025, the system used was 365 meters in length.47 The causeway system did not join the 2024
+capstone exercise.48
+The causeway system was seen at repeated practice drills in Honghai Bay weeks prior to the 2025
+exercise. These were likely rehearsals as they occurred in roughly the same location. During the
+capstone exercise, none of the ferry vessels docked directly with the causeway. This is in stark
+contrast to previous exercises where RORO ferries docked with floating causeways to facilitate
+offloading. As previously mentioned, it appears that only one LCT vessel used the causeway
+system. Images of Honghai Bay, taken approximately five hours after the causeway activities,
+42 BlackSky, Image ID: BSG-131-20250823-004152-389695791, 23 August 2025, Honghai Bay, China, 22.688N,
+115.393E, www.blacksky.com.
+43 This excavation is notably wider than the floating causeway itself (approximately 9 meters across). Prior exercises
+were conducted at Dacheng Bay which has a deeper foreshore at 110-120 meters compared to Honghai Bay at 48
+meters, when these exercises were conducted, respectively.
+44 We have seen similar excavations being utilized with the U.S. Navy’s Improved Navy Lighterage System (INLS)
+during an exercise in 2008, where pillars were driven into the sand to anchor and stabilize the inshore portion. Given
+the resolution of the frame, it is unclear whether similar pillars were used to stabilize the causeways inshore portion.
+For further details on the similarities of the respective U.S. and China systems see Michael Dahm and Conor M.
+Kennedy, “Civilian Shipping: Ferrying the People’s Liberation Army Ashore,” CIMSEC, 9 September 2021.
+45 Dahm, “Chinese Ferry Tales,” pp. 47-48.
+46 Planet, PlanetScope, Image ID: 20230924_015739_83_2427, 24 September 2023, Dacheng Bay, China, 23.597N,
+117.197E. www.planet.com; Dahm, “Beyond Ferry Tales,” p. 29.
+47 Dahm, “Chinese Ferry Tales,” p. 48; Umbra, Image ID: 2025-08-23-02-04-46_UMBRA-05_MM, 23 August 2025,
+Honghai Bay, China, 22.688N, 115.393E, www.canopy.umbra.space.
+48 Planet, PlanetScope, Image ID: 20240826_021846_15_2447, 26 August 2024, Hougang Bay, China, 23.684N,
+117.502E, www.planet.com.
+12
+show approximately 215 military vehicles ashore—some of which were probably offloaded via
+the floating causeway system.
+Offshore Deployment
+During the exercise, AFVs were likely deployed from a RORO passenger ferry at an approximate
+distance of 5 kilometers (2.7 nautical miles) from shore, just beyond the line of sight.49 The
+RORO, named PU TUO DAO, likely deployed the AFVs via its rear deck.50 Based on available
+data, the PU TUO DAO is the only ferry that participated in Phase 1 of the exercise. During
+previous exercises, ROROs operated roughly two kilometers from shore, or docked directly with
+a floating causeway.51 The PLA appears to be experimenting with LCTs along with LSTs, LSMs,
+and large deck cargo ships for direct-to-shore deployment.52 PLA planners may envision using
+ROROs as over-the-horizon deployment platforms for AFVs and are studying the most effective
+blend of military and civilian assets for amphibious assaults and over-the-shore logistics.53
+Figure 10: BO HAI HENG DA and ZHONG HUA FU XING during the Phase 1 exercise on 23 August 2025 at 0840 CST.54
+49 From 23 August 0500 to 1200 CST, PU TUO DAO largely remained on station at that location.
+50 AIS position data: PU TUO DAO (MMSI 413127000), 23 August 2025, www.starboardintelligence.com; Shugart and
+Dahm, “Flooding the Zone,” p. 5.
+51 Dahm, “Beyond Chinese Ferry Tales.” Notably, During the 2025 exercise, the ROROs maintained 5 kilometers
+distance from shore. Based on AIS data, they did not appear to dock directly with the floating causeway. AIS position
+data: BO HAI BAO ZHU (MMSI 412330020), PU TUO DAO (413127000), BO HAI FEI ZHU (MMSI 413324830),
+and BO HAI ZUAN ZHU (MMSI 414210000), 23 August 2025, www.starboardintelligence.com.
+52 Landing Ship Tank (LST) and Landing Ship Medium (LSM) are other forms of amphibious landing vessels. The PLA
+does operate dedicated vessels for both of these types, see Meyer, Modern Chinese Maritime Forces. Large Deck
+Cargo vessels are another form of single deck ships but at a larger size. These have been mostly observed as dual-use
+civilian vessels, see Dahm, “Beyond Chinese Ferry Tales.”
+53 Shugart and Dahm, “Flooding the Zone.”
+54 AIS position data: BO HAI HENG DA (MMSI 413254910), ZHONG HUA FU XING (MMSI 412283000), BO HAI
+BAO ZHU (MMSI 412330020), PU TUO DAO (413127000), BO HAI FEI ZHU (MMSI 413324830), BO HAI
+ZUAN ZHU (MMSI 414210000), CHANG SHAN DAO (MMSI 412331000), HONG CHENG YUN 298 (MMSI
+413266790), HUA YI 001 (MMSI 413278260), HUA YI 668 #1 (MMSI 413217490), HUAYIZHIXING (MMSI
+13
+During the Phase 1 exercise at Honghai Bay, two passenger ferries, BO HAI HENG DA and
+ZHONG HUA FU XING, docked at Xiaomo Port.55 ZHONG HUA FU XING docked first,
+spending approximately 3.5 hours in port, followed by BO HAI HENG DA, which spent roughly
+2 hours in port. Commercial satellite imagery of in-port activity was not available. However,
+Xiaomo Port was used for previous capstone exercises in 2022 and 2023.56 Given the available
+facilities and history of the port, the cargo ships possibly offloaded vehicles using a ramp or
+cranes at the terminal. This portion of Phase 1 constituted the direct-to-port offloading component
+of the exercise.57 Commercially available satellite imagery and AIS data of BYD’s dedicated
+RORO vessels reveal that this port has the facilities to accommodate the transportation of large
+volumes of vehicle cargo.58
+Notably, ZHONG HUA FU XING and BO HAI HENG DA made port visits in Quanzhou,
+Xiaomo, and Yantai, but reported no changes in their drafts. Related data are supposed to reflect
+total displacement and usually vary with loading and offloading activities. As the ships’ data were
+entered manually, it possible that operators intentionally concealed cargo operations to mask the
+amount of military cargo that was transported for the exercise.
+Phase 2 Overview: Simultaneous Amphibious Exercise Across Multiple Locations
+Figure 11: Exercise sites with approximate distances between each location.59
+Phase 2 of the capstone exercise saw vessels dispersed into smaller units that operated across
+multiple locations. This phase began on 24 August, with simultaneous drills involving the
+413280040), LONG TENG YUN 2 (MMSI 413316830), MAO YUAN XIANG (MMSI 413233070), YONG XING
+DAO (412091000), JING BAO BAO (MMSI 412065980), XIA GANG TUO SI HAO (MMSI 412701220) and
+XIAGANGTUOWUHAO (MMSI 412701230), 23 August 2025, www.starboardintelligence.com.
+55 AIS position data: BO HAI HENG DA (MMSI 413254910) and ZHONG HUA FU XING (MMSI 412283000), 19-27
+August 2025, www.starboardintelligence.com.
+56 Xiaomo Port (COORD: 22.7425, 115.0393) is also known as Xiaomo Harbor. Dahm, “More Chinese Ferry Tales”;
+“Beyond Chinese Ferry Tales.”
+57 This is inferred from other civilian activities at the port. Xiaomo is located within the Shenzhen-Shanwei Special
+Cooperation Zone, which has a BYD Vehicle Factory. Phate Zhang, “BYD starts construction of new $3 billion
+project at its fourth campus in Shenzhen,” CNEVPOST, 14 September 2022.
+58 AIS position data: BYD ZHENGZHOU (MMSI 477155100), 18 July 2025; BYD SHENZHEN (MMSI 477140200), 7
+July 2025, www.starboardintelligence.com.
+59 Source: ingeniSPACE analysis.
+14
+deployment and recovery of probable AFVs from ROROs at sea in three separate locations:
+Hougang Bay, Qianhu Bay, and Houcai Bay.60 RORO ferries constituted the primary means of
+transport for AFVs across all three locations. Phase 2 training evolutions included synchronized
+command and control across multiple exercise locations and the use of more realistic training
+environments, created with in-water obstacles and shoreline anti-landing barriers.
+Figure 12: Simultaneous amphibious drills at Hougang Bay on 24 August 2025 at 1025 CST.61
+At Hougang Bay, three unknown vessels participated in the exercise with two large passenger
+ferries, BO HAI BAO ZHU and BO HAI FEI ZHU.62 As seen in the image above, the BO HAI
+BAO ZHU and the BO HAI FEI ZHU measure 163 and 164 meters in length, respectively, and
+25 meters in width. Two of the vessels that accompanied them were possible PLAN Type 073A
+Yunshu-class landing ships.63 The third accompanying vessel was likely a PLAN Type 072A
+60 AIS position data: BO HAI BAO ZHU (MMSI 412330020), BO HAI FEI ZHU (MMSI 413324830) , CHANG SHAN
+DAO (MMSI 412331000), and YONG XING DAO (MMSI 412091000), 23-25 August 2025,
+www.starboardintelligence.com; Umbra, Image ID: 2025-08-24-02-52-25_UMBRA-10_MM, 24 August 2025,
+Hougang Bay, China, 23.680N, 117.474E, www.canopy.umbra.space; Planet, PlanetScope, Image ID:
+20250824_030638_89_24db, 24 August 2025, Houcai Bay, China, 24.172N, 117.983E. www.planet.com; Planet,
+PlanetScope, Image ID: 20250824_030641_10_24db, 24 August 2025, Qianhu Bay, China, 24.070N, 117.899E.
+www.planet.com.
+61 Umbra, Image ID: 2025-08-24-02-52-25_UMBRA-10_MM, 24 August 2025, Hougang Bay, China, 23.680N,
+117.474E, www.canopy.umbra.space; AIS position data: BO HAI BAO ZHU (MMSI 412330020) and BO HAI FEI
+ZHU (MMSI 413324830), 24 August 2025, www.starboardintelligence.com
+62 Ibid.
+63 Meyer, Modern Chinese Maritime Forces, p. 30.
+15
+landing ship.64 Social media videos produced by the PLA appear to corroborate the attendance of
+these PLAN vessels.65 These probable PLAN vessels arrived at Hougang Bay on 23 August, the
+day before the exercise. Onshore, approximately 90 or more possible military vehicles were
+present on the shoreline, marked as “staging area” in Figure 12.66 The number of vehicles does
+not include the possible amphibious vehicles already deployed in the water.
+Figure 13: Simulation of amphibious drills at Houci Bay and Qianhu Bay on 24 August 2025.67
+Two other amphibious drills were conducted at Qianhu Bay and Houcai Bay, approximately 40
+kilometers southwest of Taiwan’s Kinmen Islands. These drills appear to have involved loading
+and unloading AFVs at sea, with each using a single RORO passenger ferry. In Houcai Bay, we
+observed possible AFVs navigating between aquaculture rafts. The ferries involved were the
+CHANG SHAN DAO at Houcai Bay (marked C1), and the YONG XING DAO at Qianhu Bay
+(marked C2).68
+Bohai Ferry Group vessels played a prominent role in the 2025 exercises. Bohai Ferry Group
+vessels are large, ocean-going RORO ferries that provide the PLA with military-civil lift capacity
+similar to the U.S.’s Maritime Security Program.69 The size of the ROROs used in the 2025
+exercise ranged from 163 to 190 meters in length, and 25 to 26 meters in width. They likely had a
+64 Ibid. pp. 28.
+65 第72集团军某旅‘黄草岭英雄连’ 跨昼夜联合抢滩登陆演练 检验两栖作战能力 [“The Huangcao Ridge Hero
+Company of a Certain Brigade in the 72nd Group Army Certifies Amphibious Capability in Night Time Joint Assault
+Exercise”], 2025, C位看热点资讯 [Position C Look at Hot Info],
+https://haokan.baidu.com/v?pd=wisenatural&vid=13620177021083132069.
+66 Umbra, Image ID: 2025-08-24-02-52-25_UMBRA-10_MM, 24 August 2025, Dacheng Bay, China, 23.602N,
+117.181E, www.canopy.umbra.space.
+67 Planet, PlanetScope, Image ID: 20250824_030638_89_24db, 24 August 2025, Houcai Bay, China, 24.172N,
+117.983E. www.planet.com; Planet, PlanetScope, Image ID: 20250824_030641_10_24db, 24 August 2025, Qianhu
+Bay, China, 24.070N, 117.899E. www.planet.com.
+68 AIS position data: CHANG SHAN DAO (MMSI 412331000) and YONG XING DAO (MMSI 412091000), 24
+August 2025, www.starboardintelligence.com.
+69 The Maritime Security Program (MSP) maintains a fleet of commercially viable, military useful merchant ships to
+support U.S. Department of War sustainment sealift requirements during times of conflict or in other national
+emergencies.
+16
+draft of 6 meters.70 Bohai’s RORO cargo capacities range from 7,618 to 33,458 deadweight
+tons.71 They can transport roughly 2,000 troops and 300 vehicles per ship. The company has
+organized its vessels into a “transport group” (海运大队) that is a part of its Strategic Projection
+Support Force meant to provide “force projection and logistics support in diversified military
+missions.”72 Cosco Shipping Ferry’s owned and operated ships also continue to participate in the
+amphibious assault exercises. In August 2025, eight ROROs appeared during a single PLA
+amphibious exercise, an increase from five ROROs in 2023.
+Table 2. Participating RORO Ships Seen in Previous Exercises73
+Loading AFVs Further from Shore
+As during its 2023 and 2024 capstone exercises (as well as earlier amphibious drills held in
+2025), the PLA practiced the offshore loading and unloading of AFVs using civilian ROROs and
+continued to experiment with AFV deployment from near shore to over the horizon. In 2023,
+PLA units launched 7.5 kilometers from the shore (via the BO HAI FEI ZHU).74 Distances have
+varied over time. During the 2024 Hougang Bay exercise, the BO HAI FEI ZHU and the BO HAI
+BAO ZHU were approximately 4 kilometers from shore when the amphibious vehicles were
+70 Dahm, “More Chinese Ferry Tales,” p. 53.
+71 Ibid.
+72 何國本 [He Guoben], 邹偉 [Zou Wei], 鮑文華[Bao Wenhua], and 陳龍 [Chen Long], 戰略投送支援船隊訓練現狀
+及對策 [“Current Situation and Countermeasures of Strategic Projection Support Fleet Training”], 軍事交通學院學
+報 [Journal of Military Transportation University], no. 5 (May 2017), p. 2; op. cit. Conor M. Kennedy, “Onboard
+Political Control - The Ship Political Commissar in Chinese Merchant Shipping,” China Maritime Report No. 40,
+China Maritime Studies Institute, August 2024, p. 18.
+73 Source ingeniSPACE analysis; Dahm, “Chinese Ferry Tales”; Dahm, “More Chinese Ferry Tales”; Dahm, “Beyond
+Chinese Ferry Tales.”
+74 Dahm, “Beyond Ferry Tales,” p. 35.
+17
+launched.75
+During the 24 August 2025 exercise, the PLA experimented with various deployment distances.
+Hougang Bay had the closest, with deployment approximately 1.5 kilometers and 2.4 kilometers
+from shore for the BO HAI FEI ZHU and the BO HAI BAO ZHU, respectively.76 The CHANG
+SHAN DAO was approximately 3.8 kilometers from the shore of Houcai Bay during the offshore
+AFV loading exercise.77 YONG XING DAO was observed the farthest from shore at
+approximately 6.2 kilometers (from the shore of Qianhu Bay).78 The difference in distance
+between the exercises at Hougang bay compared to the two other locations could stem from the
+presence of the PLAN vessels. This would indicate two types of deployment are envisioned, one
+in conjunction with PLAN ships that are closer to shore, and another type that is conducted only
+with civilian vessels from over the horizon.
+The heavier use of ROROs in Phase 2 may indicate a stronger focus on increased operational
+flexibility. Phase 2 beaches had a higher density of in-water obstacles where direct-to-beach
+landing presented greater difficulty. AFV deployment via ROROs could be understood as a
+means of overcoming specific types of beach obstacles. Furthermore, they may also reflect an
+effort to reduce reliance on fixed port facilities that could be unavailable early in a conflict. This
+flexibility could increase the resilience of PLA efforts in the face of likely defensive
+countermeasures.
+Synchronized Command and Control Across Multiple Exercise Locations
+During the 2025 capstone exercise, we observed synchronized amphibious activities over a wide
+geographic area. Units first started as a single large logistics group that then split into smaller
+elements. The PLA was possibly simulating the timing required to logistically cover the length of
+Taiwan’s western coast. This contrasts with the 24-26 September 2023 capstone exercise which
+saw two groups conduct synchronized amphibious landings at two separate locations but never
+merge into a single logistic group.
+During Phase 2 of the 2025 exercise, four ROROs departed from Honghai Bay on 23 August and
+sailed to three different locations, each with different in-water obstacles. Two of the vessels went
+to Hougang Bay, and one each to Qianhu Bay and Houcai Bay.79 All four vessels were at their
+locations by 0200 CST the following day. Later that morning, between 1030 and 1130, all four
+vessels were seen conducting amphibious fighting vehicle recovery drills in their respective
+locations.
+By 1200 CST, all ROROs departed their coastal exercise areas. They sailed east, approximately
+25 kilometers from the Taiwan Strait median line and 40 kilometers southeast from Dongding
+Island. The ROROs sailed in formation at roughly 30 knots and returned to their original
+locations ten hours later. The ROROs arrived in quick succession within a 20-minute difference
+between each. This represents a significant improvement over the previous day.
+According to reports that covered PLA exercises in 2022 and 2023, respectively, the units
+75 Planet, PlanetScope, Image ID: 20240826_021846_15_2447, 26 August 2024, Hougang Bay, China, 23.684N,
+117.502E, www.planet.com.
+76 Umbra, Image ID: 2025-08-24-02-52-25_UMBRA-10_MM, 24 August 2025, Hougang Bay, China, 23.680N,
+117.474E, www.canopy.umbra.space.
+77 Planet, PlanetScope, Image ID: 20250824_030638_89_24db, 24 August 2025, Houcai Bay, China, 24.172N,
+117.983E, www.planet.com.
+78 Planet, PlanetScope, Image ID: 20250824_030641_10_24db, 24 August 2025, Qianhu Bay, China, 24.070N,
+117.899E, www.planet.com.
+79 AIS position data: BO HAI BAO ZHU (MMSI 412330020), BO HAI FEI ZHU (MMSI 413324830), CHANG SHAN
+DAO (MMSI 412331000), and YONG XING DAO (MMSI 412091000), 23-25 August 2025,
+www.starboardintelligence.com.
+18
+participating in the capstone amphibious exercises were previously divided to two “main” assault
+forces, a North Group and a South Group.80 The North Group operated in three locations in
+Southern Fujian, including the Gulei Peninsula and Hougang Bay. The South Group operated in
+Honghai Bay.81 The 2023 exercise saw the addition of a Hainan Group operated in Haikou,
+Hainan.82 The three locations for the North Group stretched over 280 kilometers, while the South
+Group only had one location at Honghai bay. The total distance for both groups is approximately
+310 kilometers. If the Hainan group at Haikou is included, the distance was over 860 kilometers.
+In 2024, amphibious training focused on two locations in Southern Fujian, Dacheng and Hougang
+Bay, which are only about 35 kilometers apart.83
+In 2025, we observed a proliferation of exercise locations over a wider geographic distance for a
+singular force. The farthest distance between exercise locations was approximately 360
+kilometers. This is roughly the same distance as that from Taipei to Kaohsiung. The geographical
+locations of the 2025 exercise represent both an expansion and concentration. The exercise was
+concentrated in the eastern region of the PRC facing Taiwan, and it expanded across a distance
+similar to the length of Taiwan’s western coastline.
+Part 3: A More Realistic Training Environment
+The 2025 capstone exercise was notable for the inclusion of AFVs navigating between
+aquaculture obstructions close to shore. During previous exercises, aquaculture rafts were
+removed before AFVs entered the area to minimize the risk of fouling or capsizing.84 In contrast,
+during Phase 2 of the 2025 exercise, AFVs navigated between aquaculture rafts at speed. The
+presence of aquaculture rafts may indicate a further attempt to simulate actual challenges
+amphibious forces would experience during combat. Taiwan’s western coastline has a heavy
+concentration of aquaculture farms, particularly near Tainan and Pingtung, which could impede
+direct-to-beach landings.
+The density of obstacles, including aquaculture structures and floating rafts, was significantly
+higher in the Phase 2 exercise. In particular, the obstacles present at Hougang Bay were possibly
+aquaculture rafts (semi-open fish cages, shellfish, seaweed, etc.) measuring approximately 10 x
+25 meters, substantially larger than those at Honghai Bay (approximately 4.5 x 6 meters). Those
+found at Hougang Bay also formed denser clusters of obstacles (see Figure 12). As for those
+found at Houcai Bay and Qianhu Bay, they were possibly bivalve aquaculture farms with some
+frames measuring approximately 500 x 125 meters, forming dense fields (see Figure 13). The
+distances between these frames ranged from 40 to 60 meters. The difference in density of in-
+water obstacles for Phase 1 compared to Phase 2, taken in conjunction with the exclusive use of
+ROROs for Phase 2, could indicate a problem specific solution. To overcome in-water obstacles,
+PLA amphibious forces will deploy their landing crafts from ROROs.
+The presence of civilian maritime structures at amphibious landing drills represents an increase in
+the complexity of PLA training. However, these exercises were still conducted in ideal weather
+conditions (Sea State 1 and Sea State 2) with ferries anchored offshore for several hours while
+80 The 2023 exercises also included a third group exercising on Hainan island. Dahm, “More Chinese Ferry Tales” and
+“Beyond Ferry Tales.”
+81 Dahm, “Beyond Ferry Tales,” pp. 31-35.
+82 Ibid. pp. 35-36.
+83 AIS position data: BO HAI BAO ZHU (MMSI 41330020), BO HAI HENG TONG (MMSI 413244930), BOHAI
+JINZHU (MMSI 413305960), BO HAI FEI ZHU (413324830), BO HAI ZHEN ZHU (MMSI 413409000),
+JINGZHOUHAI (MMSI 413492390), BO MAO (MMSI 413244720), and YOU JIAN JI ZING (MMSI 413289660),
+26 August-3 September 2024, www.starboardintelligence.com.
+84 For example, we previously observed civilian aquaculture rafts removed prior to amphibious exercises in Dacheng
+Bay.
+19
+discharging amphibious vehicles into calm waters. In future iterations, as these exercises increase
+in complexity, we would expect the PLA to train in more difficult weather conditions.
+Figure 14: In-water obstacles seen in Honghai Bay, 23 August 2025 at 1459 CST.85
+Shoreline Anti-Landing Barriers
+Figure 15: Anti-landing barriers in Honghai Bay, 25 July 2025.86
+The presence of what appears to be anti-landing barriers likely indicates an additional attempt by
+the PLA to simulate some of the actual challenges its amphibious forces would experience during
+combat. In the 2025 capstone exercise, barriers were observed at Honghai Bay.87 Installation of
+concrete blocks and stakes began in 2024 on the western side of Honghai Base at the location of the
+floating causeway exercise area. By 12 August 2025, the entire coastline west of Honghai Base had
+85 Planet, SkySat, Image ID: 20250823_065940_ssc6_u001, 23 August 2025, Honghai Bay, China, 22.688N, 115.393E,
+www.planet.com.
+86 Google Earth Pro 7.3.6.10441, 25 July 2025, Honghai Bay, Shanwei, China, 22.691N, 115.402E, Airbus 2026.
+87 Planet, SkySat, Image ID: 20250823_065940_ssc6_u0001, 23 August 2025, Honghai Bay, China, 22.673N, 115.422E,
+www.planet.com.
+20
+rows of anti-landing barriers installed.88
+Additionally, these barriers have been deployed in other training locations outside of the exercise
+areas, specifically Dacheng Bay.89
+Figure 16: Overlay of 2025 capstone exercise onto Taiwan’s western coastline.90
+The total distance between exercise locations in 2025 was approximately 360 kilometers. This is
+roughly the same distance from Taipei to Kaohsiung. In the North, Houcai Bay and Qianhu Bay
+are approximately 15 kilometers away from each other, while Hougang Bay is located
+approximately 60 kilometers away from Qianhu Bay. The greatest single distance is from
+Hougang Bay to Honghai Bay at 245 kilometers, and another 45 kilometers to Xiaomo Port in the
+South. Figure 16 (above) transposes these distances onto Taiwan’s western coast. The line has
+been flipped to better match Taiwan’s coastline.
+88 Planet, SkySat, Image ID: 20250812_011040_ssc13_u0001, 12 August 2025, Honghai Bay, China, 22.673N,
+115.422E, www.planet.com.
+89 Planet, SkySat, Image ID: 20250826_235141_ssc2_u0001, 26 August 2025, Dacheng Bay, China, 23.599N,
+117.189E, www.planet.com.
+90 Source: ingeniSPACE analysis.
+21
+Figure 17: Comparative distances of important locations on Taiwan’s western coast.91
+Though not directly analogous to specific sites, the parallels are sufficient to permit cautious
+inference. The above chart shows possible locations on the western coast of Taiwan at the same
+approximate distance as those practiced in the 2025 exercise. While further analysis is needed,
+the PLA may be trying to model similar distances and dispositions of forces to more realistically
+rehearse its envisioned Taiwan operations.
+Conclusion
+Overall, the PLA’s 2025 amphibious capstone exercise demonstrated an increase in complexity
+across all operational factors: time, space, and force. The PLA executed a large-scale invasion
+exercise that marks a clear shift from generic training to operationally grounded Taiwan
+contingency rehearsals. The PLA demonstrated an ability to conduct an amphibious operation in
+a complex, dynamic environment. Rather than simply representing a series of isolated drills, the
+exercise integrated multiple lines of effort into a single, coherent campaign simulation. It
+combined synchronized landings across three geographically separated axes—the first time that
+the PLA has been observed executing such a configuration. The exercise’s designers added
+obstacles on the approaches to the beaches and on the beaches themselves, thereby providing a
+more realistic training environment with new challenges for the participating forces to overcome.
+The participants showed they could successfully synchronize the embarkation and debarkation of
+landing forces at a time and place of their choosing while using disparate types of amphibious
+connectors with different capabilities and requirements. The integration of new platforms and
+technologies at an ever-larger scale into more challenging environments represents a key
+indicator of Beijing’s resolve.
+To be sure, even as these exercises have increased in complexity, they have all been conducted in
+ideal weather conditions, with ferries discharging amphibious vehicles in calm waters. Previous
+CMSI reports have noted this and anticipated future PLA amphibious drills in more challenging
+weather conditions.92 Future iterations of these amphibious exercises are still expected to take
+91 Source: ingeniSPACE analysis.
+92 Dahm, “Chinese Ferry Tales”; Dahm, “More Chinese Ferry Tales”; and Dahm, “Beyond Chinese Ferry Tales.”
+22
+place in harsher weather conditions; this is the next logical step for the PLA to master in pursuit
+of its operational objectives.
+Amphibious operations are among the most complex in modern warfare. They require effective
+command and control to synchronize an almost endless number of subcomponents into an
+effective whole. By increasing its flexibility and proficiency across relevant skill sets over time,
+the PLA is increasing the likelihood that it views (or will soon come to view) its ability to
+conduct a successful amphibious invasion of Taiwan as a viable option. The 2025 capstone
+exercise was conducted along the Zhangzhou-Xiamen-Quanzhou corridor, which closely matched
+the scale, spacing, and distances of plausible Taiwan invasion beachheads. Approximately 360
+kilometers separated operational nodes in the exercise—comparable to the full north-south span
+of Taiwan’s western coastline. This scenario-specific rehearsal suggests the PLA is aligning its
+exercise designs with envisioned operational objectives, using geography and scale to refine
+campaign execution and facilitate its potential real-world application. Future research should
+probe for related examples of such geo-equivalent training and preparations.
+China’s 2025 exercise should be understood in a wider context. It exemplifies the military
+training reforms that Xi Jinping announced in 2020. These reforms were first enacted in 2021,
+when the Central Military Commission issued a military training order focusing on actual combat
+training, joint command, and joint specialized training integration.93 By 2024, the PLA had
+completed the exploratory phase of these reforms and established new training models.94 The
+PLA’s 2025 amphibious capstone exercise thus represents progress in developing and
+implementing new training methods. It was meant to accelerate the construction of higher-level
+integrated support systems, focusing particularly on the military employment of civilian lift
+capacity. Overall, the exercise evinced progress in the PLA’s ability to coordinate large-scale,
+distributed logistics in support of a Taiwan invasion campaign.
+Observers should scrutinize future amphibious exercises to better understand the PLA’s strengths,
+weaknesses, and underlying operational assumptions. As the summer of 2026 approaches, it will
+be important to scrutinize PLA training activities and to consider what operational assumptions
+and further improvements they may incorporate.
+93 Kevin McCauley, “The People’s Liberation Army Attempts to Jump Start Training Reform,” China Brief, Vol. 21,
+No.3 (November 2021).
+94 Tai-yuan Yang and K. Tristan Tang, “‘Strait-thunder 2025A’ Drills Implies Future Increase in PLA Pressure on
+Taiwan,” China Brief, Vol. 25, No.7 (November 2025).
+23
+Appendix A: Capstone Amphibious Exercise Timeline
+Phase 1 - Floating Causeway Exercise & RORO Staging
+11 AUGUST
+1010 CST BO HAI HENG DA leaves its normal operating area in the Bohai Sea. It departs
+from Longkou Port (COORD: 37.6485481, 120.3114736).
+1710 CST BO HAI HENG DA arrives in Lushun New Port (COORD: 38.8094 N, 121.1335
+E).
+2100 CST BO HAI HENG DA departs Lushun New Port and returns to Longkou Port,
+arriving at 2050.
+12 AUGUST
+1100 CST BO HAI HENG DA departs Longkou Port once again for Putian Port.
+14 AUGUST
+1330 CST HUAYIZHIXING departs the waters off Eastern Balianshan Island, Ningbo to
+anchor outside of Xiamen Port.
+15 AUGUST
+1200 CST BO HAI HENG DA (COORD 25.4208, 119.2727) arrives at Putian Port and
+remains there for approximately three hours before departing at 14:59 CST
+for Taiwan’s Wuqiu Island.
+HUA YI 007 departs from Pioneer Ship Factory (先锋船厂) in Taizhou
+(COORD: 28.3630, 121.6338), bound for Shenhu Port anchorage.
+2032 CST BO HAI HENG DA (COORD: 24.9149 N, 119.5019 E) is located
+approximately 1.7 kilometers east of Taiwan’s Wuqiu Island Restricted Zone. The
+vessel turns north (heading 345°) and sails directly into the Restricted Zone at 21
+km/h.
+2040 CST In the Restricted Zone, BO HAI HENG DA (24.9420 N, 119.5051 E) changes
+course (heading 31.7°) travelling at 23.2 km/h.
+2054 CST BO HAI HENG DA changes course again 1.3 KM outside of the Restricted Zone
+(COORD: 24.9637 N, 119.5459 E) travelling at 23.5 km/h sailing back
+to Putian Port (Note: The vessel will return to the same area the following day
+around 2000.)
+24
+16 AUGUST
+0040 CST BO HAI HENG DA holds station at the Putian anchorage after completing an
+approximately eight-hour loop to and from the southern edge of
+Wuqiu Island Restricted Zone for the second time in the last 48 hours.
+0745 CST BO HAI HENG DA arrives at its berth (COORD: 25.3749,
+119.3805) before departing for Xiangzhi anchorage the following morning.
+1540 CST HUAYIZHIXING arrives at Xiamen anchorage.
+1543 CST BO HAI HENG DA departs Putian Port berth toward Wuqiu Island.
+1956 CST BO HAI HENG DA (COORD: 24.9862, 119.5710) adjusts heading to 232°
+travelling at 24.3 km/h toward Wuqiu Island, entering the Restricted Zone for
+about 30 mins just after 2010.
+2015 CST BO HAI HENG DA (COORD: 24.94205,
+119.5106) slightly adjusts course, heading 238° southwest
+toward Xiangzhi anchorage and exiting the Wuqiu Restricted Zone approximately
+five minutes later.
+2329 CST BO HAI HENG DA arrives at Xiangzhi anchorage (COORD: 24.7578, 118.8300)
+and holds station until before entering the Port of Quanzhou
+on 20 August (COORD: 24.8194, 118.7314).
+17 AUGUST
+0150 CST HUA YI 668 #1 departs from the waters of Ningbo (COORD: 29.7998,
+122.2284).
+0630 CST HUA YI 007 arrives at Xiamen anchorage.
+0830 CST BO HAI FEI ZHU departs Port of Penglai, Shandong.
+ZHONG HUA FU XING departs Port of Zhifu, Shandong.
+BO HAI BAO ZHU departs Port of Yantai, Shandong.
+BO HAI ZHUAN ZHU departs Port of Dalian, Liaoning.
+2000 CST CHANG SHAN DAO and PU TUO DAO depart Shandong, Liaoning.
+2200 CST YONG XING DAO departs Port of Haibu, Shandong.
+19 AUGUST
+0530 CST HUA YI 007 arrives in Gulei Port (COORD: 23.7744 N, 117.5799 E) and docks
+for just 20 minutes.
+25
+0550 CST HUA YI 007 departs Gulei Port, heads back for Shenhu Port Anchorage.
+1050 CST HUAYIZHIXING arrives at Shenhu Port, Quanzhou Anchorage. It is joined by
+HUA YI 668 #1 and HUA YI 007 by 1700 CST.
+1810 CST HUA YI 668 #1 docks at Shenhu Port for approximately seven hours.
+20 AUGUST
+0010 CST LONGTENG YUN 2 enters Shenhu Port briefly next to HUA YI 688 #1 and
+departs 30 minutes later at approximately 0050 CST.
+0140 CST MAO YUAN XIANG briefly docks at Shenhu Port for approximately three hours
+before departing at 0530 CST to loiters just off the quay.
+0508 CST BO HAI HENG DA docks at Quanzhou Port (COORD: 24.8164, 118.7319).
+0530 CST ZHONG HUA FU XING docks in the same area at the Quanzhou Port.
+0730 CST LONG TENG YUN 2 returns to Shenhu Port for four hours then departs at 1223
+CST.
+1049 CST BO HAI HENG DA departs Quanzhou Port for an anchorage off the coast
+of Chongwu due east of Dingmen islet (COORD: 24.8170, 118.7323) and will
+hold position there for approximately two days.
+1100 CST BO HAI FEI ZHU holds station at COORD: 24.6255, 118.8573 until nearly
+midnight.
+1300 CST All supporting vessels participating in the Honghai Bay Exercise
+depart Shenhu Port and Anchorage toward the Shanwei exercise area.
+1430 CST LONG TENG YUN 2, HONG CHENG YUN 298 and MAO YUAN
+XIANG sail separately toward the Taiwan Strait. They briefly hold stations at
+COORD: 24.5761, 119.0662 within one kilometer of each other for two hours
+before departing to Shanwei in formation the following morning at 1640 CST.
+21 AUGUST
+0750 CST BO HAI FEI ZHU moves to COORD: 24.5944, 118.6885 and holds station
+until 2150 CST, departing to another holding location in the Taiwan Strait the
+following day at COORD: 24.5015, 119.0051.
+1330 CST SUPPORT VESSEL GROUP 1—consisting of HUAYIZHIXING, HUA YI 668
+#1, and HUA YI 007—sails south to Shanwei.
+1640 CST SUPPORT VESSEL GROUP 2—consisting of LONG TENG YUN 2, HONG
+CHENG YUN 298, and MAO YUAN XIANG—departs for Shanwei.
+26
+2150 CST BO HAI FEI ZHU and CHANG SHAN DAO head east into the Taiwan
+Strait. BO HAI FEI ZHU holds position at COORD: 24.5015, 119.0051. CHANG
+SHAN DAO follows suit, heading east
+to a position (COORD: 24.5300, 119.0222) 3.7 kilometers northeast of BO HA
+FEI ZHU.
+2230 CST PU TUO DAO holds station for approximately six hours at COORD: 24.2694,
+118.5119.
+2351 CST CHANG SHAN DAO, initially located at COORD: 24.5307, 119.0238, changes
+course twice: first heading 305° at high speed 29.4 km/h, then 6° toward
+a location (COORD: 24.6862, 118.9086) north of where BO HAI ZUAN ZHU is
+holding position.
+22 AUGUST
+0430 CST CHANG SHANG DAO departs to join Bo HAI FEI ZHU.
+0522 CST RORO GROUP 1: BO HAI FEI ZHU leads a group that includes CHANG SHAN
+DAO and BO HAI BAO ZHU south toward Shanwei. At 0530, CHANG SHAN
+DAO overtakes BO HAI BAO ZHU. BO HAI BAO ZHU maintains position
+5km behind CHANG SHAN DAO until they reach Shanwei.
+RORO GROUP 2: BO HAI ZUAN ZHU and YONG XING DAO depart for
+Shanwei in a separate group 12 kilometers to the west of Group 1.
+RORO GROUP 3: ZHONG HUA FU XING and BO HAI HENG DA trail behind
+both groups by 40 kilometers.
+0530 CST PU TUO DAO departs for Shanwei.
+27
+Figure 18: RORO ferry locations, 22 August 2025 at 1050 CST.95
+2120 CST SUPPORT VESSEL GROUP 1 arrives south of the Shanwei exercise area.
+● HUA YI 668 #1 holds station at COORD: 22.3484, 115.3758.
+● HUA YI 007 holds station at COORD: 22.3433, 115.3829.
+● HUA YI ZHI XING holds station at COORD: 22.3426, 115.4513.
+2330 CST The first of the ROROs arrives at Shanwei. PU TUO DAO and BO HAI BAO
+ZHU take the lead and sail directly to Shanwei. BO HAI BAO ZHU holds
+position at COORD: 22.6551, 115.4863. PU TUO DAO is located southwest of
+BO HAI BAO ZHU’s position at COORD: 22.5911, 115.4248.
+23 AUGUST
+0410 CST ZHONG HUA FU XING docks at Xiaomo Port. It then departs at approximately
+0720 CST.
+0526 CST Tugs XIA GANG TUO SI HAO and XIAGANGTUOWUHAO depart from
+Xiaomo Port (COORD: 22.7425, 115.0393).
+0730 CST Amphibious exercise at Jiesheng Base begins.
+95 AIS position data: BO HAI BAO ZHU (MMSI 412330020), PU TUO DAO (413127000), BO HAI ZUAN ZHU
+(MMSI 414210000), CHANG SHAN DAO (MMSI 412331000), HONG CHENG YUN 298 (MMSI 413266790),
+HUAYIZHIXING (MMSI 413280040), YONG XING DAO (412091000), ZHONG HUA FU XING (MMSI
+412283000) and HUA YI 007 (MMSI 413217490 ), 22 August 2025, www.starboardintelligence.com.
+28
+0840 CST HONG CHENG YUN 298, MAO YUAN XIANG and LONG TENG YUN 2
+approach the eastern side of Honghai Bay (COORD: 22.6956, 115.4293).
+0841 CST Sections of the floating causeway begin to arrive at Shanwei West.
+PU TUO DAO deploys possible AFVs five kilometers offshore (COORD:
+22.6433, 115.4122).
+Figure 19: Floating causeway system arriving at the west side of Honghai Bay.96
+0850 CST HUAYIZHIXING (COORD: 22.6891, 115.4192) approaches shore
+approximately 200 meters west of Jiesheng Base.
+BO HAI HENG DA (COORD: 22.7441 N, 115.0373 E) docks at Xiaomo Port
+and departs at approximately 1100 CST.
+1004 CST A floating causeway system (COORD: 22.6914, 115.3941) was imaged at
+02:04:46 hours approximately 2.7 kilometers west of Jiesheng Base. At the time
+of collection, the assembled five section floating bridge was assembled with a
+semi-submersible large cargo deck attached at the end.
+96 BlackSky, Image ID: BSG-131-20250823-004152-389695791, 23 August 2025, Honghai Bay, China, 22.688N,
+115.393E, www.blacksky.com.
+29
+Each segment was approximately 70 meters long.
+Figure 20: Possible self-propelled floating causeway assembled.97
+1020 CST HUA YI 668 #1, JING BAO BAO, HUA YI 007, XIA GANG TUO SI HAO, and
+XIAGANGTUOWUHAO approach the floating bridges located approximately
+2.7 kilometers west of Jiesheng Base.
+LONG TENG YUN 2 approaches the small pier on the eastern side of Jiesheng
+Base.
+Figure 21: Small pier on the eastern side of Jiesheng Base. Imagery taken on 23 August 2025 (detail).98
+97 Umbra, Image ID: 2025-08-23-02-04-46_UMBRA-05_MM, 23 August 2025, Honghai Bay, China, 22.688N,
+115.393E, www.canopy.umbra.space.
+98 Planet, SkySat, Image ID: 20250823_065940_ssc6_u001, 23 August 2025, Honghai Bay, China, 22.688N, 115.393E,
+www.planet.com.
+30
+1459 CST The excavation at Honghai Bay, used to possibly anchor the floating causeway,
+appeared to have filled back up due to wave action.
+Figure 22: Probable disassembly of self-propelled floating peer at Shanwei West Exercise Area.99
+1200 CST All vessels begin to disperse from Honghai Bay. All tugs sail back to Xiaomo
+port (COORD: 22.7425, 115.0393).
+2140 CST BO HAI BAO ZHU arrives in Hougang Bay. BO HAI FEI ZHU follows at
+02:00 CST on 24 August.
+2300 CST YONG XING DAO arrives in Qianhu Bay (COORD: 24.0707, 117.8997).
+24 AUGUST
+0030 CST CHANG SHAN DAO arrives in Houcai Bay (COORD: 24.1722, 117.9836).
+10:00-11:00 Simultaneous amphibious drills seen in Hougang Bay, Qianhu Bay, and Houcai
+Bay (see Figures 23 below). Note that at some locations AFVs navigated through
+aquaculture rafts to reach their destinations.
+99 Planet, SkySat, Image ID: 20250823_065940_ssc6_u001, 23 August 2025, Honghai Bay, China, 22.688N, 115.393E,
+www.planet.com.
+31
+Figure 23: Composite image highlighting the Phase 2 simultaneous exercise.100
+1200 CST All the ROROs participating in these separate amphibious exercises sailed
+eastwards toward the Taiwan Strait approximately 25 kilometers from the median
+line and 40 kilometers southeast from Dongding island.
+The ROROs sailed in formation at roughly 30 knots with BO HAI FEI ZHU in
+the lead. All vessels simultaneously returned to their previously assigned beaches
+10 hours later.
+Figure 24: Sailing pattern of the RORO Group.101
+1940 CST The four RORO left formation and returned to their respective exercise locations
+from the previous day.
+100 Planet, PlanetScope, Image ID: 20250824_030638_89_24db, 24 August 2025, Houcai Bay, China, 24.172N,
+117.983E, www.planet.com; Planet, PlanetScope, Image ID: 20250824_030641_10_24db, 24 August 2025, Qianhu
+Bay, China, 24.070N, 117.899E, www.planet.com.
+101 AIS position data: BO HAI BAO ZHU (MMSI 412330020), BO HAI FEI ZHU (MMSI 413324830), CHANG
+SHAN DAO (MMSI 412331000) and YONG XING DAO (MMSI 412091000), 24 August 2025,
+www.starboardintelligence.com.
+32
+2130 - 2150 YONG XING DAO and CHANG SHAN DAO arrive back in Qianhu and
+Houcai Bay, respectively.
+2220 CST BO HAI FEI ZHU and BO HAI BAO ZHU arrive back in Hougang Bay.
+All four ROROs remain in their respective locations, holding station for twelve
+hours until approximately 0230 CST 25 August before departing for Xiamen.
+24 AUGUST
+0800 CST The following vessels are located north of Xiamen City heading north in the
+Taiwan Strait:
+1. ZHONG HUA FU XING
+2. HUAYIZHIXING
+3. BO HAI ZUAN ZHU
+4. LONG TENG YUN 2
+5. MAO YUAN XIANG
+6. HONG CHENG YUN 298
+7. HUA YI 007
+8. HUA YI 668 #1
+1230 CST MAO YUAN XIANG, HONG CHENG YUN 298, HUA YI 007, and HUA YI
+668 #1 all arrive at Xiamen Anchorage.
+1810 CST HUA YI 668, MAO YUAN XIANG, HONG CHENG YUN 298 dock at
+Quanzhou Port, and all depart by 1950 CST.
+25 AUGUST
+0620 CST ZHONG HUA FU XING, is the first of the ROROs to arrive at Xiamen
+Anchorage.
+1710 CST Four ROROs arrive at Xiamen anchorage area: YONG XING DAO, ZHONG
+HUA FU XING, BO HAI BAO ZHU, and CHANG SHAN DAO.
+26 AUGUST
+0600 CST All ROROs and cargo vessels depart from the exercise area and associated
+beaches and ports.
+33
+Appendix B: Civilian Vessel List
+Vessel Name Chinese Name MMSI IMO Vessel Type Owner/Operator
+RORO Ferries
+BO HAI BAO ZHU 渤海宝珠 412330020 95083452 Passenger Bohai Ferry Group Co.
+渤海轮渡集团股份
+有限公司
+BO HAI HENG DA 渤海恒达 413254910 9870692 Cargo Tianjin Bohai Ferry
+Financial
+天津渤海轮渡融资
+租赁有限公司*
+BO HAI FEI ZHU 渤海翡珠 413324830 1400704 Passenger Bohai Ferry Group Co.
+渤海轮渡集团股份
+有限公司
+BO HAI ZUAN ZHU 渤海钻珠 414210000 9713533 Passenger Bohai Ferry Group Co.
+渤海轮渡集团股份
+有限公司
+ZHONG HUA FU XING 中华复兴 412283000 9849875 Passenger Tianjin Bohai Ferry
+Financial/Bohai Ferry
+Group Co.
+天津渤海轮渡融资租
+赁有限公司/
+渤海轮渡集团股份
+有限公司
+YONG XING DAO 永兴岛 412091000 9517329 Passenger China Shipping Gang
+Lian/COSCO
+Shipping Ferry Co.
+中海港联航运有限
+公司/中运海运客运
+有限公司
+CHANG SHAN DAO 长山岛 412331000 9520297 Passenger COSCO Shipping Ferry
+Co.
+中运海运客运有限
+公司
+PU TUO DAO 普陀岛 413127000 9305154 Passenger COSCO Shipping Ferry
+Co.
+中运海运客运有限
+公司
+Cargo Vessels
+HONG CHENG YUN 298 - 413266790 1400704 Cargo Unknown
+MAO YUAN XIANG - 413233070 1400704 Cargo Unknown
+HUAYIZHIXING 华谊之星 413280040 1400704 Pleasure Craft Unknown**
+HUA YI 668 #1 铧薏 668 413217490 33280 Pleasure Craft Unknown***
+HUA YI 007 铧薏 007 413217490 Unknown Cargo Zhoushan Huayi
+Shipping Co.
+舟山市铧薏船务有限
+公司
+LONG TENG YUN 2 隆腾运 2 413316830 1400704 Cargo Taizhou Longteng
+Shipping Co.
+台州隆腾运有限公司
+Tug Boats
+XIA GANG TUO SI HAO 厦港拖四号 412701220 Unknown Tug Unknown
+XIAGANGTUAOWUHAO**** 厦港拖五号 412701230 Unknown Tug Unknown
+Other/Unknown
+JING BAO BAO - 412065980 Unknown Other Unknown
+Unknown Vessel (Honghai Bay) - - - - -
+*Tianjin Bohai Ferry Financial (天津渤海轮渡融资租赁有限公司) is the owner/operator listed on the Starboard website;
+however, other sources indicate that the owner may be Bohai Hengtung Ferry (渤海恒通轮渡有限公司).
+**HUAYIZHIXING is identified as a cargo vessel in Marine Traffic, another ship registration platform.
+***HUA YI 668 #1 is identified as a cargo vessel in Marine Traffic, another ship registration platform.
+****XIAGANTUOWUHAO - originally operated in Xiamen Island but as of 1 January 2024 appears to be homeported in
+Xiaomo Port.
+34
+About the Authors
+Jason Wang is a national security researcher and COO of ingeniSPACE, a Silicon Valley geo-
+intelligence analytics house.
+Marvin Hamor Bernardo is a PhD candidate at the National Chengchi University, Taiwan, and
+serves as a maritime domain analyst at ingeniSPACE.
+Pei-Jhen Wu is a national security researcher and imagery analyst at ingeniSPACE.
+Andrew S. Erickson, Ph.D., is Professor of Strategy at the Naval War College’s China Maritime
+Studies Institute and a Visiting Scholar at Harvard University’s John King Fairbank Center for
+Chinese Studies.
+The authors acknowledge with appreciation the support of BlackSky and Planet Labs for
+providing images for this report. We thank J. Michael Dahm, Thomas Shugart, Christopher
+Sharman, Daniel Caldwell, Ian Easton, and Ryan Martinson for their valuable inputs. We also
+express our gratitude for the extensive body of relevant scholarship previously contributed by
+Conor M. Kennedy as well as Dahm and Shugart, which has informed our own research and
+which we have cited in specific, relevant instances. Any remaining errors or omissions in this
+report, which is based exclusively on unclassified sources, are the authors’ responsibility alone.
+The views expressed here are solely those of the authors and do not represent the positions of any
+of the institutions with which any of them are, or have been, affiliated. This includes the
+disclaimer that the inputs Erickson has contributed represent solely his personal academic
+perspectives and do not necessarily represent the positions or estimates of the U.S. Government,
+or U.S. Department of War or its components, to include the Department of the Navy and the U.S.
+Naval War College.
+35
