@@ -97,6 +97,7 @@ export default function RootLayout({
                   <li><a href="/blog/" className="hover:text-sky-500">Skyfaring 文章</a></li>
                   <li><a href="https://lioneers-web.pages.dev/" target="_blank" rel="noopener noreferrer" className="hover:text-sky-500">攻城獅數據站 ↗</a></li>
                   <li><a href="https://pla-tracker.pages.dev/" target="_blank" rel="noopener noreferrer" className="hover:text-sky-500">解放軍擾台動態追蹤 ↗</a></li>
+                  <li><a href="https://tpbl-lens.pages.dev/" target="_blank" rel="noopener noreferrer" className="hover:text-sky-500">TPBL Lens ↗</a></li>
                   <li><a href="https://yi-tienpan.blogspot.com/" target="_blank" rel="noopener noreferrer" className="hover:text-sky-500">舊站文章庫 ↗</a></li>
                 </ul>
               </div>

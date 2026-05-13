@@ -39,6 +39,13 @@ const PROJECTS = [
     external: true,
   },
   {
+    title: "TPBL Lens",
+    description: "台灣超級籃球聯賽數據透鏡，球員與球隊效率分析",
+    url: "https://tpbl-lens.pages.dev/",
+    icon: "🏀",
+    external: true,
+  },
+  {
     title: "舊站文章庫",
     description: "Skyfaring 2007年起的個人部落格，武術、旅遊、語言、時事",
     url: "https://yi-tienpan.blogspot.com/",
