@@ -40,7 +40,7 @@ const PROJECTS = [
   },
   {
     title: "TPBL Lens",
-    description: "台灣超級籃球聯賽數據透鏡，球員與球隊效率分析",
+    description: "台灣職籃 TPBL 數據透鏡，球員與球隊效率分析",
     url: "https://tpbl-lens.pages.dev/",
     icon: "🏀",
     external: true,
