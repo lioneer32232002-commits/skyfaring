@@ -1,6 +1,6 @@
 ---
 title: "Gemini 導讀了一篇不存在的論文"
-author: "AdamP"
+author: "Adam P"
 date: "2026-04-11"
 updated: "2026-04-11"
 slug: "ai-hallucination-academic-papers"

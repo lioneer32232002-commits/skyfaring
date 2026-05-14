@@ -1,6 +1,6 @@
 ---
 title: "攻城獅 104-86 客場勝臺北台新戰神"
-author: "Skyfaring"
+author: "Adam P"
 date: "2026-04-25"
 updated: "2026-04-25"
 slug: "lioneers-2026-04-25-vs-opp"

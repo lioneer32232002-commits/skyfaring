@@ -1,6 +1,6 @@
 ---
 title: "教練真的有差嗎？用貝葉斯機器學習拆解 NBA 總教練的戰術貢獻"
-author: "Skyfaring"
+author: "Adam P"
 date: "2026-04-17"
 slug: "nba-coach-effect-bart"
 tags:

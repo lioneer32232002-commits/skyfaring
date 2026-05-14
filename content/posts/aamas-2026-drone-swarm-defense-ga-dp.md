@@ -1,6 +1,6 @@
 ---
 title: "三十架無人機衝過來，你怎麼擋？AAMAS 2026 論文解析"
-author: "AdamP"
+author: "Adam P"
 date: "2026-05-14"
 slug: "aamas-2026-drone-swarm-defense-ga-dp"
 tags:

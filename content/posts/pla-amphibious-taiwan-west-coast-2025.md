@@ -1,6 +1,6 @@
 ---
 title: "解放軍在對岸排練的距離，恰好是台北到高雄。"
-author: "AdamP"
+author: "Adam P"
 date: "2026-04-23"
 slug: "pla-amphibious-taiwan-west-coast-2025"
 tags:

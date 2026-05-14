@@ -1,6 +1,6 @@
 ---
 title: "從一支攝影機，看見球在空間裡的位置。"
-author: AdamP
+author: "Adam P"
 date: 2026-05-07
 slug: where-is-the-ball-3d-trajectory
 tags:

@@ -1,6 +1,6 @@
 ---
 title: 「控球後衛」這個標籤，已經是個落後的分類了。
-author: AdamP
+author: "Adam P"
 date: 2026-05-05
 slug: nba-player-clustering-sloan-2020
 tags:

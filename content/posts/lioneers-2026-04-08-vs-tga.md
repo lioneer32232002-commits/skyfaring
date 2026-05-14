@@ -1,6 +1,6 @@
 ---
 title: "攻城獅 117-100 主場勝特攻"
-author: "AdamP"
+author: "Adam P"
 date: "2026-04-08"
 updated: "2026-04-08"
 slug: "lioneers-2026-04-08-vs-tga"

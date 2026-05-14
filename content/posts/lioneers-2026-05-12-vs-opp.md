@@ -1,6 +1,6 @@
 ---
 title: "攻城獅 61-83 客場負福爾摩沙夢想家"
-author: "Skyfaring"
+author: "Adam P"
 date: "2026-05-12"
 updated: "2026-05-12"
 slug: "lioneers-2026-05-12-vs-opp"

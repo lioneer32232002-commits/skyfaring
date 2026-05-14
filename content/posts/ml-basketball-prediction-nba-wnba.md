@@ -1,6 +1,6 @@
 ---
 title: "機器能預測NBA比賽結果嗎"
-author: "AdamP"
+author: "Adam P"
 date: "2026-04-11"
 updated: "2026-04-11"
 slug: "ml-basketball-prediction-nba-wnba"

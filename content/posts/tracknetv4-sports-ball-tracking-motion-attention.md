@@ -1,6 +1,6 @@
 ---
 title: "追蹤那顆消失的球：TrackNetV4 如何讓 AI 學會感受動作"
-author: "AdamP"
+author: "Adam P"
 date: "2026-05-07"
 slug: "tracknetv4-sports-ball-tracking-motion-attention"
 tags:

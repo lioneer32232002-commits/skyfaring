@@ -1,6 +1,6 @@
 ---
 title: "攻城獅 102-99 主場勝海神"
-author: "Skyfaring"
+author: "Adam P"
 date: "2026-05-03"
 updated: "2026-05-03"
 slug: "lioneers-2026-05-03-vs-poseidon"

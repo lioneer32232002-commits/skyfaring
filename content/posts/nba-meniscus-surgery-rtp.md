@@ -1,6 +1,6 @@
 ---
 title: "NBA 球員半月板手術後能重返賽場嗎？最新研究給出更樂觀的答案"
-author: "AdamP"
+author: "Adam P"
 date: "2026-04-20"
 slug: "nba-meniscus-surgery-rtp"
 tags:

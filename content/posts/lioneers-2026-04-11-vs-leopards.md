@@ -1,6 +1,6 @@
 ---
 title: "攻城獅 79-76 主場勝雲豹"
-author: "Skyfaring"
+author: "Adam P"
 date: "2026-04-11"
 updated: "2026-04-11"
 slug: "lioneers-2026-04-11-vs-leopards"

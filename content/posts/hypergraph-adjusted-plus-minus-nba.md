@@ -1,6 +1,6 @@
 ---
 title: "球員組合的魔法：用超圖理論同時替個人、雙人組、三人組打分數"
-author: "Skyfaring"
+author: "Adam P"
 date: "2026-04-16"
 slug: "hypergraph-adjusted-plus-minus-nba"
 tags:
