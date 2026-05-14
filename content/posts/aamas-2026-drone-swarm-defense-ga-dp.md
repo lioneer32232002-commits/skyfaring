@@ -10,10 +10,10 @@ tags:
   - 人工智慧
 excerpt: "三十架攻擊無人機同時來襲，強化學習跑不動、暴力搜索更別說了。澳洲阿德萊德大學和 Saab 的這篇 AAMAS 2026 論文，用「先打小仗、再組大軍」的分解邏輯，把防禦成功率從接近零拉到五成以上。"
 highlight: "論文的核心發現之一：好的防禦策略來自染色體整體的協同，而非個別基因的品質。拆開重組之後，成功率反而崩潰——這表示群體的合作行為有它的整體性，不能簡化成零件的加總。"
-heroImage: "/images/uav-swarm-murmuration-birds.jpg"
-heroAlt: "多架無人機在空中編隊飛行，模擬群體協調場景"
-heroCredit: "Mike Cox"
-heroCreditUrl: "https://unsplash.com/photos/a-flock-of-birds-flying-in-a-v-formation-6le9aDY_KC0"
+heroImage: "/images/drone-defense-aerial-clouds.jpg"
+heroAlt: "一架黑色無人機懸停在雲霧層上方，俯瞰被薄霧籠罩的地形"
+heroCredit: "Ian Usher"
+heroCreditUrl: "https://unsplash.com/photos/black-drone-on-air-over-cloudy-sky-at-daytime-JPAfSd_acI8"
 source: "Douglas, G., Franklin, S., Szabo, C., & Guo, M. (2026). Building Large-Scale Drone Defenses from Small-Team Strategies. Proc. of the 25th International Conference on Autonomous Agents and Multiagent Systems (AAMAS 2026)."
 source_url: "https://arxiv.org/abs/2602.12502"
 category: 多智能體
