@@ -9,8 +9,10 @@ tags:
   - NBA
 excerpt: "格雷格‧波波維奇年薪高達 1600 萬美元，但他的勝率有多少是球員的功勞、多少是他自己的本事？這篇論文用單調貝葉斯迴歸樹，在控制球員實力之後，第一次讓「戰術貢獻」可以被獨立測量。"
 highlight: "當 ΔtVORP ≈ 0（雙方實力相當）時，波波維奇的預測勝率接近 60%，換句話說在旗鼓相當的比賽中他有辦法贏下六成；85% 的教練和「平均教練」沒有顯著差異。"
-heroImage: "/images/basketball-court-hero.jpg"
-heroAlt: "NBA 籃球場俯視角度，場中線與三分線清晰可見"
+heroImage: "/images/nba-coach-sideline-directing.jpg"
+heroAlt: "籃球教練在場邊拿著戰術板向球員說明比賽策略"
+heroCredit: "Markus Spiske"
+heroCreditUrl: "https://unsplash.com/photos/basketball-game-WNJVjkjkh44"
 source: "Cannon, A. J., Fisher, J. D., Fellingham, G. W., & Page, G. L. (2025). Analyzing the effects of NBA head coaches. Journal of Quantitative Analysis in Sports."
 source_url: "https://doi.org/10.1515/jqas-2025-0025"
 category: 籃球研究
