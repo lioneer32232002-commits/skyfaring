@@ -11,10 +11,10 @@ tags:
   - 人工智慧
 excerpt: "你說一句『排成一個半徑兩公尺的圓圈』，三十架無人機就排好了，沒有撞機，不需要任何專業知識。DAUS' 2026 的這篇論文展示了這件事——但讓它成真的關鍵，不是 LLM 有多聰明，而是知道在哪裡不信任它。"
 highlight: "SkySim 最關鍵的設計決策：把 LLM 的「想」和 APF 的「動」完全分開。LLM 可以花 50 秒慢慢算出 30 架無人機的隊形位置，APF 以 20Hz 持續守著安全——規劃期間，沒有任何一架無人機會撞上彼此。"
-heroImage: "/images/drone-defense-aerial-clouds.jpg"
-heroAlt: "一架黑色無人機懸停在雲霧層上方"
-heroCredit: "Ian Usher"
-heroCreditUrl: "https://unsplash.com/photos/black-drone-on-air-over-cloudy-sky-at-daytime-JPAfSd_acI8"
+heroImage: "/images/skysim-drone-city-silhouette.jpg"
+heroAlt: "一架無人機剪影懸停在城市上方"
+heroCredit: "Goh Rhy Yan"
+heroCreditUrl: "https://unsplash.com/photos/silhouette-of-quadcopter-drone-hovering-near-the-city-p_5BnqHfz3Y"
 source: "Shibu, A., Saleh, M., Al-Musleh, M., & Abdulaziz, N. (2026). SkySim: A ROS2-based Simulation Environment for Natural Language Control of Drone Swarms using Large Language Models. 2nd International Conference on Drones and Unmanned Systems (DAUS' 2026), Salzburg, Austria."
 source_url: "https://arxiv.org/abs/2602.01226"
 category: 無人機
