@@ -14,7 +14,14 @@ const DATASETS = [
     title: "TPBL 2025-26 例行賽統計數據",
     description: "球員個人數據、球隊整體數據、進階效率指標，涵蓋完整例行賽賽程。",
     url: "https://tpbl-lens.pages.dev/",
-    badge: "例行賽",
+    badge: "聯盟",
+  },
+  {
+    season: "2025–26",
+    title: "新竹攻城獅數據站",
+    description: "新竹攻城獅數據儀表板，含勝負預測、球員效率分析。",
+    url: "https://lioneers-web.pages.dev/",
+    badge: "球隊",
   },
 ];
 

@@ -25,13 +25,6 @@ const PROJECTS = [
     external: false,
   },
   {
-    title: "新竹攻城獅數據站",
-    description: "新竹攻城獅數據儀表板，含勝負預測、球員效率分析",
-    url: "https://lioneers-web.pages.dev/",
-    icon: "🦁",
-    external: true,
-  },
-  {
     title: "解放軍擾台動態追蹤",
     description: "中線越線、艦機活動每日數據，含趨勢圖與 SITREP 紀錄",
     url: "https://pla-tracker.pages.dev/",
