@@ -69,6 +69,7 @@ export default function RootLayout({
             <nav className="flex gap-6 text-sm font-medium text-slate-500 dark:text-slate-400">
               <a href={`${BASE_PATH}/`} className="hover:text-sky-600 dark:hover:text-sky-400 transition-colors">首頁</a>
               <a href={`${BASE_PATH}/blog/`} className="hover:text-sky-600 dark:hover:text-sky-400 transition-colors">文章</a>
+              <a href={`${BASE_PATH}/tpbl-lens/`} className="hover:text-sky-600 dark:hover:text-sky-400 transition-colors">TPBL Lens</a>
             </nav>
           </div>
         </header>
@@ -97,7 +98,7 @@ export default function RootLayout({
                   <li><a href="/blog/" className="hover:text-sky-500">Skyfaring 文章</a></li>
                   <li><a href="https://lioneers-web.pages.dev/" target="_blank" rel="noopener noreferrer" className="hover:text-sky-500">攻城獅數據站 ↗</a></li>
                   <li><a href="https://pla-tracker.pages.dev/" target="_blank" rel="noopener noreferrer" className="hover:text-sky-500">解放軍擾台動態追蹤 ↗</a></li>
-                  <li><a href="https://tpbl-lens.pages.dev/" target="_blank" rel="noopener noreferrer" className="hover:text-sky-500">TPBL Lens ↗</a></li>
+                  <li><a href="/tpbl-lens/" className="hover:text-sky-500">TPBL Lens</a></li>
                   <li><a href="https://yi-tienpan.blogspot.com/" target="_blank" rel="noopener noreferrer" className="hover:text-sky-500">舊站文章庫 ↗</a></li>
                 </ul>
               </div>

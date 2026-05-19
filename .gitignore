@@ -47,5 +47,12 @@ next-env.d.ts
 # local research pipeline data — auto-generated, not deployed
 /data/
 
+# research working folders — local only, not deployed
+/drone-papers/
+/basketball-papers/
+/articles/
+/shown_papers.md
+/*.md
+
 # Claude Code internal tooling
 /.claude/
