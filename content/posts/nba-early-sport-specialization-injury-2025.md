@@ -1,5 +1,5 @@
 ---
-title: "高中只打籃球，進 NBA 反而更容易受傷？論文解析早期單項專精的代價。"
+title: "高中只打一種球，進 NBA 反而更容易受傷"
 author: "Adam P"
 date: "2026-04-21"
 slug: "nba-early-sport-specialization-injury-2025"

@@ -10,6 +10,7 @@ heroAlt: "籃球場內景"
 heroCredit: "Unsplash"
 heroCreditUrl: "https://unsplash.com/photos/people-inside-a-basketball-gym-J_tbkGWxCH0"
 excerpt: "攻城獅 2026-05-12 客場對上福爾摩沙夢想家，61-83 負。數據背後的故事。"
+category: 攻城獅
 ---
 
 看完比分的當下，我第一個念頭不是「防守又爛了」，而是盯著第二節的數字看了很久。Q2 14比23，攻城獅在那一節只得了14分。整場61分已經夠難看，但那個14才是真正把比賽葬掉的東西。
