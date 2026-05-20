@@ -10,8 +10,8 @@ tags:
   - FIBA
   - 選秀
 excerpt: 一支球隊需要幾個控球後衛？這個問題問錯了。San Diego State University 的研究橫跨 110 個聯賽、22,500 名球員，把所有人分成 9 種打法原型，再從中推導出冠軍陣容的黃金比例。
-heroImage: /images/basketball-player-archetypes-hero.jpg
-heroAlt: Basketball players competing in an arena
+heroImage: /images/basketball-court-hero.jpg
+heroAlt: Basketball court under arena lights
 heroCredit: Markus Spiske
 heroCreditUrl: https://unsplash.com/photos/BfphcCvhl6E
 highlight: 成功球隊不是找最好的球員，而是找對的比例。Aggressive Scorer 佔 NBA 最佳陣容近三成，Floor General 和 High Efficiency Scorer 各佔一至兩成——這三種原型幾乎決定了陣容的天花板。
@@ -101,3 +101,13 @@ Penner 在和加拿大國家隊教練討論時，教練明確提到某些非量�
 Daryl Morey 說過，數據的真正優勢在於提供人類直覺看不到的洞見，而不是取代判斷。這套原型模型也是這樣定位自己的：它是教練做決策之前的情報層，不是決策本身。
 
 把一個在歐洲聯賽默默無聞的球員放進模型，看他落在哪個原型、PTS/MIN 排名在哪、和 NBA 同型球員的差距有多大——這件事教練用肉眼看不到，但模型可以。剩下的判斷，還是人的事。
+
+## 和 Sloan 2020 的那篇研究有什麼不同？
+
+如果你讀過我們介紹過的另一篇分群研究——[「控球後衛」這個標籤，已經是個落後的分類了。](/blog/nba-player-clustering-sloan-2020/)——你大概已經注意到，兩篇研究都找到了「9 種球員類型」這個答案。但這個表面上的相似，掩蓋了非常不同的問題意識。
+
+**Kalman & Bosch（Sloan 2020）**問的是：如果把傳統五個位置全部拋掉，NBA 的球員實際上分成幾種打法？他們的資料只有 NBA、橫跨 10 個賽季（2009–2018）、共 3,608 筆球員賽季紀錄。用的是高斯混合模型（GMM）——「軟性分群」，每個球員同時屬於多個群集、有不同的機率比例，所以 Dirk Nowitzki 可以是「50% Stretch Forward、50% Skilled Forward」，而不是被強迫塞進一格。這篇研究的重點最終落在**陣容效率預測**：哪五種原型組合在一起，Net Rating 最高？
+
+**Penner（2025）**問的是完全不同的問題：我怎麼比較一個在 EuroCup 打球的前鋒，和一個在加拿大大學聯賽打球的後衛，以及一個在 NBA 的得分後衛？他的資料是 110 個聯賽、22,500 人、單一賽季（2018/19）。用的是 k-means——「硬性分群」，每個球員只屬於一個群集。這篇研究的重點落在**跨聯賽選才與陣容比例**：每個原型的最佳球員排名是誰，以及一支冠軍球隊應該帶多少個這種人？
+
+兩篇研究指向不同的使用情境。Sloan 2020 更適合 NBA 球隊的陣容分析師，問的是「現有球員怎麼組搭才有化學反應」；Penner 2025 更適合國家隊選才或選秀情報，問的是「哪個聯賽還有符合我需要的原型，而且被低估了」。都是有用的工具，只是刀口不同。
