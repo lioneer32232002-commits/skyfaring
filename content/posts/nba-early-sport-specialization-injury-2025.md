@@ -1,6 +1,6 @@
 ---
 title: "高中只打一種球，進 NBA 反而更容易受傷"
-author: "Adam P"
+author: "AI 初稿 / skyfaring 編輯校正"
 date: "2026-04-21"
 slug: "nba-early-sport-specialization-injury-2025"
 tags:

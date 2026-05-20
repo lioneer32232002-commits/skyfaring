@@ -1,6 +1,6 @@
 ---
 title: "像鳥群一樣飛：不靠 GPS，無人機怎麼知道自己在哪裡？"
-author: "Adam P"
+author: "AI 初稿 / skyfaring 編輯校正"
 date: 2026-05-12
 slug: uav-swarm-bird-inspired-gnss-denied-vslam
 tags:

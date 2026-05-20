@@ -1,6 +1,6 @@
 ---
 title: 你選的是「位置」，還是「打法」？用數據重新定義籃球陣容的組建邏輯
-author: "Skyfaring"
+author: "AI 初稿 / skyfaring 編輯校正"
 date: 2026-05-20
 slug: basketball-player-archetypes-roster-optimization
 tags:
@@ -14,7 +14,7 @@ heroImage: /images/basketball-player-arena-action.jpg
 heroAlt: Basketball players competing in action during an indoor arena game
 heroCredit: Simon Kessler
 heroCreditUrl: https://unsplash.com/photos/basketball-players-in-action-during-a-game-h9teyHyKvds
-highlight: 成功球隊不是找最好的球員，而是找對的比例。Aggressive Scorer 佔 NBA 最佳陣容近三成，Floor General 和 High Efficiency Scorer 各佔一至兩成——這三種原型幾乎決定了陣容的天花板。
+highlight: 把一個在歐洲聯賽默默無聞的球員放進模型，看他落在哪個原型、PTS/MIN 排名在哪、和 NBA 同型球員的差距有多大——這件事教練用肉眼看不到，但模型可以。剩下的判斷，還是人的事。
 source: "Penner, L. S. J. (2025). Player archetypes within basketball: optimizing roster composition to create a championship team. Frontiers in Sports and Active Living, 7, 1639431."
 source_url: https://www.frontiersin.org/articles/10.3389/fspor.2025.1639431
 category: 籃球研究
@@ -30,7 +30,7 @@ Luke S. J. Penner 在 San Diego State University 花了數年時間建立這套�
 
 這份研究的資料規模在籃球分析領域算得上罕見。Penner 從 EuroBasket、RealGM 及 USportsHoops 三個平台，收集了 2018/19 球季、橫跨 110 個聯賽的球員數據，從 NBA 到加拿大大學聯賽，從 Liga Endesa 到中國 CBA，共 27,363 名球員。排除上場時間極少的邊緣球員後，最終保留 22,500 人進行分析。
 
-接下來的問題是：怎麼讓這些來自不同大陸、不同水準聯賽的球員站在同一把尺上？
+接下來的問題是：怎麼讓這些來自不同國家、不同水準聯賽的球員站在同一把尺上？
 
 Penner 採用 13 項標準化數據——得分、進攻籃板、防守籃板、助攻、阻攻、抄截、犯規、罰球次數、罰球命中率、兩分與三分的出手次數和命中率——全部換算成每 48 分鐘的數值，消除上場時間的干擾。接著用 k-means 演算法讓數據自己找分群，並以「Within-Cluster Sum of Squares 手肘法」確認 9 個群集是最理想的切分。
 

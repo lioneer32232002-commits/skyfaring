@@ -1,6 +1,6 @@
 ---
 title: "夾擊與換防：機器讀懂 NBA 防守的語言"
-author: "Adam P"
+author: "AI 初稿 / skyfaring 編輯校正"
 date: "2026-04-23"
 updated: "2026-04-23"
 slug: "nba-defensive-switch-trap-ml"

@@ -1,6 +1,6 @@
 ---
 title: "球員組合的魔法：超圖理論如何同時替陣容打分數"
-author: "Adam P"
+author: "AI 初稿 / skyfaring 編輯校正"
 date: "2026-04-16"
 slug: "hypergraph-adjusted-plus-minus-nba"
 tags:

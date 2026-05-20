@@ -1,6 +1,6 @@
 ---
 title: "你說「排成聖誕樹」，三十架無人機就排好了"
-author: "Adam P"
+author: "AI 初稿 / skyfaring 編輯校正"
 date: "2026-05-19"
 slug: "skysim-llm-ros2-drone-swarm-natural-language"
 tags:

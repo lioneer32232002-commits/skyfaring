@@ -1,6 +1,6 @@
 ---
 title: "搶籃板，真的需要「搶」嗎？"
-author: "Adam P"
+author: "AI 初稿 / skyfaring 編輯校正"
 date: "2026-04-15"
 updated: "2026-04-15"
 slug: "nba-rebounding-bayesian-assessment"

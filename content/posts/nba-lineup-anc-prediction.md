@@ -1,6 +1,6 @@
 ---
 title: "最弱的那個人，決定了這支五人組能不能贏。"
-author: "Adam P"
+author: "AI 初稿 / skyfaring 編輯校正"
 date: "2026-04-14"
 updated: "2026-04-14"
 slug: "nba-lineup-anc-prediction"

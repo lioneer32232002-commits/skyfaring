@@ -1,6 +1,6 @@
 ---
 title: "攻城獅 98-78 主場勝新北國王"
-author: "Adam P"
+author: "AI 初稿 / skyfaring 編輯校正"
 date: "2026-04-29"
 updated: "2026-04-29"
 slug: "lioneers-2026-04-29-vs-opp"

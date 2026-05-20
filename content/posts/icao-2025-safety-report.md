@@ -1,6 +1,6 @@
 ---
 title: "2024年全球航空安全回顧"
-author: "Adam P"
+author: "AI 初稿 / skyfaring 編輯校正"
 date: "2025-04-10"
 updated: "2025-04-10"
 slug: "icao-2025-safety-report"

@@ -1,6 +1,6 @@
 ---
 title: "愈頂尖的籃球員，在場上的動作強度愈低。"
-author: "Adam P"
+author: "AI 初稿 / skyfaring 編輯校正"
 date: "2026-04-28"
 slug: "basketball-peak-demand-elite-vs-nonelite"
 tags:

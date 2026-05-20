@@ -1,6 +1,6 @@
 ---
 title: "NBA 球員的職涯曲線，不只一種形狀。"
-author: "Adam P"
+author: "AI 初稿 / skyfaring 編輯校正"
 date: 2026-04-30
 slug: nba-player-age-performance-kan
 tags:

@@ -1,6 +1,6 @@
 ---
 title: "NBA 球員半月板手術後，重返賽場的勝算有多高"
-author: "Adam P"
+author: "AI 初稿 / skyfaring 編輯校正"
 date: "2026-04-20"
 slug: "nba-meniscus-surgery-rtp"
 tags:
