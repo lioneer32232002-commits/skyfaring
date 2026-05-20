@@ -10,10 +10,10 @@ tags:
   - FIBA
   - 選秀
 excerpt: 一支球隊需要幾個控球後衛？這個問題問錯了。San Diego State University 的研究橫跨 110 個聯賽、22,500 名球員，把所有人分成 9 種打法原型，再從中推導出冠軍陣容的黃金比例。
-heroImage: /images/basketball-court-hero.jpg
-heroAlt: Basketball court under arena lights
-heroCredit: Markus Spiske
-heroCreditUrl: https://unsplash.com/photos/BfphcCvhl6E
+heroImage: /images/basketball-player-arena-action.jpg
+heroAlt: Basketball players competing in action during an indoor arena game
+heroCredit: Simon Kessler
+heroCreditUrl: https://unsplash.com/photos/basketball-players-in-action-during-a-game-h9teyHyKvds
 highlight: 成功球隊不是找最好的球員，而是找對的比例。Aggressive Scorer 佔 NBA 最佳陣容近三成，Floor General 和 High Efficiency Scorer 各佔一至兩成——這三種原型幾乎決定了陣容的天花板。
 source: "Penner, L. S. J. (2025). Player archetypes within basketball: optimizing roster composition to create a championship team. Frontiers in Sports and Active Living, 7, 1639431."
 source_url: https://www.frontiersin.org/articles/10.3389/fspor.2025.1639431
