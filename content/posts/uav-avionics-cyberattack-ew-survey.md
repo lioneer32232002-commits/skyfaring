@@ -1,5 +1,5 @@
 ---
-title: "八美元的 GPS 干擾器"
+title: "八美元的 GPS 干擾器，就能讓一架無人機不知道自己在哪裡"
 author: "AI 初稿 / skyfaring 編輯校正"
 date: 2026-05-27
 slug: uav-avionics-cyberattack-ew-survey
