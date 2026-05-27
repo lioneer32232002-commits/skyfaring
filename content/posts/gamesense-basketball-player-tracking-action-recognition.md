@@ -8,7 +8,7 @@ tags:
   - 深度學習
   - 籃球分析
 excerpt: "多目標追蹤在籃球場景裡有個核心難題：十個人穿著相似球衣，掩護時兩人緊貼，鏡頭跟拍時模糊抖動。GameSense 用雙層記憶機制解決身分連貫的問題，追蹤指標在 SportsMOT 上超越所有競品。"
-highlight: "BPTN 的雙層記憶架構，短期記憶保留最近 7 幀捕捉即時動作，長期記憶保留 28 幀維持身分連貫，消融研究確認兩者合併才能達到最佳 HOTA 81.6，單用任一層都會明顯下降。"
+highlight: "偵測已經很成熟，在靜態幀裡找出球員位置不難。真正的挑戰是在遮擋、碰撞、快速移動發生後，系統能不能繼續知道「這個人是誰」，而不是把他當成陌生人重新處理。"
 heroImage: "/images/gamesense-basketball-player-tracking.jpg"
 heroAlt: "籃球比賽中多名球員在場上競逐，對應 GameSense 多目標追蹤的研究場景"
 heroCredit: "Markus Spiske | Unsplash"
