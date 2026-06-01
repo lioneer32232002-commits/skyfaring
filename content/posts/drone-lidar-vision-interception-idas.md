@@ -10,10 +10,10 @@ tags:
   - 電腦視覺
   - 自主系統
 excerpt: 地面感測器精度只有幾公尺，但網子要打中目標需要幾十公分的誤差。德國研究團隊把 LiDAR 和攝影機裝上攔截無人機，讓它自己在空中找到、確認、然後用網捕獲目標。
-heroImage: /images/drone-lidar-interception-sky.jpg
-heroAlt: 藍天中飛行的複數無人機
-heroCredit: Valentin Zickner
-heroCreditUrl: https://unsplash.com/photos/FQa5xUZlAUo
+heroImage: /images/drone-lidar-autonomous-flight.jpg
+heroAlt: 無人機在空中飛行
+heroCredit: Jason Mavrommatis
+heroCreditUrl: https://unsplash.com/photos/1473968512647-3e447244af8f
 source: "Rothe, J., Kessler, N., Wehr, M. H., Hohbach, A., Strohmeier, M., & Montenegro, S. (2026). Autonomous Drone-on-Drone Interception Using an Integrated LiDAR-Vision Detection System for High-Precision Capture. Drones, 10, 420."
 source_url: https://doi.org/10.3390/drones10060420
 ---
