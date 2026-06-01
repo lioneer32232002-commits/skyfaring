@@ -8,10 +8,10 @@ tags:
   - 強化學習
   - 自主系統
 excerpt: "當攻方同時派出的無人機數量超過防守方的瞬時攔截能力，傳統的一對一分配邏輯就垮了。西北工業大學這篇論文的問題是：五十架藍方無人機要如何在沒有指揮官的情況下，自行決定誰去追誰？"
-heroImage: /images/uav-swarm-interception-drone-lightshow.jpg
-heroAlt: 夜空中大量無人機組成發光的人形圖案，城市燈光在遠方延伸
-heroCredit: ++ LiN
-heroCreditUrl: https://www.pexels.com/photo/breathtaking-drone-light-show-forming-astronaut-shape-above-city-skyline-35439843/
+heroImage: /images/uav-swarm-interception-red-drone-dark.jpg
+heroAlt: 一架帶有紅色燈光的無人機在幽暗的工業街道中低空飛行
+heroCredit: K
+heroCreditUrl: https://www.pexels.com/photo/red-glowing-modern-drone-flying-in-air-on-blurred-background-of-gloomy-industrial-street-4263072/
 source: "Zhang, Y.; Huang, J.; Yang, Q.; Cao, Y.; Zhang, J.; Shi, G. A Graph-Aided Hierarchical Decision Framework for UAV Swarm Interception Under Saturation Incursions. Drones 2026, 10, 419."
 source_url: https://doi.org/10.3390/drones10060419
 category: 無人機
