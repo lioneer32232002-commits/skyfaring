@@ -1,5 +1,5 @@
 ---
-title: "三十架無人機衝過來，你怎麼擋？AAMAS 2026 論文解析"
+title: "三十架無人機衝過來，你怎麼擋？AAMAS 2026 論文解析。"
 author: "AI 初稿 / skyfaring 編輯校正"
 date: "2026-05-14"
 slug: "aamas-2026-drone-swarm-defense-ga-dp"
@@ -45,7 +45,7 @@ AAMAS（International Conference on Autonomous Agents and Multiagent Systems，�
 
 強化學習（Reinforcement Learning，RL）看起來是個解法，但有幾個根本限制。訓練需要龐大的模擬資料量，訓練時環境中的其他智能體也一直在改變策略（這叫做非穩態問題），而且訓練出來的模型往往只在特定規模下有效——換了場景尺度就得重來。現有文獻裡，大多數研究測試的規模不超過 10 對 10；這篇論文的目標是 30 對 45，差距相當大。
 
-## 分解邏輯：先打小仗，再組大軍
+## 分解邏輯：先打小仗，再組大軍。
 
 這篇論文的核心策略是一個四階段的分解框架，把看似不可解的大規模問題，拆成可以處理的小問題，再有系統地組合回去。
 
@@ -77,7 +77,7 @@ AAMAS（International Conference on Autonomous Agents and Multiagent Systems，�
 
 這個反覆精煉讓整個系統越跑越準。
 
-## 數字說了什麼
+## 數字說了什麼？
 
 論文設計了兩條基準線對比：純隨機配置、和不用分解邏輯直接對大規模場景跑 GA。
 
@@ -99,7 +99,7 @@ AAMAS（International Conference on Autonomous Agents and Multiagent Systems，�
 
 完整的四階段框架讓這個結構重新浮現。
 
-## 這意味著什麼
+## 這意味著什麼？
 
 這篇論文的貢獻不只在技術數字上。它示範了一種應對大規模多智能體問題的思維：與其讓 AI 直接面對無法處理的複雜度，不如先在可控的小規模下學習有用的結構，再用數學工具把這個結構擴張到更大的場景。
 

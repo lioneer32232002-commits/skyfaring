@@ -38,7 +38,7 @@ Samuel Kalman 和 Jonathan Bosch 在 2020 年的 MIT Sloan Sports Analytics Conf
 
 演算法跑完後，資料收斂到九個群集。
 
-## 九個角色，取代五個位置
+## 九個角色，取代五個位置。
 
 ![NBA Functional Role Distribution — 9 Clusters showing player-season counts from 2009 to 2018](/images/nba-player-clustering-nine-roles.png)
 

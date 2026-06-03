@@ -1,5 +1,5 @@
 ---
-title: 你選的是「位置」，還是「打法」？用數據重新定義籃球陣容的組建邏輯
+title: 你選的是「位置」，還是「打法」？用數據重新定義籃球陣容的組建邏輯。
 author: "AI 初稿 / skyfaring 編輯校正"
 date: 2026-05-20
 slug: basketball-player-archetypes-roster-optimization
@@ -26,7 +26,7 @@ Luke S. J. Penner 在 San Diego State University 花了數年時間建立這套�
 
 答案是：幾乎什麼都沒有。
 
-## 22,500 人，110 個聯賽，9 種打法
+## 22,500 人，110 個聯賽，9 種打法。
 
 這份研究的資料規模在籃球分析領域算得上罕見。Penner 從 EuroBasket、RealGM 及 USportsHoops 三個平台，收集了 2018/19 球季、橫跨 110 個聯賽的球員數據，從 NBA 到加拿大大學聯賽，從 Liga Endesa 到中國 CBA，共 27,363 名球員。排除上場時間極少的邊緣球員後，最終保留 22,500 人進行分析。
 
@@ -34,7 +34,7 @@ Luke S. J. Penner 在 San Diego State University 花了數年時間建立這套�
 
 Penner 採用 13 項標準化數據——得分、進攻籃板、防守籃板、助攻、阻攻、抄截、犯規、罰球次數、罰球命中率、兩分與三分的出手次數和命中率——全部換算成每 48 分鐘的數值，消除上場時間的干擾。接著用 k-means 演算法讓數據自己找分群，並以「Within-Cluster Sum of Squares 手肘法」確認 9 個群集是最理想的切分。
 
-## 九種人，九種角色
+## 九種人，九種角色。
 
 演算法產出的 9 個群集，Penner 根據各群最突出的特徵賦予名稱：
 
