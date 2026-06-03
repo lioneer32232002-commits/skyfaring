@@ -16,6 +16,7 @@ heroCredit: Jason Mavrommatis
 heroCreditUrl: https://unsplash.com/photos/1473968512647-3e447244af8f
 source: "Rothe, J., Kessler, N., Wehr, M. H., Hohbach, A., Strohmeier, M., & Montenegro, S. (2026). Autonomous Drone-on-Drone Interception Using an Integrated LiDAR-Vision Detection System for High-Precision Capture. Drones, 10, 420."
 source_url: https://doi.org/10.3390/drones10060420
+highlight: "這項工作的核心不是演算法的學術新穎性，而是在嚴格的重量、電力、計算資源限制下，把整個系統真正整合在一架飛行的機器上，讓它在戶外風場、振動、GPS 誤差這些現實條件中正常運作。"
 ---
 
 機場附近出現一架不明無人機。地面雷達偵測到它，座標傳給攔截無人機，攔截機起飛、逼近、用網把它包住，帶回地面。

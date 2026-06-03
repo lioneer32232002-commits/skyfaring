@@ -15,6 +15,7 @@ heroCreditUrl: https://www.pexels.com/photo/red-glowing-modern-drone-flying-in-a
 source: "Zhang, Y.; Huang, J.; Yang, Q.; Cao, Y.; Zhang, J.; Shi, G. A Graph-Aided Hierarchical Decision Framework for UAV Swarm Interception Under Saturation Incursions. Drones 2026, 10, 419."
 source_url: https://doi.org/10.3390/drones10060419
 category: 無人機
+highlight: "每架藍方無人機根據自己的感測資料，對每個可能目標計算一個攔截收益值，綜合考量：攔截成功機率、目標的威脅等級、抵達所需時間。然後每架無人機喊出自己的出價，通告到整個機群。"
 ---
 
 五十架藍方無人機同時看到同一個威脅。
