@@ -1,5 +1,5 @@
 ---
-title: "面對台海的那支艦隊，背後是同一個人。"
+title: "習近平親手打造的海軍，把戰略焦點擺在了台灣。"
 author: "AI 初稿 / skyfaring 編輯校正"
 date: 2026-06-03
 slug: chairman-xis-navy-taiwan
