@@ -39,6 +39,13 @@ const PROJECTS = [
     external: false,
   },
   {
+    title: "飛行線上",
+    description: "飛行養成學習系統，飛行訓練與航空教育資源",
+    url: "https://flight-deck-1sr.pages.dev/",
+    icon: "✈",
+    external: true,
+  },
+  {
     title: "舊站文章庫",
     description: "Skyfaring 2007年起的個人部落格，武術、旅遊、語言、時事",
     url: "https://yi-tienpan.blogspot.com/",
