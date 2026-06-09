@@ -50,6 +50,8 @@ export default function RootLayout({
           gtag('js', new Date());
           gtag('config', 'G-ZLQY8WT257');
         `}} />
+        {/* Cloudflare Web Analytics */}
+        <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "1106905c4433452d94914f4af91318aa"}'></script>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link
