@@ -11,7 +11,7 @@ tags:
 excerpt: "德國航太中心讓 gpt-4o-mini 接手飛彈防禦的目標分配，在十枚攔截彈對十個來襲威脅的模擬裡，它不靠人工調參，只憑情境推理就排出接近最佳的攔截方案，表現與經典演算法打平，卻多帶來一樣東西：它會解釋自己為什麼這樣分配。"
 highlight: "經典演算法給你一個解，但不告訴你為什麼。語言模型給的解，自帶一段人能讀懂的理由，而這個理由，是它自己從情境裡推出來的，沒有任何人預先設定權重。"
 heroImage: "/images/llm-weapon-target-assignment-air-defense.jpg"
-heroAlt: "夜空中飛彈升空拖出的明亮光跡"
+heroAlt: "暮色天空中一道明亮的火光軌跡劃過雲層"
 heroCredit: "Todd Trapani"
 heroCreditUrl: "https://www.pexels.com/photo/rocket-ship-in-the-sky-14019773/"
 source: "Autenrieb, J., & Ostermann, O. (2025). Generalized Intelligence for Tactical Decision-Making: Large Language Model–Driven Dynamic Weapon Target Assignment. German Aerospace Center (DLR), Institute of Flight Systems. arXiv:2511.10207."
