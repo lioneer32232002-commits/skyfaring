@@ -46,6 +46,20 @@ const PROJECTS = [
     external: true,
   },
   {
+    title: "戰史檔案館",
+    description: "用 3D 影像重現歷史戰役，依據權威史料還原關鍵軍事衝突",
+    url: "https://battle-archive.pages.dev/",
+    icon: "⚔",
+    external: true,
+  },
+  {
+    title: "歷史學院",
+    description: "國中歷史會考線上練習平台，台灣史、中國史、世界史互動題庫與進度追蹤",
+    url: "https://history-academy.pages.dev/",
+    icon: "📜",
+    external: true,
+  },
+  {
     title: "舊站文章庫",
     description: "Skyfaring 2007年起的個人部落格，武術、旅遊、語言、時事",
     url: "https://yi-tienpan.blogspot.com/",
