@@ -16,6 +16,13 @@ excerpt: "給竊賊鋪一條錯的路，讓他偷走一個埋了追蹤器的假�
 highlight: "你想像中那些反追蹤的零件，浮水印、誘餌、警報器，現實裡都有正規版。差別在於，它們是被動的網，不是主動的鉤。"
 source: "Sella Nevo et al., Securing AI Model Weights: Preventing Theft and Misuse of Frontier Models, RAND Corporation, 2024."
 source_url: "https://www.rand.org/pubs/research_reports/RRA2849-1.html"
+references:
+  - title: "Hugging Face, Pickle Scanning."
+    url: "https://huggingface.co/docs/hub/en/security-pickle"
+  - title: "EleutherAI, Safetensors Security Audit by Trail of Bits, 2023."
+    url: "https://blog.eleuther.ai/safetensors-security-audit/"
+  - title: "A Systematic Review on Model Watermarking for Neural Networks, Frontiers in Big Data, 2021."
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC8667341/"
 category: AI
 ---
 
@@ -47,11 +54,17 @@ category: AI
 
 把諜報片的濾鏡拿掉，會發現想像中的每個零件，現實裡都有正規版本。只是它們做的事，跟反向追蹤不太一樣。
 
-指紋和浮水印。訓練的時候偷偷埋一個只有自己知道的隱藏行為，某個特定的怪輸入，會穩定產生只有這顆模型才有的怪回應。哪天外面冒出一顆可疑的模型，把那個暗號丟進去，它要是吐出那個預設答案，就足以證明它抄了你的。這是成熟的研究領域，從 2017 年 Uchida 把資訊埋進權重，到 2018 年 Adi 把後門反過來當成浮水印，累積了大量成果。但它的性質是事後取證，用來打官司、指認來源，不會主動通報，也看不到對方用了什麼手法。
+### 指紋和浮水印
 
-誘餌模型。故意擺一顆做壞的、退化的模型當餌，這在欺敵防禦裡確實是個概念，學界甚至有專門對付萃取攻擊的浮水印誘餌設計。
+訓練的時候偷偷埋一個只有自己知道的隱藏行為，某個特定的怪輸入，會穩定產生只有這顆模型才有的怪回應。哪天外面冒出一顆可疑的模型，把那個暗號丟進去，它要是吐出那個預設答案，就足以證明它抄了你的。這是成熟的研究領域，從 2017 年 Uchida 把資訊埋進權重，到 2018 年 Adi 把後門反過來當成浮水印，累積了大量成果。但它的性質是事後取證，用來打官司、指認來源，不會主動通報，也看不到對方用了什麼手法。
 
-金絲雀權杖。埋在憑證、文件、設定檔裡的隱形警報器，一旦被打開就觸發通報。只是它埋在模型的周邊，不在模型裡面。
+### 誘餌模型
+
+故意擺一顆做壞的、退化的模型當餌，這在欺敵防禦裡確實是個概念，學界甚至有專門對付萃取攻擊的浮水印誘餌設計。
+
+### 金絲雀權杖
+
+埋在憑證、文件、設定檔裡的隱形警報器，一旦被打開就觸發通報。只是它埋在模型的周邊，不在模型裡面。
 
 這三樣拼起來，很接近那個諜報劇本的骨架。差別在於，它們是被動的網，不是主動的鉤。
 
@@ -94,7 +107,3 @@ API 萃取偵測。盯著有沒有人對線上服務狂打問題，想把答案�
 主動又聰明的那一套，假模型、追蹤器、反向釣魚，全都建立在同一個前提上，對手會乖乖照鋪好的路走。只要對手夠專業，這個前提就垮了。被動又笨的那一套，加密、權限、浮水印，不賭對手犯錯，只認定自己遲早會被偷，於是先把損失壓到最低，把證據留好。
 
 真正守得住東西的，往往不是最像電影的那一套，是那套無聊的。
-
----
-
-*模型檔案格式的攻擊面參考 [Hugging Face Pickle Scanning](https://huggingface.co/docs/hub/en/security-pickle)，浮水印與指紋部分參考[神經網路浮水印系統性回顧](https://pmc.ncbi.nlm.nih.gov/articles/PMC8667341/)。全文數據已對照 RAND《Securing AI Model Weights》原始報告核實，查核日期 2026 年 6 月 14 日。*
