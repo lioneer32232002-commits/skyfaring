@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="zh-Hant"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>無人機情報分析儀表板 2026-05-09~2026-06-17</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+:root{--bg:#0b1120;--panel:#131c2e;--line:#243047;--txt:#e6edf6;--mut:#93a4bd;--cn:#e2483d;--west:#3b82f6;--tw:#22c55e;}
+*{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--txt);font-family:"Segoe UI","Noto Sans TC","Microsoft JhengHei",system-ui,sans-serif;line-height:1.6}
+.wrap{max-width:1180px;margin:0 auto;padding:28px 22px 60px}
+.kick{letter-spacing:.32em;color:var(--mut);font-size:12px;text-transform:uppercase}
+h1{font-size:30px;margin:6px 0 4px} .sub{color:var(--mut);font-size:14px;margin-bottom:18px}
+.tabs{display:flex;gap:8px;margin-bottom:22px}
+.tab{flex:0 0 auto;padding:10px 22px;border-radius:10px;border:1px solid var(--line);background:var(--panel);color:var(--mut);cursor:pointer;font-size:15px;font-weight:600}
+.tab.active{background:#1d2b45;color:#fff;border-color:#3b5a8c}
+.kpis{display:grid;grid-template-columns:repeat(6,1fr);gap:12px;margin-bottom:18px}
+@media(max-width:880px){.kpis{grid-template-columns:repeat(3,1fr)}}
+.kpi{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px}
+.kpi .v{font-size:26px;font-weight:700;line-height:1} .kpi .l{color:var(--mut);font-size:12px;margin-top:7px}
+.kpi.cn .v{color:var(--cn)} .kpi.west .v{color:var(--west)} .kpi.tw .v{color:var(--tw)}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px}
+@media(max-width:880px){.grid2{grid-template-columns:1fr}}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px;margin-bottom:16px}
+.card h3{margin:0 0 12px;font-size:15px;color:#cdd9ec;font-weight:600} .card h3 .hint{color:var(--mut);font-weight:400;font-size:12px;margin-left:8px}
+canvas{max-height:300px}
+table{width:100%;border-collapse:collapse;font-size:13px}
+th,td{text-align:left;padding:9px 8px;border-bottom:1px solid var(--line);vertical-align:top} th{color:var(--mut);font-size:12px}
+.chip{display:inline-block;padding:1px 8px;border-radius:999px;font-size:11px;margin-right:6px;white-space:nowrap}
+.cd{color:var(--mut);font-size:12px} .ttl{color:#e6edf6} .ol{color:var(--mut);font-size:12px;margin-top:3px}
+.dt{color:var(--mut);white-space:nowrap} .src{color:#b9c6da}
+a{color:#6ea8fe;text-decoration:none} a:hover{text-decoration:underline}
+.cap{color:#dbe5f3} ul.cap{margin:4px 0 0;padding-left:18px} ul.cap li{margin-bottom:7px;color:#dbe5f3}
+.narr p{margin:0 0 10px;color:#d3dcec} .narr .b{padding-left:14px;margin-bottom:14px}
+.narr .b.west{border-left:3px solid var(--west)} .narr .b.cn{border-left:3px solid var(--cn)} .narr .b.tw{border-left:3px solid var(--tw)}
+.narr h4{margin:0 0 6px;font-size:14px} ul.contrast{margin:6px 0 0;padding-left:18px;color:#d3dcec} ul.contrast li{margin-bottom:6px}
+.cmp th.west{color:var(--west)} .cmp th.cn{color:var(--cn)}
+.cmp td.theme{color:#cdd9ec;font-weight:600;white-space:nowrap}
+.cmp td.west{border-left:2px solid rgba(59,130,246,.35)} .cmp td.cn{border-left:2px solid rgba(226,72,61,.35)}
+.foot{color:var(--mut);font-size:12px;margin-top:26px;border-top:1px solid var(--line);padding-top:14px}
+</style></head>
+<body><div class="wrap">
+  <div class="kick">情報分析儀表板 · Intelligence Review</div>
+  <h1>無人機技術發展 · 中國 vs 非中國 vs 台灣</h1>
+  <div class="sub">觀察期間 2026-05-09 – 2026-06-17　｜　民用與軍用同頁切換　｜　台灣為近年基線　｜　產生於 2026-06-17</div>
+  <div class="tabs">
+    <div class="tab active" data-i="0" onclick="show(0)">民用 · 一般研究</div>
+    <div class="tab" data-i="1" onclick="show(1)">軍用 · 戰爭應用</div>
+  </div>
+  
+    <div class="pane" id="pane0" style="">
+      <div class="kpis">
+        <div class="kpi"><div class="v">35</div><div class="l">本期收錄</div></div>
+        <div class="kpi west"><div class="v">18</div><div class="l">非中國</div></div>
+        <div class="kpi cn"><div class="v">17</div><div class="l">中國</div></div>
+        <div class="kpi tw"><div class="v">5</div><div class="l">台灣（近年基線）</div></div>
+        <div class="kpi"><div class="v">9</div><div class="l">子主題</div></div>
+        <div class="kpi"><div class="v">6</div><div class="l">來源</div></div>
+      </div>
+      <div class="grid2">
+        <div class="card"><h3>領域活躍度 · 中國 vs 非中國 vs 台灣 <span class="hint">台灣為近年基線</span></h3><canvas id="radar0"></canvas></div>
+        <div class="card"><h3>每週論文量 <span class="hint">本期，依國別</span></h3><canvas id="wk0"></canvas></div>
+      </div>
+      <div class="grid2">
+        <div class="card"><h3>子主題分布 <span class="hint">本期</span></h3><canvas id="sub0"></canvas></div>
+        <div class="card"><h3>國別占比 <span class="hint">本期</span></h3><canvas id="cty0"></canvas></div>
+      </div>
+      
+      <div class="card">
+        <h3>領域能力判讀 <span class="hint">小樣本＋既有知識的觀察，非精確指標</span></h3>
+        <ul class='cap'><li>中國：量能最廣，蜂群協同、物件偵測遙測、路徑規劃、控制容錯都密集，偏深度學習與大規模模擬。</li><li>非中國（歐美為主）：分散多國，強在控制理論、自主導航、安全與通訊，單一機構量少但題目廣。</li><li>台灣（近年基線）：亮點在精準降落導航、編隊避障、農業遙測、視覺語言控制，廣度窄，蜂群與大規模協同少見。</li><li>快慢一句話：中國快在覆蓋廣度與蜂群，台灣快在少數應用利基，歐美穩在理論與安全。</li><li>提醒：5 週小樣本加既有知識，台灣為基線，會隨月度累積修正。</li></ul>
+      </div>
+      <div class="grid2">
+        <div class="card"><h3>發展脈絡</h3>
+          <div class="narr">
+            <div class="b west"><h4 style="color:var(--west)">非中國（歐美為主）</h4><p>西方與非中國團隊這段期間的民用無人機研究，重心放在「不依賴外部基礎設施也能可靠運作」。俄羅斯 Skoltech 的 Tsetserukou 團隊連續產出多篇擴散模型路徑規劃（AgenticDiffusion、ImpedanceDiffusion），把語言指令、視覺生成軌跡與順應控制接在一起，並用 Crazyflie 微型機做 sim-to-real 驗證。捷克布拉格理工的 Saska 團隊則走「無通訊協同」路線，多機只靠機載 LiDAR 在森林實飛。歐洲與中東團隊（奧地利、賽普勒斯、沙烏地、伊拉克）偏應用面，把搜救、災害通訊、風險評估當成主軸。整體看，非中國這側題目分散，單機自主與真實世界部署的比重高。</p></div>
+            <div class="b cn"><h4 style="color:var(--cn)">中國</h4><p>中國團隊的民用研究高度集中在 GNSS 拒止環境下的導航與定位，而且明顯由航空航天與國防體系院校主導：北京航空航天大學、空軍工程大學、南京航空航天大學、哈爾濱工業大學、清華大學、中國科學院都在列。技術路線偏「物理＋學習」混合，例如清華的 PG-TLNet 把地磁干擾拆成可解釋線性子空間加神經殘差，空軍工程大學則密集投入地形匹配、跨視角定位、協同狀態估計。物件偵測（AD-YOLO、RSMamDet）與蜂群相態控制也有穩定產出。相對於非中國這側，中國的題目更聚焦、機構背景更一致。</p></div>
+            <div class="b tw"><h4 style="color:var(--tw)">台灣</h4><p>台灣本期窗內無新收錄，故以近年代表作為基線。研究集中在特定應用與感知：固定翼無人機在 GNSS 失效下的深度學習導航與精準降落（成功大學）、不平坦地形降落決策、編隊飛行避障（台灣海洋大學）、農業遙測的茶樹生理參數估測（中興大學），以及視覺語言模型直接控制無人機飛行（陽明交大與台大的 See Point Fly）。整體偏實用導向與感測整合，蜂群與大規模協同的學術著墨相對少。</p></div>
+          </div>
+        </div>
+        <div class="card"><h3>本期走向與關鍵差異</h3>
+          <div class="narr"><p>民用無人機的技術主軸這十多年一路從遙控操作，走向自主導航與 SLAM，再走到深度學習感知與多機協同。早期靠 GPS 與地面站，後來重心轉到 GNSS 拒止環境，視覺、LiDAR、地磁、地形匹配等被動感測成為替代定位的主力。最近一兩年的明顯變化，是擴散模型與大型語言模型開始進入路徑規劃與場景理解，多機協同也從集中式控制轉向去中心化與隱式協調。這段期間的論文正好落在這個轉折點上。</p><ul class="contrast"><li>非中國團隊大量用真實飛行驗證（Skoltech 的 Crazyflie、布拉格理工的森林實飛），中國這側除了少數實機（CETC 9.4 kg 四旋翼）多以高擬真模擬為主。</li>
+<li>中國研究集中在 GNSS 拒止定位與導航，由航太國防院校主導；非中國題目分散在搜救、災害通訊、物流、風險評估等應用面。</li>
+<li>生成式方法（擴散模型、VLM）在非中國這側已直接進路徑規劃流程，中國這側偏物理導引加神經殘差的混合架構。</li>
+<li>物件偵測這條線幾乎全由中國團隊推進（AD-YOLO、RSMamDet），鎖定空拍小目標與邊緣部署。</li>
+<li>蜂群協同兩側都有，但非中國偏無通訊隱式協調，中國偏仿生勢場與相態控制。</li></ul></div>
+        </div>
+      </div>
+      <div class="card"><h3>同題對照 · 雙方各自怎麼做</h3>
+        <table class="cmp"><thead><tr><th>主題</th><th class="west">非中國</th><th class="cn">中國</th></tr></thead>
+        <tbody><tr><td class='theme'>GNSS 拒止下的定位</td><td class='west'>Skoltech 用影像條件擴散模型直接生成軌跡，布拉格理工只靠機載 LiDAR 做 SLAM 與隱式協同，不建圖、不通訊。</td><td class='cn'>清華 PG-TLNet 用物理導引補償地磁干擾，空軍工程大學以自編碼器對比學習做地形匹配，強調可解釋與抗雜訊。</td></tr>
+<tr><td class='theme'>路徑規劃方法論</td><td class='west'>Skoltech 把擴散模型當全域規劃器，配人工勢場反應層與語意阻抗控制。</td><td class='cn'>南航 MMDQN、武警工程大學改良旅鼠演算法，走階層式全域加線上避障與群體智慧優化。</td></tr>
+<tr><td class='theme'>搜救任務</td><td class='west'>奧地利 FH Kufstein 用真實山地搜救隊做 RCT 對照，再以 PPO 訓練自主群體基準。</td><td class='cn'>（此區段中國論文較少，民用搜救主要由非中國團隊推進）</td></tr>
+<tr><td class='theme'>空拍物件偵測</td><td class='west'>（此區段非中國論文較少）</td><td class='cn'>華南理工 AD-YOLO、海南大學 RSMamDet 鎖定密集小目標，用旋轉卷積與線性狀態空間模型壓低運算量。</td></tr>
+<tr><td class='theme'>多機協同</td><td class='west'>布拉格理工 iRBL 完全不靠通訊，協同行為從各自局部感知浮現。</td><td class='cn'>北航以鴿群棲息行為設計相態轉換控制，讓蜂群在平移與渦旋相態間平滑切換。</td></tr></tbody></table>
+      </div>
+      <div class="card"><h3>代表性論文 <span class="hint">台灣列為近年基線</span></h3>
+        <table><thead><tr><th>日期</th><th>國別</th><th>論文</th><th>來源</th><th></th></tr></thead>
+        <tbody><tr><td class='dt'>2026-05-10</td><td><span class="chip" style="background:#e2483d22;color:#e2483d;border:1px solid #e2483d55">中國</span><span class='cd'>中國電子科技集團第 54 研究所</span></td><td><div class='ttl'>Research on Autonomous Navigation and Obstacle Avoidance Methods for High-Speed Large-Inertia Rotor UAV</div><div class='ol'>大慣量 UAV 毫秒級全自主導航與避障</div></td><td class='src'>Drones (MDPI)</td><td><a href="https://www.mdpi.com/2504-446X/10/4/259" target="_blank">連結</a></td></tr>
+<tr><td class='dt'>2026-05-15</td><td><span class="chip" style="background:#e2483d22;color:#e2483d;border:1px solid #e2483d55">中國</span><span class='cd'>華南理工大學</span></td><td><div class='ttl'>AD-YOLO: A Unified Method for Traffic-Dense and Small Object Detection in UAV Images</div><div class='ol'>AD-YOLO 統一密集場景小目標偵測</div></td><td class='src'>Drones</td><td><a href="https://www.mdpi.com/2504-446X/10/5/338" target="_blank">連結</a></td></tr>
+<tr><td class='dt'>2026-05-19</td><td><span class="chip" style="background:#e2483d22;color:#e2483d;border:1px solid #e2483d55">中國</span><span class='cd'>中國科學院</span></td><td><div class='ttl'>Assessing the Carbon Mitigation Potential of UAV-Based Last-Mile Delivery Using 3D Path Planning: A Case Study of Shanghai</div><div class='ol'>上海無人機末端配送碳排實證評估</div></td><td class='src'>Drones</td><td><a href="https://www.mdpi.com/2504-446X/10/5/364" target="_blank">連結</a></td></tr>
+<tr><td class='dt'>2026-05-26</td><td><span class="chip" style="background:#e2483d22;color:#e2483d;border:1px solid #e2483d55">中國</span><span class='cd'>北京航空航天大學</span></td><td><div class='ttl'>A Phase Transition Control Framework for UAV Swarms Inspired by Pigeon Roosting Behavior</div><div class='ol'>仿鴿群棲息行為的蜂群相態轉換控制</div></td><td class='src'>Drones</td><td><a href="https://www.mdpi.com/2504-446X/10/5/326" target="_blank">連結</a></td></tr>
+<tr><td class='dt'>2026-06-03</td><td><span class="chip" style="background:#e2483d22;color:#e2483d;border:1px solid #e2483d55">中國</span><span class='cd'>清華大學</span></td><td><div class='ttl'>A Physics-Guided Aeromagnetic Interference Compensation Method for Geomagnetic Sensing in GNSS-Denied UAV Swarm Systems</div><div class='ol'>物理導引補償蜂群地磁導航干擾</div></td><td class='src'>Drones</td><td><a href="https://www.mdpi.com/2504-446X/10/4/252" target="_blank">連結</a></td></tr>
+<tr><td class='dt'>2024-05-15 · 近年基線</td><td><span class="chip" style="background:#22c55e22;color:#22c55e;border:1px solid #22c55e55">台灣</span><span class='cd'>國立成功大學</span></td><td><div class='ttl'>Development of an Uneven Terrain Decision-Aid Landing System for Fixed-Wing Aircraft Based on Computer Vision</div><div class='ol'>立體視覺判斷不平地形緊急降落區</div></td><td class='src'>Electronics (MDPI)</td><td><a href="https://www.mdpi.com/2079-9292/13/10/1946" target="_blank">連結</a></td></tr>
+<tr><td class='dt'>2025-03-21 · 近年基線</td><td><span class="chip" style="background:#22c55e22;color:#22c55e;border:1px solid #22c55e55">台灣</span><span class='cd'>國立中興大學</span></td><td><div class='ttl'>Estimating Tea Plant Physiological Parameters Using Unmanned Aerial Vehicle Imagery and Machine Learning Algorithms</div><div class='ol'>UAV 多光譜估計茶樹生理參數</div></td><td class='src'>Sensors (MDPI)</td><td><a href="https://www.mdpi.com/1424-8220/25/7/1966" target="_blank">連結</a></td></tr>
+<tr><td class='dt'>2025-04-10 · 近年基線</td><td><span class="chip" style="background:#22c55e22;color:#22c55e;border:1px solid #22c55e55">台灣</span><span class='cd'>國立成功大學</span></td><td><div class='ttl'>Deep Learning-Based Navigation System for Automatic Landing Approach of Fixed-Wing UAVs in GNSS-Denied Environments</div><div class='ol'>純視覺固定翼 UAV 無 GNSS 自動降落導引</div></td><td class='src'>Aerospace (MDPI)</td><td><a href="https://www.mdpi.com/2226-4310/12/4/324" target="_blank">連結</a></td></tr>
+<tr><td class='dt'>2025-04-12 · 近年基線</td><td><span class="chip" style="background:#22c55e22;color:#22c55e;border:1px solid #22c55e55">台灣</span><span class='cd'>國立台灣海洋大學</span></td><td><div class='ttl'>Path Planning and Obstacle Avoidance of Formation Flight</div><div class='ol'>編隊巡檢 A* 規劃加深度相機避障</div></td><td class='src'>Sensors (MDPI)</td><td><a href="https://www.mdpi.com/1424-8220/25/8/2447" target="_blank">連結</a></td></tr>
+<tr><td class='dt'>2025-09-26 · 近年基線</td><td><span class="chip" style="background:#22c55e22;color:#22c55e;border:1px solid #22c55e55">台灣</span><span class='cd'>國立陽明交通大學／國立台灣大學</span></td><td><div class='ttl'>See, Point, Fly: A Learning-Free VLM Framework for Universal Unmanned Aerial Navigation</div><div class='ol'>免訓練 VLM 語言指令無人機導航</div></td><td class='src'>CoRL 2025 (Conference on Robot Learning), PMLR 305</td><td><a href="https://arxiv.org/abs/2509.22653" target="_blank">連結</a></td></tr>
+<tr><td class='dt'>2026-05-12</td><td><span class="chip" style="background:#3b82f622;color:#3b82f6;border:1px solid #3b82f655">非中國</span><span class='cd'>美國（Virginia Commonwealth University）</span></td><td><div class='ttl'>Vision-Based Unmanned Aerial Vehicle Swarm Cooperation and Online Point-Cloud Registration for Global Localization in Global Navigation Satellite System-Intermittent Environments</div><div class='ol'>單眼視覺蜂群協同與全域定位</div></td><td class='src'>Drones (MDPI)</td><td><a href="https://www.mdpi.com/2504-446X/10/1/65" target="_blank">連結</a></td></tr>
+<tr><td class='dt'>2026-05-17</td><td><span class="chip" style="background:#3b82f622;color:#3b82f6;border:1px solid #3b82f655">非中國</span><span class='cd'>波蘭（AGH University of Kraków）</span></td><td><div class='ttl'>Recent Developments and Applications of Drone Swarm: Techniques, Strategies, and Challenges</div><div class='ol'>無人機蜂群技術與策略系統綜述</div></td><td class='src'>Sensors</td><td><a href="https://www.mdpi.com/1424-8220/26/10/2943" target="_blank">連結</a></td></tr>
+<tr><td class='dt'>2026-05-20</td><td><span class="chip" style="background:#3b82f622;color:#3b82f6;border:1px solid #3b82f655">非中國</span><span class='cd'>奧地利（FH Kufstein Tirol）</span></td><td><div class='ttl'>From Human Teams to Autonomous Swarms: A Reinforcement Learning-Based Benchmarking Framework for Unmanned Aerial Vehicle Search and Rescue Missions</div><div class='ol'>強化學習自主群體搜救基準框架</div></td><td class='src'>Drones</td><td><a href="https://www.mdpi.com/2504-446X/10/2/79" target="_blank">連結</a></td></tr>
+<tr><td class='dt'>2026-06-09</td><td><span class="chip" style="background:#3b82f622;color:#3b82f6;border:1px solid #3b82f655">非中國</span><span class='cd'>俄羅斯（Skoltech）</span></td><td><div class='ttl'>AgenticDiffusion: Agentic Diffusion-based Path Planning for Vision-Based UAV Navigation</div><div class='ol'>語言引導多視角擴散規劃室內導航</div></td><td class='src'>arXiv (cs.RO)</td><td><a href="https://arxiv.org/abs/2606.04111" target="_blank">連結</a></td></tr>
+<tr><td class='dt'>2026-06-15</td><td><span class="chip" style="background:#3b82f622;color:#3b82f6;border:1px solid #3b82f655">非中國</span><span class='cd'>俄羅斯（Skoltech）</span></td><td><div class='ttl'>ImpedanceDiffusion: Diffusion-Based Global Path Planning for UAV Swarm Navigation with Generative Impedance Control</div><div class='ol'>擴散規劃結合生成阻抗的蜂群導航</div></td><td class='src'>arXiv (cs.RO)</td><td><a href="https://arxiv.org/abs/2603.09031" target="_blank">連結</a></td></tr>
+<tr><td class='dt'>2026-06-16</td><td><span class="chip" style="background:#3b82f622;color:#3b82f6;border:1px solid #3b82f655">非中國</span><span class='cd'>沙烏地阿拉伯（King Khalid University）</span></td><td><div class='ttl'>Explainable Multi-Agent Reinforcement Learning Framework for Secure and Adaptive Communication in UAV Swarm Based FANETs</div><div class='ol'>可解釋多智能體強化學習 FANET 安全通訊</div></td><td class='src'>Scientific Reports</td><td><a href="https://doi.org/10.1038/s41598-026-39366-x" target="_blank">連結</a></td></tr>
+<tr><td class='dt'>2026-06-17</td><td><span class="chip" style="background:#3b82f622;color:#3b82f6;border:1px solid #3b82f655">非中國</span><span class='cd'>捷克（Czech Technical University in Prague）</span></td><td><div class='ttl'>Perception-Aware Communication-Free Multi-UAV Coordination in the Wild</div><div class='ol'>森林中無通訊多機感知協同</div></td><td class='src'>arXiv preprint (cs.RO)</td><td><a href="https://arxiv.org/abs/2603.08379" target="_blank">連結</a></td></tr></tbody></table>
+      </div>
+    </div>
+  
+    <div class="pane" id="pane1" style="display:none">
+      <div class="kpis">
+        <div class="kpi"><div class="v">12</div><div class="l">本期收錄</div></div>
+        <div class="kpi west"><div class="v">7</div><div class="l">非中國</div></div>
+        <div class="kpi cn"><div class="v">5</div><div class="l">中國</div></div>
+        <div class="kpi tw"><div class="v">2</div><div class="l">台灣（近年基線）</div></div>
+        <div class="kpi"><div class="v">6</div><div class="l">子主題</div></div>
+        <div class="kpi"><div class="v">2</div><div class="l">來源</div></div>
+      </div>
+      <div class="grid2">
+        <div class="card"><h3>領域活躍度 · 中國 vs 非中國 vs 台灣 <span class="hint">台灣為近年基線</span></h3><canvas id="radar1"></canvas></div>
+        <div class="card"><h3>每週論文量 <span class="hint">本期，依國別</span></h3><canvas id="wk1"></canvas></div>
+      </div>
+      <div class="grid2">
+        <div class="card"><h3>子主題分布 <span class="hint">本期</span></h3><canvas id="sub1"></canvas></div>
+        <div class="card"><h3>國別占比 <span class="hint">本期</span></h3><canvas id="cty1"></canvas></div>
+      </div>
+      
+      <div class="card">
+        <h3>領域能力判讀 <span class="hint">小樣本＋既有知識的觀察，非精確指標</span></h3>
+        <ul class='cap'><li>中國：空戰決策、反無人機攔截、電子戰抗干擾、蜂群作戰密集，多來自軍校體系，推進最快。</li><li>非中國：美澳歐烏為主，強在人機協同指揮、戰術 UGV 與實戰整合，烏克蘭帶戰場導向。</li><li>台灣（近年基線）：公開軍用論文稀少，僅見威脅偵測與 MIMO 干擾反制，多數能量在中科院與產業，非學術。</li><li>快慢一句話：中國快在自主交戰與蜂群，歐美強在人機協同與實戰，台灣學術曝光明顯落後（不等於國防能量）。</li><li>提醒：小樣本加既有知識的觀察。</li></ul>
+      </div>
+      <div class="grid2">
+        <div class="card"><h3>發展脈絡</h3>
+          <div class="narr">
+            <div class="b west"><h4 style="color:var(--west)">非中國（歐美為主）</h4><p>非中國這側的軍事無人機研究，大量題目直接來自真實戰場或實際演習。烏克蘭國防部 CIDTD 從前線需求出發，做低幀率偵察影像的軍事車輛即時追蹤，並公開戰場標注資料集。葡萄牙陸軍官校的 ARGUS 在 ARTEX 25 演習驗證戰術 UGV 路徑規劃，與真實任務管制系統互通。反無人機這條線分布很廣：澳洲阿德萊德把小隊防禦策略以動態規劃擴展成大規模蜂群防禦，義大利 Artificial Twin 用強化學習做攔截優先排序，德國符茲堡做機載 LiDAR 視覺的實機網捕攔截。加拿大卡爾頓則整理 UAV 航電電子戰攻擊與防禦的完整分類綜述。整體偏實戰轉化與可部署。</p></div>
+            <div class="b cn"><h4 style="color:var(--cn)">中國</h4><p>中國這側的軍事無人機研究幾乎全由國防體系院校產出，且高度集中在「對抗條件下的蜂群決策」。空軍工程大學做蜂群目標追蹤並參考 DARPA CODE 概念，西北工業大學處理飽和入侵下的去中心化攔截分配，中北大學在含 SAM、AAA、干擾機的電子戰場景訓練蜂群控制（CIDA 框架）。北京理工與北航把視覺語言模型當成多 UGV 對抗的「指揮官」，讓策略推理可解釋。題目偏向多智能體強化學習與蜂群作戰決策，模擬規模大但少見實機。</p></div>
+            <div class="b tw"><h4 style="color:var(--tw)">台灣</h4><p>台灣軍用無人機的同儕審查論文稀少。本期基線僅見陽明交大與中正大學在 GLOBECOM 2025 的兩篇，分別處理多無人機威脅偵測與航跡規劃，以及用大規模 MIMO 干擾敵方無人機。台灣多數軍用無人機能量集中在國家中山科學研究院與國防產業，屬非學術產出，因此公開學術足跡薄，這不等於實際國防能量。</p></div>
+          </div>
+        </div>
+        <div class="card"><h3>本期走向與關鍵差異</h3>
+          <div class="narr"><p>軍事無人機的角色一路演進，最早是偵察 ISR，把無人機當成空中之眼；接著是武裝化的察打一體，偵察與打擊合一；最近這幾年的重點轉向蜂群與自主交戰，以及電子戰環境下的對抗。烏俄戰場把低成本自殺式無人機與反無人機防禦推到第一線，干擾、欺騙、攔截、抗干擾通訊成為核心議題。這段期間的論文正好集中在蜂群作戰決策、反無人機攔截與電子戰對抗這三條最新的主軸上。</p><ul class="contrast"><li>非中國團隊的題目常有真實戰場或演習背景（烏克蘭前線資料集、葡萄牙陸軍 ARTEX 25），中國這側以大規模對抗模擬為主，少見實機交戰驗證。</li>
+<li>反無人機攔截兩側都熱，但非中國偏實體攔截硬體（德國機載 LiDAR 網捕）與防禦策略擴展，中國偏去中心化多智能體攔截分配。</li>
+<li>電子戰主題上，加拿大走攻防分類綜述，中國中北大學則直接在含 SAM/AAA/干擾機的場景訓練蜂群求生與任務平衡。</li>
+<li>可解釋性與人機協同指揮兩側都觸及，中國用 VLM 當指揮官，非中國用 NATO 研討會與軍方演習路線推動實戰審計。</li>
+<li>戰術 UGV 的軍用化非中國有實際陸軍背景（葡萄牙、烏克蘭），中國這批論文以空中蜂群為主，地面戰術載具著墨較少。</li></ul></div>
+        </div>
+      </div>
+      <div class="card"><h3>同題對照 · 雙方各自怎麼做</h3>
+        <table class="cmp"><thead><tr><th>主題</th><th class="west">非中國</th><th class="cn">中國</th></tr></thead>
+        <tbody><tr><td class='theme'>蜂群作戰決策</td><td class='west'>澳洲阿德萊德用動態規劃把小隊防禦策略組合成大規模蜂群防禦，可在多項式時間內擴展。</td><td class='cn'>中北大學 CIDA 把信念重建與戰術意圖解耦，在含 SAM、AAA、干擾機的電子戰場景做蜂群控制。</td></tr>
+<tr><td class='theme'>反無人機／攔截</td><td class='west'>德國符茲堡用機載 LiDAR 加視覺做實機網捕攔截，義大利 Artificial Twin 以強化學習做攔截優先排序。</td><td class='cn'>西北工業大學以圖輔助階層決策處理飽和入侵下的去中心化目標分配與協同攔截。</td></tr>
+<tr><td class='theme'>軍事 ISR 與目標追蹤</td><td class='west'>烏克蘭國防部用自監督方法追蹤低幀率偵察影像中的軍事車輛，並公開戰場資料集。</td><td class='cn'>空軍工程大學做蜂群分散式目標追蹤，參考 DARPA CODE 的拒止環境協同概念。</td></tr>
+<tr><td class='theme'>人機協同指揮</td><td class='west'>（此區段非中國論文較少，西方研究多走真實演習與 NATO 路線）</td><td class='cn'>北京理工與北航以視覺語言模型當指揮官，VLM 理解戰場、輕量 LLM 做策略推理，強調可解釋。</td></tr>
+<tr><td class='theme'>電子戰／抗干擾</td><td class='west'>加拿大卡爾頓整理 UAV 航電在 GPS、ADS-B、Wi-Fi 上的電子戰攻擊與防禦分類綜述。</td><td class='cn'>中北大學在強干擾電子戰環境下訓練蜂群，平衡態勢重建與任務積極性。</td></tr></tbody></table>
+      </div>
+      <div class="card"><h3>代表性論文 <span class="hint">台灣列為近年基線</span></h3>
+        <table><thead><tr><th>日期</th><th>國別</th><th>論文</th><th>來源</th><th></th></tr></thead>
+        <tbody><tr><td class='dt'>2026-05-09</td><td><span class="chip" style="background:#e2483d22;color:#e2483d;border:1px solid #e2483d55">中國</span><span class='cd'>中北大學（太原）</span></td><td><div class='ttl'>Intelligent Unmanned Aerial Vehicle Swarm Control Under Electronic Warfare: A Cognitive–Intent Dual-Stream Reinforcement Learning Framework</div><div class='ol'>電子戰下認知意圖雙流蜂群控制</div></td><td class='src'>Drones</td><td><a href="https://www.mdpi.com/2504-446X/10/5/342" target="_blank">連結</a></td></tr>
+<tr><td class='dt'>2026-05-15</td><td><span class="chip" style="background:#e2483d22;color:#e2483d;border:1px solid #e2483d55">中國</span><span class='cd'>北京理工大學／北京航空航天大學</span></td><td><div class='ttl'>2026-05-15-2507.11079</div><div class='ol'>視覺語言模型指揮多 UGV 戰術決策</div></td><td class='src'>（未標示）</td><td></td></tr>
+<tr><td class='dt'>2026-05-28</td><td><span class="chip" style="background:#e2483d22;color:#e2483d;border:1px solid #e2483d55">中國</span><span class='cd'>空軍工程大學</span></td><td><div class='ttl'>Hierarchical Target Tracking for Unmanned Aerial Vehicle Swarms with Distributed Optimization and Affine Control</div><div class='ol'>分散式優化的蜂群階層目標追蹤</div></td><td class='src'>Drones</td><td><a href="https://doi.org/10.3390/drones10050366" target="_blank">連結</a></td></tr>
+<tr><td class='dt'>2026-05-30</td><td><span class="chip" style="background:#e2483d22;color:#e2483d;border:1px solid #e2483d55">中國</span><span class='cd'>西北工業大學</span></td><td><div class='ttl'>A Graph-Aided Hierarchical Decision Framework for UAV Swarm Interception Under Saturation Incursions</div><div class='ol'>飽和入侵下圖輔助階層蜂群攔截</div></td><td class='src'>Drones</td><td><a href="https://www.mdpi.com/2504-446X/10/6/419" target="_blank">連結</a></td></tr>
+<tr><td class='dt'>2025-12-08 · 近年基線</td><td><span class="chip" style="background:#22c55e22;color:#22c55e;border:1px solid #22c55e55">台灣</span><span class='cd'>國立陽明交通大學／國立中正大學</span></td><td><div class='ttl'>Jamming Adversarial Drones with Massive MIMO</div><div class='ol'>massive MIMO 波束成形干擾敵方無人機</div></td><td class='src'>IEEE GLOBECOM 2025（IEEE Global Communications Conference, Taipei）</td><td><a href="https://globecom2025.ieee-globecom.org/" target="_blank">連結</a></td></tr>
+<tr><td class='dt'>2025-12-08 · 近年基線</td><td><span class="chip" style="background:#22c55e22;color:#22c55e;border:1px solid #22c55e55">台灣</span><span class='cd'>國立陽明交通大學／國立中正大學</span></td><td><div class='ttl'>REAP: Real-time Threat Detection and Trajectory Planning For Multiple UAVs in Adverse Areas</div><div class='ol'>威脅區多無人機即時威脅偵測與航跡規劃</div></td><td class='src'>IEEE GLOBECOM 2025（IEEE Global Communications Conference, Taipei）</td><td><a href="https://globecom2025.ieee-globecom.org/" target="_blank">連結</a></td></tr>
+<tr><td class='dt'>2026-05-14</td><td><span class="chip" style="background:#3b82f622;color:#3b82f6;border:1px solid #3b82f655">非中國</span><span class='cd'>澳洲（University of Adelaide）</span></td><td><div class='ttl'>2026-05-14-2602.12502</div><div class='ol'>小隊策略擴展為大規模蜂群防禦</div></td><td class='src'>（未標示）</td><td></td></tr>
+<tr><td class='dt'>2026-05-16</td><td><span class="chip" style="background:#3b82f622;color:#3b82f6;border:1px solid #3b82f655">非中國</span><span class='cd'>烏克蘭（國防部 CIDTD）</span></td><td><div class='ttl'>2026-05-16-2507.05229</div><div class='ol'>低幀率偵察影像軍事車輛自監督追蹤</div></td><td class='src'>（未標示）</td><td></td></tr>
+<tr><td class='dt'>2026-05-25</td><td><span class="chip" style="background:#3b82f622;color:#3b82f6;border:1px solid #3b82f655">非中國</span><span class='cd'>義大利（Artificial Twin）</span></td><td><div class='ttl'>2026-05-25-2508.00641</div><div class='ol'>強化學習決策層攔截優先排序</div></td><td class='src'>（未標示）</td><td></td></tr>
+<tr><td class='dt'>2026-05-27</td><td><span class="chip" style="background:#3b82f622;color:#3b82f6;border:1px solid #3b82f655">非中國</span><span class='cd'>加拿大（Carleton University）</span></td><td><div class='ttl'>2026-05-27-2504.07358</div><div class='ol'>UAV 航電電子戰攻擊與防禦分類綜述</div></td><td class='src'>（未標示）</td><td></td></tr>
+<tr><td class='dt'>2026-05-31</td><td><span class="chip" style="background:#3b82f622;color:#3b82f6;border:1px solid #3b82f655">非中國</span><span class='cd'>德國（Würzburg 大學）</span></td><td><div class='ttl'>Autonomous Drone-on-Drone Interception Using an Integrated LiDAR–Vision Detection System for High-Precision Capture</div><div class='ol'>LiDAR 視覺融合自主無人機網捕攔截</div></td><td class='src'>Drones</td><td><a href="https://www.mdpi.com/2504-446X/10/6/420" target="_blank">連結</a></td></tr>
+<tr><td class='dt'>2026-06-03</td><td><span class="chip" style="background:#3b82f622;color:#3b82f6;border:1px solid #3b82f655">非中國</span><span class='cd'>葡萄牙（陸軍官校 Academia Militar）</span></td><td><div class='ttl'>2026-06-03-2511.07565</div><div class='ol'>風險感知戰術 UGV 路徑規劃框架</div></td><td class='src'>（未標示）</td><td></td></tr></tbody></table>
+      </div>
+    </div>
+  <div class="foot">硬統計（本期篇數、週分布、來源）由實際收錄檔案計算。國別以論文機構查證為準。台灣產量小、幾乎不落在本期窗內，故以近年代表作為基線，僅供領域比較參考。</div>
+</div>
+<script>
+const D = {"0": {"label": "民用 · 一般研究", "kpi": {"total": 35, "cn": 17, "west": 18, "tw": 5, "nsub": 9, "nsrc": 6}, "weeks": ["2026-W19", "2026-W20", "2026-W21", "2026-W22", "2026-W23", "2026-W24", "2026-W25"], "wkcn": [1, 2, 4, 2, 5, 2, 1], "wkwest": [0, 6, 3, 0, 2, 4, 3], "country": {"中國": 17, "非中國": 18}, "subLabels": ["路徑規劃／導航", "通訊", "定位 SLAM", "控制／容錯", "蜂群協同", "物件偵測／遙測", "避障", "搜救", "物流配送"], "subVals": [9, 5, 5, 4, 4, 3, 2, 2, 1], "srcLabels": ["Drones", "Drones (MDPI)", "arXiv (cs.RO)", "Scientific Reports", "Sensors", "arXiv preprint (cs.RO)"], "srcVals": [17, 12, 2, 2, 1, 1], "radarAxes": ["定位 SLAM", "控制／容錯", "搜救", "物件偵測／遙測", "物流配送", "蜂群協同", "路徑規劃／導航", "農業遙測", "通訊", "避障"], "rcn": [4, 2, 0, 3, 1, 2, 3, 0, 1, 1], "rwest": [1, 2, 2, 0, 0, 2, 6, 0, 4, 1], "rtw": [0, 0, 0, 0, 0, 1, 2, 1, 0, 1]}, "1": {"label": "軍用 · 戰爭應用", "kpi": {"total": 12, "cn": 5, "west": 7, "tw": 2, "nsub": 6, "nsrc": 2}, "weeks": ["2026-W19", "2026-W20", "2026-W22", "2026-W23", "2026-W24"], "wkcn": [1, 1, 2, 1, 0], "wkwest": [0, 2, 3, 1, 1], "country": {"中國": 5, "非中國": 7}, "subLabels": ["反無人機／攔截", "電子戰／抗干擾", "人機協同指揮", "軍事 ISR", "蜂群作戰", "戰術 UGV"], "subVals": [5, 3, 1, 1, 1, 1], "srcLabels": ["Drones", "（未標示）"], "srcVals": [6, 6], "radarAxes": ["人機協同指揮", "反無人機／攔截", "戰術 UGV", "蜂群作戰", "軍事 ISR", "電子戰／抗干擾"], "rcn": [1, 1, 0, 1, 0, 2], "rwest": [0, 4, 1, 0, 1, 1], "rtw": [0, 1, 0, 0, 1, 0]}, "colors": {"中國": "#e2483d", "非中國": "#3b82f6", "台灣": "#22c55e", "未確認": "#9ca3af"}, "palette": ["#3b82f6", "#10b981", "#f59e0b", "#8b5cf6", "#ec4899", "#14b8a6", "#ef4444", "#6366f1", "#84cc16", "#f97316", "#06b6d4"]};
+const gx={color:'#243047'}, tc='#93a4bd';
+Chart.defaults.color=tc; Chart.defaults.font.family='Noto Sans TC, Segoe UI, sans-serif';
+const built={};
+function render(i){
+  if(built[i]) return; built[i]=true;
+  const d=D[String(i)], C=D.colors;
+  new Chart(document.getElementById('radar'+i),{type:'radar',data:{labels:d.radarAxes,datasets:[
+    {label:'非中國',data:d.rwest,borderColor:C['非中國'],backgroundColor:C['非中國']+'33'},
+    {label:'中國',data:d.rcn,borderColor:C['中國'],backgroundColor:C['中國']+'33'},
+    {label:'台灣',data:d.rtw,borderColor:C['台灣'],backgroundColor:C['台灣']+'33'}]},
+    options:{plugins:{legend:{position:'bottom'}},scales:{r:{angleLines:{color:'#243047'},grid:{color:'#243047'},pointLabels:{color:'#cdd9ec',font:{size:11}},ticks:{display:false,precision:0}}}}});
+  new Chart(document.getElementById('wk'+i),{type:'bar',data:{labels:d.weeks,datasets:[
+    {label:'非中國',data:d.wkwest,backgroundColor:C['非中國']},
+    {label:'中國',data:d.wkcn,backgroundColor:C['中國']}]},
+    options:{scales:{x:{stacked:true,grid:gx},y:{stacked:true,grid:gx,ticks:{precision:0}}},plugins:{legend:{position:'bottom'}}}});
+  new Chart(document.getElementById('sub'+i),{type:'bar',data:{labels:d.subLabels,datasets:[{data:d.subVals,backgroundColor:D.palette}]},
+    options:{indexAxis:'y',plugins:{legend:{display:false}},scales:{x:{grid:gx,ticks:{precision:0}},y:{grid:{display:false}}}}});
+  new Chart(document.getElementById('cty'+i),{type:'doughnut',data:{labels:Object.keys(d.country),datasets:[{data:Object.values(d.country),backgroundColor:Object.keys(d.country).map(k=>C[k])}]},
+    options:{plugins:{legend:{position:'bottom'}}}});
+}
+function show(i){
+  document.querySelectorAll('.pane').forEach((p,j)=>p.style.display=(j===i?'':'none'));
+  document.querySelectorAll('.tab').forEach(t=>t.classList.toggle('active',+t.dataset.i===i));
+  render(i);
+}
+render(0);
+</script>
+</body></html>

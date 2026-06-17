@@ -32,6 +32,13 @@ const PROJECTS = [
     external: true,
   },
   {
+    title: "無人機技術情報",
+    description: "中國 vs 非中國 vs 台灣的無人機論文觀察，民用與軍用同頁切換，含領域活躍度與發展脈絡",
+    url: `${BASE_PATH}/drone-review/`,
+    icon: "🛰",
+    external: false,
+  },
+  {
     title: "TPBL Lens",
     description: "台灣職籃 TPBL 數據透鏡，球員與球隊效率分析",
     url: `${BASE_PATH}/tpbl-lens/`,
