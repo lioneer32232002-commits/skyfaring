@@ -61,6 +61,34 @@ ul.contrast{margin:6px 0 0;padding-left:18px;color:#d3dcec} ul.contrast li{margi
 .exlist a{color:#9dd0ff;font-size:14px;text-decoration:none}
 .exlist a:hover{text-decoration:underline}
 .exlist .ex-src{color:var(--dim);font-size:11px;font-family:var(--mono)}
+@media(max-width:640px){
+  .wrap{padding:18px 14px 44px}
+  .sys{font-size:10px;gap:8px;letter-spacing:.1em}
+  h1{font-size:20px;line-height:1.35}
+  .sub{font-size:12px}
+  .tabs{flex-wrap:wrap}
+  .tab{flex:1 1 auto;text-align:center;padding:9px 12px;font-size:13px}
+  .kpis{grid-template-columns:repeat(2,1fr);gap:9px}
+  .kpi .v{font-size:21px}
+  .card{padding:14px 13px 12px}
+  canvas{max-height:260px}
+  /* 同題對照：手機改為堆疊卡片，避免表格破框 */
+  .cmp thead{display:none}
+  .cmp, .cmp tbody, .cmp tr, .cmp td{display:block;width:100%}
+  .cmp tr{border:1px solid var(--line);border-radius:3px;padding:11px 12px;margin-bottom:12px}
+  .cmp td{border:0;padding:5px 0;white-space:normal}
+  .cmp td.theme{font-size:14px;color:#bcd0ec;border-bottom:1px solid var(--hair);padding-bottom:7px;margin-bottom:5px}
+  .cmp td.west,.cmp td.cn{border-left:0}
+  .cmp td.west::before{content:'非中國　';color:var(--west);font-weight:600;display:block;font-size:11px;letter-spacing:.04em;margin-bottom:2px}
+  .cmp td.cn::before{content:'中國　';color:var(--cn);font-weight:600;display:block;font-size:11px;letter-spacing:.04em;margin-bottom:2px}
+  /* 代表性論文：手機改為堆疊卡片 */
+  .papers thead{display:none}
+  .papers, .papers tbody, .papers tr, .papers td{display:block;width:100%}
+  .papers tr{border:1px solid var(--line);border-radius:3px;padding:11px 12px;margin-bottom:12px}
+  .papers td{border:0;padding:3px 0}
+  .papers td .ttl{font-size:13.5px}
+  .papers td.dt{font-size:11.5px;color:var(--mut)}
+}
 </style></head>
 <body><div class="wrap">
   <div class="sys"><span class="live">觀察中 · LIVE</span><span class="sep">//</span><span>INTEL · DRONE TECH</span><span class="sep">//</span><span>WINDOW 2026-05-09 &#8594; 2026-06-17</span><span class="sep">//</span><span>GEN 2026-06-17</span></div>
@@ -118,7 +146,7 @@ ul.contrast{margin:6px 0 0;padding-left:18px;color:#d3dcec} ul.contrast li{margi
 <tr><td class='theme'>多機協同</td><td class='west'>布拉格理工 iRBL 完全不靠通訊，協同行為從各自局部感知浮現。</td><td class='cn'>北航以鴿群棲息行為設計相態轉換控制，讓蜂群在平移與渦旋相態間平滑切換。</td></tr></tbody></table>
       </div>
       <div class="card"><h3>代表性論文 <span class="hint">台灣列為近年基線</span></h3>
-        <table><thead><tr><th>日期</th><th>國別</th><th>論文</th><th>來源</th><th></th></tr></thead>
+        <table class="papers"><thead><tr><th>日期</th><th>國別</th><th>論文</th><th>來源</th><th></th></tr></thead>
         <tbody><tr><td class='dt'>2026-05-10</td><td><span class="chip" style="background:#e0586a22;color:#e0586a;border:1px solid #e0586a55">中國</span><span class='cd'>中國電子科技集團第 54 研究所</span></td><td><div class='ttl'>Research on Autonomous Navigation and Obstacle Avoidance Methods for High-Speed Large-Inertia Rotor UAV</div><div class='ol'>大慣量 UAV 毫秒級全自主導航與避障</div></td><td class='src'>Drones (MDPI)</td><td><a href="https://www.mdpi.com/2504-446X/10/4/259" target="_blank">連結</a></td></tr>
 <tr><td class='dt'>2026-05-15</td><td><span class="chip" style="background:#e0586a22;color:#e0586a;border:1px solid #e0586a55">中國</span><span class='cd'>華南理工大學</span></td><td><div class='ttl'>AD-YOLO: A Unified Method for Traffic-Dense and Small Object Detection in UAV Images</div><div class='ol'>AD-YOLO 統一密集場景小目標偵測</div></td><td class='src'>Drones</td><td><a href="https://www.mdpi.com/2504-446X/10/5/338" target="_blank">連結</a></td></tr>
 <tr><td class='dt'>2026-05-19</td><td><span class="chip" style="background:#e0586a22;color:#e0586a;border:1px solid #e0586a55">中國</span><span class='cd'>中國科學院</span></td><td><div class='ttl'>Assessing the Carbon Mitigation Potential of UAV-Based Last-Mile Delivery Using 3D Path Planning: A Case Study of Shanghai</div><div class='ol'>上海無人機末端配送碳排實證評估</div></td><td class='src'>Drones</td><td><a href="https://www.mdpi.com/2504-446X/10/5/364" target="_blank">連結</a></td></tr>
@@ -188,7 +216,7 @@ ul.contrast{margin:6px 0 0;padding-left:18px;color:#d3dcec} ul.contrast li{margi
 <tr><td class='theme'>電子戰／抗干擾</td><td class='west'>加拿大卡爾頓整理 UAV 航電在 GPS、ADS-B、Wi-Fi 上的電子戰攻擊與防禦分類綜述。</td><td class='cn'>中北大學在強干擾電子戰環境下訓練蜂群，平衡態勢重建與任務積極性。</td></tr></tbody></table>
       </div>
       <div class="card"><h3>代表性論文 <span class="hint">台灣列為近年基線</span></h3>
-        <table><thead><tr><th>日期</th><th>國別</th><th>論文</th><th>來源</th><th></th></tr></thead>
+        <table class="papers"><thead><tr><th>日期</th><th>國別</th><th>論文</th><th>來源</th><th></th></tr></thead>
         <tbody><tr><td class='dt'>2026-05-09</td><td><span class="chip" style="background:#e0586a22;color:#e0586a;border:1px solid #e0586a55">中國</span><span class='cd'>中北大學（太原）</span></td><td><div class='ttl'>Intelligent Unmanned Aerial Vehicle Swarm Control Under Electronic Warfare: A Cognitive–Intent Dual-Stream Reinforcement Learning Framework</div><div class='ol'>電子戰下認知意圖雙流蜂群控制</div><a class="read" href="/blog/drone-swarm-cida-ew-marl/">本站導讀 ↗</a></td><td class='src'>Drones</td><td><a href="https://www.mdpi.com/2504-446X/10/5/342" target="_blank">連結</a></td></tr>
 <tr><td class='dt'>2026-05-15</td><td><span class="chip" style="background:#e0586a22;color:#e0586a;border:1px solid #e0586a55">中國</span><span class='cd'>北京理工大學／北京航空航天大學</span></td><td><div class='ttl'>2026-05-15-2507.11079</div><div class='ol'>視覺語言模型指揮多 UGV 戰術決策</div></td><td class='src'>（未標示）</td><td></td></tr>
 <tr><td class='dt'>2026-05-28</td><td><span class="chip" style="background:#e0586a22;color:#e0586a;border:1px solid #e0586a55">中國</span><span class='cd'>空軍工程大學</span></td><td><div class='ttl'>Hierarchical Target Tracking for Unmanned Aerial Vehicle Swarms with Distributed Optimization and Affine Control</div><div class='ol'>分散式優化的蜂群階層目標追蹤</div></td><td class='src'>Drones</td><td><a href="https://doi.org/10.3390/drones10050366" target="_blank">連結</a></td></tr>
