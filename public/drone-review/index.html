@@ -44,7 +44,16 @@ th{color:var(--mut);font-size:11px;text-transform:uppercase;letter-spacing:.07em
 .cd{color:var(--mut);font-size:12px} .ttl{color:#e8eef8} .ol{color:var(--mut);font-size:12px;margin-top:3px}
 .dt{color:var(--mut);white-space:nowrap;font-family:var(--mono);font-size:12px} .src{color:#b9c6da}
 a{color:#6ea8fe;text-decoration:none} a:hover{text-decoration:underline}
-.cap{color:#dbe5f3} ul.cap{margin:4px 0 0;padding-left:18px} ul.cap li{margin-bottom:7px;color:#dbe5f3}
+.capgrid{display:flex;flex-direction:column}
+.caprow{display:grid;grid-template-columns:104px 1fr;gap:16px;padding:11px 0;border-bottom:1px solid var(--hair);align-items:baseline}
+.caprow:first-child{padding-top:2px} .caprow:last-child{border-bottom:0;padding-bottom:0}
+.caprow .caplabel{display:flex;flex-direction:column;gap:1px;font-size:13.5px;font-weight:600;letter-spacing:.03em;border-left:2px solid var(--sigc,#2a3850);padding-left:11px;line-height:1.3}
+.caprow .caplabel small{font-size:10px;font-weight:400;color:var(--dim);letter-spacing:.02em}
+.caprow p{margin:0;color:#d3dcec;font-size:13.5px;line-height:1.65}
+.caprow.cn .caplabel{color:#f08a96;--sigc:var(--cn)}
+.caprow.west .caplabel{color:#9dbcff;--sigc:var(--west)}
+.caprow.tw .caplabel{color:#73e6c8;--sigc:var(--tw)}
+.caprow.note .caplabel{color:var(--mut);--sigc:#3a4a64;font-weight:500}
 .narr p{margin:0 0 10px;color:#d3dcec} .narr .b{padding-left:14px;margin-bottom:14px;border-left:2px solid var(--line)}
 .narr .b.west{border-left-color:var(--west)} .narr .b.cn{border-left-color:var(--cn)} .narr .b.tw{border-left-color:var(--tw)}
 .narr h4{margin:0 0 6px;font-size:13px;text-transform:uppercase;letter-spacing:.07em}
@@ -61,6 +70,7 @@ ul.contrast{margin:6px 0 0;padding-left:18px;color:#d3dcec} ul.contrast li{margi
 .exlist a{color:#9dd0ff;font-size:14px;text-decoration:none}
 .exlist a:hover{text-decoration:underline}
 .exlist .ex-src{color:var(--dim);font-size:11px;font-family:var(--mono)}
+.exlist .ex-tag{display:inline-block;color:var(--mut);border:1px solid var(--line);border-radius:3px;padding:0 6px;margin-right:7px;letter-spacing:.04em}
 @media(max-width:640px){
   .wrap{padding:18px 14px 44px}
   .sys{font-size:10px;gap:8px;letter-spacing:.1em}
@@ -72,6 +82,9 @@ ul.contrast{margin:6px 0 0;padding-left:18px;color:#d3dcec} ul.contrast li{margi
   .kpi .v{font-size:21px}
   .card{padding:14px 13px 12px}
   canvas{max-height:260px}
+  /* 領域能力判讀：手機改為標籤在上、說明在下 */
+  .caprow{grid-template-columns:1fr;gap:5px;padding:12px 0}
+  .caprow .caplabel{flex-direction:row;align-items:baseline;gap:7px}
   /* 同題對照：手機改為堆疊卡片，避免表格破框 */
   .cmp thead{display:none}
   .cmp, .cmp tbody, .cmp tr, .cmp td{display:block;width:100%}
@@ -119,7 +132,13 @@ ul.contrast{margin:6px 0 0;padding-left:18px;color:#d3dcec} ul.contrast li{margi
       
       <div class="card">
         <h3>領域能力判讀 <span class="hint">小樣本＋既有知識的觀察，非精確指標</span></h3>
-        <ul class='cap'><li>中國：量能最廣，蜂群協同、物件偵測遙測、路徑規劃、控制容錯都密集，偏深度學習與大規模模擬。</li><li>非中國（歐美為主）：分散多國，強在控制理論、自主導航、安全與通訊，單一機構量少但題目廣。</li><li>台灣（近年基線）：亮點在精準降落導航、編隊避障、農業遙測、視覺語言控制，廣度窄，蜂群與大規模協同少見。</li><li>快慢一句話：中國快在覆蓋廣度與蜂群，台灣快在少數應用利基，歐美穩在理論與安全。</li><li>提醒：5 週小樣本加既有知識，台灣為基線，會隨月度累積修正。</li></ul>
+        <div class="capgrid">
+          <div class="caprow cn"><span class="caplabel">中國</span><p>量能最廣，蜂群協同、物件偵測遙測、路徑規劃、控制容錯都密集，偏深度學習與大規模模擬。</p></div>
+          <div class="caprow west"><span class="caplabel">非中國<small>歐美為主</small></span><p>分散多國，強在控制理論、自主導航、安全與通訊，單一機構量少但題目廣。</p></div>
+          <div class="caprow tw"><span class="caplabel">台灣<small>近年基線</small></span><p>亮點在精準降落導航、編隊避障、農業遙測、視覺語言控制，廣度窄，蜂群與大規模協同少見。</p></div>
+          <div class="caprow note"><span class="caplabel">快慢</span><p>中國快在覆蓋廣度與蜂群，台灣快在少數應用利基，歐美穩在理論與安全。</p></div>
+          <div class="caprow note"><span class="caplabel">提醒</span><p>5 週小樣本加既有知識，台灣為基線，會隨月度累積修正。</p></div>
+        </div>
       </div>
       <div class="grid2">
         <div class="card"><h3>發展脈絡</h3>
@@ -165,8 +184,8 @@ ul.contrast{margin:6px 0 0;padding-left:18px;color:#d3dcec} ul.contrast li{margi
 <tr><td class='dt'>2026-06-16</td><td><span class="chip" style="background:#5b8cff22;color:#5b8cff;border:1px solid #5b8cff55">非中國</span><span class='cd'>沙烏地阿拉伯（King Khalid University）</span></td><td><div class='ttl'>Explainable Multi-Agent Reinforcement Learning Framework for Secure and Adaptive Communication in UAV Swarm Based FANETs</div><div class='ol'>可解釋多智能體強化學習 FANET 安全通訊</div><a class="read" href="/blog/uav-swarm-explainable-marl-trust/">本站導讀 ↗</a></td><td class='src'>Scientific Reports</td><td><a href="https://doi.org/10.1038/s41598-026-39366-x" target="_blank">連結</a></td></tr>
 <tr><td class='dt'>2026-06-17</td><td><span class="chip" style="background:#5b8cff22;color:#5b8cff;border:1px solid #5b8cff55">非中國</span><span class='cd'>捷克（Czech Technical University in Prague）</span></td><td><div class='ttl'>Perception-Aware Communication-Free Multi-UAV Coordination in the Wild</div><div class='ol'>森林中無通訊多機感知協同</div></td><td class='src'>arXiv preprint (cs.RO)</td><td><a href="https://arxiv.org/abs/2603.08379" target="_blank">連結</a></td></tr></tbody></table>
       </div>
-      <div class="card exlist"><h3>延伸閱讀 · 本站導讀 <span class="hint">部分研究有對應導讀文章</span></h3><ul><li><a href="/blog/uav-swarm-bird-inspired-gnss-denied-vslam/">像鳥群一樣飛：不靠 GPS，無人機怎麼知道自己在哪裡？ ↗</a><span class="ex-src">對應研究：Vision-Based Unmanned Aerial Vehicle Swarm Cooperation and Online Point-Cloud Registration for Global Localization in Global Navigation Satellite System-Intermittent Environments</span></li>
-<li><a href="/blog/uav-swarm-explainable-marl-trust/">當一群無人機自己做出攸關任務的安全決定，人類要憑什麼相信它做對了。 ↗</a><span class="ex-src">對應研究：Explainable Multi-Agent Reinforcement Learning Framework for Secure and Adaptive Communication in UAV Swarm Based FANETs</span></li></ul></div>
+      <div class="card exlist"><h3>延伸閱讀 · 本站導讀 <span class="hint">部分研究有對應導讀文章</span></h3><ul><li><a href="/blog/uav-swarm-bird-inspired-gnss-denied-vslam/">像鳥群一樣飛：不靠 GPS，無人機怎麼知道自己在哪裡？ ↗</a><span class="ex-src"><span class="ex-tag">對應研究</span>Vision-Based Unmanned Aerial Vehicle Swarm Cooperation and Online Point-Cloud Registration for Global Localization in Global Navigation Satellite System-Intermittent Environments</span></li>
+<li><a href="/blog/uav-swarm-explainable-marl-trust/">當一群無人機自己做出攸關任務的安全決定，人類要憑什麼相信它做對了。 ↗</a><span class="ex-src"><span class="ex-tag">對應研究</span>Explainable Multi-Agent Reinforcement Learning Framework for Secure and Adaptive Communication in UAV Swarm Based FANETs</span></li></ul></div>
     </div>
   
     <div class="pane" id="pane1" style="display:none">
@@ -189,7 +208,13 @@ ul.contrast{margin:6px 0 0;padding-left:18px;color:#d3dcec} ul.contrast li{margi
       
       <div class="card">
         <h3>領域能力判讀 <span class="hint">小樣本＋既有知識的觀察，非精確指標</span></h3>
-        <ul class='cap'><li>中國：空戰決策、反無人機攔截、電子戰抗干擾、蜂群作戰密集，多來自軍校體系，推進最快。</li><li>非中國：美澳歐烏為主，強在人機協同指揮、戰術 UGV 與實戰整合，烏克蘭帶戰場導向。</li><li>台灣（近年基線）：公開軍用論文稀少，僅見威脅偵測與 MIMO 干擾反制，多數能量在中科院與產業，非學術。</li><li>快慢一句話：中國快在自主交戰與蜂群，歐美強在人機協同與實戰，台灣學術曝光明顯落後（不等於國防能量）。</li><li>提醒：小樣本加既有知識的觀察。</li></ul>
+        <div class="capgrid">
+          <div class="caprow cn"><span class="caplabel">中國</span><p>空戰決策、反無人機攔截、電子戰抗干擾、蜂群作戰密集，多來自軍校體系，推進最快。</p></div>
+          <div class="caprow west"><span class="caplabel">非中國<small>美澳歐烏</small></span><p>強在人機協同指揮、戰術 UGV 與實戰整合，烏克蘭帶戰場導向。</p></div>
+          <div class="caprow tw"><span class="caplabel">台灣<small>近年基線</small></span><p>公開軍用論文稀少，僅見威脅偵測與 MIMO 干擾反制，多數能量在中科院與產業，非學術。</p></div>
+          <div class="caprow note"><span class="caplabel">快慢</span><p>中國快在自主交戰與蜂群，歐美強在人機協同與實戰，台灣學術曝光明顯落後（不等於國防能量）。</p></div>
+          <div class="caprow note"><span class="caplabel">提醒</span><p>小樣本加既有知識的觀察。</p></div>
+        </div>
       </div>
       <div class="grid2">
         <div class="card"><h3>發展脈絡</h3>
@@ -230,13 +255,13 @@ ul.contrast{margin:6px 0 0;padding-left:18px;color:#d3dcec} ul.contrast li{margi
 <tr><td class='dt'>2026-05-31</td><td><span class="chip" style="background:#5b8cff22;color:#5b8cff;border:1px solid #5b8cff55">非中國</span><span class='cd'>德國（Würzburg 大學）</span></td><td><div class='ttl'>Autonomous Drone-on-Drone Interception Using an Integrated LiDAR–Vision Detection System for High-Precision Capture</div><div class='ol'>LiDAR 視覺融合自主無人機網捕攔截</div><a class="read" href="/blog/drone-lidar-vision-interception-idas/">本站導讀 ↗</a></td><td class='src'>Drones</td><td><a href="https://www.mdpi.com/2504-446X/10/6/420" target="_blank">連結</a></td></tr>
 <tr><td class='dt'>2026-06-03</td><td><span class="chip" style="background:#5b8cff22;color:#5b8cff;border:1px solid #5b8cff55">非中國</span><span class='cd'>葡萄牙（陸軍官校 Academia Militar）</span></td><td><div class='ttl'>2026-06-03-2511.07565</div><div class='ol'>風險感知戰術 UGV 路徑規劃框架</div><a class="read" href="/blog/argus-ugv-risk-aware-path-planning/">本站導讀 ↗</a></td><td class='src'>（未標示）</td><td></td></tr></tbody></table>
       </div>
-      <div class="card exlist"><h3>延伸閱讀 · 本站導讀 <span class="hint">部分研究有對應導讀文章</span></h3><ul><li><a href="/blog/drone-swarm-cida-ew-marl/">五架無人機在威脅邊緣徘徊了一千步 ↗</a><span class="ex-src">對應研究：Intelligent Unmanned Aerial Vehicle Swarm Control Under Electronic Warfare: A Cognitive–Intent Dual-Stream Reinforcement Learning Framework</span></li>
-<li><a href="/blog/aamas-2026-drone-swarm-defense-ga-dp/">三十架無人機衝過來，你怎麼擋？AAMAS 2026 論文解析。 ↗</a><span class="ex-src">對應研究：2026-05-14-2602.12502</span></li>
-<li><a href="/blog/rl-drone-swarm-defense-masked-ppo/">不要打已死的無人機：action masking 如何讓 AI 快 10 倍學會防禦決策 ↗</a><span class="ex-src">對應研究：2026-05-25-2508.00641</span></li>
-<li><a href="/blog/uav-avionics-cyberattack-ew-survey/">八美元的 GPS 干擾器，就能讓一架無人機不知道自己在哪裡 ↗</a><span class="ex-src">對應研究：2026-05-27-2504.07358</span></li>
-<li><a href="/blog/uav-swarm-interception-hm-mf-ddpg/">五十架無人機要攔截誰，誰說了算。 ↗</a><span class="ex-src">對應研究：A Graph-Aided Hierarchical Decision Framework for UAV Swarm Interception Under Saturation Incursions</span></li>
-<li><a href="/blog/drone-lidar-vision-interception-idas/">空中用網子捕無人機：自主攔截系統怎麼在 60 公尺外瞄準目標 ↗</a><span class="ex-src">對應研究：Autonomous Drone-on-Drone Interception Using an Integrated LiDAR–Vision Detection System for High-Precision Capture</span></li>
-<li><a href="/blog/argus-ugv-risk-aware-path-planning/">最短的路，存活率是零：戰場無人車怎麼學會繞遠路。 ↗</a><span class="ex-src">對應研究：2026-06-03-2511.07565</span></li></ul></div>
+      <div class="card exlist"><h3>延伸閱讀 · 本站導讀 <span class="hint">部分研究有對應導讀文章</span></h3><ul><li><a href="/blog/drone-swarm-cida-ew-marl/">五架無人機在威脅邊緣徘徊了一千步 ↗</a><span class="ex-src"><span class="ex-tag">對應研究</span>Intelligent Unmanned Aerial Vehicle Swarm Control Under Electronic Warfare: A Cognitive–Intent Dual-Stream Reinforcement Learning Framework</span></li>
+<li><a href="/blog/aamas-2026-drone-swarm-defense-ga-dp/">三十架無人機衝過來，你怎麼擋？AAMAS 2026 論文解析。 ↗</a><span class="ex-src"><span class="ex-tag">對應研究</span>2026-05-14-2602.12502</span></li>
+<li><a href="/blog/rl-drone-swarm-defense-masked-ppo/">不要打已死的無人機：action masking 如何讓 AI 快 10 倍學會防禦決策 ↗</a><span class="ex-src"><span class="ex-tag">對應研究</span>2026-05-25-2508.00641</span></li>
+<li><a href="/blog/uav-avionics-cyberattack-ew-survey/">八美元的 GPS 干擾器，就能讓一架無人機不知道自己在哪裡 ↗</a><span class="ex-src"><span class="ex-tag">對應研究</span>2026-05-27-2504.07358</span></li>
+<li><a href="/blog/uav-swarm-interception-hm-mf-ddpg/">五十架無人機要攔截誰，誰說了算。 ↗</a><span class="ex-src"><span class="ex-tag">對應研究</span>A Graph-Aided Hierarchical Decision Framework for UAV Swarm Interception Under Saturation Incursions</span></li>
+<li><a href="/blog/drone-lidar-vision-interception-idas/">空中用網子捕無人機：自主攔截系統怎麼在 60 公尺外瞄準目標 ↗</a><span class="ex-src"><span class="ex-tag">對應研究</span>Autonomous Drone-on-Drone Interception Using an Integrated LiDAR–Vision Detection System for High-Precision Capture</span></li>
+<li><a href="/blog/argus-ugv-risk-aware-path-planning/">最短的路，存活率是零：戰場無人車怎麼學會繞遠路。 ↗</a><span class="ex-src"><span class="ex-tag">對應研究</span>2026-06-03-2511.07565</span></li></ul></div>
     </div>
   <div class="foot">硬統計（本期篇數、週分布、來源）由實際收錄檔案計算。國別以論文機構查證為準。台灣產量小、幾乎不落在本期窗內，故以近年代表作為基線，僅供領域比較參考，與本期中國／非中國數據窗口不同。</div>
 </div>
