@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { PROJECTS } from "@/lib/projects";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://skyfaring.pages.dev";
 const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
@@ -30,7 +31,17 @@ export const metadata: Metadata = {
     description: SITE_DESC,
     images: [DEFAULT_OG],
   },
-  robots: { index: true, follow: true },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
 };
 
 export default function RootLayout({
@@ -97,10 +108,19 @@ export default function RootLayout({
               <div>
                 <p className="text-xs font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-3">專案</p>
                 <ul className="space-y-2 text-xs text-slate-400 dark:text-slate-500">
-                  <li><a href="/blog/" className="hover:text-sky-500">Skyfaring 文章</a></li>
-                  <li><a href="https://pla-tracker.pages.dev/" target="_blank" rel="noopener noreferrer" className="hover:text-sky-500">解放軍擾台動態追蹤 ↗</a></li>
-                  <li><a href="/tpbl-lens/" className="hover:text-sky-500">TPBL Lens</a></li>
-                  <li><a href="https://yi-tienpan.blogspot.com/" target="_blank" rel="noopener noreferrer" className="hover:text-sky-500">舊站文章庫 ↗</a></li>
+                  {PROJECTS.map((proj) => (
+                    <li key={proj.title}>
+                      <a
+                        href={proj.url}
+                        target={proj.external ? "_blank" : undefined}
+                        rel={proj.external ? "noopener noreferrer" : undefined}
+                        className="hover:text-sky-500"
+                      >
+                        {proj.title}
+                        {proj.external && " ↗"}
+                      </a>
+                    </li>
+                  ))}
                 </ul>
               </div>
               {/* Contact */}

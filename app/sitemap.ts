@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { getAllPostMetas } from "@/lib/posts";
+import { TOPIC_GROUPS } from "@/lib/taxonomy";
 
 export const dynamic = "force-static";
 
@@ -13,6 +14,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: post.updated || post.date,
     changeFrequency: "monthly",
     priority: 0.7,
+  }));
+
+  const topicEntries: MetadataRoute.Sitemap = TOPIC_GROUPS.map((group) => ({
+    url: `${SITE_URL}/topics/${group.slug}/`,
+    lastModified: new Date().toISOString(),
+    changeFrequency: "weekly",
+    priority: 0.8,
   }));
 
   return [
@@ -29,11 +37,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
+      url: `${SITE_URL}/drone-review/`,
+      lastModified: new Date().toISOString(),
+      changeFrequency: "weekly",
+      priority: 0.8,
+    },
+    {
       url: `${SITE_URL}/tpbl-lens/`,
       lastModified: new Date().toISOString(),
       changeFrequency: "monthly",
       priority: 0.8,
     },
+    ...topicEntries,
     ...postEntries,
   ];
 }

@@ -3,6 +3,7 @@ title: 空中用網子捕無人機：自主攔截系統怎麼在 60 公尺外瞄
 author: Skyfaring
 date: 2026-06-01
 slug: drone-lidar-vision-interception-idas
+category: 無人機
 tags:
   - 無人機
   - 反無人機

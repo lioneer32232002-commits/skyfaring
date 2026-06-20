@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { getAllPostMetas } from "@/lib/posts";
+import { PROJECTS } from "@/lib/projects";
+import { TOPIC_GROUPS } from "@/lib/taxonomy";
 import ArticleCard from "@/components/ArticleCard";
 import ViewCounter from "@/components/ViewCounter";
 
@@ -15,65 +17,6 @@ export const metadata: Metadata = {
 };
 
 const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
-
-const PROJECTS = [
-  {
-    title: "Skyfaring 文章",
-    description: "航空安全、球賽數據、歷史軍事的分析文章",
-    url: `${BASE_PATH}/blog/`,
-    icon: "📊",
-    external: false,
-  },
-  {
-    title: "解放軍擾台動態追蹤",
-    description: "中線越線、艦機活動每日數據，含趨勢圖與 SITREP 紀錄",
-    url: "https://pla-tracker.pages.dev/",
-    icon: "🛩",
-    external: true,
-  },
-  {
-    title: "無人機技術情報",
-    description: "中國 vs 非中國 vs 台灣的無人機論文觀察，民用與軍用同頁切換，含領域活躍度與發展脈絡",
-    url: `${BASE_PATH}/drone-review/`,
-    icon: "🛰",
-    external: false,
-  },
-  {
-    title: "TPBL Lens",
-    description: "台灣職籃 TPBL 數據透鏡，球員與球隊效率分析",
-    url: `${BASE_PATH}/tpbl-lens/`,
-    icon: "🏀",
-    external: false,
-  },
-  {
-    title: "飛行線上",
-    description: "飛行養成學習系統，飛行訓練與航空教育資源",
-    url: "https://flight-deck-1sr.pages.dev/",
-    icon: "✈",
-    external: true,
-  },
-  {
-    title: "戰史檔案館",
-    description: "用 3D 影像重現歷史戰役，依據權威史料還原關鍵軍事衝突",
-    url: "https://battle-archive.pages.dev/",
-    icon: "⚔",
-    external: true,
-  },
-  {
-    title: "歷史學院",
-    description: "國中歷史會考線上練習平台，台灣史、中國史、世界史互動題庫與進度追蹤",
-    url: "https://history-academy.pages.dev/",
-    icon: "📜",
-    external: true,
-  },
-  {
-    title: "舊站文章庫",
-    description: "Skyfaring 2007年起的個人部落格，武術、旅遊、語言、時事",
-    url: "https://yi-tienpan.blogspot.com/",
-    icon: "📚",
-    external: true,
-  },
-];
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -149,6 +92,25 @@ export default function HomePage() {
           </div>
         </section>
 
+        {/* Topics */}
+        <section className="mb-14">
+          <h2 className="text-xl font-bold text-slate-700 dark:text-slate-200 mb-5 flex items-center gap-2">
+            <span>🧭</span> 依主題瀏覽
+          </h2>
+          <div className="flex flex-wrap gap-3">
+            {TOPIC_GROUPS.map((group) => (
+              <a
+                key={group.slug}
+                href={`${BASE_PATH}/topics/${group.slug}/`}
+                className="inline-flex items-center gap-2 px-4 py-2 bg-white dark:bg-slate-800 rounded-full border border-slate-100 dark:border-slate-700 text-sm text-slate-600 dark:text-slate-300 shadow-sm hover:shadow-md hover:text-sky-600 dark:hover:text-sky-400 transition-all"
+              >
+                <span>{group.emoji}</span>
+                {group.label}
+              </a>
+            ))}
+          </div>
+        </section>
+
         {/* Latest Articles */}
         <section>
           <div className="flex items-center justify-between mb-5">
@@ -166,7 +128,7 @@ export default function HomePage() {
             <p className="text-slate-400">目前還沒有文章。</p>
           ) : (
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              {posts.map((post) => (
+              {posts.slice(0, 6).map((post) => (
                 <ArticleCard key={post.slug} post={post} />
               ))}
             </div>
