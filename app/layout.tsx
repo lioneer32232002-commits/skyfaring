@@ -108,19 +108,26 @@ export default function RootLayout({
               <div>
                 <p className="text-xs font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-3">專案</p>
                 <ul className="space-y-2 text-xs text-slate-400 dark:text-slate-500">
-                  {PROJECTS.map((proj) => (
-                    <li key={proj.title}>
-                      <a
-                        href={proj.url}
-                        target={proj.external ? "_blank" : undefined}
-                        rel={proj.external ? "noopener noreferrer" : undefined}
-                        className="hover:text-sky-500"
-                      >
-                        {proj.title}
-                        {proj.external && " ↗"}
-                      </a>
-                    </li>
-                  ))}
+                  {PROJECTS.map((proj) => {
+                    const href = proj.introSlug ? `/projects/${proj.introSlug}/` : proj.url;
+                    const opensExternal = proj.external && !proj.introSlug;
+                    return (
+                      <li key={proj.title}>
+                        <a
+                          href={href}
+                          target={opensExternal ? "_blank" : undefined}
+                          rel={opensExternal ? "noopener noreferrer" : undefined}
+                          className="hover:text-sky-500"
+                        >
+                          {proj.title}
+                          {opensExternal && " ↗"}
+                        </a>
+                      </li>
+                    );
+                  })}
+                  <li>
+                    <a href="/projects/" className="hover:text-sky-500">專案總覽 →</a>
+                  </li>
                 </ul>
               </div>
               {/* Contact */}

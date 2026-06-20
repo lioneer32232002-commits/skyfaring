@@ -6,6 +6,8 @@ export interface Project {
   url: string;
   icon: string;
   external: boolean;
+  /** 若有內部導讀頁，首頁與頁尾連到 /projects/<introSlug>/ 而非直接外連。 */
+  introSlug?: string;
 }
 
 /**
@@ -26,6 +28,7 @@ export const PROJECTS: Project[] = [
     url: "https://pla-tracker.pages.dev/",
     icon: "🛩",
     external: true,
+    introSlug: "pla-tracker",
   },
   {
     title: "無人機技術情報",
@@ -47,6 +50,7 @@ export const PROJECTS: Project[] = [
     url: "https://flight-deck-1sr.pages.dev/",
     icon: "✈",
     external: true,
+    introSlug: "flight-deck",
   },
   {
     title: "戰史檔案館",
@@ -54,6 +58,7 @@ export const PROJECTS: Project[] = [
     url: "https://battle-archive.pages.dev/",
     icon: "⚔",
     external: true,
+    introSlug: "battle-archive",
   },
   {
     title: "歷史學院",
@@ -61,6 +66,7 @@ export const PROJECTS: Project[] = [
     url: "https://history-academy.pages.dev/",
     icon: "📜",
     external: true,
+    introSlug: "history-academy",
   },
   {
     title: "舊站文章庫",

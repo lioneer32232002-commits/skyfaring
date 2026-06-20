@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { getAllPostMetas } from "@/lib/posts";
 import { TOPIC_GROUPS } from "@/lib/taxonomy";
+import { PROJECT_PAGES } from "@/lib/projectPages";
 
 export const dynamic = "force-static";
 
@@ -21,6 +22,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: new Date().toISOString(),
     changeFrequency: "weekly",
     priority: 0.8,
+  }));
+
+  const projectEntries: MetadataRoute.Sitemap = PROJECT_PAGES.map((project) => ({
+    url: `${SITE_URL}/projects/${project.slug}/`,
+    lastModified: new Date().toISOString(),
+    changeFrequency: "monthly",
+    priority: 0.7,
   }));
 
   return [
@@ -48,7 +56,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.8,
     },
+    {
+      url: `${SITE_URL}/projects/`,
+      lastModified: new Date().toISOString(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
     ...topicEntries,
+    ...projectEntries,
     ...postEntries,
   ];
 }
