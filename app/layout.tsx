@@ -82,7 +82,7 @@ export default function RootLayout({
             <nav className="flex gap-6 text-sm font-medium text-slate-500 dark:text-slate-400">
               <a href={`${BASE_PATH}/`} className="hover:text-sky-600 dark:hover:text-sky-400 transition-colors">首頁</a>
               <a href={`${BASE_PATH}/blog/`} className="hover:text-sky-600 dark:hover:text-sky-400 transition-colors">文章</a>
-              <a href={`${BASE_PATH}/tpbl-lens/`} className="hover:text-sky-600 dark:hover:text-sky-400 transition-colors">TPBL Lens</a>
+              <a href={`${BASE_PATH}/projects/`} className="hover:text-sky-600 dark:hover:text-sky-400 transition-colors">專案</a>
             </nav>
           </div>
         </header>
