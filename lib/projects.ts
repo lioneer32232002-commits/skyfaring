@@ -38,6 +38,13 @@ export const PROJECTS: Project[] = [
     external: false,
   },
   {
+    title: "烏克蘭無人機戰研究",
+    description: "俄烏戰爭至今烏克蘭團隊的無人機研究與戰場技術演化，依能力領域整理，含演進時間線與來源可信度分層。",
+    url: `${BASE_PATH}/ukraine-review/`,
+    icon: "🇺🇦",
+    external: false,
+  },
+  {
     title: "飛行線上",
     description: "飛行養成學習系統，飛行訓練與航空教育資源。",
     url: "https://flight-deck-1sr.pages.dev/",
