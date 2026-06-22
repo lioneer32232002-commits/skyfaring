@@ -83,6 +83,7 @@
 
 1. **YAML frontmatter** 是否齊全：
    - 必填欄位：`title`、`author`、`date`、`slug`、`tags`（至少一個）、`excerpt`
+   - **`author` 固定為** `AI 初稿 / skyfaring 編輯校正`（除非使用者另有指示）。不要從個別舊文複製成 `Skyfaring` 等其他值
    - **每篇文章都必須有** `heroImage`、`heroAlt`、`heroCredit`、`heroCreditUrl`
    - **每篇文章都必須有** `highlight`（文章中段的重點引文，缺少時頁面不會渲染該區塊）
    - 有來源時應有 `source` 或 `references`；`source_url` 是合法欄位（讓來源變成可點擊連結），不需移除

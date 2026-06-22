@@ -1,6 +1,6 @@
 ---
-title: 無人機把前線拍成一場看不完的直播，真正難的是記住每一台車。
-author: Skyfaring
+title: 烏克蘭怎麼讓無人機在看不完的戰場直播裡，記住每一台軍車？
+author: "AI 初稿 / skyfaring 編輯校正"
 date: 2026-06-22
 slug: low-fps-uav-military-vehicle-tracking
 category: 無人機
