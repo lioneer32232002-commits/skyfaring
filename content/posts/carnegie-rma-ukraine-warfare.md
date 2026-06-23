@@ -15,7 +15,7 @@ heroCredit: "ArmyInform（烏克蘭國防部）/ CC BY 4.0"
 heroCreditUrl: "https://commons.wikimedia.org/wiki/File:UA_FPV_strike_drones_01.jpg"
 source: "Andriy Zagorodnyuk, \"The New Revolution in Military Affairs,\" Carnegie Endowment for International Peace, April 20, 2026."
 source_url: "https://carnegieendowment.org/research/2026/04/ukraine-russia-war-changing-warfare-practice-military-strategy"
-highlight: "1990 年代的精準革命，是用少數昂貴的聰明武器取代大量火力。烏克蘭把這個邏輯整個翻過來：精準不再昂貴，也不再稀少。開源軟體、現成零件、幾天就改一次的設計，讓精準打擊可以論百萬計地撒出去。當攔截一架無人機的成本，遠高於製造它的成本，戰爭的經濟學就被改寫了。"
+highlight: "2025 年，烏克蘭生產了大約 400 萬架無人機，絕大多數是戰術區的小型 FPV，大型廠商一天能做出好幾千架。這些無人機部隊只占烏軍兵力約兩成，卻造成了俄軍超過八成的傷亡。兩成的人，打出八成的戰果。"
 category: 軍事
 ---
 
