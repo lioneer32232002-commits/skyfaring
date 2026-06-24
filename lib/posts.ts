@@ -27,6 +27,16 @@ export function addPanguText(text: string): string {
     .replace(/([A-Za-z0-9])([\u4e00-\u9fff\u3400-\u4dbf])/g, "$1 $2");
 }
 
+/**
+ * \u628a\u6bcf\u500b <table> \u5305\u9032\u53ef\u6c34\u5e73\u6372\u52d5\u7684\u5713\u89d2\u5361\u7247\u3002
+ * \u624b\u6a5f\u4e0a\u7531\u9019\u5c64\u5361\u7247\u6372\u52d5\uff0c\u9801\u9762\u672c\u8eab\u4e0d\u6703\u88ab\u5bec\u8868\u6490\u7834\u3002
+ */
+export function wrapTables(html: string): string {
+  return html
+    .replace(/<table>/g, '<div class="table-wrap"><table>')
+    .replace(/<\/table>/g, "</table></div>");
+}
+
 const postsDirectory = path.join(process.cwd(), "content/posts");
 
 export interface PostMeta {
@@ -96,7 +106,7 @@ export async function getPost(slug: string): Promise<Post> {
   const { data, content } = matter(fileContents);
 
   const processedContent = await remark().use(remarkGfm).use(html).process(content);
-  const contentHtml = addPangu(processedContent.toString());
+  const contentHtml = wrapTables(addPangu(processedContent.toString()));
 
   return {
     slug,

@@ -42,33 +42,56 @@ body {
   margin-bottom: 1.25rem;
 }
 
+.prose .table-wrap {
+  margin: 1.75rem 0;
+  overflow-x: auto;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  background: #ffffff;
+  -webkit-overflow-scrolling: touch;
+}
+
 .prose table {
   width: 100%;
-  font-size: 0.875rem;
+  font-size: 0.9rem;
   border-collapse: collapse;
-  margin-bottom: 1.5rem;
-  overflow-x: auto;
-  display: block;
+  margin: 0;
 }
 
 .prose th {
-  background: #f1f5f9;
-  color: #334155;
+  background: transparent;
+  color: #64748b;
   font-weight: 600;
-  padding: 0.5rem 1rem;
+  padding: 0.7rem 1.1rem;
   text-align: left;
-  border: 1px solid #e2e8f0;
+  white-space: nowrap;
+  border-bottom: 2px solid #7dd3fc;
+  font-variant-numeric: tabular-nums;
 }
 
 .prose td {
-  padding: 0.5rem 1rem;
-  border: 1px solid #e2e8f0;
+  padding: 0.7rem 1.1rem;
+  border-bottom: 1px solid #eef2f6;
   color: #475569;
+  font-variant-numeric: tabular-nums;
 }
 
-.prose tr:nth-child(even) td {
+.prose td:first-child {
+  color: #1e293b;
+  font-weight: 500;
+}
+
+.prose tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.prose tbody tr:hover td {
   background: #f8fafc;
 }
+
+.prose th[align="right"], .prose td[align="right"] { text-align: right; }
+.prose th[align="center"], .prose td[align="center"] { text-align: center; }
+.prose th[align="left"], .prose td[align="left"] { text-align: left; }
 
 .prose ul, .prose ol {
   margin-bottom: 1.25rem;
@@ -131,9 +154,11 @@ body {
   .prose h2 { color: #f1f5f9; border-color: #334155; }
   .prose h3 { color: #e2e8f0; }
   .prose p { color: #cbd5e1; }
-  .prose th { background: #1e293b; color: #e2e8f0; border-color: #334155; }
-  .prose td { color: #cbd5e1; border-color: #334155; }
-  .prose tr:nth-child(even) td { background: #1e293b80; }
+  .prose .table-wrap { background: #0f172a; border-color: #334155; }
+  .prose th { background: transparent; color: #94a3b8; border-bottom-color: #0369a1; }
+  .prose td { color: #cbd5e1; border-bottom-color: #1e293b; }
+  .prose td:first-child { color: #f1f5f9; }
+  .prose tbody tr:hover td { background: #1e293b80; }
   .prose ul, .prose ol { color: #cbd5e1; }
   .prose strong { color: #f1f5f9; }
   .prose hr { border-color: #334155; }
