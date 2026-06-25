@@ -12,11 +12,17 @@ export interface ProjectGroup {
   accent: "sky" | "violet" | "slate";
 }
 
-export const PROJECT_GROUPS: ProjectGroup[] = [
-  { id: "data", label: "數據追蹤與分析", accent: "sky" },
-  { id: "learning", label: "航空與歷史學習", accent: "violet" },
-  { id: "writing", label: "文章與舊站封存", accent: "slate" },
-];
+/**
+ * 用 Record 鎖住「每個 group id 都要有定義」：少一個 ProjectGroupId 的對應就編譯失敗，
+ * 避免某組專案在 getGroupedProjects() 裡無聲消失。Object.values 保留插入順序（data → learning → writing）。
+ */
+const GROUP_BY_ID: Record<ProjectGroupId, ProjectGroup> = {
+  data: { id: "data", label: "數據追蹤與分析", accent: "sky" },
+  learning: { id: "learning", label: "航空與歷史學習", accent: "violet" },
+  writing: { id: "writing", label: "文章與舊站封存", accent: "slate" },
+};
+
+export const PROJECT_GROUPS: ProjectGroup[] = Object.values(GROUP_BY_ID);
 
 export interface Project {
   title: string;
