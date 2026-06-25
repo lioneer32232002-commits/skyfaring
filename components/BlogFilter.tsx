@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import ArticleCard from "@/components/ArticleCard";
+import ViewCountsProvider from "@/components/ViewCountsProvider";
 import type { PostMeta } from "@/lib/posts";
 
 const CATEGORY_STYLES: Record<string, string> = {
@@ -26,7 +27,7 @@ export default function BlogFilter({ posts }: { posts: PostMeta[] }) {
   const filtered = active ? posts.filter((p) => p.category === active) : posts;
 
   return (
-    <>
+    <ViewCountsProvider slugs={posts.map((p) => `blog/${p.slug}`)}>
       <div className="flex flex-wrap gap-2 mb-8">
         <button
           onClick={() => setActive(null)}
@@ -62,6 +63,6 @@ export default function BlogFilter({ posts }: { posts: PostMeta[] }) {
           ))}
         </div>
       )}
-    </>
+    </ViewCountsProvider>
   );
 }

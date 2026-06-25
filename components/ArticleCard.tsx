@@ -3,16 +3,22 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { getViewCount } from "@/lib/supabase";
+import { useViewCount } from "@/components/ViewCountsProvider";
 import type { PostMeta } from "@/lib/posts";
 
 const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
 export default function ArticleCard({ post }: { post: PostMeta }) {
-  const [views, setViews] = useState<number | null>(null);
+  const fromProvider = useViewCount(`blog/${post.slug}`); // number | null | undefined
+  const [selfViews, setSelfViews] = useState<number | null>(null);
+  const inProvider = fromProvider !== undefined;
 
   useEffect(() => {
-    getViewCount(`blog/${post.slug}`).then(setViews);
-  }, [post.slug]);
+    if (inProvider) return; // 有 Provider 時不自抓，避免 N 次請求
+    getViewCount(`blog/${post.slug}`).then(setSelfViews);
+  }, [post.slug, inProvider]);
+
+  const views = inProvider ? (fromProvider as number | null) : selfViews;
 
   const displayDate = post.updated || post.date;
   const formatted = displayDate

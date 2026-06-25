@@ -4,6 +4,7 @@ import { TOPIC_GROUPS } from "@/lib/taxonomy";
 import ArticleCard from "@/components/ArticleCard";
 import ProjectGroups from "@/components/ProjectGroups";
 import ViewCounter from "@/components/ViewCounter";
+import ViewCountsProvider from "@/components/ViewCountsProvider";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://skyfaring.pages.dev";
 
@@ -116,11 +117,13 @@ export default function HomePage() {
           {posts.length === 0 ? (
             <p className="text-slate-400">目前還沒有文章。</p>
           ) : (
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              {posts.slice(0, 6).map((post) => (
-                <ArticleCard key={post.slug} post={post} />
-              ))}
-            </div>
+            <ViewCountsProvider slugs={posts.slice(0, 6).map((p) => `blog/${p.slug}`)}>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                {posts.slice(0, 6).map((post) => (
+                  <ArticleCard key={post.slug} post={post} />
+                ))}
+              </div>
+            </ViewCountsProvider>
           )}
         </section>
       </div>

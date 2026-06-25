@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { getAllPostMetas } from "@/lib/posts";
 import { TOPIC_GROUPS, getGroupBySlug } from "@/lib/taxonomy";
 import ArticleCard from "@/components/ArticleCard";
+import ViewCountsProvider from "@/components/ViewCountsProvider";
 
 const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://skyfaring.pages.dev";
@@ -128,6 +129,7 @@ export default async function TopicPage({
       </div>
 
       {/* Posts grouped by sub-category */}
+      <ViewCountsProvider slugs={groupPosts.map((p) => `blog/${p.slug}`)}>
       {groupPosts.length === 0 ? (
         <p className="text-slate-400">這個主題目前還沒有文章。</p>
       ) : (
@@ -151,6 +153,7 @@ export default async function TopicPage({
           );
         })
       )}
+      </ViewCountsProvider>
     </div>
   );
 }
