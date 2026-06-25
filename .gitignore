@@ -34,6 +34,10 @@ yarn-error.log*
 .env.local
 .env*.local
 
+# GitHub token for Cowork auto-publish — never commit
+.gh_token
+**/.gh_token
+
 # vercel
 .vercel
 

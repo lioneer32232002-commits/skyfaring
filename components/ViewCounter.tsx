@@ -15,7 +15,7 @@ export default function ViewCounter({ slug, className }: ViewCounterProps) {
     incrementViewCount(slug).then((c) => setCount(c));
   }, [slug]);
 
-  if (count === null) {
+  if (count === null || count === 0) {
     return <span className={className}>— 次瀏覽</span>;
   }
 

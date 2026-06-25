@@ -1,11 +1,15 @@
 import { createClient } from "@supabase/supabase-js";
 
-const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!;
-const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!;
+const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
+const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
 
-export const supabase = createClient(supabaseUrl, supabaseAnonKey);
+const supabase =
+  supabaseUrl && supabaseAnonKey
+    ? createClient(supabaseUrl, supabaseAnonKey)
+    : null;
 
 export async function getViewCount(slug: string): Promise<number> {
+  if (!supabase) return 0;
   const { data } = await supabase
     .from("page_views")
     .select("count")
@@ -15,6 +19,7 @@ export async function getViewCount(slug: string): Promise<number> {
 }
 
 export async function incrementViewCount(slug: string): Promise<number> {
+  if (!supabase) return 0;
   const { data } = await supabase.rpc("increment_view", { page_slug: slug });
   if (data !== null) return data;
   const count = await getViewCount(slug);
