@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { getAllPostMetas } from "@/lib/posts";
-import { PROJECTS } from "@/lib/projects";
 import { TOPIC_GROUPS } from "@/lib/taxonomy";
 import ArticleCard from "@/components/ArticleCard";
+import ProjectGroups from "@/components/ProjectGroups";
 import ViewCounter from "@/components/ViewCounter";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://skyfaring.pages.dev";
@@ -78,32 +78,7 @@ export default function HomePage() {
               看所有專案 →
             </a>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            {PROJECTS.map((proj) => {
-              const href = proj.introSlug
-                ? `${BASE_PATH}/projects/${proj.introSlug}/`
-                : proj.url;
-              const opensExternal = proj.external && !proj.introSlug;
-              return (
-                <a
-                  key={proj.title}
-                  href={href}
-                  target={opensExternal ? "_blank" : undefined}
-                  rel={opensExternal ? "noopener noreferrer" : undefined}
-                  className="block p-5 bg-white dark:bg-slate-800 rounded-2xl border border-slate-100 dark:border-slate-700 shadow-sm hover:shadow-md transition-shadow group"
-                >
-                  <div className="text-3xl mb-3">{proj.icon}</div>
-                  <h3 className="font-semibold text-slate-800 dark:text-slate-100 group-hover:text-sky-600 dark:group-hover:text-sky-400 transition-colors">
-                    {proj.title}
-                    {opensExternal && <span className="ml-1 text-slate-400 text-xs">↗</span>}
-                  </h3>
-                  <p className="text-sm text-slate-500 dark:text-slate-400 mt-1">
-                    {proj.description}
-                  </p>
-                </a>
-              );
-            })}
-          </div>
+          <ProjectGroups variant="compact" groupAs="h3" />
         </section>
 
         {/* Topics */}

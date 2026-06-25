@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { PROJECTS } from "@/lib/projects";
+import { PROJECTS, resolveProjectHref, projectOpensExternal } from "@/lib/projects";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://skyfaring.pages.dev";
 const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
@@ -109,8 +109,8 @@ export default function RootLayout({
                 <p className="text-xs font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-3">專案</p>
                 <ul className="space-y-2 text-xs text-slate-400 dark:text-slate-500">
                   {PROJECTS.map((proj) => {
-                    const href = proj.introSlug ? `/projects/${proj.introSlug}/` : proj.url;
-                    const opensExternal = proj.external && !proj.introSlug;
+                    const href = resolveProjectHref(proj);
+                    const opensExternal = projectOpensExternal(proj);
                     return (
                       <li key={proj.title}>
                         <a
@@ -126,7 +126,7 @@ export default function RootLayout({
                     );
                   })}
                   <li>
-                    <a href="/projects/" className="hover:text-sky-500">專案總覽 →</a>
+                    <a href={`${BASE_PATH}/projects/`} className="hover:text-sky-500">專案總覽 →</a>
                   </li>
                 </ul>
               </div>
