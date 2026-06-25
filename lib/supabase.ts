@@ -18,6 +18,26 @@ export async function getViewCount(slug: string): Promise<number> {
   return data?.count ?? 0;
 }
 
+/** 一次查多個 slug 的瀏覽數，回傳 slug → count 的 map（缺值補 0）。 */
+export async function getViewCounts(
+  slugs: string[],
+): Promise<Record<string, number>> {
+  const result: Record<string, number> = {};
+  const unique = Array.from(new Set(slugs));
+  for (const s of unique) result[s] = 0;
+  if (!supabase || unique.length === 0) return result;
+
+  const { data } = await supabase
+    .from("page_views")
+    .select("slug, count")
+    .in("slug", unique);
+
+  for (const row of data ?? []) {
+    if (row?.slug != null) result[row.slug] = row.count ?? 0;
+  }
+  return result;
+}
+
 export async function incrementViewCount(slug: string): Promise<number> {
   if (!supabase) return 0;
   const { data } = await supabase.rpc("increment_view", { page_slug: slug });
