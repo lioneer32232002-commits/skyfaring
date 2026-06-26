@@ -68,7 +68,7 @@ export const PROJECTS: Project[] = [
   {
     title: "台灣無人機出口追蹤",
     description: "台灣無人機廠商的區域分布、公開財報與出口數據，每季追蹤，含 Blue UAS 認證與輸往烏克蘭的流向。",
-    url: `${BASE_PATH}/taiwan-review/`,
+    url: `${BASE_PATH}/taiwan-drone-export/`,
     icon: "drone",
     external: false,
     group: "data",

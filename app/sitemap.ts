@@ -57,7 +57,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
-      url: `${SITE_URL}/taiwan-review/`,
+      url: `${SITE_URL}/taiwan-drone-export/`,
       lastModified: new Date().toISOString(),
       changeFrequency: "weekly",
       priority: 0.8,
