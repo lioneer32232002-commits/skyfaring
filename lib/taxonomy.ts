@@ -4,11 +4,13 @@
  * 文章本身只標單一 category，主題群由這張對照表推導，不需逐篇改檔。
  * 主題群有 ASCII slug，用來產生可被搜尋索引的落地頁 /topics/<slug>/。
  */
+export type TopicIconName = "basketball" | "drone" | "brain" | "plane";
+
 export interface TopicGroup {
   slug: string;
   label: string;
   description: string;
-  emoji: string;
+  icon: TopicIconName;
   categories: string[];
 }
 
@@ -18,7 +20,7 @@ export const TOPIC_GROUPS: TopicGroup[] = [
     label: "籃球與運動數據",
     description:
       "新竹攻城獅賽後分析、TPBL 與 NBA 籃球研究，用數據拆解球場上的勝負邏輯。",
-    emoji: "🏀",
+    icon: "basketball",
     categories: ["攻城獅", "籃球研究"],
   },
   {
@@ -26,7 +28,7 @@ export const TOPIC_GROUPS: TopicGroup[] = [
     label: "無人載具與國防",
     description:
       "無人機蜂群、無人地面載具、攔截與國防科技論文導讀，從技術看現代戰場的樣貌。",
-    emoji: "🛰",
+    icon: "drone",
     categories: ["無人機", "無人系統", "國防科技", "多智能體", "軍事"],
   },
   {
@@ -34,14 +36,14 @@ export const TOPIC_GROUPS: TopicGroup[] = [
     label: "AI 與電腦視覺",
     description:
       "AI 安全、模型保護與電腦視覺追蹤技術，從論文到應用的觀察筆記。",
-    emoji: "🧠",
+    icon: "brain",
     categories: ["AI", "電腦視覺"],
   },
   {
     slug: "aviation",
     label: "航空安全",
     description: "全球航空安全數據與飛航事故報告的整理與解讀。",
-    emoji: "✈",
+    icon: "plane",
     categories: ["航空"],
   },
 ];

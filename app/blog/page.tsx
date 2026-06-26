@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { getAllPostMetas } from "@/lib/posts";
 import { TOPIC_GROUPS } from "@/lib/taxonomy";
 import BlogFilter from "@/components/BlogFilter";
+import TopicIcon from "@/components/TopicIcon";
 
 const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
@@ -31,7 +32,7 @@ export default function BlogPage() {
             href={`${BASE_PATH}/topics/${group.slug}/`}
             className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-sm border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 hover:text-sky-600 dark:hover:text-sky-400 hover:border-sky-300 dark:hover:border-sky-700 transition-colors"
           >
-            <span>{group.emoji}</span>
+            <TopicIcon name={group.icon} className="w-4 h-4 shrink-0" />
             {group.label}
           </a>
         ))}

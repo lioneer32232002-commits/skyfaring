@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { PROJECT_PAGES, getProjectPageBySlug } from "@/lib/projectPages";
 import { getGroupBySlug } from "@/lib/taxonomy";
+import TopicIcon from "@/components/TopicIcon";
 
 const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://skyfaring.pages.dev";
@@ -181,9 +182,10 @@ export default async function ProjectPage({
         {relatedTopic && (
           <a
             href={`${BASE_PATH}/topics/${relatedTopic.slug}/`}
-            className="text-sky-600 dark:text-sky-400 hover:underline"
+            className="inline-flex items-center gap-1 text-sky-600 dark:text-sky-400 hover:underline"
           >
-            {relatedTopic.emoji} 相關文章：{relatedTopic.label} →
+            <TopicIcon name={relatedTopic.icon} className="w-4 h-4 shrink-0" />
+            相關文章：{relatedTopic.label} →
           </a>
         )}
         <a href={`${BASE_PATH}/blog/`} className="text-sky-600 dark:text-sky-400 hover:underline">

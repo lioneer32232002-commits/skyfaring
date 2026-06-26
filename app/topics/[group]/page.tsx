@@ -4,6 +4,7 @@ import { getAllPostMetas } from "@/lib/posts";
 import { TOPIC_GROUPS, getGroupBySlug } from "@/lib/taxonomy";
 import ArticleCard from "@/components/ArticleCard";
 import ViewCountsProvider from "@/components/ViewCountsProvider";
+import TopicIcon from "@/components/TopicIcon";
 
 const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://skyfaring.pages.dev";
@@ -95,7 +96,8 @@ export default async function TopicPage({
           <span className="text-slate-500 dark:text-slate-400">{group.label}</span>
         </div>
         <h1 className="text-3xl font-bold text-slate-800 dark:text-slate-100 mb-2 flex items-center gap-2">
-          <span>{group.emoji}</span> {group.label}
+          <TopicIcon name={group.icon} className="w-7 h-7 shrink-0 text-sky-600 dark:text-sky-400" />
+          {group.label}
         </h1>
         <p className="text-slate-500 dark:text-slate-400">
           {group.description}　共 {groupPosts.length} 篇。

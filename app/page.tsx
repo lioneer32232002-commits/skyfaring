@@ -3,6 +3,7 @@ import { getAllPostMetas } from "@/lib/posts";
 import { TOPIC_GROUPS } from "@/lib/taxonomy";
 import ArticleCard from "@/components/ArticleCard";
 import ProjectGroups from "@/components/ProjectGroups";
+import TopicIcon from "@/components/TopicIcon";
 import ViewCounter from "@/components/ViewCounter";
 import ViewCountsProvider from "@/components/ViewCountsProvider";
 
@@ -94,7 +95,7 @@ export default function HomePage() {
                 href={`${BASE_PATH}/topics/${group.slug}/`}
                 className="inline-flex items-center gap-2 px-4 py-2 bg-white dark:bg-slate-800 rounded-full border border-slate-100 dark:border-slate-700 text-sm text-slate-600 dark:text-slate-300 shadow-sm hover:shadow-md hover:text-sky-600 dark:hover:text-sky-400 transition-all"
               >
-                <span>{group.emoji}</span>
+                <TopicIcon name={group.icon} className="w-4 h-4 shrink-0" />
                 {group.label}
               </a>
             ))}
