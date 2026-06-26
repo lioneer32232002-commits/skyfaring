@@ -53,7 +53,7 @@ export default function ArticleCard({ post }: { post: PostMeta }) {
           <p className="text-sm text-slate-500 dark:text-slate-400 line-clamp-3 flex-1 mb-4">
             {post.excerpt}
           </p>
-          <div className="flex items-center justify-between text-xs text-slate-400 dark:text-slate-500 mt-auto">
+          <div className="flex items-center justify-between text-xs text-slate-500 dark:text-slate-400 mt-auto">
             <span>{formatted}</span>
             <span>{views !== null ? `${views.toLocaleString()} 次瀏覽` : "—"}</span>
           </div>

@@ -1,5 +1,6 @@
 import { getAllSlugs, getPost, addPanguText } from "@/lib/posts";
 import ViewCounter from "@/components/ViewCounter";
+import UiIcon from "@/components/UiIcon";
 
 const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
@@ -113,7 +114,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
             loading="lazy"
           />
           {post.heroCredit && (
-            <figcaption className="text-xs text-slate-400 text-right mt-1 px-2">
+            <figcaption className="text-xs text-slate-500 dark:text-slate-400 text-right mt-1 px-2">
               圖片：
               {post.heroCreditUrl ? (
                 <a href={post.heroCreditUrl} target="_blank" rel="noopener noreferrer" className="underline hover:text-sky-500">
@@ -156,17 +157,17 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
       {/* Author + meta */}
       <div className="flex flex-wrap items-center gap-4 text-sm text-slate-500 dark:text-slate-400 pb-6 mb-8 border-b border-slate-200 dark:border-slate-700">
         <span className="flex items-center gap-1.5">
-          <span>✍</span>
+          <UiIcon name="pencil" className="w-4 h-4 shrink-0" />
           <span className="font-medium text-slate-700 dark:text-slate-200">{post.author}</span>
         </span>
         <span className="flex items-center gap-1.5">
-          <span>📅</span>
+          <UiIcon name="calendar" className="w-4 h-4 shrink-0" />
           <span>
             {originalDate ? `發布：${originalDate}，更新：${formattedDate}` : `發布：${formattedDate}`}
           </span>
         </span>
         <span className="flex items-center gap-1.5">
-          <span>👁</span>
+          <UiIcon name="eye" className="w-4 h-4 shrink-0" />
           <ViewCounter slug={`blog/${slug}`} />
         </span>
       </div>

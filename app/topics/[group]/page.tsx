@@ -84,7 +84,7 @@ export default async function TopicPage({
 
       {/* Header */}
       <div className="mb-8">
-        <div className="text-sm text-slate-400 dark:text-slate-500 mb-3">
+        <div className="text-sm text-slate-500 dark:text-slate-400 mb-3">
           <a href={`${BASE_PATH}/`} className="hover:text-sky-500">
             首頁
           </a>
@@ -133,7 +133,7 @@ export default async function TopicPage({
       {/* Posts grouped by sub-category */}
       <ViewCountsProvider slugs={groupPosts.map((p) => `blog/${p.slug}`)}>
       {groupPosts.length === 0 ? (
-        <p className="text-slate-400">這個主題目前還沒有文章。</p>
+        <p className="text-slate-500 dark:text-slate-400">這個主題目前還沒有文章。</p>
       ) : (
         group.categories.map((cat) => {
           const catPosts = posts.filter((p) => p.category === cat);
@@ -142,7 +142,7 @@ export default async function TopicPage({
             <section key={cat} className="mb-12">
               <h2 className="text-lg font-bold text-slate-700 dark:text-slate-200 mb-5 flex items-center gap-2">
                 {cat}
-                <span className="text-xs font-normal text-slate-400 dark:text-slate-500">
+                <span className="text-xs font-normal text-slate-500 dark:text-slate-400">
                   {catPosts.length} 篇
                 </span>
               </h2>

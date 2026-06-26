@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { PROJECTS, resolveProjectHref, projectOpensExternal } from "@/lib/projects";
+import UiIcon from "@/components/UiIcon";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://skyfaring.pages.dev";
 const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
@@ -100,14 +101,14 @@ export default function RootLayout({
                   <img src={`${BASE_PATH}/favicon.svg`} alt="" width={18} height={18} />
                   <span className="font-bold text-slate-700 dark:text-slate-200">Skyfaring</span>
                 </div>
-                <p className="text-xs text-slate-400 dark:text-slate-500 leading-relaxed">
+                <p className="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">
                   運動數據分析 · 飛航安全 · 詠春拳<br />歷史與軍事閱讀心得
                 </p>
               </div>
               {/* Links */}
               <div>
                 <p className="text-xs font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-3">專案</p>
-                <ul className="space-y-2 text-xs text-slate-400 dark:text-slate-500">
+                <ul className="space-y-2 text-xs text-slate-500 dark:text-slate-400">
                   {PROJECTS.map((proj) => {
                     const href = resolveProjectHref(proj);
                     const opensExternal = projectOpensExternal(proj);
@@ -133,10 +134,10 @@ export default function RootLayout({
               {/* Contact */}
               <div>
                 <p className="text-xs font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-3">聯絡</p>
-                <ul className="space-y-2 text-xs text-slate-400 dark:text-slate-500">
+                <ul className="space-y-2 text-xs text-slate-500 dark:text-slate-400">
                   <li>
-                    <a href="mailto:wizard32232002@gmail.com" className="hover:text-sky-500 flex items-center gap-1">
-                      <span>✉</span> wizard32232002@gmail.com
+                    <a href="mailto:wizard32232002@gmail.com" className="hover:text-sky-500 inline-flex items-center gap-1.5">
+                      <UiIcon name="mail" className="w-4 h-4 shrink-0" /> wizard32232002@gmail.com
                     </a>
                   </li>
                 </ul>
@@ -144,7 +145,7 @@ export default function RootLayout({
             </div>
 
             {/* Photo credits + copyright */}
-            <div className="border-t border-slate-100 dark:border-slate-700 pt-6 text-xs text-slate-400 dark:text-slate-500">
+            <div className="border-t border-slate-100 dark:border-slate-700 pt-6 text-xs text-slate-500 dark:text-slate-400">
               <p id="photo-credits" className="mb-1">
                 部分圖片來自 <a href="https://unsplash.com" className="underline hover:text-sky-500">Unsplash</a>（<a href="https://unsplash.com/license" className="underline hover:text-sky-500">Unsplash License</a>），出處標示於各頁面。
               </p>

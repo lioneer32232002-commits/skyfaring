@@ -31,7 +31,7 @@ export default function BlogFilter({ posts }: { posts: PostMeta[] }) {
       <div className="flex flex-wrap gap-2 mb-8">
         <button
           onClick={() => setActive(null)}
-          className={`px-3 py-1 rounded-full text-sm transition-colors ${
+          className={`px-3 py-1.5 rounded-full text-sm transition-colors ${
             active === null
               ? "bg-slate-800 dark:bg-slate-100 text-white dark:text-slate-900 font-semibold"
               : INACTIVE_BASE
@@ -43,7 +43,7 @@ export default function BlogFilter({ posts }: { posts: PostMeta[] }) {
           <button
             key={cat}
             onClick={() => setActive(active === cat ? null : cat)}
-            className={`px-3 py-1 rounded-full text-sm transition-colors ${
+            className={`px-3 py-1.5 rounded-full text-sm transition-colors ${
               active === cat
                 ? `${ACTIVE_BASE} ${CATEGORY_STYLES[cat] ?? "bg-slate-100 text-slate-700 border-slate-300"}`
                 : INACTIVE_BASE
@@ -55,7 +55,7 @@ export default function BlogFilter({ posts }: { posts: PostMeta[] }) {
       </div>
 
       {filtered.length === 0 ? (
-        <p className="text-slate-400">目前還沒有文章。</p>
+        <p className="text-slate-500 dark:text-slate-400">目前還沒有文章。</p>
       ) : (
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {filtered.map((post) => (

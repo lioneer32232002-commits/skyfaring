@@ -4,6 +4,7 @@ import { TOPIC_GROUPS } from "@/lib/taxonomy";
 import ArticleCard from "@/components/ArticleCard";
 import ProjectGroups from "@/components/ProjectGroups";
 import TopicIcon from "@/components/TopicIcon";
+import UiIcon from "@/components/UiIcon";
 import ViewCounter from "@/components/ViewCounter";
 import ViewCountsProvider from "@/components/ViewCountsProvider";
 
@@ -71,7 +72,7 @@ export default function HomePage() {
         <section className="mb-14">
           <div className="flex items-center justify-between mb-5">
             <h2 className="text-xl font-bold text-slate-700 dark:text-slate-200 flex items-center gap-2">
-              <span>🗂</span> 我的專案
+              <UiIcon name="grid" className="w-5 h-5 shrink-0" /> 我的專案
             </h2>
             <a
               href={`${BASE_PATH}/projects/`}
@@ -86,7 +87,7 @@ export default function HomePage() {
         {/* Topics */}
         <section className="mb-14">
           <h2 className="text-xl font-bold text-slate-700 dark:text-slate-200 mb-5 flex items-center gap-2">
-            <span>🧭</span> 依主題瀏覽
+            <UiIcon name="compass" className="w-5 h-5 shrink-0" /> 依主題瀏覽
           </h2>
           <div className="flex flex-wrap gap-3">
             {TOPIC_GROUPS.map((group) => (
@@ -106,7 +107,7 @@ export default function HomePage() {
         <section>
           <div className="flex items-center justify-between mb-5">
             <h2 className="text-xl font-bold text-slate-700 dark:text-slate-200 flex items-center gap-2">
-              <span>📰</span> 最新文章
+              <UiIcon name="news" className="w-5 h-5 shrink-0" /> 最新文章
             </h2>
             <a
               href={`${BASE_PATH}/blog/`}
@@ -116,7 +117,7 @@ export default function HomePage() {
             </a>
           </div>
           {posts.length === 0 ? (
-            <p className="text-slate-400">目前還沒有文章。</p>
+            <p className="text-slate-500 dark:text-slate-400">目前還沒有文章。</p>
           ) : (
             <ViewCountsProvider slugs={posts.slice(0, 6).map((p) => `blog/${p.slug}`)}>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">

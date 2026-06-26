@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import UiIcon from "@/components/UiIcon";
 
 const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
@@ -56,7 +57,7 @@ export default function TpblLensPage() {
         {/* Dataset cards */}
         <section className="mb-14">
           <h2 className="text-xl font-bold text-slate-700 dark:text-slate-200 mb-5 flex items-center gap-2">
-            <span>📊</span> 數據集
+            <UiIcon name="chart" className="w-5 h-5 shrink-0" /> 數據集
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {DATASETS.map((ds) => (
@@ -71,7 +72,7 @@ export default function TpblLensPage() {
                   <span className="text-xs font-semibold text-orange-600 dark:text-orange-400 bg-orange-50 dark:bg-orange-900/30 px-2 py-0.5 rounded-full">
                     {ds.badge}
                   </span>
-                  <span className="text-xs text-slate-400">{ds.season}</span>
+                  <span className="text-xs text-slate-500 dark:text-slate-400">{ds.season}</span>
                 </div>
                 <h3 className="font-semibold text-slate-800 dark:text-slate-100 group-hover:text-orange-600 dark:group-hover:text-orange-400 transition-colors mb-2">
                   {ds.title}

@@ -87,7 +87,7 @@ export default async function ProjectPage({
       />
 
       {/* Breadcrumb */}
-      <div className="text-sm text-slate-400 dark:text-slate-500 mb-6">
+      <div className="text-sm text-slate-500 dark:text-slate-400 mb-6">
         <a href={`${BASE_PATH}/`} className="hover:text-sky-500">首頁</a>
         <span className="mx-1.5">/</span>
         <a href={`${BASE_PATH}/projects/`} className="hover:text-sky-500">專案</a>
