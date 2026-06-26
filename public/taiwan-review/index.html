@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh-Hant"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>台灣無人機產業與出口追蹤 2024~2026 Q2</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+:root{--panel:#0d1422;--panel2:#101a2c;--line:rgba(120,160,210,.14);--hair:rgba(120,160,210,.10);--txt:#e8eef8;--mut:#7e93b3;--dim:#566884;--accent:#5b8cff;--gold:#f5c451;--signal:#38bdf8;--mono:'IBM Plex Mono',ui-monospace,monospace;}
+*{box-sizing:border-box}
+body{margin:0;color:var(--txt);line-height:1.6;font-family:'Noto Sans TC','Segoe UI','Microsoft JhengHei',system-ui,sans-serif;background:radial-gradient(1100px 520px at 50% -8%,#0d1626,transparent),linear-gradient(#0a0f1c,#070b14);min-height:100vh}
+.wrap{max-width:1180px;margin:0 auto;padding:24px 22px 56px}
+.sys{display:flex;align-items:center;gap:14px;flex-wrap:wrap;font-family:var(--mono);font-size:11.5px;color:var(--mut);text-transform:uppercase;letter-spacing:.18em;border-bottom:1px solid var(--line);padding-bottom:10px;margin-bottom:16px}
+.sys .live{color:var(--gold)}
+.sys .live::before{content:'';display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--gold);margin-right:7px;vertical-align:1px;box-shadow:0 0 9px var(--gold)}
+.sys .sep{color:var(--dim)}
+h1{font-size:25px;margin:8px 0 4px;letter-spacing:.01em;font-weight:700}
+.sub{color:var(--mut);font-size:13px;margin-bottom:20px;font-family:var(--mono);letter-spacing:.04em}
+.kpis{display:grid;grid-template-columns:repeat(6,1fr);gap:11px;margin-bottom:16px}
+@media(max-width:880px){.kpis{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:520px){.kpis{grid-template-columns:repeat(2,1fr)}}
+.kpi{position:relative;background:linear-gradient(180deg,var(--panel2),var(--panel));border:1px solid var(--line);border-top:2px solid var(--accent);border-radius:3px;padding:13px 14px}
+.kpi .v{font-family:var(--mono);font-size:23px;font-weight:600;line-height:1.05;font-variant-numeric:tabular-nums}
+.kpi .l{font-size:11px;letter-spacing:.06em;color:#cdd9ec;margin-top:8px;font-weight:500}
+.kpi .h{font-size:10px;color:var(--dim);margin-top:3px;line-height:1.35}
+.kpi.year{border-top-color:var(--gold)}
+.kpi.year .v{color:#f5d98a;font-size:21px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px}
+@media(max-width:880px){.grid2{grid-template-columns:1fr}}
+.card{position:relative;background:linear-gradient(180deg,var(--panel2),var(--panel));border:1px solid var(--line);border-radius:3px;padding:16px 16px 14px;margin-bottom:14px}
+.card::before,.card::after{content:'';position:absolute;width:11px;height:11px;border:1px solid rgba(120,160,210,.5);pointer-events:none}
+.card::before{left:-1px;top:-1px;border-right:0;border-bottom:0}
+.card::after{right:-1px;bottom:-1px;border-left:0;border-top:0}
+.card h3{margin:0 0 12px;font-size:12px;color:#bcd0ec;font-weight:500;text-transform:uppercase;letter-spacing:.13em;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.card h3 .hint{color:var(--dim);font-weight:400;font-size:10.5px;letter-spacing:.06em;text-transform:none}
+.card h3::before{content:'';width:5px;height:5px;background:var(--signal);box-shadow:0 0 7px var(--signal);transform:rotate(45deg);flex:0 0 auto}
+.chartbox{position:relative;height:280px}
+@media(max-width:520px){.chartbox{height:240px}}
+canvas{max-width:100%}
+.exnote{margin-top:12px;font-size:12.5px;color:#cdd9ec}
+.exnote p{margin:6px 0}
+.exnote b{color:#e8eef8}
+.exnote .warn{color:#f0c98a;border-left:2px solid rgba(245,196,81,.4);padding-left:10px;margin-top:10px}
+.mapwrap{display:flex;justify-content:center}
+.mapsvg{display:flex;justify-content:center;width:100%}
+.twmap{width:100%;max-width:440px;height:auto}
+.rlbl{font-family:var(--mono);font-size:12px;letter-spacing:.02em}
+.tablewrap{width:100%;overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:13px}
+.tablewrap.wide table{min-width:920px}
+th,td{text-align:left;padding:10px 8px;border-bottom:1px solid var(--hair);vertical-align:top}
+th{color:var(--mut);font-size:11px;text-transform:uppercase;letter-spacing:.07em;font-weight:500}
+tr.grp td{background:rgba(91,140,255,.08);color:#9dc0ff;font-family:var(--mono);font-size:11px;letter-spacing:.08em;border-bottom:1px solid var(--line);padding:7px 8px}
+.co .conm{color:#e8eef8;font-weight:500}
+.co .coen{color:var(--dim);font-size:11px;font-family:var(--mono)}
+.co .hq{color:var(--mut);font-size:11px;margin-top:2px}
+.chip{display:inline-block;padding:1px 8px;border-radius:3px;font-size:11px;white-space:nowrap;font-family:var(--mono)}
+.lst .tk{display:inline-block;margin-top:5px;color:var(--mut);font-family:var(--mono);font-size:12px}
+.fin .finv{color:#dbe7ff;font-weight:500} .fin .finsub{color:var(--dim);font-size:11px;margin:2px 0 4px}
+.role{color:#cdd9ec} .exp{color:var(--mut);font-size:12px;margin-top:4px}
+.certs{margin-top:5px;display:flex;flex-wrap:wrap;gap:4px}
+.cert{display:inline-block;font-size:10.5px;color:#7fd1ff;border:1px solid rgba(56,189,248,.35);border-radius:3px;padding:1px 6px}
+.dim{color:var(--dim)}
+a{color:#6ea8fe;text-decoration:none} a:hover{text-decoration:underline}
+.read{display:inline-block;margin-top:4px;font-family:var(--mono);font-size:11px;letter-spacing:.04em;color:#7fd1ff;border:1px solid rgba(56,189,248,.4);border-radius:3px;padding:1px 8px}
+.read:hover{background:rgba(56,189,248,.12);text-decoration:none}
+.srcs{font-family:var(--mono);font-size:11px} .srcs a{display:inline-block;margin:0 6px 4px 0}
+.narr2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:680px){.narr2{grid-template-columns:1fr}}
+.narr2 .b{padding-left:14px;border-left:2px solid var(--accent)}
+.narr2 .b.up{border-left-color:#3aaf94} .narr2 .b.down{border-left-color:#caa85f}
+.narr2 h4{margin:0 0 6px;font-size:13px;color:#cdd9ec;text-transform:uppercase;letter-spacing:.05em}
+.narr2 p{margin:0;color:#d3dcec}
+.flow{margin:0;color:#d3dcec}
+.certlist{list-style:none;margin:0;padding:0}
+.certlist li{padding:9px 0;border-bottom:1px solid var(--hair)}
+.certlist li:last-child{border-bottom:0}
+.ci-what{color:#e8eef8} .ci-meta{color:var(--mut);font-size:11px;font-family:var(--mono);margin-top:2px}
+.foot{color:var(--dim);font-size:11px;margin-top:24px;border-top:1px solid var(--line);padding-top:12px;font-family:var(--mono);letter-spacing:.04em}
+.foot a{color:#7fd1ff}
+</style></head>
+<body><div class="wrap">
+  <div class="sys"><span class="live">追蹤中 · LIVE</span><span class="sep">//</span><span>INTEL · TAIWAN DRONE EXPORT</span><span class="sep">//</span><span>2024 &#8594; 2026 Q2</span><span class="sep">//</span><span>季更 2026 Q2</span><span class="sep">//</span><span>GEN 2026-06-26</span></div>
+  <h1>台灣無人機產業與出口 · 季度追蹤</h1>
+  <div class="sub">廠商區域分布　／　公開財報　／　出口與認證　·　每季更新</div>
+  <div class="kpis">
+    <div class="kpi year"><div class="v">181,159</div><div class="l">最新出口架數</div><div class="h">2026 前四月 · 財政部海關 · 全部出口</div></div>
+<div class="kpi "><div class="v">約 20 倍</div><div class="l">年增</div><div class="h">對去年同期</div></div>
+<div class="kpi "><div class="v">12</div><div class="l">收錄廠商</div><div class="h">上市櫃為主＋重要未上市</div></div>
+<div class="kpi "><div class="v">6</div><div class="l">上市櫃公司</div><div class="h">股號可查、有公開財報</div></div>
+<div class="kpi "><div class="v">3</div><div class="l">美規/外部認證</div><div class="h">Blue UAS 等</div></div>
+<div class="kpi "><div class="v">31</div><div class="l">來源連結</div><div class="h">公開可查證</div></div>
+  </div>
+  
+      <div class="card"><h3>出口趨勢 <span class="hint">對歐洲整機（架）· DSET 整理</span></h3>
+        <div class="chartbox"><canvas id="exp"></canvas></div>
+        <div class="exnote">
+          <p><b>官方海關口徑</b>：2026 前四月出口 181,159 架，約去年同期 約 20 倍，一個季多就超過 2025 全年。<a class="read" href="https://hongkongfp.com/2026/05/31/taiwanese-drone-exports-soar-on-ukraine-war/" target="_blank" rel="noopener">海關／AFP ↗</a></p>
+          <p><b>金額口徑</b>：金額口徑：2025 年 1–10 月出口額 5,475 萬美元，較 2024 全年 441 萬增 11.4 倍（財政部，The Diplomat）。</p>
+          <p class="warn">架數不等於金額：按進口金額台灣在波蘭排第二、捷克排第四，前面都還有中國。數量見長，非單價霸主。</p>
+        </div>
+      </div>
+  <div class="card"><h3>廠商區域分布 <span class="hint">按總部所在地，點越密代表聚落越集中</span></h3><div class="mapwrap"><div class="mapsvg"><svg viewBox="0 0 300 360" class="twmap" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="台灣無人機廠商區域分布地圖"><path d="M120,32 L150,44 L168,70 L176,110 L172,160 L162,210 L150,260 L138,300 L126,330 L116,320 L108,290 L96,250 L88,210 L86,175 L90,140 L98,105 L104,75 L110,50 Z" fill="rgba(91,140,255,0.06)" stroke="rgba(120,160,210,0.45)" stroke-width="1.4"/><circle cx="106" cy="166" r="6" fill="#3aaf94" fill-opacity="0.9" stroke="#0a0f1c" stroke-width="1.3"><title>雷虎科技｜台中市</title></circle><circle cx="102" cy="115" r="6" fill="#3f9fb0" fill-opacity="0.9" stroke="#0a0f1c" stroke-width="1.3"><title>中光電智能機器人｜新竹市</title></circle><circle cx="110" cy="256" r="6" fill="#caa85f" fill-opacity="0.9" stroke="#0a0f1c" stroke-width="1.3"><title>經緯航太｜台南市</title></circle><circle cx="128" cy="66" r="6" fill="#5b8cff" fill-opacity="0.9" stroke="#0a0f1c" stroke-width="1.3"><title>智飛科技｜台北市</title></circle><circle cx="118" cy="167" r="6" fill="#3aaf94" fill-opacity="0.9" stroke="#0a0f1c" stroke-width="1.3"><title>碳基科技｜台中市</title></circle><circle cx="134" cy="56" r="6" fill="#5b8cff" fill-opacity="0.9" stroke="#0a0f1c" stroke-width="1.3"><title>DronesVision（橙森國際）｜基隆市</title></circle><circle cx="122" cy="257" r="6" fill="#caa85f" fill-opacity="0.9" stroke="#0a0f1c" stroke-width="1.3"><title>亞洲航空｜台南市</title></circle><circle cx="94" cy="167" r="6" fill="#3aaf94" fill-opacity="0.9" stroke="#0a0f1c" stroke-width="1.3"><title>漢翔航空工業｜台中市</title></circle><circle cx="112" cy="90" r="6" fill="#3f9fb0" fill-opacity="0.9" stroke="#0a0f1c" stroke-width="1.3"><title>長榮航太｜桃園市</title></circle><circle cx="114" cy="116" r="6" fill="#3f9fb0" fill-opacity="0.9" stroke="#0a0f1c" stroke-width="1.3"><title>創未來科技｜新竹市</title></circle><circle cx="140" cy="67" r="6" fill="#5b8cff" fill-opacity="0.9" stroke="#0a0f1c" stroke-width="1.3"><title>神通資訊科技｜台北市</title></circle><circle cx="124" cy="91" r="6" fill="#3f9fb0" fill-opacity="0.9" stroke="#0a0f1c" stroke-width="1.3"><title>國家中山科學研究院｜桃園市</title></circle><line x1="141" y1="63" x2="196" y2="58" stroke="#5b8cff" stroke-opacity="0.4" stroke-width="1"/><circle cx="200" cy="58" r="4" fill="#5b8cff"/><text x="210" y="62" class="rlbl" fill="#5b8cff">北部 · 3 家</text><line x1="120" y1="103" x2="196" y2="112" stroke="#3f9fb0" stroke-opacity="0.4" stroke-width="1"/><circle cx="200" cy="112" r="4" fill="#3f9fb0"/><text x="210" y="116" class="rlbl" fill="#3f9fb0">桃竹苗 · 4 家</text><line x1="113" y1="167" x2="196" y2="172" stroke="#3aaf94" stroke-opacity="0.4" stroke-width="1"/><circle cx="200" cy="172" r="4" fill="#3aaf94"/><text x="210" y="176" class="rlbl" fill="#3aaf94">中部 · 3 家</text><line x1="123" y1="256" x2="196" y2="258" stroke="#caa85f" stroke-opacity="0.4" stroke-width="1"/><circle cx="200" cy="258" r="4" fill="#caa85f"/><text x="210" y="262" class="rlbl" fill="#caa85f">南部 · 2 家</text></svg></div></div></div>
+  <div class='card'><h3>判讀 <span class='hint'>兩面並存，非廢鐵亦非稱霸</span></h3><div class='narr2'><div class='b up'><h4>實力</h4><p>台灣能造出通得過美國 Blue UAS 門檻、又真有人買去送上戰場的無人機。雷虎 Overkill 入列美國清單，碳基、亞航、中科院撐起本土軍規機體與整機，出口量一年成長數十倍。</p></div><div class='b down'><h4>缺口</h4><p>規模仍小：最大單一廠商一年約三千多架，遠不及烏克蘭月產 20 萬。電池、馬達、稀土仍大量依賴中國，整份 Blue UAS 清單台灣只有一個席位，國防特別預算 2026 年一度被砍，沒有穩定國內訂單就難擴產。</p></div></div></div><div class='card'><h3>出口流向 <span class='hint'>DSET 訪談研判，非海關證實</span></h3><p class='flow'>DSET 訪談五十多家台烏歐廠商與組織後研判：輸往波蘭、捷克的整機絕大多數最後轉往烏克蘭，多由民間與慈善組織購買後捐贈。這是訪談得出的研判、非海關證實的最終流向。國別排名隨期間換位，累積到 2025 年 10 月波蘭領先，2025 全年與 2026 年初換成捷克在前。</p></div>
+  <div class="card"><h3>廠商一覽 <span class="hint">上市櫃為主＋重要未上市 · 依區域分組 · 公開財報附連結</span></h3>
+    <div class="tablewrap wide"><table><thead><tr><th>公司</th><th>上市狀態</th><th>最新公開財報</th><th>無人機角色／出口關聯</th><th>來源</th></tr></thead>
+    <tbody><tr class='grp'><td colspan='5'>北部　·　3 家</td></tr>
+<tr><td class='co'><div class='conm'>智飛科技</div><div class='coen'>Taiwan-UAV / JC Tech</div><div class='hq'>台北市</div></td><td class='lst'><span class="chip" style="background:#7e93b322;color:#7e93b3;border:1px solid #7e93b355">未上市</span></td><td class='fin'><span class="dim">未公開（未上市）</span></td><td><div class='role'>2005 年成立老牌 UAV 廠，主力 VTOL 定翼機（TU-24VE／TU-30VG 等）與地面控制站整合。</div><div class="exp">2024 國防部標案陸用監偵無人機得標逾 24.09 億元、業界最高；國防自主供應鏈指標廠。</div><div class='certs'><span class='cert'>國防部軍用商規無人機系統整合主導商（2023）</span></div></td><td class='srcs'><a class="src" href="https://www.taiwan-uav.com/about" target="_blank" rel="noopener">智飛科技官網 ↗</a> <a class="src" href="https://www.ctee.com.tw/news/20240822701864-430502" target="_blank" rel="noopener">工商時報：智飛得標稱冠 ↗</a></td></tr>
+<tr><td class='co'><div class='conm'>DronesVision（橙森國際）</div><div class='coen'>DronesVision / Chen-Sen International</div><div class='hq'>基隆市</div></td><td class='lst'><span class="chip" style="background:#7e93b322;color:#7e93b3;border:1px solid #7e93b355">未上市</span></td><td class='fin'><span class="dim">未公開（未上市）</span></td><td><div class='role'>Revolver 系列 VTOL 投彈攻擊無人機；代表機 Revolver 860 為四臂八旋翼，彈艙可載 8 枚 60 mm 迫砲彈。</div><div class="exp">Revolver 860 經波蘭轉售流入烏克蘭實戰（有報導稱約 800 架交付）；公司稱對波蘭供貨、後續移轉因 NDA 不評論。</div></td><td class='srcs'><a class="src" href="https://www.armyrecognition.com/focus-analysis-conflicts/army/conflicts-in-the-world/russia-ukraine-war-2022/ukraine-army-using-taiwan-made-dronesvision-revolver-860-combat-drones" target="_blank" rel="noopener">Army Recognition：烏克蘭使用台製 Revolver 860 攻擊無人機 ↗</a></td></tr>
+<tr><td class='co'><div class='conm'>神通資訊科技</div><div class='coen'>MiTAC Information Technology</div><div class='hq'>台北市</div></td><td class='lst'><span class="chip" style="background:#7e93b322;color:#7e93b3;border:1px solid #7e93b355">未上市</span></td><td class='fin'><span class="dim">未公開（未上市）</span></td><td><div class='role'>MiUAV 旋翼無人機系統整合（單旋翼滯空可達 60 分），整合 5G、GIS、即時影像與後端 AI 分析。</div><div class="exp">國防部第一、二波軍用商規無人機得標廠商之一；另供海巡署海域監偵旋翼無人機。</div></td><td class='srcs'><a class="src" href="https://www.mitac.com.tw/en/portfolio-item/miuav-rotary-uav/" target="_blank" rel="noopener">神通資訊科技 MiUAV 產品頁 ↗</a> <a class="src" href="https://technews.tw/2024/08/21/mod-annoucned-winners-for-commercial-drones-for-military-use-project/" target="_blank" rel="noopener">科技新報：軍用商規無人機四廠商得標 ↗</a></td></tr>
+<tr class='grp'><td colspan='5'>桃竹苗　·　4 家</td></tr>
+<tr><td class='co'><div class='conm'>長榮航太</div><div class='coen'>Evergreen Aviation Technologies (EGAT)</div><div class='hq'>桃園市</div></td><td class='lst'><span class="chip" style="background:#5b8cff22;color:#5b8cff;border:1px solid #5b8cff55">上市</span><span class="tk">2645</span></td><td class='fin'><div class="finv">約 181.79 億元（年增約 11.6%）</div><div class="finsub">年度合併營收　2025</div><a class="read" href="https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2645" target="_blank" rel="noopener">財報來源 ↗</a></td><td><div class='role'>本業航空器 MRO 與機體製造（打入空巴供應鏈）；2024 得標艦載監偵無人機 16 架、約 4.02 億元，2025 Q1 認列。</div><div class="exp">無人機以國防自主採購為主，未見外銷紀錄；被法人視為第二波軍規無人機標案主要受惠者。</div></td><td class='srcs'><a class="src" href="https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2645" target="_blank" rel="noopener">Goodinfo 2645 長榮航太 ↗</a> <a class="src" href="https://news.cnyes.com/news/id/6114925" target="_blank" rel="noopener">鉅亨網：長榮航太艦載監偵無人機 16 架、4.02 億元標案 ↗</a></td></tr>
+<tr><td class='co'><div class='conm'>中光電智能機器人</div><div class='coen'>Coretronic Intelligent Robotics (CIRC)</div><div class='hq'>新竹市</div></td><td class='lst'><span class="chip" style="background:#3aaf9422;color:#3aaf94;border:1px solid #3aaf9455">上櫃</span><span class="tk">5371（母公司中強光電）</span></td><td class='fin'><div class="finv">約 395.8 億元</div><div class="finsub">母公司中強光電合併營收（CIRC 為 100% 子公司，未單獨上市揭露）　2025</div><a class="read" href="https://tw.stock.yahoo.com/quote/5371.TWO/revenue" target="_blank" rel="noopener">財報來源 ↗</a></td><td><div class='role'>AI 自主飛行無人機（微型、監偵型）與商警用、AMR；推 HVTOL 長航程機（航程逾 300 km、滯空逾 180 分）。</div><div class="exp">國防部第一波軍用商規無人機 3,037 架最大得標者；於 XPONENTIAL Europe 推 HVTOL 拓歐洲。未見直接供烏紀錄。</div></td><td class='srcs'><a class="src" href="https://www.coretronic-robotics.com/tw/index" target="_blank" rel="noopener">中光電智能機器人官網 ↗</a> <a class="src" href="https://www.cna.com.tw/news/afe/202408210192.aspx" target="_blank" rel="noopener">中央社：中光電獲軍用商規無人機 3037 架 ↗</a> <a class="src" href="https://tw.stock.yahoo.com/quote/5371.TWO/revenue" target="_blank" rel="noopener">Yahoo 股市 5371（中強光電）營收 ↗</a></td></tr>
+<tr><td class='co'><div class='conm'>創未來科技</div><div class='coen'>Tron Future Tech</div><div class='hq'>新竹市</div></td><td class='lst'><span class="chip" style="background:#7e93b322;color:#7e93b3;border:1px solid #7e93b355">未上市</span></td><td class='fin'><span class="dim">未公開（2024 完成 A 輪募資約 9 億元）</span></td><td><div class='role'>反無人機系統整合商，核心為自研全數位 GaN AESA 相位陣列雷達；含 T.Radar、T.Interceptor 攔截機、T.Meta 指揮軟體。</div><div class="exp">2025/1 獲國防部約 9.8 億元反無人機系統大單（26 套）；布局日歐美，於巴黎航展參展。</div><div class='certs'><span class='cert'>2025 iF 設計獎（T.Meta）</span></div></td><td class='srcs'><a class="src" href="https://www.bnext.com.tw/article/79207/tron-future-startup-funding-a-round" target="_blank" rel="noopener">數位時代：創未來完成 A 輪募資 9 億元 ↗</a> <a class="src" href="https://www.bnext.com.tw/article/82205/tron-future-defense/aerospace-tech-company" target="_blank" rel="noopener">數位時代：創未來搶下國防部 9.8 億反制系統大單 ↗</a></td></tr>
+<tr><td class='co'><div class='conm'>國家中山科學研究院</div><div class='coen'>NCSIST</div><div class='hq'>桃園市</div></td><td class='lst'><span class="chip" style="background:#c67d8f22;color:#c67d8f;border:1px solid #c67d8f55">政府機構</span></td><td class='fin'><div class="finv">約 1,024 億元</div><div class="finsub">年度業務收入決算（法定預算 1,108.5 億元）　2024</div><a class="read" href="https://www.ncsist.org.tw/csistdup/aboutus/download/113%E6%B1%BA%E7%AE%97(%E5%85%AC%E5%91%8A%E7%89%88).pdf" target="_blank" rel="noopener">財報來源 ↗</a></td><td><div class='role'>台灣軍用無人機自研核心：騰雲 MALE 長航時機、銳鳶一／二型監偵、劍翔反輻射巡飛彈，另有紅雀、勁蜂等。</div><div class="exp">國防自主／軍方採購體系，非外銷導向；2026 八年國防特別條例規劃執行約 809 億元，2025 與六家外國軍工大廠簽國際合作。</div></td><td class='srcs'><a class="src" href="https://www.ncsist.org.tw/csistdup/aboutus/download/113%E6%B1%BA%E7%AE%97(%E5%85%AC%E5%91%8A%E7%89%88).pdf" target="_blank" rel="noopener">中科院 113 年度決算（官方一手） ↗</a> <a class="src" href="https://zh.wikipedia.org/zh-tw/%E5%9C%8B%E5%AE%B6%E4%B8%AD%E5%B1%B1%E7%A7%91%E5%AD%B8%E7%A0%94%E7%A9%B6%E9%99%A2" target="_blank" rel="noopener">維基百科：國家中山科學研究院 ↗</a> <a class="src" href="https://www.cna.com.tw/news/aipl/202603110253.aspx" target="_blank" rel="noopener">中央社：軍購特別預算含中科院 809 億 ↗</a></td></tr>
+<tr class='grp'><td colspan='5'>中部　·　3 家</td></tr>
+<tr><td class='co'><div class='conm'>漢翔航空工業</div><div class='coen'>AIDC</div><div class='hq'>台中市</div></td><td class='lst'><span class="chip" style="background:#5b8cff22;color:#5b8cff;border:1px solid #5b8cff55">上市</span><span class="tk">2634</span></td><td class='fin'><div class="finv">約 354.5 億元</div><div class="finsub">年度合併營收　2025</div><a class="read" href="https://www.cnyes.com/twstock/2634" target="_blank" rel="noopener">財報來源 ↗</a></td><td><div class='role'>航太轉型無人機系統整合商，設無人機產線並為智飛代工；2026 發表自研 AIxVNAV 抗干擾視覺導航（授權自美國 Vantor）。</div><div class="exp">領軍台灣無人機海外商機聯盟、主打非紅供應鏈，積極爭取美方認證切入國防出口。</div><div class='certs'><span class='cert'>美方 Blue/Green UAS 認證：爭取中（非既有取證）</span></div></td><td class='srcs'><a class="src" href="https://www.cnyes.com/twstock/2634" target="_blank" rel="noopener">鉅亨網 2634 漢翔總覽 ↗</a> <a class="src" href="https://www.cna.com.tw/news/afe/202606010045.aspx" target="_blank" rel="noopener">中央社：漢翔開發 AIxVNAV 視覺導航 ↗</a> <a class="src" href="https://technews.tw/2026/01/22/aidc-leads-drone-alliance-in-actively-seeking-us-certification/" target="_blank" rel="noopener">科技新報：漢翔領軍無人機聯盟爭取美方認證 ↗</a></td></tr>
+<tr><td class='co'><div class='conm'>雷虎科技</div><div class='coen'>Thunder Tiger</div><div class='hq'>台中市</div></td><td class='lst'><span class="chip" style="background:#5b8cff22;color:#5b8cff;border:1px solid #5b8cff55">上市</span><span class="tk">8033</span></td><td class='fin'><div class="finv">約 14.17 億元（年增 13.78%）</div><div class="finsub">年度合併營收　2025</div><a class="read" href="https://tw.stock.yahoo.com/quote/8033.TW/revenue" target="_blank" rel="noopener">財報來源 ↗</a></td><td><div class='role'>RC 模型起家，2014 年跨入無人載具。主力自研 Overkill FPV 自殺無人機，續航約 30 分、時速逾 120 km/h、載彈 3 公斤。</div><div class="exp">Overkill 2025/9 獲美國 Blue UAS 認證，打通美軍與北約供應鏈；國內競標軍備局約 4 萬架 FPV 採購。</div><div class='certs'><span class='cert'>美國 Blue UAS Cleared（2025/9，台灣首家）</span></div></td><td class='srcs'><a class="src" href="https://www.cna.com.tw/news/afe/202509220039.aspx" target="_blank" rel="noopener">中央社：雷虎自殺無人機獲美 Blue UAS 認證 ↗</a> <a class="src" href="https://tw.stock.yahoo.com/quote/8033.TW/revenue" target="_blank" rel="noopener">Yahoo 股市 8033 營收表 ↗</a> <a class="src" href="https://goodinfo.tw/tw/BasicInfo.asp?STOCK_ID=8033" target="_blank" rel="noopener">Goodinfo 8033 基本資料 ↗</a></td></tr>
+<tr><td class='co'><div class='conm'>碳基科技</div><div class='coen'>Carbon-Based Technology (UAVER)</div><div class='hq'>台中市</div></td><td class='lst'><span class="chip" style="background:#caa85f22;color:#caa85f;border:1px solid #caa85f55">興櫃</span><span class="tk">7719</span></td><td class='fin'><div class="finv">約 2,897 萬元（年減約 58%）</div><div class="finsub">年度合併營收　2025</div><a class="read" href="https://histock.tw/stock/7719/%E8%B2%A1%E5%8B%99%E5%A0%B1%E8%A1%A8" target="_blank" rel="noopener">財報來源 ↗</a></td><td><div class='role'>航太複合材料機體製造與整機組裝，承製中科院騰雲、銳鳶一／二型、劍翔、中翔一號等機種的複材機體。</div><div class="exp">國防自主供應鏈核心複材機體廠；與亞航組隊量產銳鳶二型（2024 年底量產一度暫緩）。</div><div class='certs'><span class='cert'>2022 中科院複材機體製造優良廠商金質獎</span></div></td><td class='srcs'><a class="src" href="https://www.cnyes.com/twstock/7719/company/profile" target="_blank" rel="noopener">鉅亨網 7719 公司簡介 ↗</a> <a class="src" href="https://histock.tw/stock/7719/%E8%B2%A1%E5%8B%99%E5%A0%B1%E8%A1%A8" target="_blank" rel="noopener">HiStock 7719 財務報表 ↗</a> <a class="src" href="https://def.ltn.com.tw/article/breakingnews/4429670" target="_blank" rel="noopener">自由軍武：碳基是軍規無人機機體幕後功臣 ↗</a></td></tr>
+<tr class='grp'><td colspan='5'>南部　·　2 家</td></tr>
+<tr><td class='co'><div class='conm'>亞洲航空</div><div class='coen'>Air Asia Company (AACL)</div><div class='hq'>台南市</div></td><td class='lst'><span class="chip" style="background:#5b8cff22;color:#5b8cff;border:1px solid #5b8cff55">上市</span><span class="tk">2630</span></td><td class='fin'><div class="finv">約 54.5 億元（年增約 4.9%）</div><div class="finsub">年度合併營收　2025</div><a class="read" href="https://tw.stock.yahoo.com/quote/2630.TW/revenue" target="_blank" rel="noopener">財報來源 ↗</a></td><td><div class='role'>本業飛機機體與發動機維修；與碳基組隊量產中科院銳鳶二型察打一體無人機，負責專案管理、NDT 與組裝。</div><div class="exp">取得中科院中型無人機複材機體製造技術授權（全國首家民間企業）；2026–2029 約 36 架、預算約 5.91 億元。</div><div class='certs'><span class='cert'>中科院中型無人機複材機體製造技術授權（全國首家民間企業）</span></div></td><td class='srcs'><a class="src" href="https://www.cna.com.tw/news/aipl/202505050249.aspx" target="_blank" rel="noopener">中央社：中科院授權亞航無人機複材機體製造技術 ↗</a> <a class="src" href="https://www.cna.com.tw/news/afe/202408280109.aspx" target="_blank" rel="noopener">中央社：亞航、碳基交付中科院銳鳶二型 ↗</a> <a class="src" href="https://tw.stock.yahoo.com/quote/2630.TW/revenue" target="_blank" rel="noopener">Yahoo 股市 2630 營收表 ↗</a></td></tr>
+<tr><td class='co'><div class='conm'>經緯航太</div><div class='coen'>GEOSAT Aerospace &amp; Technology</div><div class='hq'>台南市</div></td><td class='lst'><span class="chip" style="background:#7e93b322;color:#7e93b3;border:1px solid #7e93b355">未上市</span><span class="tk">8495（已終止公發）</span></td><td class='fin'><div class="finv">約 2.00 億元</div><div class="finsub">年度合併營收（終止興櫃前末次公開）　2020</div><a class="read" href="https://news.cnyes.com/news/id/4559752" target="_blank" rel="noopener">財報來源 ↗</a></td><td><div class='role'>源自成大衛星資訊中心，定翼／VTOL／無人直升機垂直整合，含自製飛控與地面站，主攻監偵與空間資訊。</div><div class="exp">代表性非紅供應鏈廠；緯創 2024 入股約 45%、2026 吸收合併併入子公司翔譽科技。曾遭中國列入管制清單。</div><div class='certs'><span class='cert'>經濟部指定微型及陸用監偵型無人機系統整合商</span></div></td><td class='srcs'><a class="src" href="https://zh.wikipedia.org/zh-tw/%E7%B6%93%E7%B7%AF%E8%88%AA%E5%A4%AA" target="_blank" rel="noopener">維基百科：經緯航太 ↗</a> <a class="src" href="https://goodinfo.tw/tw/BasicInfo.asp?STOCK_ID=8495" target="_blank" rel="noopener">Goodinfo 8495 基本資料 ↗</a> <a class="src" href="https://www.ctee.com.tw/news/20260428700185-439901" target="_blank" rel="noopener">工商時報：緯創併入經緯航 ↗</a></td></tr></tbody></table></div>
+  </div>
+  <div class='card'><h3>認證與外部背書 <span class='hint'>硬門檻，非自我宣稱</span></h3><ul class='certlist'><li><div class='ci-what'>Overkill FPV 進入美國國防部 Blue UAS 核可清單（台灣首家；IEEE Spectrum 稱其為清單史上首個亞洲系統）</div><div class='ci-meta'>美國 DIU · 雷虎科技　2025-09 <a class="read" href="https://www.cna.com.tw/news/afe/202509220039.aspx" target="_blank" rel="noopener">來源 ↗</a></div></li><li><div class='ci-what'>亞洲航空取得中科院「中型無人機複材機體製造」技術授權，全國首家民間企業</div><div class='ci-meta'>中科院 · 亞洲航空　2025 <a class="read" href="https://www.cna.com.tw/news/aipl/202505050249.aspx" target="_blank" rel="noopener">來源 ↗</a></div></li><li><div class='ci-what'>漢翔領軍無人機聯盟爭取美方 Blue/Green UAS 認證（進行中，非既有取證）</div><div class='ci-meta'>漢翔 AIDC　2026 <a class="read" href="https://technews.tw/2026/01/22/aidc-leads-drone-alliance-in-actively-seeking-us-certification/" target="_blank" rel="noopener">來源 ↗</a></div></li></ul></div>
+  <div class="foot">出口架數與金額為財政部海關與 DSET 整理之數據；廠商財報以公開資訊觀測站與財經媒體為準，多數公司未單獨拆分無人機營收，所列為公司整體營收。私營與政府機構無公開財報者標示未公開。轉運烏克蘭為 DSET 訪談研判、非海關證實流向。本頁為公開資訊整理，非投資建議。延伸閱讀：<a href="/blog/taiwan-drone-export-ukraine/">本站查證文章 ↗</a></div>
+</div>
+<script>
+const C = {"labels": ["2024", "2025", "2026 Q1"], "values": [2574, 107433, 136010]};
+// Chart.js 以 defer 載入，會在本段 inline script 之後才執行；因此所有 Chart 存取都包在
+// drawExp() 內，待 Chart 就緒才呼叫，避免頂層存取 Chart.defaults 丟錯導致整段中斷、圖表空白。
+function drawExp(){
+  if(!window.Chart){return false;}
+  const el=document.getElementById('exp'); if(!el){return false;}
+  if(Chart.getChart(el)){return true;}  // 已建立就不重複
+  const mut="#7e93b3", grid="rgba(120,160,210,.08)", line="rgba(120,160,210,.14)";
+  Chart.defaults.color=mut; Chart.defaults.font.family="'IBM Plex Mono','Noto Sans TC',monospace"; Chart.defaults.font.size=11;
+  Chart.defaults.maintainAspectRatio=false; Chart.defaults.responsive=true;
+  const tip={backgroundColor:'#0b1322',borderColor:line,borderWidth:1,titleColor:'#cdd9ec',bodyColor:'#e8eef8',padding:10,cornerRadius:4,boxPadding:5,titleFont:{size:11},bodyFont:{size:12}};
+  new Chart(el,{type:'bar',data:{labels:C.labels,datasets:[{label:'對歐洲整機（架）',data:C.values,backgroundColor:['#3f9fb0','#3aaf94','#5b8cff'],borderRadius:3,barPercentage:.6}]},
+    options:{plugins:{legend:{display:false},tooltip:tip},scales:{x:{grid:{display:false}},y:{grid:{color:grid},border:{display:false},ticks:{precision:0}}}}});
+  return true;
+}
+if(document.readyState!=='loading'){drawExp();}else{document.addEventListener('DOMContentLoaded',drawExp);}
+window.addEventListener('load',drawExp);  // CDN 載入較慢時的後援
+</script>
+</body></html>
