@@ -55,7 +55,7 @@ const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" v
   <!-- URL -->
   <text x="80" y="560"
     font-family="'Noto Sans CJK TC', 'Noto Sans TC', 'Noto Sans', sans-serif"
-    font-size="22" fill="#38bdf8">lioneer32232002-commits.github.io/skyfaring</text>
+    font-size="22" fill="#38bdf8">skyfaring.pages.dev</text>
 </svg>`;
 
 const resvg = new Resvg(svg, {

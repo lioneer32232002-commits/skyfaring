@@ -78,6 +78,16 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
       "@type": "Organization",
       name: "Skyfaring",
       url: SITE_URL,
+      logo: {
+        "@type": "ImageObject",
+        url: `${SITE_URL}/images/og-default.png`,
+        width: 1200,
+        height: 630,
+      },
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `${SITE_URL}/blog/${slug}/`,
     },
     url: `${SITE_URL}/blog/${slug}/`,
     ...(post.heroImage && {
