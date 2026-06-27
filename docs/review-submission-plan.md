@@ -142,6 +142,39 @@ systematic review 需要一批「同儕審查過、可被篩選納入排除」�
 2. Track B:確認主選題(軍費排擠社會支出)或改備選,我幫你擬 PICO 式問句與檢索式,並先估算原始研究數量。
 3. 安裝 Zotero + R(`metafor`),或告訴我你慣用 Stata,我據此寫資料抽取表模板。
 
+---
+
+## 更新(依回饋:NMA 可行性、今年投稿目標、免費工具)
+
+### NMA 在無人機/國防的可行性(已查證)
+
+NMA 成立的硬條件:三個以上處置,透過共同對照連成「連通網絡」,量同一個結果、尺度可比,最好來自 RCT 或對照研究。沒有連通網絡硬套 NMA,會因方法不當被退。「第一篇」只有在方法站得住時才算履歷。
+
+- **C-UAS 偵測(雷達/RF/聲學/光電):不可行**。公開資料是工程測試與白皮書,非連通對照網絡;且偵測準確度屬診斷準確度,要用 NMA-DTA,**MetaInsight 不支援**(需 MetaDTA / MetaBayesDTA)。放棄。
+- **無人機操作員訓練(模擬器 vs VR vs 傳統):唯一候選,MetaInsight 跑得動**。已有一批實驗研究,結果變數為飛行績效(連續),屬介入型 NMA,MetaInsight 直接能算,且目前無人做過(會是第一篇)。**前提:需先做可行性盤點,確認有約 10 篇以上、結果可比、能連成網絡的研究。**
+  - 可行性參考文獻:Use of Simulation for Pre-Training of Drone Pilots, *Drones* 8(11):640. https://www.mdpi.com/2504-446X/8/11/640
+  - 下一步:跑一輪 scoping,計算可納入研究數;成立才啟動。
+
+### 工具(全部免費,無需再購軟體)
+
+- NMA:**MetaInsight**(網頁版,免安裝)。限制:v2.0 只做 binary/continuous,**不能做 meta-regression、NMA-DTA、hazard ratio、inconsistency model**。
+- Meta-regression(Track B 國防經濟必需):**R 的 `metafor` / `meta` 套件**(免費),補上 MetaInsight 做不到的部分。
+- 文獻管理:Zotero。篩選:Rayyan。皆免費。
+
+### 今年(2026)投稿目標:台灣無人機 review
+
+- **首選:Defense & Security Analysis(T&F,cdan20)**。範圍明列 comparative defense policies、defense economics、defense management,涵蓋本題;Scopus 收錄,訂閱路線免費,且歡迎投稿前先寄 proposal 給編輯。https://www.tandfonline.com/journals/cdan20/about-this-journal
+- **備選:Issues & Studies(政大,SSCI)**,台海題材最貼,費用低或免,但季刊較慢。
+- 「今年投稿」可達成(取決於稿件完成度,非期刊);「今年被接受」偏樂觀(審查 3–9 個月)。
+- 從現有中文報導變成可投 review 要補:英文化、分析框架/論點、學術文獻對話、資料來源與方法說明、正式引註。
+
+### 修訂後時間軸
+
+- 2026:Track A 台灣 review 投 Defense & Security Analysis。
+- 2026–2027:NMA 操作員訓練先做可行性盤點,成立則動手、明年投;不成立則火力集中 Track B 國防經濟 meta-regression(R `metafor`)。
+
+---
+
 ## 待你確認/補充
 
 - 是否有合作者(統合分析雙人篩選會更穩,也利於掛名與分工)?
