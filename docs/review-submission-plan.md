@@ -151,9 +151,14 @@ systematic review 需要一批「同儕審查過、可被篩選納入排除」�
 NMA 成立的硬條件:三個以上處置,透過共同對照連成「連通網絡」,量同一個結果、尺度可比,最好來自 RCT 或對照研究。沒有連通網絡硬套 NMA,會因方法不當被退。「第一篇」只有在方法站得住時才算履歷。
 
 - **C-UAS 偵測(雷達/RF/聲學/光電):不可行**。公開資料是工程測試與白皮書,非連通對照網絡;且偵測準確度屬診斷準確度,要用 NMA-DTA,**MetaInsight 不支援**(需 MetaDTA / MetaBayesDTA)。放棄。
-- **無人機操作員訓練(模擬器 vs VR vs 傳統):唯一候選,MetaInsight 跑得動**。已有一批實驗研究,結果變數為飛行績效(連續),屬介入型 NMA,MetaInsight 直接能算,且目前無人做過(會是第一篇)。**前提:需先做可行性盤點,確認有約 10 篇以上、結果可比、能連成網絡的研究。**
-  - 可行性參考文獻:Use of Simulation for Pre-Training of Drone Pilots, *Drones* 8(11):640. https://www.mdpi.com/2504-446X/8/11/640
-  - 下一步:跑一輪 scoping,計算可納入研究數;成立才啟動。
+- **無人機操作員訓練(模擬器 vs VR vs 傳統):候選,但初步盤點顯示證據量目前撐不起 NMA**。
+  - 盤點結果(2026-06,開放來源初掃):多為單臂試驗(訓練前後測,樣本常 10 餘人)、結果變數不一(飛行位移 / NASA-TLX / 完成時間與錯誤 / 腦波)、任務不一(巡檢 / 競速 / 一般飛行)。頭對頭的對照研究太少,連通網絡湊不起來;成熟的 VR vs 傳統 RCT 集中在外科,不在無人機。
+  - 結論:現階段硬做 NMA 會因方法不當被退。**改採無悔走法**,先做這題的 SR,讓可納入研究數決定終點。
+    - 若可比對照研究 ≥ 約 10 篇且能連網 → 升級 NMA(仍是第一篇)。
+    - 若不足(目前研判)→ 收成「無人機操作員訓練法效果」系統性回顧,或對「模擬器/VR vs 對照」單一比較做 pairwise meta-analysis(R `metafor`)。
+  - 參考文獻:Use of Simulation for Pre-Training of Drone Pilots, *Drones* 8(11):640 (https://www.mdpi.com/2504-446X/8/11/640);Quantitative Assessment of Drone Pilot Performance, *Drones* 8(9):482;Workload perception in drone flight training simulators, *Computers in Human Behavior* (2016)。
+  - 註:開放來源無法取代 Scopus/WoS/IEEE Xplore 的正式檢索,確切研究數需登入資料庫盤點。
+  - 下一步:啟動 SR 檢索(SR 本就是 NMA 第一步),用納入數決定升不升級 NMA。
 
 ### 工具(全部免費,無需再購軟體)
 
