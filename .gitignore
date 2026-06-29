@@ -58,11 +58,5 @@ next-env.d.ts
 /shown_papers.md
 /*.md
 
-# 論文投稿專案 — 本機保存,不進公開 repo(含 docs 的三份規劃文件)
-/論文投稿/
-/docs/review-submission-plan.md
-/docs/sr-protocol-drone-training.md
-/docs/taiwan-review-proposal.md
-
 # Claude Code internal tooling
 /.claude/
