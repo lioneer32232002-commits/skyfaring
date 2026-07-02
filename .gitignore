@@ -58,5 +58,15 @@ next-env.d.ts
 /shown_papers.md
 /*.md
 
+# dashboard/article pipelines & drafts — local only, only public/ output is committed
+/drafts/
+/reviews/
+/maritime-reports/
+/warfare-papers/
+/drone-index.csv
+/scripts/drone-index/
+/scripts/review-dashboard/
+/*.bat
+
 # Claude Code internal tooling
 /.claude/
