@@ -162,8 +162,8 @@ export function checkPost(filePath) {
     add(errors, `slug（${data.slug}）與檔名（${base}）不一致`);
   }
 
-  // 5. date 格式
-  if (data.date && !/^\d{4}-\d{2}-\d{2}$/.test(String(data.date))) {
+  // 5. date 格式（YAML 會把未加引號的日期解析成 Date 物件，屬合法格式）
+  if (data.date && !(data.date instanceof Date) && !/^\d{4}-\d{2}-\d{2}$/.test(String(data.date))) {
     add(warnings, `date 格式建議 YYYY-MM-DD，目前是「${data.date}」`);
   }
 
