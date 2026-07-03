@@ -52,6 +52,7 @@ export interface PostMeta {
   heroAlt?: string;
   heroCredit?: string;
   heroCreditUrl?: string;
+  heroPosition?: string;
   highlight?: string;
   source?: string;
   source_url?: string;
@@ -84,6 +85,7 @@ export function getAllPostMetas(): PostMeta[] {
         heroAlt: data.heroAlt,
         heroCredit: data.heroCredit,
         heroCreditUrl: data.heroCreditUrl,
+        heroPosition: data.heroPosition,
         source: data.source,
         source_url: data.source_url,
         references: data.references ?? [],
@@ -121,6 +123,7 @@ export async function getPost(slug: string): Promise<Post> {
     heroAlt: data.heroAlt,
     heroCredit: data.heroCredit,
     heroCreditUrl: data.heroCreditUrl,
+    heroPosition: data.heroPosition,
     highlight: data.highlight,
     source: data.source,
     source_url: data.source_url,

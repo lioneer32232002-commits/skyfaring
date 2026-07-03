@@ -110,7 +110,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
             src={`${BASE_PATH}${post.heroImage}`}
             alt={post.heroAlt ?? post.title}
             className="w-full max-w-full object-cover"
-            style={{ maxHeight: "400px" }}
+            style={{ maxHeight: "400px", ...(post.heroPosition ? { objectPosition: post.heroPosition } : {}) }}
             loading="lazy"
           />
           {post.heroCredit && (
