@@ -38,6 +38,7 @@ export default function ArticleCard({ post }: { post: PostMeta }) {
               src={`${BASE_PATH}${post.heroImage}`}
               alt={post.heroAlt ?? post.title}
               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+              style={post.heroPosition ? { objectPosition: post.heroPosition } : undefined}
             />
           </div>
         )}
