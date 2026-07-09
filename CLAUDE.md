@@ -172,3 +172,12 @@
 - **籃球論文**：`C:/Users/oneda/OneDrive/02_創作/14_AI TEST/skyfaring/basketball-papers/`
 
 每篇論文對應一個 `.md` 摘要檔（籃球論文另附 PDF），檔名格式：`YYYY-MM-DD-識別碼.md`
+
+---
+
+## 路由：派工／判斷 → 先讀哪份
+
+- 要不要派 subagent、模型怎麼選、怎麼驗收、本環境的 hook／部署限制 → `docs/agents/dispatch.md`
+- 派工 prompt 直接套模板 → `docs/agents/templates.md`
+- 何時算完成／何時問使用者／何時換路／何時升級模型 → `docs/agents/judgment.md`
+- 要改這幾份制度檔本身（含本檔）→ `docs/agents/maintenance.md`
