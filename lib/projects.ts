@@ -82,6 +82,15 @@ export const PROJECTS: Project[] = [
     group: "data",
   },
   {
+    title: "Shot Ledger 投籃紀錄",
+    description: "單人投籃練習紀錄工具，六關挑戰階梯、命中率趨勢與球場熱區，資料存本機可匯出。",
+    url: "https://shot-ledger.pages.dev/",
+    icon: "basketball",
+    external: true,
+    introSlug: "shot-ledger",
+    group: "data",
+  },
+  {
     title: "飛行線上",
     description: "飛行養成學習系統，飛行訓練與航空教育資源。",
     url: "https://flight-deck-1sr.pages.dev/",
