@@ -84,7 +84,7 @@ export const PROJECTS: Project[] = [
   {
     title: "Shot Ledger 投籃紀錄",
     description: "單人投籃練習紀錄工具，六關挑戰階梯、命中率趨勢與球場熱區，資料存本機可匯出。",
-    url: "https://shot-ledger.pages.dev/",
+    url: "https://shot-ledger.pages.dev/#/home",
     icon: "basketball",
     external: true,
     introSlug: "shot-ledger",

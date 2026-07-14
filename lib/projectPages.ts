@@ -54,7 +54,7 @@ export const PROJECT_PAGES: ProjectPage[] = [
   {
     slug: "shot-ledger",
     title: "Shot Ledger 投籃紀錄",
-    url: "https://shot-ledger.pages.dev/",
+    url: "https://shot-ledger.pages.dev/#/home",
     icon: "🏀",
     tagline: "把每一節投籃練習記成數據，用挑戰階梯與命中率趨勢檢視自己的手感",
     intro: [
