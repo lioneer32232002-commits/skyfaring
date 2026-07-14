@@ -53,6 +53,27 @@ canvas{max-width:100%}
 .dr-off{color:#dbe7ff}
 .distnote{margin-top:13px;font-size:12px;color:var(--mut);line-height:1.65}
 @media(max-width:520px){.drow{grid-template-columns:48px 1fr;grid-template-rows:auto auto;row-gap:3px}.dr-num{grid-column:2;grid-row:2;text-align:left}}
+.topbuyer{border:1px solid rgba(245,196,81,.35);background:rgba(245,196,81,.06);border-radius:3px;padding:12px 14px;margin-bottom:14px}
+.tb-tag{font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;color:var(--gold);text-transform:uppercase}
+.tb-main{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-top:6px}
+.tb-co{font-size:17px;font-weight:700;color:#f5d98a}
+.tb-v{font-family:var(--mono);font-size:19px;font-weight:600;color:#e8eef8;font-variant-numeric:tabular-nums}
+.tb-u{font-family:var(--mono);font-size:13px;color:var(--mut)}
+.tb-note{color:#cdd9ec;font-size:12.5px;margin-top:5px}
+.upwrap{margin-bottom:16px}
+.uptitle{font-family:var(--mono);font-size:11px;letter-spacing:.1em;color:var(--mut);text-transform:uppercase;margin-bottom:9px}
+.upwrap .drow{grid-template-columns:190px 1fr auto}
+.dr-lbl.wide{font-size:12px;white-space:normal;line-height:1.35}
+@media(max-width:680px){.upwrap .drow{grid-template-columns:1fr;row-gap:4px}.upwrap .dr-num{grid-area:auto;text-align:left}}
+.dc{color:#e8eef8;font-weight:500;white-space:nowrap}
+.dp{color:var(--dim);font-size:11px;font-family:var(--mono);font-weight:400;margin-top:2px}
+.df{color:#dbe7ff;font-family:var(--mono);font-size:12.5px;white-space:nowrap}
+.dbasis{display:inline-block;margin-top:5px;font-size:10.5px;border-radius:3px;padding:1px 6px;font-family:var(--mono)}
+.b-val{color:#f5d98a;border:1px solid rgba(245,196,81,.35)}
+.b-unit{color:#7fd1ff;border:1px solid rgba(56,189,248,.35)}
+.b-est{color:var(--mut);border:1px solid var(--line)}
+.dn{color:#cdd9ec;font-size:12.5px}
+@media(max-width:680px){.dr-lbl.wide{font-size:11.5px}}
 .tablewrap{width:100%;overflow-x:auto}
 table{width:100%;border-collapse:collapse;font-size:13px}
 .tablewrap.wide table{min-width:920px}
@@ -92,7 +113,7 @@ a{color:#6ea8fe;text-decoration:none} a:hover{text-decoration:underline}
 .foot a{color:#7fd1ff}
 </style></head>
 <body><div class="wrap">
-  <div class="sys"><span class="live">追蹤中 · LIVE</span><span class="sep">//</span><span>INTEL · TAIWAN DRONE EXPORT</span><span class="sep">//</span><span>2024 &#8594; 2026 Q2</span><span class="sep">//</span><span>季更 2026 Q2</span><span class="sep">//</span><span>GEN 2026-06-26</span></div>
+  <div class="sys"><span class="live">追蹤中 · LIVE</span><span class="sep">//</span><span>INTEL · TAIWAN DRONE EXPORT</span><span class="sep">//</span><span>2024 &#8594; 2026 Q2</span><span class="sep">//</span><span>季更 2026 Q2</span><span class="sep">//</span><span>GEN 2026-07-14</span></div>
   <h1><span class="nb">台灣無人機產業與出口</span> <span class="nb">季度追蹤</span></h1>
   <div class="sub"><span class="nb">廠商區域分布</span>　／　<span class="nb">公開財報</span>　／　<span class="nb">出口與認證</span>　<span class="nb">每季更新</span></div>
   <div class="kpis">
@@ -111,6 +132,14 @@ a{color:#6ea8fe;text-decoration:none} a:hover{text-decoration:underline}
           <p><b>金額口徑</b>：金額口徑：2025 年 1–10 月出口額 5,475 萬美元，較 2024 全年 441 萬增 11.4 倍（財政部，The Diplomat）。</p>
           <p class="warn">架數不等於金額：按進口金額台灣在波蘭排第二、捷克排第四，前面都還有中國。數量見長，非單價霸主。</p>
         </div>
+      </div>
+  
+      <div class="card"><h3>出口目的地 <span class="hint">誰在買 · 資料截至 2026-06</span></h3>
+        <div class='topbuyer'><div class='tb-tag'>單月最大買家 · 2026-06</div><div class='tb-main'><span class='tb-co'>沙烏地阿拉伯</span><span class='tb-v'>4,720 萬美元</span><span class='tb-u'>3,260 架</span></div><div class='tb-note'>2023 年 6 月開始統計以來，單一國家單月最高採購金額。</div></div>
+        <div class='upwrap'><div class='uptitle'>平均單價</div><div class='distwrap'><div class='drow'><div class='dr-lbl wide'>沙烏地阿拉伯（2026-06）</div><div class='dr-barwrap'><div class='dr-bar' style='width:100%'></div></div><div class='dr-num'><span class='dr-off'>14,472 美元／架</span></div></div><div class='drow'><div class='dr-lbl wide'>其他市場同類型平均</div><div class='dr-barwrap'><div class='dr-bar' style='width:10%'></div></div><div class='dr-num'><span class='dr-off'>1,464 美元／架</span></div></div></div><div class='distnote'>單價差約 10 倍。沙國採購機型平均 7 到 15 公斤；用途官方未說明，國防院蘇紫雲研判最可能用於偵察。架數與單價出自彭博整理的財政部資料（ETtoday 轉引）。 <a class="read" href="https://finance.ettoday.net/news/3200817" target="_blank" rel="noopener">來源 ↗</a></div></div>
+        <div class="tablewrap"><table><thead><tr><th>國家</th><th>數字</th><th>備註</th><th>來源</th></tr></thead>
+        <tbody><tr><td class='dc'>沙烏地阿拉伯<div class='dp'>2026 年 6 月</div></td><td class='df'>4,720 萬美元 · 3,260 架<div class='dbasis b-val'>金額（海關）</div></td><td class='dn'>以單月金額竄升為最大買家，一國一月就超過 2025 全年出口總額（9,340 萬美元）的一半。海關記載的出口目的地是沙烏地，最終流向與用途未見說明。</td><td class='srcs'><a class="src" href="https://finance.ettoday.net/news/3200817" target="_blank" rel="noopener">來源 ↗</a></td></tr><tr><td class='dc'>捷克<div class='dp'>2025 全年 · 2026 年初</div></td><td class='df'>架數居冠<div class='dbasis b-unit'>架數（DSET）</div></td><td class='dn'>轉運烏克蘭的主要通道之一。若改按進口金額排，台灣在捷克的來源國排第四，前面還有中國。</td><td class='srcs'><a class="src" href="https://dset.tw/en/research/the-invisible-drone-wall-taiwans-quiet-support-for-a-china-free-european-drone-supply-chain/" target="_blank" rel="noopener">來源 ↗</a></td></tr><tr><td class='dc'>波蘭<div class='dp'>累計至 2025 年 10 月</div></td><td class='df'>架數居冠<div class='dbasis b-unit'>架數（DSET）</div></td><td class='dn'>DronesVision 的 Revolver 860 經波蘭轉售流入烏克蘭實戰（有報導稱約 800 架）。按進口金額排台灣在波蘭第二。</td><td class='srcs'><a class="src" href="https://www.armyrecognition.com/focus-analysis-conflicts/army/conflicts-in-the-world/russia-ukraine-war-2022/ukraine-army-using-taiwan-made-dronesvision-revolver-860-combat-drones" target="_blank" rel="noopener">來源 ↗</a></td></tr><tr><td class='dc'>美國<div class='dp'>2025－2026</div></td><td class='df'>中介與認證通道<div class='dbasis b-est'>訪談研判</div></td><td class='dn'>台烏無邦交，合作繞道波蘭、捷克與美國中介。雷虎 Overkill 2025 年 9 月入列美國國防部 Blue UAS 清單，打通美軍與北約供應鏈。</td><td class='srcs'><a class="src" href="https://www.cna.com.tw/news/afe/202509220039.aspx" target="_blank" rel="noopener">來源 ↗</a></td></tr><tr><td class='dc'>烏克蘭<div class='dp'>2024－2026</div></td><td class='df'>最終流向（非直接出口）<div class='dbasis b-est'>訪談研判</div></td><td class='dn'>輸往波蘭、捷克的整機絕大多數最後轉往烏克蘭，多由民間與慈善組織購買後捐贈。DSET 自陳無法從公開資訊確認確切數量。</td><td class='srcs'><a class="src" href="https://dset.tw/en/research/the-invisible-drone-wall-taiwans-quiet-support-for-a-china-free-european-drone-supply-chain/" target="_blank" rel="noopener">來源 ↗</a></td></tr></tbody></table></div>
+        <div class="exnote"><p class="warn">兩套口徑不能混讀：架數多來自 DSET 整理的對歐整機，金額來自財政部海關。歐洲線是低單價、大批量，經第三國轉往烏克蘭；沙烏地線是高單價、單月金額居冠，用途未明。另外，「台灣的最大出口目的地」與「台灣在該國進口來源國中的名次」是兩件事：捷克、波蘭是台灣出口去向的前段，但按進口金額，台灣在波蘭只排第二、捷克第四，前面都還有中國。</p><p><a class="read" href="https://www.cna.com.tw/news/afe/202607133004.aspx" target="_blank" rel="noopener">財政部海關（中央社；架數與單價經彭博整理、ETtoday 轉引） ↗</a></p></div>
       </div>
   <div class="card"><h3>全台廠商分布 <span class="hint">經濟部統計 vs 本站收錄</span></h3><div class='distwrap'><div class='drow'><div class='dr-lbl'>北部</div><div class='dr-barwrap'><div class='dr-bar' style='width:100%'></div></div><div class='dr-num'><span class='dr-rec'>收錄 7</span><span class='dr-off'>全台約 164 家</span></div></div><div class='drow'><div class='dr-lbl'>中部</div><div class='dr-barwrap'><div class='dr-bar' style='width:35%'></div></div><div class='dr-num'><span class='dr-rec'>收錄 3</span><span class='dr-off'>全台約 57 家</span></div></div><div class='drow'><div class='dr-lbl'>南部</div><div class='dr-barwrap'><div class='dr-bar' style='width:27%'></div></div><div class='dr-num'><span class='dr-rec'>收錄 2</span><span class='dr-off'>全台約 45 家</span></div></div><div class='drow'><div class='dr-lbl'>東部</div><div class='dr-barwrap'><div class='dr-bar' style='width:3%'></div></div><div class='dr-num'><span class='dr-rec'>收錄 0</span><span class='dr-off'>全台約 1 家</span></div></div></div><div class='distnote'>經濟部統計全台無人機相關業者約 267 家（2026-06，含零組件上下游）；本表收錄其中有公開資訊的重點廠商。<a class="read" href="https://udn.com/news/story/7238/9586289" target="_blank" rel="noopener">經濟部 ↗</a></div></div>
   <div class='card'><h3>出口流向 <span class='hint'>DSET 訪談研判，非海關證實</span></h3><p class='flow'>DSET 訪談五十多家台烏歐廠商與組織後研判：輸往波蘭、捷克的整機絕大多數最後轉往烏克蘭，多由民間與慈善組織購買後捐贈。這是訪談得出的研判、非海關證實的最終流向。國別排名隨期間換位，累積到 2025 年 10 月波蘭領先，2025 全年與 2026 年初換成捷克在前。</p></div>
