@@ -55,7 +55,7 @@ export default function ProjectCard({
         <span className={`inline-flex shrink-0 ${accent.iconText}`}>
           <ProjectIcon name={project.icon} className="w-[18px] h-[18px]" />
         </span>
-        <span className="text-sm font-medium text-slate-800 dark:text-slate-100 group-hover:text-sky-600 dark:group-hover:text-sky-400 transition-colors">
+        <span className="text-sm font-medium text-slate-800 dark:text-slate-100 group-hover:text-sky-600 dark:group-hover:text-sky-400 transition-colors text-balance">
           {project.title}
           {external && <span aria-hidden className="ml-0.5 text-slate-400 text-xs">↗</span>}
         </span>

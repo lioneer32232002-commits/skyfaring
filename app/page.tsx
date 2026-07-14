@@ -89,12 +89,12 @@ export default function HomePage() {
           <h2 className="text-xl font-bold text-slate-700 dark:text-slate-200 mb-5 flex items-center gap-2">
             <UiIcon name="compass" className="w-5 h-5 shrink-0" /> 依主題瀏覽
           </h2>
-          <div className="flex flex-wrap gap-3">
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
             {TOPIC_GROUPS.map((group) => (
               <a
                 key={group.slug}
                 href={`${BASE_PATH}/topics/${group.slug}/`}
-                className="inline-flex items-center gap-2 px-4 py-2 bg-white dark:bg-slate-800 rounded-full border border-slate-100 dark:border-slate-700 text-sm text-slate-600 dark:text-slate-300 shadow-sm hover:shadow-md hover:text-sky-600 dark:hover:text-sky-400 transition-all"
+                className="flex items-center gap-2 px-4 py-2 bg-white dark:bg-slate-800 rounded-full border border-slate-100 dark:border-slate-700 text-sm text-slate-600 dark:text-slate-300 shadow-sm hover:shadow-md hover:text-sky-600 dark:hover:text-sky-400 transition-all"
               >
                 <TopicIcon name={group.icon} className="w-4 h-4 shrink-0" />
                 {group.label}
