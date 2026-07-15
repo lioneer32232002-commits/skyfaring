@@ -46,18 +46,18 @@ export default function ProjectCard({
 
   const className =
     variant === "compact"
-      ? "group flex items-center gap-2 p-3 bg-white dark:bg-slate-800 rounded-xl border border-slate-100 dark:border-slate-700 shadow-sm hover:shadow-md transition-shadow"
+      ? "group flex items-center gap-1.5 px-2.5 py-3 bg-white dark:bg-slate-800 rounded-xl border border-slate-100 dark:border-slate-700 shadow-sm hover:shadow-md transition-shadow"
       : "group flex gap-3 p-4 bg-white dark:bg-slate-800 rounded-2xl border border-slate-100 dark:border-slate-700 shadow-sm hover:shadow-md transition-shadow";
 
   const inner =
     variant === "compact" ? (
       <>
         <span className={`inline-flex shrink-0 ${accent.iconText}`}>
-          <ProjectIcon name={project.icon} className="w-[18px] h-[18px]" />
+          <ProjectIcon name={project.icon} className="w-4 h-4" />
         </span>
-        <span className="text-sm font-medium text-slate-800 dark:text-slate-100 group-hover:text-sky-600 dark:group-hover:text-sky-400 transition-colors text-balance">
+        <span className="min-w-0 truncate text-xs font-medium text-slate-800 dark:text-slate-100 group-hover:text-sky-600 dark:group-hover:text-sky-400 transition-colors">
           {project.title}
-          {external && <span aria-hidden className="ml-0.5 text-slate-400 text-xs">↗</span>}
+          {external && <span aria-hidden className="ml-0.5 text-slate-400 text-[10px]">↗</span>}
         </span>
       </>
     ) : (

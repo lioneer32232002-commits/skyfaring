@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { PROJECT_PAGES, getProjectPageBySlug } from "@/lib/projectPages";
 import { getGroupBySlug } from "@/lib/taxonomy";
 import TopicIcon from "@/components/TopicIcon";
+import UiIcon from "@/components/UiIcon";
 
 const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://skyfaring.pages.dev";
@@ -111,10 +112,13 @@ export default async function ProjectPage({
         href={project.url}
         target="_blank"
         rel="noopener noreferrer"
-        className="inline-flex items-center gap-2 px-6 py-3 bg-sky-600 hover:bg-sky-500 text-white font-semibold rounded-xl shadow-sm hover:shadow-md transition-all mb-12"
+        className="group inline-flex items-center gap-2.5 px-6 py-3 mb-12 rounded-xl border border-sky-300 dark:border-sky-500/40 text-sky-700 dark:text-sky-300 font-semibold hover:bg-sky-50 dark:hover:bg-sky-500/10 hover:border-sky-400 dark:hover:border-sky-500/60 transition-colors"
       >
         {project.launchCta}
-        <span aria-hidden>↗</span>
+        <UiIcon
+          name="arrow-up-right"
+          className="w-[18px] h-[18px] transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+        />
       </a>
 
       {/* Intro */}
@@ -167,10 +171,13 @@ export default async function ProjectPage({
           href={project.url}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 px-6 py-3 bg-sky-600 hover:bg-sky-500 text-white font-semibold rounded-xl shadow-sm hover:shadow-md transition-all"
+          className="group inline-flex items-center gap-2.5 px-6 py-3 rounded-xl border border-sky-300 dark:border-sky-500/40 bg-white dark:bg-transparent text-sky-700 dark:text-sky-300 font-semibold hover:bg-sky-50 dark:hover:bg-sky-500/10 hover:border-sky-400 dark:hover:border-sky-500/60 transition-colors"
         >
           {project.launchCta}
-          <span aria-hidden>↗</span>
+          <UiIcon
+            name="arrow-up-right"
+            className="w-[18px] h-[18px] transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+          />
         </a>
       </div>
 
