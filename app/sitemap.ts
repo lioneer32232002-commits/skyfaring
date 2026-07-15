@@ -74,6 +74,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.8,
     },
+    {
+      url: `${SITE_URL}/about/`,
+      lastModified: new Date().toISOString(),
+      changeFrequency: "monthly",
+      priority: 0.6,
+    },
     ...topicEntries,
     ...projectEntries,
     ...postEntries,

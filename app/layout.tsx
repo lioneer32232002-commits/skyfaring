@@ -84,6 +84,7 @@ export default function RootLayout({
               <a href={`${BASE_PATH}/`} className="hover:text-sky-600 dark:hover:text-sky-400 transition-colors">首頁</a>
               <a href={`${BASE_PATH}/blog/`} className="hover:text-sky-600 dark:hover:text-sky-400 transition-colors">文章</a>
               <a href={`${BASE_PATH}/projects/`} className="hover:text-sky-600 dark:hover:text-sky-400 transition-colors">專案</a>
+              <a href={`${BASE_PATH}/about/`} className="hover:text-sky-600 dark:hover:text-sky-400 transition-colors">關於我</a>
             </nav>
           </div>
         </header>
