@@ -60,6 +60,20 @@ const AI_TIC_SUBSTRINGS = [
   "不如說",
   "事實上",
   "進行一個",
+  "擺在一起看",
+];
+
+// 中國用語（台灣慣用語對照，除非引文原文如此）
+const CN_TERM_PATTERNS = [
+  { re: /幹活|活兒|的活(?=[。，、；：！？\s」』）])/, label: "「活」當「工作」講（幹活／練的活／活兒），改「事、工作、本事」" },
+  { re: /視頻/, label: "「視頻」，改「影片」" },
+  { re: /信息/, label: "「信息」，改「資訊」" },
+  { re: /質量(?!守恆|數)/, label: "「質量」（指品質時），改「品質」" },
+  { re: /軟件|硬件/, label: "「軟件／硬件」，改「軟體／硬體」" },
+  { re: /網絡/, label: "「網絡」，改「網路」" },
+  { re: /水平(?=[偏很不高低]|[。，、；：！？\s」』）])/, label: "「水平」（指程度時），改「水準」" },
+  { re: /立馬/, label: "「立馬」，改「立刻」" },
+  { re: /靠譜/, label: "「靠譜」，改「可靠」" },
 ];
 
 // AI 腔對比句式（正則）
@@ -77,6 +91,8 @@ const AI_TIC_PATTERNS = [
   { re: /真正的問題/, label: "「真正的問題是……」句式" },
   { re: /隨著[^，。\n]{1,16}的發展/, label: "「隨著……的發展」開場套語" },
   { re: /在當今[^，。\n]{0,8}的?時代/, label: "「在當今……的時代」開場套語" },
+  { re: /這個數字(裡|背後|的意思|意味)/, label: "「這個數字」回指式推進（數字出現當下就解讀完）" },
+  { re: /欄位/, label: "「欄位」疑似當比喻（只能指真實表格或資料庫的欄位）" },
 ];
 
 const CJK = "一-鿿㐀-䶿";
@@ -264,6 +280,11 @@ export function checkPost(filePath) {
   }
   for (const { re, label } of AI_TIC_PATTERNS) {
     if (re.test(haystack)) add(warnings, `疑似 AI 腔：${label}（除非來源原文真的這樣用）`);
+  }
+
+  // 9g. 中國用語（台灣慣用語對照）
+  for (const { re, label } of CN_TERM_PATTERNS) {
+    if (re.test(haystack)) add(warnings, `疑似中國用語：${label}（除非引文原文如此）`);
   }
 
   return { errors, warnings };
