@@ -14,7 +14,7 @@ heroImage: "/images/129th-rescue-wing-pararescue-pacific-fisherman-save-canopy-o
 heroAlt: "一名美國空軍特種作戰人員在跳傘後降落於開闊海面，圖為 2022 年英格蘭東岸的開放海域人員救援訓練"
 heroCredit: "U.S. Air Force photo by Staff Sgt. Kevin Long / Wikimedia Commons / Public domain"
 heroCreditUrl: "https://commons.wikimedia.org/wiki/File:352d_SOW_conduct_open_ocean_rescue_training_(7387140).jpg"
-highlight: "我們能拿出來的東西有兩樣：C-130 的航程，還有傘降救援員的醫療能力。"
+highlight: "我們靠的就是兩樣東西：C-130 的航程，還有傘降救援員的醫療能力。"
 source: "129th Rescue Wing saves Mexican fisherman at sea, Staff Sgt. Serena Smith, 129th Rescue Wing / DVIDS, 2026-07-10."
 source_url: "https://www.dvidshub.net/news/569734/129th-rescue-wing-saves-mexican-fisherman-sea"
 references:
@@ -48,9 +48,7 @@ Azteca 5 靠自己開到索科羅島，要 45 個小時。
 
 第 129 救援聯隊駐在加州山景城的莫菲特空中國民兵基地，做長程海上搜救做了 50 多年。自 1977 年起累計的救援次數，一筆一筆往下記。
 
-它拿得出兩樣東西。
-
-「我們能拿出來的東西有兩樣，」Franklin 說，「C-130 的航程，還有傘降救援員的醫療能力。」
+「我們靠的就是兩樣東西，」Franklin 說，「C-130 的航程，還有傘降救援員的醫療能力。」
 
 HC-130J 空戰之王二型是美國空軍現役唯一一種專職人員救援的固定翼機，航程超過 4,000 英里，機艙載得動人，也載得動器材。空軍的空中救援協調中心發出啟動令。
 
@@ -86,10 +84,10 @@ Eisberg 提到了這趟任務的另一層用途。
 
 「等到他們得部署出去、在戰鬥環境裡做同樣的事的時候，有過這種經驗會讓每個人都更好。」
 
-第 129 聯隊的任務寫的是全球戰鬥搜救，練的是戰時的活。Azteca 5 這一趟，跟一次在敵境把飛行員撈出來的任務，用的是同一批人、同一架飛機、同一套程序：算座標、算天氣、算油量、傘投、落水、上船、穩住傷患、交接。差別在海面上沒有人朝他們開火。
+第 129 聯隊的任務寫的是全球戰鬥搜救，練的是戰時要做的事。Azteca 5 這一趟，跟一次在敵境把飛行員撈出來的任務，用的是同一批人、同一架飛機、同一套程序：算座標、算天氣、算油量、傘投、落水、上船、穩住傷患、交接。差別在海面上沒有人朝他們開火。
 
 Eisberg 還提到索科羅島上的墨西哥官員。加州國民兵與墨西哥國防部之間有一個州夥伴計畫，這趟任務讓島上的人看到這支部隊怎麼運作。他說對方很客氣，也很感激，這讓那份夥伴關係更穩固。
 
 這是第 1,190 次。
 
-這個數字裡絕大多數是這種任務：漁民、貨輪上的水手、翻覆的船。這支部隊記錄自己的方式，是數救回來的人。至於那個人為什麼會在那裡，不在計數的欄位裡。
+絕大多數的救援都是這一類：漁民、貨輪上的水手、翻覆的船。這支部隊記錄自己的方式，是數救回來的人。人是誰、為什麼在那片海上，他們不問。
