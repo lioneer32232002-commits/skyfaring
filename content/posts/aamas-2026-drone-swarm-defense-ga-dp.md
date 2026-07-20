@@ -4,7 +4,7 @@ author: "AI 初稿 / skyfaring 編輯校正"
 date: "2026-05-14"
 slug: "aamas-2026-drone-swarm-defense-ga-dp"
 tags:
-  - 多智能體
+  - 多代理人
   - 無人機
   - 演化演算法
   - 人工智慧
@@ -16,7 +16,7 @@ heroCredit: "Ian Usher"
 heroCreditUrl: "https://unsplash.com/photos/black-drone-on-air-over-cloudy-sky-at-daytime-JPAfSd_acI8"
 source: "Douglas, G., Franklin, S., Szabo, C., & Guo, M. (2026). Building Large-Scale Drone Defenses from Small-Team Strategies. Proc. of the 25th International Conference on Autonomous Agents and Multiagent Systems (AAMAS 2026)."
 source_url: "https://arxiv.org/abs/2602.12502"
-category: 多智能體
+category: 多代理人
 ---
 
 想像一個場景：一片開放地帶，角落有一個需要守護的重要設施。三十架攻擊無人機從不同方向出發，路徑帶著不規則的弧形，彼此互相協調。你有四十五架防禦無人機可以調動。
@@ -29,9 +29,9 @@ category: 多智能體
 
 先認識這個會議。
 
-AAMAS（International Conference on Autonomous Agents and Multiagent Systems，自主智能體與多智能體系統國際會議）是多智能體 AI 領域最頂尖的學術會議，每年舉辦一屆。今年是第 25 屆，五月下旬在賽普勒斯的帕福斯（Paphos）舉行。
+AAMAS（International Conference on Autonomous Agents and Multiagent Systems，自主代理人與多代理人系統國際會議）是多代理人 AI 領域最頂尖的學術會議，每年舉辦一屆。今年是第 25 屆，五月下旬在賽普勒斯的帕福斯（Paphos）舉行。
 
-這個會議的研究範圍很廣，機器人群體協調、分散式人工智慧、賽局理論、自動協商、多智能體強化學習，都是 AAMAS 的核心主題。簡單說，凡是「多個 AI 如何在一起工作」的問題，大多會在這裡出現。
+這個會議的研究範圍很廣，機器人群體協調、分散式人工智慧、賽局理論、自動協商、多代理人強化學習，都是 AAMAS 的核心主題。簡單說，凡是「多個 AI 如何在一起工作」的問題，大多會在這裡出現。
 
 今年入選的這篇論文，主題正好是最貼近現實應用的那一種：如何用 AI 協調大規模無人機防禦群。
 
@@ -43,7 +43,7 @@ AAMAS（International Conference on Autonomous Agents and Multiagent Systems，�
 
 即使只有十架防禦無人機，可能的配置方式已經多得無法窮舉。隨著數量增加，暴力搜索徹底失效。
 
-強化學習（Reinforcement Learning，RL）看起來是個解法，但有幾個根本限制。訓練需要龐大的模擬資料量，訓練時環境中的其他智能體也一直在改變策略（這叫做非穩態問題），而且訓練出來的模型往往只在特定規模下有效，換了場景尺度就得重來。現有文獻裡，大多數研究測試的規模不超過 10 對 10；這篇論文的目標是 30 對 45，差距相當大。
+強化學習（Reinforcement Learning，RL）看起來是個解法，但有幾個根本限制。訓練需要龐大的模擬資料量，訓練時環境中的其他代理人也一直在改變策略（這叫做非穩態問題），而且訓練出來的模型往往只在特定規模下有效，換了場景尺度就得重來。現有文獻裡，大多數研究測試的規模不超過 10 對 10；這篇論文的目標是 30 對 45，差距相當大。
 
 ## 分解邏輯：先打小仗，再組大軍。
 
@@ -101,9 +101,9 @@ AAMAS（International Conference on Autonomous Agents and Multiagent Systems，�
 
 ## 這篇論文說明了什麼
 
-這篇論文的貢獻不只在技術數字上。它示範了一種應對大規模多智能體問題的思維：與其讓 AI 直接面對無法處理的複雜度，不如先在可控的小規模下學習有用的結構，再用數學工具把這個結構擴張到更大的場景。
+這篇論文的貢獻不只在技術數字上。它示範了一種應對大規模多代理人問題的思維：與其讓 AI 直接面對無法處理的複雜度，不如先在可控的小規模下學習有用的結構，再用數學工具把這個結構擴張到更大的場景。
 
-這個邏輯有先例，模組化演化、動態規劃在多智能體研究裡都出現過。這篇論文把它們整合進一個完整的管線，並且在規模上做到了前人沒到達過的地方：30 對 45，穩定運行，不需要 GPU 上的神經網路推理。
+這個邏輯有先例，模組化演化、動態規劃在多代理人研究裡都出現過。這篇論文把它們整合進一個完整的管線，並且在規模上做到了前人沒到達過的地方：30 對 45，穩定運行，不需要 GPU 上的神經網路推理。
 
 限制也同樣真實。目前的模型假設完全可觀測（每架無人機知道所有對手的位置），攻擊者的路徑雖然不規則但也不會學習反制。真實戰場的複雜度遠超這些條件。
 

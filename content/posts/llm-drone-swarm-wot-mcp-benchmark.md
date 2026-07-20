@@ -7,7 +7,7 @@ tags:
   - 無人機
   - 大型語言模型
   - 人工智慧
-  - 多智能體
+  - 多代理人
 excerpt: "博洛尼亞大學的研究讓六款語言模型指揮十架無人機執行真實任務，GLM 拿下最高完成率，GPT 常常忘記降落，而 token 消耗量和任務完成率之間，幾乎沒有關係。"
 highlight: "token 消耗量和任務完成率之間，沒有明顯的相關性。話說得多，不代表事情做得好。在一個需要持續行動的任務中，冗長的推理可能只是在原地打轉。"
 heroImage: "/images/llm-drone-swarm-wot-mcp-lightshow.jpg"

@@ -1,5 +1,5 @@
 ---
-title: "真正的問題不是中國造了幾艘軍艦，而是能把什麼開上船。"
+title: "中國的軍艦夠多了，缺的一直是能開上船的陸軍。"
 author: "AI 初稿 / skyfaring 編輯校正"
 date: "2026-06-25"
 slug: "pla-navy-well-deck-joint-ground-forces"

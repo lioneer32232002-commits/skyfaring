@@ -1,5 +1,5 @@
 ---
-title: "四百萬架無人機，改寫的不是戰術，是戰爭的算術。"
+title: "四百萬架無人機，把精準打擊變成消耗品。"
 author: "AI 初稿 / skyfaring 編輯校正"
 date: "2026-06-23"
 slug: "carnegie-rma-ukraine-warfare"
