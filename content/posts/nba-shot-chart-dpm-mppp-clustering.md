@@ -9,10 +9,10 @@ tags:
   - NBA
   - 貝氏統計
 excerpt: 延世大學的新論文用狄氏過程混合模型分析 2024–25 球季 219,527 次出手，不切格子、不預設群數，從 566 名球員的投籃圖裡長出 16 個群。三個禁區群的差別，細到只有幾記底角三分。
-heroImage: /images/dpm-mppp-nba-shot-chart-clustering-hoop.jpg
-heroAlt: 籃球穿過籃框與網子
-heroCredit: Eyasu Etsub
-heroCreditUrl: https://unsplash.com/photos/a-basketball-going-through-the-rim-of-a-basketball-hoop-w7eq-n3MDxY
+heroImage: /images/dpm-mppp-nba-shot-chart-clustering-arena.jpg
+heroAlt: 室內籃球館的球場大景，看台坐滿觀眾
+heroCredit: Markus Spiske
+heroCreditUrl: https://unsplash.com/photos/people-inside-a-basketball-gym-J_tbkGWxCH0
 highlight: 模型看到的不是球員的身高或球隊，是他每分鐘出場時間裡把出手放在球場哪些位置，以及在那些位置上進球的比例。位置標籤沒有進入模型，卻被模型還原出來，而且還原得比標籤本身更細。
 source: "Choi, M. & Jeong, S. (2026). Laplace Variational Inference for Dirichlet Process Mixtures of Marked Poisson Point Processes. arXiv:2605.09562."
 source_url: https://arxiv.org/abs/2605.09562
