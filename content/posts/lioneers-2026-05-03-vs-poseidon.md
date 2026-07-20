@@ -13,6 +13,7 @@ heroAlt: "球員扣籃"
 heroCredit: "Unsplash"
 heroCreditUrl: "https://unsplash.com/photos/1577471488278-16eec37ffcc2"
 excerpt: "攻城獅 2026-05-03 主場對上海神，102-99 勝。數據背後的故事。"
+highlight: "前三節合計 80:68，優勢差不多 12 分，結果第四節縮成 3 分險勝。比較像是抱著一個快漏氣的球跑完最後幾百公尺。"
 category: 攻城獅
 ---
 

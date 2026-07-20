@@ -7,7 +7,7 @@ tags:
   - 電腦視覺
   - 深度學習
   - 運動追蹤
-excerpt: 一篇來自泰國 VISTEC 的研究，只用一支攝影機的 2D 追蹤序列，讓神經網路還原球的 3D 軌跡。關鍵不是模型大小，而是表示方式的選擇。
+excerpt: 一篇來自泰國 VISTEC 的研究，只用一支攝影機的 2D 追蹤序列，讓神經網路還原球的 3D 軌跡。表示方式的選擇，比模型大小更關鍵。
 heroImage: /images/where-is-the-ball-tennis-trajectory.jpg
 heroAlt: 網球飛行於空中
 heroCredit: Sean Monaghan

@@ -13,6 +13,7 @@ heroAlt: "球員扣籃特寫"
 heroCredit: "Unsplash"
 heroCreditUrl: "https://unsplash.com/photos/1608245449230-4ac19066d2d0"
 excerpt: "攻城獅 2026-05-02 主場對上臺北台新戰神，96-73 勝。數據背後的故事。"
+highlight: "德魯只拿了 8 分，但抓了 10 個籃板、送出 3 次助攻，正負值是 +26。這場他打的是另一種比賽，把球放進對的人手裡，然後去搶位置。"
 category: 攻城獅
 ---
 
