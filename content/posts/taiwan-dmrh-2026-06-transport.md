@@ -2,7 +2,7 @@
 title: "美軍台灣防災手冊（六）：機場、港口與公路鐵路的救災動線"
 author: "AI 初稿 / skyfaring 編輯校正"
 date: "2026-07-21"
-slug: "taiwan-dmrh-2026-transport"
+slug: "taiwan-dmrh-2026-06-transport"
 tags:
   - 台灣
   - 災害防救
@@ -10,7 +10,7 @@ tags:
   - 交通運輸
   - 關鍵基礎設施
 excerpt: "美軍印太司令部 CFE-DM 台灣防災手冊「災害管理的重要基礎設施」一章中的交通運輸段落，也是外國救援隊真要進台灣時會用到的那一章：四座國際機場與各主要商港的跑道長度、泊位數與吞吐量，全島公路與鐵路網的里程與運量，以及台灣為接收國際救援隊而指定的五座機場、一座海港的接待與離境中心（RDC）站點，並完整重現原書表 3 的站點清單。"
-heroImage: "/images/taiwan-dmrh-2026-transport.jpg"
+heroImage: "/images/taiwan-dmrh-2026-06-transport.jpg"
 heroAlt: "高雄港第一港口空拍，貨櫃碼頭與起重機沿著岸邊排列，貨船停靠在航道兩側，後方是高雄市區與壽山"
 heroCredit: "Padai / Wikimedia Commons"
 heroCreditUrl: "https://commons.wikimedia.org/wiki/File:Aerial_view_of_Kaohsiung_Port_First_Port_and_Container_Center_(Kaohsiung_City_on_the_right).jpg"

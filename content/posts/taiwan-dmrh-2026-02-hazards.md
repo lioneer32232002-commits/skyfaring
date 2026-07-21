@@ -2,7 +2,7 @@
 title: "美軍台灣防災手冊（二）：颱風、地震與台灣近十年的重大災例"
 author: "AI 初稿 / skyfaring 編輯校正"
 date: "2026-07-21"
-slug: "taiwan-dmrh-2026-hazards"
+slug: "taiwan-dmrh-2026-02-hazards"
 tags:
   - 台灣
   - 災害防救
@@ -10,7 +10,7 @@ tags:
   - 颱風
   - 地震
 excerpt: "美軍印太司令部 CFE-DM 2026 年出版的台灣防災評估，本篇涵蓋災害概況一章：颱風、地震、洪水、山崩、乾旱、野火與海嘯七類災害的成因與統計，1999 年 921 大地震與 2009 年莫拉克風災的大規模應變紀錄，EM-DAT 資料庫 1980 至 2025 年的災害佔比，以及 2015 至 2025 年間逐一列出的重大災例，含傷亡、撤離、停電戶數與經濟損失數字。"
-heroImage: "/images/taiwan-dmrh-2026-hazards.jpg"
+heroImage: "/images/taiwan-dmrh-2026-02-hazards.jpg"
 heroAlt: "2024 年花蓮地震後向路口傾倒的十層樓天王星大樓，前方停著吊車與挖土機，一名消防人員走過封鎖的街道"
 heroCredit: "總統府 / Wikimedia Commons"
 heroCreditUrl: "https://commons.wikimedia.org/wiki/File:Rescue_workers_near_the_semi-collapsed_ten-story_Uranus_Building_on_Xuanyuan_Road_after_the_2024_Hualien_earthquake.jpg"

@@ -2,7 +2,7 @@
 title: "美軍台灣防災手冊（七）：預警系統、海底電纜與通訊韌性"
 author: "AI 初稿 / skyfaring 編輯校正"
 date: "2026-07-21"
-slug: "taiwan-dmrh-2026-warning-comms"
+slug: "taiwan-dmrh-2026-07-warning-comms"
 tags:
   - 台灣
   - 災害防救
@@ -10,7 +10,7 @@ tags:
   - 預警系統
   - 通訊基礎設施
 excerpt: "美軍印太司令部 CFE-DM 台灣防災手冊的通訊一章：中央氣象署預警發布流程與災防告警細胞廣播訊息系統（CBS）、地震、土石流、海嘯、颱風與洪水各類預警系統的技術規格與作業時序、防災 App 與資訊分享平台、AI 在預警上的應用、資通訊機關聯絡窗口，以及海底電纜、低軌衛星備援、行動基地台與大眾及社群媒體在災時扮演的角色。"
-heroImage: "/images/taiwan-dmrh-2026-warning-comms.jpg"
+heroImage: "/images/taiwan-dmrh-2026-07-warning-comms.jpg"
 heroAlt: "中央氣象局墾丁氣象雷達站的大門，淺綠色球形雷達罩架在銀色鋼架上，後方是弧形屋頂的站房與一面中華民國國旗，門柱上掛著寫有站名的石牌"
 heroCredit: "CEphoto, Uwe Aranas / Wikimedia Commons"
 heroCreditUrl: "https://commons.wikimedia.org/wiki/File:Kenting_Taiwan_Kenting-Weather-Radar-Station-02.jpg"

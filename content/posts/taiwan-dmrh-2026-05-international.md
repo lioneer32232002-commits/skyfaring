@@ -2,7 +2,7 @@
 title: "美軍台灣防災手冊（五）：美台防災合作與台灣的海外救援"
 author: "AI 初稿 / skyfaring 編輯校正"
 date: "2026-07-21"
-slug: "taiwan-dmrh-2026-international"
+slug: "taiwan-dmrh-2026-05-international"
 tags:
   - 台灣
   - 災害防救
@@ -10,7 +10,7 @@ tags:
   - 國際合作
   - 搜救
 excerpt: "美軍印太司令部 CFE-DM 台灣防災手冊的國際交流一章，是全書記錄美台防災合作最完整的部分，涵蓋台灣主辦的 921 災害防救演習與各項國際研習、台菲消防與搜救訓練往來、美國政府的災害應變機制與美國在台協會（AIT）角色、全球合作暨訓練架構（GCTF）歷年的災防與人道援助工作坊、CFE-DM 在台舉辦的訓練、國家災害防救科技中心（NCDR）在曼谷 HART-D 課程與帛琉 Pacific Partnership 的技術支援，以及台灣自 2010 年海地地震以來的六次海外救援。"
-heroImage: "/images/taiwan-dmrh-2026-international.jpg"
+heroImage: "/images/taiwan-dmrh-2026-05-international.jpg"
 heroAlt: "內政部消防署特種搜救隊隊員身穿黃紅色連身救災服，在演練場的帳篷前列隊待命，其中一人的帽子上印有 USAR TAIWAN 字樣，隊員腳邊坐著一隻穿救難背心的黑色搜救犬，左後方有身穿中央災害應變中心紅背心的工作人員"
 heroCredit: "中華民國總統府 / Wikimedia Commons"
 heroCreditUrl: "https://commons.wikimedia.org/wiki/File:Members_of_the_National_Fire_Agency_Special_Search_and_Rescue_Team_2024-09-20.jpg"

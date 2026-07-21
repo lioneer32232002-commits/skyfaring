@@ -2,14 +2,14 @@
 title: "美軍台灣防災手冊（三）：台灣的災防體系從中央到地方怎麼運作"
 author: "AI 初稿 / skyfaring 編輯校正"
 date: "2026-07-21"
-slug: "taiwan-dmrh-2026-system"
+slug: "taiwan-dmrh-2026-03-system"
 tags:
   - 台灣
   - 災害防救
   - 政府體制
   - 全社會韌性
 excerpt: "美軍印太司令部 CFE-DM 台灣防災手冊「災害管理政策、規劃與應變」一章的前半，涵蓋災害防救法的架構、中央災害防救會報與委員會的分工、各類災害的中央主管機關對照表、中央災害應變中心與消防署的角色、搜救量能、全社會防衛韌性委員會的五大面向，以及縣市與鄉鎮層級的執行、民防體系、T-CERT、替代役與防災士等社會動員制度。"
-heroImage: "/images/taiwan-dmrh-2026-system.jpg"
+heroImage: "/images/taiwan-dmrh-2026-03-system.jpg"
 heroAlt: "中央災害應變中心作業大廳，各部會與民間單位人員穿紅色背心，坐在標示機關名稱的席位上作業"
 heroCredit: "總統府 / Wikimedia Commons"
 heroCreditUrl: "https://commons.wikimedia.org/wiki/File:04.03_%E7%B8%BD%E7%B5%B1%E5%81%95%E5%90%8C%E9%99%B3%E5%BB%BA%E4%BB%81%E9%99%A2%E9%95%B7%E8%A6%96%E5%AF%9F%E4%B8%AD%E5%A4%AE%E7%81%BD%E5%AE%B3%E6%87%89%E8%AE%8A%E4%B8%AD%E5%BF%83_-_53627754487.jpg"

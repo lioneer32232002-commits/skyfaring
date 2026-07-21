@@ -2,7 +2,7 @@
 title: "美軍台灣防災手冊（一）：地理、人口與治理結構如何決定災害風險"
 author: "AI 初稿 / skyfaring 編輯校正"
 date: "2026-07-21"
-slug: "taiwan-dmrh-2026-overview"
+slug: "taiwan-dmrh-2026-01-overview"
 tags:
   - 台灣
   - 災害防救
@@ -10,7 +10,7 @@ tags:
   - 人口結構
   - 政府體制
 excerpt: "美軍印太司令部 CFE-DM 於 2026 年 4 月出版《台灣災害管理參考手冊》，本篇譯出全書開頭的主任的話、中心簡介、執行摘要與概述章。內容涵蓋台灣的國際地位限制、地理與板塊環境、氣候與颱風季、人口與族群組成、老年人與原住民族等弱勢群體的災害脆弱性、五院憲政體制與 22 個行政區的災防分工，以及以半導體為核心的經濟結構與其在災害中的暴露程度。"
-heroImage: "/images/taiwan-dmrh-2026-overview.jpg"
+heroImage: "/images/taiwan-dmrh-2026-01-overview.jpg"
 heroAlt: "從淡水河上空俯瞰台北市西區，高架快速道路沿著河岸穿過密集的市區大樓，遠方是丘陵與市中心天際線"
 heroCredit: "Bob Tan / Wikimedia Commons"
 heroCreditUrl: "https://commons.wikimedia.org/wiki/File:Aerial_panorama_of_Taipei%27s_west_from_the_perspective_of_Tamsui_River.jpg"

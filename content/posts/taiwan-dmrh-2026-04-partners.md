@@ -2,7 +2,7 @@
 title: "美軍台灣防災手冊（四）：國軍救災、國際障礙與民間防災夥伴"
 author: "AI 初稿 / skyfaring 編輯校正"
 date: "2026-07-21"
-slug: "taiwan-dmrh-2026-partners"
+slug: "taiwan-dmrh-2026-04-partners"
 tags:
   - 台灣
   - 災害防救
@@ -10,7 +10,7 @@ tags:
   - 國軍
   - NGO
 excerpt: "美軍印太司令部 CFE-DM 台灣防災手冊關於災害應變夥伴的一章：國軍在災防中的角色與 2023 至 2025 年風災震災投入統計、國防部全民防衛動員署、馬太鞍溪堰塞湖災害的兵力調度、921 演習與城鎮韌性演習；以及台灣在 APEC 與婦女和平安全議程的參與、缺乏聯合國承認造成的國際救援障礙，還有慈濟、中華基督教救助協會、中華搜救總隊、家扶、紅十字會、壯闊台灣、黑熊學院等民間夥伴，並完整重現台灣海外援助發展聯盟（Taiwan AID）的會員名單。"
-heroImage: "/images/taiwan-dmrh-2026-partners.jpg"
+heroImage: "/images/taiwan-dmrh-2026-04-partners.jpg"
 heroAlt: "國軍裝甲車行駛在屏東淹水的街道上，車頂站著士兵與一名穿紅色制服的消防人員，兩旁街屋泡在水中"
 heroCredit: "總統府 / Wikimedia Commons"
 heroCreditUrl: "https://commons.wikimedia.org/wiki/File:09.15_%E5%9C%8B%E8%BB%8D%E9%83%A8%E9%9A%8A%E5%9C%A8%E5%B1%8F%E6%9D%B1%E6%95%91%E7%81%BD_(29656557176).jpg"

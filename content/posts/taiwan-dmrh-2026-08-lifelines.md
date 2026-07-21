@@ -2,7 +2,7 @@
 title: "美軍台灣防災手冊（八）：供電、供水、醫療與糧食的災時韌性"
 author: "AI 初稿 / skyfaring 編輯校正"
 date: "2026-07-21"
-slug: "taiwan-dmrh-2026-lifelines"
+slug: "taiwan-dmrh-2026-08-lifelines"
 tags:
   - 台灣
   - 災害防救
@@ -10,7 +10,7 @@ tags:
   - 關鍵基礎設施
   - 糧食安全
 excerpt: "美軍印太司令部 CFE-DM 台灣防災手冊的最後一篇，譯出「災害管理的關鍵基礎設施」一章的後半段：電力與能源、供水與衛生、醫療體系、收容與住宅、糧食安全，以及全書結論。內容涵蓋台電 622 座變電所與 2024 年 4 月地震 4 分鐘內損失 340.4 萬瓩的紀錄、全民健康保險 99.9% 的納保率、2023 年全台 5,835 處災民收容處所的規劃容量，以及糧食自給率降到 30% 的十八年新低。"
-heroImage: "/images/taiwan-dmrh-2026-lifelines.jpg"
+heroImage: "/images/taiwan-dmrh-2026-08-lifelines.jpg"
 heroAlt: "曾文水庫全景，水面在群山之間展開，遠處可以看到壩體與水面上的攔汙索"
 heroCredit: "Taiwankengo / Wikimedia Commons"
 heroCreditUrl: "https://commons.wikimedia.org/wiki/File:02023_Zengwen_Reservoir_S.jpg"
