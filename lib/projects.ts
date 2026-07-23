@@ -93,7 +93,7 @@ export const PROJECTS: Project[] = [
   {
     title: "飛行線上",
     description: "飛行養成學習系統，飛行訓練與航空教育資源。",
-    url: "https://flight-deck-1sr.pages.dev/",
+    url: "https://flightdecktw.net/",
     icon: "plane",
     external: true,
     introSlug: "flight-deck",

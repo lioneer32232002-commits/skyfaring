@@ -99,7 +99,7 @@ export const PROJECT_PAGES: ProjectPage[] = [
   {
     slug: "flight-deck",
     title: "飛行線上",
-    url: "https://flight-deck-1sr.pages.dev/",
+    url: "https://flightdecktw.net/",
     icon: "✈",
     tagline: "依 FAA PHAK 編寫的免費飛行知識自學系統，用記憶卡與間隔複習把概念內化",
     intro: [
