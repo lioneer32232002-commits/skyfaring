@@ -2,13 +2,15 @@
 /**
  * Generates og-default.png (1200x630) using @resvg/resvg-js (WASM, no native deps).
  * Requires Noto CJK fonts installed on the system (CI: fonts-noto-cjk).
- * Run: node scripts/generate_og.js
+ * Run: node scripts/generate_og.mjs
  */
 
-const { Resvg } = require("@resvg/resvg-js");
-const fs = require("fs");
-const path = require("path");
+import { Resvg } from "@resvg/resvg-js";
+import fs from "fs";
+import path from "path";
+import { fileURLToPath } from "url";
 
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const outDir = path.join(__dirname, "..", "public", "images");
 if (!fs.existsSync(outDir)) fs.mkdirSync(outDir, { recursive: true });
 
