@@ -4,6 +4,13 @@
 
 最後更新：2026-07-24
 
+主力實戰鞋：PUMA MB（LaMelo Ball）系列、New Balance（Cooper Flagg 著用系列）。全黑 ASICS 有明顯實戰痕跡，為前一代實戰鞋。
+
+購入順序（依照片檔名流水號推定，分兩段時間線）：
+
+1. 較早時期：全金 PUMA MB → MB.01 水藍 → 全黑 ASICS → MB.01 Rick and Morty → UNPRE ARS → MB.01 Golden Child → MB.02
+2. 較近時期：New Balance → AJ11 Legend Blue → EGOZARU → Huarache 2K4（最新購入）
+
 ## 收藏清單
 
 | # | 品牌 | 型號 | 配色 | 發售年 | 狀態 | 照片 |
