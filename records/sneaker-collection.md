@@ -1,15 +1,15 @@
 # 球鞋收藏紀錄
 
-持有人自藏球鞋清單，依品牌與系列整理。照片皆已裁為 16:9 橫幅，存於 `public/images/sneaker-*.jpg`。
+持有人自藏球鞋清單，依品牌與系列整理。共 11 款 12 雙（UNPRE ARS 同款兩雙）。照片皆已裁為 16:9 橫幅，存於 `public/images/sneaker-*.jpg`。
 
 最後更新：2026-07-24
 
 主力實戰鞋：PUMA MB（LaMelo Ball）系列、New Balance（Cooper Flagg 著用系列）。全黑 ASICS 有明顯實戰痕跡，為前一代實戰鞋。
 
-購入順序（依照片檔名流水號推定，分兩段時間線）：
+購入順序（依照片檔名流水號推定；兩組檔名各自成一條序列，MB.01 各配色多為發售後回頭購入，順序不等於發售順序）：
 
-1. 較早時期：全金 PUMA MB → MB.01 水藍 → 全黑 ASICS → MB.01 Rick and Morty → UNPRE ARS → MB.01 Golden Child → MB.02
-2. 較近時期：New Balance → AJ11 Legend Blue → EGOZARU → Huarache 2K4（最新購入）
+1. 序列 A：MB.04 Golden Child → MB.01 水藍 → GELBURST 27 → MB.01 Rick and Morty → UNPRE ARS → MB.01 Golden Child → MB.02
+2. 序列 B：Hesi Low v2 → AJ11 Legend Blue → RIKU 1 → Huarache 2K4（最新購入）
 
 ## 收藏清單
 
@@ -19,13 +19,13 @@
 | 2 | PUMA | MB.01 | Rick and Morty（螢光綠×粉，鴛鴦配） | 2022 | 全新 | sneaker-puma-mb01-rick-and-morty.jpg |
 | 3 | PUMA | MB.01 | Golden Child（金） | 2023 | 全新 | sneaker-puma-mb01-golden-child.jpg |
 | 4 | PUMA | MB.02 | 黑×螢光紅 | 2022–2023 | 全新 | sneaker-puma-mb02.jpg |
-| 5 | PUMA | MB 系列（代數查證中） | 全金 | 查證中 | 全新 | sneaker-puma-mb-gold.jpg |
-| 6 | Nike | Air Zoom Huarache 2K4 | OT Black（Triple Black） | 2026 復刻 | 全新 | sneaker-nike-huarache-2k4.jpg |
+| 5 | PUMA | MB.04 | Golden Child（全金屬金） | 2025 | 全新 | sneaker-puma-mb-gold.jpg |
+| 6 | Nike | Air Zoom Huarache 2K4 | OT Black（Triple Black） | 2026 復刻 | 全新，最新購入 | sneaker-nike-huarache-2k4.jpg |
 | 7 | Jordan | Air Jordan 11 | Legend Blue（白×北卡藍） | 2024 復刻 | 全新 | sneaker-aj11-legend-blue.jpg |
-| 8 | ASICS | UNPRE ARS（代數查證中） | 黑×墨綠 | 查證中 | 全新 | sneaker-asics-unpre-ars.jpg |
-| 9 | ASICS | 型號查證中 | 全黑 | 查證中 | 實戰服役中 | sneaker-asics-black.jpg |
-| 10 | EGOZARU | 型號查證中 | 薄荷綠 | 查證中 | 全新 | sneaker-egozaru.jpg |
-| 11 | New Balance | 型號查證中 | 粉藍 | 查證中 | 全新 | sneaker-new-balance.jpg |
+| 8 | ASICS | UNPRE ARS（代數以鞋盒貨號為準） | 黑×墨綠 | 2021– | 全新，同款兩雙 | sneaker-asics-unpre-ars.jpg |
+| 9 | ASICS | GELBURST 27（最可能，次候選 28） | BLACK/GUNMETAL | 2023 | 實戰服役過，磨損明顯 | sneaker-asics-black.jpg |
+| 10 | EGOZARU | RIKU 1（瀨川琉久簽名鞋） | TURQUOISE BLUE | 2026 | 全新 | sneaker-egozaru.jpg |
+| 11 | New Balance | Hesi Low v2（Cooper Flagg 著用系列） | Electric Sky | 2025 | 主力實戰 | sneaker-new-balance.jpg |
 
 ## 各鞋備註與鞋評共識
 
@@ -55,9 +55,21 @@
 
 ASICS 籃球三分類（SPEED／STABILITY／BOUNCE）中 STABILITY 路線的代表，設計核心是側步與變向時的橫向穩定。FLYTEFOAM PROPEL 中底＋後跟 GEL，調校偏硬、主打反應；NC RUBBER 大底抓地獲日本評測一致好評；TPU 側牆＋內部側板是招牌結構。楦型照日本人腳型開發，前掌偏寬。適合大量側步變向、需要腳踝安定感的球員。日本定價：ARS 2 ¥17,600、ARS 3 ¥18,150。
 
-### 其餘鞋款
+### PUMA MB.04「Golden Child」
 
-（待辨識結果回來後補上：EGOZARU、New Balance、全黑 ASICS、全金 PUMA MB）
+2025 年 3 月 14 日發售，定價 US$125（型號 311306-01）。全金屬金鞋面滿版塗鴉浮雕，僅鞋舌與後跟黑色標誌做對比。評測共識：NITROFOAM 中底柔軟舒適、偏衝擊吸收型；乾淨場地抓地好但吸塵嚴重；支撐被 The Hoops Geek 列為弱項。適合喜歡軟彈舒適腳感的後衛，在維護良好的室內場發揮最好。
+
+### New Balance Hesi Low v2「Electric Sky」
+
+2024 年 8 月上市系列，定價 US$110，Electric Sky（Light Chrome Blue/White，型號 BBHSLVR2）為 2025 年配色。Cooper Flagg 在 Duke 時期著用 Hesi Low 系列。評測共識：抓地一致好評，乾淨場地非常黏；全掌 FuelCell 衝擊吸收合格但回彈實測偏低（44.8%／48.2%），腳感偏平；低筒但橫向穩定性佳。定位是變向型後衛的高 CP 值選擇。
+
+### ASICS GELBURST 27「BLACK/GUNMETAL」
+
+2023 年 3 月發售，日本定價 ¥18,150（貨號 1063A066-001）。全黑舊鞋難完全區分，次候選為 GELBURST 28 同配色。GELBURST 是 ASICS 的速度概念線：輕量、加速、貼地推進；FLYTEFOAM 中底＋後跟內藏 GEL，緩震穩定紮實而非軟彈；中足大型抗扭件＋後跟樹脂穩定片。適合頻繁跑動、切入的速度型球員。
+
+### EGOZARU RIKU 1「TURQUOISE BLUE」
+
+日本品牌 EGOZARU 首雙球員簽名鞋，簽名對象是高中球員瀨川琉久，鞋舌 monogram 為 S＋R。2025 年 11 月首發，TURQUOISE BLUE 為 2026 年 1 月 21 日新色，定價 ¥18,700（型號 ERAL25UFW004RS），重量約 369 g（27 cm）。評測共識：前掌刻意壓低離地高度、主打貼地感與啟動反應；輕量、楦頭偏寬；緩震與回彈非強項，抓地需磨合。適合靠腳步與速度的輕量型後衛。建議比 Nike 尺碼小半號。
 
 ## 資料來源
 
