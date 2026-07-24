@@ -7,7 +7,7 @@ tags:
   - 籃球
   - 球鞋
   - 收藏紀錄
-excerpt: "近年買進的球鞋累積到 12 雙：五雙 LaMelo Ball 的 PUMA MB 系列、三雙 ASICS、Cooper Flagg 著用的 New Balance Hesi Low v2，還有 Kobe 與 Jordan 的復刻經典。把每雙鞋的評測共識抄在一起，重複出現的適配對象，畫出鞋主自己的球風輪廓。"
+excerpt: "近年買進的球鞋累積到十二雙：五雙 LaMelo Ball 的 PUMA MB 系列、三雙 ASICS、Cooper Flagg 著用的 New Balance Hesi Low v2、EGOZARU 的首雙簽名鞋 RIKU 1，還有 Kobe 與 Jordan 的復刻經典。把每雙鞋的評測共識抄在一起，重複出現的適配對象，畫出鞋主自己的球風輪廓。"
 highlight: "五個評測來源互不相識，適配對象卻指向同一種球員：不靠體重對抗、靠第一步和變向過人、對腳踝穩定有明確需求的控球型後衛。"
 heroImage: "/images/sneaker-puma-mb01-rick-and-morty.jpg"
 heroAlt: "PUMA MB.01 Rick and Morty 配色，左腳萊姆綠與右腳粉紅的鴛鴦設計"
@@ -27,6 +27,12 @@ references:
     url: "https://about.puma.com/en/newsroom/news/puma-hoops-releases-new-mb01-style-golden-child"
   - title: "House of Heat, PUMA MB.04 Golden Child Release Info"
     url: "https://houseofheat.co/puma/puma-mb-04-golden-child-311306-01"
+  - title: "House of Heat, Rick and Morty x PUMA MB.01 Release Date"
+    url: "https://houseofheat.co/puma/lamelo-ball-rick-and-morty-puma-mb-01-release-date"
+  - title: "The Sports Rush, LaMelo Ball x Rick and Morty MB.01 Resale Value"
+    url: "https://thesportsrush.com/nba-news-lamelo-ball-x-rick-and-morty-current-resale-value-of-special-edition-mb-01-and-will-they-be-restocked/"
+  - title: "Sneaker News, Air Jordan 11 Legend Blue (CT8012-104) Release Date"
+    url: "https://sneakernews.com/2024/06/03/air-jordan-11-legend-blue-ct8012-104-release-date/"
   - title: "RunRepeat, New Balance Hesi Low v2 Lab Review"
     url: "https://runrepeat.com/new-balance-hesi-low-v2"
   - title: "The Hoops Geek, New Balance Hesi Low v2 Review"
@@ -61,7 +67,7 @@ MB.01 是 2021 年底的出道簽名鞋，美國定價 125 美元，台灣隔年
 
 ![PUMA MB.01 Rick and Morty 配色，左右腳一綠一粉](/images/sneaker-puma-mb01-rick-and-morty.jpg)
 
-Rick and Morty 是 MB 系列最有名的配色，2022 年 2 月與 Adult Swim 官方聯名，定價 135 美元。左右腳不對稱，左腳萊姆綠代表 Rick，右腳粉紅代表 Morty。轉售價一度衝到零售價的三倍，PUMA 補貨幾次都完售，是這個系列市場價值最高的一雙。
+Rick and Morty 是 MB 系列最有名的配色，2022 年 2 月與 Adult Swim 官方聯名，定價 135 美元。左右腳不對稱，左腳萊姆綠代表 Rick，右腳粉紅代表 Morty。轉售價一度衝到零售價的三倍，PUMA 補貨幾次都完售，是 LaMelo 簽名鞋轉售市場最搶手的一雙。
 
 ![PUMA MB.01 Golden Child，金色鞋面與鍍鉻菱格後跟](/images/sneaker-puma-mb01-golden-child.jpg)
 
@@ -81,25 +87,25 @@ MB.04 Golden Child 是這批 PUMA 裡最新的一雙，2025 年 3 月發售，�
 
 ![實戰磨損明顯的全黑 ASICS GELBURST 27](/images/sneaker-asics-black.jpg)
 
-接班的準備也是 ASICS：UNPRE ARS，同款買了兩雙。這條線在 ASICS 官方分類裡叫 STABILITY，職業端的代表著用者是河村勇輝著用的 LOW 版本，設計核心是側步與變向時的橫向穩定，TPU 側牆加內部側板，在腳踝外側築一道牆。同款囤兩雙，是消耗品的買法：知道自己會把它穿壞，先把補給準備好。
+接班的準備也是 ASICS：UNPRE ARS，同款買了兩雙。這條線在 ASICS 官方分類裡叫 STABILITY，職業端的代表著用者是河村勇輝，他穿的是 LOW 版本，設計核心是側步與變向時的橫向穩定，TPU 側牆加內部側板，在腳踝外側築一道牆。同款囤兩雙，是消耗品的買法：知道自己會把它穿壞，先把補給準備好。
 
 ![ASICS UNPRE ARS 黑×墨綠配色，盒裝全新](/images/sneaker-asics-unpre-ars.jpg)
 
-EGOZARU 的 RIKU 1 是最冷門的一雙。EGOZARU 是日本籃球服飾品牌，這是它成立以來第一雙球員簽名鞋，簽名對象瀨川琉久還是高中生，鞋舌的白色交織標誌就是 Segawa Riku 的縮寫。2025 年 11 月首發，薄荷綠這色 2026 年 1 月才上市，定價 18,700 日圓，台灣幾乎沒有通路。日本評測給它的關鍵詞是貼地：前掌刻意壓低離地高度，換取場地感與啟動反應，代價是緩震與回彈都不是強項，適合靠腳步與速度的輕量型後衛。
+EGOZARU 的 RIKU 1 是最冷門的一雙。EGOZARU 是日本籃球服飾品牌，這是它成立以來第一雙球員簽名鞋，簽名對象瀨川琉久還是高中生，鞋舌的白色交織標誌就是 Segawa Riku 的縮寫。2025 年 11 月首發，這個 TURQUOISE BLUE 配色 2026 年 1 月才上市，定價 18,700 日圓，台灣幾乎沒有通路。日本評測給它的關鍵詞是貼地：前掌刻意壓低離地高度，換取場地感與啟動反應，代價是緩震與回彈都不是強項，適合靠腳步與速度的輕量型後衛。
 
-![EGOZARU RIKU 1 薄荷綠配色與品牌吊牌](/images/sneaker-egozaru.jpg)
+![EGOZARU RIKU 1 TURQUOISE BLUE 配色與品牌吊牌](/images/sneaker-egozaru.jpg)
 
 ## 主力是 Cooper Flagg 的鞋
 
-目前的實戰輪替，是 MB 系列加上這雙 New Balance Hesi Low v2 的 Electric Sky 配色。Cooper Flagg 在 Duke 時期穿的就是 Hesi Low 系列，2025 年他成為選秀狀元，這雙鞋跟著變成新人世代的代表作。定價 110 美元，評測圈把它當這個價位帶的資優生：抓地在乾淨場地黏到會叫，低筒但橫向穩定性好。RunRepeat 實驗室的保留意見在回彈，前後掌能量回饋實測 44.8% 與 48.2%，偏低，腳感偏平。它的長處在急停與變向的瞬間，彈跳要靠自己。
+目前的實戰輪替，是 MB 系列加上這雙 New Balance Hesi Low v2 的 Electric Sky 配色。Cooper Flagg 在 Duke 時期穿的就是 Hesi Low 系列，2025 年他成為選秀狀元，這雙鞋跟著變成新人世代的代表作。定價 110 美元，評測圈把它當這個價位帶的資優生：抓地在乾淨場地黏到會叫，低筒但橫向穩定性好。RunRepeat 實驗室的保留意見在回彈，能量回饋兩處實測 44.8% 與 48.2%，都偏低，腳感偏平。它的長處在急停與變向的瞬間，彈跳要靠自己。
 
 ![New Balance Hesi Low v2 Electric Sky 配色開箱](/images/sneaker-new-balance.jpg)
 
 ## 兩雙不會下場的鞋
 
-Air Jordan 11 Legend Blue 與 Huarache 2K4 OT Black 是另一種買法，進門之後連吊牌都沒拆。
+Air Jordan 11 Legend Blue 與 Huarache 2K4 OT Black 是另一種買法，入手之後連吊牌都沒拆。
 
-Legend Blue 的原點是 1996 年全明星賽，Michael Jordan 穿著白漆皮配哥倫比亞藍的 Air Jordan 11 出場。Tinker Hatfield 1995 年的漆皮設計，是籃球鞋史上少數能走進正裝場合的一雙，2024 年 12 月復刻，白身冰底。
+Legend Blue 的原點是 1996 年全明星賽，Michael Jordan 穿著白漆皮配哥倫比亞藍的 Air Jordan 11 出場。Tinker Hatfield 1995 年的漆皮設計，2024 年 12 月 14 日復刻，定價 230 美元，白身冰底。
 
 ![Air Jordan 11 Legend Blue，白漆皮與北卡藍冰底](/images/sneaker-aj11-legend-blue.jpg)
 
@@ -107,16 +113,16 @@ Huarache 2K4 的位置更特別。2004 年 Eric Avar 設計，當時 Kobe Bryant
 
 ![Nike Air Zoom Huarache 2K4 OT Black 全黑配色](/images/sneaker-nike-huarache-2k4.jpg)
 
-## 十一款鞋評，指向同一種球員。
+## 把鞋評抄在一起，交集就是球風。
 
 把每雙鞋的評測適配對象抄在一起，重複出現的詞就浮出來了。
 
 MB.01，輕至中等體重的全能後衛。Hesi Low v2，變向型後衛。RIKU 1，靠腳步與速度的輕量型後衛。GELBURST 27，頻繁跑動切入的速度型球員。UNPRE ARS，大量側步變向、需要腳踝安定感的球員。五個評測來源互不相識，適配對象卻指向同一種球員：不靠體重對抗、靠第一步和變向過人、對腳踝穩定有明確需求的控球型後衛。
 
-例外只有 MB.02。它偏硬偏重、支撐至上，評測認為適合吃衝擊保護的球員。放在這份清單裡，它比較像高強度日或腳踝不安穩時的輪替選擇。
+例外只有 MB.02。它偏硬、支撐至上，評測認為適合吃衝擊保護的球員。放在這份清單裡，它比較像高強度日或腳踝不安穩時的輪替選擇。
 
-這份彙整往後也是對照的基準。評測說 MB.01 楦頭偏窄，說 MB.02 磨合期長，說 Hesi Low v2 回彈偏平，這些說法準不準，下場之後腳會給出自己的答案，到時候再回來修這份紀錄。
+這份彙整往後也是對照的基準。評測說 MB.01 楦頭偏窄，說 MB.02 磨合期長，說 Hesi Low v2 回彈偏平，這些說法準不準，下場之後才知道，到時候再回來修這份紀錄。
 
-實戰線與收藏線分得非常開。會下場的鞋，全部落在 110 到 135 美元的價位帶，功能取向清楚；Legend Blue 與 2K4 這種故事濃度高的鞋，買回來就是收著。
+實戰線與收藏線分得非常開。會下場的鞋，定價換算下來都在一百多美元的功能鞋等級；Legend Blue 定價 230 美元、2K4 定價 200 美元，故事濃度高的反而更貴，買回來就是收著。
 
 收藏那幾雙湊在同一個主題上。2K4 是 Kobe 與 Nike 合作的起點，MB.01 是 LaMelo 簽名鞋系列的第一雙，RIKU 1 是 EGOZARU 的第一雙簽名鞋，Hesi Low v2 掛著 Cooper Flagg 生涯的開頭，連 Legend Blue 都復刻自 1996 年全明星賽的一個畫面。買實戰鞋的時候，我在挑工具；買收藏的時候，我在挑故事的第一頁。

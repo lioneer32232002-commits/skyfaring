@@ -49,7 +49,7 @@
 
 ### Air Jordan 11「Legend Blue」
 
-1995 年 Tinker Hatfield 設計的漆皮經典，Legend Blue 配色源自 1996 年全明星賽 Michael Jordan 著用的「Columbia」。2024 年 12 月復刻（貨號 CT8012-104），白色漆皮＋北卡藍冰底。收藏定位大於實戰定位。
+1995 年 Tinker Hatfield 設計的漆皮經典，Legend Blue 配色源自 1996 年全明星賽 Michael Jordan 著用的「Columbia」。2024 年 12 月 14 日復刻（貨號 CT8012-104），定價 US$230，白色漆皮＋北卡藍冰底。收藏定位大於實戰定位。
 
 ### ASICS UNPRE ARS 系列
 
