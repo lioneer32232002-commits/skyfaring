@@ -9,6 +9,7 @@ export type UiIconName =
   | "grid"
   | "compass"
   | "news"
+  | "rss"
   | "arrow-up-right";
 
 // Icons from Tabler Icons (https://tabler.io/icons) — MIT License.
@@ -73,6 +74,13 @@ const PATHS: Record<UiIconName, ReactNode> = {
       <path d="M8 8l4 0" />
       <path d="M8 12l4 0" />
       <path d="M8 16l4 0" />
+    </>
+  ),
+  rss: (
+    <>
+      <path d="M5 19m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+      <path d="M4 4a16 16 0 0 1 16 16" />
+      <path d="M4 11a9 9 0 0 1 9 9" />
     </>
   ),
   "arrow-up-right": (

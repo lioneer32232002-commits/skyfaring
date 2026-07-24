@@ -144,6 +144,11 @@ export default function RootLayout({
                       <UiIcon name="mail" className="w-4 h-4 shrink-0" /> wizard32232002@gmail.com
                     </a>
                   </li>
+                  <li>
+                    <a href={`${BASE_PATH}/feed.xml`} className="hover:text-sky-500 inline-flex items-center gap-1.5">
+                      <UiIcon name="rss" className="w-4 h-4 shrink-0" /> RSS 訂閱
+                    </a>
+                  </li>
                 </ul>
               </div>
             </div>
