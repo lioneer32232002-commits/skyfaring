@@ -3,7 +3,7 @@ import { PROJECTS } from "@/lib/projects";
 import ProjectGroups from "@/components/ProjectGroups";
 import UiIcon from "@/components/UiIcon";
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://skyfaring.pages.dev";
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://skyfaring.net";
 const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
 // TODO: LinkedIn 個人檔案建好後，把網址填回聯絡區（原本的連結區塊見 git 歷史）

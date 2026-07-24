@@ -7,7 +7,7 @@ import ViewCountsProvider from "@/components/ViewCountsProvider";
 import TopicIcon from "@/components/TopicIcon";
 
 const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://skyfaring.pages.dev";
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://skyfaring.net";
 
 export function generateStaticParams() {
   return TOPIC_GROUPS.map((group) => ({ group: group.slug }));

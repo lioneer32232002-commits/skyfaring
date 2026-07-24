@@ -3,7 +3,7 @@ import "./globals.css";
 import { PROJECTS, resolveProjectHref, projectOpensExternal } from "@/lib/projects";
 import UiIcon from "@/components/UiIcon";
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://skyfaring.pages.dev";
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://skyfaring.net";
 const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 const SITE_NAME = "Skyfaring";
 const SITE_DESC = "運動數據分析、飛航安全數據分析、詠春拳、歷史與軍事閱讀心得分享。";
@@ -13,7 +13,10 @@ export const metadata: Metadata = {
   title: { default: "Skyfaring", template: "%s — Skyfaring" },
   description: SITE_DESC,
   metadataBase: new URL(SITE_URL),
-  alternates: { canonical: "/" },
+  alternates: {
+    canonical: "/",
+    types: { "application/rss+xml": "/feed.xml" },
+  },
   icons: {
     icon: [{ url: `${BASE_PATH}/favicon.svg`, type: "image/svg+xml" }],
   },

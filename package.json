@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "slim-images": "node scripts/slim-images.mjs"
+    "slim-images": "node scripts/slim-images.mjs",
+    "generate-og": "node scripts/generate_og.mjs"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.103.0",

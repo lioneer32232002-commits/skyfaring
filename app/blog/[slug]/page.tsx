@@ -8,7 +8,7 @@ export async function generateStaticParams() {
   return getAllSlugs().map((slug) => ({ slug }));
 }
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://skyfaring.pages.dev";
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://skyfaring.net";
 const DEFAULT_OG = `${SITE_URL}/images/og-default.png`;
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
@@ -91,9 +91,21 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
       "@id": `${SITE_URL}/blog/${slug}/`,
     },
     url: `${SITE_URL}/blog/${slug}/`,
+    ...(post.tags.length > 0 && { keywords: post.tags.join(", ") }),
+    ...(post.category && { articleSection: post.category }),
     ...(post.heroImage && {
       image: { "@type": "ImageObject", url: `${SITE_URL}${post.heroImage}` },
     }),
+  };
+
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "首頁", item: `${SITE_URL}/` },
+      { "@type": "ListItem", position: 2, name: "文章", item: `${SITE_URL}/blog/` },
+      { "@type": "ListItem", position: 3, name: post.title, item: `${SITE_URL}/blog/${slug}/` },
+    ],
   };
 
   return (
@@ -101,6 +113,10 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
 
       {/* HERO image */}

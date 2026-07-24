@@ -5,7 +5,7 @@ import { PROJECT_PAGES } from "@/lib/projectPages";
 
 export const dynamic = "force-static";
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://skyfaring.pages.dev";
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://skyfaring.net";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const posts = getAllPostMetas();

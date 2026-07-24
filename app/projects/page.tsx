@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { PROJECTS } from "@/lib/projects";
 import ProjectGroups from "@/components/ProjectGroups";
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://skyfaring.pages.dev";
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://skyfaring.net";
 
 export const metadata: Metadata = {
   title: "專案",

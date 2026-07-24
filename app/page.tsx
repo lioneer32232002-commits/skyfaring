@@ -8,7 +8,7 @@ import UiIcon from "@/components/UiIcon";
 import ViewCounter from "@/components/ViewCounter";
 import ViewCountsProvider from "@/components/ViewCountsProvider";
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://skyfaring.pages.dev";
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://skyfaring.net";
 
 export const metadata: Metadata = {
   openGraph: {
@@ -25,7 +25,7 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "WebSite",
   name: "Skyfaring",
-  url: process.env.NEXT_PUBLIC_SITE_URL ? `${process.env.NEXT_PUBLIC_SITE_URL}/` : "https://skyfaring.pages.dev/",
+  url: process.env.NEXT_PUBLIC_SITE_URL ? `${process.env.NEXT_PUBLIC_SITE_URL}/` : "https://skyfaring.net/",
   description: "運動數據分析、飛航安全數據分析、詠春拳、歷史與軍事閱讀心得分享。",
   inLanguage: "zh-TW",
 };
