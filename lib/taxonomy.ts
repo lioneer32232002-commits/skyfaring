@@ -21,7 +21,7 @@ export const TOPIC_GROUPS: TopicGroup[] = [
     description:
       "新竹攻城獅賽後分析、TPBL 與 NBA 籃球研究，用數據拆解球場上的勝負邏輯。",
     icon: "basketball",
-    categories: ["攻城獅", "籃球研究"],
+    categories: ["攻城獅", "籃球研究", "球鞋"],
   },
   {
     slug: "defense",
