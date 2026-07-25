@@ -7,7 +7,7 @@ tags:
   - 籃球
   - 球鞋
   - 收藏紀錄
-excerpt: "近年買進的球鞋累積到十一雙：五雙 LaMelo Ball 的 PUMA MB 系列、兩雙 ASICS UNPRE ARS LOW、Cooper Flagg 著用的 New Balance Hesi Low v2、EGOZARU 的首雙簽名鞋 RIKU 1，還有 Kobe 與 Jordan 的復刻經典。把每雙鞋的評測共識抄在一起，重複出現的適配對象，畫出鞋主自己的球風輪廓。"
+excerpt: "近年買進的球鞋累積到十一雙：五雙 LaMelo Ball 的 PUMA MB 系列、兩雙 ASICS UNPRE ARS LOW、Cooper Flagg 著用的 New Balance Hesi Low v2、EGOZARU 的首雙簽名鞋 RIKU 1，還有 Kobe 與 Jordan 的復刻經典。把每雙鞋的評測共識抄在一起，重複出現的適配對象，畫出一個四十歲業餘球員的球風輪廓。"
 highlight: "四個評測來源互不相識，適配對象卻指向同一種球員：不靠體重對抗、靠第一步和變向過人、對腳踝穩定有明確需求的控球型後衛。"
 heroImage: "/images/sneaker-puma-mb01-rick-and-morty.jpg"
 heroAlt: "PUMA MB.01 Rick and Morty 配色，左腳萊姆綠與右腳粉紅的鴛鴦設計"
@@ -51,7 +51,7 @@ references:
 
 剪開藍色防盜扣，把全黑的 Huarache 2K4 從盒子裡拿出來，這是近年進門的第十一雙球鞋。排開來數：五雙 PUMA、兩雙 ASICS、一雙 New Balance、一雙 EGOZARU、一雙 Air Jordan，加上手上這雙 Nike。
 
-我沒打過正式球隊，就是喜歡打球的人。可是買鞋的選擇比記憶誠實，這十一雙鞋記得我想在球場上當什麼樣的球員。
+我四十歲，沒打過正式球隊，就是喜歡打球的人。可是買鞋的選擇比記憶誠實，這十一雙鞋記得我想在球場上當什麼樣的球員。
 
 ## 五雙 PUMA，都是同一個人的鞋。
 
@@ -99,11 +99,11 @@ EGOZARU 的 RIKU 1 是最冷門的一雙。EGOZARU 是日本籃球服飾品牌�
 
 ![New Balance Hesi Low v2 Electric Sky 配色開箱](/images/sneaker-new-balance.jpg)
 
-## 兩雙不會下場的鞋
+## 為了故事買的兩雙
 
-Air Jordan 11 Legend Blue 與 Huarache 2K4 OT Black 是另一種買法，入手之後連吊牌都沒拆。
+Air Jordan 11 Legend Blue 與 Huarache 2K4 OT Black 是另一種買法，衝著鞋背後的年代去的。
 
-Legend Blue 的原點是 1996 年全明星賽，Michael Jordan 穿著白漆皮配哥倫比亞藍的 Air Jordan 11 出場。Tinker Hatfield 1995 年的漆皮設計，2024 年 12 月 14 日復刻，定價 230 美元，白身冰底。
+Legend Blue 的原點是 1996 年全明星賽，Michael Jordan 穿著白漆皮配哥倫比亞藍的 Air Jordan 11 出場。Tinker Hatfield 1995 年的漆皮設計，2024 年 12 月 14 日復刻，定價 230 美元，白身冰底。球鞋圈流傳復刻 Jordan 禁不起實戰，我還是拎著它下場操了幾次，腳感很直接：鞋底偏硬，中足那塊碳纖維承托板的存在感，隔著全掌氣墊都壓不住。
 
 ![Air Jordan 11 Legend Blue，白漆皮與北卡藍冰底](/images/sneaker-aj11-legend-blue.jpg)
 
@@ -117,10 +117,12 @@ Huarache 2K4 的位置更特別。2004 年 Eric Avar 設計，當時 Kobe Bryant
 
 MB.01，輕至中等體重的全能後衛。Hesi Low v2，變向型後衛。RIKU 1，靠腳步與速度的輕量型後衛。UNPRE ARS LOW，敏捷型後衛，同系列主打大量側步變向時的橫向穩定與腳踝安定感。四個評測來源互不相識，適配對象卻指向同一種球員：不靠體重對抗、靠第一步和變向過人、對腳踝穩定有明確需求的控球型後衛。
 
+這個畫像放在四十歲的身體上格外合理。對抗與彈跳最先衰退，節奏和腳步留得住，護踝與穩定從加分變成必要。
+
 例外只有 MB.02。它偏硬、支撐至上，評測認為適合吃衝擊保護的球員。放在這份清單裡，它比較像高強度日或腳踝不安穩時的輪替選擇。
 
-這份彙整往後也是對照的基準。評測說 MB.01 楦頭偏窄，說 MB.02 磨合期長，說 Hesi Low v2 回彈偏平，這些說法準不準，下場之後才知道，到時候再回來修這份紀錄。
+腳上的驗證結果也有了。我自己的排名：反應最好的是 Hesi Low v2 和 RIKU 1，穩定最好的是 UNPRE ARS，這兩項跟評測對得上，前者的評測強項本來就是貼地與啟動，後者的官方定位就是穩定。有落差的是 MB.01：評測把窄楦列為缺點，套在我的腳上卻成了包覆最好的一雙。楦型合不合，終究是一腳一個結果。
 
-實戰線與收藏線分得非常開。會下場的鞋，定價換算下來都在一百多美元的功能鞋等級；Legend Blue 定價 230 美元、2K4 定價 200 美元，故事濃度高的比實戰鞋還貴，買回來就是收著。
+實戰線與收藏線分得非常開。會下場的鞋，定價換算下來都在一百多美元的功能鞋等級；Legend Blue 定價 230 美元、2K4 定價 200 美元，故事濃度高的比實戰鞋還貴，除了忍不住下場試的那幾次，平常就是收著。
 
-收藏那幾雙湊在同一個主題上。2K4 是 Kobe 與 Nike 合作的起點，MB.01 是 LaMelo 簽名鞋系列的第一雙，RIKU 1 是 EGOZARU 的第一雙簽名鞋，Hesi Low v2 掛著 Cooper Flagg 生涯的開頭，連 Legend Blue 都復刻自 1996 年全明星賽的一個畫面。買實戰鞋的時候，我在挑工具；買收藏的時候，我在挑故事的第一頁。
+收藏那幾雙湊在同一個主題上。2K4 是 Kobe 與 Nike 合作的起點，MB.01 是 LaMelo 簽名鞋系列的第一雙，RIKU 1 是 EGOZARU 的第一雙簽名鞋，Hesi Low v2 掛著 Cooper Flagg 生涯的開頭，連 Legend Blue 都復刻自 1996 年全明星賽的一個畫面。那一年我還在念小學；2K4 上市那年，我高中剛畢業。買實戰鞋的時候，我在挑工具；買收藏的時候，我在挑故事的第一頁，其中幾頁剛好也是自己的。

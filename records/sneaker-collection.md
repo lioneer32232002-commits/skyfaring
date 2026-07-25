@@ -21,11 +21,19 @@
 | 4 | PUMA | MB.02 | 黑×螢光紅 | 2022–2023 | 全新 | sneaker-puma-mb02.jpg |
 | 5 | PUMA | MB.04 | Golden Child（全金屬金） | 2025 | 全新 | sneaker-puma-mb-gold.jpg |
 | 6 | Nike | Air Zoom Huarache 2K4 | OT Black（Triple Black） | 2026 復刻 | 全新，最新購入 | sneaker-nike-huarache-2k4.jpg |
-| 7 | Jordan | Air Jordan 11 | Legend Blue（白×北卡藍） | 2024 復刻 | 全新 | sneaker-aj11-legend-blue.jpg |
+| 7 | Jordan | Air Jordan 11 | Legend Blue（白×北卡藍） | 2024 復刻 | 收藏為主，實戰數次 | sneaker-aj11-legend-blue.jpg |
 | 8 | ASICS | UNPRE ARS LOW 2（持有人推定，以鞋盒貨號為準） | 黑×墨綠 | 待確認 | 全新備品，與 #9 同款 | sneaker-asics-unpre-ars.jpg |
 | 9 | ASICS | UNPRE ARS LOW 2（持有人推定） | 全黑 | 待確認 | 實戰服役，磨損明顯 | sneaker-asics-black.jpg |
 | 10 | EGOZARU | RIKU 1（瀨川琉久簽名鞋） | TURQUOISE BLUE | 2026 | 全新 | sneaker-egozaru.jpg |
 | 11 | New Balance | Hesi Low v2（Cooper Flagg 著用系列） | Electric Sky | 2025 | 主力實戰 | sneaker-new-balance.jpg |
+
+## 持有人腳感評價（2026-07，40 歲業餘球員）
+
+- 反應最好：Hesi Low v2、RIKU 1（與評測共識一致，兩者強項皆為貼地與啟動）
+- 包覆最好：MB.01（評測列為缺點的窄楦，實穿感受為包覆優勢）
+- 穩定最好：UNPRE ARS LOW（與 STABILITY 官方定位一致）
+- AJ11 Legend Blue：鞋底偏硬，中足碳纖維承托板存在感強；「復刻不能實戰」的說法下仍下場數次
+- 待補：AND1 一雙（街頭感最強，鞋底偏硬但不及 AJ11；照片未上傳成功，型號待照片確認後補入清單，屆時總數變 11 款 12 雙）
 
 ## 各鞋備註與鞋評共識
 
