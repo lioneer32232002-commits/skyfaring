@@ -1,14 +1,14 @@
 # 球鞋收藏紀錄
 
-持有人自藏球鞋清單，依品牌與系列整理。共 11 款 12 雙（UNPRE ARS 同款兩雙）。照片皆已裁為 16:9 橫幅，存於 `public/images/sneaker-*.jpg`。
+持有人自藏球鞋清單，依品牌與系列整理。共 10 款 11 雙（UNPRE ARS LOW 同款兩雙：全黑實戰款＋黑×墨綠新品備用）。照片皆已裁為 16:9 橫幅，存於 `public/images/sneaker-*.jpg`。
 
 最後更新：2026-07-24
 
-主力實戰鞋：PUMA MB（LaMelo Ball）系列、New Balance（Cooper Flagg 著用系列）。全黑 ASICS 有明顯實戰痕跡，為前一代實戰鞋。
+主力實戰鞋：PUMA MB（LaMelo Ball）系列、New Balance（Cooper Flagg 著用系列）。全黑 UNPRE ARS LOW 2 磨損明顯，是使用量最大的實戰用鞋。
 
 購入順序（依照片檔名流水號推定；兩組檔名各自成一條序列，MB.01 各配色多為發售後回頭購入，順序不等於發售順序）：
 
-1. 序列 A：MB.04 Golden Child → MB.01 水藍 → GELBURST 27 → MB.01 Rick and Morty → UNPRE ARS → MB.01 Golden Child → MB.02
+1. 序列 A：MB.04 Golden Child → MB.01 水藍 → 全黑 UNPRE ARS LOW 2 → MB.01 Rick and Morty → 黑×墨綠 UNPRE ARS → MB.01 Golden Child → MB.02
 2. 序列 B：Hesi Low v2 → AJ11 Legend Blue → RIKU 1 → Huarache 2K4（最新購入）
 
 ## 收藏清單
@@ -22,8 +22,8 @@
 | 5 | PUMA | MB.04 | Golden Child（全金屬金） | 2025 | 全新 | sneaker-puma-mb-gold.jpg |
 | 6 | Nike | Air Zoom Huarache 2K4 | OT Black（Triple Black） | 2026 復刻 | 全新，最新購入 | sneaker-nike-huarache-2k4.jpg |
 | 7 | Jordan | Air Jordan 11 | Legend Blue（白×北卡藍） | 2024 復刻 | 全新 | sneaker-aj11-legend-blue.jpg |
-| 8 | ASICS | UNPRE ARS（代數以鞋盒貨號為準） | 黑×墨綠 | 2021– | 全新，同款兩雙 | sneaker-asics-unpre-ars.jpg |
-| 9 | ASICS | GELBURST 27（最可能，次候選 28） | BLACK/GUNMETAL | 2023 | 實戰服役過，磨損明顯 | sneaker-asics-black.jpg |
+| 8 | ASICS | UNPRE ARS LOW 2（持有人推定，以鞋盒貨號為準） | 黑×墨綠 | 2024– | 全新備品，與 #9 同款 | sneaker-asics-unpre-ars.jpg |
+| 9 | ASICS | UNPRE ARS LOW 2（持有人推定） | 全黑 | 2024– | 實戰服役，磨損明顯 | sneaker-asics-black.jpg |
 | 10 | EGOZARU | RIKU 1（瀨川琉久簽名鞋） | TURQUOISE BLUE | 2026 | 全新 | sneaker-egozaru.jpg |
 | 11 | New Balance | Hesi Low v2（Cooper Flagg 著用系列） | Electric Sky | 2025 | 主力實戰 | sneaker-new-balance.jpg |
 
@@ -63,9 +63,9 @@ ASICS 籃球三分類（SPEED／STABILITY／BOUNCE）中 STABILITY 路線的代�
 
 2024 年 8 月上市系列，定價 US$110，Electric Sky（Light Chrome Blue/White，型號 BBHSLVR2）為 2025 年配色。Cooper Flagg 在 Duke 時期著用 Hesi Low 系列。評測共識：抓地一致好評，乾淨場地非常黏；全掌 FuelCell 衝擊吸收合格但回彈實測偏低（44.8%／48.2%），腳感偏平；低筒但橫向穩定性佳。定位是變向型後衛的高 CP 值選擇。
 
-### ASICS GELBURST 27「BLACK/GUNMETAL」
+### ASICS UNPRE ARS LOW 2（同款兩雙）
 
-2023 年 3 月發售，日本定價 ¥18,150（貨號 1063A066-001）。全黑舊鞋難完全區分，次候選為 GELBURST 28 同配色。GELBURST 是 ASICS 的速度概念線：輕量、加速、貼地推進；FLYTEFOAM 中底＋後跟內藏 GEL，緩震穩定紮實而非軟彈；中足大型抗扭件＋後跟樹脂穩定片。適合頻繁跑動、切入的速度型球員。
+持有人確認兩雙同款：全黑一雙為使用量最大的實戰用鞋（磨損明顯），黑×墨綠一雙為全新備品。代數為持有人推定（LOW 2），確切代數與配色名以鞋盒貨號比對為準。LOW 版本是河村勇輝在職業賽場著用的路線，走敏捷型後衛取向；2025 年河村還推出 ASICS 籃球史上首雙球員特別版 UNPRE ARS LOW 2 RT（¥19,800 含稅）。系列共通設計見下方 UNPRE ARS 段落。
 
 ### EGOZARU RIKU 1「TURQUOISE BLUE」
 

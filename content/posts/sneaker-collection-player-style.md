@@ -1,5 +1,5 @@
 ---
-title: "從十二雙球鞋，回推一個業餘球員的球風。"
+title: "從十一雙球鞋，回推一個業餘球員的球風。"
 author: "AI 初稿 / skyfaring 編輯校正"
 date: "2026-07-24"
 slug: "sneaker-collection-player-style"
@@ -7,8 +7,8 @@ tags:
   - 籃球
   - 球鞋
   - 收藏紀錄
-excerpt: "近年買進的球鞋累積到十二雙：五雙 LaMelo Ball 的 PUMA MB 系列、三雙 ASICS、Cooper Flagg 著用的 New Balance Hesi Low v2、EGOZARU 的首雙簽名鞋 RIKU 1，還有 Kobe 與 Jordan 的復刻經典。把每雙鞋的評測共識抄在一起，重複出現的適配對象，畫出鞋主自己的球風輪廓。"
-highlight: "五個評測來源互不相識，適配對象卻指向同一種球員：不靠體重對抗、靠第一步和變向過人、對腳踝穩定有明確需求的控球型後衛。"
+excerpt: "近年買進的球鞋累積到十一雙：五雙 LaMelo Ball 的 PUMA MB 系列、兩雙 ASICS UNPRE ARS LOW、Cooper Flagg 著用的 New Balance Hesi Low v2、EGOZARU 的首雙簽名鞋 RIKU 1，還有 Kobe 與 Jordan 的復刻經典。把每雙鞋的評測共識抄在一起，重複出現的適配對象，畫出鞋主自己的球風輪廓。"
+highlight: "四個評測來源互不相識，適配對象卻指向同一種球員：不靠體重對抗、靠第一步和變向過人、對腳踝穩定有明確需求的控球型後衛。"
 heroImage: "/images/sneaker-puma-mb01-rick-and-morty.jpg"
 heroAlt: "PUMA MB.01 Rick and Morty 配色，左腳萊姆綠與右腳粉紅的鴛鴦設計"
 heroCredit: "作者拍攝"
@@ -45,15 +45,13 @@ references:
     url: "https://egozaru.jp/en/blogs/news/signature_riku1"
   - title: "HEARTBEAT BASH, EGOZARU RIKU 1 評測"
     url: "https://heartbeat-bash.com/review-egozaru-riku1/"
-  - title: "basketshoesselect, ASICS GELBURST 27 評測"
-    url: "https://basketshoesselect.com/gelburst27/"
   - title: "ASICS 官方, UNPRE ARS 系列"
     url: "https://www.asics.com/jp/ja-jp/UNPRE-ARS/c/ja40205104/"
 ---
 
-剪開藍色防盜扣，把全黑的 Huarache 2K4 從盒子裡拿出來，這是近年進門的第十二雙球鞋。排開來數：五雙 PUMA、三雙 ASICS、一雙 New Balance、一雙 EGOZARU、一雙 Air Jordan，加上手上這雙 Nike。
+剪開藍色防盜扣，把全黑的 Huarache 2K4 從盒子裡拿出來，這是近年進門的第十一雙球鞋。排開來數：五雙 PUMA、兩雙 ASICS、一雙 New Balance、一雙 EGOZARU、一雙 Air Jordan，加上手上這雙 Nike。
 
-我沒打過正式球隊，就是喜歡打球的人。可是買鞋的選擇比記憶誠實，這十二雙鞋記得我想在球場上當什麼樣的球員。
+我沒打過正式球隊，就是喜歡打球的人。可是買鞋的選擇比記憶誠實，這十一雙鞋記得我想在球場上當什麼樣的球員。
 
 ## 五雙 PUMA，都是同一個人的鞋。
 
@@ -83,11 +81,11 @@ MB.04 Golden Child 是這批 PUMA 裡最新的一雙，2025 年 3 月發售，�
 
 ## 鞋櫃裡唯一磨舊的是 ASICS
 
-十二雙鞋裡只有一雙看得出戰績：全黑的 GELBURST 27，鞋面灰痕、鞋頭磨損，前一代的實戰主力。GELBURST 是 ASICS 的速度概念線，日本國內實戰品牌的定番，輕量、貼地、加速優先，FLYTEFOAM 中底加後跟內藏 GEL，緩震走穩定紮實路線。一雙鞋被穿到這個程度，代表這個取向通過了實戰檢驗。
+十一雙鞋裡只有一雙看得出戰績：全黑的 UNPRE ARS LOW 2，鞋面灰痕、鞋頭磨損，是整批鞋裡被操得最兇的一雙。這條線在 ASICS 官方分類裡叫 STABILITY，設計核心是側步與變向時的橫向穩定，TPU 側牆加內部側板，在腳踝外側築一道牆；LOW 版本是河村勇輝在職業賽場著用的路線，走敏捷型後衛取向。一雙鞋被穿到這個程度，代表這個取向通過了實戰檢驗。
 
-![實戰磨損明顯的全黑 ASICS GELBURST 27](/images/sneaker-asics-black.jpg)
+![實戰磨損明顯的全黑 ASICS UNPRE ARS LOW 2](/images/sneaker-asics-black.jpg)
 
-接班的準備也是 ASICS：UNPRE ARS，同款買了兩雙。這條線在 ASICS 官方分類裡叫 STABILITY，職業端的代表著用者是河村勇輝，他穿的是 LOW 版本，設計核心是側步與變向時的橫向穩定，TPU 側牆加內部側板，在腳踝外側築一道牆。同款囤兩雙，是消耗品的買法：知道自己會把它穿壞，先把補給準備好。
+接班的準備直接買同款：黑×墨綠的新品一雙，原封收在盒裡。同款囤兩雙，是消耗品的買法：知道自己會把它穿壞，先把補給準備好。
 
 ![ASICS UNPRE ARS 黑×墨綠配色，盒裝全新](/images/sneaker-asics-unpre-ars.jpg)
 
@@ -117,7 +115,7 @@ Huarache 2K4 的位置更特別。2004 年 Eric Avar 設計，當時 Kobe Bryant
 
 把每雙鞋評測寫的適配對象並排列出，重複出現的詞就浮出來了。
 
-MB.01，輕至中等體重的全能後衛。Hesi Low v2，變向型後衛。RIKU 1，靠腳步與速度的輕量型後衛。GELBURST 27，頻繁跑動切入的速度型球員。UNPRE ARS，大量側步變向、需要腳踝安定感的球員。五個評測來源互不相識，適配對象卻指向同一種球員：不靠體重對抗、靠第一步和變向過人、對腳踝穩定有明確需求的控球型後衛。
+MB.01，輕至中等體重的全能後衛。Hesi Low v2，變向型後衛。RIKU 1，靠腳步與速度的輕量型後衛。UNPRE ARS LOW，敏捷型後衛，同系列主打大量側步變向時的橫向穩定與腳踝安定感。四個評測來源互不相識，適配對象卻指向同一種球員：不靠體重對抗、靠第一步和變向過人、對腳踝穩定有明確需求的控球型後衛。
 
 例外只有 MB.02。它偏硬、支撐至上，評測認為適合吃衝擊保護的球員。放在這份清單裡，它比較像高強度日或腳踝不安穩時的輪替選擇。
 
