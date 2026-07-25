@@ -1,6 +1,6 @@
 # 球鞋收藏紀錄
 
-持有人自藏球鞋清單，依品牌與系列整理。共 12 款 13 雙（UNPRE ARS LOW 同款兩雙：全黑實戰款＋黑×墨綠新品備用；AND1 Rise 照片待補）。照片皆已裁為 16:9 橫幅，存於 `public/images/sneaker-*.jpg`。
+持有人自藏球鞋清單，依品牌與系列整理。共 12 款 13 雙（UNPRE ARS LOW 同款兩雙：全黑實戰款＋黑×墨綠新品備用）。照片皆已裁為 16:9 橫幅並經統一光線管線處理，存於 `public/images/sneaker-*.jpg`。
 
 最後更新：2026-07-24
 
@@ -26,7 +26,7 @@
 | 9 | ASICS | UNPRE ARS LOW 2（持有人推定） | 全黑 | 待確認 | 實戰服役，磨損明顯 | sneaker-asics-black.jpg |
 | 10 | EGOZARU | RIKU 1（瀨川琉久簽名鞋） | TURQUOISE BLUE | 2026 | 全新 | sneaker-egozaru.jpg |
 | 11 | New Balance | Hesi Low v2（Cooper Flagg 著用系列） | Electric Sky | 2025 | 主力實戰 | sneaker-new-balance.jpg |
-| 12 | AND1 | Rise 復刻版（原版 2004） | 待照片確認 | 約 2023 購入 | 實戰過，街頭感取向 | 照片待補 |
+| 12 | AND1 | Rise 三十週年復刻版（原版 2004） | 全黑×鏡面鉻 | 約 2023 購入 | 實戰過，街頭感取向 | sneaker-and1-rise.jpg（另有 -weave、-heel 特寫） |
 | 13 | XTEP 特步 | JLIN 2（林書豪二代） | 藍色水波紋 | 2021–2022 | 實戰過 | sneaker-xtep-jlin2.jpg |
 
 ## 持有人腳感評價（2026-07，40 歲業餘球員）
@@ -80,7 +80,7 @@ ASICS 籃球三分類（SPEED／STABILITY／BOUNCE）中 STABILITY 路線的代�
 
 ### AND1 Rise 復刻版
 
-AND1 為 2000 年代初街球文化代表品牌（Mixtape 系列）。Rise 原版 2004 年發售，Chauncey Billups 穿著它奪下 2004 年總冠軍賽 MVP（活塞擊敗擁有四位未來名人堂球員的湖人）。現行復刻版以合成皮革重現 2000 年代復古樣式，AND1 官網有售。持有人 2023 年 6 月曾在舊部落格撰文（https://yi-tienpan.blogspot.com/2023/06/AND1Rise.html）。照片與確切配色待補。
+AND1 為 2000 年代初街球文化代表品牌（Mixtape 系列）。Rise 原版 2004 年發售，Chauncey Billups 穿著它奪下 2004 年總冠軍賽 MVP（活塞擊敗擁有四位未來名人堂球員的湖人）。持有版本為品牌三十週年（1993–2023）復刻：全黑碳纖維紋編織鞋面＋大面積鏡面鉻板，後跟 ballman 標誌，中底刻 DURASPRING，鞋盒為 30 YEARS 塗鴉設計。持有人 2023 年 6 月曾在舊部落格撰文（https://yi-tienpan.blogspot.com/2023/06/AND1Rise.html）。
 
 ### XTEP 特步 JLIN 2（林書豪二代）
 

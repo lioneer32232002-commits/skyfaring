@@ -9,8 +9,8 @@ tags:
   - 收藏紀錄
 excerpt: "近年買進的球鞋累積到十三雙：五雙 LaMelo Ball 的 PUMA MB 系列、兩雙 ASICS UNPRE ARS LOW、Cooper Flagg 著用的 New Balance Hesi Low v2、EGOZARU 的首雙簽名鞋 RIKU 1、一雙 AND1 Rise、一雙林書豪的 XTEP JLIN 2，還有 Kobe 與 Jordan 的復刻經典。把每雙鞋的評測共識抄在一起，重複出現的適配對象，畫出一個四十歲業餘球員的球風輪廓。"
 highlight: "四個來源各寫各的，適配對象卻指向同一種球員：不靠體重對抗、靠第一步和變向過人、對腳踝穩定有明確需求的控球型後衛。"
-heroImage: "/images/sneaker-puma-mb01-inverse-toxic.jpg"
-heroAlt: "PUMA MB.01 Inverse Toxic 配色，螢光綠渦紋鞋面配紫粉大底"
+heroImage: "/images/sneaker-and1-rise.jpg"
+heroAlt: "AND1 Rise 三十週年復刻，全黑編織鞋面與鏡面鉻板的側面"
 heroCredit: "作者拍攝"
 heroCreditUrl: "https://skyfaring.pages.dev"
 category: 球鞋
@@ -130,7 +130,20 @@ Huarache 2K4 的位置更特別。2004 年 Eric Avar 設計，當時 Kobe Bryant
 
 ## 還有一雙 AND1
 
-鞋櫃裡還有一雙 AND1 Rise 的復刻版，2023 年我就在舊部落格寫過它。AND1 是 2000 年代初街球文化的代名詞，Mixtape 錄影帶捧紅了一整代街球手；Rise 的原版出在 2004 年，Chauncey Billups 穿著它率領活塞擊敗擁有四位未來名人堂球員的湖人，拿下總冠軍賽 MVP。復刻版用合成皮革做回 2000 年代的復古樣式。我的腳感評價：全鞋櫃街頭感最強的一雙，鞋底也偏硬，但沒有 Legend Blue 那塊碳纖維板硬。
+鞋櫃裡還有一雙 AND1 Rise 的復刻版，2023 年我就在舊部落格寫過它。AND1 是 2000 年代初街球文化的代名詞，Mixtape 錄影帶捧紅了一整代街球手；Rise 的原版出在 2004 年，Chauncey Billups 穿著它率領活塞擊敗擁有四位未來名人堂球員的湖人，拿下總冠軍賽 MVP。
+
+![AND1 Rise 復刻版側面，編織鞋面與鏡面鉻板](/images/sneaker-and1-rise.jpg)
+*AND1 Rise 三十週年復刻，全黑編織配鏡面鉻板。*
+
+我這雙是品牌三十週年的復刻，鞋盒印滿塗鴉。鞋面是它最特別的地方：整片壓出碳纖維紋的編織布，配大面積的鏡面鉻板，後跟壓著招牌的 ballman 小人，中底刻著當年的 DURASPRING 緩震。這種用料，現在的球鞋已經不這樣做了。
+
+![AND1 Rise 編織鞋面特寫](/images/sneaker-and1-rise-weave.jpg)
+*編織布壓出碳纖維紋，2000 年代的做法。*
+
+![AND1 Rise 鏡面鉻後跟與 ballman 標誌](/images/sneaker-and1-rise-heel.jpg)
+*鏡面鉻後跟，上緣是 AND1 的 ballman。*
+
+我的腳感評價：全鞋櫃街頭感最強的一雙，鞋底也偏硬，但沒有 Legend Blue 那塊碳纖維板硬。
 
 ## 林書豪的特步
 
