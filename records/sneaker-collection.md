@@ -1,6 +1,6 @@
 # 球鞋收藏紀錄
 
-持有人自藏球鞋清單，依品牌與系列整理。共 11 款 12 雙（UNPRE ARS LOW 同款兩雙：全黑實戰款＋黑×墨綠新品備用；AND1 Rise 照片待補）。照片皆已裁為 16:9 橫幅，存於 `public/images/sneaker-*.jpg`。
+持有人自藏球鞋清單，依品牌與系列整理。共 12 款 13 雙（UNPRE ARS LOW 同款兩雙：全黑實戰款＋黑×墨綠新品備用；AND1 Rise 與 XTEP JLIN 2 照片待補）。照片皆已裁為 16:9 橫幅，存於 `public/images/sneaker-*.jpg`。
 
 最後更新：2026-07-24
 
@@ -27,6 +27,7 @@
 | 10 | EGOZARU | RIKU 1（瀨川琉久簽名鞋） | TURQUOISE BLUE | 2026 | 全新 | sneaker-egozaru.jpg |
 | 11 | New Balance | Hesi Low v2（Cooper Flagg 著用系列） | Electric Sky | 2025 | 主力實戰 | sneaker-new-balance.jpg |
 | 12 | AND1 | Rise 復刻版（原版 2004） | 待照片確認 | 約 2023 購入 | 實戰過，街頭感取向 | 照片待補 |
+| 13 | XTEP 特步 | JLIN 2（林書豪二代） | 藍色 | 2021–2022 | 持有 | 照片待補 |
 
 ## 持有人腳感評價（2026-07，40 歲業餘球員）
 
@@ -35,6 +36,7 @@
 - 穩定最好：UNPRE ARS LOW（與 STABILITY 官方定位一致）
 - AJ11 Legend Blue：鞋底偏硬，中足碳纖維板存在感強；「復刻不能實戰」的說法下仍下場數次
 - AND1 Rise：全鞋櫃街頭感最強，鞋底偏硬但不及 AJ11（照片未上傳成功，待補後裁圖進文章）
+- 鞋底偏硬的兩雙（AJ11、JLIN 2）持有人歸因於碳纖維：AJ11 為中足碳纖維板，JLIN 2 為 X 形大面積碳板，兩者查證屬實
 
 ## 各鞋備註與鞋評共識
 
@@ -79,6 +81,10 @@ ASICS 籃球三分類（SPEED／STABILITY／BOUNCE）中 STABILITY 路線的代�
 ### AND1 Rise 復刻版
 
 AND1 為 2000 年代初街球文化代表品牌（Mixtape 系列）。Rise 原版 2004 年發售，Chauncey Billups 穿著它奪下 2004 年總冠軍賽 MVP（活塞擊敗擁有四位未來名人堂球員的湖人）。現行復刻版以合成皮革重現 2000 年代復古樣式，AND1 官網有售。持有人 2023 年 6 月曾在舊部落格撰文（https://yi-tienpan.blogspot.com/2023/06/AND1Rise.html）。照片與確切配色待補。
+
+### XTEP 特步 JLIN 2（林書豪二代）
+
+林書豪 2019 年與特步簽約後的第二代簽名鞋，2021 至 2022 年發售，藍色配色。規格：X 形大面積碳板貫穿大底（特步首次在籃球鞋用這麼大的異形碳板）、全掌 ETPU 回彈中底（回彈率逾七成）、一體織鞋面＋側面 TPU 包覆，42.5 碼約 400 g。尺碼明顯偏大，評測建議小一號起跳，前掌適合寬腳。台灣有 momo 等通路販售。照片與購入時間待補。
 
 ### EGOZARU RIKU 1「TURQUOISE BLUE」
 
