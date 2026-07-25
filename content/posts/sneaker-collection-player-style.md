@@ -111,7 +111,7 @@ Legend Blue 的原點是 1996 年全明星賽，Michael Jordan 穿著白漆皮�
 
 ![Air Jordan 11 Legend Blue，白漆皮與北卡藍冰底](/images/sneaker-aj11-legend-blue.jpg)
 
-Huarache 2K4 的位置更特別。2004 年 Eric Avar 設計，當時 Kobe Bryant 剛離開 adidas，處於沒有球鞋合約的空窗期，穿著它打了全明星賽與雅典奧運，也穿著黑色版本在 2004 年 11 月隔扣 Dwight Howard。它比任何一雙 Kobe 簽名鞋都早，是 Kobe 與 Nike 關係的起點。2026 年 4 月 30 日復刻，定價 200 美元，全黑這色叫 OT Black。
+Huarache 2K4 的位置更特別。2004 年 Eric Avar 設計，當時 Kobe Bryant 剛離開 adidas，處於沒有球鞋合約的空窗期，穿著它打了全明星賽與雅典奧運，也穿著黑色版本在 2004 年 11 月隔扣 Dwight Howard。它比任何一雙 Kobe 簽名鞋都早，Kobe 與 Nike 的合作就是從這雙鞋開始的。2026 年 4 月 30 日復刻，定價 200 美元，全黑這色叫 OT Black。
 
 ![Nike Air Zoom Huarache 2K4 OT Black 全黑配色](/images/sneaker-nike-huarache-2k4.jpg)
 
