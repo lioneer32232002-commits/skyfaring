@@ -1,6 +1,6 @@
 # 球鞋收藏紀錄
 
-持有人自藏球鞋清單，依品牌與系列整理。共 12 款 13 雙（UNPRE ARS LOW 同款兩雙：全黑實戰款＋黑×墨綠新品備用；AND1 Rise 照片待補）。照片皆已裁為 16:9 橫幅，存於 `public/images/sneaker-*.jpg`。
+持有人自藏球鞋清單，依品牌與系列整理。共 12 款 13 雙（UNPRE ARS LOW 同款兩雙：全黑實戰款＋黑×墨綠新品備用）。照片皆已裁為 16:9 橫幅並經統一光線管線處理，存於 `public/images/sneaker-*.jpg`。
 
 最後更新：2026-07-24
 
@@ -8,7 +8,7 @@
 
 購入順序（依照片檔名流水號推定；兩組檔名各自成一條序列，MB.01 各配色多為發售後回頭購入，順序不等於發售順序）：
 
-1. 序列 A：MB.04 Golden Child → MB.01 水藍 → 全黑 UNPRE ARS LOW 2 → MB.01 Rick and Morty → 黑×墨綠 UNPRE ARS → MB.01 Golden Child → MB.02
+1. 序列 A：MB.04 Golden Child → MB.01 水藍 → 全黑 UNPRE ARS LOW 2 → MB.01 Inverse Toxic → 黑×墨綠 UNPRE ARS → MB.01 Golden Child → MB.02
 2. 序列 B：Hesi Low v2 → AJ11 Legend Blue → RIKU 1 → Huarache 2K4（最新購入）
 
 ## 收藏清單
@@ -16,7 +16,7 @@
 | # | 品牌 | 型號 | 配色 | 發售年 | 狀態 | 照片 |
 |---|------|------|------|--------|------|------|
 | 1 | PUMA | MB.01 | 水藍×桃紅（M.E.L.O. 星空盒） | 2022 | 全新 | sneaker-puma-mb01-blue.jpg |
-| 2 | PUMA | MB.01 | Rick and Morty（螢光綠×粉，鴛鴦配） | 2022 | 全新 | sneaker-puma-mb01-rick-and-morty.jpg |
+| 2 | PUMA | MB.01 | Inverse Toxic（螢光綠渦紋×紫粉） | 2024 | 全新 | sneaker-puma-mb01-inverse-toxic.jpg |
 | 3 | PUMA | MB.01 | Golden Child（金） | 2023 | 全新 | sneaker-puma-mb01-golden-child.jpg |
 | 4 | PUMA | MB.02 | 黑×螢光紅 | 2022–2023 | 全新 | sneaker-puma-mb02.jpg |
 | 5 | PUMA | MB.04 | Golden Child（全金屬金） | 2025 | 全新 | sneaker-puma-mb-gold.jpg |
@@ -26,7 +26,7 @@
 | 9 | ASICS | UNPRE ARS LOW 2（持有人推定） | 全黑 | 待確認 | 實戰服役，磨損明顯 | sneaker-asics-black.jpg |
 | 10 | EGOZARU | RIKU 1（瀨川琉久簽名鞋） | TURQUOISE BLUE | 2026 | 全新 | sneaker-egozaru.jpg |
 | 11 | New Balance | Hesi Low v2（Cooper Flagg 著用系列） | Electric Sky | 2025 | 主力實戰 | sneaker-new-balance.jpg |
-| 12 | AND1 | Rise 復刻版（原版 2004） | 待照片確認 | 約 2023 購入 | 實戰過，街頭感取向 | 照片待補 |
+| 12 | AND1 | Rise 三十週年復刻版（原版 2004） | 全黑×鏡面鉻 | 約 2023 購入 | 實戰過，街頭感取向 | sneaker-and1-rise.jpg（另有 -weave、-heel 特寫） |
 | 13 | XTEP 特步 | JLIN 2（林書豪二代） | 藍色水波紋 | 2021–2022 | 實戰過 | sneaker-xtep-jlin2.jpg |
 
 ## 持有人腳感評價（2026-07，40 歲業餘球員）
@@ -45,7 +45,7 @@
 全掌 NITRO 氮氣發泡中底。評測共識：抓地力頂級，起動急停皆穩；緩震在回彈與柔軟間取得平衡，兼顧場地感與衝擊保護；支撐全面無明顯短板。缺點：楦偏窄、不透氣、外底不耐室外磨損。定位全能，輕至中等體重的後衛最合拍。美國定價 US$125，台灣 2022 年 1 月開賣定價 NT$4,280。
 
 - 水藍×桃紅配色：鞋舌印「1 OF 1」、鞋頭印「NOT FROM HERE」，後跟織帶印「M.E.L.O.」，附星空主題鞋盒。
-- Rick and Morty：與 Adult Swim／Warner Bros. 官方聯名，2022 年 2 月發售，定價 US$135。左右腳不對稱，左綠代表 Rick、右粉代表 Morty。MB 系列最具代表性的配色，轉售價一度衝到零售三倍。
+- Inverse Toxic：2024 年 4 月 12 日發售，定價 US$140（貨號 310437-01）。初代 Toxic 配色的反轉版：螢光綠渦紋佔滿鞋面，紫與粉退到大底。MB.01 世代結束後回頭加推的配色。（更正紀錄：曾誤判為 Rick and Morty 聯名，該配色為左右腳一綠一粉的鴛鴦配，與本雙不符）
 - Golden Child：2023 年 11 月發售，定價 US$140。MB.03 世代回頭復刻 MB.01 的限量配色，名稱取自 LaMelo 是 Ball 家三兄弟中的么子。原為 LaMelo 個人專屬 PE，後開放市售。dusty gold 網布＋金屬金覆蓋層，鞋領有火箭火焰刺繡。
 
 ### PUMA MB.02
@@ -80,7 +80,7 @@ ASICS 籃球三分類（SPEED／STABILITY／BOUNCE）中 STABILITY 路線的代�
 
 ### AND1 Rise 復刻版
 
-AND1 為 2000 年代初街球文化代表品牌（Mixtape 系列）。Rise 原版 2004 年發售，Chauncey Billups 穿著它奪下 2004 年總冠軍賽 MVP（活塞擊敗擁有四位未來名人堂球員的湖人）。現行復刻版以合成皮革重現 2000 年代復古樣式，AND1 官網有售。持有人 2023 年 6 月曾在舊部落格撰文（https://yi-tienpan.blogspot.com/2023/06/AND1Rise.html）。照片與確切配色待補。
+AND1 為 2000 年代初街球文化代表品牌（Mixtape 系列）。Rise 原版 2004 年發售，Chauncey Billups 穿著它奪下 2004 年總冠軍賽 MVP（活塞擊敗擁有四位未來名人堂球員的湖人）。持有版本為品牌三十週年（1993–2023）復刻：全黑碳纖維紋編織鞋面＋大面積鏡面鉻板，後跟 ballman 標誌，中底刻 DURASPRING，鞋盒為 30 YEARS 塗鴉設計。持有人 2023 年 6 月曾在舊部落格撰文（https://yi-tienpan.blogspot.com/2023/06/AND1Rise.html）。
 
 ### XTEP 特步 JLIN 2（林書豪二代）
 

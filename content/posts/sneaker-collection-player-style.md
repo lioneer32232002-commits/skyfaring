@@ -9,8 +9,8 @@ tags:
   - 收藏紀錄
 excerpt: "近年買進的球鞋累積到十三雙：五雙 LaMelo Ball 的 PUMA MB 系列、兩雙 ASICS UNPRE ARS LOW、Cooper Flagg 著用的 New Balance Hesi Low v2、EGOZARU 的首雙簽名鞋 RIKU 1、一雙 AND1 Rise、一雙林書豪的 XTEP JLIN 2，還有 Kobe 與 Jordan 的復刻經典。把每雙鞋的評測共識抄在一起，重複出現的適配對象，畫出一個四十歲業餘球員的球風輪廓。"
 highlight: "四個來源各寫各的，適配對象卻指向同一種球員：不靠體重對抗、靠第一步和變向過人、對腳踝穩定有明確需求的控球型後衛。"
-heroImage: "/images/sneaker-puma-mb01-rick-and-morty.jpg"
-heroAlt: "PUMA MB.01 Rick and Morty 配色，左腳萊姆綠與右腳粉紅的鴛鴦設計"
+heroImage: "/images/sneaker-and1-rise.jpg"
+heroAlt: "AND1 Rise 三十週年復刻，全黑編織鞋面與鏡面鉻板的側面"
 heroCredit: "作者拍攝"
 heroCreditUrl: "https://skyfaring.pages.dev"
 category: 球鞋
@@ -27,10 +27,8 @@ references:
     url: "https://about.puma.com/en/newsroom/news/puma-hoops-releases-new-mb01-style-golden-child"
   - title: "House of Heat, PUMA MB.04 Golden Child Release Info"
     url: "https://houseofheat.co/puma/puma-mb-04-golden-child-311306-01"
-  - title: "House of Heat, Rick and Morty x PUMA MB.01 Release Date"
-    url: "https://houseofheat.co/puma/lamelo-ball-rick-and-morty-puma-mb-01-release-date"
-  - title: "The Sports Rush, LaMelo Ball x Rick and Morty MB.01 Resale Value"
-    url: "https://thesportsrush.com/nba-news-lamelo-ball-x-rick-and-morty-current-resale-value-of-special-edition-mb-01-and-will-they-be-restocked/"
+  - title: "Sneaker News, PUMA MB.01 Inverse Toxic (310437-01) Release Date"
+    url: "https://sneakernews.com/2024/04/05/puma-mb-01-inverse-toxic-310437-01-release-date/"
   - title: "Sneaker News, Air Jordan 11 Legend Blue (CT8012-104) Release Date"
     url: "https://sneakernews.com/2024/06/03/air-jordan-11-legend-blue-ct8012-104-release-date/"
   - title: "RunRepeat, New Balance Hesi Low v2 Lab Review"
@@ -72,10 +70,10 @@ MB.01 是 2021 年底的出道簽名鞋，美國定價 125 美元，台灣隔年
 
 水藍這雙的細節都在字上。鞋舌印 1 OF 1，鞋頭壓 NOT FROM HERE，後跟織帶繡 M.E.L.O.，搭配星空主題鞋盒，一整套把 LaMelo 的外星人設定講完。
 
-![PUMA MB.01 Rick and Morty 配色，左右腳一綠一粉](/images/sneaker-puma-mb01-rick-and-morty.jpg)
-*MB.01 Rick and Morty，左綠右粉的鴛鴦配。*
+![PUMA MB.01 Inverse Toxic 配色，螢光綠渦紋鞋面](/images/sneaker-puma-mb01-inverse-toxic.jpg)
+*MB.01 Inverse Toxic，螢光綠渦紋配紫粉大底。*
 
-Rick and Morty 是 MB 系列最有名的配色，2022 年 2 月與 Adult Swim 官方聯名，定價 135 美元。左右腳不對稱，左腳萊姆綠代表 Rick，右腳粉紅代表 Morty。轉售價一度衝到零售價的三倍，PUMA 補貨幾次都完售，是 LaMelo 簽名鞋轉售市場最搶手的一雙。
+螢光綠這雙是 Inverse Toxic，2024 年 4 月發售，定價 140 美元。名字來自初代的 Toxic 配色：原版以紫為主、螢光綠當點綴，這雙把比例反轉，渦紋的螢光綠佔滿鞋面，紫和粉退到大底。發售時 MB.03 世代都上市了，PUMA 仍回頭替這雙初代鞋開新色。
 
 ![PUMA MB.01 Golden Child，金色鞋面與鍍鉻菱格後跟](/images/sneaker-puma-mb01-golden-child.jpg)
 *MB.01 Golden Child，金屬金鞋面配鍍鉻菱格後跟。*
@@ -132,7 +130,20 @@ Huarache 2K4 的位置更特別。2004 年 Eric Avar 設計，當時 Kobe Bryant
 
 ## 還有一雙 AND1
 
-鞋櫃裡還有一雙 AND1 Rise 的復刻版，2023 年我就在舊部落格寫過它。AND1 是 2000 年代初街球文化的代名詞，Mixtape 錄影帶捧紅了一整代街球手；Rise 的原版出在 2004 年，Chauncey Billups 穿著它率領活塞擊敗擁有四位未來名人堂球員的湖人，拿下總冠軍賽 MVP。復刻版用合成皮革做回 2000 年代的復古樣式。我的腳感評價：全鞋櫃街頭感最強的一雙，鞋底也偏硬，但沒有 Legend Blue 那塊碳纖維板硬。
+鞋櫃裡還有一雙 AND1 Rise 的復刻版，2023 年我就在舊部落格寫過它。AND1 是 2000 年代初街球文化的代名詞，Mixtape 錄影帶捧紅了一整代街球手；Rise 的原版出在 2004 年，Chauncey Billups 穿著它率領活塞擊敗擁有四位未來名人堂球員的湖人，拿下總冠軍賽 MVP。
+
+![AND1 Rise 復刻版側面，編織鞋面與鏡面鉻板](/images/sneaker-and1-rise.jpg)
+*AND1 Rise 三十週年復刻，全黑編織配鏡面鉻板。*
+
+我這雙是品牌三十週年的復刻，鞋盒印滿塗鴉。鞋面是它最特別的地方：整片壓出碳纖維紋的編織布，配大面積的鏡面鉻板，後跟壓著招牌的 ballman 小人，中底刻著當年的 DURASPRING 緩震。這種用料，現在的球鞋已經不這樣做了。
+
+![AND1 Rise 編織鞋面特寫](/images/sneaker-and1-rise-weave.jpg)
+*編織布壓出碳纖維紋，2000 年代的做法。*
+
+![AND1 Rise 鏡面鉻後跟與 ballman 標誌](/images/sneaker-and1-rise-heel.jpg)
+*鏡面鉻後跟，上緣是 AND1 的 ballman。*
+
+我的腳感評價：全鞋櫃街頭感最強的一雙，鞋底也偏硬，但沒有 Legend Blue 那塊碳纖維板硬。
 
 ## 林書豪的特步
 
