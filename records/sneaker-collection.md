@@ -1,6 +1,6 @@
 # 球鞋收藏紀錄
 
-持有人自藏球鞋清單，依品牌與系列整理。共 10 款 11 雙（UNPRE ARS LOW 同款兩雙：全黑實戰款＋黑×墨綠新品備用）。照片皆已裁為 16:9 橫幅，存於 `public/images/sneaker-*.jpg`。
+持有人自藏球鞋清單，依品牌與系列整理。共 11 款 12 雙（UNPRE ARS LOW 同款兩雙：全黑實戰款＋黑×墨綠新品備用；AND1 Rise 照片待補）。照片皆已裁為 16:9 橫幅，存於 `public/images/sneaker-*.jpg`。
 
 最後更新：2026-07-24
 
@@ -26,14 +26,15 @@
 | 9 | ASICS | UNPRE ARS LOW 2（持有人推定） | 全黑 | 待確認 | 實戰服役，磨損明顯 | sneaker-asics-black.jpg |
 | 10 | EGOZARU | RIKU 1（瀨川琉久簽名鞋） | TURQUOISE BLUE | 2026 | 全新 | sneaker-egozaru.jpg |
 | 11 | New Balance | Hesi Low v2（Cooper Flagg 著用系列） | Electric Sky | 2025 | 主力實戰 | sneaker-new-balance.jpg |
+| 12 | AND1 | Rise 復刻版（原版 2004） | 待照片確認 | 約 2023 購入 | 實戰過，街頭感取向 | 照片待補 |
 
 ## 持有人腳感評價（2026-07，40 歲業餘球員）
 
 - 反應最好：Hesi Low v2、RIKU 1（與評測共識一致，兩者強項皆為貼地與啟動）
 - 包覆最好：MB.01（評測列為缺點的窄楦，實穿感受為包覆優勢）
 - 穩定最好：UNPRE ARS LOW（與 STABILITY 官方定位一致）
-- AJ11 Legend Blue：鞋底偏硬，中足碳纖維承托板存在感強；「復刻不能實戰」的說法下仍下場數次
-- 待補：AND1 一雙（街頭感最強，鞋底偏硬但不及 AJ11；照片未上傳成功，型號待照片確認後補入清單，屆時總數變 11 款 12 雙）
+- AJ11 Legend Blue：鞋底偏硬，中足碳纖維板存在感強；「復刻不能實戰」的說法下仍下場數次
+- AND1 Rise：全鞋櫃街頭感最強，鞋底偏硬但不及 AJ11（照片未上傳成功，待補後裁圖進文章）
 
 ## 各鞋備註與鞋評共識
 
@@ -74,6 +75,10 @@ ASICS 籃球三分類（SPEED／STABILITY／BOUNCE）中 STABILITY 路線的代�
 ### ASICS UNPRE ARS LOW 2（同款兩雙）
 
 持有人確認兩雙同款：全黑一雙為使用量最大的實戰用鞋（磨損明顯），黑×墨綠一雙為全新備品。代數為持有人推定（LOW 2），確切代數與配色名以鞋盒貨號比對為準。LOW 版本是河村勇輝在職業賽場著用的路線，走敏捷型後衛取向；2025 年河村還推出 ASICS 籃球史上首雙球員特別版 UNPRE ARS LOW 2 RT（¥19,800 含稅）。系列共通設計見下方 UNPRE ARS 段落。
+
+### AND1 Rise 復刻版
+
+AND1 為 2000 年代初街球文化代表品牌（Mixtape 系列）。Rise 原版 2004 年發售，Chauncey Billups 穿著它奪下 2004 年總冠軍賽 MVP（活塞擊敗擁有四位未來名人堂球員的湖人）。現行復刻版以合成皮革重現 2000 年代復古樣式，AND1 官網有售。持有人 2023 年 6 月曾在舊部落格撰文（https://yi-tienpan.blogspot.com/2023/06/AND1Rise.html）。照片與確切配色待補。
 
 ### EGOZARU RIKU 1「TURQUOISE BLUE」
 
