@@ -9,8 +9,8 @@ tags:
   - 收藏紀錄
 excerpt: "近年買進的球鞋累積到十三雙：五雙 LaMelo Ball 的 PUMA MB 系列、兩雙 ASICS UNPRE ARS LOW、Cooper Flagg 著用的 New Balance Hesi Low v2、EGOZARU 的首雙簽名鞋 RIKU 1、一雙 AND1 Rise、一雙林書豪的 XTEP JLIN 2，還有 Kobe 與 Jordan 的復刻經典。把每雙鞋的評測共識抄在一起，重複出現的適配對象，畫出一個四十歲業餘球員的球風輪廓。"
 highlight: "四個來源各寫各的，適配對象卻指向同一種球員：不靠體重對抗、靠第一步和變向過人、對腳踝穩定有明確需求的控球型後衛。"
-heroImage: "/images/sneaker-puma-mb01-rick-and-morty.jpg"
-heroAlt: "PUMA MB.01 Rick and Morty 配色，左腳萊姆綠與右腳粉紅的鴛鴦設計"
+heroImage: "/images/sneaker-puma-mb01-inverse-toxic.jpg"
+heroAlt: "PUMA MB.01 Inverse Toxic 配色，螢光綠渦紋鞋面配紫粉大底"
 heroCredit: "作者拍攝"
 heroCreditUrl: "https://skyfaring.pages.dev"
 category: 球鞋
@@ -27,10 +27,8 @@ references:
     url: "https://about.puma.com/en/newsroom/news/puma-hoops-releases-new-mb01-style-golden-child"
   - title: "House of Heat, PUMA MB.04 Golden Child Release Info"
     url: "https://houseofheat.co/puma/puma-mb-04-golden-child-311306-01"
-  - title: "House of Heat, Rick and Morty x PUMA MB.01 Release Date"
-    url: "https://houseofheat.co/puma/lamelo-ball-rick-and-morty-puma-mb-01-release-date"
-  - title: "The Sports Rush, LaMelo Ball x Rick and Morty MB.01 Resale Value"
-    url: "https://thesportsrush.com/nba-news-lamelo-ball-x-rick-and-morty-current-resale-value-of-special-edition-mb-01-and-will-they-be-restocked/"
+  - title: "Sneaker News, PUMA MB.01 Inverse Toxic (310437-01) Release Date"
+    url: "https://sneakernews.com/2024/04/05/puma-mb-01-inverse-toxic-310437-01-release-date/"
   - title: "Sneaker News, Air Jordan 11 Legend Blue (CT8012-104) Release Date"
     url: "https://sneakernews.com/2024/06/03/air-jordan-11-legend-blue-ct8012-104-release-date/"
   - title: "RunRepeat, New Balance Hesi Low v2 Lab Review"
@@ -72,10 +70,10 @@ MB.01 是 2021 年底的出道簽名鞋，美國定價 125 美元，台灣隔年
 
 水藍這雙的細節都在字上。鞋舌印 1 OF 1，鞋頭壓 NOT FROM HERE，後跟織帶繡 M.E.L.O.，搭配星空主題鞋盒，一整套把 LaMelo 的外星人設定講完。
 
-![PUMA MB.01 Rick and Morty 配色，左右腳一綠一粉](/images/sneaker-puma-mb01-rick-and-morty.jpg)
-*MB.01 Rick and Morty，左綠右粉的鴛鴦配。*
+![PUMA MB.01 Inverse Toxic 配色，螢光綠渦紋鞋面](/images/sneaker-puma-mb01-inverse-toxic.jpg)
+*MB.01 Inverse Toxic，螢光綠渦紋配紫粉大底。*
 
-Rick and Morty 是 MB 系列最有名的配色，2022 年 2 月與 Adult Swim 官方聯名，定價 135 美元。左右腳不對稱，左腳萊姆綠代表 Rick，右腳粉紅代表 Morty。轉售價一度衝到零售價的三倍，PUMA 補貨幾次都完售，是 LaMelo 簽名鞋轉售市場最搶手的一雙。
+螢光綠這雙是 Inverse Toxic，2024 年 4 月發售，定價 140 美元。名字來自初代的 Toxic 配色：原版以紫為主、螢光綠當點綴，這雙把比例反轉，渦紋的螢光綠佔滿鞋面，紫和粉退到大底。發售時 MB.03 世代都上市了，PUMA 仍回頭替這雙初代鞋開新色。
 
 ![PUMA MB.01 Golden Child，金色鞋面與鍍鉻菱格後跟](/images/sneaker-puma-mb01-golden-child.jpg)
 *MB.01 Golden Child，金屬金鞋面配鍍鉻菱格後跟。*
