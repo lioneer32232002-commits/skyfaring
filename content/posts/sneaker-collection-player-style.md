@@ -81,13 +81,13 @@ MB.04 Golden Child 是這批 PUMA 裡最新的一雙，2025 年 3 月發售，�
 
 ## 鞋櫃裡唯一磨舊的是 ASICS
 
-十一雙鞋裡只有一雙看得出戰績：全黑的 UNPRE ARS LOW 2，鞋面灰痕、鞋頭磨損，是整批鞋裡被操得最兇的一雙。這條線在 ASICS 官方分類裡叫 STABILITY，設計核心是側步與變向時的橫向穩定，TPU 側牆加內部側板，在腳踝外側築一道牆；LOW 版本是河村勇輝在職業賽場著用的路線，走敏捷型後衛取向。一雙鞋被穿到這個程度，代表這個取向通過了實戰檢驗。
+十一雙鞋裡只有一雙看得出戰績：全黑的 UNPRE ARS LOW，鞋面灰痕、鞋頭磨損，是整批鞋裡被操得最兇的一雙。這條線在 ASICS 官方分類裡叫 STABILITY，設計核心是側步與變向時的橫向穩定，TPU 側牆加內部側板，在腳踝外側築一道牆；LOW 版本是河村勇輝在職業賽場著用的路線，走敏捷型後衛取向。一雙鞋被穿到這個程度，代表這個取向通過了實戰檢驗。
 
-![實戰磨損明顯的全黑 ASICS UNPRE ARS LOW 2](/images/sneaker-asics-black.jpg)
+![實戰磨損明顯的全黑 ASICS UNPRE ARS LOW](/images/sneaker-asics-black.jpg)
 
 接班的準備直接買同款：黑×墨綠的新品一雙，原封收在盒裡。同款囤兩雙，是消耗品的買法：知道自己會把它穿壞，先把補給準備好。
 
-![ASICS UNPRE ARS 黑×墨綠配色，盒裝全新](/images/sneaker-asics-unpre-ars.jpg)
+![ASICS UNPRE ARS LOW 黑×墨綠配色，盒裝全新](/images/sneaker-asics-unpre-ars.jpg)
 
 EGOZARU 的 RIKU 1 是最冷門的一雙。EGOZARU 是日本籃球服飾品牌，這是它成立以來第一雙球員簽名鞋，簽名對象瀨川琉久還是高中生，鞋舌的白色交織標誌就是 Segawa Riku 的縮寫。2025 年 11 月首發，這個 TURQUOISE BLUE 配色 2026 年 1 月才上市，定價 18,700 日圓，台灣幾乎沒有通路。日本評測給它的關鍵詞是貼地：前掌刻意壓低離地高度，換取場地感與啟動反應，代價是緩震與回彈都不是強項，適合靠腳步與速度的輕量型後衛。
 

@@ -22,8 +22,8 @@
 | 5 | PUMA | MB.04 | Golden Child（全金屬金） | 2025 | 全新 | sneaker-puma-mb-gold.jpg |
 | 6 | Nike | Air Zoom Huarache 2K4 | OT Black（Triple Black） | 2026 復刻 | 全新，最新購入 | sneaker-nike-huarache-2k4.jpg |
 | 7 | Jordan | Air Jordan 11 | Legend Blue（白×北卡藍） | 2024 復刻 | 全新 | sneaker-aj11-legend-blue.jpg |
-| 8 | ASICS | UNPRE ARS LOW 2（持有人推定，以鞋盒貨號為準） | 黑×墨綠 | 2024– | 全新備品，與 #9 同款 | sneaker-asics-unpre-ars.jpg |
-| 9 | ASICS | UNPRE ARS LOW 2（持有人推定） | 全黑 | 2024– | 實戰服役，磨損明顯 | sneaker-asics-black.jpg |
+| 8 | ASICS | UNPRE ARS LOW 2（持有人推定，以鞋盒貨號為準） | 黑×墨綠 | 待確認 | 全新備品，與 #9 同款 | sneaker-asics-unpre-ars.jpg |
+| 9 | ASICS | UNPRE ARS LOW 2（持有人推定） | 全黑 | 待確認 | 實戰服役，磨損明顯 | sneaker-asics-black.jpg |
 | 10 | EGOZARU | RIKU 1（瀨川琉久簽名鞋） | TURQUOISE BLUE | 2026 | 全新 | sneaker-egozaru.jpg |
 | 11 | New Balance | Hesi Low v2（Cooper Flagg 著用系列） | Electric Sky | 2025 | 主力實戰 | sneaker-new-balance.jpg |
 
