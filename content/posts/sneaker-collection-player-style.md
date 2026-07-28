@@ -8,7 +8,7 @@ tags:
   - 球鞋
   - 收藏紀錄
 excerpt: "近年買進的球鞋累積到 13 雙：五雙 LaMelo Ball 的 PUMA MB 系列、兩雙 ASICS UNPRE ARS LOW、Cooper Flagg 著用的 New Balance Hesi Low v2、EGOZARU 的首雙簽名鞋 RIKU 1、一雙 AND1 Rise、一雙林書豪的 XTEP JLIN 2，還有 Kobe 與 Jordan 的復刻經典。重複出現的適配對象，畫出一個 40 歲業餘球員的球風輪廓。"
-highlight: "四個來源各寫各的，適配對象卻指向同一種球員：不靠體重對抗、靠第一步和變向過人、對腳踝穩定有明確需求的控球型後衛。"
+highlight: "三雙鞋的評測寫的適配對象是同一種球員：不靠體重對抗、靠第一步和變向過人、對腳踝穩定有明確需求的控球型後衛。"
 heroImage: "/images/sneaker-and1-rise.jpg"
 heroAlt: "AND1 Rise 三十週年復刻，全黑編織鞋面與鏡面鉻板的側面"
 heroCredit: "作者拍攝"
@@ -48,7 +48,7 @@ references:
   - title: "虎撲, JLIN 2 測評"
     url: "https://m.hupu.com/bbs/46636653.html"
   - title: "AND1 官方, Rise Basketball Shoes"
-    url: "https://and1.com/products/rise-basketball-shoes"
+    url: "https://and1.com/"
   - title: "Skyfaring 舊部落格, AND1 Rise（2023 年 6 月）"
     url: "https://yi-tienpan.blogspot.com/2023/06/AND1Rise.html"
   - title: "ASICS 官方, UNPRE ARS 系列"
@@ -63,7 +63,7 @@ references:
 
 LaMelo Ball 的簽名鞋占了鞋櫃將近一半：MB.01 三個配色、MB.02 一雙、MB.04 一雙。夏洛特黃蜂的主控，2021 年的年度最佳新秀，傳球想像力大於一切的打法，他的鞋也做成這種張揚的樣子。
 
-MB.01 是 2021 年底的出道簽名鞋，美國定價 125 美元，台灣隔年 1 月開賣，定價 4,280 元。評測圈當年給它的評價很少見地一致：全掌 NITRO 氮氣發泡中底，在回彈與柔軟之間取得平衡；抓地力好到急停可以直接釘在地板上。缺點也一致，楦頭偏窄、鞋面不透氣、外底不耐室外場。適合的對象寫得很清楚，輕至中等體重的全能後衛。
+MB.01 是 2021 年底的出道簽名鞋，美國定價 125 美元，台灣隔年 1 月開賣，定價 4,280 元。評測圈當年給它的評價很少見地一致：全掌 NITRO 氮氣發泡中底，在回彈與柔軟之間取得平衡；抓地力好到急停可以直接釘在地板上。場地要看鞋底，水晶底吃的是室內木地板，室外也不是不能穿，但磨損很快。楦頭偏窄、鞋面悶，是我自己穿出來的感覺。
 
 ![PUMA MB.01 水藍配色，鞋舌印著 1 OF 1](/images/sneaker-puma-mb01-blue.jpg)
 *MB.01 水藍配色，鞋舌左右各印一組 1 OF 1。*
@@ -88,7 +88,7 @@ MB.02 是系列裡的異類。前後掌 NITRO 加高密度載體，中足埋抗�
 ![PUMA MB.04 Golden Child，全金屬金的塗鴉浮雕鞋面](/images/sneaker-puma-mb-gold.jpg)
 *MB.04 Golden Child，在門市初見時拍下的一張。*
 
-MB.04 Golden Child 是這批 PUMA 裡最新的一雙，2025 年 3 月發售，定價 125 美元。全金屬金的鞋面壓滿塗鴉浮雕，媒體形容它像獎盃。評測給它的定位回到系列傳統：NITROFOAM 柔軟舒適，乾淨場地抓地好，但吸塵嚴重，支撐是弱項。同一個 Golden Child 名字，我在 MB.01 和 MB.04 各收了一雙，等於把這個梗的頭尾都留下來。
+MB.04 Golden Child 是這批 PUMA 裡最新的一雙，2025 年 3 月發售，定價 125 美元。全金屬金的鞋面壓滿塗鴉浮雕，媒體形容它像獎盃。評測給它的定位回到系列傳統：NITROFOAM 柔軟舒適，乾淨場地抓地好，但吸塵嚴重，側牆支撐的評價分歧。同一個 Golden Child 名字，我在 MB.01 和 MB.04 各收了一雙，等於把這個梗的頭尾都留下來。
 
 ## 鞋櫃裡唯一磨舊的是 ASICS
 
@@ -102,7 +102,7 @@ MB.04 Golden Child 是這批 PUMA 裡最新的一雙，2025 年 3 月發售，�
 ![ASICS UNPRE ARS LOW 黑×墨綠配色，盒裝全新](/images/sneaker-asics-unpre-ars.jpg)
 *接班用的同款新品，黑×墨綠，原封在盒。*
 
-EGOZARU 的 RIKU 1 是最冷門的一雙。EGOZARU 是日本籃球服飾品牌，這是它成立以來第一雙球員簽名鞋，簽名對象瀨川琉久還是高中生，鞋舌的白色交織標誌就是 Segawa Riku 的縮寫。2025 年 11 月首發，這個 TURQUOISE BLUE 配色 2026 年 1 月才上市，定價 18,700 日圓，台灣幾乎沒有通路。日本評測給它的關鍵詞是貼地：前掌刻意壓低離地高度，換取場地感與啟動反應，代價是緩震與回彈都不是強項，適合靠腳步與速度的輕量型後衛。
+EGOZARU 的 RIKU 1 是最冷門的一雙。EGOZARU 是日本籃球服飾品牌，這是它成立以來第一雙球員簽名鞋，簽名對象瀨川琉久是 B.League 千葉噴射機的年輕後衛，鞋舌的白色交織標誌就是 Segawa Riku 的縮寫。2025 年 11 月首發，這個 TURQUOISE BLUE 配色 2026 年 1 月才上市，定價 18,700 日圓，台灣幾乎沒有通路。日本評測給它的關鍵詞是貼地：前掌刻意壓低離地高度，換取場地感與啟動反應，代價是緩震與支撐都不是強項，適合靠腳步與速度的輕量型後衛。
 
 ![EGOZARU RIKU 1 TURQUOISE BLUE 配色與品牌吊牌](/images/sneaker-egozaru.jpg)
 *RIKU 1「TURQUOISE BLUE」，吊牌還沒拆。*
@@ -123,7 +123,7 @@ Legend Blue 的原點是 1996 年全明星賽，Michael Jordan 穿著白漆皮�
 ![Air Jordan 11 Legend Blue，白漆皮與北卡藍冰底](/images/sneaker-aj11-legend-blue.jpg)
 *Legend Blue，白漆皮配北卡藍冰底。*
 
-Huarache 2K4 的位置更特別。2004 年 Eric Avar 設計，當時 Kobe Bryant 剛離開 adidas，處於沒有球鞋合約的空窗期，穿著它打了全明星賽與雅典奧運，也穿著黑色版本在 2004 年 11 月隔扣 Dwight Howard。它比任何一雙 Kobe 簽名鞋都早，Kobe 與 Nike 的合作就是從這雙鞋開始的。2026 年 4 月 30 日復刻，定價 200 美元，全黑這色叫 OT Black。
+Huarache 2K4 的位置更特別。2004 年 Eric Avar 設計，Kobe Bryant 2003 年結束與 adidas 的關係轉投 Nike，這雙是他在 Nike 的第一雙上腳鞋，他穿著它打了 2004 年的全明星賽，也穿著黑色版本在同年 11 月隔扣 Dwight Howard。它比任何一雙 Kobe 簽名鞋都早，Kobe 與 Nike 的合作就是從這雙鞋開始的。2026 年 4 月 30 日復刻，定價 200 美元，全黑這色叫 OT Black。
 
 ![Nike Air Zoom Huarache 2K4 OT Black 全黑配色](/images/sneaker-nike-huarache-2k4.jpg)
 *2K4「OT Black」，最新進門的一雙。*
@@ -156,13 +156,13 @@ Huarache 2K4 的位置更特別。2004 年 Eric Avar 設計，當時 Kobe Bryant
 
 每雙鞋的評測都寫了適配對象，重複出現的詞就浮出來了。
 
-MB.01，輕至中等體重的全能後衛。Hesi Low v2，變向型後衛。RIKU 1，靠腳步與速度的輕量型後衛。UNPRE ARS LOW，敏捷型後衛，同系列主打大量側步變向時的橫向穩定與腳踝安定感。四個來源各寫各的，適配對象卻指向同一種球員：不靠體重對抗、靠第一步和變向過人、對腳踝穩定有明確需求的控球型後衛。
+Hesi Low v2，變向型後衛。RIKU 1，靠腳步與速度的輕量型後衛。UNPRE ARS LOW，敏捷型後衛，同系列主打大量側步變向時的橫向穩定與腳踝安定感。三雙鞋的評測寫的適配對象是同一種球員：不靠體重對抗、靠第一步和變向過人、對腳踝穩定有明確需求的控球型後衛。
 
 這個畫像放在 40 歲的身體上格外合理。對抗與彈跳最先衰退，節奏和腳步留得住；護踝與穩定，到這個年紀從加分變成必要。
 
 例外只有 MB.02。它偏硬、支撐至上，評測認為適合吃衝擊保護的球員。放在這份清單裡，它比較像高強度日或腳踝不安穩時的輪替選擇。
 
-腳上的驗證結果也有了。我自己的排名：反應最好的是 Hesi Low v2 和 RIKU 1，穩定最好的是 UNPRE ARS LOW，這兩項跟評測對得上，前者的評測強項本來就是貼地與啟動，後者的官方定位就是穩定。有落差的是 MB.01：評測把窄楦列為缺點，套在我的腳上卻成了包覆最好的一雙。楦型合不合，終究是一腳一個結果。
+腳上的驗證結果也有了。我自己的排名：反應最好的是 Hesi Low v2 和 RIKU 1，穩定最好的是 UNPRE ARS LOW，這兩項跟評測對得上，前者的評測強項本來就是貼地與啟動，後者的官方定位就是穩定。有落差的是 MB.01：窄楦本來是我最擔心的一點，套在我的腳上卻成了包覆最好的一雙。楦型合不合，終究是一腳一個結果。
 
 打球穿的跟收藏的，分得非常開。實戰輪替的鞋，定價換算下來都在一百多美元的功能鞋等級；Legend Blue 定價 230 美元、2K4 定價 200 美元，有故事的那兩雙比實戰鞋還貴，除了忍不住下場試的那幾次，平常就是收著。
 
