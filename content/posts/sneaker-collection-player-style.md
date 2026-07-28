@@ -1,5 +1,5 @@
 ---
-title: "從十三雙球鞋，回推一個業餘球員的球風。"
+title: "40 歲，我的 13 雙球鞋。"
 author: "AI 初稿 / skyfaring 編輯校正"
 date: "2026-07-24"
 slug: "sneaker-collection-player-style"
