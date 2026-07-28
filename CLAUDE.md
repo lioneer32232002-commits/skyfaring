@@ -182,7 +182,15 @@
 
 ## 論文與存檔資料夾（不在 git 裡）
 
-以下資料夾沒有被 git 追蹤，只存在 OneDrive，新 clone 的 repo 不會有它們：
+以下資料夾的**實體檔案在 OneDrive**（所以 B 機仍能同步到），但在 `E:/repos/skyfaring/` 底下建了同名的目錄連結（Windows junction），所以用 `E:/repos/skyfaring/drone-papers/` 這種路徑也讀得到，排程任務不需要記兩套路徑。
+
+新機器 clone 之後這些連結不會自動存在，要自己建：
+
+```
+mklink /J "E:\repos\skyfaring\drone-papers" "E:\OneDrive\02_創作\14_AI TEST\skyfaring\drone-papers"
+```
+
+實體位置：
 
 - **無人機論文**：`E:/OneDrive/02_創作/14_AI TEST/skyfaring/drone-papers/`
 - **籃球論文**：`E:/OneDrive/02_創作/14_AI TEST/skyfaring/basketball-papers/`
