@@ -173,14 +173,20 @@
 - **論文導讀 / PDF 翻譯類文章**：發文後同步存一份 `.md` 到 `skyfaring/articles/`
 - **一般賽後分析文章**：不需存 `articles/`
 
-## Skyfaring 文章目錄
+## 專案位置（程式碼與資料分兩邊）
 
-文章存放於：`C:/Users/oneda/OneDrive/02_創作/14_AI TEST/skyfaring/content/posts/`
+程式碼走 git，論文與存檔走 OneDrive。這兩類東西的同步方式不同，不要混在一起。
 
-## 論文資料夾
+- **repo 本體**：`E:/repos/skyfaring/`（每台機器各自 `git clone`，不要放進 OneDrive。OneDrive 會按檔案覆蓋 `.git`，造成物件遺失與分支回退）
+- **文章存放於**：`E:/repos/skyfaring/content/posts/`
 
-- **無人機論文**：`C:/Users/oneda/OneDrive/02_創作/14_AI TEST/skyfaring/drone-papers/`
-- **籃球論文**：`C:/Users/oneda/OneDrive/02_創作/14_AI TEST/skyfaring/basketball-papers/`
+## 論文與存檔資料夾（不在 git 裡）
+
+以下資料夾沒有被 git 追蹤，只存在 OneDrive，新 clone 的 repo 不會有它們：
+
+- **無人機論文**：`E:/OneDrive/02_創作/14_AI TEST/skyfaring/drone-papers/`
+- **籃球論文**：`E:/OneDrive/02_創作/14_AI TEST/skyfaring/basketball-papers/`
+- **論文導讀存檔**：`E:/OneDrive/02_創作/14_AI TEST/skyfaring/articles/`
 
 每篇論文對應一個 `.md` 摘要檔（籃球論文另附 PDF），檔名格式：`YYYY-MM-DD-識別碼.md`
 

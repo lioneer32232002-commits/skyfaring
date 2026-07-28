@@ -70,3 +70,6 @@ next-env.d.ts
 
 # Claude Code internal tooling
 /.claude/
+
+# 排程執行記錄（本機/OneDrive 專用，不上線）
+/automation/
