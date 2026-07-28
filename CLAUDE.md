@@ -177,7 +177,7 @@
 
 程式碼走 git，論文與存檔走 OneDrive。這兩類東西的同步方式不同，不要混在一起。
 
-- **repo 本體**：各機器自行 `git clone` 到本機硬碟，路徑每台不同（A 機 `D:/repos/skyfaring`、B 機 `E:/repos/skyfaring`）。不要放進 OneDrive，OneDrive 按單一檔案同步，會讓 `.git` 的分支指標與物件對不上，造成物件遺失與分支回退
+- **repo 本體**：各機器自行 `git clone` 到本機硬碟，路徑每台不同（A 機 `E:/repos/skyfaring`、B 機 `D:/repos/skyfaring`）。不要放進 OneDrive，OneDrive 按單一檔案同步，會讓 `.git` 的分支指標與物件對不上，造成物件遺失與分支回退
 - **文章存放於**：`content/posts/`
 
 ## 論文與存檔資料夾（不在 git 裡）
