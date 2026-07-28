@@ -177,24 +177,24 @@
 
 程式碼走 git，論文與存檔走 OneDrive。這兩類東西的同步方式不同，不要混在一起。
 
-- **repo 本體**：`E:/repos/skyfaring/`（每台機器各自 `git clone`，不要放進 OneDrive。OneDrive 會按檔案覆蓋 `.git`，造成物件遺失與分支回退）
-- **文章存放於**：`E:/repos/skyfaring/content/posts/`
+- **repo 本體**：各機器自行 `git clone` 到本機硬碟，路徑每台不同（A 機 `D:/repos/skyfaring`、B 機 `E:/repos/skyfaring`）。不要放進 OneDrive，OneDrive 按單一檔案同步，會讓 `.git` 的分支指標與物件對不上，造成物件遺失與分支回退
+- **文章存放於**：`content/posts/`
 
 ## 論文與存檔資料夾（不在 git 裡）
 
-以下資料夾的**實體檔案在 OneDrive**（所以 B 機仍能同步到），但在 `E:/repos/skyfaring/` 底下建了同名的目錄連結（Windows junction），所以用 `E:/repos/skyfaring/drone-papers/` 這種路徑也讀得到，排程任務不需要記兩套路徑。
+以下資料夾的**實體檔案在 OneDrive**（所以各機器仍同步得到），但 repo 底下建了同名的目錄連結（Windows junction），在 repo 內用相對路徑就讀得到，不需要記兩套路徑：
 
-新機器 clone 之後這些連結不會自動存在，要自己建：
+- **無人機論文**：`drone-papers/`
+- **籃球論文**：`basketball-papers/`
+- **戰爭論文**：`warfare-papers/`
+- **論文導讀存檔**：`articles/`
+- **海事報告**：`maritime-reports/`
+
+新機器 clone 之後這些連結不會自動存在，要自己建。下面是範例，兩邊路徑都換成自己機器的實際位置（repo 根目錄、OneDrive 根目錄各機器不同）：
 
 ```
-mklink /J "E:\repos\skyfaring\drone-papers" "E:\OneDrive\02_創作\14_AI TEST\skyfaring\drone-papers"
+mklink /J "<repo>\drone-papers" "<OneDrive>\02_創作\14_AI TEST\skyfaring\drone-papers"
 ```
-
-實體位置：
-
-- **無人機論文**：`E:/OneDrive/02_創作/14_AI TEST/skyfaring/drone-papers/`
-- **籃球論文**：`E:/OneDrive/02_創作/14_AI TEST/skyfaring/basketball-papers/`
-- **論文導讀存檔**：`E:/OneDrive/02_創作/14_AI TEST/skyfaring/articles/`
 
 每篇論文對應一個 `.md` 摘要檔（籃球論文另附 PDF），檔名格式：`YYYY-MM-DD-識別碼.md`
 
