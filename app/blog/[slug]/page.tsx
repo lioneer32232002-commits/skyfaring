@@ -2,7 +2,8 @@ import { getAllSlugs, getPost, addPanguText } from "@/lib/posts";
 import ViewCounter from "@/components/ViewCounter";
 import UiIcon from "@/components/UiIcon";
 import { getSeriesPosts, getRelatedPosts, getAdjacentPosts } from "@/lib/related";
-import { SeriesBadge, SeriesNav, AdjacentNav, RelatedPosts } from "@/components/PostNav";
+import { SeriesBadge, SeriesNav, AdjacentNav, RelatedPosts, ArticleToc } from "@/components/PostNav";
+import { hasTagPage, tagHref } from "@/lib/tags";
 
 const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
@@ -21,9 +22,13 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     ? `${SITE_URL}${post.heroImage}`
     : DEFAULT_OG;
 
+  // metaDescription 是選填的短版描述，專給搜尋結果與分享卡片用；
+  // 沒填就沿用 excerpt（見 PostMeta 的說明）
+  const description = post.metaDescription || post.excerpt;
+
   return {
     title: post.title,
-    description: post.excerpt,
+    description,
     alternates: { canonical: `/blog/${slug}/` },
     openGraph: {
       type: "article",
@@ -31,7 +36,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       url: `${SITE_URL}/blog/${slug}/`,
       siteName: "Skyfaring",
       title: post.title,
-      description: post.excerpt,
+      description,
       images: [{ url: ogImage, width: 1200, height: 630, alt: post.heroAlt ?? post.title }],
       publishedTime: post.date,
       modifiedTime: post.updated || post.date,
@@ -41,7 +46,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     twitter: {
       card: "summary_large_image",
       title: post.title,
-      description: post.excerpt,
+      description,
       images: [ogImage],
     },
   };
@@ -79,7 +84,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
     "@context": "https://schema.org",
     "@type": "BlogPosting",
     headline: post.title,
-    description: post.excerpt,
+    description: post.metaDescription || post.excerpt,
     datePublished: post.date,
     dateModified: post.updated || post.date,
     author: { "@type": "Person", name: post.author },
@@ -180,14 +185,28 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
       {/* Tags */}
       {post.tags.length > 0 && (
         <div className="flex flex-wrap gap-2 mb-4">
-          {post.tags.map((tag) => (
-            <span
-              key={tag}
-              className="text-xs bg-sky-100 dark:bg-sky-900 text-sky-700 dark:text-sky-300 px-2.5 py-0.5 rounded-full"
-            >
-              {tag}
-            </span>
-          ))}
+          {/*
+            累積到門檻篇數的 tag 才有落地頁、才做成連結；
+            其餘維持純標籤，避免把讀者送到只有一張卡片的頁面。
+          */}
+          {post.tags.map((tag) =>
+            hasTagPage(tag) ? (
+              <a
+                key={tag}
+                href={tagHref(tag, BASE_PATH)}
+                className="text-xs bg-sky-100 dark:bg-sky-900 text-sky-700 dark:text-sky-300 px-2.5 py-0.5 rounded-full hover:bg-sky-200 dark:hover:bg-sky-800 transition-colors"
+              >
+                {tag}
+              </a>
+            ) : (
+              <span
+                key={tag}
+                className="text-xs bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300 px-2.5 py-0.5 rounded-full"
+              >
+                {tag}
+              </span>
+            )
+          )}
         </div>
       )}
 
@@ -216,10 +235,16 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
           </span>
         </span>
         <span className="flex items-center gap-1.5">
+          <UiIcon name="clock" className="w-4 h-4 shrink-0" />
+          <span>閱讀約 {post.readingMinutes} 分鐘</span>
+        </span>
+        <span className="flex items-center gap-1.5">
           <UiIcon name="eye" className="w-4 h-4 shrink-0" />
           <ViewCounter slug={`blog/${slug}`} />
         </span>
       </div>
+
+      <ArticleToc toc={post.toc} />
 
       {/* Content */}
       <div

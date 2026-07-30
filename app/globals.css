@@ -36,6 +36,15 @@ body {
   border-radius: inherit;
 }
 
+/*
+  目錄的錨點跳轉要留出頂部空間，否則標題會被 sticky header（高 61px）蓋住。
+  5rem 是 header 高度再加一點呼吸空間。
+*/
+.prose h2,
+.prose h3 {
+  scroll-margin-top: 5rem;
+}
+
 .prose h2 {
   font-size: 1.5rem;
   font-weight: 700;

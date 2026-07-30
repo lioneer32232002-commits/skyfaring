@@ -2,8 +2,10 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import { remark } from "remark";
-import html from "remark-html";
 import remarkGfm from "remark-gfm";
+import remarkRehype from "remark-rehype";
+import rehypeSlug from "rehype-slug";
+import rehypeStringify from "rehype-stringify";
 import { resolveHeroThumbs, type HeroThumbs } from "@/lib/heroImage";
 
 /**
@@ -36,6 +38,51 @@ export function wrapTables(html: string): string {
   return html
     .replace(/<table>/g, '<div class="table-wrap"><table>')
     .replace(/<\/table>/g, "</table></div>");
+}
+
+export interface TocEntry {
+  id: string;
+  text: string;
+  /** 2 或 3，對應 h2 / h3 */
+  level: number;
+}
+
+/**
+ * 從已產生的 HTML 抓目錄。
+ *
+ * 直接讀渲染結果而不是另外解析一次 markdown，是為了保證目錄的 id
+ * 與頁面上實際的 heading id 一定對得上（id 由 rehype-slug 產生）。
+ * 抓在 addPangu 之後，所以目錄文字與標題顯示的文字一致。
+ */
+export function extractToc(htmlStr: string): TocEntry[] {
+  const out: TocEntry[] = [];
+  const re = /<h([23])\s+id="([^"]+)"[^>]*>([\s\S]*?)<\/h\1>/g;
+  let m: RegExpExecArray | null;
+  while ((m = re.exec(htmlStr)) !== null) {
+    const text = m[3].replace(/<[^>]*>/g, "").trim();
+    if (text) out.push({ level: Number(m[1]), id: m[2], text });
+  }
+  return out;
+}
+
+/**
+ * 估算閱讀時間（分鐘）。
+ *
+ * 中英文混排要分開算：中文按字數、英文按詞數，兩者的閱讀速率差很多。
+ * 取中文每分鐘 350 字、英文每分鐘 200 詞，這是中文長文常用的區間。
+ * 至少回 1 分鐘，避免短文顯示 0。
+ */
+export function estimateReadingMinutes(markdown: string): number {
+  // 去掉 frontmatter 以外的雜訊：程式碼區塊、連結網址、圖片語法
+  const text = markdown
+    .replace(/```[\s\S]*?```/g, "")
+    .replace(/!\[[^\]]*\]\([^)]*\)/g, "")
+    .replace(/\[([^\]]*)\]\([^)]*\)/g, "$1");
+
+  const cjk = (text.match(/[一-鿿㐀-䶿]/g) ?? []).length;
+  const latinWords = (text.match(/[A-Za-z][A-Za-z'-]*/g) ?? []).length;
+
+  return Math.max(1, Math.round(cjk / 350 + latinWords / 200));
 }
 
 const postsDirectory = path.join(process.cwd(), "content/posts");
@@ -73,10 +120,21 @@ export interface PostMeta {
   date: string;
   updated: string;
   excerpt: string;
+  /**
+   * 專供搜尋結果用的簡短描述，選填。
+   *
+   * excerpt 同時被卡片和 meta description 用，但兩邊的合適長度差很多：
+   * 卡片被 line-clamp-3 切掉，中文搜尋結果大約 80 個全形字就截斷，
+   * 而目前 excerpt 的中位數約 260 字。填了這個欄位就改用它當 meta description，
+   * 沒填則沿用 excerpt，所以可以逐篇補、不必一次重寫全部摘要。
+   */
+  metaDescription?: string;
   tags: string[];
   category?: string;
   /** 多部曲的系列名，同名者視為同一系列；閱讀順序由 getAllPostMetas 的排序決定 */
   series?: string;
+  /** 估算閱讀時間（分鐘） */
+  readingMinutes: number;
   heroImage?: string;
   heroAlt?: string;
   heroCredit?: string;
@@ -92,6 +150,8 @@ export interface PostMeta {
 
 export interface Post extends PostMeta {
   contentHtml: string;
+  /** 文章的 h2 / h3 目錄 */
+  toc: TocEntry[];
 }
 
 export function getAllPostMetas(): PostMeta[] {
@@ -102,7 +162,7 @@ export function getAllPostMetas(): PostMeta[] {
       const slug = fileName.replace(/\.md$/, "");
       const fullPath = path.join(postsDirectory, fileName);
       const fileContents = fs.readFileSync(fullPath, "utf8");
-      const { data } = matter(fileContents);
+      const { data, content } = matter(fileContents);
       return {
         slug,
         title: data.title ?? "",
@@ -110,9 +170,11 @@ export function getAllPostMetas(): PostMeta[] {
         date: toDateString(data.date),
         updated: toDateString(data.updated ?? data.date),
         excerpt: data.excerpt ?? "",
+        metaDescription: data.metaDescription,
         tags: data.tags ?? [],
         category: data.category,
         series: data.series,
+        readingMinutes: estimateReadingMinutes(content),
         heroImage: data.heroImage,
         heroAlt: data.heroAlt,
         heroCredit: data.heroCredit,
@@ -140,8 +202,17 @@ export async function getPost(slug: string): Promise<Post> {
   const fileContents = fs.readFileSync(fullPath, "utf8");
   const { data, content } = matter(fileContents);
 
-  const processedContent = await remark().use(remarkGfm).use(html).process(content);
+  // 從 remark-html 換成 remark-rehype + rehype-slug + rehype-stringify，
+  // 目的是讓 h2/h3 帶上 id：原本標題沒有 id，既沒辦法深連結到某一節，也做不出目錄。
+  // 沒有文章在 markdown 裡用原生 HTML，所以兩條管線的輸出除了多出的 id 之外一致。
+  const processedContent = await remark()
+    .use(remarkGfm)
+    .use(remarkRehype)
+    .use(rehypeSlug)
+    .use(rehypeStringify)
+    .process(content);
   const contentHtml = wrapTables(addPangu(processedContent.toString()));
+  const toc = extractToc(contentHtml);
 
   return {
     slug,
@@ -150,9 +221,11 @@ export async function getPost(slug: string): Promise<Post> {
     date: toDateString(data.date),
     updated: toDateString(data.updated ?? data.date),
     excerpt: data.excerpt ?? "",
+    metaDescription: data.metaDescription,
     tags: data.tags ?? [],
     category: data.category,
     series: data.series,
+    readingMinutes: estimateReadingMinutes(content),
     heroImage: data.heroImage,
     heroAlt: data.heroAlt,
     heroCredit: data.heroCredit,
@@ -164,6 +237,7 @@ export async function getPost(slug: string): Promise<Post> {
     source_url: data.source_url,
     references: data.references ?? [],
     contentHtml,
+    toc,
   };
 }
 

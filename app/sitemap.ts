@@ -2,6 +2,7 @@ import type { MetadataRoute } from "next";
 import { getAllPostMetas } from "@/lib/posts";
 import { TOPIC_GROUPS } from "@/lib/taxonomy";
 import { PROJECT_PAGES } from "@/lib/projectPages";
+import { getIndexableTags, tagHref } from "@/lib/tags";
 
 export const dynamic = "force-static";
 
@@ -22,6 +23,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: new Date().toISOString(),
     changeFrequency: "weekly",
     priority: 0.8,
+  }));
+
+  const tagEntries: MetadataRoute.Sitemap = getIndexableTags().map((tag) => ({
+    url: `${SITE_URL}${tagHref(tag)}`,
+    lastModified: new Date().toISOString(),
+    changeFrequency: "weekly",
+    priority: 0.6,
   }));
 
   const projectEntries: MetadataRoute.Sitemap = PROJECT_PAGES.map((project) => ({
@@ -82,6 +90,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     ...topicEntries,
     ...projectEntries,
+    ...tagEntries,
     ...postEntries,
   ];
 }

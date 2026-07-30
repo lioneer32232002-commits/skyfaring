@@ -10,6 +10,12 @@ export type UiIconName =
   | "compass"
   | "news"
   | "rss"
+  | "clock"
+  | "search"
+  | "share"
+  | "link"
+  | "sun"
+  | "moon"
   | "arrow-up-right";
 
 // Icons from Tabler Icons (https://tabler.io/icons) — MIT License.
@@ -83,6 +89,41 @@ const PATHS: Record<UiIconName, ReactNode> = {
       <path d="M4 11a9 9 0 0 1 9 9" />
     </>
   ),
+  clock: (
+    <>
+      <path d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+      <path d="M12 7v5l3 3" />
+    </>
+  ),
+  search: (
+    <>
+      <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+      <path d="M21 21l-6 -6" />
+    </>
+  ),
+  share: (
+    <>
+      <path d="M6 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+      <path d="M18 6m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+      <path d="M18 18m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+      <path d="M8.7 10.7l6.6 -3.4" />
+      <path d="M8.7 13.3l6.6 3.4" />
+    </>
+  ),
+  link: (
+    <>
+      <path d="M9 15l6 -6" />
+      <path d="M11 6l.463 -.536a5 5 0 0 1 7.071 7.072l-.534 .464" />
+      <path d="M13 18l-.397 .534a5.068 5.068 0 0 1 -7.127 0a4.972 4.972 0 0 1 0 -7.071l.524 -.463" />
+    </>
+  ),
+  sun: (
+    <>
+      <path d="M12 12m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" />
+      <path d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7" />
+    </>
+  ),
+  moon: <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />,
   "arrow-up-right": (
     <>
       <path d="M17 7l-10 10" />

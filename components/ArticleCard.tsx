@@ -67,7 +67,11 @@ export default function ArticleCard({ post }: { post: PostMeta }) {
           </p>
           <div className="flex items-center justify-between text-xs text-slate-500 dark:text-slate-400 mt-auto">
             <span>{formatted}</span>
-            <span>{views !== null ? `${views.toLocaleString()} 次瀏覽` : "—"}</span>
+            <span className="flex items-center gap-2">
+              <span>{post.readingMinutes} 分鐘</span>
+              <span className="text-slate-300 dark:text-slate-600">·</span>
+              <span>{views !== null ? `${views.toLocaleString()} 次瀏覽` : "—"}</span>
+            </span>
           </div>
         </div>
       </article>
