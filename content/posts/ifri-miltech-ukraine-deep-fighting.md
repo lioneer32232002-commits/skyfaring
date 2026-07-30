@@ -18,6 +18,7 @@ source: "Bohdan Kostiuk, Daryna-Maryna Patiuk, Anastasiya Shapochkina, and Élie
 source_url: "https://www.ifri.org/en/studies/mapping-miltech-war-eight-lessons-ukraines-battlefield"
 highlight: "2022 年，烏克蘭得用一枚一百多萬美元的飛彈，去攔一架兩到五萬美元的自殺無人機，成本比大約二十六比一。攻擊方只要用便宜、量大的消耗品，就能把防守方的彈藥庫和國庫，一起拖垮。"
 category: 軍事
+series: "烏克蘭戰場八堂課"
 ---
 
 2025 年 9 月 10 日，十九架俄羅斯單向攻擊無人機闖進波蘭領空。荷蘭的 F-35 升空攔截，成為北約成員國第一次在這場戰爭裡開火。

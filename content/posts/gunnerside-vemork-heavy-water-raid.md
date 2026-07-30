@@ -27,6 +27,7 @@ references:
   - BBC News, "Joachim Ronneberg: Norwegian who thwarted Nazi nuclear plan dies"（2018-10-22）
   - NPR, "Joachim Roenneberg, Who Sabotaged Nazi's Nuclear Hopes, Dies At 99"（2018-10-22）
   - UNESCO World Heritage Centre, "Rjukan–Notodden Industrial Heritage Site"（2015 年列名）
+category: 軍事
 ---
 
 1943 年 2 月 27 日晚上，挪威泰勒馬克郡一道峽谷的底部，九個穿白雪衣的人在過河。

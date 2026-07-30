@@ -18,6 +18,7 @@ highlight: "台灣指定了五座機場與一座海港，作為大規模災害�
 source: "CFE-DM, Taiwan Disaster Management Reference Handbook, April 2026"
 source_url: "https://www.cfe-dmha.org/Publications/Disaster-Management-Reference-Handbooks"
 series: "CFE-DM 台灣災害管理參考手冊"
+category: 災害防救
 ---
 
 本文為美軍印太司令部災害管理與人道援助卓越中心（CFE-DM）2026 年 4 月出版的《台灣災害管理參考手冊》（Taiwan Disaster Management Reference Handbook）中文翻譯。該手冊為公眾領域文件，明示可自由重製與傳播。全書共分八篇譯出，本篇為第 6 篇。譯文力求貼近原文，機關名稱一律採台灣官方中文名。

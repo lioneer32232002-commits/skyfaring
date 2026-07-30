@@ -18,6 +18,7 @@ source: "Bohdan Kostiuk, Daryna-Maryna Patiuk, Anastasiya Shapochkina, and Élie
 source_url: "https://www.ifri.org/en/studies/mapping-miltech-war-eight-lessons-ukraines-battlefield"
 highlight: "烏克蘭沒有一支像樣的海軍，卻用一群自殺無人艇，加上飛彈與空中無人機，癱瘓或擊沉了開戰前黑海艦隊的三分之一，把俄國軍艦逼進距海岸約一百海里外的安全區。"
 category: 軍事
+series: "烏克蘭戰場八堂課"
 ---
 
 2022 年春天，一架市售的大疆 Mavic 空拍機飛過烏克蘭東部的原野，把八到十公里外一列俄軍裝甲縱隊的位置，傳回操作員的螢幕。那是一台在電商網站上就買得到的消費級無人機，卻讓冷戰留下來的那套裝甲突擊邏輯，瞬間失了準頭。

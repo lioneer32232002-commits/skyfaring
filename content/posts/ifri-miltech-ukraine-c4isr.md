@@ -18,6 +18,7 @@ source: "Bohdan Kostiuk, Daryna-Maryna Patiuk, Anastasiya Shapochkina, and Élie
 source_url: "https://www.ifri.org/en/studies/mapping-miltech-war-eight-lessons-ukraines-battlefield"
 highlight: "2022 年戰爭爆發時，五千具 Starlink 終端讓烏克蘭活了下來；到 2025 年，這個數字變成二十萬具。五千具夠你存活，二十萬具才打得了數位化的戰爭。"
 category: 軍事
+series: "烏克蘭戰場八堂課"
 ---
 
 前線的烏克蘭士兵，把一具白色的 Starlink 衛星天線埋進土裡，再蓋上偽裝網和隔熱層。
