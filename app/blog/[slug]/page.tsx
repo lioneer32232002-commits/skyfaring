@@ -1,6 +1,8 @@
 import { getAllSlugs, getPost, addPanguText } from "@/lib/posts";
 import ViewCounter from "@/components/ViewCounter";
 import UiIcon from "@/components/UiIcon";
+import { getSeriesPosts, getRelatedPosts, getAdjacentPosts } from "@/lib/related";
+import { SeriesBadge, SeriesNav, AdjacentNav, RelatedPosts } from "@/components/PostNav";
 
 const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
@@ -48,6 +50,12 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 export default async function ArticlePage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const post = await getPost(slug);
+
+  // 站內動線：系列導覽、同分類前後篇、同分類相關文章。全部在 build 時算好。
+  const seriesPosts = post.series ? getSeriesPosts(post.series) : [];
+  const seriesIndex = seriesPosts.findIndex((p) => p.slug === slug) + 1;
+  const relatedPosts = getRelatedPosts(post);
+  const { prev, next, bySeries } = getAdjacentPosts(post);
 
   const displayDate = post.updated || post.date;
   const formattedDate = displayDate
@@ -119,7 +127,13 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
 
-      {/* HERO image */}
+      {/*
+        HERO image
+        這張是本頁的 LCP 元素，所以不 lazy、給高優先權。
+        srcset 把縮圖和原檔擺在一起讓瀏覽器自己挑：手機只有 375px 的版位，
+        800w 的 webp 就夠；桌機版位 768px、算上 2 倍點密度才需要原檔。
+        width/height 用原圖尺寸，讓版位在圖到之前就留好。
+      */}
       {post.heroImage && (
         <figure className="mb-8 -mx-4 sm:mx-0 sm:rounded-2xl overflow-hidden">
           <img
@@ -127,7 +141,16 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
             alt={post.heroAlt ?? post.title}
             className="w-full max-w-full object-cover"
             style={{ maxHeight: "400px", ...(post.heroPosition ? { objectPosition: post.heroPosition } : {}) }}
-            loading="lazy"
+            srcSet={
+              post.heroThumbs?.srcSet
+                ? `${post.heroThumbs.srcSet}, ${BASE_PATH}${post.heroImage} ${post.heroThumbs.width}w`
+                : undefined
+            }
+            sizes="(min-width: 768px) 768px, 100vw"
+            width={post.heroThumbs?.width || undefined}
+            height={post.heroThumbs?.height || undefined}
+            fetchPriority="high"
+            decoding="async"
           />
           {post.heroCredit && (
             <figcaption className="text-xs text-slate-500 dark:text-slate-400 text-right mt-1 px-2">
@@ -142,6 +165,16 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
             </figcaption>
           )}
         </figure>
+      )}
+
+      {/* 系列標示：從搜尋直接落地中間某篇的讀者需要知道自己在系列的哪個位置 */}
+      {post.series && seriesPosts.length > 1 && (
+        <SeriesBadge
+          series={post.series}
+          index={seriesIndex}
+          total={seriesPosts.length}
+          firstSlug={seriesPosts[0].slug}
+        />
       )}
 
       {/* Tags */}
@@ -224,6 +257,15 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
           </ul>
         </div>
       )}
+
+      {/* 讀完之後的去處。改版前這裡只有一條「返回文章列表」，站內連結是 0 條。 */}
+      {post.series && seriesPosts.length > 1 && (
+        <SeriesNav series={post.series} posts={seriesPosts} currentSlug={slug} />
+      )}
+
+      <AdjacentNav prev={prev} next={next} category={post.category} bySeries={bySeries} />
+
+      <RelatedPosts posts={relatedPosts} />
 
       {/* Back */}
       <div className="mt-10">

@@ -4,7 +4,7 @@
  * 文章本身只標單一 category，主題群由這張對照表推導，不需逐篇改檔。
  * 主題群有 ASCII slug，用來產生可被搜尋索引的落地頁 /topics/<slug>/。
  */
-export type TopicIconName = "basketball" | "drone" | "brain" | "plane";
+export type TopicIconName = "basketball" | "drone" | "brain" | "plane" | "shield";
 
 export interface TopicGroup {
   slug: string;
@@ -29,7 +29,7 @@ export const TOPIC_GROUPS: TopicGroup[] = [
     description:
       "無人機蜂群、無人地面載具、攔截與國防科技論文導讀，從技術看現代戰場的樣貌。",
     icon: "drone",
-    categories: ["無人機", "無人系統", "國防科技", "多智能體", "軍事"],
+    categories: ["無人機", "無人系統", "國防科技", "多代理人", "軍事"],
   },
   {
     slug: "ai-vision",
@@ -45,6 +45,14 @@ export const TOPIC_GROUPS: TopicGroup[] = [
     description: "全球航空安全數據與飛航事故報告的整理與解讀。",
     icon: "plane",
     categories: ["航空"],
+  },
+  {
+    slug: "resilience",
+    label: "災防與韌性",
+    description:
+      "台灣的災害風險、災防體系與關鍵基礎設施韌性，以美軍印太司令部 CFE-DM 台灣災害管理參考手冊為主的逐章導讀。",
+    icon: "shield",
+    categories: ["災害防救"],
   },
 ];
 

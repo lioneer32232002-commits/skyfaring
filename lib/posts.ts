@@ -4,6 +4,7 @@ import matter from "gray-matter";
 import { remark } from "remark";
 import html from "remark-html";
 import remarkGfm from "remark-gfm";
+import { resolveHeroThumbs, type HeroThumbs } from "@/lib/heroImage";
 
 /**
  * 在中文與英數字之間自動補半形空格（盤古之白）
@@ -48,11 +49,15 @@ export interface PostMeta {
   excerpt: string;
   tags: string[];
   category?: string;
+  /** 多部曲的系列名，同名者視為同一系列；閱讀順序由 getAllPostMetas 的排序決定 */
+  series?: string;
   heroImage?: string;
   heroAlt?: string;
   heroCredit?: string;
   heroCreditUrl?: string;
   heroPosition?: string;
+  /** 卡片用的縮圖來源，build 時由 thumbs manifest 算出；無 heroImage 時為 undefined */
+  heroThumbs?: HeroThumbs;
   highlight?: string;
   source?: string;
   source_url?: string;
@@ -81,11 +86,13 @@ export function getAllPostMetas(): PostMeta[] {
         excerpt: data.excerpt ?? "",
         tags: data.tags ?? [],
         category: data.category,
+        series: data.series,
         heroImage: data.heroImage,
         heroAlt: data.heroAlt,
         heroCredit: data.heroCredit,
         heroCreditUrl: data.heroCreditUrl,
         heroPosition: data.heroPosition,
+        heroThumbs: data.heroImage ? resolveHeroThumbs(data.heroImage) : undefined,
         source: data.source,
         source_url: data.source_url,
         references: data.references ?? [],
@@ -119,11 +126,13 @@ export async function getPost(slug: string): Promise<Post> {
     excerpt: data.excerpt ?? "",
     tags: data.tags ?? [],
     category: data.category,
+    series: data.series,
     heroImage: data.heroImage,
     heroAlt: data.heroAlt,
     heroCredit: data.heroCredit,
     heroCreditUrl: data.heroCreditUrl,
     heroPosition: data.heroPosition,
+    heroThumbs: data.heroImage ? resolveHeroThumbs(data.heroImage) : undefined,
     highlight: data.highlight,
     source: data.source,
     source_url: data.source_url,

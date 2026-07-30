@@ -67,12 +67,10 @@ export default function RootLayout({
         `}} />
         {/* Cloudflare Web Analytics */}
         <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "1106905c4433452d94914f4af91318aa"}'></script>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap"
-          rel="stylesheet"
-        />
+        {/*
+          字型不再外連 Google Fonts。中文 subset 一頁要拉 1.8 MB，
+          而那個 stylesheet 本身是阻塞渲染的。改用 globals.css 的系統字型堆疊。
+        */}
       </head>
       <body className="min-h-full flex flex-col bg-slate-50 dark:bg-slate-900">
         <header className="bg-white dark:bg-slate-800 border-b border-slate-200 dark:border-slate-700 sticky top-0 z-50">

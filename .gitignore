@@ -73,3 +73,6 @@ next-env.d.ts
 
 # 排程執行記錄（本機/OneDrive 專用，不上線）
 /automation/
+
+# 卡片縮圖：build 前由 prebuild 自動產生，不進版控（避免過期縮圖與 repo 膨脹）
+/public/images/thumbs/

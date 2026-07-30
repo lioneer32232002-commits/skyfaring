@@ -3,8 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "npm run make-thumbs && next dev",
+    "prebuild": "node scripts/make-thumbs.mjs",
     "build": "next build",
+    "make-thumbs": "node scripts/make-thumbs.mjs",
     "start": "next start",
     "lint": "eslint",
     "slim-images": "node scripts/slim-images.mjs",

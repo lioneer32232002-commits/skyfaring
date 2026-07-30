@@ -34,9 +34,20 @@ export default function ArticleCard({ post }: { post: PostMeta }) {
       <article className="bg-white dark:bg-slate-800 rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden border border-slate-100 dark:border-slate-700 flex flex-col h-full">
         {post.heroImage && (
           <div className="h-48 overflow-hidden shrink-0">
+            {/*
+              列表頁一次排 70+ 張卡片，所以這裡吃 400/800px 的 webp 縮圖而非 1920px 原檔，
+              並且一律 lazy——沒有 lazy 的話瀏覽器會把整個圖庫拉下來。
+              sizes 反映實際版面：手機單欄接近滿版，桌機三欄約 320px。
+            */}
             <img
-              src={`${BASE_PATH}${post.heroImage}`}
+              src={post.heroThumbs?.src ?? `${BASE_PATH}${post.heroImage}`}
+              srcSet={post.heroThumbs?.srcSet || undefined}
+              sizes="(min-width: 1024px) 320px, (min-width: 640px) 45vw, 92vw"
               alt={post.heroAlt ?? post.title}
+              width={post.heroThumbs?.width || undefined}
+              height={post.heroThumbs?.height || undefined}
+              loading="lazy"
+              decoding="async"
               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
               style={post.heroPosition ? { objectPosition: post.heroPosition } : undefined}
             />

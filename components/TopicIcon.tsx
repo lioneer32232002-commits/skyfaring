@@ -41,6 +41,7 @@ const PATHS: Record<TopicIconName, ReactNode> = {
       <path d="M3 21h18" />
     </>
   ),
+  shield: <path d="M12 3a12 12 0 0 0 8.5 3a12 12 0 0 1 -8.5 15a12 12 0 0 1 -8.5 -15a12 12 0 0 0 8.5 -3" />,
 };
 
 export default function TopicIcon({
