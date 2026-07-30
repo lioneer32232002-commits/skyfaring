@@ -3,6 +3,7 @@
 import { useState } from "react";
 import ArticleCard from "@/components/ArticleCard";
 import ViewCountsProvider from "@/components/ViewCountsProvider";
+import UiIcon from "@/components/UiIcon";
 import type { PostMeta } from "@/lib/posts";
 
 const CATEGORY_STYLES: Record<string, string> = {
@@ -19,15 +20,46 @@ const INACTIVE_BASE = "border border-transparent text-slate-500 dark:text-slate-
 
 export default function BlogFilter({ posts }: { posts: PostMeta[] }) {
   const [active, setActive] = useState<string | null>(null);
+  const [query, setQuery] = useState("");
 
   const categories = Array.from(
     new Set(posts.map((p) => p.category).filter(Boolean) as string[])
   );
 
-  const filtered = active ? posts.filter((p) => p.category === active) : posts;
+  /**
+   * 站內搜尋。
+   *
+   * 列表頁本來就把全部文章當 props 拿到手上，所以不需要另外產一份索引檔
+   * 或打任何請求，直接在既有資料上濾。比對標題、摘要、tag 與分類，
+   * 全部轉小寫讓英文詞不分大小寫；中文沒有大小寫問題，也不需要斷詞，
+   * 子字串比對對中文反而剛好。
+   */
+  const q = query.trim().toLowerCase();
+  const filtered = posts.filter((p) => {
+    if (active && p.category !== active) return false;
+    if (!q) return true;
+    const haystack = [p.title, p.excerpt, p.category ?? "", ...p.tags]
+      .join(" ")
+      .toLowerCase();
+    return haystack.includes(q);
+  });
 
   return (
     <ViewCountsProvider slugs={posts.map((p) => `blog/${p.slug}`)}>
+      <div className="relative mb-5">
+        <span className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 dark:text-slate-500 pointer-events-none">
+          <UiIcon name="search" className="w-4 h-4" />
+        </span>
+        <input
+          type="search"
+          value={query}
+          onChange={(e) => setQuery(e.target.value)}
+          placeholder="搜尋標題、摘要或標籤"
+          aria-label="搜尋文章"
+          className="w-full pl-9 pr-3 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-sm text-slate-700 dark:text-slate-200 placeholder:text-slate-500 dark:placeholder:text-slate-400"
+        />
+      </div>
+
       <div className="flex flex-wrap gap-2 mb-8">
         <button
           onClick={() => setActive(null)}
@@ -54,8 +86,17 @@ export default function BlogFilter({ posts }: { posts: PostMeta[] }) {
         ))}
       </div>
 
+      {/* 有搜尋或分類條件時顯示筆數，讓讀者知道濾掉了多少 */}
+      {(q || active) && filtered.length > 0 && (
+        <p className="text-sm text-slate-500 dark:text-slate-400 mb-5">
+          符合的文章 {filtered.length} 篇，共 {posts.length} 篇
+        </p>
+      )}
+
       {filtered.length === 0 ? (
-        <p className="text-slate-500 dark:text-slate-400">目前還沒有文章。</p>
+        <p className="text-slate-500 dark:text-slate-400">
+          {q ? `找不到符合「${query.trim()}」的文章。` : "目前還沒有文章。"}
+        </p>
       ) : (
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {filtered.map((post) => (

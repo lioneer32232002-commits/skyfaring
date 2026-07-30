@@ -1,4 +1,4 @@
-import { getAllPostMetas } from "@/lib/posts";
+import { getAllPostMetas, getPost } from "@/lib/posts";
 
 export const dynamic = "force-static";
 
@@ -17,28 +17,41 @@ function escapeXml(s: string): string {
 export async function GET() {
   const posts = getAllPostMetas().slice(0, 30);
 
-  const items = posts
-    .map((post) => {
-      const url = `${SITE_URL}/blog/${post.slug}/`;
-      const category = post.category
-        ? `\n      <category>${escapeXml(post.category)}</category>`
-        : "";
-      return `    <item>
-      <title>${escapeXml(post.title)}</title>
+  /*
+    除了摘要之外一併給全文。
+    原本只有 <description>，RSS 讀者只看到一段摘要就得再點進網站；
+    content:encoded 讓文章在閱讀器裡就讀得完。
+    圖片的 src 是站內相對路徑，在閱讀器裡會壞掉，所以改成絕對網址。
+  */
+  const items = (
+    await Promise.all(
+      posts.map(async (meta) => {
+        const url = `${SITE_URL}/blog/${meta.slug}/`;
+        const post = await getPost(meta.slug);
+        const absoluteHtml = post.contentHtml
+          .replace(/(<img[^>]+src=")\//g, `$1${SITE_URL}/`)
+          .replace(/(<a[^>]+href=")\//g, `$1${SITE_URL}/`);
+        const category = meta.category
+          ? `\n      <category>${escapeXml(meta.category)}</category>`
+          : "";
+        return `    <item>
+      <title>${escapeXml(meta.title)}</title>
       <link>${url}</link>
       <guid isPermaLink="true">${url}</guid>
-      <pubDate>${new Date(post.date).toUTCString()}</pubDate>
-      <description>${escapeXml(post.excerpt)}</description>${category}
+      <pubDate>${new Date(meta.date).toUTCString()}</pubDate>
+      <description>${escapeXml(meta.excerpt)}</description>${category}
+      <content:encoded><![CDATA[${absoluteHtml.replace(/]]>/g, "]]&gt;")}]]></content:encoded>
     </item>`;
-    })
-    .join("\n");
+      })
+    )
+  ).join("\n");
 
   const lastBuildDate = posts[0]
     ? new Date(posts[0].updated).toUTCString()
     : new Date().toUTCString();
 
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Skyfaring</title>
     <link>${SITE_URL}/</link>

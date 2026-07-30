@@ -4,6 +4,7 @@ import UiIcon from "@/components/UiIcon";
 import { getSeriesPosts, getRelatedPosts, getAdjacentPosts } from "@/lib/related";
 import { SeriesBadge, SeriesNav, AdjacentNav, RelatedPosts, ArticleToc } from "@/components/PostNav";
 import { hasTagPage, tagHref } from "@/lib/tags";
+import ShareButtons from "@/components/ShareButtons";
 
 const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
@@ -282,6 +283,8 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
           </ul>
         </div>
       )}
+
+      <ShareButtons url={`${SITE_URL}/blog/${slug}/`} title={post.title} />
 
       {/* 讀完之後的去處。改版前這裡只有一條「返回文章列表」，站內連結是 0 條。 */}
       {post.series && seriesPosts.length > 1 && (

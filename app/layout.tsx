@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { PROJECTS, resolveProjectHref, projectOpensExternal } from "@/lib/projects";
 import UiIcon from "@/components/UiIcon";
+import ThemeToggle from "@/components/ThemeToggle";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://skyfaring.net";
 const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
@@ -71,6 +72,16 @@ export default function RootLayout({
           字型不再外連 Google Fonts。中文 subset 一頁要拉 1.8 MB，
           而那個 stylesheet 本身是阻塞渲染的。改用 globals.css 的系統字型堆疊。
         */}
+        {/*
+          只有「明確選過深淺色」的讀者需要這段，把選擇在 paint 前補回 :root。
+          沒選過就不寫 data-theme，交給 CSS 的 prefers-color-scheme，
+          所以第一次造訪不會閃色。這段必須同步執行，不能 defer。
+        */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `try{var t=localStorage.getItem('theme');if(t==='dark'||t==='light')document.documentElement.dataset.theme=t}catch(e){}`,
+          }}
+        />
       </head>
       <body className="min-h-full flex flex-col bg-slate-50 dark:bg-slate-900">
         <header className="bg-white dark:bg-slate-800 border-b border-slate-200 dark:border-slate-700 sticky top-0 z-50">
@@ -81,11 +92,12 @@ export default function RootLayout({
                 Skyfaring
               </span>
             </a>
-            <nav className="flex gap-6 text-sm font-medium text-slate-500 dark:text-slate-400">
-              <a href={`${BASE_PATH}/`} className="hover:text-sky-600 dark:hover:text-sky-400 transition-colors">首頁</a>
-              <a href={`${BASE_PATH}/blog/`} className="hover:text-sky-600 dark:hover:text-sky-400 transition-colors">文章</a>
-              <a href={`${BASE_PATH}/projects/`} className="hover:text-sky-600 dark:hover:text-sky-400 transition-colors">專案</a>
-              <a href={`${BASE_PATH}/about/`} className="hover:text-sky-600 dark:hover:text-sky-400 transition-colors">關於我</a>
+            <nav className="flex items-center gap-3 sm:gap-5 text-sm font-medium text-slate-500 dark:text-slate-400">
+              <a href={`${BASE_PATH}/`} className="py-1.5 hover:text-sky-600 dark:hover:text-sky-400 transition-colors">首頁</a>
+              <a href={`${BASE_PATH}/blog/`} className="py-1.5 hover:text-sky-600 dark:hover:text-sky-400 transition-colors">文章</a>
+              <a href={`${BASE_PATH}/projects/`} className="py-1.5 hover:text-sky-600 dark:hover:text-sky-400 transition-colors">專案</a>
+              <a href={`${BASE_PATH}/about/`} className="py-1.5 hover:text-sky-600 dark:hover:text-sky-400 transition-colors">關於我</a>
+              <ThemeToggle />
             </nav>
           </div>
         </header>

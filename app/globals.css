@@ -1,16 +1,115 @@
 @import "tailwindcss";
 
+/*
+  深色模式：系統偏好為預設，讀者可以手動覆寫。
+
+  Tailwind v4 的 dark: 變體預設綁 prefers-color-scheme，那樣沒辦法做切換鈕。
+  這裡重新定義成兩條規則：
+    1. 系統是深色，且讀者沒有明確選淺色（:root 沒有 data-theme="light"）
+    2. 讀者明確選了深色（:root[data-theme="dark"]）
+
+  這個設計的好處是「沒選過」的讀者完全靠 CSS 生效，不需要等 JS，
+  所以不會有先閃一下淺色再變深色的問題。只有明確選過的人才需要
+  那段 inline script 在 paint 前把 data-theme 補上。
+*/
+@custom-variant dark {
+  @media (prefers-color-scheme: dark) {
+    &:where(:root:not([data-theme="light"]) *) {
+      @slot;
+    }
+  }
+  &:where(:root[data-theme="dark"] *) {
+    @slot;
+  }
+}
+
+/*
+  手寫的 .prose 配色改走變數，深色只需要覆寫變數一次，
+  不必把整組 .prose 規則在兩種深色條件下各寫一遍。
+*/
 :root {
   --background: #f8fafc;
   --foreground: #0f172a;
+
+  --prose-h2: #1e293b;
+  --prose-h2-border: #e2e8f0;
+  --prose-h3: #334155;
+  --prose-body: #475569;
+  --prose-strong: #1e293b;
+  --prose-link: #0284c7;
+  --prose-hr: #e2e8f0;
+  --prose-quote: #64748b;
+  --prose-caption: #94a3b8;
+  --prose-table-bg: #ffffff;
+  --prose-table-border: #e2e8f0;
+  --prose-th: #64748b;
+  --prose-th-border: #7dd3fc;
+  --prose-td: #475569;
+  --prose-td-border: #eef2f6;
+  --prose-td-first: #1e293b;
+  --prose-row-hover: #f8fafc;
 }
 
+/*
+  深色的變數值。CSS 沒有 mixin，所以這組值必須在兩種條件下各寫一次：
+  一次在系統偏好的 media query 裡，一次給明確選深色的 data-theme。
+  兩邊的值要一起改，別只改一邊。
+*/
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not([data-theme="light"]) {
     --background: #0f172a;
     --foreground: #f1f5f9;
+
+    --prose-h2: #f1f5f9;
+    --prose-h2-border: #334155;
+    --prose-h3: #e2e8f0;
+    --prose-body: #cbd5e1;
+    --prose-strong: #f1f5f9;
+    --prose-link: #38bdf8;
+    --prose-hr: #334155;
+    --prose-quote: #94a3b8;
+    --prose-caption: #64748b;
+    --prose-table-bg: #0f172a;
+    --prose-table-border: #334155;
+    --prose-th: #94a3b8;
+    --prose-th-border: #0369a1;
+    --prose-td: #cbd5e1;
+    --prose-td-border: #1e293b;
+    --prose-td-first: #f1f5f9;
+    --prose-row-hover: #1e293b80;
   }
 }
+
+:root[data-theme="dark"] {
+  --background: #0f172a;
+  --foreground: #f1f5f9;
+
+  --prose-h2: #f1f5f9;
+  --prose-h2-border: #334155;
+  --prose-h3: #e2e8f0;
+  --prose-body: #cbd5e1;
+  --prose-strong: #f1f5f9;
+  --prose-link: #38bdf8;
+  --prose-hr: #334155;
+  --prose-quote: #94a3b8;
+  --prose-caption: #64748b;
+  --prose-table-bg: #0f172a;
+  --prose-table-border: #334155;
+  --prose-th: #94a3b8;
+  --prose-th-border: #0369a1;
+  --prose-td: #cbd5e1;
+  --prose-td-border: #1e293b;
+  --prose-td-first: #f1f5f9;
+  --prose-row-hover: #1e293b80;
+}
+
+/*
+  color-scheme 讓瀏覽器原生的捲軸、表單控件也跟著配色走。
+  「沒選過」時交給 normal（瀏覽器依系統決定），選過時鎖定。
+*/
+:root { color-scheme: light dark; }
+:root[data-theme="light"] { color-scheme: light; }
+:root[data-theme="dark"] { color-scheme: dark; }
 
 body {
   background: var(--background);
@@ -48,23 +147,23 @@ body {
 .prose h2 {
   font-size: 1.5rem;
   font-weight: 700;
-  color: #1e293b;
+  color: var(--prose-h2);
   margin-top: 2.5rem;
   margin-bottom: 1rem;
   padding-bottom: 0.5rem;
-  border-bottom: 1px solid #e2e8f0;
+  border-bottom: 1px solid var(--prose-h2-border);
 }
 
 .prose h3 {
   font-size: 1.25rem;
   font-weight: 600;
-  color: #334155;
+  color: var(--prose-h3);
   margin-top: 2rem;
   margin-bottom: 0.75rem;
 }
 
 .prose p {
-  color: #475569;
+  color: var(--prose-body);
   line-height: 2;
   margin-bottom: 1.25rem;
 }
@@ -72,9 +171,9 @@ body {
 .prose .table-wrap {
   margin: 1.75rem 0;
   overflow-x: auto;
-  border: 1px solid #e2e8f0;
+  border: 1px solid var(--prose-table-border);
   border-radius: 12px;
-  background: #ffffff;
+  background: var(--prose-table-bg);
   -webkit-overflow-scrolling: touch;
 }
 
@@ -87,24 +186,24 @@ body {
 
 .prose th {
   background: transparent;
-  color: #64748b;
+  color: var(--prose-th);
   font-weight: 600;
   padding: 0.7rem 1.1rem;
   text-align: left;
   white-space: nowrap;
-  border-bottom: 2px solid #7dd3fc;
+  border-bottom: 2px solid var(--prose-th-border);
   font-variant-numeric: tabular-nums;
 }
 
 .prose td {
   padding: 0.7rem 1.1rem;
-  border-bottom: 1px solid #eef2f6;
-  color: #475569;
+  border-bottom: 1px solid var(--prose-td-border);
+  color: var(--prose-td);
   font-variant-numeric: tabular-nums;
 }
 
 .prose td:first-child {
-  color: #1e293b;
+  color: var(--prose-td-first);
   font-weight: 500;
 }
 
@@ -113,7 +212,7 @@ body {
 }
 
 .prose tbody tr:hover td {
-  background: #f8fafc;
+  background: var(--prose-row-hover);
 }
 
 .prose th[align="right"], .prose td[align="right"] { text-align: right; }
@@ -123,7 +222,7 @@ body {
 .prose ul, .prose ol {
   margin-bottom: 1.25rem;
   padding-left: 1.5rem;
-  color: #475569;
+  color: var(--prose-body);
 }
 
 .prose li {
@@ -136,23 +235,23 @@ body {
 
 .prose strong {
   font-weight: 700;
-  color: #1e293b;
+  color: var(--prose-strong);
 }
 
 .prose hr {
-  border-color: #e2e8f0;
+  border-color: var(--prose-hr);
   margin: 2rem 0;
 }
 
 .prose a {
-  color: #0284c7;
+  color: var(--prose-link);
   text-decoration: underline;
 }
 
 .prose blockquote {
-  border-left: 4px solid #0284c7;
+  border-left: 4px solid var(--prose-link);
   padding-left: 1rem;
-  color: #64748b;
+  color: var(--prose-quote);
   font-style: italic;
   margin: 1.5rem 0;
 }
@@ -165,7 +264,7 @@ body {
   display: block;
   font-size: 0.78rem;
   font-style: normal;
-  color: #94a3b8;
+  color: var(--prose-caption);
   margin-top: 0.4rem;
   line-height: 1.5;
 }
@@ -175,20 +274,4 @@ body {
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
-}
-
-@media (prefers-color-scheme: dark) {
-  .prose h2 { color: #f1f5f9; border-color: #334155; }
-  .prose h3 { color: #e2e8f0; }
-  .prose p { color: #cbd5e1; }
-  .prose .table-wrap { background: #0f172a; border-color: #334155; }
-  .prose th { background: transparent; color: #94a3b8; border-bottom-color: #0369a1; }
-  .prose td { color: #cbd5e1; border-bottom-color: #1e293b; }
-  .prose td:first-child { color: #f1f5f9; }
-  .prose tbody tr:hover td { background: #1e293b80; }
-  .prose ul, .prose ol { color: #cbd5e1; }
-  .prose strong { color: #f1f5f9; }
-  .prose hr { border-color: #334155; }
-  .prose a { color: #38bdf8; }
-  .prose p > img ~ em { color: #64748b; }
 }
