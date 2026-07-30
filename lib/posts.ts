@@ -40,6 +40,32 @@ export function wrapTables(html: string): string {
 
 const postsDirectory = path.join(process.cwd(), "content/posts");
 
+/**
+ * 把 frontmatter 的日期一律收斂成 "YYYY-MM-DD" 字串。
+ *
+ * YAML 對 date-only 的值有兩種解讀：`date: "2026-07-29"` 是字串，
+ * 但沒加引號的 `date: 2026-07-29` 會被解析成 Date 物件（目前 72 篇裡有 18 篇是後者）。
+ * 兩種混在一起有三個後果：
+ *
+ * 1. PostMeta 宣告 date 是 string，實際卻可能是 Date，型別對不上實情
+ * 2. JSON-LD 的 datePublished 會出現兩種格式（"2026-07-29" 與帶時間的 ISO 字串）
+ * 3. 文章頁用 `post.date !== post.updated` 決定要不要顯示「更新：」。
+ *    兩個同日但未加引號的值會是兩個不同的 Date 物件，!== 成立，
+ *    於是印出「發布：某日，更新：同一日」
+ *
+ * 在這一層收斂，好處是新文章不必依賴作者記得加引號。
+ * 用 UTC 取值：YAML 把 date-only 當成 UTC 午夜，若用本地時間取值，
+ * 在負時區會退成前一天。
+ */
+function toDateString(value: unknown): string {
+  if (value instanceof Date) {
+    if (Number.isNaN(value.getTime())) return "";
+    return value.toISOString().slice(0, 10);
+  }
+  if (typeof value === "string") return value.trim();
+  return "";
+}
+
 export interface PostMeta {
   slug: string;
   title: string;
@@ -81,8 +107,8 @@ export function getAllPostMetas(): PostMeta[] {
         slug,
         title: data.title ?? "",
         author: data.author ?? "",
-        date: data.date ?? "",
-        updated: data.updated ?? data.date ?? "",
+        date: toDateString(data.date),
+        updated: toDateString(data.updated ?? data.date),
         excerpt: data.excerpt ?? "",
         tags: data.tags ?? [],
         category: data.category,
@@ -121,8 +147,8 @@ export async function getPost(slug: string): Promise<Post> {
     slug,
     title: data.title ?? "",
     author: data.author ?? "",
-    date: data.date ?? "",
-    updated: data.updated ?? data.date ?? "",
+    date: toDateString(data.date),
+    updated: toDateString(data.updated ?? data.date),
     excerpt: data.excerpt ?? "",
     tags: data.tags ?? [],
     category: data.category,
