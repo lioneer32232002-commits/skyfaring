@@ -3,6 +3,7 @@ import "./globals.css";
 import { PROJECTS, resolveProjectHref, projectOpensExternal } from "@/lib/projects";
 import UiIcon from "@/components/UiIcon";
 import ThemeToggle from "@/components/ThemeToggle";
+import RouteAnalytics from "@/components/RouteAnalytics";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://skyfaring.net";
 const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
@@ -84,6 +85,7 @@ export default function RootLayout({
         />
       </head>
       <body className="min-h-full flex flex-col bg-slate-50 dark:bg-slate-900">
+        <RouteAnalytics />
         <header className="bg-white dark:bg-slate-800 border-b border-slate-200 dark:border-slate-700 sticky top-0 z-50">
           <div className="max-w-5xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
             <a href={`${BASE_PATH}/`} className="flex items-center gap-2 group">
