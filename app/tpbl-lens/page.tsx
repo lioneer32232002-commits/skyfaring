@@ -14,7 +14,7 @@ const DATASETS = [
     season: "2025–26",
     title: "TPBL 2025-26 例行賽統計數據",
     description: "球員個人數據、球隊整體數據、進階效率指標，涵蓋完整例行賽賽程。",
-    url: "https://tpbl-lens.pages.dev/",
+    url: "https://tpbl-lens.skyfaring.net/",
     badge: "聯盟",
   },
   {

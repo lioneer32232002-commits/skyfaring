@@ -31,7 +31,7 @@ export const PROJECT_PAGES: ProjectPage[] = [
   {
     slug: "pla-tracker",
     title: "解放軍擾台動態追蹤",
-    url: "https://pla-tracker.pages.dev/",
+    url: "https://pla-tracker.skyfaring.net/",
     icon: "🛩",
     tagline: "每日更新的共機共艦擾台數據儀表板，用繁中即時呈現越中線比例與架次趨勢",
     intro: [
@@ -59,7 +59,7 @@ export const PROJECT_PAGES: ProjectPage[] = [
   {
     slug: "shot-ledger",
     title: "Shot Ledger 投籃紀錄",
-    url: "https://shot-ledger.pages.dev/#/home",
+    url: "https://shot-ledger.skyfaring.net/#/home",
     icon: "🏀",
     tagline: "把每一節投籃練習記成數據，用挑戰階梯與命中率趨勢檢視自己的手感",
     intro: [
@@ -82,7 +82,7 @@ export const PROJECT_PAGES: ProjectPage[] = [
   {
     slug: "history-academy",
     title: "歷史學院",
-    url: "https://history-academy.pages.dev/",
+    url: "https://history-academy.skyfaring.net/",
     icon: "📜",
     tagline: "把國中歷史會考練成一場世紀帝國式的升階遊戲",
     intro: [
@@ -127,7 +127,7 @@ export const PROJECT_PAGES: ProjectPage[] = [
   {
     slug: "battle-archive",
     title: "戰史檔案館",
-    url: "https://battle-archive.pages.dev/",
+    url: "https://battle-archive.skyfaring.net/",
     icon: "⚔",
     tagline: "用 3D 運鏡重返戰場，看懂改變世界的關鍵決戰",
     intro: [

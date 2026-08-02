@@ -43,7 +43,7 @@ export const PROJECTS: Project[] = [
   {
     title: "解放軍擾台動態追蹤",
     description: "中線越線、艦機活動每日數據，含趨勢圖與 SITREP 紀錄。",
-    url: "https://pla-tracker.pages.dev/",
+    url: "https://pla-tracker.skyfaring.net/",
     icon: "radar",
     external: true,
     introSlug: "pla-tracker",
@@ -84,7 +84,7 @@ export const PROJECTS: Project[] = [
   {
     title: "Shot Ledger 投籃紀錄",
     description: "單人投籃練習紀錄工具，六關挑戰階梯、命中率趨勢與球場熱區，資料存本機可匯出。",
-    url: "https://shot-ledger.pages.dev/#/home",
+    url: "https://shot-ledger.skyfaring.net/#/home",
     icon: "basketball",
     external: true,
     introSlug: "shot-ledger",
@@ -102,7 +102,7 @@ export const PROJECTS: Project[] = [
   {
     title: "歷史學院",
     description: "國中歷史會考線上練習平台，台灣史、中國史、世界史互動題庫與進度追蹤。",
-    url: "https://history-academy.pages.dev/",
+    url: "https://history-academy.skyfaring.net/",
     icon: "school",
     external: true,
     introSlug: "history-academy",
@@ -111,7 +111,7 @@ export const PROJECTS: Project[] = [
   {
     title: "戰史檔案館",
     description: "用 3D 影像重現歷史戰役，依據權威史料還原關鍵軍事衝突。",
-    url: "https://battle-archive.pages.dev/",
+    url: "https://battle-archive.skyfaring.net/",
     icon: "shield",
     external: true,
     introSlug: "battle-archive",

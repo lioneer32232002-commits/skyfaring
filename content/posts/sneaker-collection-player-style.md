@@ -12,7 +12,7 @@ highlight: "三雙鞋的評測寫的適配對象是同一種球員：不靠體�
 heroImage: "/images/sneaker-and1-rise.jpg"
 heroAlt: "AND1 Rise 三十週年復刻，全黑編織鞋面與鏡面鉻板的側面"
 heroCredit: "作者拍攝"
-heroCreditUrl: "https://skyfaring.pages.dev"
+heroCreditUrl: "https://skyfaring.net"
 category: 球鞋
 references:
   - title: "WearTesters, PUMA MB.01 Performance Review"
