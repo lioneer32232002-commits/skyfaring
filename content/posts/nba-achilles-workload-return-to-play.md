@@ -1,5 +1,5 @@
 ---
-title: "籃球員斷跟腱，前十五場與後十一個月。"
+title: "跟腱受過大傷的球員，回到球場後幾乎無法回到巔峰。"
 author: "AI 初稿 / skyfaring 編輯校正"
 date: "2026-08-04"
 slug: "nba-achilles-workload-return-to-play"
@@ -8,7 +8,7 @@ tags:
   - 運動科學
   - 運動醫學
 excerpt: "2026 年兩篇 OJSM 研究從兩端夾住 NBA 的跟腱斷裂。斷裂前 10 到 15 場，球員場均上場時間比自己的球季平均多出 1.2 到 1.6 分鐘；斷裂後平均 10.8 個月回到球場，回歸率 86.7%，但先發場次比例從 99.7% 掉到 55.7%。"
-highlight: "把數據換算成每 48 分鐘的產量之後，只有得分還在顯著下降，從 25.87 分掉到 22.51 分。籃板、助攻、抄截、阻攻都沒有顯著差異。防守端原始數據的下滑來自上場時間變少，每分鐘的防守活動量保得住，保不住的是進攻效率。"
+highlight: "受傷前最後一個完整球季，對上回歸後第一個完整球季，13 名球員配對比較：上場時間從場均 32.4 分鐘掉到 24.8 分鐘，得分從 17.8 掉到 12.4，有效投籃命中率從 .525 掉到 .470，籃板、助攻、抄截、阻攻同步下滑。全部達到統計顯著。"
 references:
   - title: "Vineet Kumar, Luke Sang, Wyatt David, Nirav Pandya. Short-Term Workload Patterns Before Achilles Tendon Rupture in National Basketball Association Players: A Descriptive Epidemiology Study. Orthopaedic Journal of Sports Medicine, 2026."
     url: "https://journals.sagepub.com/doi/10.1177/23259671261463385"
