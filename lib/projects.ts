@@ -91,8 +91,8 @@ export const PROJECTS: Project[] = [
     group: "data",
   },
   {
-    title: "飛行線上",
-    description: "飛行養成學習系統，飛行訓練與航空教育資源。",
+    title: "飛行養成",
+    description: "依 FAA PHAK 與 AFH 整理的免費飛行知識自學系統，23 個模組 327 張卡片，附機場圖鑑、失事檔案與 METAR 天氣電報課程。",
     url: "https://flightdecktw.net/",
     icon: "plane",
     external: true,

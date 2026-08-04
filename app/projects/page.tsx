@@ -6,7 +6,7 @@ const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://skyfaring.net";
 
 export const metadata: Metadata = {
   title: "專案",
-  description: "Skyfaring 的所有專案：解放軍擾台動態追蹤、歷史學院、飛行線上、戰史檔案館、無人機技術情報、TPBL Lens 等數據與互動工具。",
+  description: "Skyfaring 的所有專案：解放軍擾台動態追蹤、歷史學院、飛行養成、戰史檔案館、無人機技術情報、TPBL Lens 等數據與互動工具。",
   alternates: { canonical: "/projects/" },
 };
 
