@@ -48,6 +48,25 @@ curl -sI -H "Sec-Fetch-Dest: document" https://skyfaring.pages.dev/favicon.svg
 `Response.redirect()`（後者產生的回應是 immutable、加不了標頭）。
 對 SEO 無影響：爬蟲認的是 301 這個狀態碼本身，不靠瀏覽器快取。
 
+## 已知問題：正式網域每頁都有 React #418（hydration 不符）
+
+`skyfaring.net` 上每一頁的 console 都會噴 `Minified React error #418`
+（server 端 HTML 與 client 端算出來的不一致）。`*.pages.dev` 上乾淨，只有正式網域有。
+
+原因是 Cloudflare zone 的 **Email Obfuscation**（Scrape Shield）：它會把 HTML 裡的
+`mailto:` 改寫成 `/cdn-cgi/l/email-protection#…` 並注入 `email-decode.min.js`，
+而 React 在 client 端算出來的還是原本的 `mailto:`，兩邊對不起來。
+觸發點是 `app/layout.tsx` 全站頁尾那個信箱連結，所以每一頁都中。
+
+**與 `_routes.json` 無關**，2026-08-05 加 `_routes.json` 之前就存在
+（把正式網域與同一份建置產物的 preview 網址做 HTML diff，差異只有 Cloudflare 注入的
+email-protection 與 analytics beacon，其餘位元組一致）。
+
+影響不大：React 會退回 client 端重繪那一塊，畫面正常，只是多一點成本。要根治的話
+兩條路，都還沒做：把該 zone 的 Email Obfuscation 關掉（Cloudflare 主控台的
+Scrape Shield，wrangler 的 token 只有 zone read，改不動），或讓頁尾信箱不要在
+SSR HTML 裡出現字面上的 `mailto:`。
+
 ## 查用量
 
 `wrangler login` 後從 `%APPDATA%/xdg.config/.wrangler/config/default.toml` 取
