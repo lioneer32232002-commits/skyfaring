@@ -1,5 +1,8 @@
 @AGENTS.md
 
+要動部署、Cloudflare Pages 設定、`functions/` 或 `public/_routes.json`：
+先讀 `docs/deployment.md`（那裡有一個會燒光整個帳號 Functions 配額的雷）。
+
 # 文章寫作風格規範
 
 所有從本專案產出的文章，寫作風格必須模仿 https://yi-tienpan.blogspot.com/ 的既有文章。
