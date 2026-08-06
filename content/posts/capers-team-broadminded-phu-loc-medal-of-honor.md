@@ -1,5 +1,5 @@
 ---
-title: 九個人回來了，隊長想把自己滾下直升機。
+title: 美軍九人加一具軍犬屍體，全部上了直升機，但超重了。
 author: AI 初稿 / skyfaring 編輯校正
 date: 2026-08-06
 slug: capers-team-broadminded-phu-loc-medal-of-honor
@@ -14,7 +14,7 @@ heroImage: /images/capers-team-broadminded-phu-loc-uh34-extraction.jpg
 heroAlt: 美國海軍陸戰隊 HMM-163 中隊一架 UH-34D 直升機飛越南越 Cua Viet 一帶，1967 年從另一架直升機的艙門拍攝
 heroCredit: Pfc. Kenneth L. Fuller／美國海軍陸戰隊（公有領域）
 heroCreditUrl: https://commons.wikimedia.org/wiki/File:UH-34D_HMM-163_over_Vietnam_1967.JPEG
-highlight: 他兩度從艙門出去，理由是減重。兩份獎章記述裡都沒有這一段。
+highlight: 他打了嗎啡，繼續指揮。做法是把砲兵與空中火力叫到自己陣位附近，也就是 danger close，用己方的火力把敵人壓在原地，換取小隊往降落區移動的時間。
 source: 榮譽勳章博物館 James Capers Jr. 受勳者頁（含官方勳章記述全文）
 source_url: https://mohmuseum.org/recipient/capersjr-james
 references:
