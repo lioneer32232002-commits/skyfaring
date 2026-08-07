@@ -25,6 +25,9 @@ references:
   - Marine Corps Times, "Black Force Recon Marine, battlefield commission, Vietnam War hero snubbed for the Medal of Honor"（2020-10-08）
   - Stars and Stripes 對紀錄片《Major Capers: The Legend of Team Broadminded》的報導（2018）
   - National Medal of Honor Museum 頒獎日新聞稿, "Three Americans, Three Conflicts, One Medal"（2026-06-18）
+  - The White House, "President Trump to Award Medal of Honor"（2026-06）
+  - Task & Purpose, "Senate authorizes Trump to award Recon Marine the Medal of Honor"（參議院 3 月 3 日通過、川普 3 月 26 日簽署）
+  - Fox News, "Medal of Honor recipient James Capers Jr. says recognition is bittersweet after losing 'so much'"（Capers 受訪談話）
   - We Are The Mighty, "'The Iron Major': James Capers Jr.'s long road to the Medal of Honor"
   - National Museum of the Marine Corps, "Jim Capers" 人物資料
   - U.S. Department of Veterans Affairs, "VAntage Point: Veteran of the Day, Marine James Capers"
@@ -103,15 +106,25 @@ Capers 本人與隊員講的多了一段。他兩度從艙門出去，理由是�
 
 ## 時效
 
-美軍授勳有時效規定，行為發生後一定年限內沒有提報，之後就需要國會個案豁免。1967 年的事要在 2020 年代補辦，只能走立法這條路。
+美軍授勳有時效規定。陸戰隊適用的條文是事發三年內要由上級循管道提報，五年內要完成頒授，超過就得由國會個案豁免。1967 年的事要在 2020 年代補辦，只能走立法這條路。
 
-2025 年 5 月，南卡羅來納州眾議員 Ralph Norman 提案，豁免 Capers 這一案的時效限制。眾議院在 2026 年 2 月通過，參議院 3 月初無異議通過，送交總統。
+2025 年 5 月，南卡羅來納州眾議員 Ralph Norman 提出 H.R. 3377，豁免 Capers 這一案的時效限制。眾議院 2026 年 2 月 3 日通過，參議院 3 月 3 日無異議通過，川普 3 月 26 日簽署生效。
 
-2026 年 6 月 18 日，八十八歲的 Capers 在白宮東廳受頒榮譽勳章。同場受勳的還有陸軍少校 Nicholas Dockery，他的受勳事蹟發生在 2012 年的阿富汗卡皮薩省，當時他是步兵少尉，後來才轉進特種部隊；另一位是 2008 年過世的陸戰隊上校 John Ripley，由其子 Tom 代領。
+2026 年 6 月 18 日，八十八歲的 Capers 在白宮東廳從川普手上接過榮譽勳章。同場受勳的還有陸軍少校 Nicholas Dockery，他的受勳事蹟發生在 2012 年的阿富汗卡皮薩省，當時他是步兵少尉，後來才轉進特種部隊；另一位是 2008 年過世的陸戰隊上校 John Ripley，由其子 Tom 代領。
 
 Capers 1937 年生於南卡羅來納州 Bishopville，佃農家庭，在種族隔離時期的南方長大。1953 年他進 Parris Island 受新兵訓練，那時海軍陸戰隊對黑人開放服役才十一年。他從步兵轉到偵察，1966 年 11 月在越南拿到戰場任官，在陸戰隊待了二十多年，拿過兩枚附 V 字銅星、三枚紫心。1967 年，陸戰隊辦了一場針對黑人青年的招募活動，挑他當門面。多數來源的寫法是，他很可能是第一個被放上招募海報顯著位置的黑人陸戰隊員。
 
 榮譽勳章自 1861 年設立以來頒給過三千五百三十六人，這是頒獎當天榮譽勳章博物館給的數字。非裔受勳者的名錄，到 2025 年初是九十六人。Capers 說他透過非正式管道聽到，授勳審核鏈上有一名軍官表示，自己死了下地獄，也不會讓 Capers 拿到榮譽勳章。這是他本人的說法，沒有文件可以核對。
+
+典禮隔天，Capers 上 Fox & Friends 受訪，談到那架超重的直升機。
+
+「你的弟兄有危險，而你有機會救他們，那我就這麼選了。下直升機，把重量減掉，讓我的弟兄活下來。」
+
+他在同一段訪談裡說，他打過兩場戰爭；兒子因盲腸炎死在他懷裡，結褵五十年的妻子死於癌症。
+
+「我不能說我很高興站在這裡，這個獎屬於很多跟過我、後來死在世界各地戰場上的年輕人。」
+
+「我失去了那麼多，拿一枚獎章沒有什麼真正的滿足。」
 
 ## 三份文件
 
