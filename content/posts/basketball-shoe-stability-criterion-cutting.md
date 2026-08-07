@@ -1,5 +1,5 @@
 ---
-title: "九款市售籃球鞋，沒有一款在所有切入負荷下站得住。"
+title: "九款市售籃球鞋，沒有一款在所有的變向急停下都站得住。"
 author: "AI 初稿 / skyfaring 編輯校正"
 date: "2026-08-07"
 slug: "basketball-shoe-stability-criterion-cutting"
