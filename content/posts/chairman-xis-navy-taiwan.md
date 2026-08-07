@@ -15,7 +15,7 @@ heroCredit: Baycrest
 heroCreditUrl: https://commons.wikimedia.org/wiki/File:Aircraft_Carrier_Liaoning_CV-16.jpg
 highlight: "行政院原本提出橫跨 2026 到 2033 年、上限 1.25 兆元的版本，瞄準的正是無人機、遠程精準打擊、防空反飛彈這類「抬高對岸跨海成本」的能力。2026 年 5 月，立法院通過的版本把上限降到 7800 億。被排除在匡列範圍之外的國產項目裡，包含小型自殺無人艇、濱海監偵型無人機、海搜型無人機，全是為了攔阻一支跨海艦隊而設計的東西。"
 source: "Martinson, Ryan D. China Maritime Report #54: Chairman Xi's Navy. China Maritime Studies Institute, U.S. Naval War College, June 2026."
-source_url: https://digital-commons.usnwc.edu/cmsi-maritime-reports
+source_url: https://digital-commons.usnwc.edu/cmsi-maritime-reports/54
 category: 軍事
 ---
 

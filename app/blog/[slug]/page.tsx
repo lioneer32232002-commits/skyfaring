@@ -2,7 +2,7 @@ import { getAllSlugs, getPost, addPanguText } from "@/lib/posts";
 import ViewCounter from "@/components/ViewCounter";
 import UiIcon from "@/components/UiIcon";
 import { getSeriesPosts, getRelatedPosts, getAdjacentPosts } from "@/lib/related";
-import { SeriesBadge, SeriesNav, AdjacentNav, RelatedPosts, ArticleToc } from "@/components/PostNav";
+import { SeriesBadge, SeriesNav, AdjacentNav, RelatedPosts } from "@/components/PostNav";
 import { hasTagPage, tagHref } from "@/lib/tags";
 import ShareButtons from "@/components/ShareButtons";
 
@@ -81,6 +81,17 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
         })
       : null;
 
+  // frontmatter 的 source（主要來源）與 references（次要來源）都是引用，
+  // schema 裡不分主次，照 source 在前的順序排成一個 CreativeWork 陣列。
+  const citations = [
+    ...(post.source ? [{ name: post.source, url: post.source_url }] : []),
+    ...(post.references ?? []).map((r) => ({ name: r.title, url: r.url })),
+  ].map(({ name, url }) => ({
+    "@type": "CreativeWork",
+    name,
+    ...(url && { url }),
+  }));
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
@@ -110,6 +121,11 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
     ...(post.heroImage && {
       image: { "@type": "ImageObject", url: `${SITE_URL}${post.heroImage}` },
     }),
+    // 這個站的權威是跟原始報告借的，不是作者自己的。把 source 與 references
+    // 攤成 schema.org 的 citation，讓抓引用的機器讀得到「這篇在導讀哪一份東西」。
+    // 沒有 rich result 可拿（FAQPage 那類版位 Google 已經收掉），純粹是給
+    // AI Overviews 與各家 LLM 的來源訊號。
+    ...(citations.length > 0 && { citation: citations }),
   };
 
   const breadcrumbJsonLd = {
@@ -244,8 +260,6 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
           <ViewCounter slug={`blog/${slug}`} />
         </span>
       </div>
-
-      <ArticleToc toc={post.toc} />
 
       {/* Content */}
       <div

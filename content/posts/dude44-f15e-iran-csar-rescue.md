@@ -32,6 +32,8 @@ category: 軍事
 
 那是 DUDE 44 Bravo，一架 F-15E 攻擊鷹的後座武器系統官，軍階上校。前一天，他和飛行員一起被打了下來。飛行員已經回家了，他還在山上，受了傷，獨自一人，身邊是整片正在搜捕他的土地。
 
+這場救援的經過，Air & Space Forces Magazine 的記者 Stephen Losey 在 2026 年 4 月 6 日寫成一篇長報導，標題是〈The Rescue of DUDE 44: Inside the Massive Operation to Save Two Downed Airmen In Iran〉。
+
 ## 一架戰機，兩個人，落在敵人後方。
 
 2026 年 4 月 3 日清晨，伊朗當地時間，一枚飛彈擊中了一架雙座的 F-15E 攻擊鷹，呼號 DUDE 44。

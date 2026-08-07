@@ -18,7 +18,6 @@ highlight: "我們靠的就是兩樣東西：C-130 的航程，還有傘降救�
 source: "129th Rescue Wing saves Mexican fisherman at sea, Staff Sgt. Serena Smith, 129th Rescue Wing / DVIDS, 2026-07-10."
 source_url: "https://www.dvidshub.net/news/569734/129th-rescue-wing-saves-mexican-fisherman-sea"
 references:
-  - title: "129th Rescue Wing saves Mexican fisherman at sea, Staff Sgt. Serena Smith, DVIDS, 2026-07-10."
   - title: "Pararescue team parachutes in 700 miles out at sea to save a fisherman's life, Task & Purpose, 2026-07-11."
   - title: "SOF Weekly Update, July 13, 2026, SOF News."
   - title: "129th Rescue Wing, Wikipedia."

@@ -18,7 +18,6 @@ highlight: "這種行動需要技術、專業和勇氣。我要向我們的官�
 source: "Secretary of State for Defence on Russian Shadow Fleet interdiction, Dan Jarvis MBE MP, GOV.UK, 2026-06-15."
 source_url: "https://www.gov.uk/government/speeches/secretary-of-state-for-defence-on-russian-shadow-fleet-interdiction"
 references:
-  - title: "Secretary of State for Defence on Russian Shadow Fleet interdiction, GOV.UK, 2026-06-15."
   - title: "Royal Navy leads interdiction of shadow fleet tanker in the English Channel, royalnavy.mod.uk, 2026-06-15."
   - title: "UK seizes Russian 'shadow fleet' tanker: what that means, Al Jazeera, 2026-06-16."
   - title: "Britain Seizes its First Shadow Fleet Tanker, The Maritime Executive, 2026-06."

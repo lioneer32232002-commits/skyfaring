@@ -40,31 +40,6 @@ export function wrapTables(html: string): string {
     .replace(/<\/table>/g, "</table></div>");
 }
 
-export interface TocEntry {
-  id: string;
-  text: string;
-  /** 2 或 3，對應 h2 / h3 */
-  level: number;
-}
-
-/**
- * 從已產生的 HTML 抓目錄。
- *
- * 直接讀渲染結果而不是另外解析一次 markdown，是為了保證目錄的 id
- * 與頁面上實際的 heading id 一定對得上（id 由 rehype-slug 產生）。
- * 抓在 addPangu 之後，所以目錄文字與標題顯示的文字一致。
- */
-export function extractToc(htmlStr: string): TocEntry[] {
-  const out: TocEntry[] = [];
-  const re = /<h([23])\s+id="([^"]+)"[^>]*>([\s\S]*?)<\/h\1>/g;
-  let m: RegExpExecArray | null;
-  while ((m = re.exec(htmlStr)) !== null) {
-    const text = m[3].replace(/<[^>]*>/g, "").trim();
-    if (text) out.push({ level: Number(m[1]), id: m[2], text });
-  }
-  return out;
-}
-
 /**
  * 估算閱讀時間（分鐘）。
  *
@@ -150,8 +125,6 @@ export interface PostMeta {
 
 export interface Post extends PostMeta {
   contentHtml: string;
-  /** 文章的 h2 / h3 目錄 */
-  toc: TocEntry[];
 }
 
 export function getAllPostMetas(): PostMeta[] {
@@ -203,7 +176,7 @@ export async function getPost(slug: string): Promise<Post> {
   const { data, content } = matter(fileContents);
 
   // 從 remark-html 換成 remark-rehype + rehype-slug + rehype-stringify，
-  // 目的是讓 h2/h3 帶上 id：原本標題沒有 id，既沒辦法深連結到某一節，也做不出目錄。
+  // 目的是讓 h2/h3 帶上 id，才能深連結到某一節。
   // 沒有文章在 markdown 裡用原生 HTML，所以兩條管線的輸出除了多出的 id 之外一致。
   const processedContent = await remark()
     .use(remarkGfm)
@@ -212,7 +185,6 @@ export async function getPost(slug: string): Promise<Post> {
     .use(rehypeStringify)
     .process(content);
   const contentHtml = wrapTables(addPangu(processedContent.toString()));
-  const toc = extractToc(contentHtml);
 
   return {
     slug,
@@ -237,7 +209,6 @@ export async function getPost(slug: string): Promise<Post> {
     source_url: data.source_url,
     references: data.references ?? [],
     contentHtml,
-    toc,
   };
 }
 
