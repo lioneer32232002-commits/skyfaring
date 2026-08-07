@@ -8,7 +8,7 @@ tags:
   - 球鞋
   - 運動科學
   - 生物力學
-excerpt: "2026 年《Annals of Biomedical Engineering》刊出的一篇研究，用一條力矩平衡式做出籃球鞋側向穩定度的判準：鞋牆的水平厚度與鞋底的垂直厚度之比，必須大於切入時側向力與垂直力之比。九款 2018 到 2019 年市售的男子籃球鞋量下來，沒有一款通過文獻報告過的全部六組負荷條件，其中兩款的力臂是 0.00 與 −0.20 公分。"
+excerpt: "2026 年《Annals of Biomedical Engineering》刊出的一篇研究，用一條力矩平衡式做出籃球鞋側向穩定度的判準：鞋牆的水平厚度與鞋底的垂直厚度之比，必須大於變向急停時側向力與垂直力之比。九款 2018 到 2019 年市售的男子籃球鞋量下來，沒有一款通過文獻報告過的全部六組負荷條件，其中兩款的力臂是 0.00 與 −0.20 公分。"
 highlight: "量鞋底接地面寬度的方法是把鞋底塗上廣告顏料，加 890 牛頓的載重在方格紙上壓一個印子，相當於一個 200 磅的人站上去。九款鞋的鞋牆水平厚度量出來，從 1.89 公分一路到 −0.20 公分，負值代表鞋底最外側的著地點落在腳掌施力點的內側。"
 references:
   - title: "Yara Izhiman, Lindee B. Calvert, Leora Tuulia Kri Meehan-Numminen, Zahab Ahsan, Brian Bigler, Eric A. Nauman. Development of a Stability Criterion for Men's Basketball Shoes During Mediolateral Cutting Maneuvers. Annals of Biomedical Engineering, 2026."
