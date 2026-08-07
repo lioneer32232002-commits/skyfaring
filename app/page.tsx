@@ -61,7 +61,7 @@ export default function HomePage() {
           </p>
           <div className="text-sm text-slate-400 flex items-center gap-2">
             <span>本站瀏覽次數：</span>
-            <ViewCounter slug="home" className="text-sky-300 font-semibold" />
+            <ViewCounter slug="home" total className="text-sky-300 font-semibold" />
           </div>
         </div>
       </section>

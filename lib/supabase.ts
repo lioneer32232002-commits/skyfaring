@@ -38,6 +38,13 @@ export async function getViewCounts(
   return result;
 }
 
+/** 全站累計瀏覽數：page_views 每一列（一個頁面一列）的總和。 */
+export async function getTotalViewCount(): Promise<number> {
+  if (!supabase) return 0;
+  const { data } = await supabase.from("page_views").select("count");
+  return (data ?? []).reduce((sum, row) => sum + (row?.count ?? 0), 0);
+}
+
 export async function incrementViewCount(slug: string): Promise<number> {
   if (!supabase) return 0;
   const { data } = await supabase.rpc("increment_view", { page_slug: slug });
