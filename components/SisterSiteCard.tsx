@@ -45,6 +45,13 @@ const DRONE_REVIEW: PromoConfig = {
   icon: "drone",
 };
 
+const UKRAINE_REVIEW: PromoConfig = {
+  title: "烏克蘭無人機戰研究",
+  description: "俄烏戰爭至今烏克蘭團隊的無人機研究與戰場技術演化，依能力領域整理，含演進時間線與來源可信度分層。",
+  url: `${BASE_PATH}/ukraine-review/`,
+  icon: "map",
+};
+
 const PROMO_BY_CATEGORY: Record<string, PromoConfig> = {
   航空: FLIGHT_DECK,
   籃球研究: SHOT_LEDGER,
@@ -56,8 +63,10 @@ const PROMO_BY_CATEGORY: Record<string, PromoConfig> = {
 /*
   分類對不上時看 tags：
   台海相關（軍事類分不出台海與二戰史、烏克蘭戰史）→ PLA Tracker，
-  其次無人機 tag（掛在多代理人、電腦視覺分類下的無人機論文）→ 無人機技術情報。
-  台灣無人機政策文兩邊 tag 都有，PLA Tracker 優先。
+  再來烏克蘭 tag → 烏克蘭無人機戰研究，
+  最後無人機 tag（掛在多代理人、電腦視覺分類下的無人機論文）→ 無人機技術情報。
+  台灣無人機政策文多邊 tag 都有，PLA Tracker 優先；
+  台灣無人機出口烏克蘭那篇也帶烏克蘭 tag，同樣走 PLA Tracker。
 */
 const PLA_TAGS = new Set(["解放軍", "兩岸", "台海", "中國海軍", "國防政策", "國防產業"]);
 
@@ -71,6 +80,7 @@ export default function SisterSiteCard({
   const promo =
     (category ? PROMO_BY_CATEGORY[category] : undefined) ??
     (tags.some((t) => PLA_TAGS.has(t)) ? PLA_TRACKER : undefined) ??
+    (tags.includes("烏克蘭") ? UKRAINE_REVIEW : undefined) ??
     (tags.includes("無人機") ? DRONE_REVIEW : undefined);
   if (!promo) return null;
 
