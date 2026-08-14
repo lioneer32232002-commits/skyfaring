@@ -35,7 +35,8 @@ export function getSeriesPosts(series: string): PostMeta[] {
  * 只看同分類的話這幾篇會一條站內連結都沒有，變成動線的死路。
  * 往主題群補，等於用「同主題」這個較寬的關聯，仍然比隨機推薦相關。
  */
-export function getRelatedPosts(post: PostMeta, limit = 3): PostMeta[] {
+// limit 4 是配相關文章區的兩欄格線：2+2 排滿，不會有一張卡自己一排
+export function getRelatedPosts(post: PostMeta, limit = 4): PostMeta[] {
   if (!post.category) return [];
 
   const all = getAllPostMetas();
