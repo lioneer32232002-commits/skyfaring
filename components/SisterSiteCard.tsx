@@ -36,16 +36,28 @@ const PLA_TRACKER: PromoConfig = {
   icon: "radar",
 };
 
+const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
+const DRONE_REVIEW: PromoConfig = {
+  title: "無人機技術情報",
+  description: "中國 vs 非中國 vs 台灣的無人機論文觀察，民用與軍用同頁切換，含領域活躍度與發展脈絡。",
+  url: `${BASE_PATH}/drone-review/`,
+  icon: "drone",
+};
+
 const PROMO_BY_CATEGORY: Record<string, PromoConfig> = {
   航空: FLIGHT_DECK,
   籃球研究: SHOT_LEDGER,
   攻城獅: SHOT_LEDGER,
   球鞋: SHOT_LEDGER,
+  無人機: DRONE_REVIEW,
 };
 
 /*
-  軍事類文章分類都是「軍事」，台海與二戰史、烏克蘭戰史分不開，
-  改用 tags 認台灣國防相關：命中任一個就掛 PLA Tracker。
+  分類對不上時看 tags：
+  台海相關（軍事類分不出台海與二戰史、烏克蘭戰史）→ PLA Tracker，
+  其次無人機 tag（掛在多代理人、電腦視覺分類下的無人機論文）→ 無人機技術情報。
+  台灣無人機政策文兩邊 tag 都有，PLA Tracker 優先。
 */
 const PLA_TAGS = new Set(["解放軍", "兩岸", "台海", "中國海軍", "國防政策", "國防產業"]);
 
@@ -58,7 +70,8 @@ export default function SisterSiteCard({
 }) {
   const promo =
     (category ? PROMO_BY_CATEGORY[category] : undefined) ??
-    (tags.some((t) => PLA_TAGS.has(t)) ? PLA_TRACKER : undefined);
+    (tags.some((t) => PLA_TAGS.has(t)) ? PLA_TRACKER : undefined) ??
+    (tags.includes("無人機") ? DRONE_REVIEW : undefined);
   if (!promo) return null;
 
   return (
