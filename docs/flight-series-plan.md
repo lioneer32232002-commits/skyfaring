@@ -7,7 +7,7 @@
 
 1. 讀 `CLAUDE.md` 的寫作風格規範與反面清單，全程遵守。拿不準重新框定骨架時讀 `docs/writing-style-examples.md`。
 2. 用 WebFetch 抓該篇的來源論文全文（下方每篇都附開放取用連結），數字與結論以論文原文為準，不可憑印象寫。
-3. 文章寫進 `content/posts/`，frontmatter 齊全（`author` 固定 `AI 初稿 / skyfaring 編輯校正`；`highlight` 挑畫面不挑結論）。
+3. 文章寫進 `content/posts/`，frontmatter 齊全（`author` 固定 `AI 初稿 / skyfaring 編輯校正`；`highlight` 挑畫面不挑結論；`category` 一律填 `航空`，文章頁會據此在文末自動掛 FLIGHT DECK 導流卡）。
 4. hero 圖照 CLAUDE.md 配圖流程：從 Unsplash／Pexels／Wikimedia Commons 找免費商用授權圖，curl 下載到 `public/images/`，用 Read 開圖確認內容，不得與已發布文章重複用圖。
 5. 發文前跑文章小隊：兩個 subagent 平行審查（格式審查員＋資料查核員），問題修完才算過。另外注意補述句、概括斷言、前後矛盾這三類審查員常漏的問題。
 6. 開新分支 `flight-series/<slug>`，commit（訊息繁體中文）、push 分支、開 PR。**不 push main**，由使用者合併後才上線。
