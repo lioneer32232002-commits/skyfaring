@@ -18,7 +18,7 @@
 
 | # | 週次 | 狀態 | 題目 | 主要來源 |
 |---|------|------|------|----------|
-| 1 | 2026-08-14 當週 | pr-open（PR #18） | 驚嚇與意外反應（startle & surprise）：驚嚇後認知受損 30–90 秒 | [PMC narrative review](https://pmc.ncbi.nlm.nih.gov/articles/PMC10790839/) |
+| 1 | 2026-08-14 當週 | pr-open（PR #18） | 驚嚇與意外反應（startle & surprise）：驚嚇後資訊處理受損 30 至 60 秒 | [PMC narrative review](https://pmc.ncbi.nlm.nih.gov/articles/PMC10790839/) |
 | 2 | 2026-08-20 當週 | todo | 晴空亂流與氣候變遷：北美與歐洲上空嚴重亂流體積約增一倍 | [Storer & Williams 2017](https://link.springer.com/article/10.1007/s00376-017-6268-2)；[Prosser 2023 GRL](https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2023gl103814) |
 | 3 | 2026-08-27 當週 | todo | 自動化與手飛技能退化：全動模擬機下的飛行表現與視覺掃描 | [Causse et al. 2024](https://www.sciencedirect.com/science/article/pii/S0003687024002333)；佐以 Flying the Needles |
 | 4 | 2026-09-03 當週 | todo | 超長程航班機師睡眠：組員休息艙裡的實測資料 | [Clocks & Sleep ULR](https://doi.org/10.3390/clockssleep3040036)；[Frontiers ULR 疲勞管理](https://www.frontiersin.org/journals/environmental-health/articles/10.3389/fenvh.2023.1329203/full) |
