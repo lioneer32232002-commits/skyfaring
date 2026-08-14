@@ -13,7 +13,7 @@ heroAlt: "全動模擬機駕駛艙內，兩名機師面對儀表與視景螢幕"
 heroCredit: "Jan Huber on Unsplash"
 heroCreditUrl: "https://unsplash.com/photos/0xNbk7D_s6U"
 excerpt: "同一套模擬機、同一個引擎故障，事先被告知的機師無人墜毀；沒被告知的那組，45.5% 墜毀或試圖水面迫降。一篇 2023 年的回顧論文整理了驚嚇與意外對機師認知的影響：反射 14 毫秒就出現，資訊處理卻要 30 至 60 秒才恢復。"
-highlight: "意外組的機師先被引導去注意俯仰角，再低頭在暈機量表上打分數。視線離開儀表的那一刻，失速警告響起。"
+highlight: "受損持續 30 至 60 秒，論文稱之為驚嚇不應期（startle refractory period），行為上表現為反應延遲，或乾脆凍住不動。對一架正在進場的客機，一分鐘夠讓空速和高度偏離到改正不及。"
 source: "Diarra, Marchitto, Bressolle, Baccino & Drai-Zerbib, A narrative review of the interconnection between pilot acute stress, startle, and surprise effects in the aviation context (Frontiers in Neuroergonomics, 2023)"
 source_url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC10790839/"
 category: 航空
