@@ -5,7 +5,7 @@ import { getSeriesPosts, getRelatedPosts, getAdjacentPosts } from "@/lib/related
 import { SeriesBadge, SeriesNav, AdjacentNav, RelatedPosts } from "@/components/PostNav";
 import { hasTagPage, tagHref } from "@/lib/tags";
 import ShareButtons from "@/components/ShareButtons";
-import FlightDeckCard from "@/components/FlightDeckCard";
+import SisterSiteCard from "@/components/SisterSiteCard";
 
 const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
@@ -299,8 +299,8 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
         </div>
       )}
 
-      {/* 航空類文章文末導流到姊妹站 FLIGHT DECK */}
-      {post.category === "航空" && <FlightDeckCard />}
+      {/* 文末姊妹站導流卡：航空 → FLIGHT DECK；籃球研究／攻城獅／球鞋 → Shot Ledger */}
+      <SisterSiteCard category={post.category} />
 
       <ShareButtons url={`${SITE_URL}/blog/${slug}/`} title={post.title} />
 
