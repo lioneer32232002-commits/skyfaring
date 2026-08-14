@@ -62,7 +62,7 @@ export default function ArticleCard({ post }: { post: PostMeta }) {
           <h2 className="text-lg font-bold text-slate-800 dark:text-slate-100 group-hover:text-sky-600 dark:group-hover:text-sky-400 transition-colors leading-snug mb-2 line-clamp-2">
             {post.title}
           </h2>
-          <p className="text-sm text-slate-500 dark:text-slate-400 line-clamp-3 flex-1 mb-4">
+          <p className="text-sm text-slate-500 dark:text-slate-400 line-clamp-3 mb-4">
             {post.excerpt}
           </p>
           <div className="flex items-center justify-between text-xs text-slate-500 dark:text-slate-400 mt-auto">
