@@ -153,7 +153,8 @@ export function RelatedPosts({ posts }: { posts: PostMeta[] }) {
         相關文章
       </h2>
       <ViewCountsProvider slugs={posts.map((p) => `blog/${p.slug}`)}>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {/* 文章欄只有 max-w-3xl，排三欄會把卡壓到 224px 寬：圖變正方形、meta 列折行。兩欄剛好 */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
           {posts.map((p) => (
             <ArticleCard key={p.slug} post={p} />
           ))}
