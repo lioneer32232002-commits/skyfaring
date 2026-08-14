@@ -299,8 +299,8 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
         </div>
       )}
 
-      {/* 文末姊妹站導流卡：航空 → FLIGHT DECK；籃球研究／攻城獅／球鞋 → Shot Ledger */}
-      <SisterSiteCard category={post.category} />
+      {/* 文末姊妹站導流卡：航空 → FLIGHT DECK；籃球研究／攻城獅／球鞋 → Shot Ledger；台海 tags → PLA Tracker */}
+      <SisterSiteCard category={post.category} tags={post.tags} />
 
       <ShareButtons url={`${SITE_URL}/blog/${slug}/`} title={post.title} />
 

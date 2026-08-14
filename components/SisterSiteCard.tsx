@@ -29,6 +29,13 @@ const SHOT_LEDGER: PromoConfig = {
   icon: "basketball",
 };
 
+const PLA_TRACKER: PromoConfig = {
+  title: "解放軍擾台動態追蹤",
+  description: "中線越線、艦機活動每日數據，含趨勢圖與 SITREP 紀錄。",
+  url: "https://pla-tracker.skyfaring.net/",
+  icon: "radar",
+};
+
 const PROMO_BY_CATEGORY: Record<string, PromoConfig> = {
   航空: FLIGHT_DECK,
   籃球研究: SHOT_LEDGER,
@@ -36,8 +43,22 @@ const PROMO_BY_CATEGORY: Record<string, PromoConfig> = {
   球鞋: SHOT_LEDGER,
 };
 
-export default function SisterSiteCard({ category }: { category?: string }) {
-  const promo = category ? PROMO_BY_CATEGORY[category] : undefined;
+/*
+  軍事類文章分類都是「軍事」，台海與二戰史、烏克蘭戰史分不開，
+  改用 tags 認台灣國防相關：命中任一個就掛 PLA Tracker。
+*/
+const PLA_TAGS = new Set(["解放軍", "兩岸", "台海", "中國海軍", "國防政策", "國防產業"]);
+
+export default function SisterSiteCard({
+  category,
+  tags = [],
+}: {
+  category?: string;
+  tags?: string[];
+}) {
+  const promo =
+    (category ? PROMO_BY_CATEGORY[category] : undefined) ??
+    (tags.some((t) => PLA_TAGS.has(t)) ? PLA_TRACKER : undefined);
   if (!promo) return null;
 
   return (
