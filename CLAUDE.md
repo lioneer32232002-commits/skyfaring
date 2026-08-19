@@ -199,7 +199,13 @@
 - **論文導讀存檔**：`articles/`
 - **海事報告**：`maritime-reports/`
 
-新機器 clone 之後這些連結不會自動存在，要自己建。下面是範例，兩邊路徑都換成自己機器的實際位置（repo 根目錄、OneDrive 根目錄各機器不同）：
+新機器 clone 之後這些連結不會自動存在，要自己建。在 repo 根目錄跑一次就好：
+
+```
+node scripts/setup-junctions.mjs
+```
+
+它從 `%OneDrive%` 推出來源路徑，一次建齊上面六個連結，已存在的不動。OneDrive 裝在別的位置時用參數指定：`node scripts/setup-junctions.mjs "D:\OneDrive\02_創作\14_AI TEST\skyfaring"`。手動建的話等同於：
 
 ```
 mklink /J "<repo>\drone-papers" "<OneDrive>\02_創作\14_AI TEST\skyfaring\drone-papers"
