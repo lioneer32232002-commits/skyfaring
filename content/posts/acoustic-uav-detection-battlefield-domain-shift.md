@@ -1,5 +1,5 @@
 ---
-title: "前線麥克風只錄到 441 段無人機，模型第一次訓練就崩潰了。"
+title: "烏克蘭前線靠聲音偵測無人機，能拿來訓練的樣本只有 1.1 小時。"
 author: "AI 初稿 / skyfaring 編輯校正"
 date: 2026-08-19
 slug: acoustic-uav-detection-battlefield-domain-shift
@@ -12,7 +12,7 @@ heroImage: /images/acoustic-uav-detection-battlefield-cell-tower.jpg
 heroAlt: 通訊塔矗立在向日葵田中央，背景是藍天與積雲
 heroCredit: German Engelgardt
 heroCreditUrl: https://www.pexels.com/photo/a-cell-tower-in-the-countryside-13158984/
-highlight: "訓練集裡標為小型無人機的片段有 441 段、1.1 小時。同一批資料裡，塔上麥克風錄的環境噪音有 50,000 段、125 小時。"
+highlight: "前線那支麥克風貼著地面，收進來的是人聲、音樂、機具與戰場雜訊。要從裡面挑出 FPV 無人機，可用的訓練樣本是 441 段。"
 source: "Vilhurin, V.; Sydorskyi, V.; Shevtsov, A. Acoustic UAV Detection in Battlefield Scenarios: Handling Noise, Domain Shift, and Weak Labels. ICMCIS 2026, Bath, United Kingdom, 12-13 May 2026. arXiv:2608.14287."
 source_url: https://arxiv.org/abs/2608.14287
 category: 無人機
