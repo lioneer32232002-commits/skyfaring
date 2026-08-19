@@ -12,7 +12,7 @@ heroImage: /images/acoustic-uav-detection-battlefield-cell-tower.jpg
 heroAlt: 通訊塔矗立在向日葵田中央，背景是藍天與積雲
 heroCredit: German Engelgardt
 heroCreditUrl: https://www.pexels.com/photo/a-cell-tower-in-the-countryside-13158984/
-highlight: "前線那支麥克風貼著地面，收進來的是人聲、音樂、機具與戰場雜訊。要從裡面挑出 FPV 無人機，可用的訓練樣本是 441 段。"
+highlight: "三份資料按照時間與地點切開：訓練集錄於非戰區試場，驗證集錄於冬季，測試集錄於春季、全部來自實際交戰區。同一個模型在驗證集的 F1 是 98.18%，測試集是 82.22%。"
 source: "Vilhurin, V.; Sydorskyi, V.; Shevtsov, A. Acoustic UAV Detection in Battlefield Scenarios: Handling Noise, Domain Shift, and Weak Labels. ICMCIS 2026, Bath, United Kingdom, 12-13 May 2026. arXiv:2608.14287."
 source_url: https://arxiv.org/abs/2608.14287
 category: 無人機
