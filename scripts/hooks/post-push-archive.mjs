@@ -24,17 +24,53 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..")
 const ARCHIVE_DIR = path.join(ROOT, "articles");
 
 /**
- * 學術來源特徵：arXiv、DOI（`doi.org` 或 `10.xxxx/` 前綴），以及期刊出版社與
- * 機構典藏網域。新增期刊網域時直接加進來，不要改成寬鬆的「有來源欄位就算」。
+ * 要存檔的來源特徵，兩類：
+ *   1. 學術：arXiv、DOI（`doi.org` 或 `10.xxxx/` 前綴）、期刊出版社與機構典藏網域
+ *   2. 報告：智庫與國際組織的研究報告發布網域（IISS、IFRI、CSIS、RUSI、ICAO 等）
+ * 新增網域時直接加進對應那一組，不要改回寬鬆的「有來源欄位就算」——那會把
+ * 有引用來源的敘事文（球鞋、戰史、新聞評論）一起掃進來。
  */
-export const ACADEMIC_SOURCE =
-  /(?:\barxiv\b|\bdoi\b|\b10\.\d{4,9}\/|arxiv\.org|doi\.org|biorxiv|medrxiv|engrxiv|osf\.io|ssrn|semanticscholar|ncbi\.nlm\.nih\.gov|europepmc|pubmed|sciencedirect|springer|nature\.com|wiley\.com|tandfonline|sagepub|mdpi\.com|frontiersin|plos\.org|ieee\.org|acm\.org|cambridge\.org|oup\.com|jstor|researchgate|digital-?commons|openreview|mlr\.press|neurips|aaai\.org|iopscience|aps\.org|aiaa\.org|lww\.com|jamanetwork|nejm\.org|thelancet|bmj\.com|karger|hindawi|degruyter|emerald)/i;
+export const ARCHIVABLE_SOURCE = new RegExp(
+  [
+    // 學術
+    "\\barxiv\\b|\\bdoi\\b|\\b10\\.\\d{4,9}\\/|arxiv\\.org|doi\\.org|biorxiv|medrxiv|engrxiv|osf\\.io|ssrn",
+    "semanticscholar|ncbi\\.nlm\\.nih\\.gov|europepmc|pubmed|sciencedirect|springer|nature\\.com|wiley\\.com",
+    "tandfonline|sagepub|mdpi\\.com|frontiersin|plos\\.org|ieee\\.org|acm\\.org|cambridge\\.org|oup\\.com",
+    "jstor|researchgate|digital-?commons|openreview|mlr\\.press|neurips|aaai\\.org|iopscience|aps\\.org",
+    "aiaa\\.org|lww\\.com|jamanetwork|nejm\\.org|thelancet|bmj\\.com|karger|hindawi|degruyter|emerald",
+    "sloansportsconference",
+    // 智庫與國際組織報告
+    "iiss\\.org|ifri\\.org|carnegieendowment|csis\\.org|rusi\\.org|rand\\.org|atlanticcouncil|cfr\\.org",
+    "brookings|chathamhouse|sipri\\.org|crsreports|cfe-dmha|iata\\.org|icao\\.int|dset\\.tw",
+    // 有些報告只在 source 文字裡指名發布機構，連結卻指向報導該報告的新聞
+    "Congressional Research Service|China Maritime Studies Institute",
+  ].join("|"),
+  "i"
+);
 
-/** frontmatter 判斷這篇是不是要存檔的論文導讀類。 */
+/** frontmatter 判斷這篇是不是要存檔的論文／報告導讀類。 */
 export function isPaperArticle(data = {}) {
   const cited = [data.source, data.source_url, data.doi, data.references].filter(Boolean);
   if (cited.length === 0) return false;
-  return ACADEMIC_SOURCE.test(JSON.stringify(cited));
+  return ARCHIVABLE_SOURCE.test(JSON.stringify(cited));
+}
+
+/**
+ * articles/ 現有存檔的 slug → 檔名對照。
+ * 舊存檔的檔名帶日期前綴（`2026-06-24-iiss-uninhabited-war-ukraine.md`），
+ * 所以要認 frontmatter 的 slug，不能只比檔名，否則同一篇會存成兩份。
+ */
+export function archiveIndex(dir, matter) {
+  const bySlug = new Map();
+  for (const f of fs.readdirSync(dir).filter((f) => /\.mdx?$/.test(f))) {
+    try {
+      const s = matter(fs.readFileSync(path.join(dir, f), "utf8")).data?.slug;
+      if (s && !bySlug.has(s)) bySlug.set(s, f);
+    } catch {
+      /* 讀不動的舊檔跳過 */
+    }
+  }
+  return bySlug;
 }
 
 function readStdin() {
@@ -119,6 +155,7 @@ async function main() {
   const copied = [];
   const skipped = [];
   const unchanged = [];
+  const existing = archiveIndex(ARCHIVE_DIR, matter);
   for (const rel of posts) {
     const src = path.join(ROOT, rel);
     const name = path.basename(rel);
@@ -133,7 +170,8 @@ async function main() {
       skipped.push(name);
       continue;
     }
-    const dest = path.join(ARCHIVE_DIR, name);
+    // 已有存檔就更新那一份（可能是帶日期前綴的舊檔名），沒有才用文章檔名新建
+    const dest = path.join(ARCHIVE_DIR, (data.slug && existing.get(data.slug)) || name);
     try {
       if (fs.existsSync(dest) && fs.readFileSync(dest, "utf8") === fs.readFileSync(src, "utf8")) {
         unchanged.push(name);

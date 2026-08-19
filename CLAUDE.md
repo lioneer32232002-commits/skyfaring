@@ -180,7 +180,7 @@
 - **論文導讀 / PDF 翻譯類文章**：發文後同步存一份 `.md` 到 `skyfaring/articles/`
 - **一般賽後分析文章**：不需存 `articles/`
 
-這一步由 `scripts/hooks/post-push-archive.mjs` 自動完成：`git push` 成功後，看這次推上去的文章，frontmatter 的 `source`／`source_url`／`references`／`doi` 指向 arXiv、DOI 或期刊與機構典藏網域就複製到 `articles/`，不用手動 `cp`。智庫報告、官方 PDF、一般網址不算，要存的話手動複製，或把網域加進該檔的 `ACADEMIC_SOURCE`。`articles/` 是指向 OneDrive 的 junction，新機器沒建連結時 hook 會回報並略過。
+這一步由 `scripts/hooks/post-push-archive.mjs` 自動完成：`git push` 成功後，看這次推上去的文章，frontmatter 的 `source`／`source_url`／`references`／`doi` 指向 arXiv、DOI、期刊與機構典藏，或智庫與國際組織（IISS、IFRI、CSIS、RUSI、Carnegie、CRS、DSET、ICAO、IATA、CFE-DMHA 等）就複製到 `articles/`，不用手動 `cp`。新聞報導、官方聲明、一般網址不算，要存就手動複製，或把網域加進該檔的 `ARCHIVABLE_SOURCE`。存檔比對的是 frontmatter 的 `slug` 而非檔名，所以帶日期前綴的舊存檔會被就地更新，不會變成兩份。`articles/` 是指向 OneDrive 的 junction，新機器沒建連結時 hook 會回報並略過。
 
 ## 專案位置（程式碼與資料分兩邊）
 
