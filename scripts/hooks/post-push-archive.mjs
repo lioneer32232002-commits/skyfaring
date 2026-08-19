@@ -6,8 +6,9 @@
  * 同步存一份到 articles/（實體在 OneDrive，走檔案同步、不進 git）。這一步先前
  * 只寫在規範裡、靠人記得，實際上 80 篇文章有 25 篇該存而沒存。
  *
- * 判準：frontmatter 有 source / source_url / references / doi 其中之一 → 論文導讀類，要存。
- * 都沒有 → 賽後分析類（攻城獅那批），跳過。這條規則在既有 80 篇上零誤判。
+ * 判準：frontmatter 的 source / source_url / references / doi 指向 arXiv、DOI 或期刊與
+ * 學術典藏網域 → 論文導讀類，要存。只有一般網址或沒有來源欄位 → 不存。
+ * （先前用「有沒有來源欄位」當判準，會把有引用來源的敘事文一起存進去，2026-08-19 收窄。）
  *
  * 只複製這次 push 實際推上去的文章（用 upstream 的 reflog 取推之前的位置），
  * 不做全庫回填，避免把使用者刻意沒存的舊文一次灌進去。
@@ -20,8 +21,21 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
-const POSTS_DIR = "content/posts";
 const ARCHIVE_DIR = path.join(ROOT, "articles");
+
+/**
+ * 學術來源特徵：arXiv、DOI（`doi.org` 或 `10.xxxx/` 前綴），以及期刊出版社與
+ * 機構典藏網域。新增期刊網域時直接加進來，不要改成寬鬆的「有來源欄位就算」。
+ */
+export const ACADEMIC_SOURCE =
+  /(?:\barxiv\b|\bdoi\b|\b10\.\d{4,9}\/|arxiv\.org|doi\.org|biorxiv|medrxiv|engrxiv|osf\.io|ssrn|semanticscholar|ncbi\.nlm\.nih\.gov|europepmc|pubmed|sciencedirect|springer|nature\.com|wiley\.com|tandfonline|sagepub|mdpi\.com|frontiersin|plos\.org|ieee\.org|acm\.org|cambridge\.org|oup\.com|jstor|researchgate|digital-?commons|openreview|mlr\.press|neurips|aaai\.org|iopscience|aps\.org|aiaa\.org|lww\.com|jamanetwork|nejm\.org|thelancet|bmj\.com|karger|hindawi|degruyter|emerald)/i;
+
+/** frontmatter 判斷這篇是不是要存檔的論文導讀類。 */
+export function isPaperArticle(data = {}) {
+  const cited = [data.source, data.source_url, data.doi, data.references].filter(Boolean);
+  if (cited.length === 0) return false;
+  return ACADEMIC_SOURCE.test(JSON.stringify(cited));
+}
 
 function readStdin() {
   return new Promise((resolve) => {
@@ -114,8 +128,8 @@ async function main() {
     } catch {
       continue;
     }
-    // 論文導讀 / PDF 翻譯類才存檔；賽後分析類沒有來源欄位，跳過
-    if (!(data.source || data.source_url || data.references || data.doi)) {
+    // 只有來源指向 arXiv／DOI／期刊網域的才存檔
+    if (!isPaperArticle(data)) {
       skipped.push(name);
       continue;
     }
@@ -139,9 +153,12 @@ async function main() {
   const lines = [];
   if (copied.length) lines.push(`已存檔到 articles/：${copied.join("、")}`);
   if (unchanged.length) lines.push(`articles/ 已有相同內容，未覆寫：${unchanged.join("、")}`);
-  if (skipped.length) lines.push(`未存檔（無來源欄位，屬賽後分析類）：${skipped.join("、")}`);
+  if (skipped.length) lines.push(`未存檔（來源不是 arXiv／DOI／期刊網域）：${skipped.join("、")}`);
   lines.push("articles/ 在 OneDrive、不進 git，這是備份用的副本。");
   emit(lines);
 }
 
-main().catch(() => process.exit(0));
+// 被當成 hook 直接執行時才跑；被其他腳本 import（例如回填工具借用判準）時只匯出函式
+const invokedDirectly =
+  process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url);
+if (invokedDirectly) main().catch(() => process.exit(0));
