@@ -180,6 +180,8 @@
 - **論文導讀 / PDF 翻譯類文章**：發文後同步存一份 `.md` 到 `skyfaring/articles/`
 - **一般賽後分析文章**：不需存 `articles/`
 
+這一步由 `scripts/hooks/post-push-archive.mjs` 自動完成：`git push` 成功後，把這次推上去的文章依 frontmatter 有無 `source`／`source_url`／`references`／`doi` 判斷是不是論文導讀類，是就複製到 `articles/`，不用手動 `cp`。`articles/` 是指向 OneDrive 的 junction，新機器沒建連結時 hook 會回報並略過。
+
 ## 專案位置（程式碼與資料分兩邊）
 
 程式碼走 git，論文與存檔走 OneDrive。這兩類東西的同步方式不同，不要混在一起。
