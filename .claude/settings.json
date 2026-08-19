@@ -1,0 +1,28 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node scripts/hooks/post-write-check.mjs",
+            "timeout": 15,
+            "statusMessage": "檢查文章格式"
+          }
+        ]
+      },
+      {
+        "matcher": "Bash|PowerShell",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node scripts/hooks/post-push-archive.mjs",
+            "timeout": 20,
+            "statusMessage": "存檔到 articles/"
+          }
+        ]
+      }
+    ]
+  }
+}

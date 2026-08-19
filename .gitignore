@@ -69,8 +69,11 @@ next-env.d.ts
 /scripts/review-dashboard/
 /*.bat
 
-# Claude Code internal tooling
-/.claude/
+# Claude Code：發文流程的設定要跨機器同步（hook、文章小隊、slash command），
+# 所以只排除本機專屬的部分，其餘進版控
+/.claude/worktrees/
+/.claude/settings.local.json
+/.claude/*.local.json
 
 # 排程執行記錄（本機/OneDrive 專用，不上線）
 /automation/
