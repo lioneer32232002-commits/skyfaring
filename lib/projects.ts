@@ -4,7 +4,7 @@ export type ProjectGroupId = "data" | "learning" | "writing";
 
 export type ProjectIconName =
   | "radar" | "drone" | "map" | "basketball"
-  | "plane" | "school" | "shield" | "news" | "books";
+  | "plane" | "school" | "shield" | "news" | "books" | "karate";
 
 export interface ProjectGroup {
   id: ProjectGroupId;
@@ -18,7 +18,7 @@ export interface ProjectGroup {
  */
 const GROUP_BY_ID: Record<ProjectGroupId, ProjectGroup> = {
   data: { id: "data", label: "數據追蹤與分析", accent: "sky" },
-  learning: { id: "learning", label: "航空與歷史學習", accent: "violet" },
+  learning: { id: "learning", label: "航空、歷史與武術", accent: "violet" },
   writing: { id: "writing", label: "文章與舊站封存", accent: "slate" },
 };
 
@@ -115,6 +115,14 @@ export const PROJECTS: Project[] = [
     icon: "shield",
     external: true,
     introSlug: "battle-archive",
+    group: "learning",
+  },
+  {
+    title: "鷹捷詠春",
+    description: "黃英哲師父親授的詠春拳，師承葉問、黃淳樑、林海龍一脈，重視傳統功力訓練與實戰對練，每週二、五晚間在台北文山區上課。",
+    url: "https://eagle-wingchun.pages.dev/",
+    icon: "karate",
+    external: true,
     group: "learning",
   },
   {
