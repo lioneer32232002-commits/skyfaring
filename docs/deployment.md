@@ -22,8 +22,12 @@ Next.js（App Router）＋ `output: "export"` 靜態輸出，部署在 Cloudflar
 2026-08-04 就是這樣一天燒掉 74,213 次、收到 Cloudflare 的 75% 警告信；而且因為連
 靜態檔都走 Function，撞到上限時整站會一起打不開，不只是某個 API 掛掉。
 
-`public/_routes.json` 把 `/_next/*`、`/images/*` 與根目錄那幾個圖示排除掉，
-被排除的路徑直接由靜態資產伺服器回應，官方文件明講不會呼叫 Function、也不計費。
+`public/_routes.json` 把 `/_next/*`、`/images/*`、`/icons/*`、`/site.webmanifest`
+與根目錄那幾個圖示排除掉，被排除的路徑直接由靜態資產伺服器回應，
+官方文件明講不會呼叫 Function、也不計費。
+
+（`/icons/*` 與 `/site.webmanifest` 是 PWA app 圖示與 manifest，2026-08-20 加。
+圖示本身由 `scripts/make-icons.mjs` 產生，不是手工檔，改圖示要跑那支重產。）
 
 放在 `public/` 而不是 repo 根目錄，是因為 Pages 讀的是建置產物 `out/`，
 而 Next 的 static export 會把 `public/` 原樣複製過去。

@@ -21,7 +21,11 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [{ url: `${BASE_PATH}/favicon.svg`, type: "image/svg+xml" }],
+    // iOS 不讀 manifest 的 icons，加到主畫面時只認 apple-touch-icon；
+    // 少了這個就會拿分頁用的小圖放大，圖示會糊。
+    apple: [{ url: `${BASE_PATH}/icons/apple-touch-icon.png`, sizes: "180x180" }],
   },
+  manifest: `${BASE_PATH}/site.webmanifest`,
   openGraph: {
     type: "website",
     locale: "zh_TW",
