@@ -217,6 +217,7 @@ mklink /J "<repo>\drone-papers" "<OneDrive>\02_創作\14_AI TEST\skyfaring\drone
 
 ## 路由：派工／判斷 → 先讀哪份
 
+- 新網站要做 SEO／GEO、或定期更新搜尋優化研究 → `docs/seo/README.md`（進入點：`/seo-audit`、`/seo-refresh`）
 - 要不要派 subagent、模型怎麼選、怎麼驗收、本環境的 hook／部署限制 → `docs/agents/dispatch.md`
 - 派工 prompt 直接套模板 → `docs/agents/templates.md`
 - 何時算完成／何時問使用者／何時換路／何時升級模型 → `docs/agents/judgment.md`
