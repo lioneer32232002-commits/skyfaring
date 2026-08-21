@@ -10,7 +10,7 @@
 已到位：sitemap 全涵蓋（`app/sitemap.ts`）、逐頁 metadata 與 canonical、OG/Twitter card（hero 圖）、JSON-LD（BlogPosting、WebSite、BreadcrumbList、CollectionPage、ProfilePage）、SSG 靜態匯出、全文 RSS、pages.dev 與 www 301 轉址（`functions/_middleware.js`）、GSC＋GA4＋Cloudflare Analytics、日期四處一致輸出。
 
 待辦：
-1. robots.txt 對 AI 爬蟲逐一列名（現靠 `User-agent: *` 隱含放行；照 playbook 第 1 項，可參考 flight-deck 範本）
+1. ~~robots.txt 對 AI 爬蟲逐一列名~~ 已完成（2026-08-21）
 2. Bing Webmaster Tools ＋ IndexNow（playbook 第 11 項，影響 ChatGPT 搜尋能見度；後台作業，需使用者操作或授權）
 3. RSS feed 只收最新 30 篇（`app/feed.xml/route.ts:18`），評估放寬到全部 72 篇或維持現狀（feed 檔案大小取捨）
 
@@ -21,10 +21,10 @@
 已到位：robots.txt 有意識分流（放行搜尋型 AI 爬蟲、封鎖訓練型，全站範本）、sitemap 自動重建、逐頁 metadata、JSON-LD（Course、LearningResource、FAQPage、BreadcrumbList）、SPA noindex＋23 個靜態模組鏡像頁（渲染模式範本）、舊網域與 www 301、`_redirects` 擋內部檔案。
 
 待辦：
-1. 模組頁（`modules/mNN.html`）補 Twitter Card 標籤（首頁與 terms 有、模組頁只有 OG；產生器在 `tools/gen_module_pages.py`）
+1. ~~模組頁補 Twitter Card~~、~~sitemap 補 `/terms`~~ 已完成（2026-08-21，改 `tools/gen_module_pages.py` 重生）
 2. GSC 與 Cloudflare Analytics 到後台確認仍生效（原始碼裡無 verification meta 與 beacon script，推測走 DNS 驗證與邊緣自動注入，`docs/HANDOFF.md` 有操作紀錄）
 3. Bing Webmaster Tools ＋ IndexNow（後台作業）
-4. 次要：sitemap 補 `/terms`；hash 預覽網址是否要在 robots 擋，評估後決定
+4. 次要：hash 預覽網址是否要在 robots 擋，評估後決定
 
 ## eagle-wingchun（暫在 eagle-wingchun.pages.dev）
 
@@ -35,7 +35,7 @@
 待辦：
 1. 接自訂網域（`build.mjs:17` 仍是 pages.dev；`README.md:120` 自列待辦。網域確定後改 `SITE.url`、設 301、更新 GSC）
 2. 加站內 analytics（全站現無任何追蹤，看不到電話與 FB 點擊等轉換；GA4 或 Cloudflare Web Analytics 擇一）
-3. robots.txt 對 AI 爬蟲逐一列名（現只擋 Ahrefs/Semrush/MJ12，AI 爬蟲靠隱含放行）
+3. ~~robots.txt 對 AI 爬蟲逐一列名~~ 已完成（2026-08-21，改 `build.mjs` 產生邏輯）
 4. Bing Webmaster Tools ＋ IndexNow（後台作業）
 5. 評估：學費補一個價格區間（現三處都寫「現場諮詢」，AI 被問價格答不出來；若刻意保密則維持）
 
@@ -46,11 +46,10 @@
 已到位：Python build 時把資料寫死進靜態 HTML（零 JS 依賴）、逐頁 title/description/canonical、OG、hreflang（中英雙語）、sitemap、Cloudflare Pages 正式網域與 308 轉址。
 
 待辦：
-1. 首頁 `index.html` 與 `en/index.html` 補 h1（全站唯一缺 h1 的頁面）
-2. `records.html`／`monthly.html`／`about.html` 補 JSON-LD（首頁與 arsenal 系列頁有，這三頁空白）
-3. 上線 analytics（有一個未合併的舊 worktree 分支已加 Cloudflare Web Analytics，確認後合併即可）
-4. robots.txt 對 AI 爬蟲逐一列名；Bing Webmaster Tools ＋ IndexNow（後台作業）
-5. 次要：站內導覽連結改指乾淨網址（現指 `/index.html` 等，308 轉址有接住，不影響索引）
+1. ~~首頁補 h1~~、~~三頁補 JSON-LD~~、~~robots.txt 列名 AI 爬蟲~~ 已完成（2026-08-21，改 `scripts/build_site.py` 重 build，正式站兩頁計算樣式比對確認視覺不變）
+2. 上線 analytics（有一個未合併的舊 worktree 分支已加 Cloudflare Web Analytics，確認後合併即可）
+3. Bing Webmaster Tools ＋ IndexNow（後台作業）
+4. 次要：站內導覽連結改指乾淨網址（現指 `/index.html` 等，308 轉址有接住，不影響索引）
 
 ## 漢堡醫美（兩站）
 
