@@ -1,4 +1,14 @@
 User-agent: *
 Allow: /
 
+# AI 搜尋引用爬蟲，明確放行（引用會標出處、帶流量）
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
 Sitemap: https://skyfaring.net/sitemap.xml
