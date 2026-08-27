@@ -20,7 +20,7 @@
 |---|------|------|------|----------|
 | 1 | 2026-08-14 當週 | published（2026-08-14，PR #18） | 驚嚇與意外反應（startle & surprise）：驚嚇後資訊處理受損 30 至 60 秒 | [PMC narrative review](https://pmc.ncbi.nlm.nih.gov/articles/PMC10790839/) |
 | 2 | 2026-08-20 當週 | published（2026-08-20，PR #20，本機補寫） | 晴空亂流與氣候變遷：北美與歐洲上空嚴重亂流體積約增一倍 | [Storer & Williams 2017](https://link.springer.com/article/10.1007/s00376-017-6268-2)；[Prosser 2023 GRL](https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2023gl103814) |
-| 3 | 2026-08-27 當週 | pr-open（PR #25） | 座艙視覺掃描與經驗：手飛落地時機師與新手的眼睛差在哪 | [Lounis, Peysakhovich & Causse 2021, PLoS One](https://pmc.ncbi.nlm.nih.gov/articles/PMC7891757/)（原訂主要來源 Causse et al. 2024 抓不到，改用備援，題目跟著調整） |
+| 3 | 2026-08-27 當週 | published（2026-08-27，PR #25） | 座艙視覺掃描與經驗：手飛落地時機師與新手的眼睛差在哪 | [Lounis, Peysakhovich & Causse 2021, PLoS One](https://pmc.ncbi.nlm.nih.gov/articles/PMC7891757/)（原訂主要來源 Causse et al. 2024 抓不到，改用備援，題目跟著調整） |
 | 4 | 2026-09-03 當週 | pr-open（PR #28） | 超長程航班機師睡眠：組員休息艙裡的實測資料 | [Clocks & Sleep ULR](https://doi.org/10.3390/clockssleep3040036)；[Frontiers ULR 疲勞管理](https://www.frontiersin.org/journals/environmental-health/articles/10.3389/fenvh.2023.1329203/full) |
 | 5 | 2026-09-10 當週 | todo | 機師憂鬱與求助障礙：12.6% 達憂鬱門檻、4.1% 曾有自殺念頭 | [Harvard 匿名調查](https://pmc.ncbi.nlm.nih.gov/articles/PMC5157081/)；[德翼後系統性回顧](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5869314/) |
 | 6 | 2026-09-17 當週 | todo | 機師與客艙組員的黑色素瘤風險：發生率約一般人兩倍 | [Frontiers 宇宙輻射回顧](https://www.frontiersin.org/journals/public-health/articles/10.3389/fpubh.2022.947068/full)；[北大西洋航線機師癌症研究](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5559846/) |
@@ -44,3 +44,9 @@
   座艙視覺掃描如何隨機師經驗改變。與主要來源同為 ISAE-SUPAERO 團隊，用同一台 A320 模擬機。
 
 Springer 的文章頁會 303 轉去 IdP，WebFetch 拿不到內文；改抓 `/content/pdf/<doi>.pdf` 直連就會拿到 PDF。
+
+2026-08-27 那篇實際動手時，Springer 這條路也斷了：`link.springer.com` 的文章頁與 PDF 直連都 303 轉往
+`idp.springer.com`，而 `idp.springer.com` 已被 egress proxy 擋在 CONNECT 階段（`403`）；用 curl 帶瀏覽器
+User-Agent 直接抓 PDF 只會拿到 Springer 的 bot 挑戰頁（3 KB HTML，不是 PDF）。DLR 的 `elib.dlr.de`、
+Crossref、Unpaywall、DOAJ 同樣被 egress proxy 擋掉。所以第 3 篇只用得到 Lounis 2021（PMC 可正常抓全文），
+文章就照這一篇能支撐的範圍寫，題目改成座艙視覺掃描與經驗。後續幾篇若碰到 Springer 連結，直接改找 PMC 版本。
