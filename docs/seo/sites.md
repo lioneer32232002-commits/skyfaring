@@ -14,6 +14,8 @@
 2. Bing Webmaster Tools ＋ IndexNow（playbook 第 11 項，影響 ChatGPT 搜尋能見度；後台作業，需使用者操作或授權）
 3. RSS feed 只收最新 30 篇（`app/feed.xml/route.ts:18`），評估放寬到全部 72 篇或維持現狀（feed 檔案大小取捨）
 
+內容層備註（2026-08-28）：playbook 第 19 項（標題與子標題照搜尋意圖設計）已寫進 `CLAUDE.md`，新文章一律適用；舊文不批次改寫，目前只回頭重下過 `boeing-787-za001-test-pilots` 一篇。
+
 ## flight-deck（flightdecktw.net）
 
 體檢：2026-08-21（playbook v1）。整體狀態：**工程量最深的一站，GEO 政策明確**。
