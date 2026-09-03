@@ -55,20 +55,40 @@ export default async function ProjectPage({
     ? getGroupBySlug(project.relatedTopicSlug)
     : undefined;
 
+  const isExternal = /^https?:\/\//.test(project.url);
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@graph": [
-      {
-        "@type": "WebApplication",
-        name: project.title,
-        description: project.metaDescription,
-        url: project.url,
-        inLanguage: "zh-TW",
-        isAccessibleForFree: true,
-        applicationCategory: "WebApplication",
-        author: { "@type": "Person", name: "Skyfaring" },
-        isPartOf: { "@type": "WebSite", name: "Skyfaring", url: `${SITE_URL}/` },
-      },
+      project.dashboards
+        ? {
+            "@type": "CollectionPage",
+            name: project.title,
+            description: project.metaDescription,
+            url: `${SITE_URL}/projects/${project.slug}/`,
+            inLanguage: "zh-TW",
+            isAccessibleForFree: true,
+            author: { "@type": "Person", name: "Skyfaring" },
+            isPartOf: { "@type": "WebSite", name: "Skyfaring", url: `${SITE_URL}/` },
+            hasPart: project.dashboards.map((d) => ({
+              "@type": "WebApplication",
+              name: d.title,
+              url: `${SITE_URL}${d.url}`,
+              inLanguage: "zh-TW",
+              isAccessibleForFree: true,
+            })),
+          }
+        : {
+            "@type": "WebApplication",
+            name: project.title,
+            description: project.metaDescription,
+            url: project.url,
+            inLanguage: "zh-TW",
+            isAccessibleForFree: true,
+            applicationCategory: "WebApplication",
+            author: { "@type": "Person", name: "Skyfaring" },
+            isPartOf: { "@type": "WebSite", name: "Skyfaring", url: `${SITE_URL}/` },
+          },
       {
         "@type": "BreadcrumbList",
         itemListElement: [
@@ -108,18 +128,19 @@ export default async function ProjectPage({
       </div>
 
       {/* Primary CTA */}
-      <a
-        href={project.url}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="group inline-flex items-center gap-2.5 px-6 py-3 mb-12 rounded-xl border border-sky-300 dark:border-sky-500/40 text-sky-700 dark:text-sky-300 font-semibold hover:bg-sky-50 dark:hover:bg-sky-500/10 hover:border-sky-400 dark:hover:border-sky-500/60 transition-colors"
-      >
-        {project.launchCta}
-        <UiIcon
-          name="arrow-up-right"
-          className="w-[18px] h-[18px] transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
-        />
-      </a>
+      {!project.dashboards && (
+        <a
+          href={project.url}
+          {...(isExternal ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+          className="group inline-flex items-center gap-2.5 px-6 py-3 mb-12 rounded-xl border border-sky-300 dark:border-sky-500/40 text-sky-700 dark:text-sky-300 font-semibold hover:bg-sky-50 dark:hover:bg-sky-500/10 hover:border-sky-400 dark:hover:border-sky-500/60 transition-colors"
+        >
+          {project.launchCta}
+          <UiIcon
+            name="arrow-up-right"
+            className="w-[18px] h-[18px] transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+          />
+        </a>
+      )}
 
       {/* Intro */}
       <div className="space-y-5 mb-12">
@@ -130,10 +151,42 @@ export default async function ProjectPage({
         ))}
       </div>
 
+      {/* Dashboards */}
+      {project.dashboards && (
+        <section className="mb-12">
+          <h2 className="text-xl font-bold text-slate-700 dark:text-slate-200 mb-5">
+            三個儀表板
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            {project.dashboards.map((d) => (
+              <a
+                key={d.title}
+                href={d.url}
+                className="group p-5 bg-white dark:bg-slate-800 rounded-2xl border border-slate-100 dark:border-slate-700 shadow-sm hover:border-sky-300 dark:hover:border-sky-500/60 transition-colors"
+              >
+                <h3 className="flex items-center justify-between gap-2 font-semibold text-slate-800 dark:text-slate-100 mb-1">
+                  {d.title}
+                  <UiIcon
+                    name="arrow-up-right"
+                    className="w-[16px] h-[16px] shrink-0 text-sky-600 dark:text-sky-400 transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+                  />
+                </h3>
+                <p className="text-xs text-slate-500 dark:text-slate-400 mb-2">
+                  {d.cadence}
+                </p>
+                <p className="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">
+                  {d.desc}
+                </p>
+              </a>
+            ))}
+          </div>
+        </section>
+      )}
+
       {/* Features */}
       <section className="mb-12">
         <h2 className="text-xl font-bold text-slate-700 dark:text-slate-200 mb-5">
-          這個站裡有什麼
+          {project.dashboards ? "三頁共同的做法" : "這個站裡有什麼"}
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           {project.features.map((f) => (
@@ -163,23 +216,24 @@ export default async function ProjectPage({
       </section>
 
       {/* Secondary CTA */}
-      <div className="p-6 bg-slate-50 dark:bg-slate-800 rounded-2xl border border-slate-100 dark:border-slate-700 mb-10">
-        <p className="text-slate-600 dark:text-slate-300 mb-4">
-          想實際看看，直接打開{project.title}。
-        </p>
-        <a
-          href={project.url}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="group inline-flex items-center gap-2.5 px-6 py-3 rounded-xl border border-sky-300 dark:border-sky-500/40 bg-white dark:bg-transparent text-sky-700 dark:text-sky-300 font-semibold hover:bg-sky-50 dark:hover:bg-sky-500/10 hover:border-sky-400 dark:hover:border-sky-500/60 transition-colors"
-        >
-          {project.launchCta}
-          <UiIcon
-            name="arrow-up-right"
-            className="w-[18px] h-[18px] transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
-          />
-        </a>
-      </div>
+      {!project.dashboards && (
+        <div className="p-6 bg-slate-50 dark:bg-slate-800 rounded-2xl border border-slate-100 dark:border-slate-700 mb-10">
+          <p className="text-slate-600 dark:text-slate-300 mb-4">
+            想實際看看，直接打開{project.title}。
+          </p>
+          <a
+            href={project.url}
+            {...(isExternal ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+            className="group inline-flex items-center gap-2.5 px-6 py-3 rounded-xl border border-sky-300 dark:border-sky-500/40 bg-white dark:bg-transparent text-sky-700 dark:text-sky-300 font-semibold hover:bg-sky-50 dark:hover:bg-sky-500/10 hover:border-sky-400 dark:hover:border-sky-500/60 transition-colors"
+          >
+            {project.launchCta}
+            <UiIcon
+              name="arrow-up-right"
+              className="w-[18px] h-[18px] transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+            />
+          </a>
+        </div>
+      )}
 
       {/* Cross-links */}
       <div className="flex flex-wrap items-center gap-x-6 gap-y-2 text-sm">

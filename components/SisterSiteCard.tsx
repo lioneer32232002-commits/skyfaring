@@ -5,6 +5,7 @@ import type { ProjectIconName } from "@/lib/projects";
 /*
   文末的姊妹站導流卡：依文章 category 決定掛哪一站，沒對應就不渲染。
   整張卡可點，開新分頁。文案與 lib/projects.ts 的專案描述同步，改的時候兩邊一起改。
+  無人機兩張卡刻意連到個別儀表板而非 /projects/drone-research/ 入口頁：文章脈絡已經決定讀者要看哪一頁，直接深連比再經過入口頁少一跳。
 */
 type PromoConfig = {
   title: string;
@@ -39,15 +40,15 @@ const PLA_TRACKER: PromoConfig = {
 const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
 const DRONE_REVIEW: PromoConfig = {
-  title: "無人機技術情報",
-  description: "中國 vs 非中國 vs 台灣的無人機論文觀察，民用與軍用同頁切換，含領域活躍度與發展脈絡。",
+  title: "無人機研究：技術情報月報",
+  description: "民用與軍用論文同頁切換，依中國、非中國、台灣分組，看各子主題的活躍度與走向，每月更新。",
   url: `${BASE_PATH}/drone-review/`,
   icon: "drone",
 };
 
 const UKRAINE_REVIEW: PromoConfig = {
-  title: "烏克蘭無人機戰研究",
-  description: "俄烏戰爭至今烏克蘭團隊的無人機研究與戰場技術演化，依能力領域整理，含演進時間線與來源可信度分層。",
+  title: "無人機研究：烏克蘭戰場",
+  description: "2022 年開戰至今的戰場能力演化，依能力領域與四個階段整理，含來源可信度分層，每月累積更新。",
   url: `${BASE_PATH}/ukraine-review/`,
   icon: "map",
 };
@@ -63,8 +64,8 @@ const PROMO_BY_CATEGORY: Record<string, PromoConfig> = {
 /*
   分類對不上時看 tags：
   台海相關（軍事類分不出台海與二戰史、烏克蘭戰史）→ PLA Tracker，
-  再來烏克蘭 tag → 烏克蘭無人機戰研究，
-  最後無人機 tag（掛在多代理人、電腦視覺分類下的無人機論文）→ 無人機技術情報。
+  再來烏克蘭 tag → 無人機研究的烏克蘭戰場儀表板，
+  最後無人機 tag（掛在多代理人、電腦視覺分類下的無人機論文）→ 無人機研究的技術情報月報。
   台灣無人機政策文多邊 tag 都有，PLA Tracker 優先；
   台灣無人機出口烏克蘭那篇也帶烏克蘭 tag，同樣走 PLA Tracker。
 */

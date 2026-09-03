@@ -16,6 +16,8 @@
 
 內容層備註（2026-08-28）：playbook 第 19 項（標題與子標題照搜尋意圖設計）已寫進 `CLAUDE.md`，新文章一律適用；舊文不批次改寫，目前只回頭重下過 `boeing-787-za001-test-pilots` 一篇。
 
+結構備註（2026-09-03）：三個無人機儀表板（/drone-review/、/ukraine-review/、/taiwan-drone-export/）合成一個專案入口 /projects/drone-research/（CollectionPage JSON-LD，hasPart 列三頁），首頁與頁尾的專案清單改為一張卡；三頁頁首加互連列（`.xnav`）互連並回連入口頁，產生腳本在 skyfaring-research 同步改。效果未驗證，2026-10 看 GSC 三頁的曝光與入口頁是否被收錄。
+
 ## flight-deck（flightdecktw.net）
 
 體檢：2026-08-21（playbook v1）。整體狀態：**工程量最深的一站，GEO 政策明確**。

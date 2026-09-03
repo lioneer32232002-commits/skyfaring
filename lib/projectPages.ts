@@ -4,10 +4,19 @@
  * 把主站權重導向各自獨立子網域的外部專案。
  *
  * 內容由各專案線上實際抓取後撰寫（見 commit 說明）。
- * 舊站文章庫（blogspot）與內部頁（/drone-review/、/tpbl-lens/）不在此列。
+ * 舊站文章庫（blogspot）與 /tpbl-lens/ 不在此列；三個無人機儀表板共用一頁入口 drone-research，用 dashboards 欄位列出。
  */
+const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
 export interface ProjectFeature {
   title: string;
+  desc: string;
+}
+
+export interface ProjectDashboard {
+  title: string;
+  url: string;
+  cadence: string;
   desc: string;
 }
 
@@ -25,6 +34,8 @@ export interface ProjectPage {
   launchCta: string;
   /** 對應的主題群 slug（lib/taxonomy.ts），用來在導讀頁互連相關文章。 */
   relatedTopicSlug?: string;
+  /** 入口頁型專案：底下有多個內部儀表板時列在這裡，頁面改成列出儀表板卡片而非單一外連 CTA。 */
+  dashboards?: ProjectDashboard[];
 }
 
 export const PROJECT_PAGES: ProjectPage[] = [
@@ -150,6 +161,49 @@ export const PROJECT_PAGES: ProjectPage[] = [
     metaDescription: "戰史檔案館用 3D 影像重現歷史關鍵戰役，依權威史料還原兵力與戰況，把軍事衝突視覺化，供歷史教育與戰史愛好者參考。",
     seoKeywords: ["戰史檔案館", "歷史戰役", "3D 模擬", "戰役還原", "軍事史", "戰史視覺化", "歷史教育", "關鍵決戰"],
     launchCta: "前往戰史檔案館",
+    relatedTopicSlug: "defense",
+  },
+  {
+    slug: "drone-research",
+    title: "無人機研究儀表板：全球論文月報、烏克蘭戰場、台灣出口",
+    url: `${BASE_PATH}/drone-review/`,
+    icon: "🛸",
+    tagline: "三個各自更新的儀表板，分別回答學界在做什麼、烏克蘭戰場在變什麼、台灣賣出多少。",
+    intro: [
+      "無人機的消息散在三個地方。期刊每個月有幾十篇新論文，烏克蘭前線每週都有新機型與新戰法，台灣的出口數字則要等海關與智庫每季整理。三種資料的來源、節奏、讀法都不同，放進同一頁只會互相干擾，所以這裡分成三個儀表板，各自有自己的更新週期。",
+      "資料都存在公開的研究 repo，由排程自動重跑：論文與烏克蘭兩頁在每月第一個週一更新，台灣出口在每年 1、4、7、10 月的季報週更新，等海關出完上一季的數字。每次重跑會讀新論文與新聞、寫進候選檔、重建頁面、推上網站。頁面上每一條項目都附原始連結，數字可以逐一回查。",
+      "三個儀表板共用同一套分類。無人機技術情報把論文分成中國、非中國、台灣三組比較；烏克蘭儀表板把 2022 年開戰至今的 80 條戰場項目依能力領域與四個階段排列；台灣出口追蹤則把海關架數、對歐洲整機出口與廠商財報收在同一頁。",
+    ],
+    dashboards: [
+      {
+        title: "無人機技術情報",
+        url: `${BASE_PATH}/drone-review/`,
+        cadence: "每月更新，只看當月窗口",
+        desc: "民用與軍用論文同頁切換，依中國、非中國、台灣分組，看各子主題的活躍度與走向。2026 年 7 月收錄民用 17 篇、軍用 6 篇。",
+      },
+      {
+        title: "烏克蘭無人機戰研究",
+        url: `${BASE_PATH}/ukraine-review/`,
+        cadence: "每月累積更新，2022 年 2 月起",
+        desc: "戰場驅動的能力演化，80 條項目依能力領域與四個階段整理：2022 改裝期、2023 規模化與海戰、2024 量產、光纖與電子戰、2025 到 2026 自主化，附來源可信度分層。",
+      },
+      {
+        title: "台灣無人機出口追蹤",
+        url: `${BASE_PATH}/taiwan-drone-export/`,
+        cadence: "每季更新，目前到 2026 年第二季",
+        desc: "財政部海關出口架數、對歐洲整機出口序列（2024 年 2,574 架、2025 年 107,433 架、2026 年第一季 136,010 架）、廠商區域分布與公開財報。",
+      },
+    ],
+    features: [
+      { title: "三條線分開更新", desc: "論文每月、戰場每月累積、出口每季，各自照資料本身的節奏走，不強迫同步。" },
+      { title: "每條項目附原始連結", desc: "論文連 DOI 或 arXiv，新聞連原報導，出口數字連海關或智庫原表，數字可逐一回查。" },
+      { title: "同一套國別與能力分類", desc: "三頁都用中國、非中國、台灣、烏克蘭的國別標記，與蜂群、攔截、電子戰、海上無人載具等能力領域，跨頁比對不用換腦袋。" },
+      { title: "本站導讀文章互連", desc: "儀表板裡被寫成文章的論文或事件，會標出本站導讀連結，從數據跳到分析。" },
+    ],
+    audience: "追國防與無人機產業的讀者、想知道台灣無人機出口實際數字的人，以及需要同時追論文、戰場與產業三條線的研究與媒體工作者。",
+    metaDescription: "無人機研究三個儀表板：全球無人機論文月報（中國、非中國、台灣分組）、烏克蘭無人機戰 2022 年至今的能力演化、台灣無人機出口與廠商季報，每月自動更新並附原始來源。",
+    seoKeywords: ["無人機研究", "無人機論文", "無人機技術情報", "烏克蘭無人機", "無人機戰爭", "台灣無人機出口", "台灣無人機產業", "無人機儀表板"],
+    launchCta: "打開無人機技術情報儀表板",
     relatedTopicSlug: "defense",
   },
 ];
