@@ -48,6 +48,12 @@ next-env.d.ts
 # local reference materials (books, PDFs) — not deployed
 /references/
 
+# 以下這批路徑（/data/、/drone-papers/ 一直到 /scripts/review-dashboard/、
+# /automation/、/shown_papers.md、/drone-index.csv）在本機是指向
+# skyfaring-research repo 的 junction 與硬連結，內容由那個 repo 版控。
+# junction 在 git 眼裡就是一般目錄，這些忽略規則不能拿掉，否則會被重複追蹤。
+# 建法見 CLAUDE.md〈論文與存檔資料夾〉或 scripts/setup-junctions.mjs。
+
 # local research pipeline data — auto-generated, not deployed
 /data/
 

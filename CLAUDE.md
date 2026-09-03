@@ -199,32 +199,43 @@
 
 ## 專案位置（程式碼與資料分兩邊）
 
-程式碼走 git，論文與存檔走 OneDrive。這兩類東西的同步方式不同，不要混在一起。
+網站程式碼與論文資料分成兩個 repo，都走 git。2026-09-03 起論文不再走 OneDrive。
 
 - **repo 本體**：各機器自行 `git clone` 到本機硬碟，路徑每台不同（A 機 `E:/repos/skyfaring`、B 機 `D:/repos/skyfaring`）。不要放進 OneDrive，OneDrive 按單一檔案同步，會讓 `.git` 的分支指標與物件對不上，造成物件遺失與分支回退
+- **資料 repo**：`skyfaring-research`（私有，`https://github.com/lioneer32232002-commits/skyfaring-research`），clone 到 skyfaring 的同一層（A 機 `E:/repos/skyfaring-research`、B 機 `D:/repos/skyfaring-research`）。論文、存檔、排程管線都在裡面。分開的理由是 skyfaring 每次 push main 都會觸發 Cloudflare Pages 部署，論文與執行記錄不該跟著跑建置
 - **文章存放於**：`content/posts/`
 
-## 論文與存檔資料夾（不在 git 裡）
+## 論文與存檔資料夾（在 skyfaring-research，不在本 repo）
 
-以下資料夾的**實體檔案在 OneDrive**（所以各機器仍同步得到），但 repo 底下建了同名的目錄連結（Windows junction），在 repo 內用相對路徑就讀得到，不需要記兩套路徑：
+以下路徑的**實體檔案在 `skyfaring-research` repo**（走 git，本機與雲端 routine 看到同一份），本 repo 底下建了同名的目錄連結（Windows junction），在 repo 內用相對路徑就讀得到，不需要記兩套路徑：
 
 - **無人機論文**：`drone-papers/`
 - **籃球論文**：`basketball-papers/`
 - **戰爭論文**：`warfare-papers/`
+- **飛行論文**：`flight-papers/`
 - **論文導讀存檔**：`articles/`
 - **海事報告**：`maritime-reports/`
+- **儀表板與索引腳本**：`scripts/review-dashboard/`、`scripts/drone-index/`
+- **選題草稿、月報產出、執行記錄、管線狀態**：`drafts/`、`reviews/`、`automation/`、`data/`
+- **選過的論文清單與索引**（檔案，用硬連結）：`shown_papers.md`、`drone-index.csv`
 
-新機器 clone 之後這些連結不會自動存在，要自己建。在 repo 根目錄跑一次就好：
+新機器 clone 之後這些連結不會自動存在，要自己建。先把資料 repo clone 到同一層，再在本 repo 根目錄跑一次：
 
 ```
+git clone https://github.com/lioneer32232002-commits/skyfaring-research.git D:\repos\skyfaring-research
 node scripts/setup-junctions.mjs
 ```
 
-它從 `%OneDrive%` 推出來源路徑，一次建齊上面六個連結，已存在的不動。OneDrive 裝在別的位置時用參數指定：`node scripts/setup-junctions.mjs "D:\OneDrive\02_創作\14_AI TEST\skyfaring"`。手動建的話等同於：
+它預設用 repo 同層的 `../skyfaring-research` 當來源，一次建齊上面 12 個 junction 加 2 個硬連結，已存在的不動。資料 repo clone 在別的位置時用參數指定：`node scripts/setup-junctions.mjs "D:\repos\skyfaring-research"`。手動建的話等同於：
 
 ```
-mklink /J "<repo>\drone-papers" "<OneDrive>\02_創作\14_AI TEST\skyfaring\drone-papers"
+mklink /J "<repo>\drone-papers"     "<skyfaring-research>\drone-papers"
+mklink /H "<repo>\shown_papers.md"  "<skyfaring-research>\shown_papers.md"
 ```
+
+硬連結要求兩個 repo 在同一顆磁碟；跨磁碟時腳本會退回複製一份，那種情況下改動以 `skyfaring-research` 的版本為準。
+
+OneDrive 的 `02_創作\14_AI TEST\skyfaring\` 自 2026-09-03 起凍結為唯讀備份，不要再往那裡寫。
 
 每篇論文對應一個 `.md` 摘要檔（籃球論文另附 PDF），檔名格式：`YYYY-MM-DD-識別碼.md`
 
