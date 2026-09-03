@@ -3,7 +3,8 @@
  * PostToolUse hook：git push 成功後，把這次推上去的論文導讀文章複製一份到 articles/。
  *
  * 為什麼要這層：CLAUDE.md〈文章存檔規範〉要求論文導讀 / PDF 翻譯類文章發文後
- * 同步存一份到 articles/（實體在 OneDrive，走檔案同步、不進 git）。這一步先前
+ * 同步存一份到 articles/（實體在 skyfaring-research repo，本 repo 的 articles/ 是指向它的 junction，
+ * 複製完要到那個 repo commit + push）。這一步先前
  * 只寫在規範裡、靠人記得，實際上 80 篇文章有 25 篇該存而沒存。
  *
  * 判準：frontmatter 的 source / source_url / references / doi 指向 arXiv、DOI 或期刊與
@@ -142,11 +143,11 @@ async function main() {
     .filter((f) => fs.existsSync(path.join(ROOT, f)));
   if (posts.length === 0) process.exit(0);
 
-  // articles/ 是指向 OneDrive 的 junction，新 clone 的機器上不會自動存在
+  // articles/ 是指向 skyfaring-research 的 junction，新 clone 的機器上不會自動存在
   if (!fs.existsSync(ARCHIVE_DIR)) {
     emit([
       `存檔略過：找不到 ${ARCHIVE_DIR}。`,
-      "articles/ 是指向 OneDrive 的 junction，新機器要自己建（見 CLAUDE.md〈論文與存檔資料夾〉）。",
+      "articles/ 是指向 skyfaring-research 的 junction，新機器跑 node scripts/setup-junctions.mjs 建（見 CLAUDE.md〈論文與存檔資料夾〉）。",
       `待存檔：${posts.map((p) => path.basename(p)).join("、")}`,
     ]);
     return;
@@ -192,7 +193,7 @@ async function main() {
   if (copied.length) lines.push(`已存檔到 articles/：${copied.join("、")}`);
   if (unchanged.length) lines.push(`articles/ 已有相同內容，未覆寫：${unchanged.join("、")}`);
   if (skipped.length) lines.push(`未存檔（來源不是 arXiv／DOI／期刊網域）：${skipped.join("、")}`);
-  lines.push("articles/ 在 OneDrive、不進 git，這是備份用的副本。");
+  lines.push("articles/ 實體在 skyfaring-research repo，記得到那邊 commit + push 這份存檔。");
   emit(lines);
 }
 
