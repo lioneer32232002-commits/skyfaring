@@ -121,6 +121,14 @@ const AI_TIC_PATTERNS = [
   { re: /建立在[^，。\n]{0,10}(條件|前提|基礎)上/, label: "抽象歸納句（「都建立在同一個條件上」）：共同點用具體事實直接寫，不先蓋抽象名詞" },
 ];
 
+// 可讀性（非 AI 腔，但讀者會讀錯意思）
+const READABILITY_PATTERNS = [
+  { re: /不[是算][^，。\n]{0,8}沒有/, label: "雙重否定（「答案不是「完全沒有」」）：解釋數字時正面直述，改「75 人選了「有幾天」以上」" },
+  { re: /並非沒有|並非不|不是不|沒有人不|無一不/, label: "雙重否定：改成正面直述（問卷選項、法規條文照抄原文不在此限）" },
+  { re: /達標(?=[\s\S]*(篩檢|篩出|量表|憂鬱|焦慮|盛行率|陽性|PHQ))|(篩檢|篩出|量表|憂鬱|焦慮|盛行率|陽性|PHQ)[\s\S]*達標/, label: "「達標」用在篩檢陽性會被讀成「達成目標」，改「被篩出X」「分數落在X範圍」" },
+  { re: /(過了|通過)[^，。\n]{0,8}篩檢|(過了|通過)[^，。\n]{0,10}(憂鬱|焦慮|症狀|疾患|陽性|自殺|風險|篩檢|量表|PHQ)[^，。\n]{0,6}門檻|(篩檢|量表|PHQ|憂鬱|焦慮)[^。\n]{0,20}(過了|通過)[^，。\n]{0,8}門檻/, label: "「過了門檻／通過篩檢」讀起來像通過檢驗＝健康，意思正好相反，改「被篩出X」「篩檢陽性」" },
+];
+
 const CJK = "一-鿿㐀-䶿";
 
 function isQuestionTitle(s) {
@@ -313,6 +321,11 @@ export function checkPost(filePath) {
   }
   for (const { re, label } of AI_TIC_PATTERNS) {
     if (re.test(haystack)) add(warnings, `疑似 AI 腔：${label}（除非來源原文真的這樣用）`);
+  }
+
+  // 9f2. 可讀性（雙重否定、正負向會被讀反的詞）— 全文（含 frontmatter 顯示欄位）
+  for (const { re, label } of READABILITY_PATTERNS) {
+    if (re.test(haystack)) add(warnings, `可讀性：${label}`);
   }
 
   // 9g. 中國用語（台灣慣用語對照）
