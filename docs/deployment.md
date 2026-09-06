@@ -78,3 +78,47 @@ SSR HTML 裡出現字面上的 `mailto:`。
 `pagesFunctionsInvocationsAdaptiveGroups`（維度 `date`／`datetimeHour`／`datetimeMinute`
 ＋`scriptName`，帳號 tag `f171333970603616d44612bf079922b2`）。
 這個資料集沒有專案名稱維度，只能靠 `scriptName` 對。
+
+## Cloudflare 的「bot traffic 增加」警示信怎麼判讀（2026-09-06 加）
+
+`em@em1.cloudflare.com` 會寄主旨「Unexpected increase in bot traffic for skyfaring.net」
+的自動警示信。它是**行銷信**，收信時先看下面三件事再決定要不要動手，通常不用動。
+
+**它講的是比例，不是流量。** 2026-09-06 那封說「自動化流量從 48% 增加 69% 到 81%」，
+69% 是佔比的相對變化。查 zone 的 `httpRequests1dGroups` 之後，09-04 當天總請求
+3,050 次，是那兩週的低點（08-27 有 12,710 次）；`pageViews` 只有 919，前後幾天是
+1,400～1,600。分母縮了，分子沒怎麼變，佔比就跳上去了。多出來的機器人請求約一千次。
+
+**先看爬蟲是誰。** 同一天的 UA 排行前幾名是 bingbot（272）、facebookexternalhit（169）、
+Applebot（88），其餘是沒有標示的 Chrome UA。搜尋引擎與社群平台抓 OG 卡片的流量對這個站
+是正面的。`threats` 欄位（09-04 是 68）已經是被 Cloudflare 擋掉的數量，不用另外處理。
+
+**信裡的方案別當真。** 那封寫「As a Pro plan customer」，但 `skyfaring.net` 的 zone
+實際是 Free Website。它推銷的 Super Bot Fight Mode 要 Pro 才有。
+
+**不要開 Free 方案的 Bot Fight Mode。** 它會對判定為自動化的請求丟 JS 挑戰，這個站的價值
+在被爬、被索引，擋錯了得不償失。
+
+真正要盯的是上面〈`public/_routes.json` 是配額命脈〉那條，不是這封信：09-04 全帳號 13 個
+Pages 專案的 Functions 呼叫加起來 13,336 次，離 10 萬次／日還很遠，skyfaring 自己不到一千。
+
+### 查 zone 端的請求數與爬蟲
+
+token 取法同上一節。zone tag 用 `GET /zones?name=skyfaring.net` 拿
+（目前是 `88829c93d9e5a768606972cdb6c28926`，換 zone 會變，不要寫死）。
+
+每日總量與威脅數用 `httpRequests1dGroups`：
+
+```graphql
+query($zone:String!,$from:Date!,$to:Date!){viewer{zones(filter:{zoneTag:$zone}){
+  httpRequests1dGroups(limit:30,filter:{date_geq:$from,date_leq:$to},orderBy:[date_ASC]){
+    dimensions{date} sum{requests pageViews threats} uniq{uniques}}}}}
+```
+
+當天的 UA 排行用 `httpRequestsAdaptiveGroups`（時間是 `Time!` 不是 `Date!`）：
+
+```graphql
+query($zone:String!,$from:Time!,$to:Time!){viewer{zones(filter:{zoneTag:$zone}){
+  httpRequestsAdaptiveGroups(limit:30,filter:{datetime_geq:$from,datetime_leq:$to},
+    orderBy:[count_DESC]){count dimensions{userAgent}}}}}
+```
