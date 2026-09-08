@@ -35,9 +35,9 @@ export const TOPIC_GROUPS: TopicGroup[] = [
     slug: "ai-vision",
     label: "AI 與電腦視覺",
     description:
-      "AI 安全、模型保護與電腦視覺追蹤技術，從論文到應用的觀察筆記。",
+      "AI 安全、模型保護與電腦視覺追蹤技術，以及編碼與早期電腦的資訊史，從論文到應用的觀察筆記。",
     icon: "brain",
-    categories: ["AI", "電腦視覺"],
+    categories: ["AI", "電腦視覺", "資訊史"],
   },
   {
     slug: "aviation",
