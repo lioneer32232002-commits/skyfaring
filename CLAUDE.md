@@ -197,7 +197,12 @@
 - **論文導讀 / PDF 翻譯類文章**：發文後同步存一份 `.md` 到 `skyfaring/articles/`
 - **一般賽後分析文章**：不需存 `articles/`
 
-這一步由 `scripts/hooks/post-push-archive.mjs` 自動完成：`git push` 成功後，看這次推上去的文章，frontmatter 的 `source`／`source_url`／`references`／`doi` 指向 arXiv、DOI、期刊與機構典藏，或智庫與國際組織（IISS、IFRI、CSIS、RUSI、Carnegie、CRS、DSET、ICAO、IATA、CFE-DMHA 等）就複製到 `articles/`，不用手動 `cp`。新聞報導、官方聲明、一般網址不算，要存就手動複製，或把網域加進該檔的 `ARCHIVABLE_SOURCE`。存檔比對的是 frontmatter 的 `slug` 而非檔名，所以帶日期前綴的舊存檔會被就地更新，不會變成兩份。`articles/` 是指向 OneDrive 的 junction，新機器沒建連結時 hook 會回報並略過。
+這一步由 hook 自動完成，分兩條路，判準共用 `scripts/hooks/archive-lib.mjs`：frontmatter 的 `source`／`source_url`／`references`／`doi` 指向 arXiv、DOI、期刊與機構典藏，或智庫與國際組織（IISS、IFRI、CSIS、RUSI、Carnegie、CRS、DSET、ICAO、IATA、CFE-DMHA 等）就存，新聞報導、官方聲明、一般網址不算（要存就手動複製，或把網域加進 `ARCHIVABLE_SOURCE`）。存檔比對的是 frontmatter 的 `slug` 而非檔名，帶日期前綴的舊存檔會就地更新，不會變成兩份。複製完會在 skyfaring-research 自動 commit＋push，不用再手動。
+
+- **本機 push**：`scripts/hooks/post-push-archive.mjs`（PostToolUse），存這次推上去的文章。
+- **雲端 session 合併的**（claude.ai/code、排程代理，沒有 `articles/` junction，push 後只能回報「待存檔」）：本機每個 session 開頭的 `scripts/hooks/session-archive-sync.mjs`（SessionStart）fetch origin/main，把 skyfaring-research `articles/.sync-state.json` 記號之後改過的論文類文章補存，再推進記號。2026-09-10 超長程機師睡眠一文在雲端合併後漏存，才補這條路。想先看它會做什麼：`node scripts/hooks/session-archive-sync.mjs --dry-run`。
+
+兩條路都只處理差異、不做全庫回填：舊存檔是發文當下的快照，之後全站文字清理沒有回寫，那是刻意的。`articles/` 是指向 skyfaring-research 的 junction，新機器沒建連結時 hook 會回報並略過。
 
 ## 專案位置（程式碼與資料分兩邊）
 

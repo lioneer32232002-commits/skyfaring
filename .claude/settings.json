@@ -23,6 +23,18 @@
           }
         ]
       }
+    ],
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node scripts/hooks/session-archive-sync.mjs",
+            "timeout": 60,
+            "statusMessage": "補存雲端合併的論文導讀"
+          }
+        ]
+      }
     ]
   }
 }

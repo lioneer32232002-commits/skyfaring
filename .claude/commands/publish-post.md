@@ -27,7 +27,7 @@ allowed-tools: Bash, Read, Grep, Glob, Edit, Task
    - `git add` 該文章檔，以及它的 hero 圖片（`public/images/...`，若是新圖也一起加）。只 add 這次要發的東西，不要 `git add -A`。
    - commit，訊息用繁體中文描述這篇文章（例如「新增文章：…」）。
    - `git push origin main`。
-   - push 成功後 `post-push-archive` hook 會自動把論文導讀類文章複製到 `articles/`，不要再手動 `cp`；hook 回報略過（例如 junction 沒建）時才需要處理。
+   - push 成功後 `post-push-archive` hook 會自動把論文導讀類文章複製到 `articles/`，並在 skyfaring-research commit＋push，不要再手動 `cp`。雲端 session 沒有 junction，hook 會回報「待存檔」，那是正常的：本機下一個 session 開頭會自動補存，不用另外處理。
    - 告訴使用者已推送、Cloudflare Pages 部署中、文章稍後會出現在站上。
 
 全程只動這一篇文章相關的檔案，不擴散到其他已確認的內容。
