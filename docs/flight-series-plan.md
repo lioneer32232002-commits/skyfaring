@@ -23,7 +23,7 @@
 | 3 | 2026-08-27 當週 | published（2026-08-27，PR #25） | 座艙視覺掃描與經驗：手飛落地時機師與新手的眼睛差在哪 | [Lounis, Peysakhovich & Causse 2021, PLoS One](https://pmc.ncbi.nlm.nih.gov/articles/PMC7891757/)（原訂主要來源 Causse et al. 2024 抓不到，改用備援，題目跟著調整） |
 | 4 | — | 不發（2026-08-27 決定捨棄；PR #28 曾合併，已還原） | 超長程航班機師睡眠：組員休息艙裡的實測資料 | [Clocks & Sleep ULR](https://doi.org/10.3390/clockssleep3040036)；[Frontiers ULR 疲勞管理](https://www.frontiersin.org/journals/environmental-health/articles/10.3389/fenvh.2023.1329203/full) |
 | 5 | 2026-09-03 當週 | pr-open（PR #31） | 機師憂鬱與求助障礙：12.6% 達憂鬱門檻、4.1% 曾有自殺念頭 | [Harvard 匿名調查](https://pmc.ncbi.nlm.nih.gov/articles/PMC5157081/)；[德翼後系統性回顧](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5869314/) |
-| 6 | 2026-09-17 當週 | todo | 機師與客艙組員的黑色素瘤風險：發生率約一般人兩倍 | [Frontiers 宇宙輻射回顧](https://www.frontiersin.org/journals/public-health/articles/10.3389/fpubh.2022.947068/full)；[北大西洋航線機師癌症研究](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5559846/) |
+| 6 | 2026-09-17 當週 | pr-open（PR #32） | 機師與客艙組員的黑色素瘤風險：發生率約一般人兩倍 | [Frontiers 宇宙輻射回顧](https://www.frontiersin.org/journals/public-health/articles/10.3389/fpubh.2022.947068/full)；[北大西洋航線機師癌症研究](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5559846/) |
 | 7 | 2026-09-24 當週 | todo | 飛行員選才的相對年齡效應：檢驗出生月份理論 | [PMC 相對年齡效應研究](https://www.ncbi.nlm.nih.gov/articles/PMC11422595/) |
 
 其餘各篇寫完後，排程代理不再有 `todo` 項目時，只回報「系列已完結」，不自行加新題目。狀態為「不發」的項目一律跳過，不要重寫。
