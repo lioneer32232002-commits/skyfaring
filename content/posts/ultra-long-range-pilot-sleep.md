@@ -1,5 +1,5 @@
 ---
-title: "巴西到中國的五趟人道任務，20 名機師一天睡 5 到 6 小時。"
+title: "超長程航班機師怎麼睡？巴西到中國，一天 5 到 6 小時。"
 author: "AI 初稿 / skyfaring 編輯校正"
 date: "2026-09-10"
 slug: "ultra-long-range-pilot-sleep"
