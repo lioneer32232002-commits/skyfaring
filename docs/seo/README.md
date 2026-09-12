@@ -19,6 +19,10 @@
   派研究 agent 查最新做法 → 追加 `research-log.md` → 有實質新結論才改 `playbook.md`
   → 對照 `sites.md` 看哪些網站要補做新項目
 
+## 每週例行（住在 seo-playbook repo，不在這裡）
+
+每週二的 `seo-weekly-report` 本機排程會對五站（Flight Deck、Skyfaring、PLA Tracker、eagle-wingchun、貞診所）跑自動評分、抓 Search Console、做當週 SEO／GEO 技術調查，寫成私人週報 `reports/weekly/<週一>.md`。技術調查若有新證據，摘要追加到本資料夾的 `research-log.md`；有原始出處佐證的做法變動才改 `playbook.md`。
+
 ## 原則
 
 - playbook 每一項都要有來源與日期，沒有佐證的流行做法進 research-log 觀察，不進 playbook
