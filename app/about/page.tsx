@@ -45,7 +45,7 @@ export default function AboutPage() {
       "@type": "Person",
       name: "Adam Pan",
       email: "mailto:wizard32232002@gmail.com",
-      sameAs: ["https://yi-tienpan.blogspot.com/"],
+      sameAs: ["https://yi-tienpan.blogspot.com/", "https://www.threads.com/@skyfaringyt"],
     },
   };
 

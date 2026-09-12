@@ -161,6 +161,11 @@ export default function RootLayout({
                     </a>
                   </li>
                   <li>
+                    <a href="https://www.threads.com/@skyfaringyt" target="_blank" rel="noopener noreferrer" className="hover:text-sky-500 inline-flex items-center gap-1.5">
+                      Threads
+                    </a>
+                  </li>
+                  <li>
                     <a href={`${BASE_PATH}/feed.xml`} className="hover:text-sky-500 inline-flex items-center gap-1.5">
                       <UiIcon name="rss" className="w-4 h-4 shrink-0" /> RSS 訂閱
                     </a>
