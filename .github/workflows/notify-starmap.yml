@@ -1,0 +1,31 @@
+name: notify starmap
+
+# 文章進 main 之後，通知 starmap repo 重跑星圖資料（repository_dispatch → rebuild.yml）。
+# 需要 secret STARMAP_TOKEN：fine-grained PAT，對 lioneer32232002-commits/starmap 有 Contents: Read and write。
+# 設定方式見 starmap repo 的 CLAUDE.md〈GitHub Actions〉。沒設 secret 時印一行說明直接結束，不算失敗。
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'content/posts/**'
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 觸發 starmap 重跑
+        env:
+          TOKEN: ${{ secrets.STARMAP_TOKEN }}
+          SHA: ${{ github.sha }}
+        run: |
+          if [ -z "$TOKEN" ]; then
+            echo "沒有 STARMAP_TOKEN，略過。設定方式見 starmap repo 的 CLAUDE.md。"
+            exit 0
+          fi
+          curl -sS -f -X POST \
+            -H "Accept: application/vnd.github+json" \
+            -H "Authorization: Bearer $TOKEN" \
+            https://api.github.com/repos/lioneer32232002-commits/starmap/dispatches \
+            -d "{\"event_type\":\"source-updated\",\"client_payload\":{\"repo\":\"skyfaring\",\"sha\":\"$SHA\"}}"
+          echo "已送出 source-updated（skyfaring $SHA）"

@@ -299,6 +299,18 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
         </div>
       )}
 
+      {/* 星圖深連結：#n=post:<slug> 是 starmap 的節點 id 格式（starmap repo 的 scripts/build-graph.mjs）。新文章在星圖重跑前打開會落到整張圖，不會出錯。 */}
+      <p className="mt-6 text-sm text-slate-500 dark:text-slate-400">
+        <a
+          href={`https://starmap.skyfaring.net/#n=post:${slug}`}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-1.5 hover:text-sky-500"
+        >
+          <UiIcon name="arrow-up-right" className="w-4 h-4 shrink-0" /> 在星圖上看這篇文章連到哪些論文
+        </a>
+      </p>
+
       {/* 文末姊妹站導流卡：航空 → FLIGHT DECK；籃球研究／攻城獅／球鞋 → Shot Ledger；台海 tags → PLA Tracker */}
       <SisterSiteCard category={post.category} tags={post.tags} />
 

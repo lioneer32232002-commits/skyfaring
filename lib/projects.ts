@@ -4,7 +4,7 @@ export type ProjectGroupId = "data" | "learning" | "writing";
 
 export type ProjectIconName =
   | "radar" | "drone" | "map" | "basketball"
-  | "plane" | "school" | "shield" | "news" | "books" | "karate";
+  | "plane" | "school" | "shield" | "news" | "books" | "karate" | "star";
 
 export interface ProjectGroup {
   id: ProjectGroupId;
@@ -116,6 +116,15 @@ export const PROJECTS: Project[] = [
     url: `${BASE_PATH}/blog/`,
     icon: "news",
     external: false,
+    group: "writing",
+  },
+  {
+    title: "星圖",
+    description: "讀過的論文、看過的書、寫出來的文章連成一張力導向星圖，文章上線或論文入庫後自動長出新的星。",
+    url: "https://starmap.skyfaring.net/",
+    icon: "star",
+    external: true,
+    introSlug: "starmap",
     group: "writing",
   },
   {

@@ -86,6 +86,13 @@ const PATHS: Record<ProjectIconName, ReactNode> = {
       <path d="M16 16l3.923 -.98" />
     </>
   ),
+  star: (
+    <>
+      <path d="M16 18a2 2 0 0 1 2 2a2 2 0 0 1 2 -2a2 2 0 0 1 -2 -2a2 2 0 0 1 -2 2z" />
+      <path d="M16 6a2 2 0 0 1 2 2a2 2 0 0 1 2 -2a2 2 0 0 1 -2 -2a2 2 0 0 1 -2 2z" />
+      <path d="M9 18a6 6 0 0 1 6 -6a6 6 0 0 1 -6 -6a6 6 0 0 1 -6 6a6 6 0 0 1 6 6z" />
+    </>
+  ),
 };
 
 export default function ProjectIcon({
