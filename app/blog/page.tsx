@@ -20,17 +20,18 @@ export default function BlogPage() {
       <div className="mb-8">
         <h1 className="text-3xl font-bold text-slate-800 dark:text-slate-100 mb-2">文章</h1>
         <p className="text-slate-500 dark:text-slate-400">
-          航空安全報告整理、飛行知識與相關研究、籃球數據分析與軍事閱讀，共 {posts.length} 篇。
+          航空安全報告整理、飛行知識與相關研究、籃球數據分析與軍事閱讀，
+          <span className="whitespace-nowrap">共 {posts.length} 篇。</span>
         </p>
       </div>
 
       <div className="flex flex-wrap items-center gap-2 mb-10">
-        <span className="text-sm text-slate-500 dark:text-slate-400 mr-1">依主題：</span>
+        <span className="text-sm whitespace-nowrap text-slate-500 dark:text-slate-400 mr-1">依主題：</span>
         {TOPIC_GROUPS.map((group) => (
           <a
             key={group.slug}
             href={`${BASE_PATH}/topics/${group.slug}/`}
-            className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-sm border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 hover:text-sky-600 dark:hover:text-sky-400 hover:border-sky-300 dark:hover:border-sky-700 transition-colors"
+            className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-sm whitespace-nowrap border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 hover:text-sky-600 dark:hover:text-sky-400 hover:border-sky-300 dark:hover:border-sky-700 transition-colors"
           >
             <TopicIcon name={group.icon} className="w-4 h-4 shrink-0" />
             {group.label}

@@ -66,17 +66,18 @@ export default function TpblLensPage() {
                 href={ds.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block p-5 bg-white dark:bg-slate-800 rounded-2xl border border-slate-100 dark:border-slate-700 shadow-sm hover:shadow-md transition-shadow group"
+                className="block p-5 bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm hover:shadow-md transition-shadow group"
               >
                 <div className="flex items-center justify-between mb-3">
-                  <span className="text-xs font-semibold text-orange-600 dark:text-orange-400 bg-orange-50 dark:bg-orange-900/30 px-2 py-0.5 rounded-full">
+                  <span className="text-xs font-semibold whitespace-nowrap text-orange-600 dark:text-orange-400 bg-orange-50 dark:bg-orange-900/30 px-2 py-0.5 rounded-full">
                     {ds.badge}
                   </span>
-                  <span className="text-xs text-slate-500 dark:text-slate-400">{ds.season}</span>
+                  <span className="text-xs whitespace-nowrap text-slate-500 dark:text-slate-400">{ds.season}</span>
                 </div>
                 <h3 className="font-semibold text-slate-800 dark:text-slate-100 group-hover:text-orange-600 dark:group-hover:text-orange-400 transition-colors mb-2">
                   {ds.title}
-                  <span className="ml-1 text-slate-400 text-xs">↗</span>
+                  {/* 箭頭不縮字級，理由同 components/ProjectCard.tsx 的 titleWithArrow */}
+                  <span className="ml-1 text-slate-400">↗</span>
                 </h3>
                 <p className="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">
                   {ds.description}
@@ -87,7 +88,7 @@ export default function TpblLensPage() {
         </section>
 
         {/* About section */}
-        <section className="bg-white dark:bg-slate-800 rounded-2xl border border-slate-100 dark:border-slate-700 p-6">
+        <section className="bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 p-6">
           <h2 className="text-base font-bold text-slate-700 dark:text-slate-200 mb-3">關於 TPBL Lens</h2>
           <p className="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">
             TPBL Lens 是針對台灣職籃（TPBL）的數據分析工具，提供球員個人統計、球隊效率指標與賽季趨勢。

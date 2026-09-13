@@ -19,12 +19,13 @@ export default function ViewCounter({ slug, className, total = false }: ViewCoun
       .then(setCount);
   }, [slug, total]);
 
+  // 數字與單位綁在同一個 nowrap 片段，「次瀏覽」不會單獨掉到下一行
   if (count === null || count === 0) {
-    return <span className={className}>— 次瀏覽</span>;
+    return <span className={`whitespace-nowrap ${className ?? ""}`}>— 次瀏覽</span>;
   }
 
   return (
-    <span className={className}>
+    <span className={`whitespace-nowrap ${className ?? ""}`}>
       {count.toLocaleString()} 次瀏覽
     </span>
   );

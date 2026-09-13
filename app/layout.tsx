@@ -92,17 +92,21 @@ export default function RootLayout({
         <RouteAnalytics />
         <header className="bg-white dark:bg-slate-800 border-b border-slate-200 dark:border-slate-700 sticky top-0 z-50">
           <div className="max-w-5xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
-            <a href={`${BASE_PATH}/`} className="flex items-center gap-2 group">
+            <a href={`${BASE_PATH}/`} className="flex items-center gap-2 group shrink-0">
               <img src={`${BASE_PATH}/favicon.svg`} alt="" width={22} height={22} />
-              <span className="font-bold text-xl text-slate-800 dark:text-slate-100 group-hover:text-sky-600 transition-colors">
+              <span className="font-bold text-xl text-slate-800 dark:text-slate-100 group-hover:text-sky-600 transition-colors whitespace-nowrap">
                 Skyfaring
               </span>
             </a>
-            <nav className="flex items-center gap-3 sm:gap-5 text-sm font-medium text-slate-500 dark:text-slate-400">
-              <a href={`${BASE_PATH}/`} className="py-1.5 hover:text-sky-600 dark:hover:text-sky-400 transition-colors">首頁</a>
-              <a href={`${BASE_PATH}/blog/`} className="py-1.5 hover:text-sky-600 dark:hover:text-sky-400 transition-colors">文章</a>
-              <a href={`${BASE_PATH}/projects/`} className="py-1.5 hover:text-sky-600 dark:hover:text-sky-400 transition-colors">專案</a>
-              <a href={`${BASE_PATH}/about/`} className="py-1.5 hover:text-sky-600 dark:hover:text-sky-400 transition-colors">關於我</a>
+            {/* 375px 寬時四個連結加切換鈕要排在同一行，所以每個連結 nowrap，「關於我」在手機縮成「關於」。 */}
+            <nav className="flex items-center gap-3 sm:gap-5 text-sm font-medium text-slate-500 dark:text-slate-400 shrink-0">
+              <a href={`${BASE_PATH}/`} className="py-1.5 whitespace-nowrap hover:text-sky-600 dark:hover:text-sky-400 transition-colors">首頁</a>
+              <a href={`${BASE_PATH}/blog/`} className="py-1.5 whitespace-nowrap hover:text-sky-600 dark:hover:text-sky-400 transition-colors">文章</a>
+              <a href={`${BASE_PATH}/projects/`} className="py-1.5 whitespace-nowrap hover:text-sky-600 dark:hover:text-sky-400 transition-colors">專案</a>
+              <a href={`${BASE_PATH}/about/`} className="py-1.5 whitespace-nowrap hover:text-sky-600 dark:hover:text-sky-400 transition-colors">
+                <span className="sm:hidden">關於</span>
+                <span className="hidden sm:inline">關於我</span>
+              </a>
               <ThemeToggle />
             </nav>
           </div>
@@ -122,13 +126,14 @@ export default function RootLayout({
                   <span className="font-bold text-slate-700 dark:text-slate-200">Skyfaring</span>
                 </div>
                 <p className="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">
-                  運動數據分析 · 飛航安全 · 詠春拳<br />歷史與軍事閱讀心得
+                  <span className="block whitespace-nowrap">運動數據分析 · 飛航安全 · 詠春拳</span>
+                  <span className="block whitespace-nowrap">歷史與軍事閱讀心得</span>
                 </p>
               </div>
               {/* Links */}
               <div>
                 <p className="text-xs font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-3">專案</p>
-                <ul className="space-y-2 text-xs text-slate-500 dark:text-slate-400">
+                <ul className="space-y-2 text-xs text-slate-500 dark:text-slate-400 whitespace-nowrap">
                   {PROJECTS.map((proj) => {
                     const href = resolveProjectHref(proj);
                     const opensExternal = projectOpensExternal(proj);
@@ -154,7 +159,7 @@ export default function RootLayout({
               {/* Contact */}
               <div>
                 <p className="text-xs font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-3">聯絡</p>
-                <ul className="space-y-2 text-xs text-slate-500 dark:text-slate-400">
+                <ul className="space-y-2 text-xs text-slate-500 dark:text-slate-400 whitespace-nowrap">
                   <li>
                     <a href="mailto:wizard32232002@gmail.com" className="hover:text-sky-500 inline-flex items-center gap-1.5">
                       <UiIcon name="mail" className="w-4 h-4 shrink-0" /> wizard32232002@gmail.com
@@ -179,7 +184,10 @@ export default function RootLayout({
               <p id="photo-credits" className="mb-1">
                 部分圖片來自 <a href="https://unsplash.com" className="underline hover:text-sky-500">Unsplash</a>（<a href="https://unsplash.com/license" className="underline hover:text-sky-500">Unsplash License</a>），出處標示於各頁面。
               </p>
-              <p>© {new Date().getFullYear()} Skyfaring. 部分內容依 CC BY 授權條款使用。</p>
+              <p>
+                <span className="whitespace-nowrap">© {new Date().getFullYear()} Skyfaring.</span>{" "}
+                <span className="whitespace-nowrap">部分內容依 CC BY 授權條款使用。</span>
+              </p>
             </div>
           </div>
         </footer>

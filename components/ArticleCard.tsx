@@ -31,7 +31,7 @@ export default function ArticleCard({ post }: { post: PostMeta }) {
 
   return (
     <Link href={`/blog/${post.slug}/`} className="group block h-full">
-      <article className="bg-white dark:bg-slate-800 rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden border border-slate-100 dark:border-slate-700 flex flex-col h-full">
+      <article className="bg-white dark:bg-slate-800 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300 overflow-hidden border border-slate-200 dark:border-slate-700 flex flex-col h-full">
         {post.heroImage && (
           <div className="h-48 overflow-hidden shrink-0">
             {/*
@@ -59,10 +59,10 @@ export default function ArticleCard({ post }: { post: PostMeta }) {
               {post.category ?? "　"}
             </span>
           </div>
-          <h2 className="text-lg font-bold text-slate-800 dark:text-slate-100 group-hover:text-sky-600 dark:group-hover:text-sky-400 transition-colors leading-snug mb-2 line-clamp-2">
+          <h2 className="text-lg font-bold text-slate-800 dark:text-slate-100 group-hover:text-sky-600 dark:group-hover:text-sky-400 transition-colors leading-snug mb-2 line-clamp-2 text-balance">
             {post.title}
           </h2>
-          <p className="text-sm text-slate-500 dark:text-slate-400 line-clamp-3 mb-4">
+          <p className="text-sm text-slate-500 dark:text-slate-400 line-clamp-3 mb-4 text-pretty">
             {post.excerpt}
           </p>
           <div className="flex items-center justify-between gap-2 text-xs text-slate-500 dark:text-slate-400 mt-auto">

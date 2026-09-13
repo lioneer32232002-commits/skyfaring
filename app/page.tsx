@@ -46,22 +46,26 @@ export default function HomePage() {
           style={{ backgroundImage: `url(${BASE_PATH}/images/homepage-hero.jpg)` }}
         />
         <div className="absolute inset-0 bg-gradient-to-br from-slate-900/92 via-slate-900/75 to-sky-900/80" />
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 py-20 sm:py-28 relative">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 py-14 sm:py-24 relative">
           <div className="flex items-center gap-3 mb-4">
-            <span className="text-sky-400 font-semibold tracking-widest text-sm uppercase">Skyfaring</span>
+            <span className="text-sky-400 font-semibold tracking-widest text-sm uppercase whitespace-nowrap">Skyfaring</span>
           </div>
-          <h1 className="text-4xl sm:text-5xl font-bold leading-tight mb-4">
+          <h1 className="text-4xl sm:text-5xl font-bold leading-tight mb-4 text-balance">
             用數據觀察世界
           </h1>
-          <p className="text-slate-300 text-lg max-w-2xl leading-relaxed mb-3">
-            從球場到天空，從歷史到當代——用數字和資料說出那些不容易被看見的故事。
+          <p className="text-slate-300 text-lg max-w-2xl leading-relaxed mb-3 text-pretty">
+            從球場到天空，從歷史到當代，用數字和資料說出不容易被看見的故事。
           </p>
-          <p className="text-slate-400 text-sm max-w-xl leading-relaxed mb-8">
-            運動數據分析 · 飛航安全數據分析 · 詠春拳 · 歷史與軍事閱讀心得分享
-          </p>
+          {/* 用 flex 排這四項，「·」跟著前一項走，手機折行時不會有單獨一個點或單字掉到下一行 */}
+          <div className="text-slate-400 text-sm max-w-xl leading-relaxed mb-8 flex flex-wrap gap-x-3 gap-y-1">
+            <span className="whitespace-nowrap">運動數據分析 ·</span>
+            <span className="whitespace-nowrap">飛航安全數據分析 ·</span>
+            <span className="whitespace-nowrap">詠春拳 ·</span>
+            <span className="whitespace-nowrap">歷史與軍事閱讀心得分享</span>
+          </div>
           <div className="text-sm text-slate-400 flex items-center gap-2">
-            <span>本站瀏覽次數：</span>
-            <ViewCounter slug="home" total className="text-sky-300 font-semibold" />
+            <span className="whitespace-nowrap">本站瀏覽次數：</span>
+            <ViewCounter slug="home" total className="text-sky-300 font-semibold whitespace-nowrap" />
           </div>
         </div>
       </section>
@@ -76,7 +80,7 @@ export default function HomePage() {
             </h2>
             <a
               href={`${BASE_PATH}/projects/`}
-              className="text-sm text-sky-600 dark:text-sky-400 hover:underline"
+              className="text-sm whitespace-nowrap text-sky-600 dark:text-sky-400 hover:underline"
             >
               看所有專案 →
             </a>
@@ -94,10 +98,10 @@ export default function HomePage() {
               <a
                 key={group.slug}
                 href={`${BASE_PATH}/topics/${group.slug}/`}
-                className="flex items-center gap-2 px-4 py-2 bg-white dark:bg-slate-800 rounded-full border border-slate-100 dark:border-slate-700 text-sm text-slate-600 dark:text-slate-300 shadow-sm hover:shadow-md hover:text-sky-600 dark:hover:text-sky-400 transition-all"
+                className="flex items-center gap-2 px-4 py-2 bg-white dark:bg-slate-800 rounded-full border border-slate-200 dark:border-slate-700 text-sm text-slate-600 dark:text-slate-300 shadow-sm hover:shadow-md hover:text-sky-600 dark:hover:text-sky-400 transition-all"
               >
                 <TopicIcon name={group.icon} className="w-4 h-4 shrink-0" />
-                {group.label}
+                <span className="whitespace-nowrap">{group.label}</span>
               </a>
             ))}
           </div>
@@ -111,7 +115,7 @@ export default function HomePage() {
             </h2>
             <a
               href={`${BASE_PATH}/blog/`}
-              className="text-sm text-sky-600 dark:text-sky-400 hover:underline"
+              className="text-sm whitespace-nowrap text-sky-600 dark:text-sky-400 hover:underline"
             >
               查看全部 →
             </a>

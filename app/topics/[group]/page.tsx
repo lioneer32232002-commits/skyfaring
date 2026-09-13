@@ -85,22 +85,24 @@ export default async function TopicPage({
       {/* Header */}
       <div className="mb-8">
         <div className="text-sm text-slate-500 dark:text-slate-400 mb-3">
-          <a href={`${BASE_PATH}/`} className="hover:text-sky-500">
+          <a href={`${BASE_PATH}/`} className="whitespace-nowrap hover:text-sky-500">
             首頁
           </a>
           <span className="mx-1.5">/</span>
-          <a href={`${BASE_PATH}/blog/`} className="hover:text-sky-500">
+          <a href={`${BASE_PATH}/blog/`} className="whitespace-nowrap hover:text-sky-500">
             文章
           </a>
           <span className="mx-1.5">/</span>
-          <span className="text-slate-500 dark:text-slate-400">{group.label}</span>
+          <span className="whitespace-nowrap text-slate-500 dark:text-slate-400">{group.label}</span>
         </div>
         <h1 className="text-3xl font-bold text-slate-800 dark:text-slate-100 mb-2 flex items-center gap-2">
           <TopicIcon name={group.icon} className="w-7 h-7 shrink-0 text-sky-600 dark:text-sky-400" />
           {group.label}
         </h1>
         <p className="text-slate-500 dark:text-slate-400">
-          {group.description}　共 {groupPosts.length} 篇。
+          {group.description}
+          {"　"}
+          <span className="whitespace-nowrap">共 {groupPosts.length} 篇。</span>
         </p>
       </div>
 
@@ -112,7 +114,7 @@ export default async function TopicPage({
             <a
               key={g.slug}
               href={`${BASE_PATH}/topics/${g.slug}/`}
-              className={`px-3 py-1 rounded-full text-sm transition-colors ${
+              className={`px-3 py-1 rounded-full text-sm whitespace-nowrap transition-colors ${
                 active
                   ? "bg-slate-800 dark:bg-slate-100 text-white dark:text-slate-900 font-semibold"
                   : "border border-transparent text-slate-500 dark:text-slate-400 hover:text-slate-700 dark:hover:text-slate-200"
@@ -124,7 +126,7 @@ export default async function TopicPage({
         })}
         <a
           href={`${BASE_PATH}/blog/`}
-          className="px-3 py-1 rounded-full text-sm border border-transparent text-sky-600 dark:text-sky-400 hover:underline"
+          className="px-3 py-1 rounded-full text-sm whitespace-nowrap border border-transparent text-sky-600 dark:text-sky-400 hover:underline"
         >
           全部文章 →
         </a>
@@ -142,7 +144,7 @@ export default async function TopicPage({
             <section key={cat} className="mb-12">
               <h2 className="text-lg font-bold text-slate-700 dark:text-slate-200 mb-5 flex items-center gap-2">
                 {cat}
-                <span className="text-xs font-normal text-slate-500 dark:text-slate-400">
+                <span className="text-xs font-normal whitespace-nowrap text-slate-500 dark:text-slate-400">
                   {catPosts.length} 篇
                 </span>
               </h2>

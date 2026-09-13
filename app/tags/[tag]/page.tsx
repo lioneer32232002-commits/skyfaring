@@ -79,21 +79,22 @@ export default async function TagPage({
 
       <div className="mb-8">
         <div className="text-sm text-slate-500 dark:text-slate-400 mb-3">
-          <a href={`${BASE_PATH}/`} className="hover:text-sky-500">
+          <a href={`${BASE_PATH}/`} className="whitespace-nowrap hover:text-sky-500">
             首頁
           </a>
           <span className="mx-1.5">/</span>
-          <a href={`${BASE_PATH}/blog/`} className="hover:text-sky-500">
+          <a href={`${BASE_PATH}/blog/`} className="whitespace-nowrap hover:text-sky-500">
             文章
           </a>
           <span className="mx-1.5">/</span>
-          <span>{tag}</span>
+          <span className="whitespace-nowrap">{tag}</span>
         </div>
-        <h1 className="text-3xl font-bold text-slate-800 dark:text-slate-100 mb-2">
+        <h1 className="text-3xl font-bold text-slate-800 dark:text-slate-100 mb-2 text-balance">
           {tag}
         </h1>
         <p className="text-slate-500 dark:text-slate-400">
-          標記為「{tag}」的文章，共 {posts.length} 篇。
+          標記為「{tag}」的文章，
+          <span className="whitespace-nowrap">共 {posts.length} 篇。</span>
         </p>
       </div>
 
@@ -108,7 +109,7 @@ export default async function TagPage({
       <div className="mt-10">
         <a
           href={`${BASE_PATH}/blog/`}
-          className="text-sm text-sky-600 dark:text-sky-400 hover:underline"
+          className="text-sm whitespace-nowrap text-sky-600 dark:text-sky-400 hover:underline"
         >
           ← 返回文章列表
         </a>

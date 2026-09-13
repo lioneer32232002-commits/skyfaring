@@ -60,7 +60,7 @@ export default function AboutPage() {
         <h1 className="text-3xl font-bold text-slate-800 dark:text-slate-100 mb-2">
           關於我（Adam Pan）
         </h1>
-        <p className="text-slate-600 dark:text-slate-300 leading-loose max-w-2xl">
+        <p className="text-slate-600 dark:text-slate-300 leading-loose max-w-2xl text-pretty">
           資深專案經理，任職於教育訓練機構，負責課程營運、行銷與統計分析。近年用 AI 工具獨立開發多個數據產品，從企劃、開發到上線一手包辦，領域涵蓋無人機情報、運動數據與歷史教育。
         </p>
       </div>
@@ -74,12 +74,12 @@ export default function AboutPage() {
           {SKILLS.map((s) => (
             <div
               key={s.title}
-              className="p-5 bg-white dark:bg-slate-800 rounded-2xl border border-slate-100 dark:border-slate-700 shadow-sm"
+              className="p-5 bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm"
             >
-              <h3 className="font-semibold text-slate-800 dark:text-slate-100 mb-2">
+              <h3 className="font-semibold text-slate-800 dark:text-slate-100 mb-2 text-balance">
                 {s.title}
               </h3>
-              <p className="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">
+              <p className="text-sm text-slate-500 dark:text-slate-400 leading-relaxed text-pretty">
                 {s.desc}
               </p>
             </div>
@@ -95,7 +95,7 @@ export default function AboutPage() {
           </h2>
           <a
             href={`${BASE_PATH}/projects/`}
-            className="text-sm text-sky-600 dark:text-sky-400 hover:underline"
+            className="text-sm whitespace-nowrap text-sky-600 dark:text-sky-400 hover:underline"
           >
             看所有專案（{PROJECTS.length}）→
           </a>

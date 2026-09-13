@@ -1,33 +1,30 @@
 import Link from "next/link";
 import {
-  PROJECT_GROUPS,
   resolveProjectHref,
   projectOpensExternal,
   type Project,
 } from "@/lib/projects";
+import { accentFor } from "@/lib/projectAccent";
 import ProjectIcon from "@/components/ProjectIcon";
 
-const ACCENT = {
-  sky: {
-    bar: "bg-sky-400",
-    iconBg: "bg-sky-50 dark:bg-sky-500/15",
-    iconText: "text-sky-700 dark:text-sky-300",
-  },
-  violet: {
-    bar: "bg-violet-400",
-    iconBg: "bg-violet-50 dark:bg-violet-500/15",
-    iconText: "text-violet-700 dark:text-violet-300",
-  },
-  slate: {
-    bar: "bg-slate-300 dark:bg-slate-500",
-    iconBg: "bg-slate-100 dark:bg-slate-700",
-    iconText: "text-slate-600 dark:text-slate-300",
-  },
-} as const;
-
-function accentFor(project: Project) {
-  const group = PROJECT_GROUPS.find((g) => g.id === project.group);
-  return ACCENT[group?.accent ?? "slate"];
+/**
+ * 標題末字與外連箭頭綁在同一個 nowrap 片段裡，
+ * 否則標題折行時箭頭會自己掉到下一行變成孤字。
+ * 箭頭刻意不另外縮字級（只用淺色弱化）：字級一小，它的行內盒就跟標題文字差幾個 px，
+ * scripts/check-layout.mjs 的孤字偵測會把同一行判成兩行、報成假的箭頭孤字。
+ */
+function titleWithArrow(title: string, arrowClass: string) {
+  return (
+    <>
+      {title.slice(0, -1)}
+      <span className="whitespace-nowrap">
+        {title.slice(-1)}
+        <span aria-hidden className={arrowClass}>
+          ↗
+        </span>
+      </span>
+    </>
+  );
 }
 
 export default function ProjectCard({
@@ -46,18 +43,19 @@ export default function ProjectCard({
 
   const className =
     variant === "compact"
-      ? "group flex items-center gap-1.5 px-2.5 py-3 bg-white dark:bg-slate-800 rounded-xl border border-slate-100 dark:border-slate-700 shadow-sm hover:shadow-md transition-shadow"
-      : "group flex gap-3 p-4 bg-white dark:bg-slate-800 rounded-2xl border border-slate-100 dark:border-slate-700 shadow-sm hover:shadow-md transition-shadow";
+      ? "group flex items-start gap-1.5 px-2.5 py-3 bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm hover:shadow-md transition-shadow"
+      : "group flex gap-3 p-4 bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm hover:shadow-md transition-shadow";
 
   const inner =
     variant === "compact" ? (
       <>
-        <span className={`inline-flex shrink-0 ${accent.iconText}`}>
+        <span className={`inline-flex shrink-0 mt-0.5 ${accent.iconText}`}>
           <ProjectIcon name={project.icon} className="w-4 h-4" />
         </span>
-        <span className="min-w-0 truncate text-xs font-medium text-slate-800 dark:text-slate-100 group-hover:text-sky-600 dark:group-hover:text-sky-400 transition-colors">
-          {project.title}
-          {external && <span aria-hidden className="ml-0.5 text-slate-400 text-[10px]">↗</span>}
+        <span className="min-w-0 text-[13px] leading-snug text-balance font-medium text-slate-800 dark:text-slate-100 group-hover:text-sky-600 dark:group-hover:text-sky-400 transition-colors">
+          {external
+            ? titleWithArrow(project.title, "ml-0.5 text-slate-400")
+            : project.title}
         </span>
       </>
     ) : (
@@ -67,15 +65,16 @@ export default function ProjectCard({
           <span className={`inline-flex items-center justify-center w-10 h-10 rounded-xl mb-3 ${accent.iconBg} ${accent.iconText}`}>
             <ProjectIcon name={project.icon} className="w-5 h-5" />
           </span>
-          <Heading className="font-semibold text-slate-800 dark:text-slate-100 group-hover:text-sky-600 dark:group-hover:text-sky-400 transition-colors">
-            {project.title}
-            {external && <span aria-hidden className="ml-1 text-slate-400 text-xs">↗</span>}
+          <Heading className="font-semibold text-balance text-slate-800 dark:text-slate-100 group-hover:text-sky-600 dark:group-hover:text-sky-400 transition-colors">
+            {external
+              ? titleWithArrow(project.title, "ml-1 text-slate-400")
+              : project.title}
           </Heading>
-          <p className="text-sm text-slate-500 dark:text-slate-400 mt-1 leading-relaxed">
+          <p className="text-sm text-slate-500 dark:text-slate-400 mt-1 leading-relaxed text-pretty">
             {project.description}
           </p>
           {project.introSlug && (
-            <span className="inline-block mt-3 text-xs text-sky-600 dark:text-sky-400">
+            <span className="inline-block mt-3 text-[13px] whitespace-nowrap text-sky-600 dark:text-sky-400">
               看專案導讀 →
             </span>
           )}

@@ -1,7 +1,10 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { PROJECT_PAGES, getProjectPageBySlug } from "@/lib/projectPages";
+import { PROJECTS } from "@/lib/projects";
+import { accentForGroup } from "@/lib/projectAccent";
 import { getGroupBySlug } from "@/lib/taxonomy";
+import ProjectIcon from "@/components/ProjectIcon";
 import TopicIcon from "@/components/TopicIcon";
 import UiIcon from "@/components/UiIcon";
 import DashboardLiveStat from "@/components/DashboardLiveStat";
@@ -61,6 +64,9 @@ export default async function ProjectPage({
     ? getGroupBySlug(project.relatedTopicSlug)
     : undefined;
 
+  const listedProject = PROJECTS.find((p) => p.introSlug === slug);
+  const accent = accentForGroup(listedProject?.group);
+
   const isExternal = /^https?:\/\//.test(project.url);
 
   const jsonLd = {
@@ -116,20 +122,34 @@ export default async function ProjectPage({
 
       {/* Breadcrumb */}
       <div className="text-sm text-slate-500 dark:text-slate-400 mb-6">
-        <a href={`${BASE_PATH}/`} className="hover:text-sky-500">首頁</a>
+        <a href={`${BASE_PATH}/`} className="whitespace-nowrap hover:text-sky-500">首頁</a>
         <span className="mx-1.5">/</span>
-        <a href={`${BASE_PATH}/projects/`} className="hover:text-sky-500">專案</a>
+        <a href={`${BASE_PATH}/projects/`} className="whitespace-nowrap hover:text-sky-500">專案</a>
         <span className="mx-1.5">/</span>
+        {/* 最後一節是頁面標題，最長 24 個字，nowrap 會在 375px 撐出橫向捲軸，所以讓它照常換行 */}
         <span className="text-slate-500 dark:text-slate-400">{project.title}</span>
       </div>
 
       {/* Header */}
       <div className="mb-8">
-        <div className="text-5xl mb-4">{project.icon}</div>
-        <h1 className="text-3xl sm:text-4xl font-bold text-slate-800 dark:text-slate-100 leading-tight mb-3">
+        {/*
+          圖示跟專案卡用同一組 SVG 與同一份色票（lib/projectAccent.ts），
+          導讀頁與卡片才不會一邊 emoji、一邊線條圖。
+          在 lib/projects.ts 反查不到對應專案時退回 lib/projectPages.ts 的 emoji。
+        */}
+        {listedProject ? (
+          <div
+            className={`w-12 h-12 mb-4 rounded-xl flex items-center justify-center ${accent.iconBg} ${accent.iconText}`}
+          >
+            <ProjectIcon name={listedProject.icon} className="w-6 h-6" />
+          </div>
+        ) : (
+          <div className="text-5xl mb-4">{project.icon}</div>
+        )}
+        <h1 className="text-3xl sm:text-4xl font-bold text-slate-800 dark:text-slate-100 leading-tight mb-3 text-balance">
           {project.title}
         </h1>
-        <p className="text-lg text-slate-500 dark:text-slate-400 leading-relaxed">
+        <p className="text-lg text-slate-500 dark:text-slate-400 leading-relaxed text-pretty">
           {project.tagline}
         </p>
       </div>
@@ -141,7 +161,7 @@ export default async function ProjectPage({
           {...(isExternal ? { target: "_blank", rel: "noopener noreferrer" } : {})}
           className="group inline-flex items-center gap-2.5 px-6 py-3 mb-12 rounded-xl border border-sky-300 dark:border-sky-500/40 text-sky-700 dark:text-sky-300 font-semibold hover:bg-sky-50 dark:hover:bg-sky-500/10 hover:border-sky-400 dark:hover:border-sky-500/60 transition-colors"
         >
-          {project.launchCta}
+          <span className="whitespace-nowrap">{project.launchCta}</span>
           <UiIcon
             name="arrow-up-right"
             className="w-[18px] h-[18px] transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
@@ -184,7 +204,7 @@ export default async function ProjectPage({
                       className="w-[14px] h-[14px] shrink-0 text-slate-400 dark:text-slate-500"
                     />
                   </h3>
-                  <p className="text-xs text-slate-500 dark:text-slate-400 mt-1">
+                  <p className="text-[13px] whitespace-nowrap text-slate-500 dark:text-slate-400 mt-1">
                     {d.cadence}
                   </p>
                 </div>
@@ -195,7 +215,7 @@ export default async function ProjectPage({
                   {d.liveStat && (
                     <DashboardLiveStat
                       source={d.liveStat}
-                      className="text-xs font-medium text-sky-600 dark:text-sky-400 mt-1.5"
+                      className="text-[13px] font-medium whitespace-nowrap text-sky-600 dark:text-sky-400 mt-1.5"
                     />
                   )}
                 </div>
@@ -214,12 +234,12 @@ export default async function ProjectPage({
           {project.features.map((f) => (
             <div
               key={f.title}
-              className="p-5 bg-white dark:bg-slate-800 rounded-2xl border border-slate-100 dark:border-slate-700 shadow-sm"
+              className="p-5 bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm"
             >
-              <h3 className="font-semibold text-slate-800 dark:text-slate-100 mb-2">
+              <h3 className="font-semibold text-slate-800 dark:text-slate-100 mb-2 text-balance">
                 {f.title}
               </h3>
-              <p className="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">
+              <p className="text-sm text-slate-500 dark:text-slate-400 leading-relaxed text-pretty">
                 {f.desc}
               </p>
             </div>
@@ -239,7 +259,7 @@ export default async function ProjectPage({
 
       {/* Secondary CTA */}
       {!project.dashboards && (
-        <div className="p-6 bg-slate-50 dark:bg-slate-800 rounded-2xl border border-slate-100 dark:border-slate-700 mb-10">
+        <div className="p-6 bg-slate-50 dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 mb-10">
           <p className="text-slate-600 dark:text-slate-300 mb-4">
             想實際看看，直接打開{project.title}。
           </p>
@@ -248,7 +268,7 @@ export default async function ProjectPage({
             {...(isExternal ? { target: "_blank", rel: "noopener noreferrer" } : {})}
             className="group inline-flex items-center gap-2.5 px-6 py-3 rounded-xl border border-sky-300 dark:border-sky-500/40 bg-white dark:bg-transparent text-sky-700 dark:text-sky-300 font-semibold hover:bg-sky-50 dark:hover:bg-sky-500/10 hover:border-sky-400 dark:hover:border-sky-500/60 transition-colors"
           >
-            {project.launchCta}
+            <span className="whitespace-nowrap">{project.launchCta}</span>
             <UiIcon
               name="arrow-up-right"
               className="w-[18px] h-[18px] transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
@@ -259,19 +279,19 @@ export default async function ProjectPage({
 
       {/* Cross-links */}
       <div className="flex flex-wrap items-center gap-x-6 gap-y-2 text-sm">
-        <a href={`${BASE_PATH}/projects/`} className="text-sky-600 dark:text-sky-400 hover:underline">
+        <a href={`${BASE_PATH}/projects/`} className="whitespace-nowrap text-sky-600 dark:text-sky-400 hover:underline">
           ← 看所有專案
         </a>
         {relatedTopic && (
           <a
             href={`${BASE_PATH}/topics/${relatedTopic.slug}/`}
-            className="inline-flex items-center gap-1 text-sky-600 dark:text-sky-400 hover:underline"
+            className="inline-flex items-center gap-1 whitespace-nowrap text-sky-600 dark:text-sky-400 hover:underline"
           >
             <TopicIcon name={relatedTopic.icon} className="w-4 h-4 shrink-0" />
             相關文章：{relatedTopic.label} →
           </a>
         )}
-        <a href={`${BASE_PATH}/blog/`} className="text-sky-600 dark:text-sky-400 hover:underline">
+        <a href={`${BASE_PATH}/blog/`} className="whitespace-nowrap text-sky-600 dark:text-sky-400 hover:underline">
           全部文章 →
         </a>
       </div>

@@ -136,10 +136,17 @@ body {
 }
 
 /*
-  全站保險：標題與短句換行時不要留孤字在最後一行。
-  text-wrap: balance 讓多行標題盡量平均分配寬度；
-  text-wrap: pretty 讓內文段落避免最後一行只剩一兩個字。
-  個別元件已經手動包 .text-balance / .text-pretty 的地方，這條規則重複套用也無妨。
+  全站三條換行原則（改版面時照這三條走，不要另立第四條）：
+
+  1. 短標籤 nowrap：pill、按鈕、麵包屑每一節、日期、「N 篇」「N 分鐘」「N 次瀏覽」
+     「查看全部 →」這類短字串，一律在該元素上加 Tailwind 的 whitespace-nowrap，
+     不讓單位、箭頭或最後一個字自己掉到第二行。句子中間的數字加單位，
+     用 <span className="whitespace-nowrap">共 71 篇</span> 這種方式局部包起來。
+  2. 標題 balance：h1 到 h4 用 text-wrap: balance，多行標題平均分配寬度。
+  3. 段落 pretty：p 與 li 用 text-wrap: pretty，避免最後一行只剩一兩個字。
+
+  下面這段是第 2、3 條的全站保險。個別元件已經手動包 .text-balance /
+  .text-pretty 的地方，這條規則重複套用也無妨。
 */
 @layer base {
   h1, h2, h3, h4 {

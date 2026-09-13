@@ -212,7 +212,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
               <a
                 key={tag}
                 href={tagHref(tag, BASE_PATH)}
-                className="text-xs bg-sky-100 dark:bg-sky-900 text-sky-700 dark:text-sky-300 px-2.5 py-0.5 rounded-full hover:bg-sky-200 dark:hover:bg-sky-800 transition-colors"
+                className="text-xs whitespace-nowrap bg-sky-100 dark:bg-sky-900 text-sky-700 dark:text-sky-300 px-2.5 py-0.5 rounded-full hover:bg-sky-200 dark:hover:bg-sky-800 transition-colors"
               >
                 {tag}
               </a>
@@ -242,21 +242,26 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
 
       {/* Author + meta */}
       <div className="flex flex-wrap items-center gap-4 text-sm text-slate-500 dark:text-slate-400 pb-6 mb-8 border-b border-slate-200 dark:border-slate-700">
-        <span className="flex items-center gap-1.5">
+        <span className="flex items-center gap-1.5 whitespace-nowrap">
           <UiIcon name="pencil" className="w-4 h-4 shrink-0" />
           <span className="font-medium text-slate-700 dark:text-slate-200">{post.author}</span>
         </span>
         <span className="flex items-center gap-1.5">
           <UiIcon name="calendar" className="w-4 h-4 shrink-0" />
-          <span>
-            {originalDate ? `發布：${originalDate}，更新：${formattedDate}` : `發布：${formattedDate}`}
-          </span>
+          {originalDate ? (
+            <span className="flex flex-wrap items-center gap-x-1.5">
+              <span className="whitespace-nowrap">發布：{originalDate}，</span>
+              <span className="whitespace-nowrap">更新：{formattedDate}</span>
+            </span>
+          ) : (
+            <span className="whitespace-nowrap">發布：{formattedDate}</span>
+          )}
         </span>
-        <span className="flex items-center gap-1.5">
+        <span className="flex items-center gap-1.5 whitespace-nowrap">
           <UiIcon name="clock" className="w-4 h-4 shrink-0" />
           <span>閱讀約 {post.readingMinutes} 分鐘</span>
         </span>
-        <span className="flex items-center gap-1.5">
+        <span className="flex items-center gap-1.5 whitespace-nowrap">
           <UiIcon name="eye" className="w-4 h-4 shrink-0" />
           <ViewCounter slug={`blog/${slug}`} />
         </span>
@@ -329,7 +334,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
       <div className="mt-10">
         <a
           href={`${BASE_PATH}/blog/`}
-          className="text-sm text-sky-600 dark:text-sky-400 hover:underline flex items-center gap-1"
+          className="text-sm whitespace-nowrap text-sky-600 dark:text-sky-400 hover:underline flex items-center gap-1"
         >
           ← 返回文章列表
         </a>

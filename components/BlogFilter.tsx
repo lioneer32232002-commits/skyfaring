@@ -63,7 +63,7 @@ export default function BlogFilter({ posts }: { posts: PostMeta[] }) {
       <div className="flex flex-wrap gap-2 mb-8">
         <button
           onClick={() => setActive(null)}
-          className={`px-3 py-1.5 rounded-full text-sm transition-colors ${
+          className={`px-3 py-1.5 rounded-full text-sm whitespace-nowrap transition-colors ${
             active === null
               ? "bg-slate-800 dark:bg-slate-100 text-white dark:text-slate-900 font-semibold"
               : INACTIVE_BASE
@@ -75,7 +75,7 @@ export default function BlogFilter({ posts }: { posts: PostMeta[] }) {
           <button
             key={cat}
             onClick={() => setActive(active === cat ? null : cat)}
-            className={`px-3 py-1.5 rounded-full text-sm transition-colors ${
+            className={`px-3 py-1.5 rounded-full text-sm whitespace-nowrap transition-colors ${
               active === cat
                 ? `${ACTIVE_BASE} ${CATEGORY_STYLES[cat] ?? "bg-slate-100 text-slate-700 border-slate-300"}`
                 : INACTIVE_BASE
@@ -89,7 +89,8 @@ export default function BlogFilter({ posts }: { posts: PostMeta[] }) {
       {/* 有搜尋或分類條件時顯示筆數，讓讀者知道濾掉了多少 */}
       {(q || active) && filtered.length > 0 && (
         <p className="text-sm text-slate-500 dark:text-slate-400 mb-5">
-          符合的文章 {filtered.length} 篇，共 {posts.length} 篇
+          <span className="whitespace-nowrap">符合的文章 {filtered.length} 篇，</span>
+          <span className="whitespace-nowrap">共 {posts.length} 篇</span>
         </p>
       )}
 

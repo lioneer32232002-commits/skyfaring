@@ -29,7 +29,8 @@ export function SeriesBadge({
         {series}
       </a>
       <span className="mx-1.5 text-slate-300 dark:text-slate-600">·</span>
-      第 {index} 篇，共 {total} 篇
+      <span className="whitespace-nowrap">第 {index} 篇，</span>
+      <span className="whitespace-nowrap">共 {total} 篇</span>
     </p>
   );
 }
@@ -52,7 +53,7 @@ export function SeriesNav({
       <p className="text-sm font-semibold text-slate-700 dark:text-slate-200 mb-1">
         {series}
       </p>
-      <p className="text-xs text-slate-500 dark:text-slate-400 mb-4">
+      <p className="text-[13px] whitespace-nowrap text-slate-500 dark:text-slate-400 mb-4">
         這個系列共 {posts.length} 篇
       </p>
       <ol className="space-y-2">
@@ -114,7 +115,7 @@ export function AdjacentNav({
 
   const linkClass =
     "group flex flex-col gap-1 p-4 rounded-xl border border-slate-200 dark:border-slate-700 hover:border-sky-300 dark:hover:border-sky-700 transition-colors";
-  const labelClass = "text-xs text-slate-500 dark:text-slate-400";
+  const labelClass = "text-[13px] whitespace-nowrap text-slate-500 dark:text-slate-400";
   const titleClass =
     "text-sm font-medium text-slate-700 dark:text-slate-200 group-hover:text-sky-600 dark:group-hover:text-sky-400 line-clamp-2";
 

@@ -86,3 +86,6 @@ next-env.d.ts
 
 # 卡片縮圖：build 前由 prebuild 自動產生，不進版控（避免過期縮圖與 repo 膨脹）
 /public/images/thumbs/
+
+# scripts/check-layout.mjs 的截圖與報告輸出，本機驗收用，不進版控
+/.layout-check/

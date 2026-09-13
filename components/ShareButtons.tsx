@@ -56,11 +56,11 @@ export default function ShareButtons({
   }
 
   const btn =
-    "inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-slate-200 dark:border-slate-700 text-xs text-slate-600 dark:text-slate-300 hover:border-sky-300 dark:hover:border-sky-700 hover:text-sky-600 dark:hover:text-sky-400 transition-colors";
+    "inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-slate-200 dark:border-slate-700 text-xs whitespace-nowrap text-slate-600 dark:text-slate-300 hover:border-sky-300 dark:hover:border-sky-700 hover:text-sky-600 dark:hover:text-sky-400 transition-colors";
 
   return (
     <div className="mt-10 flex flex-wrap items-center gap-2">
-      <span className="inline-flex items-center gap-1.5 text-xs text-slate-500 dark:text-slate-400 mr-1">
+      <span className="inline-flex items-center gap-1.5 text-xs whitespace-nowrap text-slate-500 dark:text-slate-400 mr-1">
         <UiIcon name="share" className="w-4 h-4 shrink-0" />
         分享
       </span>

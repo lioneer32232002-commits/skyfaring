@@ -30,7 +30,8 @@ export default function ProjectsPage() {
       <div className="mb-10">
         <h1 className="text-3xl font-bold text-slate-800 dark:text-slate-100 mb-2">專案</h1>
         <p className="text-slate-500 dark:text-slate-400">
-          把數據與興趣做成可以實際打開來用的工具，共 {PROJECTS.length} 個。
+          把數據與興趣做成可以實際打開來用的工具，
+          <span className="whitespace-nowrap">共 {PROJECTS.length} 個。</span>
         </p>
       </div>
 
