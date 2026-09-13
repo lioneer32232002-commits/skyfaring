@@ -181,7 +181,7 @@ export const PROJECT_PAGES: ProjectPage[] = [
         title: "無人機技術情報",
         url: `${BASE_PATH}/drone-review/`,
         cadence: "每月更新",
-        desc: "民用與軍用論文同頁切換，依中國、非中國、台灣分組看各子主題走向，2026 年 7 月收錄 23 篇。",
+        desc: "民用與軍用論文同頁切換，依中國、非中國、台灣分組看走向，2026 年 7 月收錄 23 篇。",
       },
       {
         title: "烏克蘭無人機戰研究",
