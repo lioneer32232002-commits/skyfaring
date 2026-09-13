@@ -1,7 +1,12 @@
 import type { Metadata } from "next";
 import { getAllPostMetas } from "@/lib/posts";
-import { TOPIC_GROUPS } from "@/lib/taxonomy";
+import {
+  getMonthlyCounts,
+  getSiteSummary,
+  getTopicCounts,
+} from "@/lib/siteStats";
 import ArticleCard from "@/components/ArticleCard";
+import { BarRow, MiniColumns, StatRow, StatTile } from "@/components/viz";
 import ProjectGroups from "@/components/ProjectGroups";
 import TopicIcon from "@/components/TopicIcon";
 import UiIcon from "@/components/UiIcon";
@@ -30,8 +35,22 @@ const jsonLd = {
   inLanguage: "zh-TW",
 };
 
+/** 把 "2026-09-13" 拆成數字磚要的「9/13」與「2026 年」。 */
+function splitDate(date: string): { short: string; year: string } {
+  const match = /^(\d{4})-(\d{2})-(\d{2})/.exec(date);
+  if (!match) return { short: "—", year: "" };
+  return {
+    short: `${Number(match[2])}/${Number(match[3])}`,
+    year: `${match[1]} 年`,
+  };
+}
+
 export default function HomePage() {
   const posts = getAllPostMetas();
+  const summary = getSiteSummary();
+  const topicCounts = getTopicCounts();
+  const monthly = getMonthlyCounts(6);
+  const latest = splitDate(summary.latestDate);
 
   return (
     <>
@@ -72,6 +91,19 @@ export default function HomePage() {
 
       <div className="max-w-5xl mx-auto px-4 sm:px-6 py-12">
 
+        {/* Site summary */}
+        <section className="mb-14">
+          <h2 className="text-xl font-bold text-slate-700 dark:text-slate-200 mb-5 flex items-center gap-2">
+            <UiIcon name="chart" className="w-5 h-5 shrink-0" /> 站內一覽
+          </h2>
+          <StatRow>
+            <StatTile label="文章" value={summary.posts} hint="篇" href="/blog/" />
+            <StatTile label="專案" value={summary.projects} hint="個" href="/projects/" />
+            <StatTile label="主題" value={summary.topics} hint="個分類群" />
+            <StatTile label="最近更新" value={latest.short} hint={latest.year} />
+          </StatRow>
+        </section>
+
         {/* Projects / Portal */}
         <section className="mb-14">
           <div className="flex items-center justify-between mb-5">
@@ -93,18 +125,16 @@ export default function HomePage() {
           <h2 className="text-xl font-bold text-slate-700 dark:text-slate-200 mb-5 flex items-center gap-2">
             <UiIcon name="compass" className="w-5 h-5 shrink-0" /> 依主題瀏覽
           </h2>
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
-            {TOPIC_GROUPS.map((group) => (
-              <a
-                key={group.slug}
-                href={`${BASE_PATH}/topics/${group.slug}/`}
-                className="flex items-center gap-2 px-4 py-2 bg-white dark:bg-slate-800 rounded-full border border-slate-200 dark:border-slate-700 text-sm text-slate-600 dark:text-slate-300 shadow-sm hover:shadow-md hover:text-sky-600 dark:hover:text-sky-400 transition-all"
-              >
-                <TopicIcon name={group.icon} className="w-4 h-4 shrink-0" />
-                <span className="whitespace-nowrap">{group.label}</span>
-              </a>
-            ))}
-          </div>
+          {/* 主題名稱本身就是標籤，長條只負責比大小，所以不需要圖例也不需要座標軸 */}
+          <BarRow
+            unit="篇"
+            items={topicCounts.map((topic) => ({
+              label: topic.label,
+              value: topic.count,
+              href: `/topics/${topic.slug}/`,
+              icon: <TopicIcon name={topic.icon} className="w-4 h-4 shrink-0" />,
+            }))}
+          />
         </section>
 
         {/* Latest Articles */}
@@ -120,6 +150,19 @@ export default function HomePage() {
               查看全部 →
             </a>
           </div>
+          {/* 每月發文量。手機上自成一列，不跟標題與「查看全部」擠在同一行 */}
+          {monthly.length > 0 && (
+            <div className="flex items-end gap-3 mb-6">
+              <MiniColumns
+                data={monthly.map((m) => ({ label: m.label, value: m.count }))}
+                height={40}
+                ariaLabel="最近六個月的每月發文篇數"
+              />
+              <span className="text-xs whitespace-nowrap text-slate-500 dark:text-slate-400 mb-3">
+                最近六個月發文
+              </span>
+            </div>
+          )}
           {posts.length === 0 ? (
             <p className="text-slate-500 dark:text-slate-400">目前還沒有文章。</p>
           ) : (

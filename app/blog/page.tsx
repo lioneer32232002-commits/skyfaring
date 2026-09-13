@@ -1,10 +1,9 @@
 import type { Metadata } from "next";
 import { getAllPostMetas } from "@/lib/posts";
-import { TOPIC_GROUPS } from "@/lib/taxonomy";
+import { getTopicCounts } from "@/lib/siteStats";
 import BlogFilter from "@/components/BlogFilter";
 import TopicIcon from "@/components/TopicIcon";
-
-const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+import { BarRow } from "@/components/viz";
 
 export const metadata: Metadata = {
   title: "文章",
@@ -14,6 +13,7 @@ export const metadata: Metadata = {
 
 export default function BlogPage() {
   const posts = getAllPostMetas();
+  const topicCounts = getTopicCounts();
 
   return (
     <div className="max-w-5xl mx-auto px-4 sm:px-6 py-12">
@@ -25,18 +25,18 @@ export default function BlogPage() {
         </p>
       </div>
 
-      <div className="flex flex-wrap items-center gap-2 mb-10">
-        <span className="text-sm whitespace-nowrap text-slate-500 dark:text-slate-400 mr-1">依主題：</span>
-        {TOPIC_GROUPS.map((group) => (
-          <a
-            key={group.slug}
-            href={`${BASE_PATH}/topics/${group.slug}/`}
-            className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-sm whitespace-nowrap border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 hover:text-sky-600 dark:hover:text-sky-400 hover:border-sky-300 dark:hover:border-sky-700 transition-colors"
-          >
-            <TopicIcon name={group.icon} className="w-4 h-4 shrink-0" />
-            {group.label}
-          </a>
-        ))}
+      {/* 依主題的篇數，點標籤進主題頁。長條只比大小，數值直接標在右邊 */}
+      <div className="mb-10">
+        <h2 className="text-sm whitespace-nowrap text-slate-500 dark:text-slate-400 mb-3">依主題</h2>
+        <BarRow
+          unit="篇"
+          items={topicCounts.map((topic) => ({
+            label: topic.label,
+            value: topic.count,
+            href: `/topics/${topic.slug}/`,
+            icon: <TopicIcon name={topic.icon} className="w-4 h-4 shrink-0" />,
+          }))}
+        />
       </div>
 
       <BlogFilter posts={posts} />

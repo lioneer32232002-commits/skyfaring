@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getAllPostMetas } from "@/lib/posts";
+import { getCategoryCounts } from "@/lib/siteStats";
 import { TOPIC_GROUPS, getGroupBySlug } from "@/lib/taxonomy";
+import { BarRow } from "@/components/viz";
 import ArticleCard from "@/components/ArticleCard";
 import ViewCountsProvider from "@/components/ViewCountsProvider";
 import TopicIcon from "@/components/TopicIcon";
@@ -56,6 +58,15 @@ export default async function TopicPage({
     (p) => p.category && group.categories.includes(p.category)
   );
 
+  /**
+   * 這個主題底下各子分類的篇數，沒有文章的分類不列。
+   * 只剩一個分類時不畫長條：一條長條沒有可比的對象，數字已經寫在上面那行。
+   */
+  const categoryCounts = getCategoryCounts();
+  const catBars = group.categories
+    .map((cat) => ({ label: cat, value: categoryCounts[cat] ?? 0 }))
+    .filter((item) => item.value > 0);
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
@@ -104,6 +115,11 @@ export default async function TopicPage({
           {"　"}
           <span className="whitespace-nowrap">共 {groupPosts.length} 篇。</span>
         </p>
+        {catBars.length > 1 && (
+          <div className="mt-5">
+            <BarRow items={catBars} unit="篇" />
+          </div>
+        )}
       </div>
 
       {/* Other topics */}

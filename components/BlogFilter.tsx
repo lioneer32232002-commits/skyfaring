@@ -27,6 +27,13 @@ export default function BlogFilter({ posts }: { posts: PostMeta[] }) {
   );
 
   /**
+   * 每個分類的篇數，直接從手上的 posts 算，不另外傳一份數字進來，
+   * 免得篩選器顯示的數字跟卡片實際筆數對不起來。
+   */
+  const countOf = (category: string) =>
+    posts.reduce((sum, p) => sum + (p.category === category ? 1 : 0), 0);
+
+  /**
    * 站內搜尋。
    *
    * 列表頁本來就把全部文章當 props 拿到手上，所以不需要另外產一份索引檔
@@ -69,7 +76,7 @@ export default function BlogFilter({ posts }: { posts: PostMeta[] }) {
               : INACTIVE_BASE
           }`}
         >
-          全部
+          全部 <span className="text-xs tabular-nums opacity-70">{posts.length}</span>
         </button>
         {categories.map((cat) => (
           <button
@@ -81,7 +88,7 @@ export default function BlogFilter({ posts }: { posts: PostMeta[] }) {
                 : INACTIVE_BASE
             }`}
           >
-            {cat}
+            {cat} <span className="text-xs tabular-nums opacity-70">{countOf(cat)}</span>
           </button>
         ))}
       </div>

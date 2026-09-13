@@ -1,4 +1,5 @@
 import { getAllSlugs, getPost, addPanguText } from "@/lib/posts";
+import { extractHeadings } from "@/lib/headings";
 import ViewCounter from "@/components/ViewCounter";
 import UiIcon from "@/components/UiIcon";
 import { getSeriesPosts, getRelatedPosts, getAdjacentPosts } from "@/lib/related";
@@ -6,6 +7,8 @@ import { SeriesBadge, SeriesNav, AdjacentNav, RelatedPosts } from "@/components/
 import { hasTagPage, tagHref } from "@/lib/tags";
 import ShareButtons from "@/components/ShareButtons";
 import SisterSiteCard from "@/components/SisterSiteCard";
+import TableOfContents from "@/components/TableOfContents";
+import ReadingProgress from "@/components/ReadingProgress";
 
 const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
@@ -57,6 +60,10 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 export default async function ArticlePage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const post = await getPost(slug);
+
+  // 本文目錄：從已經帶 id 的 h2/h3 抓出來，純函式、build 時算好。
+  const headings = extractHeadings(post.contentHtml);
+  const chapterCount = headings.filter((h) => h.level === 2).length;
 
   // 站內動線：系列導覽、同分類前後篇、同分類相關文章。全部在 build 時算好。
   const seriesPosts = post.series ? getSeriesPosts(post.series) : [];
@@ -140,7 +147,9 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
   };
 
   return (
-    <article className="max-w-3xl mx-auto px-4 sm:px-6 py-10">
+    <>
+      <ReadingProgress />
+      <article className="max-w-3xl mx-auto px-4 sm:px-6 py-10">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -260,12 +269,16 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
         <span className="flex items-center gap-1.5 whitespace-nowrap">
           <UiIcon name="clock" className="w-4 h-4 shrink-0" />
           <span>閱讀約 {post.readingMinutes} 分鐘</span>
+          {chapterCount > 0 && <span className="whitespace-nowrap">・{chapterCount} 節</span>}
         </span>
         <span className="flex items-center gap-1.5 whitespace-nowrap">
           <UiIcon name="eye" className="w-4 h-4 shrink-0" />
           <ViewCounter slug={`blog/${slug}`} />
         </span>
       </div>
+
+      {/* 本文目錄：只有 h2 至少兩個才會實際渲染出東西 */}
+      <TableOfContents headings={headings} />
 
       {/* Content */}
       <div
@@ -339,6 +352,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
           ← 返回文章列表
         </a>
       </div>
-    </article>
+      </article>
+    </>
   );
 }

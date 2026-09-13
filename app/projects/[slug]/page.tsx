@@ -8,6 +8,7 @@ import ProjectIcon from "@/components/ProjectIcon";
 import TopicIcon from "@/components/TopicIcon";
 import UiIcon from "@/components/UiIcon";
 import DashboardLiveStat from "@/components/DashboardLiveStat";
+import { CadenceStrip, cadenceFromLabel } from "@/components/viz";
 
 const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://skyfaring.net";
@@ -194,7 +195,8 @@ export default async function ProjectPage({
                   : {})}
                 className="group flex flex-col sm:flex-row sm:items-baseline gap-1.5 sm:gap-6 py-5 first:pt-0"
               >
-                <div className="sm:w-56 sm:shrink-0">
+                {/* w-64：週更的節奏條加「每週更新」共 233px，欄寬要放得下才不會把文字擠到第二行 */}
+                <div className="sm:w-64 sm:shrink-0">
                   <h3 className="flex items-center gap-1.5">
                     <span className="font-semibold text-slate-800 dark:text-slate-100 group-hover:text-sky-600 dark:group-hover:text-sky-400 transition-colors text-balance">
                       {d.title}
@@ -204,19 +206,20 @@ export default async function ProjectPage({
                       className="w-[14px] h-[14px] shrink-0 text-slate-400 dark:text-slate-500"
                     />
                   </h3>
-                  <p className="text-[13px] whitespace-nowrap text-slate-500 dark:text-slate-400 mt-1">
-                    {d.cadence}
-                  </p>
+                  {/* 更新頻率畫成一年 12 格的節奏條，右邊維持原本的文字說法 */}
+                  <div className="mt-1.5">
+                    <CadenceStrip
+                      cadence={cadenceFromLabel(d.cadence)}
+                      label={d.cadence}
+                    />
+                  </div>
                 </div>
                 <div className="flex-1 min-w-0">
                   <p className="text-sm text-slate-500 dark:text-slate-400 leading-relaxed text-pretty">
                     {d.desc}
                   </p>
                   {d.liveStat && (
-                    <DashboardLiveStat
-                      source={d.liveStat}
-                      className="text-[13px] font-medium whitespace-nowrap text-sky-600 dark:text-sky-400 mt-1.5"
-                    />
+                    <DashboardLiveStat source={d.liveStat} className="mt-3" />
                   )}
                 </div>
               </a>

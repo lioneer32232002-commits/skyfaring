@@ -614,7 +614,12 @@ async function getFullPageHeight(client) {
     returnByValue: true,
   });
   const value = evalResult.result?.value;
-  return Number.isFinite(value) && value > 0 ? Math.ceil(value) : 800;
+  // 截圖高度封頂：/blog/ 一類 89 張卡片的頁面在 1280 寬有 14,000px 高，
+  // 375 寬（deviceScaleFactor 2）更會撐到位圖上限，Chrome renderer 直接崩、CDP 斷線。
+  // 孤字偵測是整頁做的，不受這個上限影響；截圖只留前 8,000px 供目視。
+  const MAX_SCREENSHOT_HEIGHT = 8000;
+  const height = Number.isFinite(value) && value > 0 ? Math.ceil(value) : 800;
+  return Math.min(height, MAX_SCREENSHOT_HEIGHT);
 }
 
 async function captureFullPage(client, outPath, width, height) {
