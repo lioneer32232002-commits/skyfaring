@@ -6,7 +6,7 @@ import {
   getTopicCounts,
 } from "@/lib/siteStats";
 import ArticleCard from "@/components/ArticleCard";
-import { BarRow, MiniColumns, StatRow, StatTile } from "@/components/viz";
+import { BarRow, MiniColumns } from "@/components/viz";
 import PageHero from "@/components/PageHero";
 import ProjectGroups from "@/components/ProjectGroups";
 import TopicIcon from "@/components/TopicIcon";
@@ -36,14 +36,54 @@ const jsonLd = {
   inLanguage: "zh-TW",
 };
 
-/** 把 "2026-09-13" 拆成數字磚要的「9/13」與「2026 年」。 */
-function splitDate(date: string): { short: string; year: string } {
+/** 把 "2026-09-13" 變成「9 月 13 日」；跨年才帶年份。 */
+function formatLatestDate(date: string): string {
   const match = /^(\d{4})-(\d{2})-(\d{2})/.exec(date);
-  if (!match) return { short: "—", year: "" };
-  return {
-    short: `${Number(match[2])}/${Number(match[3])}`,
-    year: `${match[1]} 年`,
-  };
+  if (!match) return "—";
+  const [, y, m, d] = match;
+  const sameYear = Number(y) === new Date().getFullYear();
+  return `${sameYear ? "" : `${y} 年 `}${Number(m)} 月 ${Number(d)} 日`;
+}
+
+/**
+ * hero 裡的一項站內數字：數字大、單位小，同一基線、整項不換行。
+ * unitFirst 給「最近更新 9 月 13 日」這種單位在前的寫法。
+ */
+function HeroStat({
+  value,
+  unit,
+  href,
+  unitFirst = false,
+}: {
+  value: React.ReactNode;
+  unit: string;
+  href?: string;
+  unitFirst?: boolean;
+}) {
+  const number = (
+    <span className="text-2xl font-semibold text-white tabular-nums leading-none group-hover:text-sky-300 transition-colors">
+      {value}
+    </span>
+  );
+  const label = <span className="text-sm text-slate-300">{unit}</span>;
+  const inner = (
+    <>
+      {unitFirst ? label : number}
+      {unitFirst ? number : label}
+    </>
+  );
+  const itemClass = "flex items-baseline gap-1.5 whitespace-nowrap";
+  return (
+    <li>
+      {href ? (
+        <a href={href} className={`group ${itemClass}`}>
+          {inner}
+        </a>
+      ) : (
+        <span className={itemClass}>{inner}</span>
+      )}
+    </li>
+  );
 }
 
 export default function HomePage() {
@@ -51,7 +91,7 @@ export default function HomePage() {
   const summary = getSiteSummary();
   const topicCounts = getTopicCounts();
   const monthly = getMonthlyCounts(6);
-  const latest = splitDate(summary.latestDate);
+  const latest = formatLatestDate(summary.latestDate);
 
   return (
     <>
@@ -74,26 +114,24 @@ export default function HomePage() {
           <span className="whitespace-nowrap">詠春拳 ·</span>
           <span className="whitespace-nowrap">歷史與軍事閱讀心得分享</span>
         </div>
-        <div className="text-sm text-slate-400 flex items-center gap-2">
-          <span className="whitespace-nowrap">本站瀏覽次數：</span>
-          <ViewCounter slug="home" total className="text-sky-300 font-semibold whitespace-nowrap" />
-        </div>
+        {/*
+          站內數字直接排在 hero 裡，一列帶過：數字大、單位緊跟在數字後面同一基線，
+          不再另開一個「站內一覽」區塊放四個空框，單位也不會獨自掉到數字底下。
+          每一項 nowrap，手機寬度不夠時整項換行。
+        */}
+        <ul className="flex flex-wrap gap-x-8 gap-y-3 border-t border-white/15 pt-6 mt-2">
+          <HeroStat value={summary.posts} unit="篇文章" href={`${BASE_PATH}/blog/`} />
+          <HeroStat value={summary.projects} unit="個專案" href={`${BASE_PATH}/projects/`} />
+          <HeroStat value={summary.topics} unit="個主題" />
+          <HeroStat value={latest} unit="最近更新" unitFirst />
+          <HeroStat
+            value={<ViewCounter slug="home" total numberOnly />}
+            unit="次瀏覽"
+          />
+        </ul>
       </PageHero>
 
       <div className="max-w-5xl mx-auto px-4 sm:px-6 py-12">
-
-        {/* Site summary */}
-        <section className="mb-14">
-          <h2 className="text-xl font-bold text-slate-700 dark:text-slate-200 mb-5 flex items-center gap-2">
-            <UiIcon name="chart" className="w-5 h-5 shrink-0" /> 站內一覽
-          </h2>
-          <StatRow>
-            <StatTile label="文章" value={summary.posts} hint="篇" href="/blog/" />
-            <StatTile label="專案" value={summary.projects} hint="個" href="/projects/" />
-            <StatTile label="主題" value={summary.topics} hint="個分類群" />
-            <StatTile label="最近更新" value={latest.short} hint={latest.year} />
-          </StatRow>
-        </section>
 
         {/* Projects / Portal */}
         <section className="mb-14">
