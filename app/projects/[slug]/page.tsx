@@ -164,7 +164,7 @@ export default async function ProjectPage({
           <h2 className="text-xl font-bold text-slate-700 dark:text-slate-200 mb-5">
             {cjkNum(project.dashboards.length)}個儀表板
           </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div className="divide-y divide-slate-100 dark:divide-slate-700">
             {project.dashboards.map((d) => (
               <a
                 key={d.title}
@@ -172,27 +172,33 @@ export default async function ProjectPage({
                 {...(/^https?:\/\//.test(d.url)
                   ? { target: "_blank", rel: "noopener noreferrer" }
                   : {})}
-                className="group p-5 bg-white dark:bg-slate-800 rounded-2xl border border-slate-100 dark:border-slate-700 shadow-sm hover:border-sky-300 dark:hover:border-sky-500/60 transition-colors"
+                className="group flex flex-col sm:flex-row sm:items-baseline gap-1.5 sm:gap-6 py-5 first:pt-0"
               >
-                <h3 className="flex items-center justify-between gap-2 font-semibold text-slate-800 dark:text-slate-100 mb-1">
-                  <span className="text-balance">{d.title}</span>
-                  <UiIcon
-                    name="arrow-up-right"
-                    className="w-[16px] h-[16px] shrink-0 text-sky-600 dark:text-sky-400 transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
-                  />
-                </h3>
-                <p className="text-xs text-slate-500 dark:text-slate-400 mb-2 text-balance">
-                  {d.cadence}
-                </p>
-                {d.liveStat && (
-                  <DashboardLiveStat
-                    source={d.liveStat}
-                    className="text-xs font-medium text-sky-600 dark:text-sky-400 mb-2"
-                  />
-                )}
-                <p className="text-sm text-slate-500 dark:text-slate-400 leading-relaxed text-pretty">
-                  {d.desc}
-                </p>
+                <div className="sm:w-56 sm:shrink-0">
+                  <h3 className="flex items-center gap-1.5">
+                    <span className="font-semibold text-slate-800 dark:text-slate-100 group-hover:text-sky-600 dark:group-hover:text-sky-400 transition-colors text-balance">
+                      {d.title}
+                    </span>
+                    <UiIcon
+                      name="arrow-up-right"
+                      className="w-[14px] h-[14px] shrink-0 text-slate-400 dark:text-slate-500"
+                    />
+                  </h3>
+                  <p className="text-xs text-slate-500 dark:text-slate-400 mt-1">
+                    {d.cadence}
+                  </p>
+                </div>
+                <div className="flex-1 min-w-0">
+                  <p className="text-sm text-slate-500 dark:text-slate-400 leading-relaxed text-pretty">
+                    {d.desc}
+                  </p>
+                  {d.liveStat && (
+                    <DashboardLiveStat
+                      source={d.liveStat}
+                      className="text-xs font-medium text-sky-600 dark:text-sky-400 mt-1.5"
+                    />
+                  )}
+                </div>
               </a>
             ))}
           </div>
