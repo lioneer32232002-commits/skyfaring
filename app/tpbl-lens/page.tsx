@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
+import PageHero from "@/components/PageHero";
 import UiIcon from "@/components/UiIcon";
-
-const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
 export const metadata: Metadata = {
   title: "TPBL Lens",
@@ -30,27 +29,21 @@ export default function TpblLensPage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative text-white overflow-hidden">
-        <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: `url(${BASE_PATH}/images/basketball-court-hero.jpg)` }}
-        />
-        <div className="absolute inset-0 bg-gradient-to-br from-slate-900/92 via-slate-900/78 to-orange-900/70" />
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 py-20 sm:py-24 relative">
-          <div className="flex items-center gap-3 mb-4">
-            <span className="text-orange-400 font-semibold tracking-widest text-sm uppercase">TPBL Lens</span>
-          </div>
-          <h1 className="text-4xl sm:text-5xl font-bold leading-tight mb-4">
-            台灣職籃數據透鏡
-          </h1>
-          <p className="text-slate-300 text-lg max-w-2xl leading-relaxed mb-3">
-            用數據看台灣職籃——球員效率、球隊進階指標、賽季趨勢一站瀏覽。
-          </p>
-          <p className="text-slate-400 text-sm max-w-xl leading-relaxed">
-            例行賽統計 · 進階效率分析 · 球員數據比較
-          </p>
+      <PageHero
+        variant="photo"
+        tone="orange"
+        image="/images/basketball-court-hero.jpg"
+        eyebrow="TPBL Lens"
+        title="台灣職籃數據透鏡"
+        description="用數據看台灣職籃——球員效率、球隊進階指標、賽季趨勢一站瀏覽。"
+      >
+        {/* 三項各自 nowrap，「·」跟著前一項走，手機折行時不會掉單字 */}
+        <div className="text-slate-400 text-sm max-w-xl leading-relaxed flex flex-wrap gap-x-3 gap-y-1">
+          <span className="whitespace-nowrap">例行賽統計 ·</span>
+          <span className="whitespace-nowrap">進階效率分析 ·</span>
+          <span className="whitespace-nowrap">球員數據比較</span>
         </div>
-      </section>
+      </PageHero>
 
       <div className="max-w-5xl mx-auto px-4 sm:px-6 py-12">
 

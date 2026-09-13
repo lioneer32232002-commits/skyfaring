@@ -5,6 +5,7 @@ import { getCategoryCounts } from "@/lib/siteStats";
 import { TOPIC_GROUPS, getGroupBySlug } from "@/lib/taxonomy";
 import { BarRow } from "@/components/viz";
 import ArticleCard from "@/components/ArticleCard";
+import PageHero from "@/components/PageHero";
 import ViewCountsProvider from "@/components/ViewCountsProvider";
 import TopicIcon from "@/components/TopicIcon";
 
@@ -87,40 +88,45 @@ export default async function TopicPage({
   };
 
   return (
-    <div className="max-w-5xl mx-auto px-4 sm:px-6 py-12">
+    <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
-      {/* Header */}
-      <div className="mb-8">
-        <div className="text-sm text-slate-500 dark:text-slate-400 mb-3">
-          <a href={`${BASE_PATH}/`} className="whitespace-nowrap hover:text-sky-500">
-            首頁
-          </a>
-          <span className="mx-1.5">/</span>
-          <a href={`${BASE_PATH}/blog/`} className="whitespace-nowrap hover:text-sky-500">
-            文章
-          </a>
-          <span className="mx-1.5">/</span>
-          <span className="whitespace-nowrap text-slate-500 dark:text-slate-400">{group.label}</span>
-        </div>
-        <h1 className="text-3xl font-bold text-slate-800 dark:text-slate-100 mb-2 flex items-center gap-2">
-          <TopicIcon name={group.icon} className="w-7 h-7 shrink-0 text-sky-600 dark:text-sky-400" />
-          {group.label}
-        </h1>
-        <p className="text-slate-500 dark:text-slate-400">
-          {group.description}
-          {"　"}
-          <span className="whitespace-nowrap">共 {groupPosts.length} 篇。</span>
-        </p>
-        {catBars.length > 1 && (
-          <div className="mt-5">
-            <BarRow items={catBars} unit="篇" />
-          </div>
-        )}
-      </div>
+      <PageHero
+        variant="plain"
+        breadcrumb={
+          <>
+            <a href={`${BASE_PATH}/`} className="whitespace-nowrap hover:text-sky-500">
+              首頁
+            </a>
+            <span className="mx-1.5">/</span>
+            <a href={`${BASE_PATH}/blog/`} className="whitespace-nowrap hover:text-sky-500">
+              文章
+            </a>
+            <span className="mx-1.5">/</span>
+            <span className="whitespace-nowrap text-slate-500 dark:text-slate-400">{group.label}</span>
+          </>
+        }
+        title={
+          <span className="flex items-center gap-2">
+            <TopicIcon name={group.icon} className="w-7 h-7 shrink-0 text-sky-600 dark:text-sky-400" />
+            {group.label}
+          </span>
+        }
+        description={
+          <>
+            {group.description}
+            {"　"}
+            <span className="whitespace-nowrap">共 {groupPosts.length} 篇。</span>
+          </>
+        }
+      >
+        {catBars.length > 1 && <BarRow items={catBars} unit="篇" />}
+      </PageHero>
+
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 py-12">
 
       {/* Other topics */}
       <div className="flex flex-wrap gap-2 mb-10">
@@ -174,6 +180,7 @@ export default async function TopicPage({
         })
       )}
       </ViewCountsProvider>
-    </div>
+      </div>
+    </>
   );
 }

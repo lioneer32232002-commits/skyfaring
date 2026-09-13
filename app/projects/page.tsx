@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { PROJECTS, getGroupedProjects } from "@/lib/projects";
+import PageHero from "@/components/PageHero";
 import ProjectGroups from "@/components/ProjectGroups";
 import { StatRow, StatTile } from "@/components/viz";
 
@@ -24,34 +25,38 @@ export default function ProjectsPage() {
   };
 
   return (
-    <div className="max-w-5xl mx-auto px-4 sm:px-6 py-12">
+    <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
-      <div className="mb-10">
-        <h1 className="text-3xl font-bold text-slate-800 dark:text-slate-100 mb-2">專案</h1>
-        <p className="text-slate-500 dark:text-slate-400">
-          把數據與興趣做成可以實際打開來用的工具，
-          <span className="whitespace-nowrap">共 {PROJECTS.length} 個。</span>
-        </p>
+      <PageHero
+        variant="plain"
+        title="專案"
+        description={
+          <>
+            把數據與興趣做成可以實際打開來用的工具，
+            <span className="whitespace-nowrap">共 {PROJECTS.length} 個。</span>
+          </>
+        }
+      >
         {/* 三個群組各有幾個專案，讓讀者先知道下面的清單怎麼分 */}
-        <div className="mt-6">
-          <StatRow cols={3}>
-            {grouped.map(({ group, projects }) => (
-              <StatTile
-                key={group.id}
-                label={group.label}
-                value={projects.length}
-                hint="個專案"
-              />
-            ))}
-          </StatRow>
-        </div>
-      </div>
+        <StatRow cols={3}>
+          {grouped.map(({ group, projects }) => (
+            <StatTile
+              key={group.id}
+              label={group.label}
+              value={projects.length}
+              hint="個專案"
+            />
+          ))}
+        </StatRow>
+      </PageHero>
 
-      <ProjectGroups variant="full" groupAs="h2" />
-    </div>
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 py-12">
+        <ProjectGroups variant="full" groupAs="h2" />
+      </div>
+    </>
   );
 }

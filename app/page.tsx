@@ -7,6 +7,7 @@ import {
 } from "@/lib/siteStats";
 import ArticleCard from "@/components/ArticleCard";
 import { BarRow, MiniColumns, StatRow, StatTile } from "@/components/viz";
+import PageHero from "@/components/PageHero";
 import ProjectGroups from "@/components/ProjectGroups";
 import TopicIcon from "@/components/TopicIcon";
 import UiIcon from "@/components/UiIcon";
@@ -59,35 +60,25 @@ export default function HomePage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       {/* Hero */}
-      <section className="relative text-white overflow-hidden">
-        <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: `url(${BASE_PATH}/images/homepage-hero.jpg)` }}
-        />
-        <div className="absolute inset-0 bg-gradient-to-br from-slate-900/92 via-slate-900/75 to-sky-900/80" />
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 py-14 sm:py-24 relative">
-          <div className="flex items-center gap-3 mb-4">
-            <span className="text-sky-400 font-semibold tracking-widest text-sm uppercase whitespace-nowrap">Skyfaring</span>
-          </div>
-          <h1 className="text-4xl sm:text-5xl font-bold leading-tight mb-4 text-balance">
-            用數據觀察世界
-          </h1>
-          <p className="text-slate-300 text-lg max-w-2xl leading-relaxed mb-3 text-pretty">
-            從球場到天空，從歷史到當代，用數字和資料說出不容易被看見的故事。
-          </p>
-          {/* 用 flex 排這四項，「·」跟著前一項走，手機折行時不會有單獨一個點或單字掉到下一行 */}
-          <div className="text-slate-400 text-sm max-w-xl leading-relaxed mb-8 flex flex-wrap gap-x-3 gap-y-1">
-            <span className="whitespace-nowrap">運動數據分析 ·</span>
-            <span className="whitespace-nowrap">飛航安全數據分析 ·</span>
-            <span className="whitespace-nowrap">詠春拳 ·</span>
-            <span className="whitespace-nowrap">歷史與軍事閱讀心得分享</span>
-          </div>
-          <div className="text-sm text-slate-400 flex items-center gap-2">
-            <span className="whitespace-nowrap">本站瀏覽次數：</span>
-            <ViewCounter slug="home" total className="text-sky-300 font-semibold whitespace-nowrap" />
-          </div>
+      <PageHero
+        variant="photo"
+        image="/images/homepage-hero.jpg"
+        eyebrow="Skyfaring"
+        title="用數據觀察世界"
+        description="從球場到天空，從歷史到當代，用數字和資料說出不容易被看見的故事。"
+      >
+        {/* 用 flex 排這四項，「·」跟著前一項走，手機折行時不會有單獨一個點或單字掉到下一行 */}
+        <div className="text-slate-400 text-sm max-w-xl leading-relaxed mb-8 flex flex-wrap gap-x-3 gap-y-1">
+          <span className="whitespace-nowrap">運動數據分析 ·</span>
+          <span className="whitespace-nowrap">飛航安全數據分析 ·</span>
+          <span className="whitespace-nowrap">詠春拳 ·</span>
+          <span className="whitespace-nowrap">歷史與軍事閱讀心得分享</span>
         </div>
-      </section>
+        <div className="text-sm text-slate-400 flex items-center gap-2">
+          <span className="whitespace-nowrap">本站瀏覽次數：</span>
+          <ViewCounter slug="home" total className="text-sky-300 font-semibold whitespace-nowrap" />
+        </div>
+      </PageHero>
 
       <div className="max-w-5xl mx-auto px-4 sm:px-6 py-12">
 

@@ -2,8 +2,9 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { PROJECT_PAGES, getProjectPageBySlug } from "@/lib/projectPages";
 import { PROJECTS } from "@/lib/projects";
-import { accentForGroup } from "@/lib/projectAccent";
+import { accentNameForGroup } from "@/lib/projectAccent";
 import { getGroupBySlug } from "@/lib/taxonomy";
+import PageHero from "@/components/PageHero";
 import ProjectIcon from "@/components/ProjectIcon";
 import TopicIcon from "@/components/TopicIcon";
 import UiIcon from "@/components/UiIcon";
@@ -66,7 +67,7 @@ export default async function ProjectPage({
     : undefined;
 
   const listedProject = PROJECTS.find((p) => p.introSlug === slug);
-  const accent = accentForGroup(listedProject?.group);
+  const accentName = accentNameForGroup(listedProject?.group);
 
   const isExternal = /^https?:\/\//.test(project.url);
 
@@ -115,60 +116,71 @@ export default async function ProjectPage({
   };
 
   return (
-    <div className="max-w-4xl mx-auto px-4 sm:px-6 py-12">
+    <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
-      {/* Breadcrumb */}
-      <div className="text-sm text-slate-500 dark:text-slate-400 mb-6">
-        <a href={`${BASE_PATH}/`} className="whitespace-nowrap hover:text-sky-500">首頁</a>
-        <span className="mx-1.5">/</span>
-        <a href={`${BASE_PATH}/projects/`} className="whitespace-nowrap hover:text-sky-500">專案</a>
-        <span className="mx-1.5">/</span>
-        {/* 最後一節是頁面標題，最長 24 個字，nowrap 會在 375px 撐出橫向捲軸，所以讓它照常換行 */}
-        <span className="text-slate-500 dark:text-slate-400">{project.title}</span>
-      </div>
-
-      {/* Header */}
-      <div className="mb-8">
-        {/*
+      <PageHero
+        variant="accent"
+        accent={accentName}
+        width="4xl"
+        breadcrumb={
+          <>
+            <a href={`${BASE_PATH}/`} className="whitespace-nowrap hover:text-sky-500">首頁</a>
+            <span className="mx-1.5">/</span>
+            <a href={`${BASE_PATH}/projects/`} className="whitespace-nowrap hover:text-sky-500">專案</a>
+            <span className="mx-1.5">/</span>
+            {/* 最後一節是頁面標題，最長 24 個字，nowrap 會在 375px 撐出橫向捲軸，所以讓它照常換行 */}
+            <span className="text-slate-500 dark:text-slate-400">{project.title}</span>
+          </>
+        }
+        /*
           圖示跟專案卡用同一組 SVG 與同一份色票（lib/projectAccent.ts），
           導讀頁與卡片才不會一邊 emoji、一邊線條圖。
           在 lib/projects.ts 反查不到對應專案時退回 lib/projectPages.ts 的 emoji。
-        */}
-        {listedProject ? (
-          <div
-            className={`w-12 h-12 mb-4 rounded-xl flex items-center justify-center ${accent.iconBg} ${accent.iconText}`}
-          >
-            <ProjectIcon name={listedProject.icon} className="w-6 h-6" />
+        */
+        icon={
+          listedProject ? (
+            <ProjectIcon name={listedProject.icon} className="w-7 h-7" />
+          ) : (
+            <span className="text-3xl leading-none">{project.icon}</span>
+          )
+        }
+        title={project.title}
+        description={project.tagline}
+      >
+        {project.dashboards ? (
+          /* 入口頁型專案沒有單一 CTA，改列出底下的儀表板，點了跳到下面的清單 */
+          <div className="flex flex-wrap gap-2">
+            {project.dashboards.map((d) => (
+              <a
+                key={d.title}
+                href="#dashboards"
+                className="inline-flex items-baseline gap-1.5 px-3 py-1.5 rounded-full border border-slate-200 dark:border-slate-700 bg-white/70 dark:bg-slate-800/60 text-sm whitespace-nowrap text-slate-600 dark:text-slate-300 hover:border-sky-300 dark:hover:border-sky-500/60 hover:text-sky-700 dark:hover:text-sky-300 transition-colors"
+              >
+                <span>{d.title}</span>
+                <span className="text-xs text-slate-500 dark:text-slate-400">{d.cadence}</span>
+              </a>
+            ))}
           </div>
         ) : (
-          <div className="text-5xl mb-4">{project.icon}</div>
+          <a
+            href={project.url}
+            {...(isExternal ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+            className="group inline-flex items-center gap-2.5 px-6 py-3 rounded-xl bg-sky-600 text-white hover:bg-sky-700 dark:bg-sky-500 dark:hover:bg-sky-400 dark:text-slate-900 font-semibold transition-colors"
+          >
+            <span className="whitespace-nowrap">{project.launchCta}</span>
+            <UiIcon
+              name="arrow-up-right"
+              className="w-[18px] h-[18px] transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+            />
+          </a>
         )}
-        <h1 className="text-3xl sm:text-4xl font-bold text-slate-800 dark:text-slate-100 leading-tight mb-3 text-balance">
-          {project.title}
-        </h1>
-        <p className="text-lg text-slate-500 dark:text-slate-400 leading-relaxed text-pretty">
-          {project.tagline}
-        </p>
-      </div>
+      </PageHero>
 
-      {/* Primary CTA */}
-      {!project.dashboards && (
-        <a
-          href={project.url}
-          {...(isExternal ? { target: "_blank", rel: "noopener noreferrer" } : {})}
-          className="group inline-flex items-center gap-2.5 px-6 py-3 mb-12 rounded-xl border border-sky-300 dark:border-sky-500/40 text-sky-700 dark:text-sky-300 font-semibold hover:bg-sky-50 dark:hover:bg-sky-500/10 hover:border-sky-400 dark:hover:border-sky-500/60 transition-colors"
-        >
-          <span className="whitespace-nowrap">{project.launchCta}</span>
-          <UiIcon
-            name="arrow-up-right"
-            className="w-[18px] h-[18px] transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
-          />
-        </a>
-      )}
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 py-12">
 
       {/* Intro */}
       <div className="space-y-5 mb-12">
@@ -181,7 +193,8 @@ export default async function ProjectPage({
 
       {/* Dashboards */}
       {project.dashboards && (
-        <section className="mb-12">
+        /* scroll-mt-20：hero 的錨點連結跳過來時，標題不要被 sticky header 蓋住 */
+        <section id="dashboards" className="mb-12 scroll-mt-20">
           <h2 className="text-xl font-bold text-slate-700 dark:text-slate-200 mb-5">
             {cjkNum(project.dashboards.length)}個儀表板
           </h2>
@@ -298,6 +311,7 @@ export default async function ProjectPage({
           全部文章 →
         </a>
       </div>
-    </div>
+      </div>
+    </>
   );
 }

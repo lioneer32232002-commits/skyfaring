@@ -24,6 +24,7 @@ export const ACCENT = {
 } as const;
 
 export type Accent = (typeof ACCENT)[keyof typeof ACCENT];
+export type AccentName = keyof typeof ACCENT;
 
 export function accentFor(project: Project): Accent {
   return accentForGroup(project.group);
@@ -31,6 +32,14 @@ export function accentFor(project: Project): Accent {
 
 /** 只知道 group id 時用這個（例如導讀頁從 PROJECTS 反查到專案之後取色）。 */
 export function accentForGroup(groupId: ProjectGroupId | undefined): Accent {
+  return ACCENT[accentNameForGroup(groupId)];
+}
+
+/**
+ * 同上，但回傳色名而非整組類別。
+ * PageHero 的 accent 變體除了 icon 色塊還要挑底色漸層，需要知道是哪一色。
+ */
+export function accentNameForGroup(groupId: ProjectGroupId | undefined): AccentName {
   const group = PROJECT_GROUPS.find((g) => g.id === groupId);
-  return ACCENT[group?.accent ?? "slate"];
+  return group?.accent ?? "slate";
 }

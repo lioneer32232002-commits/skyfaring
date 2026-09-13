@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import ArticleCard from "@/components/ArticleCard";
+import ArticleRow from "@/components/ArticleRow";
 import ViewCountsProvider from "@/components/ViewCountsProvider";
 import UiIcon from "@/components/UiIcon";
 import type { PostMeta } from "@/lib/posts";
@@ -14,6 +15,9 @@ const CATEGORY_STYLES: Record<string, string> = {
   軍事: "bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-300 border-slate-400 dark:border-slate-500",
   AI: "bg-emerald-100 dark:bg-emerald-900 text-emerald-700 dark:text-emerald-300 border-emerald-300 dark:border-emerald-700",
 };
+
+/** 無條件瀏覽時用 ArticleCard 排的篇數，剛好是桌機三欄各三列 */
+const CARD_COUNT = 9;
 
 const ACTIVE_BASE = "border font-semibold";
 const INACTIVE_BASE = "border border-transparent text-slate-500 dark:text-slate-400 hover:text-slate-700 dark:hover:text-slate-200";
@@ -51,8 +55,22 @@ export default function BlogFilter({ posts }: { posts: PostMeta[] }) {
     return haystack.includes(q);
   });
 
+  /**
+   * 沒有任何條件時，前 9 篇維持圖卡、其餘改成精簡列：89 張卡片的圖片與高度
+   * 讓這頁在手機上滑不完，而讀者往下滑本來就只是在掃標題。
+   * 有搜尋或分類條件時結果通常只有幾篇，整批用精簡列，一眼看得完。
+   */
+  const unfiltered = !q && !active;
+  const cards = unfiltered ? filtered.slice(0, CARD_COUNT) : [];
+  const rows = unfiltered ? filtered.slice(CARD_COUNT) : filtered;
+
   return (
-    <ViewCountsProvider slugs={posts.map((p) => `blog/${p.slug}`)}>
+    /*
+      只抓前 9 篇（會用 ArticleCard 顯示瀏覽次數的那幾篇）的數字。
+      精簡列不顯示瀏覽次數，89 筆全抓等於為了 9 個數字多要 80 筆。
+      slugs 固定取未篩選的前 9 篇，篩選時不會每打一個字就重抓。
+    */
+    <ViewCountsProvider slugs={posts.slice(0, CARD_COUNT).map((p) => `blog/${p.slug}`)}>
       <div className="relative mb-5">
         <span className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 dark:text-slate-500 pointer-events-none">
           <UiIcon name="search" className="w-4 h-4" />
@@ -106,11 +124,29 @@ export default function BlogFilter({ posts }: { posts: PostMeta[] }) {
           {q ? `找不到符合「${query.trim()}」的文章。` : "目前還沒有文章。"}
         </p>
       ) : (
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {filtered.map((post) => (
-            <ArticleCard key={post.slug} post={post} />
-          ))}
-        </div>
+        <>
+          {cards.length > 0 && (
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {cards.map((post) => (
+                <ArticleCard key={post.slug} post={post} />
+              ))}
+            </div>
+          )}
+          {rows.length > 0 && (
+            <>
+              {unfiltered && (
+                <h2 className="text-sm whitespace-nowrap text-slate-500 dark:text-slate-400 mt-10 mb-2">
+                  其餘 {rows.length} 篇
+                </h2>
+              )}
+              <div className="divide-y divide-slate-100 dark:divide-slate-700">
+                {rows.map((post) => (
+                  <ArticleRow key={post.slug} post={post} />
+                ))}
+              </div>
+            </>
+          )}
+        </>
       )}
     </ViewCountsProvider>
   );

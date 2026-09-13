@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { PROJECTS } from "@/lib/projects";
+import PageHero from "@/components/PageHero";
 import ProjectGroups from "@/components/ProjectGroups";
 import UiIcon from "@/components/UiIcon";
 
@@ -50,20 +51,19 @@ export default function AboutPage() {
   };
 
   return (
-    <div className="max-w-5xl mx-auto px-4 sm:px-6 py-12">
+    <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
-      <div className="mb-10">
-        <h1 className="text-3xl font-bold text-slate-800 dark:text-slate-100 mb-2">
-          關於我（Adam Pan）
-        </h1>
-        <p className="text-slate-600 dark:text-slate-300 leading-loose max-w-2xl text-pretty">
-          資深專案經理，任職於教育訓練機構，負責課程營運、行銷與統計分析。近年用 AI 工具獨立開發多個數據產品，從企劃、開發到上線一手包辦，領域涵蓋無人機情報、運動數據與歷史教育。
-        </p>
-      </div>
+      <PageHero
+        variant="plain"
+        title="關於我（Adam Pan）"
+        description="資深專案經理，任職於教育訓練機構，負責課程營運、行銷與統計分析。近年用 AI 工具獨立開發多個數據產品，從企劃、開發到上線一手包辦，領域涵蓋無人機情報、運動數據與歷史教育。"
+      />
+
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 py-12">
 
       {/* Skills */}
       <section className="mb-14">
@@ -119,6 +119,7 @@ export default function AboutPage() {
           </li>
         </ul>
       </section>
-    </div>
+      </div>
+    </>
   );
 }
