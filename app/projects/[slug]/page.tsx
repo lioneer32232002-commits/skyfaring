@@ -175,13 +175,13 @@ export default async function ProjectPage({
                 className="group p-5 bg-white dark:bg-slate-800 rounded-2xl border border-slate-100 dark:border-slate-700 shadow-sm hover:border-sky-300 dark:hover:border-sky-500/60 transition-colors"
               >
                 <h3 className="flex items-center justify-between gap-2 font-semibold text-slate-800 dark:text-slate-100 mb-1">
-                  {d.title}
+                  <span className="text-balance">{d.title}</span>
                   <UiIcon
                     name="arrow-up-right"
                     className="w-[16px] h-[16px] shrink-0 text-sky-600 dark:text-sky-400 transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
                   />
                 </h3>
-                <p className="text-xs text-slate-500 dark:text-slate-400 mb-2">
+                <p className="text-xs text-slate-500 dark:text-slate-400 mb-2 text-balance">
                   {d.cadence}
                 </p>
                 {d.liveStat && (
@@ -190,7 +190,7 @@ export default async function ProjectPage({
                     className="text-xs font-medium text-sky-600 dark:text-sky-400 mb-2"
                   />
                 )}
-                <p className="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">
+                <p className="text-sm text-slate-500 dark:text-slate-400 leading-relaxed text-pretty">
                   {d.desc}
                 </p>
               </a>

@@ -136,6 +136,21 @@ body {
 }
 
 /*
+  全站保險：標題與短句換行時不要留孤字在最後一行。
+  text-wrap: balance 讓多行標題盡量平均分配寬度；
+  text-wrap: pretty 讓內文段落避免最後一行只剩一兩個字。
+  個別元件已經手動包 .text-balance / .text-pretty 的地方，這條規則重複套用也無妨。
+*/
+@layer base {
+  h1, h2, h3, h4 {
+    text-wrap: balance;
+  }
+  p, li {
+    text-wrap: pretty;
+  }
+}
+
+/*
   錨點深連結要留出頂部空間，否則標題會被 sticky header（高 61px）蓋住。
   5rem 是 header 高度再加一點呼吸空間。
 */
