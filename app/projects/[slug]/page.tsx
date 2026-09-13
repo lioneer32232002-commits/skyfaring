@@ -4,9 +4,15 @@ import { PROJECT_PAGES, getProjectPageBySlug } from "@/lib/projectPages";
 import { getGroupBySlug } from "@/lib/taxonomy";
 import TopicIcon from "@/components/TopicIcon";
 import UiIcon from "@/components/UiIcon";
+import DashboardLiveStat from "@/components/DashboardLiveStat";
 
 const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://skyfaring.net";
+
+/** 儀表板張數與「N 頁共同的做法」用的中文數字，超出範圍就退回阿拉伯數字。 */
+function cjkNum(n: number): string {
+  return ["零", "一", "二", "三", "四", "五", "六", "七", "八", "九", "十"][n] ?? String(n);
+}
 
 export function generateStaticParams() {
   return PROJECT_PAGES.map((p) => ({ slug: p.slug }));
@@ -73,7 +79,8 @@ export default async function ProjectPage({
             hasPart: project.dashboards.map((d) => ({
               "@type": "WebApplication",
               name: d.title,
-              url: `${SITE_URL}${d.url}`,
+              // 外部儀表板（例如 tenders.skyfaring.net）已是絕對網址，不能再接 SITE_URL。
+              url: /^https?:\/\//.test(d.url) ? d.url : `${SITE_URL}${d.url}`,
               inLanguage: "zh-TW",
               isAccessibleForFree: true,
             })),
@@ -155,13 +162,16 @@ export default async function ProjectPage({
       {project.dashboards && (
         <section className="mb-12">
           <h2 className="text-xl font-bold text-slate-700 dark:text-slate-200 mb-5">
-            三個儀表板
+            {cjkNum(project.dashboards.length)}個儀表板
           </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {project.dashboards.map((d) => (
               <a
                 key={d.title}
                 href={d.url}
+                {...(/^https?:\/\//.test(d.url)
+                  ? { target: "_blank", rel: "noopener noreferrer" }
+                  : {})}
                 className="group p-5 bg-white dark:bg-slate-800 rounded-2xl border border-slate-100 dark:border-slate-700 shadow-sm hover:border-sky-300 dark:hover:border-sky-500/60 transition-colors"
               >
                 <h3 className="flex items-center justify-between gap-2 font-semibold text-slate-800 dark:text-slate-100 mb-1">
@@ -174,6 +184,12 @@ export default async function ProjectPage({
                 <p className="text-xs text-slate-500 dark:text-slate-400 mb-2">
                   {d.cadence}
                 </p>
+                {d.liveStat && (
+                  <DashboardLiveStat
+                    source={d.liveStat}
+                    className="text-xs font-medium text-sky-600 dark:text-sky-400 mb-2"
+                  />
+                )}
                 <p className="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">
                   {d.desc}
                 </p>
@@ -186,7 +202,7 @@ export default async function ProjectPage({
       {/* Features */}
       <section className="mb-12">
         <h2 className="text-xl font-bold text-slate-700 dark:text-slate-200 mb-5">
-          {project.dashboards ? "三頁共同的做法" : "這個站裡有什麼"}
+          {project.dashboards ? `${cjkNum(project.dashboards.length)}頁共同的做法` : "這個站裡有什麼"}
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           {project.features.map((f) => (

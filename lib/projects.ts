@@ -51,7 +51,7 @@ export const PROJECTS: Project[] = [
   },
   {
     title: "無人機研究",
-    description: "三個儀表板：全球無人機論文月報、烏克蘭無人機戰 2022 年至今的能力演化、台灣無人機出口季報。",
+    description: "四個儀表板：全球無人機論文月報、烏克蘭無人機戰 2022 年至今的能力演化、台灣無人機出口季報、政府標案週報。",
     url: `${BASE_PATH}/drone-review/`,
     icon: "drone",
     external: false,
