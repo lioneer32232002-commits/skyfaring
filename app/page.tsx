@@ -36,13 +36,13 @@ const jsonLd = {
   inLanguage: "zh-TW",
 };
 
-/** 把 "2026-09-13" 變成「9 月 13 日」；跨年才帶年份。 */
+/** 把 "2026-09-13" 變成「9/13」；跨年才帶年份（「2025/9/13」）。 */
 function formatLatestDate(date: string): string {
   const match = /^(\d{4})-(\d{2})-(\d{2})/.exec(date);
   if (!match) return "—";
   const [, y, m, d] = match;
   const sameYear = Number(y) === new Date().getFullYear();
-  return `${sameYear ? "" : `${y} 年 `}${Number(m)} 月 ${Number(d)} 日`;
+  return `${sameYear ? "" : `${y}/`}${Number(m)}/${Number(d)}`;
 }
 
 /**
