@@ -242,6 +242,8 @@ mklink /H "<repo>\shown_papers.md"  "<skyfaring-research>\shown_papers.md"
 
 硬連結要求兩個 repo 在同一顆磁碟；跨磁碟時腳本會退回複製一份，那種情況下改動以 `skyfaring-research` 的版本為準。
 
+硬連結會自己斷：skyfaring-research 那邊 git pull 或 commit 更新這兩個檔時，git 是刪掉重建，skyfaring 這邊留下的就變成一份不再同步的舊檔（2026-09-14 無人機週報發現兩個都斷了，建置腳本因此讀到舊的 `shown_papers.md`）。重跑 `node scripts/setup-junctions.mjs` 會偵測並重接。排程與 `build_drone_index.py` 一律直接讀寫 skyfaring-research 那份，不靠硬連結。
+
 OneDrive 的 `02_創作\14_AI TEST\skyfaring\` 自 2026-09-03 起凍結為唯讀備份，不要再往那裡寫。
 
 每篇論文對應一個 `.md` 摘要檔（籃球論文另附 PDF），檔名格式：`YYYY-MM-DD-識別碼.md`

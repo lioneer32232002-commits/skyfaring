@@ -83,16 +83,31 @@ for (const name of LINKS) {
   }
 }
 
+let repaired = 0;
+
+function sameFile(a, b) {
+  const sa = fs.statSync(a, { bigint: true });
+  const sb = fs.statSync(b, { bigint: true });
+  return sa.ino === sb.ino && sa.dev === sb.dev;
+}
+
 for (const name of HARDLINKS) {
   const link = path.join(ROOT, name);
   const target = path.join(base, name);
-  if (fs.existsSync(link)) {
-    console.log(`  已存在，略過  ${name}`);
-    continue;
-  }
   if (!fs.existsSync(target)) {
     console.log(`  來源沒有這個檔案，略過  ${name}`);
     continue;
+  }
+  if (fs.existsSync(link)) {
+    if (sameFile(link, target)) {
+      console.log(`  已存在，略過  ${name}`);
+      continue;
+    }
+    // 硬連結斷了：skyfaring-research 那邊 git pull 更新這個檔時是刪掉重建，
+    // 這邊留下的就變成一份不再同步的舊檔。以 skyfaring-research 的版本為準重接。
+    fs.rmSync(link);
+    repaired += 1;
+    console.log(`  硬連結已斷，刪掉舊副本重接  ${name}`);
   }
   try {
     fs.linkSync(target, link);
