@@ -7,9 +7,8 @@ import type { ProjectIconName } from "@/lib/projects";
   整張卡可點，開新分頁。文案與 lib/projects.ts 的專案描述同步，改的時候兩邊一起改。
   無人機兩張卡刻意連到個別儀表板而非 /projects/drone-research/ 入口頁：文章脈絡已經決定讀者要看哪一頁，直接深連比再經過入口頁少一跳。
 
-  TAIWAN_ROUTES 目前沒有掛在任何 category 或 tag 上，是備用卡。
-  「航空」分類現在掛 FLIGHT_DECK（飛行知識自學），本站航空類文章多半是飛安與事故分析，讀者要的是知識而不是班次表，所以沒有換掉。
-  之後若出現寫航線、機場運量、航空公司營運的文章（屆時多半會開新分類或新 tag），把 TAIWAN_ROUTES 掛上去即可，卡片文案已經備好。
+  一個分類可以掛多張卡（陣列）：「航空」同時掛 FLIGHT_DECK（飛行知識）與 TAIWAN_ROUTES（航線班次與載客率），
+  依序渲染，第一張跟正文隔 mt-10，後面的卡彼此隔 mt-3。tags 對應維持單張。
 */
 type PromoConfig = {
   title: string;
@@ -41,8 +40,7 @@ const PLA_TRACKER: PromoConfig = {
   icon: "radar",
 };
 
-/** 備用卡：目前未掛任何 category 或 tag，理由見檔頭註解。export 只是為了不被當成未使用的變數。 */
-export const TAIWAN_ROUTES: PromoConfig = {
+const TAIWAN_ROUTES: PromoConfig = {
   title: "台灣航線全覽",
   description:
     "民航局月報整理，每條台灣直飛航線一頁，列出所有航空公司的每週班次、座位與載客率，附 2009 年起的逐月歷史。",
@@ -66,8 +64,8 @@ const UKRAINE_REVIEW: PromoConfig = {
   icon: "map",
 };
 
-const PROMO_BY_CATEGORY: Record<string, PromoConfig> = {
-  航空: FLIGHT_DECK,
+const PROMO_BY_CATEGORY: Record<string, PromoConfig | PromoConfig[]> = {
+  航空: [FLIGHT_DECK, TAIWAN_ROUTES],
   籃球研究: SHOT_LEDGER,
   攻城獅: SHOT_LEDGER,
   球鞋: SHOT_LEDGER,
@@ -91,19 +89,23 @@ export default function SisterSiteCard({
   category?: string;
   tags?: string[];
 }) {
-  const promo =
+  const matched =
     (category ? PROMO_BY_CATEGORY[category] : undefined) ??
     (tags.some((t) => PLA_TAGS.has(t)) ? PLA_TRACKER : undefined) ??
     (tags.includes("烏克蘭") ? UKRAINE_REVIEW : undefined) ??
     (tags.includes("無人機") ? DRONE_REVIEW : undefined);
-  if (!promo) return null;
+  if (!matched) return null;
+  const promos = Array.isArray(matched) ? matched : [matched];
 
   return (
+    <>
+      {promos.map((promo, i) => (
     <a
+      key={promo.url}
       href={promo.url}
       target="_blank"
       rel="noopener noreferrer"
-      className="group mt-10 flex items-start gap-4 p-5 rounded-xl border border-sky-200 dark:border-sky-800 bg-sky-50 dark:bg-sky-950 hover:border-sky-400 dark:hover:border-sky-600 hover:shadow-md transition-all"
+      className={`group ${i === 0 ? "mt-10" : "mt-3"} flex items-start gap-4 p-5 rounded-xl border border-sky-200 dark:border-sky-800 bg-sky-50 dark:bg-sky-950 hover:border-sky-400 dark:hover:border-sky-600 hover:shadow-md transition-all`}
     >
       <div className="shrink-0 w-11 h-11 rounded-lg bg-sky-100 dark:bg-sky-900 flex items-center justify-center text-sky-600 dark:text-sky-400">
         <ProjectIcon name={promo.icon} className="w-6 h-6" />
@@ -119,5 +121,7 @@ export default function SisterSiteCard({
         </p>
       </div>
     </a>
+      ))}
+    </>
   );
 }
