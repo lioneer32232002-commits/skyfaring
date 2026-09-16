@@ -50,6 +50,15 @@ export const PROJECTS: Project[] = [
     group: "data",
   },
   {
+    title: "台灣航線全覽",
+    description: "民航局月報整理，每條台灣直飛航線一頁，列出所有航空公司的每週班次、座位與載客率，附 2009 年起的逐月歷史。",
+    url: "https://routes.skyfaring.net/",
+    icon: "plane",
+    external: true,
+    introSlug: "taiwan-routes",
+    group: "data",
+  },
+  {
     title: "無人機研究",
     description: "四個儀表板：全球無人機論文月報、烏克蘭無人機戰 2022 年至今的能力演化、台灣無人機出口季報、政府標案週報。",
     url: `${BASE_PATH}/drone-review/`,

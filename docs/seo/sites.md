@@ -55,6 +55,19 @@
 3. Bing Webmaster Tools ＋ IndexNow（後台作業）
 4. 次要：站內導覽連結改指乾淨網址（現指 `/index.html` 等，308 轉址有接住，不影響索引）
 
+## taiwan-routes（routes.skyfaring.net）
+
+上線：2026-09-16（Cloudflare Pages 專案 `taiwan-routes`，GitHub 連動 push 到 main 自動建置；`taiwan-routes.pages.dev` 以 Pages Functions middleware 301 到正式網址）。原始碼在 `aviation_project` repo。尚未做 playbook 體檢。
+
+內容：交通部民航局「國際及兩岸定期航線班機載客率」月報，每條航線一頁，涵蓋 2009-09 至 2026-07 共 202 個月、357 條航線、178 個航點、95 家航空公司。
+
+已到位：GSC 走 `sc-domain:skyfaring.net` 網域資源自動涵蓋此子網域，sitemap 已在該資源送出 `https://routes.skyfaring.net/sitemap.xml`；全站靜態產生、零 JS 依賴的內容、逐頁 metadata 與 canonical、自架字型子集（不連 Google Fonts）、每頁 `data.csv` 原始資料、RSS。
+
+待辦：
+1. 主站 hub → spoke 已補（2026-09-16：`lib/projects.ts` 一筆、導讀頁 `/projects/taiwan-routes/`），觀察 GSC 收錄
+2. Bing Webmaster Tools ＋ IndexNow（後台作業，與其他站同一批）
+3. 上線後第一次 playbook 體檢（跑 `/seo-audit`）
+
 ## 漢堡醫美（兩站）
 
 未啟動（使用者指示先不做）。接案開工時跑 `/seo-audit`，照 playbook 現行版做整套。

@@ -6,6 +6,10 @@ import type { ProjectIconName } from "@/lib/projects";
   文末的姊妹站導流卡：依文章 category 決定掛哪一站，沒對應就不渲染。
   整張卡可點，開新分頁。文案與 lib/projects.ts 的專案描述同步，改的時候兩邊一起改。
   無人機兩張卡刻意連到個別儀表板而非 /projects/drone-research/ 入口頁：文章脈絡已經決定讀者要看哪一頁，直接深連比再經過入口頁少一跳。
+
+  TAIWAN_ROUTES 目前沒有掛在任何 category 或 tag 上，是備用卡。
+  「航空」分類現在掛 FLIGHT_DECK（飛行知識自學），本站航空類文章多半是飛安與事故分析，讀者要的是知識而不是班次表，所以沒有換掉。
+  之後若出現寫航線、機場運量、航空公司營運的文章（屆時多半會開新分類或新 tag），把 TAIWAN_ROUTES 掛上去即可，卡片文案已經備好。
 */
 type PromoConfig = {
   title: string;
@@ -35,6 +39,15 @@ const PLA_TRACKER: PromoConfig = {
   description: "中線越線、艦機活動每日數據，含趨勢圖與 SITREP 紀錄。",
   url: "https://pla-tracker.skyfaring.net/",
   icon: "radar",
+};
+
+/** 備用卡：目前未掛任何 category 或 tag，理由見檔頭註解。export 只是為了不被當成未使用的變數。 */
+export const TAIWAN_ROUTES: PromoConfig = {
+  title: "台灣航線全覽",
+  description:
+    "民航局月報整理，每條台灣直飛航線一頁，列出所有航空公司的每週班次、座位與載客率，附 2009 年起的逐月歷史。",
+  url: "https://routes.skyfaring.net/",
+  icon: "plane",
 };
 
 const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
