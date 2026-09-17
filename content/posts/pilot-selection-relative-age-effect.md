@@ -1,5 +1,5 @@
 ---
-title: "出生月份決定得了誰當機師嗎？瑞典 1113 名報考者，查不到影響。"
+title: "出生月份決定得了誰當機師嗎？瑞典飛行學校 1113 人的甄選成績。"
 author: "AI 初稿 / skyfaring 編輯校正"
 date: "2026-09-17"
 slug: "pilot-selection-relative-age-effect"
