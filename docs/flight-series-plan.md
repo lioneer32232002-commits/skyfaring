@@ -24,7 +24,7 @@
 | 4 | 2026-09-10 當週 | published（2026-09-10，PR #33 復原重發；2026-08-27 曾撤下，PR #28 合併後還原） | 超長程航班機師睡眠：組員休息艙裡的實測資料 | [Clocks & Sleep ULR](https://doi.org/10.3390/clockssleep3040036)；[Frontiers ULR 疲勞管理](https://www.frontiersin.org/journals/environmental-health/articles/10.3389/fenvh.2023.1329203/full) |
 | 5 | 2026-09-03 當週 | published（2026-09-03，PR #31） | 機師憂鬱與求助障礙：12.6% 達憂鬱門檻、4.1% 曾有自殺念頭 | [Harvard 匿名調查](https://pmc.ncbi.nlm.nih.gov/articles/PMC5157081/)；[德翼後系統性回顧](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5869314/) |
 | 6 | — | 不發（2026-09-10 決定捨棄；PR #32 已關閉未合併，分支 `flight-series/aircrew-cosmic-radiation-melanoma-risk` 保留） | 機師與客艙組員的黑色素瘤風險：發生率約一般人兩倍 | [Frontiers 宇宙輻射回顧](https://www.frontiersin.org/journals/public-health/articles/10.3389/fpubh.2022.947068/full)；[北大西洋航線機師癌症研究](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5559846/) |
-| 7 | 2026-09-17 當週 | todo | 飛行員選才的相對年齡效應：檢驗出生月份理論 | [Lager, Sorjonen & Melin 2024, Heliyon](https://pmc.ncbi.nlm.nih.gov/articles/PMC11422595/)（DOI [10.1016/j.heliyon.2024.e37456](https://doi.org/10.1016/j.heliyon.2024.e37456)；瑞典 1113 名學員，**結論是沒有相對年齡效應**，題目要照否定結果下，不要寫成證實了 Gladwell） |
+| 7 | 2026-09-17 當週 | pr-open（PR #36） | 飛行員選才的相對年齡效應：檢驗出生月份理論 | [Lager, Sorjonen & Melin 2024, Heliyon](https://pmc.ncbi.nlm.nih.gov/articles/PMC11422595/)（DOI [10.1016/j.heliyon.2024.e37456](https://doi.org/10.1016/j.heliyon.2024.e37456)；瑞典 1113 名學員，**結論是沒有相對年齡效應**，題目要照否定結果下，不要寫成證實了 Gladwell） |
 
 其餘各篇寫完後，排程代理不再有 `todo` 項目時，只回報「系列已完結」，不自行加新題目。狀態為「不發」的項目一律跳過，不要重寫。
 
