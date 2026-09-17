@@ -1,14 +1,20 @@
 User-agent: *
 Allow: /
+# Cloudflare 邊緣自動改寫 mailto 連結產生的內部路徑，本身回 404。
+# Cloudflare 只在站點沒有自訂 robots.txt 時才自動封鎖它，有這份就要自己寫。
+Disallow: /cdn-cgi/
 
 # AI 搜尋引用爬蟲，明確放行（引用會標出處、帶流量）
 User-agent: OAI-SearchBot
 Allow: /
+Disallow: /cdn-cgi/
 
 User-agent: Claude-SearchBot
 Allow: /
+Disallow: /cdn-cgi/
 
 User-agent: PerplexityBot
 Allow: /
+Disallow: /cdn-cgi/
 
 Sitemap: https://skyfaring.net/sitemap.xml
