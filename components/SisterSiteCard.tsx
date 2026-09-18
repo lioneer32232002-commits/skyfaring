@@ -20,7 +20,7 @@ type PromoConfig = {
 const FLIGHT_DECK: PromoConfig = {
   title: "FLIGHT DECK 飛行養成",
   description:
-    "依 FAA 教材 PHAK 與 AFH 整理的免費飛行知識自學系統，23 個模組、327 張記憶卡，附機場圖鑑、失事檔案與 METAR 天氣電報課程。",
+    "依 FAA 教材 PHAK 與 AFH 整理的免費飛行知識自學系統，23 個模組、328 張記憶卡，附全英文對談 Podcast、面試問答、機場圖鑑、失事檔案與 METAR 天氣電報課程，累計答題已破 11 萬題。",
   url: "https://flightdecktw.net/",
   icon: "plane",
 };
